@@ -35,3 +35,26 @@ Original and converter model cards are included unmodified. This mirror is not
 an official release by OrionLLM or prithivMLmods.
 
 [Download release](https://github.com/leo-kreisman/OxCoder-9B/releases/tag/model-oxcoder-9b-q4-k-m)
+
+## Runtime options
+
+1. **GGUF / llama.cpp with Metal:** the existing deployment and comparison baseline.
+   Approximately **17 output tokens/s** has been reported on an M3-family Mac;
+   this is an operator observation, not a reproducible benchmark published by this repository.
+2. **MLX / Kapitsa:** an experimental second deployment using a separately downloaded
+   native 4-bit OxCoder checkpoint. Validate plain decoding first, then compatible
+   speculation and prefix caching. oMLX is a separate comparison engine.
+
+The [Mac runtime evaluation and implementation guide](docs/MAC-RUNTIME-EVALUATION.md)
+specifies installation, memory accounting, phase gates, context tests, coding and
+tool-call tests, Harness² integration boundaries, and selection/rollback criteria.
+Its target is an **18GB M3-family Mac with an 8GB inference allowance** while other
+applications remain in use. The existing 128K configuration remains a separate
+profile; populated-context capacity must be measured for each candidate.
+
+The guide is an implementation specification. It does not claim that Kapitsa,
+OxCoder speculative decoding, or Harness² integration has been tested on this Mac.
+Use the [run manifest](docs/evaluation/run-manifest.example.json),
+[result template](docs/evaluation/RESULTS-TEMPLATE.md), and
+[phase checklist](docs/evaluation/IMPLEMENTATION-CHECKLIST.md) to record evidence.
+The GGUF release and its checksums are unchanged; the release does not bundle MLX weights.
