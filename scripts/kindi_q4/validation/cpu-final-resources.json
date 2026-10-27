@@ -1,0 +1,686 @@
+{
+  "unit": "kindi-q4-4018ea8169",
+  "result": "Result=success\nExecMainStatus=0\n",
+  "failure": null,
+  "peak_total": 5206568960,
+  "samples": [
+    {
+      "time": 1792905240.3127584,
+      "host_cgroup": 2994176,
+      "gpu_physical": 0,
+      "total": 2994176
+    },
+    {
+      "time": 1792905240.8225436,
+      "host_cgroup": 87031808,
+      "gpu_physical": 0,
+      "total": 87031808
+    },
+    {
+      "time": 1792905241.334567,
+      "host_cgroup": 295215104,
+      "gpu_physical": 0,
+      "total": 295215104
+    },
+    {
+      "time": 1792905241.8446445,
+      "host_cgroup": 1498865664,
+      "gpu_physical": 0,
+      "total": 1498865664
+    },
+    {
+      "time": 1792905242.3562007,
+      "host_cgroup": 2691895296,
+      "gpu_physical": 0,
+      "total": 2691895296
+    },
+    {
+      "time": 1792905242.8669488,
+      "host_cgroup": 3861368832,
+      "gpu_physical": 0,
+      "total": 3861368832
+    },
+    {
+      "time": 1792905243.3765628,
+      "host_cgroup": 4364308480,
+      "gpu_physical": 0,
+      "total": 4364308480
+    },
+    {
+      "time": 1792905243.8864233,
+      "host_cgroup": 4364558336,
+      "gpu_physical": 0,
+      "total": 4364558336
+    },
+    {
+      "time": 1792905244.3970137,
+      "host_cgroup": 4364431360,
+      "gpu_physical": 0,
+      "total": 4364431360
+    },
+    {
+      "time": 1792905244.9073746,
+      "host_cgroup": 4364693504,
+      "gpu_physical": 0,
+      "total": 4364693504
+    },
+    {
+      "time": 1792905245.4178975,
+      "host_cgroup": 4364697600,
+      "gpu_physical": 0,
+      "total": 4364697600
+    },
+    {
+      "time": 1792905245.928012,
+      "host_cgroup": 4364566528,
+      "gpu_physical": 0,
+      "total": 4364566528
+    },
+    {
+      "time": 1792905246.4376063,
+      "host_cgroup": 4364701696,
+      "gpu_physical": 0,
+      "total": 4364701696
+    },
+    {
+      "time": 1792905246.9479754,
+      "host_cgroup": 4364963840,
+      "gpu_physical": 0,
+      "total": 4364963840
+    },
+    {
+      "time": 1792905247.4577432,
+      "host_cgroup": 4364836864,
+      "gpu_physical": 0,
+      "total": 4364836864
+    },
+    {
+      "time": 1792905247.9684536,
+      "host_cgroup": 4365099008,
+      "gpu_physical": 0,
+      "total": 4365099008
+    },
+    {
+      "time": 1792905248.478796,
+      "host_cgroup": 4365099008,
+      "gpu_physical": 0,
+      "total": 4365099008
+    },
+    {
+      "time": 1792905248.9891615,
+      "host_cgroup": 4365099008,
+      "gpu_physical": 0,
+      "total": 4365099008
+    },
+    {
+      "time": 1792905249.50235,
+      "host_cgroup": 4823511040,
+      "gpu_physical": 0,
+      "total": 4823511040
+    },
+    {
+      "time": 1792905250.0155823,
+      "host_cgroup": 5204307968,
+      "gpu_physical": 0,
+      "total": 5204307968
+    },
+    {
+      "time": 1792905250.5262263,
+      "host_cgroup": 5204074496,
+      "gpu_physical": 0,
+      "total": 5204074496
+    },
+    {
+      "time": 1792905251.0376735,
+      "host_cgroup": 5204074496,
+      "gpu_physical": 0,
+      "total": 5204074496
+    },
+    {
+      "time": 1792905251.549102,
+      "host_cgroup": 5204074496,
+      "gpu_physical": 0,
+      "total": 5204074496
+    },
+    {
+      "time": 1792905252.0587943,
+      "host_cgroup": 5204074496,
+      "gpu_physical": 0,
+      "total": 5204074496
+    },
+    {
+      "time": 1792905252.569285,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905253.0796938,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905253.589604,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905254.099987,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905254.6097064,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905255.120918,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905255.6322672,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905256.1424742,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905256.652574,
+      "host_cgroup": 5204221952,
+      "gpu_physical": 0,
+      "total": 5204221952
+    },
+    {
+      "time": 1792905257.1625283,
+      "host_cgroup": 5204094976,
+      "gpu_physical": 0,
+      "total": 5204094976
+    },
+    {
+      "time": 1792905257.6724079,
+      "host_cgroup": 5204357120,
+      "gpu_physical": 0,
+      "total": 5204357120
+    },
+    {
+      "time": 1792905258.182926,
+      "host_cgroup": 5204094976,
+      "gpu_physical": 0,
+      "total": 5204094976
+    },
+    {
+      "time": 1792905258.6936948,
+      "host_cgroup": 5204357120,
+      "gpu_physical": 0,
+      "total": 5204357120
+    },
+    {
+      "time": 1792905259.205327,
+      "host_cgroup": 5204357120,
+      "gpu_physical": 0,
+      "total": 5204357120
+    },
+    {
+      "time": 1792905259.716014,
+      "host_cgroup": 5204094976,
+      "gpu_physical": 0,
+      "total": 5204094976
+    },
+    {
+      "time": 1792905260.225491,
+      "host_cgroup": 5204094976,
+      "gpu_physical": 0,
+      "total": 5204094976
+    },
+    {
+      "time": 1792905260.7354763,
+      "host_cgroup": 5204357120,
+      "gpu_physical": 0,
+      "total": 5204357120
+    },
+    {
+      "time": 1792905261.2459066,
+      "host_cgroup": 5204357120,
+      "gpu_physical": 0,
+      "total": 5204357120
+    },
+    {
+      "time": 1792905261.7633772,
+      "host_cgroup": 5204357120,
+      "gpu_physical": 0,
+      "total": 5204357120
+    },
+    {
+      "time": 1792905262.273969,
+      "host_cgroup": 5204357120,
+      "gpu_physical": 0,
+      "total": 5204357120
+    },
+    {
+      "time": 1792905262.7846165,
+      "host_cgroup": 5204226048,
+      "gpu_physical": 0,
+      "total": 5204226048
+    },
+    {
+      "time": 1792905263.2975543,
+      "host_cgroup": 5204488192,
+      "gpu_physical": 0,
+      "total": 5204488192
+    },
+    {
+      "time": 1792905263.8077545,
+      "host_cgroup": 5204488192,
+      "gpu_physical": 0,
+      "total": 5204488192
+    },
+    {
+      "time": 1792905264.3175468,
+      "host_cgroup": 5204455424,
+      "gpu_physical": 0,
+      "total": 5204455424
+    },
+    {
+      "time": 1792905264.8276682,
+      "host_cgroup": 5204717568,
+      "gpu_physical": 0,
+      "total": 5204717568
+    },
+    {
+      "time": 1792905265.3374872,
+      "host_cgroup": 5204590592,
+      "gpu_physical": 0,
+      "total": 5204590592
+    },
+    {
+      "time": 1792905265.8475358,
+      "host_cgroup": 5204590592,
+      "gpu_physical": 0,
+      "total": 5204590592
+    },
+    {
+      "time": 1792905266.3575761,
+      "host_cgroup": 5204590592,
+      "gpu_physical": 0,
+      "total": 5204590592
+    },
+    {
+      "time": 1792905266.867775,
+      "host_cgroup": 5204852736,
+      "gpu_physical": 0,
+      "total": 5204852736
+    },
+    {
+      "time": 1792905267.377714,
+      "host_cgroup": 5204852736,
+      "gpu_physical": 0,
+      "total": 5204852736
+    },
+    {
+      "time": 1792905267.8875904,
+      "host_cgroup": 5204852736,
+      "gpu_physical": 0,
+      "total": 5204852736
+    },
+    {
+      "time": 1792905268.3980622,
+      "host_cgroup": 5204987904,
+      "gpu_physical": 0,
+      "total": 5204987904
+    },
+    {
+      "time": 1792905268.9075994,
+      "host_cgroup": 5204987904,
+      "gpu_physical": 0,
+      "total": 5204987904
+    },
+    {
+      "time": 1792905269.417514,
+      "host_cgroup": 5204951040,
+      "gpu_physical": 0,
+      "total": 5204951040
+    },
+    {
+      "time": 1792905269.927489,
+      "host_cgroup": 5204951040,
+      "gpu_physical": 0,
+      "total": 5204951040
+    },
+    {
+      "time": 1792905270.4377265,
+      "host_cgroup": 5204951040,
+      "gpu_physical": 0,
+      "total": 5204951040
+    },
+    {
+      "time": 1792905270.9478436,
+      "host_cgroup": 5205213184,
+      "gpu_physical": 0,
+      "total": 5205213184
+    },
+    {
+      "time": 1792905271.4577274,
+      "host_cgroup": 5205348352,
+      "gpu_physical": 0,
+      "total": 5205348352
+    },
+    {
+      "time": 1792905271.96689,
+      "host_cgroup": 5205348352,
+      "gpu_physical": 0,
+      "total": 5205348352
+    },
+    {
+      "time": 1792905272.4766977,
+      "host_cgroup": 5205151744,
+      "gpu_physical": 0,
+      "total": 5205151744
+    },
+    {
+      "time": 1792905272.986587,
+      "host_cgroup": 5205286912,
+      "gpu_physical": 0,
+      "total": 5205286912
+    },
+    {
+      "time": 1792905273.4972336,
+      "host_cgroup": 5205549056,
+      "gpu_physical": 0,
+      "total": 5205549056
+    },
+    {
+      "time": 1792905274.0075412,
+      "host_cgroup": 5205286912,
+      "gpu_physical": 0,
+      "total": 5205286912
+    },
+    {
+      "time": 1792905274.519138,
+      "host_cgroup": 5205549056,
+      "gpu_physical": 0,
+      "total": 5205549056
+    },
+    {
+      "time": 1792905275.0299575,
+      "host_cgroup": 5205811200,
+      "gpu_physical": 0,
+      "total": 5205811200
+    },
+    {
+      "time": 1792905275.5410504,
+      "host_cgroup": 5205811200,
+      "gpu_physical": 0,
+      "total": 5205811200
+    },
+    {
+      "time": 1792905276.050788,
+      "host_cgroup": 5205811200,
+      "gpu_physical": 0,
+      "total": 5205811200
+    },
+    {
+      "time": 1792905276.5607815,
+      "host_cgroup": 5205811200,
+      "gpu_physical": 0,
+      "total": 5205811200
+    },
+    {
+      "time": 1792905277.070449,
+      "host_cgroup": 5205811200,
+      "gpu_physical": 0,
+      "total": 5205811200
+    },
+    {
+      "time": 1792905277.580791,
+      "host_cgroup": 5205553152,
+      "gpu_physical": 0,
+      "total": 5205553152
+    },
+    {
+      "time": 1792905278.0919926,
+      "host_cgroup": 5205815296,
+      "gpu_physical": 0,
+      "total": 5205815296
+    },
+    {
+      "time": 1792905278.6022904,
+      "host_cgroup": 5205815296,
+      "gpu_physical": 0,
+      "total": 5205815296
+    },
+    {
+      "time": 1792905279.1125855,
+      "host_cgroup": 5205815296,
+      "gpu_physical": 0,
+      "total": 5205815296
+    },
+    {
+      "time": 1792905279.6251683,
+      "host_cgroup": 5205815296,
+      "gpu_physical": 0,
+      "total": 5205815296
+    },
+    {
+      "time": 1792905280.1359522,
+      "host_cgroup": 5205815296,
+      "gpu_physical": 0,
+      "total": 5205815296
+    },
+    {
+      "time": 1792905280.647472,
+      "host_cgroup": 5205950464,
+      "gpu_physical": 0,
+      "total": 5205950464
+    },
+    {
+      "time": 1792905281.1575084,
+      "host_cgroup": 5205753856,
+      "gpu_physical": 0,
+      "total": 5205753856
+    },
+    {
+      "time": 1792905281.668043,
+      "host_cgroup": 5205753856,
+      "gpu_physical": 0,
+      "total": 5205753856
+    },
+    {
+      "time": 1792905282.1775074,
+      "host_cgroup": 5205753856,
+      "gpu_physical": 0,
+      "total": 5205753856
+    },
+    {
+      "time": 1792905282.688282,
+      "host_cgroup": 5205753856,
+      "gpu_physical": 0,
+      "total": 5205753856
+    },
+    {
+      "time": 1792905283.20025,
+      "host_cgroup": 5205753856,
+      "gpu_physical": 0,
+      "total": 5205753856
+    },
+    {
+      "time": 1792905283.710495,
+      "host_cgroup": 5206016000,
+      "gpu_physical": 0,
+      "total": 5206016000
+    },
+    {
+      "time": 1792905284.2210615,
+      "host_cgroup": 5206016000,
+      "gpu_physical": 0,
+      "total": 5206016000
+    },
+    {
+      "time": 1792905284.7305093,
+      "host_cgroup": 5206278144,
+      "gpu_physical": 0,
+      "total": 5206278144
+    },
+    {
+      "time": 1792905285.240407,
+      "host_cgroup": 5206286336,
+      "gpu_physical": 0,
+      "total": 5206286336
+    },
+    {
+      "time": 1792905285.7505388,
+      "host_cgroup": 5206024192,
+      "gpu_physical": 0,
+      "total": 5206024192
+    },
+    {
+      "time": 1792905286.2601783,
+      "host_cgroup": 5206286336,
+      "gpu_physical": 0,
+      "total": 5206286336
+    },
+    {
+      "time": 1792905286.7703822,
+      "host_cgroup": 5206286336,
+      "gpu_physical": 0,
+      "total": 5206286336
+    },
+    {
+      "time": 1792905287.2802732,
+      "host_cgroup": 5206286336,
+      "gpu_physical": 0,
+      "total": 5206286336
+    },
+    {
+      "time": 1792905287.79044,
+      "host_cgroup": 5206024192,
+      "gpu_physical": 0,
+      "total": 5206024192
+    },
+    {
+      "time": 1792905288.3007045,
+      "host_cgroup": 5206155264,
+      "gpu_physical": 0,
+      "total": 5206155264
+    },
+    {
+      "time": 1792905288.8123655,
+      "host_cgroup": 5206155264,
+      "gpu_physical": 0,
+      "total": 5206155264
+    },
+    {
+      "time": 1792905289.3236477,
+      "host_cgroup": 5206155264,
+      "gpu_physical": 0,
+      "total": 5206155264
+    },
+    {
+      "time": 1792905289.8354223,
+      "host_cgroup": 5206155264,
+      "gpu_physical": 0,
+      "total": 5206155264
+    },
+    {
+      "time": 1792905290.3457203,
+      "host_cgroup": 5206155264,
+      "gpu_physical": 0,
+      "total": 5206155264
+    },
+    {
+      "time": 1792905290.8578336,
+      "host_cgroup": 5206417408,
+      "gpu_physical": 0,
+      "total": 5206417408
+    },
+    {
+      "time": 1792905291.3698716,
+      "host_cgroup": 5206155264,
+      "gpu_physical": 0,
+      "total": 5206155264
+    },
+    {
+      "time": 1792905291.8925285,
+      "host_cgroup": 5206155264,
+      "gpu_physical": 0,
+      "total": 5206155264
+    },
+    {
+      "time": 1792905292.4025729,
+      "host_cgroup": 5206417408,
+      "gpu_physical": 0,
+      "total": 5206417408
+    },
+    {
+      "time": 1792905292.913065,
+      "host_cgroup": 5206417408,
+      "gpu_physical": 0,
+      "total": 5206417408
+    },
+    {
+      "time": 1792905293.4239204,
+      "host_cgroup": 5206417408,
+      "gpu_physical": 0,
+      "total": 5206417408
+    },
+    {
+      "time": 1792905293.9345865,
+      "host_cgroup": 5206417408,
+      "gpu_physical": 0,
+      "total": 5206417408
+    },
+    {
+      "time": 1792905294.444358,
+      "host_cgroup": 5206417408,
+      "gpu_physical": 0,
+      "total": 5206417408
+    },
+    {
+      "time": 1792905294.9545767,
+      "host_cgroup": 5206417408,
+      "gpu_physical": 0,
+      "total": 5206417408
+    },
+    {
+      "time": 1792905295.4644504,
+      "host_cgroup": 5206306816,
+      "gpu_physical": 0,
+      "total": 5206306816
+    },
+    {
+      "time": 1792905295.9742603,
+      "host_cgroup": 5206568960,
+      "gpu_physical": 0,
+      "total": 5206568960
+    },
+    {
+      "time": 1792905296.4844954,
+      "host_cgroup": 5206306816,
+      "gpu_physical": 0,
+      "total": 5206306816
+    },
+    {
+      "time": 1792905296.994589,
+      "host_cgroup": 5206568960,
+      "gpu_physical": 0,
+      "total": 5206568960
+    },
+    {
+      "time": 1792905297.503853,
+      "host_cgroup": 5206306816,
+      "gpu_physical": 0,
+      "total": 5206306816
+    }
+  ]
+}

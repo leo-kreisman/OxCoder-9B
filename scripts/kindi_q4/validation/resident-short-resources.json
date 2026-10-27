@@ -1,0 +1,62 @@
+{
+  "unit": "kindi-q4-92d890565f",
+  "result": "Result=success\nExecMainStatus=0\n",
+  "failure": null,
+  "peak_total": 6986010624,
+  "samples": [
+    {
+      "time": 1792905227.0381632,
+      "host_cgroup": 2994176,
+      "gpu_physical": 177209344,
+      "total": 180203520
+    },
+    {
+      "time": 1792905227.5797987,
+      "host_cgroup": 128831488,
+      "gpu_physical": 425721856,
+      "total": 554553344
+    },
+    {
+      "time": 1792905228.1207557,
+      "host_cgroup": 210436096,
+      "gpu_physical": 1027604480,
+      "total": 1238040576
+    },
+    {
+      "time": 1792905228.6618106,
+      "host_cgroup": 237056000,
+      "gpu_physical": 1895825408,
+      "total": 2132881408
+    },
+    {
+      "time": 1792905229.2063682,
+      "host_cgroup": 224980992,
+      "gpu_physical": 2764046336,
+      "total": 2989027328
+    },
+    {
+      "time": 1792905229.7499728,
+      "host_cgroup": 228331520,
+      "gpu_physical": 3535798272,
+      "total": 3764129792
+    },
+    {
+      "time": 1792905230.2918334,
+      "host_cgroup": 246571008,
+      "gpu_physical": 4416602112,
+      "total": 4663173120
+    },
+    {
+      "time": 1792905230.8325894,
+      "host_cgroup": 232837120,
+      "gpu_physical": 5286920192,
+      "total": 5519757312
+    },
+    {
+      "time": 1792905231.4002383,
+      "host_cgroup": 749080576,
+      "gpu_physical": 6236930048,
+      "total": 6986010624
+    }
+  ]
+}

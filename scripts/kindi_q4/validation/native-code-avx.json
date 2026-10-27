@@ -1,0 +1,46 @@
+{
+  "prompt_ids": [
+    727,
+    884,
+    2784,
+    11,
+    292,
+    1590,
+    198,
+    262,
+    460
+  ],
+  "token_ids": [
+    264,
+    478,
+    292,
+    271,
+    727,
+    31192,
+    2784,
+    11,
+    292,
+    1590,
+    198,
+    262,
+    460,
+    264,
+    471,
+    292
+  ],
+  "text": " a + b\n\ndef subtract(a, b):\n    return a - b",
+  "load_seconds": 0.09829266100132372,
+  "ttft_seconds": 7.565768423999543,
+  "decode_tps": 1.097066355243392,
+  "completion_seconds": 21.238596806993883,
+  "stream": "0",
+  "context": 512,
+  "threads": "2",
+  "cgroup": {
+    "memory.max": "8000000000",
+    "memory.peak": "236072960",
+    "memory.swap.current": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+  },
+  "process_io": "rchar: 43993473\nwchar: 993849\nsyscr: 919\nsyscw: 20\nread_bytes: 262144\nwrite_bytes: 995328\ncancelled_write_bytes: 0\n"
+}

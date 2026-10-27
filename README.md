@@ -30,7 +30,9 @@ RAM, speed or quality claim for a Mac. No vision projector is included.
 Quantized source revision: `d108751ef79e645b07d04030427b6b67b284d07e`.
 Full-file SHA-256: `a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f`.
 
-Apache-2.0 according to the source model cards; see LICENSE and NOTICE.
+Model weights are Apache-2.0 according to the source model cards; see the LICENSE
+and NOTICE assets in the model release. The native Kindi fork has a separate
+AGPL-3.0 license at [scripts/kindi_q4/LICENSE](scripts/kindi_q4/LICENSE).
 Original and converter model cards are included unmodified. This mirror is not
 an official release by OrionLLM or prithivMLmods.
 
@@ -41,7 +43,15 @@ an official release by OrionLLM or prithivMLmods.
 1. **GGUF / llama.cpp with Metal:** the existing deployment and comparison baseline.
    Approximately **17 output tokens/s** has been reported on an M3-family Mac;
    this is an operator observation, not a reproducible benchmark published by this repository.
-2. **MLX / Kapitsa:** an experimental second deployment using a separately downloaded
+2. **Native Kindi Q4 / CPU, CUDA and experimental Metal:** uses a losslessly
+   repacked version of the same GGUF. The complete CPU/CUDA implementation,
+   verification tests and recorded resident-memory results are included in this
+   repository. Start with the [native runtime guide](scripts/kindi_q4/README.md).
+   For Apple Silicon, follow the [detailed native Metal implementation plan](scripts/kindi_q4/METAL_IMPLEMENTATION.md);
+   it distinguishes the existing experimental bridge from the remaining full-GPU
+   implementation and defines correctness, memory and speed acceptance gates.
+   Native Metal does not require MLX.
+3. **MLX / Kapitsa:** an experimental second deployment using a separately downloaded
    native 4-bit OxCoder checkpoint. Validate plain decoding first, then compatible
    speculation and prefix caching. oMLX is a separate comparison engine.
 
@@ -58,3 +68,32 @@ Use the [run manifest](docs/evaluation/run-manifest.example.json),
 [result template](docs/evaluation/RESULTS-TEMPLATE.md), and
 [phase checklist](docs/evaluation/IMPLEMENTATION-CHECKLIST.md) to record evidence.
 The GGUF release and its checksums are unchanged; the release does not bundle MLX weights.
+
+## Native Q4 implementation and recorded validation
+
+The native runtime is in `scripts/kindi_q4/`, with tests in `tests/kindi_q4/`.
+The [validation report](scripts/kindi_q4/VALIDATION.md) and
+[raw measurement records](scripts/kindi_q4/validation/) include a resident CUDA
+run of **25.66 output tokens/s over 64 output tokens**, with a sampled
+**6,785,564,672-byte host-plus-GPU peak**. This is the recorded native runtime
+result, not a benchmark of the existing llama.cpp deployment. Normal resident
+generation does not stream dense weights from SSD. Historical forced-streaming
+measurements are retained for comparison and are not the recommended OxCoder mode.
+
+The native guide covers installation, conversion, integrity checks, CPU/CUDA
+execution, API serving, prefix snapshots, memory limits and troubleshooting.
+The Metal handoff specifies each implementation phase and its tests, including
+same-machine comparison against llama.cpp before selecting a default runtime.
+The independent MLX evaluation plan remains available as an optional alternative.
+
+To obtain the runtime and documentation, clone or update this source repository:
+
+```sh
+git clone https://github.com/leo-kreisman/OxCoder-9B.git
+cd OxCoder-9B
+# For an existing clean checkout instead: git pull --ff-only
+```
+
+The existing model release contains weights and reconstruction utilities. Its
+`download.sh` does not install this runtime or update a source checkout. Use the
+model from that release with the conversion instructions in the native guide.

@@ -1,0 +1,21 @@
+{
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "cuda_reference_matches": [
+    16,
+    17
+  ],
+  "training": false,
+  "mlx": false,
+  "model_profile": "dense OxCoder9B Qwen3.5 Q4_K/Q6_K",
+  "resident_decode_tps": 25.663137248681398,
+  "stream_decode_tps": 0.37126448277399626,
+  "stream_resident_token_parity": true,
+  "http_and_restart_pass": true,
+  "metal_validated": false,
+  "cpu_reference_matches": [
+    16,
+    17
+  ],
+  "unit_tests_passed": 5,
+  "cpu_cgroup_peak_bytes": 5206568960
+}

@@ -1,0 +1,92 @@
+{
+  "unit": "kindi-q4-4084b035ea",
+  "result": "Result=success\nExecMainStatus=0\n",
+  "failure": null,
+  "peak_total": 6785564672,
+  "samples": [
+    {
+      "time": 1792905196.0983396,
+      "host_cgroup": 3031040,
+      "gpu_physical": 177209344,
+      "total": 180240384
+    },
+    {
+      "time": 1792905196.6380644,
+      "host_cgroup": 132960256,
+      "gpu_physical": 425721856,
+      "total": 558682112
+    },
+    {
+      "time": 1792905197.1778007,
+      "host_cgroup": 219176960,
+      "gpu_physical": 1077936128,
+      "total": 1297113088
+    },
+    {
+      "time": 1792905197.7184682,
+      "host_cgroup": 219578368,
+      "gpu_physical": 1925185536,
+      "total": 2144763904
+    },
+    {
+      "time": 1792905198.258543,
+      "host_cgroup": 239718400,
+      "gpu_physical": 2764046336,
+      "total": 3003764736
+    },
+    {
+      "time": 1792905198.7990224,
+      "host_cgroup": 243974144,
+      "gpu_physical": 3565158400,
+      "total": 3809132544
+    },
+    {
+      "time": 1792905199.3396764,
+      "host_cgroup": 248324096,
+      "gpu_physical": 4416602112,
+      "total": 4664926208
+    },
+    {
+      "time": 1792905199.8798997,
+      "host_cgroup": 243908608,
+      "gpu_physical": 5330960384,
+      "total": 5574868992
+    },
+    {
+      "time": 1792905200.4220111,
+      "host_cgroup": 548634624,
+      "gpu_physical": 6236930048,
+      "total": 6785564672
+    },
+    {
+      "time": 1792905200.975254,
+      "host_cgroup": 227266560,
+      "gpu_physical": 6236930048,
+      "total": 6464196608
+    },
+    {
+      "time": 1792905201.515547,
+      "host_cgroup": 227422208,
+      "gpu_physical": 6236930048,
+      "total": 6464352256
+    },
+    {
+      "time": 1792905202.0561786,
+      "host_cgroup": 227409920,
+      "gpu_physical": 6236930048,
+      "total": 6464339968
+    },
+    {
+      "time": 1792905202.59624,
+      "host_cgroup": 227438592,
+      "gpu_physical": 6236930048,
+      "total": 6464368640
+    },
+    {
+      "time": 1792905203.1371748,
+      "host_cgroup": 227434496,
+      "gpu_physical": 6236930048,
+      "total": 6464364544
+    }
+  ]
+}

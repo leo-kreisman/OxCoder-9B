@@ -1,0 +1,90 @@
+{
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "reference_commit": "5e7f6271c06b9104862ab799278a1b7f1323a449",
+  "method": "llama.cpp CPU, ctx512, n_gpu_layers0, greedy, two threads; chat stops at EOS",
+  "prompts": [
+    {
+      "prompt": "def add(a, b):\n    return",
+      "ids": [
+        727,
+        884,
+        2784,
+        11,
+        292,
+        1590,
+        198,
+        262,
+        460
+      ],
+      "expected": [
+        264,
+        478,
+        292,
+        271,
+        727,
+        31192,
+        2784,
+        11,
+        292,
+        1590,
+        198,
+        262,
+        460,
+        264,
+        471,
+        292
+      ]
+    },
+    {
+      "prompt": "<|im_start|>user\nWrite a Python function that returns the square of a number. Code only.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "ids": [
+        248045,
+        846,
+        198,
+        7734,
+        264,
+        12654,
+        709,
+        421,
+        4523,
+        279,
+        9057,
+        314,
+        264,
+        1324,
+        13,
+        5927,
+        1132,
+        13,
+        248046,
+        198,
+        248045,
+        74455,
+        198,
+        248068,
+        271,
+        248069,
+        271
+      ],
+      "expected": [
+        71093,
+        12305,
+        198,
+        727,
+        9057,
+        1393,
+        1590,
+        198,
+        262,
+        460,
+        307,
+        2972,
+        220,
+        17,
+        198,
+        71093,
+        248046
+      ]
+    }
+  ]
+}

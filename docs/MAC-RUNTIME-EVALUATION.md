@@ -2,6 +2,11 @@
 
 Specification date: **2026-10-23**. Status: **implementation plan; target-Mac results pending**.
 
+For the separately implemented GGUF-to-native Kindi Q4 path, use the
+[native runtime guide](../scripts/kindi_q4/README.md) and
+[Metal implementation handoff](../scripts/kindi_q4/METAL_IMPLEMENTATION.md).
+That path does not require MLX. This document remains the optional MLX evaluation.
+
 ## 1. Objective and deployment boundary
 
 Evaluate a second inference implementation for OxCoder-9B without replacing the

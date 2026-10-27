@@ -1,0 +1,42 @@
+"""Tensor-core (int8 mma.sync) products for sm_80+ cards, compiled at start like the other kernels.
+
+The image's NVRTC (CUDA 10.2) only targets compute_75 and has no mma.sync m16n8k32, but it passes inline PTX through
+unchecked: tc.cu is compiled to PTX for compute_75, the PTX header is raised to ISA 7.1 / sm_8x, and the driver's
+JIT (any driver new enough for the card) compiles that PTX. The cubin lands in the driver's JIT cache
+(CUDA_CACHE_PATH), so later starts do not recompile."""
+import os
+import re
+
+import cupy as cp
+from cupy.cuda import compiler, function
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+NAMES = ("k_tc_pack", "k_tc_q8", "k_tc_mv2", "k_tc_mv4", "k_tc_mv8", "k_tc_sum", "k_tc_mm4", "k_tc_mm8", "k_tc_mm16",
+         "k_tc_mv3_2", "k_tc_mv3_4", "k_tc_mv3_8", "k_tc_mm2")
+
+
+def supported(card=None):
+    p = cp.cuda.runtime.getDeviceProperties(cp.cuda.Device().id if card is None else card)
+    return p["major"] >= 8
+
+
+def _patched_module(src, arch):
+    prog = compiler._NVRTCProgram(src, "tc.cu")
+    ptx, _ = prog.compile(("-arch=compute_75",))
+    if isinstance(ptx, bytes):
+        ptx = ptx.decode()
+    ptx = re.sub(r"\.version \d+\.\d+", ".version 7.1", ptx, count=1)
+    ptx = re.sub(r"\.target sm_\d+", ".target " + arch, ptx, count=1)
+    m = function.Module()
+    m.load(ptx.encode())
+    return m
+
+
+class TCKernels(object):
+    def __init__(self, extra=""):
+        p = cp.cuda.runtime.getDeviceProperties(cp.cuda.Device().id)
+        arch = "sm_%d%d" % (p["major"], p["minor"])
+        src = open(os.path.join(HERE, "tc.cu"), encoding="utf-8").read() + extra
+        self.mod = _patched_module(src, arch)
+        for k in NAMES:
+            setattr(self, k, self.mod.get_function(k))

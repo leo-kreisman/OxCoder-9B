@@ -1,0 +1,32 @@
+{
+  "prompt_ids": [
+    727
+  ],
+  "token_ids": [
+    4211,
+    458,
+    94398,
+    5793
+  ],
+  "text": "module ElixirWeb",
+  "load_seconds": 0.32796752900321735,
+  "ttft_seconds": 4.008079761995759,
+  "decode_tps": 0.27086694882078316,
+  "completion_seconds": 15.083628155996848,
+  "stream": "1",
+  "context": 512,
+  "threads": "2",
+  "max_rss_bytes": 348483584,
+  "gpu_host_peak_sampled": 2037819392,
+  "weight_cache_hits": 4,
+  "weight_cache_misses": 808,
+  "logical_weight_reads": 22441426944,
+  "gpu_cache_limit": 1600000000,
+  "cgroup": {
+    "memory.max": "1699999744",
+    "memory.peak": "1061044224",
+    "memory.swap.current": "0",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+  },
+  "process_io": "rchar: 22490753836\nwchar: 993689\nsyscr: 6755\nsyscw: 21\nread_bytes: 22451847168\nwrite_bytes: 995328\ncancelled_write_bytes: 0\n"
+}

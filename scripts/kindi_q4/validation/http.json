@@ -1,0 +1,111 @@
+{
+  "health": {
+    "ok": true,
+    "kindi": "0.2.0",
+    "commit": "28ceaf772a51",
+    "model": "oxcoder9b-q4-kindi",
+    "ctx": 512,
+    "head": "exact",
+    "uptime_s": 0,
+    "busy": null,
+    "stats": {
+      "requests": 0,
+      "prompt_tokens": 0,
+      "cached_tokens": 0,
+      "completion_tokens": 0
+    },
+    "gpu_free_mib": 15442,
+    "gpu_total_mib": 15848
+  },
+  "first": {
+    "id": "chatcmpl-18d41487b8464c84849ee8c6",
+    "object": "chat.completion",
+    "created": 1792905069,
+    "model": "oxcoder9b-q4-kindi",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```python\ndef square(n):\n    return n ** 2\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 16,
+      "total_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "timing": {
+      "prompt_s": 5.88,
+      "prompt_new_tokens": 27,
+      "gen_s": 0.62,
+      "gen_tok_s": 25.76
+    }
+  },
+  "second": {
+    "id": "chatcmpl-60385590301c4f9ca63f9323",
+    "object": "chat.completion",
+    "created": 1792905076,
+    "model": "oxcoder9b-q4-kindi",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```python\ndef square(n):\n    return n ** 2\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 16,
+      "total_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 20
+      }
+    },
+    "timing": {
+      "prompt_s": 0.97,
+      "prompt_new_tokens": 7,
+      "gen_s": 0.62,
+      "gen_tok_s": 25.69
+    }
+  },
+  "streaming_pass": true,
+  "after_restart": {
+    "id": "chatcmpl-98c778b54b22469aa0e22aca",
+    "object": "chat.completion",
+    "created": 1792905080,
+    "model": "oxcoder9b-q4-kindi",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```python\ndef square(n):\n    return n ** 2\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 27,
+      "completion_tokens": 16,
+      "total_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 20
+      }
+    },
+    "timing": {
+      "prompt_s": 5.19,
+      "prompt_new_tokens": 7,
+      "gen_s": 0.62,
+      "gen_tok_s": 25.71
+    }
+  }
+}
