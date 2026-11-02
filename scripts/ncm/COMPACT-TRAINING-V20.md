@@ -85,6 +85,14 @@ storage compression by itself is not reported as a training speedup. Its
 benefit is memory headroom for packing and freeing one device. The throughput
 decision must include the packing and actual-optimizer measurements.
 
+The completed packing comparison measured 1.3613× for 64/69-token prompts,
+1.2964× for 64/69/128/256-token prompts, and 0.9695× for 512/1,024-token
+prompts. All three passed the numerical checks. Because the final case was
+slower, the current coordinator leaves independent-example packing disabled.
+These are training-pass measurements, not generation throughput or a coding
+score. A future context-specific packing policy also needs a composed
+packed-versus-independent-level comparison before deployment.
+
 The training curriculum rechecks complete offline teacher responses in the
 immutable addition archives. Two responses contained textual tool-call tags
 without an executed tool result, despite a normal API stop reason. All their

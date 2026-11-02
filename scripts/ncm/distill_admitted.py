@@ -125,11 +125,14 @@ def run(a):
         'seed': a.seed, 'temperature': 0, 'max_tokens': a.max_tokens,
         'per_source': a.per_source, 'prompt_limit': a.prompt_limit,
         'selection': 'source-balanced random distinct admitted training conversations',
-        'source_revisions': am['source_revisions'],
+        'source_revisions': am.get('source_revisions') or {am['dataset']: am['revision']},
         'implementation_sha256': file_sha(__file__),
         'teacher_role': 'offline response distillation only; no student inference fallback'}
     if exclusion_sha is not None:
         identity['excluded_selection_sha256'] = exclusion_sha
+    if am.get('license'):
+        identity['source_license'] = am['license']
+        identity['source_attribution'] = am.get('attribution')
     ip = out / 'identity.json'
     if ip.exists() and json.loads(ip.read_text()) != identity:
         raise ValueError('Existing distillation identity differs')

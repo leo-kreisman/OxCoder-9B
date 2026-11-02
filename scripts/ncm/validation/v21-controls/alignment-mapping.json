@@ -1,0 +1,4041 @@
+{
+  "prepared_sha256": "3457a3581493a0b56bb2f937fc477f26972597c28a9e85e02c1e1a5d1105ebb4",
+  "records": [
+    {
+      "id": "140b39d7326e31d3d26ee9a531a5df8c9a09e7dbeb939fca869f4a3784370ff0:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 352,
+      "valid_bytes": 114
+    },
+    {
+      "id": "f0369a0ed135db97e69b9fb2f67b4f6bc6a9ad95001ed410407714edb382e925:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 485,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ec3067f499627069d1b81cfea702676ff84e33f3031ba17ff0885e0c9bf42399:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 225,
+      "valid_bytes": 128
+    },
+    {
+      "id": "faa5dda6534c7629d883d46bd6c63c01565090256dce61ae9e46ea400f4b045f:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 224,
+      "valid_bytes": 128
+    },
+    {
+      "id": "76b02619ee50b547a9677b76daec6dcaa98233489de3bf967f3abbc458240cf3:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 401,
+      "valid_bytes": 128
+    },
+    {
+      "id": "78758bf2df382a391421d2f2da4011907b2d4c79ca82cc7caf59fb6ce9db8c59:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 338,
+      "valid_bytes": 33
+    },
+    {
+      "id": "6b89788a0a74a342e5806726754a8cecbcb4b2b8d7d9650f13d0b5d07ba195cb:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 390,
+      "valid_bytes": 128
+    },
+    {
+      "id": "34f882f77246dbebdfd04996243c500a28dfcf1d6d645749d8ec1e11e97dd224:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 168,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5b08c7a11253a024e250870a3853575a2ac3e7e6672811593989770c5a8ae2c5:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 285,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7f19e9515c0617a7ac4ec0a2ea430ae61c55c16259186b326d69e5bcfe2da005:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 206,
+      "valid_bytes": 92
+    },
+    {
+      "id": "175f6c8e2a9a42bc2b35c18db6c1c986939274646bb82c3fe9380f8cdf028635:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 81,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e553a79120604abf61f5ba40f5ef910457203c2f6bd66d9bab56331a4189f621:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 220,
+      "valid_bytes": 128
+    },
+    {
+      "id": "553d4ebab3e28787abebc8ffaa0deeee5bd05ef55f02e8a7b07d95e38a977ea6:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 261,
+      "valid_bytes": 128
+    },
+    {
+      "id": "24ad25e6e8ae0faa0f613cbb6f716f6f493ca14db7487b199f590e07d322d0fb:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 363,
+      "valid_bytes": 128
+    },
+    {
+      "id": "74431ab5f7c7a40956a804614436d0ba1cf0bdb438a4570b0ec31914fee92834:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 395,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b8c5f7acd554d3aefbee8f85d554d4515ce4d0c4096b3a2c0d45df541d78d4d7:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 402,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c16322a691a706e093670347f297777e31e7529feb80a9e5af666ff9119f11e5:1:teacher-v19:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 134,
+      "valid_bytes": 128
+    },
+    {
+      "id": "227f2581490029740ec6ba47a651318c86961c6fccf58b54f7ebb57fb4dd6436:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 350,
+      "valid_bytes": 113
+    },
+    {
+      "id": "28db1ae132676fc386d5b97ce44519b559f36e563a18bd3167130a96184e3c4f:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 111,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cd9066d1ea028905db53de3d3cbd6ed11ea4ffffcf0c60cf411d3080bad15637:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 392,
+      "valid_bytes": 128
+    },
+    {
+      "id": "25b08f175ee77eba63c00789dabb0e26619ad40136fc88d995c8b42824f5dca6:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 143,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c5f9f524d4bd43c6dcb9a68c46fbfb257f35079a493b862b59a199a36846e188:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 234,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6468fb4fa01b93be0ed051c1bf5f82ae96a492e1418d117953d1c59a9c31cd00:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 275,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0bd855c0866f1204a0f4863d3bf6aab91d7a40115cea8135759eae26364c727d:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 248,
+      "valid_bytes": 128
+    },
+    {
+      "id": "31cb0c06b539187165c4a4d350c14f29e532f9504c8f2d30f50a5921e5efba4a:1:byte-12",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 455,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f66d57d4080aba452d2c03540c5f0f65015b3b4dccf39192672bf3f0879671fd:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 532,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c27d07c7fffc6d2e1bcc2bd058d54d09b714869a88ab63177f9ef0adfda69751:1:byte-13",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 467,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3053dc3d11a1b368b4992bb398fe7cb6e2b819cff341e218bcd6336a6005e322:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 231,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f8b36416cfce7ae5fd40ccbd1c5a22cfc258d015e13defc0e35510779c1c8c0d:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 372,
+      "valid_bytes": 128
+    },
+    {
+      "id": "43fc9cb36e570751a528662f5758b4c6efba1aa3f3fd8c29a3f5e7783b95f437:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 463,
+      "valid_bytes": 26
+    },
+    {
+      "id": "91869a611f8751da527d731cc499fc68e7de311872bb29f07926c3fc265aad5c:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 171,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6fa04043b3b24e2c6dec36208e773b4186f14f86a6344b2f429110220458d051:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 389,
+      "valid_bytes": 128
+    },
+    {
+      "id": "36b7938238ab2abe38ce93a27d81444f0fa6f632cec788998f88668620c6b80b:1:byte-17",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 467,
+      "valid_bytes": 128
+    },
+    {
+      "id": "47b702c90fd436dbfe788fa9f1719aa0c741b1d373ec8826f0bd732e310ef282:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 412,
+      "valid_bytes": 91
+    },
+    {
+      "id": "9e9e81d7caaf79bafe3194b8ee562ebbd82d56026cacb663c721a77170ec49a4:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 85,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4da0f500c5cfd9095cfd8a74f5ef1b0fd0f08c6f15528c52c497c6eadce654b5:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 383,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e3c4dc43d73efa2cc48ed11563271d3c98dc85c19f5476f7984a49db5db64abc:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 72,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1da7b80170b1131209c07f4994e19ed81f312b85ac07a5bf129aa7a4aa133c96:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 320,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4d235c5de22f2dd37445762009f88d78773b1b25a6b640ce515555ae31785840:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 79,
+      "valid_bytes": 128
+    },
+    {
+      "id": "145490338d7077ceae227280d36ed7e06946ec4b2b022df045de2269008e4338:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 302,
+      "valid_bytes": 128
+    },
+    {
+      "id": "40d353386683dd77594b3068f07f130658ce4c83860d2d1c6d761b4c444c5eae:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 98,
+      "valid_bytes": 128
+    },
+    {
+      "id": "027a0c605316683635cfd59770653edc2b2567741e96908b053bc4a4a48eb717:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 320,
+      "valid_bytes": 71
+    },
+    {
+      "id": "0b17b9e87872223ecb976efe19c1f1d7741d237079a145202d620af940442d62:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 382,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bdd779bafa56e449f5e1727265de33f2b93ed729c3163b55af702a42a567cd79:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 225,
+      "valid_bytes": 128
+    },
+    {
+      "id": "dfaadf711120b420ba68f401dc39dbd53b77aa08f1b0113feccace96bdd528bc:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 179,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7d107c2cd8045aff1d4a41db780245f717de6185900fe63bf5ba9c8a291fe17d:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 481,
+      "valid_bytes": 128
+    },
+    {
+      "id": "dcd5db8efb6b65c5d320ab84d15d574dea55d3c1de1b2d071f40f12bef0bb777:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 166,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bdbacff4e0daa67ca4840a86c02d59b0792f1cdf62e4b93043c854f6f79f7b48:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 140,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a63143686db5a687314d7d4de83b36c8e41fc705c5979541512757163ce0f75e:1:byte-14",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 436,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bb4b4a1adb64fc1d85f85bc9add9fc126c24b64c430bf133b7cf60d18d66abc6:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 301,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f4bd101ab68d79e0f37a606327eedb6a8b787aac3246f6269ed34649bef38346:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 86,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a0ac522245dcd8e883b9fd5e0d73126b52464ac1d2a25e99cbd1e28e8ceb8fcf:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 198,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bb6b8e41f3ed84b2bf68d2006d8488a674994e213b734e96aa55407c10b52972:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 324,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a7165cfec3589066b13cb852edf6b723c8a4689fdbc26dc2a602689017dba217:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 216,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fdb918826e729fcefd7b6b3020e5d59f26cef381013fce553d56c28f47826b72:1:byte-15",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 448,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d4feed7256ab37d6bfad82e6062c503d00f82f15c311861347157b3cd8d9b593:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 266,
+      "valid_bytes": 125
+    },
+    {
+      "id": "015621fa94103db4681e126b42ca90710df471c8e6828b6ca129afe2b8468d26:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 292,
+      "valid_bytes": 128
+    },
+    {
+      "id": "157b651bbafe2bab2025ea3f9ce29179a51f9654bd8c410b15210bc5c7040717:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 297,
+      "valid_bytes": 100
+    },
+    {
+      "id": "90a22c3d66a09c48abf78c8f879b2e50276c986682621d20fe821a43ea0a3c42:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 102,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5e762a1ff32686d5dfb20743a44c8457c9998ef7d9344ffef4741957618c62ae:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 298,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a2f8f1311d9009f8afe94222ad8f1df900b34a38cad366dae9897a2b05530294:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 328,
+      "valid_bytes": 128
+    },
+    {
+      "id": "97702b2d0b8b36af342b0bcce4b7364d1e49ee815167329e8d7e59c604e9d817:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 204,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3fbc5c518a8b5357bbe1b88bd344c8ec2ed60b3ae6fb1e0211c8cba62e69c3bb:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 486,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9b70c33a5fa929390b7b9456a79c86a9274eafeb0795a3c8f43a5c72e842df30:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 409,
+      "valid_bytes": 94
+    },
+    {
+      "id": "d5daca754af001d14fe744a575443dce08ffc84a498251c7a3e6d1f757974ead:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 385,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b9771a78e19cd785c9cc260763d1259b198d676bd7f323bbd07d7ccabe7eee96:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 431,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7780d073fcfd1a1104a537355065a015167678d3a92193d816070eb566ea3266:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 170,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8ab36bebfbfc12db6852e241c5abe14baf3201db7dbaaa3ee92bad353fb25781:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 381,
+      "valid_bytes": 31
+    },
+    {
+      "id": "f26a48b9a45b497fe92b59826fd8d2902fe40a2308d602e0e0bfd15283a3ee9d:1:byte-12",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 404,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d4205d28efd1fc5f98d177315ff7b1b9d3f49533f0685780a34d01047a25d125:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 388,
+      "valid_bytes": 128
+    },
+    {
+      "id": "77129bb4a57f170a0992a99cf5362162ab7b6926cc6becf9d37a0bf962b4945d:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 87,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bac0502ab163fd67961da7e80691ab9cbe363c7e07575c80dcef73a23133d13e:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 228,
+      "valid_bytes": 128
+    },
+    {
+      "id": "676899b9ba109e4229e302fade91cc65f1e150927bfc153193e91d00f33ef2cb:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 154,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d72b2a0c5d01cb528cd70444513d37e69a87a9dcb7fdc5973a55d86c37126bc5:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 209,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7dbb0235ae300825b7cdc389127446e0f40d45d7ca113ee6fd181cc545a04ff8:1:byte-12",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 470,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9670096621f2c99b319df3d3f5828fc0633c120be84d588d367c969eb9d57d4e:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 363,
+      "valid_bytes": 64
+    },
+    {
+      "id": "5a1dc10cfe2bb457f3772b5815218660a8bcaee787e46ad8de47078258487963:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 300,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c1ccf79771f7d536e2e9bf6cf485c26691553367b77817848c5570c0244bdb22:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 247,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f703c234530c8cd080d559dd9a3e8f258cde62032bd79426bc3f94cdacd096fe:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 331,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8a2c94f5619daa518aac29419be0b43e4c9ccb8de6a5db34df9db70c294c8562:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 326,
+      "valid_bytes": 128
+    },
+    {
+      "id": "eb0fa3786ef59899946049b2055943d7a43f042d5afd6d8d6a8b9a7afb4595b4:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 223,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0f1074ceeaeb0e4b6509f659599e697a4d1477d148d9b8c6ffc23d9192ec98c7:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 293,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ea57c21ec79aa2a5dde2547a1e9b312a5d49e16f9c50ce542277d5505add5da0:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 220,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ac82efbfc17439f777047806eb9dd890a49fc1d127c5abef15ff72eadc7ae6d8:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 429,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c921970007d2b6ddda856557db5a40b12a2de56fb93aaf41bef829359cf62b65:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 260,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9534f4a0ae522630977e91e92c2ba1452bad2088b705ff3c190bbdf98a7378be:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 275,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b4606e024bd75e75424a6ddeaa6d00c132d7c9091711f2d523157f434fd0b4a5:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 226,
+      "valid_bytes": 128
+    },
+    {
+      "id": "dc8b77758a0f9606433f32bfa8281611ef0a8285bec0f16ec7a63b57c2147403:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 233,
+      "valid_bytes": 128
+    },
+    {
+      "id": "025d156e39d2303bc46dc82a772b1ea577aff9e26048fc7e07bc6093ba641d1a:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 145,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a81891b725d51d6af095429eaa61d7c9c5249dd4c70b5820a63de684ad2bd274:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 385,
+      "valid_bytes": 35
+    },
+    {
+      "id": "35b296c222eb07245e9e8890d33470150bbb9a3c1268dd1ca8e2d212e5db59ab:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 259,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d79fd81640b215b4cf060344a29d56e23d7b04d657971d1fd522b7fa0f0a8474:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 429,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d3c270e37204f0ab726b7a3b0f24ab5a09a9f767e97bb82595dbb01408f94093:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 368,
+      "valid_bytes": 128
+    },
+    {
+      "id": "88d64bbfc6d548e48a4929762b2a5e5a99d8496b3a9772dc87849223e4a89d3a:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 407,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a4241e02597bb815b47821a4133773958c11a05bb10751dbd72aca4ba62fd633:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 338,
+      "valid_bytes": 105
+    },
+    {
+      "id": "0e0782b5393b670efb66fddfb40f756132c9b816e23298dbaf05de1a115c548c:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 432,
+      "valid_bytes": 113
+    },
+    {
+      "id": "bce738ad88b03c8f6cb286fd4c969367d3da630ba38b34c1828e778f87bb8862:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 174,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bf978c7dee0a704d94298b48a15e6d578b1c98113603038ff712053dbfe96959:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 288,
+      "valid_bytes": 128
+    },
+    {
+      "id": "16a37b11c7d0caece0630991511c0ba73d79fd0ae006ac2ae15504b96b39e1e1:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 358,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5c916c665eb297b85b801536f1ae20131a6f8639718c997a8b88f5f65051a584:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 271,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2c64332c65377509244db0026d567eadf5fb27cfbbe82f6f1673704660d532ef:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 132,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a268f3d86082d921954048ba548a1e4edb54971c8bd97efa723fc0d594e4a63a:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 218,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3178b4b0f452a497526243d1512aeab12af4493bb0315f294546e55e338cb528:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 202,
+      "valid_bytes": 128
+    },
+    {
+      "id": "548fe9d6c93e8c3fd73bb64403a07e0248ac7578fc304670a634e2fc8aec6675:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 456,
+      "valid_bytes": 128
+    },
+    {
+      "id": "08e35aa095e1c2c12305b929424c203c221e46fca4a980490d05ab0988cf1365:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 503,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ceec9ba464a1da501a91af07d86913fb48f0a85e7d1d64c41151061ef6e89ebd:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 339,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0673135479222468d128caea3ccb16ab68846ebef0e12f5880ea95b56b2fcf31:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 306,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f737f4a6aced8a0b34932cb5e44e629713ff2421eb2485a1d5e7f4d57d612613:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 315,
+      "valid_bytes": 128
+    },
+    {
+      "id": "43440537c4fab39f31c3518b9574ae7489f792670582e1107e8037c1f00197e3:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 99,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b4dfb0b197c2aa9095919a99387440472079d0c32f68150309be5b89664a7890:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 283,
+      "valid_bytes": 128
+    },
+    {
+      "id": "49c91524dc1d90dc21efa2c6ec97de9644f8fb7a8213597384f29e9f647f964e:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 204,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a63ef736c4c81303640b2bf65ddc98c14f595933c86e9a512d52a96feb545706:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 493,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e59928a6609cc2cfb61d6d77458f3ffa1e7bd28087e5ed897feb957b293b23fb:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 108,
+      "valid_bytes": 128
+    },
+    {
+      "id": "095d92b871ec068d9cd489cd93817b6b129324540f1a2a5f21e72784ad780921:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 181,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9a78e4e3999f5abd8048fd16738801c3bd48f2f4e4c359bef816950e8e374fab:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 246,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ec374a636d56c0705ef171c59aae844d0881ae621b291d143221d7fe65fced87:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 241,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7ae69e4bebd648d1c9e796888391d12bd356dcae8effccf6f96bd1d696d71fc8:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 89,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b8ad2c8224bb2234e1a0e6ec7012347b041862e243d0af7fbbcfbd42cc35c4b6:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 213,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fe6f10e65648e40aa6638f50ab9bdd5ceba0ad3e6b2a5f7f2e12e4f5c90f01c8:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 461,
+      "valid_bytes": 128
+    },
+    {
+      "id": "db80b57d34d076bdc224665872c8f42524c3ef01c297e946364302a129eedab0:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 175,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fce8aed2f4163e74f4cfcc6824bf91c68a0416f2d85e8cecfca0928247f553df:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 97,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e6fcda8dd8922fe02443a84becdaf34b18a1d5457a44ccafd78600d810079cbe:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 336,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6d55fcdf27310b9bed93d9a3ef50df352b31bb5c263c7f5e0e91f10b9ddef7fd:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 191,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fc7007adc5c662dfc1d387f78162be09df65dba3a1871262e3bd597be70d3415:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 452,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b83d602cb06a6796c84c7def80d361a7cf040c56669d0106472a41f3142c15ee:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 106,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8721eeed4f9ffdeaa4b3587d2aea8fd952b8ed706b71555ebfe836b2cd33011b:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 221,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1e45e86054f126b702159fdc335169f4c19d2696e4081beca9374edc6e363e86:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 281,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5eed335e5f18837fb02797510d9392e48c6461aa3485a897c8a1954ffad48629:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 358,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8d487c1734914b7c410d5db0da16b0c1a5675a97184e41cef04854999000a2f1:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 424,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4b251b1c683fb252915fc1a98eb12503e337c9b78ebd607fa9afce20d970ddfc:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 341,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ff5b11f807f4ac8509bcd96350dba5c01b388181156ff381b4a30fc8126d83b3:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 84,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e5ad14792f23f4b75ac8ec72f7bd92ac6ef041d433e4942d2a19e3189e5c7624:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 392,
+      "valid_bytes": 128
+    },
+    {
+      "id": "520d956250d0226915a0924e0ad60aa6dc56cffe9659c3d18b43dca9c996978c:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 155,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6606160c28bdfd9759ed3c95d283eeb78e8da44f706e5157fef566373c5fb33a:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 221,
+      "valid_bytes": 128
+    },
+    {
+      "id": "51faf22960ddcf61c61a03e47bfcd596898794434983d512163295c928b1b8e7:1:byte-12",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 390,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a813ddb050804ee80536edde32a8a7128b646a5ceccc7889a120716b1b5ac2a4:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 232,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cb758cf30568c56e29ccd0b011bfdbb2142476a3ac2ea08516ba4ff6d072c129:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 295,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a181cd15109b98848795f878c6a12965a5d887c9c0ce4702fe9ff9f7d7213306:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 283,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cccca639cae4e65f5b6626ed23925e2bf04093ce9a68177f784db88942fe14ae:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 95,
+      "valid_bytes": 128
+    },
+    {
+      "id": "87740d70af4d29dee4cf0e54e4223bcc96423c4cb87135177a8f2a8790b12e9f:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 438,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6ab109c12cf0d376f64486fceeecf939481f6623f1fe539d346404bba9e95ca9:1:byte-19",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 503,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fef1eee8978cc1b6f2b6a0a34d2b3f8a0fdd059ffcb2d84ad48721823deb9826:answer:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 438,
+      "valid_bytes": 128
+    },
+    {
+      "id": "96f180a17e49c9ca5cef4033abeab2111ff30de4f963aa1d05d2071aef728b6d:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 290,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f2ab309c93452b84ed507e75dabdc7ae719d9623ee41b2df723f9cdd9706369c:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 198,
+      "valid_bytes": 57
+    },
+    {
+      "id": "dab7048201db076112b6de05e703ec9e1515fd102889eddac38a8bfe206ca950:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 275,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5dd217b240fe739d71121e10e6df9026494853ee203ffc3cc266c3923b4f5646:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 439,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a6a399d77aef9a019cf3c072893801f3d664df084011b61a496e0df1eb48016b:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 339,
+      "valid_bytes": 128
+    },
+    {
+      "id": "91c8d9171ffb5c52b64ccaaf4c7e14ec19436af86026bb4cb95fc5f5feeaeb65:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 333,
+      "valid_bytes": 128
+    },
+    {
+      "id": "65857f699059e865495feccdf2fda1082052520cee3197f572d69b2e210c9f92:1:byte-13",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 489,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1575554f945ee26a4a98ad949438bd0284bb7c0561577b206ad16f6df8d684a5:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 399,
+      "valid_bytes": 128
+    },
+    {
+      "id": "63b647d9a5911fd7b16f25cca0d39ac3e79b1addbf3dbce94b99a296a0b1b2d0:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 501,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0bb3cb8c9c2d5c9d1cc732a30b1e561e1fd5c409448c6e8e8e7014425033d67b:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 293,
+      "valid_bytes": 110
+    },
+    {
+      "id": "47245f8b62266609eca510ece25f67fcc90ec0667a2153f4f1357f7d68c539dd:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 123,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e6297e2dd0865b8bd1690c190aeab578a6971cf1045d112fe98e8ce0ad7b57ec:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 184,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4c1b7588cc458162affe42c46b8cc0ba48e3fe976df12171d7160311f5bd1abd:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 254,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c372d1af83696f5c0ca8764b638c48a6e580640734279f4e7bd99dedbb39c2eb:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 246,
+      "valid_bytes": 128
+    },
+    {
+      "id": "154a7444038bab9006c57289c4a1488fe1d85481f9e04a88a151ae498f978bd2:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 212,
+      "valid_bytes": 104
+    },
+    {
+      "id": "41a0f8ca3f7878bbb3fbb3371814a16cd785b265bb41028c0c1004680c27f211:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 507,
+      "valid_bytes": 128
+    },
+    {
+      "id": "db2bc27e1862bbab9871fdea4c0c2c919e03663e88e1fb2a61d9058810ee0b4d:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 452,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bf1ba6cf6815cb57b3c14a01643c4a4e08190066762cb48765064130a0a1ec39:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 322,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4a9953d723b74054a65a8dd35500908bfdda35dfa756a8a7c9ca59fcb3b87885:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 367,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fe3cf8b481f557a54262712e8260459772699e7f7df0299d450ce5a306d2a222:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 226,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d0e1bde8d4700e5cf82c57ff2778629964f9145fd57dc0d3a4dbc37d494ffbe5:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 368,
+      "valid_bytes": 128
+    },
+    {
+      "id": "683b178da118a2d23319d0dec878176cfe7fd7208a15002dd7cbc6dba4c2ae94:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 275,
+      "valid_bytes": 128
+    },
+    {
+      "id": "342afd4400fb56215855b057f8d2013ac649b429492ce686b8f5bab37abc9fa7:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 157,
+      "valid_bytes": 128
+    },
+    {
+      "id": "232859efcbe9a218d46700bccab824b0f73f5c8c4dc5e6e59a8278cd9011dd3c:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 407,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fe0b387ba66522dcf2290e79ff2714458bdaf4d7b883751a981f373151f5d26c:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 380,
+      "valid_bytes": 128
+    },
+    {
+      "id": "afbb91ddce0943fe16449cf37c5716f258927fa86999dfed64b3a21696e9e371:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 220,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ddfee471deef9a397eab19453c45154e3a86c4935999362cde7fa79fbb3a8f1b:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 355,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8451cbbdb7a747aebd1d56b543fb379310540a07f85316c5a44946e5fb0eb851:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 262,
+      "valid_bytes": 128
+    },
+    {
+      "id": "258e4e513b551a1453dfb71d2c895ce5146efef524a570e819eac4b3aaed72f4:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 102,
+      "valid_bytes": 128
+    },
+    {
+      "id": "df412db8cce4b1bb0bf836b90d51ca48420ae90c3c5eec79e74be85bd60af475:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 329,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e416a2571c89df4c2505f091e4626dd4c544d7c11a1a06bff9fade45f2bc7686:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 352,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4b7f03de395a1775d852063a92417a95a5ece7cfe9749e4f3b34c6527dbb5be8:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 437,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e895a69888b248a7e505d7eb4cafff77eb38c3e1db68119ea39c9a11d1c48a06:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 437,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d6274813444ac273a501fdf61582c77f0faebe50a963fa01130747ce8a99851b:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 398,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3464ce1210c6dd506eb908627bb1a3da43a6cdcc48f916bd07f3c7a89bebcd4c:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 273,
+      "valid_bytes": 128
+    },
+    {
+      "id": "23930b093130e709238d2b5213b32cdebd47d0574a96fced017826758273b594:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 426,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ed68119837390f74450d7b8aed014a6d9c80548f0629f14726e439581377fb29:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 208,
+      "valid_bytes": 128
+    },
+    {
+      "id": "69fbdb841ed75a16a2091b0fd5ecea0e1a26d9438abe44565575247c527e5d5e:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 351,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1786bce20c160db581bb435a43425d133764cedeb92c959ee3a300206832879e:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 226,
+      "valid_bytes": 128
+    },
+    {
+      "id": "36694ec658bed3b95ff345ec83c7d16f58bf047b3904ef07a7555ddebc978024:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 299,
+      "valid_bytes": 128
+    },
+    {
+      "id": "104abe528e640fa9120fd1bedba21ac3b6a9436c3ca4431f80d71b7f43667c81:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 94,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ac4096ec24407ec85d4b795bed8c4a0062f5ade8f3b73ccab2e5645acf3a331e:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 490,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1fef04ed269a473496afd586e8f2e9a9e6422c7e28b8b747706789e17faa1060:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 297,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ad9cc76c978945a7e8783e565ffe747b8118cc7e7890f02cab6a373bfd144840:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 453,
+      "valid_bytes": 128
+    },
+    {
+      "id": "066f2142364683e5d4e2c706c9b1b65fb43ebb77fbfdd9fa2b4361b8a9f33927:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 81,
+      "valid_bytes": 128
+    },
+    {
+      "id": "590d2726866c17c771b6c21167c023e533e40f6d98323d4254dce79891dca5c0:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 219,
+      "valid_bytes": 128
+    },
+    {
+      "id": "788773db65988afdf0afbbd62320bd9335920da926f81e8065e3c7654173f360:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 285,
+      "valid_bytes": 128
+    },
+    {
+      "id": "23960b3c67ca2af450b3c133c662333d31d011c3549dc6a49019897f41a57380:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 480,
+      "valid_bytes": 128
+    },
+    {
+      "id": "82396a2f11716be2455045ec02ef9f437c4466c339ecbf48566f223e3dcf6aec:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 128,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0c5400c3f6e5b9b1695012e3bb544cf07d7a76b86ddf03acc7818cdc931aaa72:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 204,
+      "valid_bytes": 128
+    },
+    {
+      "id": "50606adb3968ab5886ae293a47f12dbcdba79ec942ff95d4380a71cbe2a00dcc:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 74,
+      "valid_bytes": 128
+    },
+    {
+      "id": "989bf16d6b60bf762fc7e7b41e51d275032e966d0b14b3a3c9526734d989f0e0:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 234,
+      "valid_bytes": 69
+    },
+    {
+      "id": "e618c96c7a7c55b76f8cce49135108073c4285e5ec72d91f6cc47967717939e8:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 279,
+      "valid_bytes": 128
+    },
+    {
+      "id": "19e3a48524e5eea46d6e7757cbffe0c616057ea14f06aa8129be391b382f730a:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 421,
+      "valid_bytes": 128
+    },
+    {
+      "id": "29ad83a5e383bd796c148b031664a93ec8764736830be2bb4cb0d3a233c64c01:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 373,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5f631f6be8d1d0f8145821356d970c2bb96e0c44474c8484e85094ea680b1201:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 493,
+      "valid_bytes": 17
+    },
+    {
+      "id": "05f1cc6028d2f497007f638172294d87bebbe7baae98d645aaabb9eea52024af:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 87,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4df58f821611800ef2ffeed5012ce6bb73c07403f9e458a6a5c5940d0674ac5e:answer:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 488,
+      "valid_bytes": 115
+    },
+    {
+      "id": "3712a8362b5fd3b85c03945539c897f1c24ee5cc4026de3dba522251d795b44e:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 85,
+      "valid_bytes": 128
+    },
+    {
+      "id": "57c7a1a13d88aa9fe3f247ad9a2f4d2b75422394c6ac5da4a212ad6ef3bb82ef:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 240,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6a9bdb7d67152e9c422ea1760236e2539f85137c08ee3387744de722341ec722:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 379,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8261547b43eb6abdda6f0b41ef608974fbc6660f4e31c58f3b64816c19e7e43d:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 251,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fc41edd068ff40a4b1b3672fdfedc8c57ffc258300a43cdddc13ec7c73ff7bb0:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 298,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5c994135e0e0b834f469996ea54f140e3a958a8c27e1b1f5c65adaff074e8b23:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 226,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b8ed6ff6f5d82042406f597e99497fc0d8ce321d91d9220d6c85af1316899b92:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 403,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c49155614de6f710c63668eaecdc87b800814e498cb0f4da2ac0d78740c452db:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 293,
+      "valid_bytes": 128
+    },
+    {
+      "id": "40760924e215795b9c4167fd5d7bca2bd5e232b0080126afb0389873bb3f15eb:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 462,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e1cb651a9aba0fe8f8ed2526f8cfee572becc0ef98c4ba0b82defdb3fa769e4e:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 239,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0d8cf70b7e809586c90a53257f248a62cfc579cd3e879cf6086f83eb29a471ab:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 163,
+      "valid_bytes": 128
+    },
+    {
+      "id": "85962ae8a3ffd7573616f818ce4578be497ca8ede6b0bf65aee0228c91cc632f:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 249,
+      "valid_bytes": 128
+    },
+    {
+      "id": "53ce2c0bfd76027fd1ba4a1f3c5714b7803d1ffb64e0531618e7ac9aec8ead6e:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 359,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cadc20de2ca164264fba47e23342707223788212ba673c6b1f00bd2ded2f3e65:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 323,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a630acec27bd39d6d9809bbe3b924ec6da3f5268d4e31aa095d7966a57a143bc:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 210,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5420480c2de5e600aace5bb90a4edfae6019df9c1cb1ec8a8ff8bd05107d7c42:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 494,
+      "valid_bytes": 128
+    },
+    {
+      "id": "69f866af75da6555a828d3a4dd35072303ac8140bf27099ba7c7ec61354ea8da:1:byte-19",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 530,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c18cb9dfd91243a4d304cf37aa7d3bbc5a31cf9c29c5a0bf4522611a84cd1031:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 329,
+      "valid_bytes": 128
+    },
+    {
+      "id": "02fe37bd36c0044e368b9d4f722163e47cee741b56fa57466e284c07cb3ad449:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 387,
+      "valid_bytes": 128
+    },
+    {
+      "id": "17879d57e7f73e912c8a605417c4858a0d2b795122fccf76b512ba7ad7043d01:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 222,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cf5a24e623a1fd406ad43b2d55e7f177a9209ab034d5912cd624a983ad56a35e:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 504,
+      "valid_bytes": 128
+    },
+    {
+      "id": "535e36046d52d1aae483c82e14418acd96e114423cc8148ff3ad6832906aaf0d:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 404,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2f4750168e0ab5a37d15c23c8e49c7745f72c1ae29791e0a8a3e74a4def9ece4:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 211,
+      "valid_bytes": 128
+    },
+    {
+      "id": "671cfb681307bd25b45eb3cb5d077ff903d624f578a886f51fefe790a15c155a:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 208,
+      "valid_bytes": 128
+    },
+    {
+      "id": "619e4a9e953d2538fb679ab33685f672548de0ade5942b6f64e1fe311a2ad1d1:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 535,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c5f906b4903a520df59c7e4b20739026125f268a2eb7598d99e28f3dc18eea82:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 383,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b7d34864ef9e9634ebc905011884efebbc71bbe21d9d4c986cf9ba19a1d906b8:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 323,
+      "valid_bytes": 128
+    },
+    {
+      "id": "42c73c3d2e1eda3ce6d5feb431ec03c8b0a189b32b35c6bb07f7143de929537c:answer:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 509,
+      "valid_bytes": 68
+    },
+    {
+      "id": "04ed6c3dbded63c20817000d1268219f2949ced2498b40974bded5fe11368a42:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 394,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9e70963ea2bbaca563b98e3e0f3770781efa39d9c29e66e11c9efc5e8784ca58:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 160,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8924f4b99abc36b7f912a467c28a43ec8a2bd4233ed1ee61c8c339f5e500d982:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 258,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b52bd55b3ffb3dd6ba61668efc9fbff41217c06a8db4064a0c346d3b9b0c0f29:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 220,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e798edf435a482b3076ff733a4f67f5e1fa780022fc6dba12b7dae54227f6af4:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 298,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9d4fd1c446df9e2fa9b92d1ba52f9d4c99e9f9641e38f9cc10cf02149f60a185:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 368,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5fea419d2996776f41c30e6267ec5a4e92cb8ec640544e4e9448f539d3c53c51:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 403,
+      "valid_bytes": 128
+    },
+    {
+      "id": "817d12bdda71805a26d1c3efd2020d3017c09eca10749d257510c72d17bfcf38:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 301,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f662bd28f017276e88bb1d59d8cf7ab2aa3b9394a12f14f43fa17b927adad3bd:1:byte-12",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 427,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6b008ef467ae9e063c35f3a1be4046519ddb55f896799957d017ebe5a43f9dec:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 327,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7fc9becb91037d7d9a3d99aa873493376d25ca1289a53a94eaa7913356bbe779:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 514,
+      "valid_bytes": 128
+    },
+    {
+      "id": "73fc7571c4631f36e91d42a267d11d4c3093152ac8b06aa771e09ac5971320d7:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 355,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ae81847c105cce59f2d7d277b458a0411ee1ac726ca5475ff560476ef41df0e0:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 85,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8dea83216ae2d15ad48b680e7dfec6b3554cb823a454f77a4475f674b46da873:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 340,
+      "valid_bytes": 128
+    },
+    {
+      "id": "12ee656688a2aacd4bb6dc73710ae1f996a9aa270fa629c5578ce08a1344837b:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 525,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cf6eb41751a215a0c5f136f443ff3fc14bc428da8d8a1dec8ad593532aed38a9:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 449,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f31865f31b219512c660aa28ca8a3f42b3b72cb3825ff1dd26fd6813c23cd17f:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 469,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6fa742365f4bd7adc5010ee604ea1f774b37c598c47b53622c785e63bea61e1f:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 296,
+      "valid_bytes": 128
+    },
+    {
+      "id": "51fa43f72743f31d5d47464600c321517d0f69bacaa77247d7e85240f7b73111:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 539,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9948b708669f73d7d5092036ef5a7b275cb897def5cf18967ef0dcb6b10cbbd9:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 229,
+      "valid_bytes": 128
+    },
+    {
+      "id": "eaff986532cfc7da3d1501be9d1e4908a33ed09de745003190c643f939ecb8b4:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 192,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0590d9ff8686ef7674bb6c0eb4d44a224538d7115ca9d19b2aa8c393cfadcdf8:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 299,
+      "valid_bytes": 128
+    },
+    {
+      "id": "764206483df15eb3f8a8b9b390cedc9a44cac85eef06fd487403fc1cbd35b4d4:1:byte-14",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 496,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ea5b1bc6ae6c6fbd563d5de81323dee95db368840cb732d44bf25d154780e6f6:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 435,
+      "valid_bytes": 121
+    },
+    {
+      "id": "91d8ba0cc23d8f6665cb5b458e047bab54a9a42a65427a207c96198f8b90ef6a:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 89,
+      "valid_bytes": 128
+    },
+    {
+      "id": "34f293e69c4da663e299358a96713553b3d49b40b92c12bcca120b8e8b09f3c8:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 403,
+      "valid_bytes": 128
+    },
+    {
+      "id": "717e3882a742d01c5235dd0762a3f9968d86c6329f162104a3cc8465d5ab711e:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 422,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9d722dc6f5f83421b2a2a4e644f78513f37d18ce44335567cbf60b020cdfdd12:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 395,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0fd554f14ec75a154e16344cb6325778e69ffc0fc122b31674900950a91c7584:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 132,
+      "valid_bytes": 128
+    },
+    {
+      "id": "aa4687c9587ebb58fc107dd5960e1f057bbd641731db39e41e0fdcf30d0a812a:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 178,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1772e506d1d01935e7e6a1e7f0e203832e4e25f3ee8d8ceeda72e171ec799596:1:byte-13",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 514,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0070a6a40ab12370dc129940e7b915d0a7f24699f2b7ba5d1d55bd3f6d14db72:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 288,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ba2cf084af8b386f8af6848481b8fbcb63f4ed4e546ad932bc24d7c2fb8eac3e:1:byte-13",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 399,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a9be5ecfca30cf792d54f7fef59335e65971de3689f53fca103af8dba70bf3f3:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 404,
+      "valid_bytes": 128
+    },
+    {
+      "id": "608fd61e0a950caf7c867be60d8bae9f1267c2d47ccd6931551c5dc5feb17594:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 74,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4ecd647bc1b79a80a395507163e0be5555541f54ee5aed77c382e63bee8d83c1:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 344,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c34775430c6a2651fcd347d7c1d2eb3f38cc5eba383eeb3fec1562cee61d66c5:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 156,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8985a498ae51dc7e07217d79ebb086e85236263500cb0aff66d31c78843f8279:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 466,
+      "valid_bytes": 20
+    },
+    {
+      "id": "3bd409a9fcfbb92b4c10c196eb7429cf3092fedcee4e3494d2760156900dc9ee:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 436,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b32fdab9e782c903b1a575e74d044bad8a5c38f5d3486434946f23c07d3e4724:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 352,
+      "valid_bytes": 128
+    },
+    {
+      "id": "526ebed4490d81e91465bc194660404af419db1b2fc4cda3a87b6f594de86bcb:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 563,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3558fd27ab23923b0c3ecf9f42e182e87f3e56740779b8b88d500200eb8aefb7:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 189,
+      "valid_bytes": 128
+    },
+    {
+      "id": "74fb406e3702fa097b17dc166c90f03b7643bd38976a6ae0af7eb138a2871d41:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 369,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c78032b0309e77726b946ab6cce99168de1fb81a4bb0b7027aec45596cacae72:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 256,
+      "valid_bytes": 128
+    },
+    {
+      "id": "577e00bd8c023d14cceb309eb325f3f1343ffbb814f569d85c007984e29c83b9:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 343,
+      "valid_bytes": 128
+    },
+    {
+      "id": "446e8e427eeeacaa99da85a3e75a359f4354d4cd94a68910b461fb07a19a046a:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 274,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ceec4431a812391fb9e906e3ae2ff815627505cfe54eee48bb99fe671ac3150d:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 93,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d31d543257f70a783d3a541668f6529b7b7af1609be74bcf7b828cfc0660ecdd:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 227,
+      "valid_bytes": 21
+    },
+    {
+      "id": "419d135135aa185b0328af6eb8721e0cef2f4670c164c9d4b68e1d7181bd1758:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 77,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c72a75ad2690a7c4b946571400e1df8572935197f05df52fdc46d5de8e9c3381:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 408,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cbeab02c30fb966e0cad237f5a3f3aa552f6bb0f7ebd1ed07cb927c111607b1d:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 313,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bf6d1207f6dba287b8de4435ac524971e5f9a0273c737f1a9f4d82ab9879bcc0:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 235,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9812da4918e7f447cd5266d0df857617f079e59a921e27af7228afec65b3d23c:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 79,
+      "valid_bytes": 128
+    },
+    {
+      "id": "40c4c2dd905e3347eb1f5111e9930062af7ae41c005ad1722025c2cece682ba7:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 182,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7f1ddea9204976af694ddc994fe2c880d20cd96b74bfc1bbd7511c18aee8100f:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 485,
+      "valid_bytes": 128
+    },
+    {
+      "id": "920c8acfb02a3cf7d13edd5a686ad28d71da5ea4a721d5ce6474e2da72a5195a:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 225,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ed8735af6751bb6b3980d447f755ae8c430ed6a91613f161582464988e420a92:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 364,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0fd0994ba332463d0b8058b1f3651575712e13eb23be0e6b366312ba69458b6d:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 240,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4bd46a8b15ae82bf764d9ecc5403c487397040d6be6c0084860b3020a7f063a2:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 72,
+      "valid_bytes": 128
+    },
+    {
+      "id": "494c4944b2054be77b862c20d33d1838c568d64bfd46041eeddb73f0b648f8df:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 434,
+      "valid_bytes": 66
+    },
+    {
+      "id": "224940f0562095bbb737a4e71127e93df3e02388d7fc42137b6cd47b7167e56b:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 77,
+      "valid_bytes": 128
+    },
+    {
+      "id": "90677f2dd50846cd663aeeb07cfc9dc403f2ef687b477d4f71e86e8092391215:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 360,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6c577f9b2e4aeb803d845f866e84ea1f009f8fd54e447748b6c4a497c7c3b323:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 389,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cba47994b9bca62c5d4301e7f1b6635260d849b368c29f055d453918dd38df09:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 268,
+      "valid_bytes": 128
+    },
+    {
+      "id": "51a4a678d8ecfb5c8211a78112a521be7bd16db1320e86db2cb8baa1ad137513:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 72,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6b5b2a586f6b52ef5d24b2ae1486ce76f8b5e2ef8a29175f30c5744d40de9f3f:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 303,
+      "valid_bytes": 128
+    },
+    {
+      "id": "dbf479fe183630b9bd00fdbf806a8b79fa525feefc874df5e07e9fa118a77339:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 479,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ea148b8ff7abedbef52b54a9b3e7e4c7918237a576b25dafeb6f1c74e4001f1d:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 254,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0cc5600bc76341c4c365f93b313790c8f615c409d1bfea2fad7a34bbd0dcf559:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 364,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3f626cf91e3bcd3aac261610f2c9ad4aca937f85d2711d8380a26bf782c13f46:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 174,
+      "valid_bytes": 128
+    },
+    {
+      "id": "526d4f33cae386cb0745317a815e42860c01f30e9954d640b62dbdf79463d631:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 432,
+      "valid_bytes": 128
+    },
+    {
+      "id": "26369a59c0d53df0fddad1e62815358b97e4fbb84f9be582f920f30ac1564bff:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 370,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a2b0676da77fa49c5501da852aa12162cc7c79b388da000fc7aec25e59124fa9:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 455,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7b18193d9f49beef48b9bbe306c0fba53749348b0a695de2dfdb06291edc7ec8:answer:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 515,
+      "valid_bytes": 70
+    },
+    {
+      "id": "632ae3e7f8c23668338f056c581c6125c5dedc62b321013093fcc157c6dfd3d6:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 85,
+      "valid_bytes": 128
+    },
+    {
+      "id": "20f3c73d77e72f31243ec11a5f4fa7511f44d1659cc4c71c534dd13796d1301a:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 185,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5488d4b867b05e4c803bbcc81eccdf9d5c81920251d2e65e5fc9f86f831cb3e6:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 230,
+      "valid_bytes": 128
+    },
+    {
+      "id": "72e2e48153ee1604ec922d08340163b1191076a55b296e377d22581fb09c48c1:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 220,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9c923a4293758e49837d11aacd304d9065f25fd9fed69fafcfbc0be58375b3e7:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 83,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6538e1971d7663186991575b36dc8072602f9a183a7dfc24ac8b5d6305fe9351:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 315,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5f761d3b8acf0d8417fe56c2b5fab1ffd1049baac3e8115831a87ff8a346c098:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 115,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e304ed053b2399d8b7d8576330c31cd0308b38fdabb98e1b2e475c615eaccac5:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 370,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7e131cba0c692ee648003b535bcedcf0bd083e7f7d8ae74432747ca936b490b4:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 376,
+      "valid_bytes": 128
+    },
+    {
+      "id": "57f6214be29212e03a2d408e8fabe172bb38a8e9b667ddacad64c47297cc6430:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 334,
+      "valid_bytes": 128
+    },
+    {
+      "id": "29bc2645b71d554e9192bfcc07965ff61d5b855fff91c71c87ee8b2b876cbe08:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 82,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8452542349e2ea01c9241ce4b43dd94e627315a9984f424290deb6c0f52e95c1:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 282,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a194b5a2d7c85dcecf4fe0b902e90252f944cf21581ce5a00ef4d4d7cffe0923:1:byte-13",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 442,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2313a6233d20e4798235077bd3b069372b20a10c5e3c8ba31b8c4541b16bec50:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 447,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2da43de4b7479c43808b4782ceec00f868364d73a4b1a71e83bfe0ee8ed680e2:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 77,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a35d11fea41c83d5e2a543dab0f2e846a159db9b3de04c292b6c97c832f10e12:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 207,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7a6f84fc8cc736a614c28ef859d5e422f8cc5751012b164675c9361874bbd3d0:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 317,
+      "valid_bytes": 128
+    },
+    {
+      "id": "67edff26c2e9f8a5be8d59eda0b9e8755c55cc30c5bd1fbdac9736452bb86a3b:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 303,
+      "valid_bytes": 128
+    },
+    {
+      "id": "dddfc8140f068d26f9b1b02a4210611cf487f8a358e81f0aa11e44a7421cf583:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 184,
+      "valid_bytes": 128
+    },
+    {
+      "id": "acd25a9a536f980fd09d37946ab0874a90438a55155b3dbac6757b30eabd74ed:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 465,
+      "valid_bytes": 128
+    },
+    {
+      "id": "568851761d7273d8e9f9d3c6ef47e59876adc550fef29f72430a976f34f9bee8:1:byte-16",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 487,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4699b9aa2453e7139e46c9a8a41f29ea9a43480571131414ad0cd7e1f4f420d0:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 207,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2d5a5294f480b12fbe9ae7f115d73276275df9e386aa1e6dc6f65d9190da4278:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 129,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5637e95cdd0c79a0153f5df17b07cb4178ee7413d0ee18545ccb3353ee9e95c9:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 281,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2d26ad8ea1f65d70f4256c965293d8f41609c8be63a88cb2d88b82377d6ee0cb:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 241,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4725e347acbe3bcdabb77c2b2e0e0882b6a26c8c02c5be2b791ffe05ca8aba1e:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 259,
+      "valid_bytes": 19
+    },
+    {
+      "id": "cfe18b9c8d21f435fecea53278a57154f306460cea6f3210ff935f6626af74b1:1:byte-14",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 447,
+      "valid_bytes": 128
+    },
+    {
+      "id": "36f396800b6d53b6f969ecc36c29f11c46ed6ffa542c907eef933ff03600e1ea:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 379,
+      "valid_bytes": 42
+    },
+    {
+      "id": "6d41f1511ad35405ba5f454b213b965aac89f5dd66629e0d1165f4a851d4c1ee:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 75,
+      "valid_bytes": 128
+    },
+    {
+      "id": "91d514e39674f3317ef111a933ff883aff874dd9565df9000ff68f939ecd21c8:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 206,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ff774aec1249116857e2a3042b77d4540d9e9beca2ff791ee2f2aec889a0036e:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 302,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d0d56a5aac138a3a162432dea8e9b493e929aff75fe44f3f6b814cf900678455:answer:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 521,
+      "valid_bytes": 48
+    },
+    {
+      "id": "b7256007bf7940ffe9c6e06e5c40ac488e499daa27e536390a13ee63e2699350:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 184,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ba2975c2eede5546a23b598d4358dede740e08ed855fd48031f38dad0c757891:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 420,
+      "valid_bytes": 128
+    },
+    {
+      "id": "44fcd2787344e1cfcff138bcab0fb5d6c1c0cba23083ea151d1b0b17ef449ec4:1:byte-16",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 528,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f549841ddaffab84b2c7b2f683acc13a8cf774aa6dd4cef7861c56bbd24a4b9d:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 411,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c0df1c46e9013558ae283fc2d6ba0fb62f6c05ebca9dbc857390ef4afd971260:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 80,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5ac7a9b005e97478f153f3a850ff8d667bbd7002a0e73aa5421041a2cedc444f:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 261,
+      "valid_bytes": 128
+    },
+    {
+      "id": "26e64ebc49d93f09db052c328fcf3c91dda420c822662d230aeb71c8fabfd31f:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 342,
+      "valid_bytes": 128
+    },
+    {
+      "id": "24c6ceb1a20365f6e0d6d49f03a1f08da6f5bc87639994392646b5fa3b2e91b0:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 207,
+      "valid_bytes": 128
+    },
+    {
+      "id": "881462326d3d1580874ded3057a1f4119ec24ed3eff0913056e606e15c67e236:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 376,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8a92858b05a394af9ed9ef536a801f8977abe87553aa02b02f7cffac03c4c829:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 289,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e7f520b46b0a0986dc5808d6247fe64f8f3eec454a63215b1c6745d58add88d4:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 417,
+      "valid_bytes": 128
+    },
+    {
+      "id": "874476d96e9215ba24c75974ca88311e00bd44394fd77fe8eee310bceb8692ab:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 323,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ef06c2a1cb597c852af81e8e443ad4a1f5836ef7b4452d50a9f43309ede8c6d1:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 250,
+      "valid_bytes": 126
+    },
+    {
+      "id": "eb69c3710a1480b70613d31d798663a7b12cae14bf9ab396ef3a285a33f23b73:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 388,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2b32533fe0b49d55a27e0836b594be3e2cc5a7f9bf765717f211d538c7419675:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 384,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f5e83393365cb662047b504c3d0c2497caee0c41e4851ec1798985600434b111:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 253,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3e99df9f6c46d166fd4046e69471310015e66e7d46290fbe3de96e0ed20ef8fc:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 77,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c7639c0c5539521e061fd97f5c6b88862bd604f700ebdf9ed8773ef282e206a8:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 371,
+      "valid_bytes": 94
+    },
+    {
+      "id": "43d37f907d9d86ec82030b7262246f4ec7518a7cc2da96e17c37bd5b56351b5d:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 76,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6f60d22dfee5db88707a6b79e18f16e9ac3f19989a6140ca3da0bd1ecdbf0b82:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 162,
+      "valid_bytes": 128
+    },
+    {
+      "id": "83c622eaa48fb83ccfb7f4c24eda06c463a370239bd98d05e7e417ec32b38a11:1:byte-15",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 523,
+      "valid_bytes": 128
+    },
+    {
+      "id": "69dcca0204fd109e35d748d2c862e0f06a799de7b8e94ce0cfa1d7599a36a250:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 296,
+      "valid_bytes": 65
+    },
+    {
+      "id": "91edb1eb809372b68b4f99e75ad75c63412a6bc7e4d6ace2d5793f887d7b198a:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 161,
+      "valid_bytes": 118
+    },
+    {
+      "id": "aa497fbb8744a1d059a0a2b6f7964d35a55fb5ce1045161e07815c0630650d91:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 481,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a74e49d234333cdfefba52e37a5e48005c8c8d2380a58c8917bb1e487b2b4c5e:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 110,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f852b7f378b1f04586ac4adb1bad2a2a2c2fe9a306a563dcbae5dfcee5ea49e9:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 472,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d197a3881a16d59cf3a2aad380518377e062ddc23985def2c7691e2d709a583d:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 514,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0f6557b88b9c3bc7cab5b56be199ef0a549e822d657a80a083767403b4b62f60:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 317,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b9e9a2599020f69f011d0b0c8e2d7dd9f88aa0819260d0aba2478ad4ac84fa10:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 448,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fed34be8b2c82e9d7a4b39b2852eb5c6c90a6a4229d026c6fb22de94d646ef21:answer:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 452,
+      "valid_bytes": 88
+    },
+    {
+      "id": "471e1791c87331e201dbefa4b0efab148f77906376409699d584b2e4769271ae:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 482,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fa3c9ec46001c2c3a6f2347968fbb0de3df965e60a59719b80b187337bae3ab1:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 251,
+      "valid_bytes": 128
+    },
+    {
+      "id": "88fbacebbc72a554d53daf0fa138bbb925caf0d09a125606db1719974f1e4ac3:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 201,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0d814a293af0d2f8d13e019495c480f633001970882b49f80499d690fff39252:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 373,
+      "valid_bytes": 128
+    },
+    {
+      "id": "23ed8bcf881c13bf4f59ab7b56b85f7113fb95b68828f2f167291d89b6fb7193:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 460,
+      "valid_bytes": 128
+    },
+    {
+      "id": "99f42f52f9a57e8238076ff31d3808a326eb3cf8ee33604413ede169cac3777d:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 422,
+      "valid_bytes": 88
+    },
+    {
+      "id": "4c2f9a7e9d08dcdff4d900efd1d99b7a7f69c42a7717b6a818c61f662a5ae528:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 180,
+      "valid_bytes": 128
+    },
+    {
+      "id": "de45168fb146052a04a39c4e0a38e54b3ae9f3fe0c33785401cc20604489110f:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 387,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5c03a07c87d7a0b3781be8e7ae742ad32c7103af9b62ac8cb5253b0a879b6eaa:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 201,
+      "valid_bytes": 128
+    },
+    {
+      "id": "db4cb53d1973c279a5846035f7076cdd99dcf383a60fbd744ecf877aec1e3d78:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 372,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2163e18b4672a6edc03863460459dc183cb155aca68290a105fc4876d916c24c:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 78,
+      "valid_bytes": 128
+    },
+    {
+      "id": "47b1207cc714f510c2f94f6fe940bf8a6c3d529fe03eba2a6139dbc792fb2c16:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 489,
+      "valid_bytes": 87
+    },
+    {
+      "id": "cabea6c6c615f083cc26a5d72cc6f68329b2ee0939bd8bdc619767a2acb2b263:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 134,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5e5af81eac0ee3bdfd0b0d722a51c0ee320bdee87d0f535464285d6389616885:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 222,
+      "valid_bytes": 128
+    },
+    {
+      "id": "792048d3fecfcb8e2ce046f98c8c4a5e654647873a75f7af1b9a8da8b0e26159:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 254,
+      "valid_bytes": 128
+    },
+    {
+      "id": "77516faf0d1da1fa1b6e667ad91ff29a0f3e2c6da5c666b0c066694949468f1e:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 351,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5e1bf2bd17967010b5e09906bb4628e5c2a154bbe5401f9cd4d407c7f03d83e2:1:byte-13",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 478,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f10684b236bcc6efd62006cc37243f617cd1aa11fbef998219b5d6bce574fe0f:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 259,
+      "valid_bytes": 128
+    },
+    {
+      "id": "86b360d787c5e65bba41b6bc3a73ebda81670b226d22eda83239acd966e3b520:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 225,
+      "valid_bytes": 126
+    },
+    {
+      "id": "80dd1e14b2fcd3b44de7d28e720a24378b3eb4bafeb8365d2a77ba3826a0e311:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 224,
+      "valid_bytes": 128
+    },
+    {
+      "id": "21bb715b4c9a35a9d62cf0b867e2283e864154bf6fc4d978f9140ae66cb79224:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 347,
+      "valid_bytes": 128
+    },
+    {
+      "id": "788a93e4ee386e3b22e3ef0fc7bc172de988310f27e20ae3b2292a9d664939f3:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 355,
+      "valid_bytes": 128
+    },
+    {
+      "id": "015d038757875f33b497c07b102943474d7b47438bf345e1609d0774dfd985d2:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 115,
+      "valid_bytes": 32
+    },
+    {
+      "id": "2d27723ad3b77499188a2f3f028d43c63efa061e853179c2e86640ddaacbfa0e:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 277,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2ff97115eaa587f8ed0f1a7d09dd80b05b5650fcf1f78994ac45947f05a7ff04:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 368,
+      "valid_bytes": 128
+    },
+    {
+      "id": "551b5bf3fa9706430c3aa98cae6b42932b392afd2c879a6ea1a65099a7432ffc:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 268,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ea00eca17bc1f19a65c394986bbf761183e9c4e13fe141c1c52135208793174a:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 342,
+      "valid_bytes": 128
+    },
+    {
+      "id": "702269dbfa332cb96422dfacbd786457a1cfdeb822b495b13159ea8c42a9aa7a:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 279,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cf912760feb51b44745b10205c95cb3ac8090e173874b7ce4809cfb9b4fd57e2:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 400,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5592c7ccf31fbb83e3f2dfee4efb9b5a0d288fecbf6b27812d75eaa930b545d2:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 237,
+      "valid_bytes": 106
+    },
+    {
+      "id": "9f26f75b1dd659cc9b14e6c4acfe5de7fe227783da6a88eb07866994a3cad776:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 103,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5298f8f10dcba6ef7438af04212554178dd9b0cefeb1beb9e4f01f4e2c1b0d59:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 335,
+      "valid_bytes": 34
+    },
+    {
+      "id": "8b1ce3e56adb1a46e935983da2212ecb4fb1cd3f4ce821aac889dd4136a30ce3:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 206,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0ff0c75d825a7c3aee4927e9771beb661ee4ed865b50265f60304881ed5e73db:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 358,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7a47adb2df58db07eb495d9273c01deebcef37f49b609f85ebd332e04348f165:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 288,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5e6a3844051c66b329e2c2eb2bff6bf3a9ec0ccfde8422a7ef91eeb73bb8c653:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 190,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6afd327b1bc29b59dac579744202d32d101b4c9330ae670470a9804d183c94fc:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 160,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d1b5e0044a8a0d639794b785e630229676f43bd686707cce46fa981288c5a878:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 495,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f105fb8e3a477b6788e38eef49e7a7d22a0feae0d52a31bfb93ad25c69927f08:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 390,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0cfc061e0e8692332edba4e18661eca9bc797db2688c07ee6ab08cd81792cc52:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 457,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f3caa11c3710a7b3b7b25c52fc5163961010cb44ad2387581c8d0da84a1a0aec:1:byte-18",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 494,
+      "valid_bytes": 128
+    },
+    {
+      "id": "542ec81f0a635b344aba751fad40386707ead44dbbbb482312109280e96e2325:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 373,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6e9e134a62c528977aab06c04c8667d4b2666a46a85620786bcbe140c9f9d5e0:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 152,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2693fc5aad04db55c1b55d6681c79ba9aaf3c83fbc07f9f37b8a9d23a708d0dc:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 360,
+      "valid_bytes": 70
+    },
+    {
+      "id": "1882e5c73d753b886ec52ebed8d4edb36f2f2e17c2418f4eb8581289d281921e:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 162,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e6397fe21747145b5224b6f7330ba41b57237e46604d40669ef1c5a919cf00ea:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 397,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8f68f901e3b8b7d558b03b3f7fdb35893c6c1bf0ab27e45343207a1bb06625b3:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 388,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5897dd3a0070572f3c825f708d924b09cf8e81b81932d0d1f147fe5457462785:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 305,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4b2206ceac7e0e7e457da07f3097d55d2ed64528828c14c177b640694e8b7620:1:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 320,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bcd4b95f9953ae5caba5b11fe1b652c0aade4e635ab8206286eb57e860de1311:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 355,
+      "valid_bytes": 26
+    },
+    {
+      "id": "042c19c0703209a125f7f196e14d5e876a1d069e84f8ae460679adfbd818fd6d:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 77,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fbe765462aa9c9ffdced56eac2742233479bed1306d6c09f48f4cbc421f3faff:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 390,
+      "valid_bytes": 128
+    },
+    {
+      "id": "772454baf4aaacd0bb947dbbea95ba97a825fc9aef21f09c65d43158100cdacd:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 246,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6b6924aaee999b3c8e7f062b644d004e73b28ef108f74db661ec37d382a5fd33:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 267,
+      "valid_bytes": 128
+    },
+    {
+      "id": "97d30b72e191b991ec6fc22d61f3fb63ee1cd60aa8fb2b65791d047e19837e8e:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 329,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9a2b9283e5a165ec5f35a84438ff8e131172491b4bd701902400a09ad8a71153:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 379,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2db63a98473d48440ba5898fa74755840f8db88776d2f05ee446c2b060e79fe6:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 366,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a13c8fcc631ec6925bd18bc4f68fe96e92d46ad28902efc4aa3768a36961495e:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 177,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fa2f194594240c8174742f48b5752131a79c7a3475f004d40090c71493df9eb6:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 321,
+      "valid_bytes": 128
+    },
+    {
+      "id": "43c5e93e82d8424c25d092bd144083931187035cde1a60e6b85308cd1bea6f70:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 386,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e419fe55627a6a8121f36fd155fa586ef77ca65d45bf547a028812545a60e882:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 285,
+      "valid_bytes": 128
+    },
+    {
+      "id": "cba392b7737184f1d88a984da27dda9ef45f8145c9b703287521bbdbfd49a1d4:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 433,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0817dd1b26686cc98f8cee47f51f0ea65f2d037429be5e518ede3a4fec612802:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 390,
+      "valid_bytes": 128
+    },
+    {
+      "id": "836bf5b492f1bae18c256b3308b3d337d1c513d30beee91cde49048dcd888809:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 256,
+      "valid_bytes": 128
+    },
+    {
+      "id": "351746acac5f0382e6ff43c7a116d3b954828c78d1189777ed97bc4ea0e6e786:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 203,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f1fe23c16f3bbbdcf7c83617e8bf0000f0f9f801b24ae0c4d62486db9a102b54:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 507,
+      "valid_bytes": 128
+    },
+    {
+      "id": "90c0a41f058a656fe80a8312440d51fbdbcc465bd24e1c20e46ac1a3cd565886:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 488,
+      "valid_bytes": 128
+    },
+    {
+      "id": "38ff22e36f50ab8fe056922330cde97e4f9c17f73f1b24ad32a02738e8b2d294:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 397,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1f96cdfd82cd3f0d0f92d5c45dceb5093d4910d94f7ee830000a87e56bdcdcbf:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 100,
+      "valid_bytes": 128
+    },
+    {
+      "id": "08a605f1950ec6a2d722854351a6942ba59bb2e9c649ed31d4466784c7212c88:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 347,
+      "valid_bytes": 128
+    },
+    {
+      "id": "90373a71a211cce590fa67fcfbb03f939a77954ca0cc4e1f6a5fe405dfd7af0e:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 367,
+      "valid_bytes": 128
+    },
+    {
+      "id": "06271e4a2806f2890893ae06bb3f80f4c57851c21eafe3d9a704f4d8eb781b8a:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 301,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8ef41479782a3d6d87f81e46940f79293ee6c1881a5764d8efa4db798a841ac8:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 320,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e4ee9b13790f0e0482b879832b39d0fc1dc5b47862e38bdcfb65c8d67fd7a4f4:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 240,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fc0817861648cfdd4965b38c6ae081c32634f4d8e8311af46b10ad87565308c2:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 377,
+      "valid_bytes": 19
+    },
+    {
+      "id": "15b999bf63cff0fad40943a8fbc3ef145723d66ffdc21f1b3519b8edfe10086e:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 386,
+      "valid_bytes": 41
+    },
+    {
+      "id": "7839ffa5a463810a9f520801a47ab20009701f42f2956a338292002dfdcc0500:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 369,
+      "valid_bytes": 128
+    },
+    {
+      "id": "02d1f4975b03ce41cc957e810e28cd37c614409bc0d62074e97ed784467650ed:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 270,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2ca2f2d80572c535ac79cf5fc4af3d46522bdb5a7d558d948d516c03b1b3fff0:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 463,
+      "valid_bytes": 128
+    },
+    {
+      "id": "77e305a250ecde55edd077415e217c52910bf25340bccc42f4b7f03b1377712a:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 283,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3ad407977c412eb6c86a7ac071cd500107da0f0e8a977eff537d806b7aa2bbe6:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 154,
+      "valid_bytes": 128
+    },
+    {
+      "id": "7586d7e2fb34c36ec12fb1bb76cf8ce07ffbdbd94253860c55f5c221c1a29a11:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 259,
+      "valid_bytes": 106
+    },
+    {
+      "id": "5abdae32fe84a188f4701cd2cc4797bdd1107b63a89833dddbbe5525aa314990:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 432,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8a4b15428efff07d77b7c73d3613a499c86f9050892842e5accefd92148a68b6:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 520,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d1c98dbd5091c3a0bdf3056c190072c5210edc780a5854e9ca9d602140c3ebe1:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 75,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f255c1bacb6e9ade1662fe619b27f50520a1ff815ebe870f7d43d4acdb3c9006:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 270,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8b3f043c87e860b787f596d50463169a4a9440f0b5239f4860b051ecf7367920:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 238,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6a5ef928f392c4d6057aaa6b980156c4b6e7e9c3e397379ccb7bdeb6d1b1bd54:answer:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 539,
+      "valid_bytes": 96
+    },
+    {
+      "id": "9e3ff64715e0eb93e5ec5186a9421d621f27febe3c756c9166867e3a6533c749:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 324,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6fdf50c47a049734284cbf8f0ea267c81e0dea72353dd09268708ea2757645b3:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 455,
+      "valid_bytes": 99
+    },
+    {
+      "id": "05668762762ff2a313f5d8d8ef391ac8de666f2f03b4c9bbfb3da7b2a222a860:1:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 321,
+      "valid_bytes": 128
+    },
+    {
+      "id": "aad9f32fe2daf7127980f17ab99a0a71595e3a2130f0f37efd460a9a4e33706b:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 375,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5ac8e27c4f2771072237f0af848c190d9a8acf0e31f19347c314bf43bb877ddd:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 379,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fdd128f579edcd3bda7d0ec97e679fa3d2df055c341bd19f7f5862d9adfd5b9a:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 373,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0bd451d87b122839739a39bcdf423f19dea6e4b7be5db5662b60c84a2b8ddde0:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 382,
+      "valid_bytes": 128
+    },
+    {
+      "id": "09b2b3c5dfe01ce75484a245e4ff472574922db535711af02558541f36aa4ce6:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 270,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c063adce9be87ea35eea346894ca0f7e409d5c3bbaeac4b503b02e25455be1ca:1:byte-17",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 534,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4d3db37d993b6e0d68b12cdb72a757232c5381bdac2593600bb370305f6042b4:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 380,
+      "valid_bytes": 38
+    },
+    {
+      "id": "516ced9e3ee9fc3a50cadf5c00e4051964acf29edc688d4729769a9932c863f2:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 439,
+      "valid_bytes": 128
+    },
+    {
+      "id": "dfc5ebe6ba40c1739d2054aa61a232951746726d536fc356601d2030d18a41b3:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 510,
+      "valid_bytes": 128
+    },
+    {
+      "id": "3dfd5b8fe2bd4ffd84345b1720bebeadb9f093fc166cb48c10e8837480ab480d:1:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 461,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b903440abcc734bf066c932b84525996d1b2c35d8bf0b4388cd2b9fe9a5578d6:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 276,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0cf0aa6ca685e13a39b74afcf26fb3838b296a0a4a84426bbb6c9ca350ef338e:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 343,
+      "valid_bytes": 128
+    },
+    {
+      "id": "893be3247f52e67f1f0d6d2924c9a43a1015135c87910aac3d3689c3b018c9bc:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 405,
+      "valid_bytes": 61
+    },
+    {
+      "id": "cf55ff1b32bbe02c6eec920943180f20b59dade2ba2560d2d31da8bddb928a5a:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 356,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e4861403043951e9ebb16ef4ee6b1cef5c178d7a9d22a8ea24edc6003931eb94:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 468,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a7ba2e0a785555d68c2d0d3d58660f507b17faf64f4731e7ea94d25d234be8b1:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 74,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6d8e0d5ea96050595f034703b7b9bc9708e2d27e214a180ed4be24fa6c615300:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 285,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4dca7268ebdd2a55e361fe03dc39c2f68398c1f851a68fb761579e10a6b04fad:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 76,
+      "valid_bytes": 126
+    },
+    {
+      "id": "f19929fd16d6134ba8e38339d66faa11793357053640a7f38073f1bb68cff463:answer:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 490,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e678ed42cdd892485b9d7e0fdaf70cac44f297c283ba3bfb91c1f4342af2232a:1:byte-12",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 459,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c90b937db0f2c1bc1056ff28c6ff0470892236c94d8c1d4438575652781ed143:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 176,
+      "valid_bytes": 57
+    },
+    {
+      "id": "7d92715db212ea1d90c6455b48b59815330ebdd72f4933584ddb7fdfc50659bf:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 121,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bd1e64a299411f7fa82f88b8ad2b5162db0ae1cc2c8ba5a4c98c5937b7ff573a:answer:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 212,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bb7fdf0344f7916e7b84352fc5f0660ee1c8dfc493d1f20158b73c009b5ca619:1:byte-9",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 339,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f29c31e79e2fe7daed69fc3caa805e2282d9e5b4cc5ce1f7dd4721aa894ba140:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 316,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2cd78364c6790620687fd6f2348441a0b866341aaa35be35a597fa44c908d5ee:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 267,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a91065f57ba3a506b04b6e4d2c148da663446a0b6c7900dbd164f7d23a5686ee:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 271,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e0f8543d6b8e46722960435ebb3245709df3062cfe153950e5e765054662c481:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 71,
+      "valid_bytes": 128
+    },
+    {
+      "id": "60e342408eba58f7e559ae9f7b230dfcf149e2a24d939db7dceb5609de856f31:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 236,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d0875c0089423d7481ce8eda5ec137a77a63e0357512be1eb8d659e30ba9d68b:1:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 206,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1c1f69f930d05448bf68995b3352e57b90c2f9b8f6f1a530879d0bd4f4b1db97:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 255,
+      "valid_bytes": 128
+    },
+    {
+      "id": "53f3ff456f913ea446cb3ad5c983fb2317ebdf49a1bbd097d69564d4ce3ba9e6:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 268,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ba414015036555d91ff87a3bade2d2459049030fa2add1888da43cf4c4c707c7:answer:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 369,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0d76fd571637822f7c7a46f5ff2448ea318724d40b2a8ea310a0d9e480a40cfa:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 227,
+      "valid_bytes": 64
+    },
+    {
+      "id": "e138f8595b851a7bffbf5360abb08fc3383033386eefcc601c1e02969d21578a:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 352,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1c880665386505a30133d18c726259fb1c5f89f29780b239c34fa6224561ca7e:1:byte-11",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 401,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8671dec235c3befbc2ea5a0e66c1db07488e0e0df2b974974b39e50be8e7f853:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 260,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fe4056bb0a6d07c5140a1fc1241ddceef9c4964a38f5934140cde876de732123:1:byte-7",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 367,
+      "valid_bytes": 128
+    },
+    {
+      "id": "111bb01c1a6d3c62e98846f42510f407ccfa84e562478baa17ae3fe9991c19f5:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 244,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fe5ff870b11d444d665174705b1f681baa2afe09e804a63dc5fc81b00818e7ff:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 222,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0f1c501e69f35f5ad4ac439614543fbdf365e8a6f9acd8285d27d68ed40edb5c:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 486,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f77108038915e19073440a17012c0560a9c402f2a66d5082c54df13aaf533984:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 81,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4876141a4f847b29aac88601c0284d79e32f1e41bfc58b335587c6ac7ee7bb5c:answer:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 271,
+      "valid_bytes": 128
+    },
+    {
+      "id": "5f71999346c57d27e5f1ca32adaba890ac65c7439f485288407252e083af3d99:1:byte-4",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 181,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d8e626a6bb969f2ce64e3d7925bb045819dcaafe92afc96d0727d50bf7fd4e99:answer:byte-1",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 225,
+      "valid_bytes": 128
+    },
+    {
+      "id": "984b5f47043796089efcb888d98c35b47d28eb82d6990ffc6da5db72e07943f7:1:byte-2",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 166,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9d9e30ab9865392844fec6dd8ff3fcf504f8aaf0548c2ee03614fb4da697f0b5:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 468,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6301658fa2700aa02ec1a9dec86e039bfe86834ad2d137428c06b2d4276031e7:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 397,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b81a7413bdc8d7cccef464551bf46f4c2be5ecdc3b63bfe1e41244ba85d2207b:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 461,
+      "valid_bytes": 128
+    },
+    {
+      "id": "763b1ec12cc55acf65e23a52c9611090d8b29afa8dbe0e586104317bbbb57804:1:byte-0",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 510,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8ead5b4591ea3539a63db75741df32621ac562a99948543b85687a9a46a0a7b2:answer:byte-6",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 388,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d5084b43da1cdc910b74530efacea49d4c6e1db7b2ea272355fb6a4443f194df:1:teacher:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 408,
+      "valid_bytes": 128
+    },
+    {
+      "id": "86b6c490d47819f80cb6b279760eb3621e8cca51489da903657ef3032581ae0b:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 314,
+      "valid_bytes": 128
+    },
+    {
+      "id": "bd0ec35d3ac67b918db76bc708d8ebb924f2083ce8776adf272912b762a00073:1:byte-8",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 448,
+      "valid_bytes": 128
+    },
+    {
+      "id": "22298b30ce2c48436b86975103010272a1234aa197a03af94d6b8ac9c3eafa10:answer:byte-5",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 414,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ba5d136a2e98cd3e5e95254fa83765f5463f48d9236c358a3b4b7c12316af77d:1:byte-10",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 371,
+      "valid_bytes": 128
+    },
+    {
+      "id": "163e095da0b2d1d67fc2e107fb05e238db5fd20f38c78394c9491663ce37c2f2:answer:byte-3",
+      "split": "train",
+      "passed": true,
+      "teacher_tokens": 249,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a5f2e346b1b57d6baaad062ed422e8facd47632d8b4f9b0473e7a58c6bf73e30:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 408,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0ae4ea470d4b832a590b12b639f30656a585c71a2dc936e60de583e61e1a5866:1:byte-1",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 115,
+      "valid_bytes": 128
+    },
+    {
+      "id": "76b34c9681b777aa51bfd4564037391391adfd3e9fde35a4481cc5a913758f67:1:byte-4",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 317,
+      "valid_bytes": 128
+    },
+    {
+      "id": "642245fb79afb8fc69bbfe4f8f980e733b4902f45b2d13f12c4e4613d1fa71a3:1:byte-6",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 379,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d05d923408d18bb32aff555e038ccc04dd9a93dbdbaa0f8b5c8c0302f39d151c:1:byte-13",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 397,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a0a4a307e0394ae2b62b8a0fb910c92f5a25543331e47bd9f022c2ba94835963:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 368,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4c8533851d49c6b94ab654d1c8b68d1677cd00e437a47afc56df01c6e61628d3:1:byte-1",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 233,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1a77acf2641717ad7af8f14cc28697f95a1f1bbd58ac01073a89ffe940a57dc7:1:byte-2",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 257,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ce3900cb73f304451b5390a8cc01e19a539c1b8f3261d50e139f779cf11b4af4:1:byte-9",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 443,
+      "valid_bytes": 128
+    },
+    {
+      "id": "60450e0de11c6d352bb983151cfefc3bb46533d6d157911bbb0fae7843eef689:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 289,
+      "valid_bytes": 128
+    },
+    {
+      "id": "10a071a82b0789cd077cf0468bcdbff823b8bfd58d11bfca7073d767e9bfad78:1:byte-3",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 257,
+      "valid_bytes": 128
+    },
+    {
+      "id": "117382d970733d441a2249b02595a29b62ba00e4395ecdca48e8908551940c2c:1:byte-7",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 355,
+      "valid_bytes": 128
+    },
+    {
+      "id": "c5bb08182769e675f1716e94ab25d80f90ad6896be340a85c59eb3f833c4af94:1:byte-12",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 443,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f13f8a55aed30707ca03721456f3ad188609698679b25e8d49c3ff9e46834e08:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 313,
+      "valid_bytes": 128
+    },
+    {
+      "id": "63889c7a5e4af9b4db4afe2487fd4405fe0c036a1b5cb08f8b7b9e02a864612e:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 362,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2e3fc8ae99cac6da2065d7a8d104ae5f05b0b4e81ff1838161d78a4446871bed:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 364,
+      "valid_bytes": 128
+    },
+    {
+      "id": "dafe8ddd8841c4bba951ca3af3ae52172633735d2482ff3a2e3be6d1c1f9604e:1:byte-2",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 191,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d333ba965f3ef9bd2098cf663a0d16b8253ab748539651ff7e106c8907d34fa0:1:byte-7",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 396,
+      "valid_bytes": 128
+    },
+    {
+      "id": "373a51f8ea1569523579bdc48e783851a6a011846ec71e8e8d19cfe2cc61e36e:1:byte-1",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 107,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8933faad9efe99722f620b95ea24cf9fd1045ab08f676a9c6a83124db61b12d9:1:byte-7",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 369,
+      "valid_bytes": 128
+    },
+    {
+      "id": "232e17e36b60b0a8861fca3efcfdee91e42a3d1842d56013763e72a48b693e84:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 450,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e9e395242df5531192d140facc4e0d5fe1cb971109880e97ed490303d563900f:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 368,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f85cbb8ddb4c21773df7960df534c937fed870958c6750f4ae9a7727976d2935:1:byte-3",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 253,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ac2de11bffe7a31b12935bff1426e25efc2dafc11896de5230e89051ee5ecc8a:1:byte-11",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 517,
+      "valid_bytes": 128
+    },
+    {
+      "id": "aada07af842f64f7fa500a444f79e443ea3dd80ff21b6a59e70cf4c704b482f8:1:byte-0",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 77,
+      "valid_bytes": 128
+    },
+    {
+      "id": "2d5c4c36c84790a4a3e00a1dff3c56541ccf8b67032f86f7e7ad2a6eb4b7a069:1:byte-0",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 87,
+      "valid_bytes": 128
+    },
+    {
+      "id": "8790e922c872cbd3039d6e09ecfd03e3a722d97ffaf665a8e5616b8fb6b51672:1:byte-0",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 171,
+      "valid_bytes": 128
+    },
+    {
+      "id": "30ae3cc09e11dd9505e9450a0b0b04968386cef0d3b27c13f4957131a9ec28b4:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 321,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6573d0cd0d53dc43a923eba02fc8a744d3e19ec13646f619d2701beb3f3937d6:1:byte-17",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 465,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0588b3c20159fd2dc91213f7cd2f6ee76ffeddbef301e0af63f4da8410743e55:1:byte-0",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 106,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ec0a9d59db509b6a19097c99f130ba68faea5fc8110f8b4f1504e7aba698fd19:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 407,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d24b417338ad615162be645f60b276bd83f2ab3f8bb109bec098ffa536ac6163:1:byte-5",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 231,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f1fd2dd95b2c624a70618a3e3f8a3c5c773b85efbf62844b6c3e54afa20f6cb1:1:byte-6",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 469,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a4b9185eb52dfd4a37544083d05b514db1908c954073302d15a0ffa76995fa0c:1:byte-6",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 296,
+      "valid_bytes": 128
+    },
+    {
+      "id": "1193e3399057881e0dc50725b8077abb5d7c9847828df187ecc3e66a98c12b4c:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 328,
+      "valid_bytes": 128
+    },
+    {
+      "id": "96d66484aa9a3a2dd80ff8d70d5cdd1801264fb4408effa6c43b815b6bdcdd2a:1:byte-13",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 429,
+      "valid_bytes": 128
+    },
+    {
+      "id": "efd6ce9d49272911ac733ad98ddbe43b4a07d39a25a689ea1ecb1c598a9b26d4:1:byte-11",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 427,
+      "valid_bytes": 128
+    },
+    {
+      "id": "be7b2eb5ce8f7d0557c1f2897d3d15b813639cdbab015500d0ace860b531f216:1:byte-10",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 349,
+      "valid_bytes": 128
+    },
+    {
+      "id": "91a0f122d38dcc08bddf3ea5df64ad8667af59d819cd31f9d4fb69cf063279fa:1:byte-14",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 432,
+      "valid_bytes": 128
+    },
+    {
+      "id": "e46c87fe687acc89b4c44c783aeb92693beee4557c6dcd4853a891eaf01a009d:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 332,
+      "valid_bytes": 128
+    },
+    {
+      "id": "6d78c6e73c0be898ea535df3ab7f1276f90d994148207ef1d952cc618f09bca1:1:byte-12",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 479,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b7587c01e9e1edcd9cb1ceb72331be8ff6f50a16c6c839ae948d58a6dd7a9cd9:1:byte-16",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 483,
+      "valid_bytes": 128
+    },
+    {
+      "id": "48085d7f4a7474d101d1bd0b268ecea54fc5ba7c355df1745b8647469fe2fbc4:1:byte-4",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 201,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ec27830ccd3092b115715e8906f71bad1f06b2e013a44af9fee5bb9186c5f3bd:1:byte-0",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 82,
+      "valid_bytes": 128
+    },
+    {
+      "id": "d6100a699ac5c64cc89444d24fc669b3f4c5e446dafda214253f163e6075bf4b:1:byte-12",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 485,
+      "valid_bytes": 128
+    },
+    {
+      "id": "92e99196352c356f191f1aefc9445fa7c5abba61927a062a21ec77ab4aebc661:1:byte-14",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 401,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f2b580d372f9288f031bbb0f1bbc3c2cfaf7e85b2392b6de09a6b81eaafff4f5:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 359,
+      "valid_bytes": 128
+    },
+    {
+      "id": "78a21526f9cef80e1fc3b0884ee6fdb8483075a4fe6de6c5fd20c1d4d990562d:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 294,
+      "valid_bytes": 128
+    },
+    {
+      "id": "4094cb6538f8d81bfad8586f93b1ac69d2af9a48ee0daf9f3ebddb08a91fc864:1:byte-9",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 473,
+      "valid_bytes": 128
+    },
+    {
+      "id": "18a6b22c7aa3b1a442a7499cc0826851f701c70ce13ad50d701aefdfaf696372:1:byte-9",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 281,
+      "valid_bytes": 128
+    },
+    {
+      "id": "98117cb42cfccb6360deca7e03414edd8b6cba75d592d6936ddbc00c9b1fcdae:1:byte-8",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 383,
+      "valid_bytes": 128
+    },
+    {
+      "id": "365516699e5923c16e122137890f23ed06d94934f5b898ce36843511617f6d0f:1:byte-11",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 475,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fc80fc57513d57707c0f11d6547c97812e0d34cc94b70b3feb8459025fe64540:1:byte-14",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 493,
+      "valid_bytes": 128
+    },
+    {
+      "id": "f9f3182ce10f59e8e1e1d03a15829bc3d13151feb619a657edf49cf027d4f3ec:1:byte-6",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 252,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a4ea70ec405c48e40b6ec484af397c73dc3c07112139af0f751b2d35db28f3e3:1:byte-12",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 518,
+      "valid_bytes": 128
+    },
+    {
+      "id": "ecda9830872bacf6d7125f9b9e0b92e1371b5bb1f507485fb24e90c391bdec8c:1:byte-13",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 515,
+      "valid_bytes": 128
+    },
+    {
+      "id": "9149684ae426e8a972d42dffb0884b13d287d752082c914dece6d147695b1240:1:byte-9",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 385,
+      "valid_bytes": 128
+    },
+    {
+      "id": "45f89c04f14a69e4cc712e84b2fc480eb0a7454edaa2aee96a004af2802c960e:1:byte-1",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 116,
+      "valid_bytes": 128
+    },
+    {
+      "id": "722c220adb59ab65827f00269bdc4a14c9d47bc0b00ff75cffb050a7eb89839e:1:byte-12",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 474,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a6df1608bbca786a7007f60b6ee2c6f27242d451b4e3166dfb05f8df1184d1de:1:byte-2",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 133,
+      "valid_bytes": 128
+    },
+    {
+      "id": "0f191b6ffb58b1fbe51aef3a6d37622d513265141ad252618c280774fae932da:1:byte-7",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 253,
+      "valid_bytes": 128
+    },
+    {
+      "id": "a028115d671c8f6dd94b801d7877718253a764a3d9fd83597711c60a2b02d044:1:byte-11",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 525,
+      "valid_bytes": 128
+    },
+    {
+      "id": "b57faa05405e616c6177235e500c06a3df7eb133a5575068b8703f4c7d1d6715:1:byte-2",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 275,
+      "valid_bytes": 128
+    },
+    {
+      "id": "fa70a1c97f59ba0360efbb6268262a7328af27bc9421ed40d14aac50486b8244:1:byte-3",
+      "split": "validation",
+      "passed": true,
+      "teacher_tokens": 472,
+      "valid_bytes": 128
+    }
+  ],
+  "passed": 576,
+  "total": 576,
+  "complete": true,
+  "quality_ready": false
+}

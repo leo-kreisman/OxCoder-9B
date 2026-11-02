@@ -1,0 +1,544 @@
+{
+  "checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+  "prepared_sha256": "3457a3581493a0b56bb2f937fc477f26972597c28a9e85e02c1e1a5d1105ebb4",
+  "model_identity": {
+    "stage": "generator",
+    "format": 1,
+    "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+    "codec_step": 6000,
+    "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+    "rank": 32,
+    "lr": 0.0001,
+    "seed": 17001,
+    "prompt_tokens": 2048,
+    "smoke": true,
+    "architecture": "hybrid-causal-mixer-next-concept-v1",
+    "optimizer": {
+      "name": "Muon hidden matrices + AdamW classifiers/interfaces",
+      "head_lr": 0.0003,
+      "body_lr": 3e-05
+    },
+    "conditioning": "full chat template, full previous chunks, explicit response termination",
+    "full_attention": "causal prefix; bidirectional target level; recurrent layers remain causal",
+    "layer_split": [
+      12,
+      20
+    ],
+    "admission": "exactly reconstructed train chunks only; all selected validation errors retained; broad codec gate failed",
+    "concept_input_norm": 0.8,
+    "kernel_backend": {
+      "name": "fla",
+      "version": "0.6.0",
+      "torch": "2.11.0+cu128"
+    },
+    "kernel_audit_sha256": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+    "head_kind": "untied",
+    "cached_prefix": false,
+    "head_input_norm": true,
+    "calibrated_head": false,
+    "initialization": {
+      "checkpoint_sha256": "b861238a6377b975a60430d6368183ab7531d96710b7e6d9b2361ddabfb92990",
+      "scope": "retain body/adapters and independent classifiers; reset optimizer"
+    },
+    "prefix_audit_sha256": "ef7e47f2b7be0df15dd2eb4abd1870b70e23d1d5a52b6778402dc048cd574c67",
+    "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+    "training_recipe": "independent-classifiers-v16",
+    "prefix_gradients": "full-context backward; prefix cache disabled",
+    "full_precision_reductions": true,
+    "head_warmup": 0,
+    "head_lr": 0.0003,
+    "body_lr": 3e-05,
+    "sampling": "80% coding; sqrt response-count source/teacher buckets; uniform response then chunk",
+    "loss": "mean level code CE + 0.1 end BCE; no continuous residual loss",
+    "quality_ready": false,
+    "prefix_audit_outcome": "failed; cache disabled, no tolerance relaxation",
+    "nearest_code": false,
+    "implementation_sha256": {
+      "train_independent.py": "7f985e7b3ada4806cad79eb126dfebada39cff424dbae516f62404dfee99d4c3",
+      "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+      "geometry.py": "29d45354b4f8966e9ce0920db046ad8623e2bbab561eb56f5f87ff610b8358e6",
+      "train.py": "deda2d93dcdfb3c6cdb9a93f5ec3f773e148adbf2fa1c0d5c9bf242f2af3101f",
+      "train_geometry.py": "c49128d90457268900754537feb0991c0a480bdf2cdf5b43740e35dc30d2d053",
+      "generate_candidate.py": "73f7cedc2018215ced6fa42f84fda5ff8d87fd0b3dbe99c1072caacb5eaab32d",
+      "codec.py": "612564248d6b1018aa417ba1c00a72c7ebb2ea4726319fed3b37268e054a5008",
+      "prepare_creator_expansion.py": "e00294abb67f5feebb49f99dccc4c3473b4730fa44b24371db9d061b38ba53b6",
+      "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+      "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+      "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f"
+    },
+    "planned_steps": 2000,
+    "conditioning_corruption": {
+      "maximum": 0.5,
+      "schedule": "linear from maximum at first level to zero at last; clean warmup; clean labels"
+    },
+    "trainable_parameters": 76587009,
+    "allocator_cap_gib": 11.25,
+    "execution_policy": {
+      "keep_per_device": 0,
+      "convolution": "reference",
+      "shared_prefix_training": true,
+      "audit_sha256": "5a157621214a8f16a58d0dd792d0e423f3f94c28ac0fd7a235bd6a4a0c27dd10",
+      "audited_checkpoint_sha256": "65fad6588112487f4201e79fa1c93c4385b0e945c6b55d4a5dad846bb91a70c3",
+      "prompt_gradients": "retained",
+      "minimum_shared_prefix": 64
+    },
+    "dataset_expansion": {
+      "base_prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+      "addition_manifest_sha256": "90320b8a463abcf2a8667a924de69b9e2cb1209948d42abf49702e7b567d80e6",
+      "frozen_evaluation_sha256": "cd6ce9b9a86447ab4250a2ffb405eebe99334729a370d537e68fcab9d2f4611d",
+      "counts": {
+        "responses_considered": 4228,
+        "total_chunks": 171445,
+        "over_context": 27551,
+        "selected_chunks": 31050,
+        "responses_selected": 4123,
+        "source:TeichAI/Ox-Alpha-10k": 27765,
+        "source:TeichAI/DeepSeek-v4-Pro-Agent": 3285
+      }
+    },
+    "data_sha256_scope": "inherited base examples; full expanded inventory identified by prepared_sha256 and dataset_expansion",
+    "continuation": {
+      "checkpoint_sha256": "65fad6588112487f4201e79fa1c93c4385b0e945c6b55d4a5dad846bb91a70c3",
+      "source_step": 260,
+      "scope": "model, optimizer and RNG retained; separately recorded resource/implementation continuation"
+    }
+  },
+  "implementation_sha256": {
+    "audit_packed_training.py": "bc7f4955226720737476e221bba1c5b8135d66ed921661ce9eae41d02077ec47",
+    "packed_training.py": "cb34fdfe5e61c2fdac7eb2cead130fc6bf1d9710e35b451e16ea34d2ff6f62a1",
+    "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+    "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+    "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f",
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "gguf_training_backbone.py": "484472bb51d4a3164e6f3eec123e3ed2aa266b524b90872956860a98db81ca02"
+  },
+  "admission": {
+    "host_available": 39887065088,
+    "devices": [
+      {
+        "device": "cuda:1",
+        "free": 16301424640,
+        "allocator_cap": 12006457344
+      }
+    ]
+  },
+  "devices": [
+    "cuda:1"
+  ],
+  "compact_weights": true,
+  "records": [
+    {
+      "requested_prompt_tokens": [
+        64,
+        69
+      ],
+      "prompt_tokens": [
+        64,
+        69
+      ],
+      "compact_tokens": 557,
+      "examples": [
+        "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+        "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0"
+      ],
+      "packed": false,
+      "loss": 4.244437217712402,
+      "median_seconds": 1.3002643139916472,
+      "seconds": [
+        1.2988269259803928,
+        1.3002643139916472,
+        1.3004802099894732
+      ],
+      "speed_ratio": 1.0,
+      "peak_allocated_bytes": {
+        "cuda:1": 5437622272
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 16
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": [
+        64,
+        69
+      ],
+      "prompt_tokens": [
+        64,
+        69
+      ],
+      "compact_tokens": 557,
+      "examples": [
+        "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+        "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0"
+      ],
+      "packed": true,
+      "loss": 4.244732856750488,
+      "median_seconds": 0.9551537870138418,
+      "seconds": [
+        0.955066762981005,
+        0.9569867659884039,
+        0.9551537870138418
+      ],
+      "speed_ratio": 1.3613140958763787,
+      "peak_allocated_bytes": {
+        "cuda:1": 5586364928
+      },
+      "logit_comparison": {
+        "relative_l2": 0.00315240181608551,
+        "cosine": 0.999995055164454,
+        "max_absolute": 0.1691906452178955,
+        "finite": true,
+        "parameters_compared": 16
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.012857238308629082,
+        "cosine": 0.9999175619853542,
+        "max_absolute": 0.006673097610473633,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.01583303356129181,
+          "cosine": 0.9998754769232739,
+          "max_absolute": 0.00439453125,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.006982045944450246,
+          "cosine": 0.9999756259231556,
+          "max_absolute": 0.006673097610473633,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.02657536080385987,
+          "cosine": 0.9996515497700513,
+          "max_absolute": 0.0009137196466326714,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": [
+        64,
+        69,
+        128,
+        256
+      ],
+      "prompt_tokens": [
+        64,
+        69,
+        128,
+        256
+      ],
+      "compact_tokens": 1365,
+      "examples": [
+        "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+        "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0",
+        "2a5558072bcc709f0c2dabf7527d739f4055deb37cd6fb55ba71888df1729846:1:byte-0",
+        "8b3415fa802567d87a77e0a6ae50c106367d5d47900fbd02f3b4078e4353861d:1:byte-7"
+      ],
+      "packed": false,
+      "loss": 4.299780249595642,
+      "median_seconds": 2.7589241329988,
+      "seconds": [
+        2.7578176429960877,
+        2.7597127350163646,
+        2.7589241329988
+      ],
+      "speed_ratio": 1.0,
+      "peak_allocated_bytes": {
+        "cuda:1": 5545891840
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 32
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": [
+        64,
+        69,
+        128,
+        256
+      ],
+      "prompt_tokens": [
+        64,
+        69,
+        128,
+        256
+      ],
+      "compact_tokens": 1365,
+      "examples": [
+        "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+        "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0",
+        "2a5558072bcc709f0c2dabf7527d739f4055deb37cd6fb55ba71888df1729846:1:byte-0",
+        "8b3415fa802567d87a77e0a6ae50c106367d5d47900fbd02f3b4078e4353861d:1:byte-7"
+      ],
+      "packed": true,
+      "loss": 4.299239754676819,
+      "median_seconds": 2.1282091500179376,
+      "seconds": [
+        2.1264282690244727,
+        2.128614889981691,
+        2.1282091500179376
+      ],
+      "speed_ratio": 1.2963594921934933,
+      "peak_allocated_bytes": {
+        "cuda:1": 6075981824
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0032756424690097265,
+        "cosine": 0.9999946418295409,
+        "max_absolute": 0.2838430404663086,
+        "finite": true,
+        "parameters_compared": 32
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.012453884592586128,
+        "cosine": 0.9999231278491821,
+        "max_absolute": 0.009606599807739258,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.013044212384030593,
+          "cosine": 0.9999165384682942,
+          "max_absolute": 0.002685546875,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.006815472851223853,
+          "cosine": 0.9999770850114801,
+          "max_absolute": 0.009606599807739258,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.04633610543476799,
+          "cosine": 0.9989367593591844,
+          "max_absolute": 0.0010615380015224218,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": [
+        512,
+        1024
+      ],
+      "prompt_tokens": [
+        512,
+        1024
+      ],
+      "compact_tokens": 1960,
+      "examples": [
+        "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-14",
+        "49d45d2d4bad2ecebc905dd4472de13b759bf57f3abe21c684d665e7ac40dca3:1:byte-44"
+      ],
+      "packed": false,
+      "loss": 4.313559055328369,
+      "median_seconds": 2.960252277989639,
+      "seconds": [
+        2.959308138990309,
+        2.961159836006118,
+        2.960252277989639
+      ],
+      "speed_ratio": 1.0,
+      "peak_allocated_bytes": {
+        "cuda:1": 5966494720
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 16
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": [
+        512,
+        1024
+      ],
+      "prompt_tokens": [
+        512,
+        1024
+      ],
+      "compact_tokens": 1960,
+      "examples": [
+        "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-14",
+        "49d45d2d4bad2ecebc905dd4472de13b759bf57f3abe21c684d665e7ac40dca3:1:byte-44"
+      ],
+      "packed": true,
+      "loss": 4.312964200973511,
+      "median_seconds": 3.0535021600080654,
+      "seconds": [
+        3.0535021600080654,
+        3.055945266998606,
+        3.0508764150145
+      ],
+      "speed_ratio": 0.9694613341887467,
+      "peak_allocated_bytes": {
+        "cuda:1": 6367410688
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0030591826589592757,
+        "cosine": 0.9999953356701574,
+        "max_absolute": 0.19128990173339844,
+        "finite": true,
+        "parameters_compared": 16
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.013770309720429584,
+        "cosine": 0.999905275871189,
+        "max_absolute": 0.005675673484802246,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.015902382391941583,
+          "cosine": 0.9998736385504875,
+          "max_absolute": 0.00244140625,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.006933245641817932,
+          "cosine": 0.9999759656303503,
+          "max_absolute": 0.005675673484802246,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.02547643525945117,
+          "cosine": 0.9996861006037034,
+          "max_absolute": 0.0010339897125959396,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "quality_ready": false,
+  "optimizer_state_in_memory": false,
+  "scope": "Equal-example four-level forward/backward; no parameter updates",
+  "thresholds": {
+    "logit_relative_l2": 0.02,
+    "gradient_relative_l2": 0.05,
+    "gradient_cosine_minimum": 0.99
+  }
+}
