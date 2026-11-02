@@ -1,5 +1,13 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [paired learning-rate continuation](LEARNING-RATE-COMPARISON-V24.md) compares
+two rates using identical training examples and a frozen 64-conversation
+validation selection. The [prompt-conditioning control](PROMPT-CONDITIONING-CONTROL.md)
+tests whether predictions benefit from the correct request. Neither diagnostic
+substitutes for the unchanged executable acceptance and reload tests.
+The optional [prepared-data JSON cache](PREPARED-DATA-CACHE.md) reduces corpus
+startup cost without changing training records or the active comparison arms.
+
 The [host optimizer stage](OPTIMIZER-OFFLOAD-V24.md) addresses the GPU0 memory
 failure encountered beyond the initial parallel smoke. Its CPU AdamW path
 retains learned moments and removes about 512 MiB of GPU optimizer state per
