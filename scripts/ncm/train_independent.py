@@ -10,6 +10,7 @@ from pathlib import Path
 import random
 import shutil
 import time
+from contextlib import nullcontext
 import torch
 from torch.nn import functional as F
 
@@ -49,9 +50,10 @@ def train(a):
         run(a,out)
 
 
-def validate_continuation(previous,current):
+def validate_continuation(previous,current,runtime_audited=False):
     """Resource-only continuation cannot silently change learning settings."""
     allowed={'implementation_sha256','allocator_cap_gib','continuation'}
+    if runtime_audited:allowed.add('execution_policy')
     left={k:v for k,v in previous.items() if k not in allowed}
     right={k:v for k,v in current.items() if k not in allowed}
     if left!=right:raise ValueError('Continuation changes the learning recipe or data')
@@ -89,6 +91,13 @@ def run(a,out):
         if model.head_kind!='untied' or not model.head.input_norm:raise ValueError('Retained heads must be independent and normalized')
     else:model.head=IndependentConceptHeads(model.backbone.width,codec.books,input_norm=True).to(devices[-1])
     model.head_kind='untied'
+    execution_policy=None
+    if a.runtime_audit:
+        from .training_runtime import validate_audit
+        execution_policy=validate_audit(a.runtime_audit,parent,manifest['prepared_sha256'],
+                                        a.keep_per_device,a.convolution,a.shared_prefix_training)
+    elif a.keep_per_device or a.convolution!='reference' or a.shared_prefix_training:
+        raise ValueError('Nondefault training execution requires a passing --runtime-audit')
     prepared,curriculum=exact_training_curriculum(codec,data['prepared'],devices[-1])
     write_json(out/'curriculum.json',curriculum)
     sampler=ResponseSampler(prepared);write_json(out/'sampling.json',sampler.report)
@@ -103,6 +112,9 @@ def run(a,out):
         torch.optim.Muon(matrices,lr=a.body_lr,weight_decay=.01,adjust_lr_fn='match_rms_adamw')])
     implementation={k:digest(Path(__file__).parent/k) for k in
         ('train_independent.py','backbone.py','geometry.py','train.py','train_geometry.py','generate_candidate.py','codec.py','prepare_creator_expansion.py')}
+    if execution_policy:
+        for k in ('training_runtime.py','shared_training.py','vendor/veomni_shared_prefix.py'):
+            implementation[k]=digest(Path(__file__).parent/k)
     identity={**parent,'head_kind':'untied','head_input_norm':True,'nearest_code':False,
         'calibrated_head':False,'cached_prefix':False,'training_recipe':'independent-classifiers-v16',
         'implementation_sha256':implementation,'seed':a.seed,'planned_steps':a.steps,
@@ -116,6 +128,7 @@ def run(a,out):
         'admission':'exactly reconstructed train chunks only; all selected validation errors retained; broad codec gate failed'}
     identity.pop('residual_byte_loss_weight',None)
     identity.pop('continuation',None)
+    if execution_policy:identity['execution_policy']=execution_policy
     if a.data_expansion:
         identity['prepared_sha256']=manifest['prepared_sha256']
         identity['dataset_expansion']={k:manifest[k] for k in
@@ -126,7 +139,7 @@ def run(a,out):
         continuation_sha=digest(a.continue_checkpoint)
         previous=torch.load(a.continue_checkpoint,map_location='cpu',weights_only=True)
         if digest(a.continue_checkpoint)!=continuation_sha:raise ValueError('Continuation checkpoint changed during load')
-        validate_continuation(previous['identity'],identity)
+        validate_continuation(previous['identity'],identity,runtime_audited=execution_policy is not None)
         if set(previous['model'])!=set(model.trainable_state()):raise ValueError('Continuation parameter inventory differs')
         with torch.no_grad():
             for n,v in trainable:v.copy_(previous['model'][n].to(v))
@@ -145,7 +158,9 @@ def run(a,out):
         del ck
     else:
         directory=out/'implementation';directory.mkdir()
-        for name in implementation:shutil.copyfile(Path(__file__).parent/name,directory/name)
+        for name in implementation:
+            (directory/name).parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(Path(__file__).parent/name,directory/name)
     if begin>=a.steps:raise ValueError('No remaining updates')
     write_json(out/'identity.json',identity)
     from transformers import AutoTokenizer
@@ -160,17 +175,32 @@ def run(a,out):
         warmup=step<a.head_warmup
         inputs=clean if warmup else corrupted_inputs(codec,codes,a.corruption)
         prompt=torch.tensor([c['ids']]);values=[];accuracies=[]
-        for level,inp in enumerate(inputs):
-            if warmup:
-                with torch.no_grad():h=model.hidden_features(inp,prompt,level)
-                logits=model.head(h,level);end=model.stop_head(h.mean(1)).squeeze(-1)
-            else:logits,end,_=model(inp,prompt,level,return_aux=True)
-            loss=F.cross_entropy(logits.flatten(0,1),codes[level].flatten())/len(codes)
-            if level==len(codes)-1:
-                loss=loss+.1*F.binary_cross_entropy_with_logits(end,torch.full_like(end,float(c['is_final_chunk'])))
-            if not torch.isfinite(loss):raise RuntimeError('Nonfinite training loss')
-            loss.backward();values.append(float(loss.detach()))
-            accuracies.append(float((logits.argmax(-1)==codes[level]).float().mean()))
+        if execution_policy:
+            from .training_runtime import execution
+            context=execution(model,a.keep_per_device,a.convolution)
+        else:context=nullcontext()
+        shared=bool(execution_policy and a.shared_prefix_training and not warmup and prompt.shape[1]>=64)
+        with context:
+            joint_loss=0
+            if shared:
+                from .shared_training import forward_levels
+                level_outputs=forward_levels(model,inputs,prompt)
+            for level,inp in enumerate(inputs):
+                if warmup:
+                    with torch.no_grad():h=model.hidden_features(inp,prompt,level)
+                    logits=model.head(h,level);end=model.stop_head(h.mean(1)).squeeze(-1)
+                else:logits,end,_=level_outputs[level] if shared else model(inp,prompt,level,return_aux=True)
+                loss=F.cross_entropy(logits.flatten(0,1),codes[level].flatten())/len(codes)
+                if level==len(codes)-1:
+                    loss=loss+.1*F.binary_cross_entropy_with_logits(end,torch.full_like(end,float(c['is_final_chunk'])))
+                if not torch.isfinite(loss):raise RuntimeError('Nonfinite training loss')
+                if shared:joint_loss=joint_loss+loss
+                else:loss.backward()
+                values.append(float(loss.detach()))
+                accuracies.append(float((logits.argmax(-1)==codes[level]).float().mean()))
+            if shared:
+                joint_loss.backward()
+                del joint_loss,level_outputs
         if not warmup:
             for adapter in model.backbone.adapters:
                 g=adapter.up.weight.grad
@@ -182,6 +212,7 @@ def run(a,out):
             'source':row['source'],'distilled':bool(row.get('distilled',False)),'training_example':row['id'],
             'expansion':row.get('expansion'),
             'seconds':time.monotonic()-started,'prompt_tokens':len(c['ids']),
+            'shared_prefix_training':shared,
             'peak_allocated_bytes':{d:torch.cuda.max_memory_allocated(d) for d in devices}}
         history.append(record);print(json.dumps(record),flush=True)
         evaluate=(step+1)%a.eval_every==0 or step+1==a.steps
@@ -206,10 +237,14 @@ if __name__=='__main__':
     p.add_argument('--allocator-cap-gib',type=float,default=10.)
     p.add_argument('--continue-checkpoint',help='Immutable state for a new resource-only continuation directory')
     p.add_argument('--retain-heads',action='store_true',help='New weights-only stage retaining existing independent heads')
+    p.add_argument('--runtime-audit',help='Passing whole-model execution audit for optional acceleration')
+    p.add_argument('--keep-per-device',type=int,default=0)
+    p.add_argument('--convolution',choices=['reference','causal-conv1d'],default='reference')
+    p.add_argument('--shared-prefix-training',action='store_true')
     p.add_argument('--data-expansion',action='store_true',help='Explicit new dataset stage with validated base lineage and frozen evaluation')
     a=p.parse_args()
     if min(a.steps,a.eval_every,a.save_every)<1 or a.head_warmup<0 or not 0<=a.corruption<=1:
         p.error('Invalid schedule')
     if not 0<a.allocator_cap_gib<=12:p.error('Allocator cap must be positive and at most 12 GiB')
-    if a.data_expansion and a.continue_checkpoint:p.error('Data expansion starts a new optimizer stage, not resource-only continuation')
+    if a.keep_per_device<0:p.error('Retained layer count must be nonnegative')
     train(a)

@@ -1,5 +1,10 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [training-acceleration implementation](TRAINING-ACCELERATION-V18.md) adapts
+VeOmni's differentiable shared-prefix layout to the four NCM concept levels.
+It includes full-model numerical/performance gates and optimizer-preserving
+continuation. A passing execution audit is separate from model quality.
+
 The [expanded-data stage](EXPANDED-GENERATOR-V17.md) adds 31,050 prepared creator
 chunks while preserving evaluation and existing teacher responses. The original
 AR source passed 12/12 elementary coding tasks; the preceding NCM candidate

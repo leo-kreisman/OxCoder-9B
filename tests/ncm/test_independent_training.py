@@ -23,6 +23,10 @@ class ConditioningTests(unittest.TestCase):
         validate_continuation(original,changed)
         for key,value in [('codec_sha256','different'),('head_lr',.01),('seed',13)]:
             with self.assertRaises(ValueError):validate_continuation(original,{**changed,key:value})
+        execution={**changed,'execution_policy':{'audit_sha256':'passed-report'}}
+        with self.assertRaises(ValueError):validate_continuation(original,execution)
+        validate_continuation(original,execution,runtime_audited=True)
+        with self.assertRaises(ValueError):validate_continuation(original,{**execution,'head_lr':.01},runtime_audited=True)
 
     def test_zero_corruption_preserves_inputs_and_nonzero_preserves_labels(self):
         torch.manual_seed(7)

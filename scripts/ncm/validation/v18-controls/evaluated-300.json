@@ -1,0 +1,9 @@
+{
+  "update": 300,
+  "passed": 0,
+  "evaluated": 12,
+  "checkpoint_sha256": "e26f70bb428590bdf12d63646fc2ffc327eb3e55c82bfa18a8680dfadadf7556",
+  "snapshot_preserved": true,
+  "quality_ready": false,
+  "scope": "reused development tasks; not a release decision"
+}

@@ -119,6 +119,11 @@ this is not held-out coding success. The
 [complete creator-corpus expansion](scripts/ncm/CREATOR-EXPANSION-V15.md)
 documents source acquisition, contamination checks and frozen evaluation splits.
 
+The [NCM training acceleration guide](scripts/ncm/TRAINING-ACCELERATION-V18.md)
+documents the framework research, differentiable shared-prefix adaptation,
+gradient/memory audits, and continuation with model/optimizer/RNG preserved.
+These are training optimizations, not a qualified NCM coding release.
+
 ## Native Q4 implementation and recorded validation
 
 The native runtime is in `scripts/kindi_q4/`, with tests in `tests/kindi_q4/`.

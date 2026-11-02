@@ -1,0 +1,28 @@
+...........Source acquisition complete: 2 files {'candidate_responses': 3, 'TeichAI/Ox-Alpha-10k': 1, 'train_documents': 2, 'oversize_rejected': 1, 'TeichAI/DeepSeek-v4-Pro-Agent': 1}
+......................................../usr/lib/python3.10/traceback.py:236: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpkmzl4v4t/.pipeline.lock' mode='a' encoding='UTF-8'>
+  tb.tb_frame.clear()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.
+
+
+..
+
+
+.....
+
+
+.....................[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+.........
+----------------------------------------------------------------------
+Ran 89 tests in 1.896s
+
+OK
+VQVAE, Total parameter count: 0.11M
+VQVAE, Non embedding parameter count: 0.10M
+NCP Transformer, Total parameter count: 0.03M
+NCP Transformer, Non embedding parameter count: 0.03M
+VQVAE, Total parameter count: 0.11M
+VQVAE, Non embedding parameter count: 0.10M

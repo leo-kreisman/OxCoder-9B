@@ -1,0 +1,74 @@
+{
+  "scope": "matched-example replay after restoring update 260; includes optimizer step, excludes checkpoint/evaluation I/O; parameter trajectories can differ after first update due to BF16 rounding",
+  "records": [
+    {
+      "update": 261,
+      "same_training_example": true,
+      "prompt_tokens": 54,
+      "reference_seconds": 1.2701279370230623,
+      "shared_seconds": 2.664246724016266,
+      "speed_ratio": 0.47673059914976096,
+      "reference_loss": 4.623530149459839,
+      "shared_loss": 4.623530149459839,
+      "shared_prefix_training": false
+    },
+    {
+      "update": 262,
+      "same_training_example": true,
+      "prompt_tokens": 620,
+      "reference_seconds": 3.4444924179988448,
+      "shared_seconds": 1.3034681839926634,
+      "speed_ratio": 2.6425596422675954,
+      "reference_loss": 4.28513777256012,
+      "shared_loss": 4.285881280899048,
+      "shared_prefix_training": true
+    },
+    {
+      "update": 263,
+      "same_training_example": true,
+      "prompt_tokens": 1206,
+      "reference_seconds": 6.616043788992101,
+      "shared_seconds": 2.1377851399884094,
+      "speed_ratio": 3.0948123201136912,
+      "reference_loss": 5.035841107368469,
+      "shared_loss": 5.036652445793152,
+      "shared_prefix_training": true
+    },
+    {
+      "update": 264,
+      "same_training_example": true,
+      "prompt_tokens": 639,
+      "reference_seconds": 3.7036417690105736,
+      "shared_seconds": 1.3086864049837459,
+      "speed_ratio": 2.8300452689860207,
+      "reference_loss": 5.159898281097412,
+      "shared_loss": 5.15862238407135,
+      "shared_prefix_training": true
+    },
+    {
+      "update": 265,
+      "same_training_example": true,
+      "prompt_tokens": 1582,
+      "reference_seconds": 8.903940149000846,
+      "shared_seconds": 2.7256024880043697,
+      "speed_ratio": 3.2667786987236456,
+      "reference_loss": 4.5392125248909,
+      "shared_loss": 4.538795173168182,
+      "shared_prefix_training": true
+    },
+    {
+      "update": 266,
+      "same_training_example": true,
+      "prompt_tokens": 1339,
+      "reference_seconds": 7.470665444008773,
+      "shared_seconds": 2.3782836699974723,
+      "speed_ratio": 3.1412003278888565,
+      "reference_loss": 4.881580591201782,
+      "shared_loss": 4.880832314491272,
+      "shared_prefix_training": true
+    }
+  ],
+  "ratio_of_total_update_seconds": 2.509085262732627,
+  "all_example_ids_match": true,
+  "quality_ready": false
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "training execution audit, live continuation, development evaluation and CPU tests; not model quality qualification",
+  "files": {
+    "resume-and-live-timing.json": "1aa41ac479117648c5b22794213df7feacbfab327fe734d3937a55734e4dfc3f",
+    "runtime-audit.json": "5a157621214a8f16a58d0dd792d0e423f3f94c28ac0fd7a235bd6a4a0c27dd10",
+    "evaluated-300.json": "198f9aa37a11cc1ea95cad419350902a53c817dd7c8471ab58ae87e3263bc86f",
+    "chunks-300.json": "c63fb20fa94ce5a17170afa61216190afeb0702c8556e58f2e747bae684e7fe9",
+    "cpu-tests.txt": "90b399dce9a8dfa5f1155f6c92120b129df57b3e970069eefaf3fdba4d7cef46",
+    "coding-300.json": "e70f949b9a917efc3c2b4633f9c8e20e37e6a4012cf9fad020f254e89ba461db"
+  }
+}

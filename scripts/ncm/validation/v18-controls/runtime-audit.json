@@ -1,0 +1,620 @@
+{
+  "checkpoint_sha256": "65fad6588112487f4201e79fa1c93c4385b0e945c6b55d4a5dad846bb91a70c3",
+  "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+  "model_identity": {
+    "stage": "generator",
+    "format": 1,
+    "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+    "codec_step": 6000,
+    "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+    "rank": 32,
+    "lr": 0.0001,
+    "seed": 17001,
+    "prompt_tokens": 2048,
+    "smoke": true,
+    "architecture": "hybrid-causal-mixer-next-concept-v1",
+    "optimizer": {
+      "name": "Muon hidden matrices + AdamW classifiers/interfaces",
+      "head_lr": 0.0003,
+      "body_lr": 3e-05
+    },
+    "conditioning": "full chat template, full previous chunks, explicit response termination",
+    "full_attention": "causal prefix; bidirectional target level; recurrent layers remain causal",
+    "layer_split": [
+      12,
+      20
+    ],
+    "admission": "exactly reconstructed train chunks only; all selected validation errors retained; broad codec gate failed",
+    "concept_input_norm": 0.8,
+    "kernel_backend": {
+      "name": "fla",
+      "version": "0.6.0",
+      "torch": "2.11.0+cu128"
+    },
+    "kernel_audit_sha256": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+    "head_kind": "untied",
+    "cached_prefix": false,
+    "head_input_norm": true,
+    "calibrated_head": false,
+    "initialization": {
+      "checkpoint_sha256": "b861238a6377b975a60430d6368183ab7531d96710b7e6d9b2361ddabfb92990",
+      "scope": "retain body/adapters and independent classifiers; reset optimizer"
+    },
+    "prefix_audit_sha256": "ef7e47f2b7be0df15dd2eb4abd1870b70e23d1d5a52b6778402dc048cd574c67",
+    "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+    "training_recipe": "independent-classifiers-v16",
+    "prefix_gradients": "full-context backward; prefix cache disabled",
+    "full_precision_reductions": true,
+    "head_warmup": 0,
+    "head_lr": 0.0003,
+    "body_lr": 3e-05,
+    "sampling": "80% coding; sqrt response-count source/teacher buckets; uniform response then chunk",
+    "loss": "mean level code CE + 0.1 end BCE; no continuous residual loss",
+    "quality_ready": false,
+    "prefix_audit_outcome": "failed; cache disabled, no tolerance relaxation",
+    "nearest_code": false,
+    "implementation_sha256": {
+      "train_independent.py": "5ab13898779f090df13550ad018099ae790b3716887bc562945c4a2aae36e840",
+      "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+      "geometry.py": "29d45354b4f8966e9ce0920db046ad8623e2bbab561eb56f5f87ff610b8358e6",
+      "train.py": "deda2d93dcdfb3c6cdb9a93f5ec3f773e148adbf2fa1c0d5c9bf242f2af3101f",
+      "train_geometry.py": "c49128d90457268900754537feb0991c0a480bdf2cdf5b43740e35dc30d2d053",
+      "generate_candidate.py": "73f7cedc2018215ced6fa42f84fda5ff8d87fd0b3dbe99c1072caacb5eaab32d",
+      "codec.py": "612564248d6b1018aa417ba1c00a72c7ebb2ea4726319fed3b37268e054a5008",
+      "prepare_creator_expansion.py": "e00294abb67f5feebb49f99dccc4c3473b4730fa44b24371db9d061b38ba53b6"
+    },
+    "planned_steps": 2000,
+    "conditioning_corruption": {
+      "maximum": 0.5,
+      "schedule": "linear from maximum at first level to zero at last; clean warmup; clean labels"
+    },
+    "trainable_parameters": 76587009,
+    "allocator_cap_gib": 11.25,
+    "dataset_expansion": {
+      "base_prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+      "addition_manifest_sha256": "90320b8a463abcf2a8667a924de69b9e2cb1209948d42abf49702e7b567d80e6",
+      "frozen_evaluation_sha256": "cd6ce9b9a86447ab4250a2ffb405eebe99334729a370d537e68fcab9d2f4611d",
+      "counts": {
+        "responses_considered": 4228,
+        "total_chunks": 171445,
+        "over_context": 27551,
+        "selected_chunks": 31050,
+        "responses_selected": 4123,
+        "source:TeichAI/Ox-Alpha-10k": 27765,
+        "source:TeichAI/DeepSeek-v4-Pro-Agent": 3285
+      }
+    },
+    "data_sha256_scope": "inherited base examples; full expanded inventory identified by prepared_sha256 and dataset_expansion"
+  },
+  "implementation_sha256": {
+    "audit_training_runtime.py": "648adfc7a5fb964038f8700aa7b05c8fdd589d45189a7f50b1e7064d1ff17147",
+    "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+    "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+    "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0"
+  },
+  "runtime_implementation_sha256": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+  "admission": {
+    "host_available": 33563017216,
+    "devices": [
+      {
+        "device": "cuda:0",
+        "free": 11170021376,
+        "allocator_cap": 6875054080
+      },
+      {
+        "device": "cuda:1",
+        "free": 16301424640,
+        "allocator_cap": 12006457344
+      }
+    ]
+  },
+  "records": [
+    {
+      "requested_prompt_tokens": 64,
+      "prompt_tokens": 64,
+      "example_id": "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": false
+      },
+      "loss": 4.739661931991577,
+      "median_seconds": 1.1988271260051988,
+      "seconds": [
+        1.2051420010102447,
+        1.175284840981476,
+        1.1988271260051988
+      ],
+      "speed_ratio": 1.0,
+      "peak_allocated_bytes": {
+        "cuda:0": 5310033920,
+        "cuda:1": 9331907072
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": 64,
+      "prompt_tokens": 64,
+      "example_id": "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": true
+      },
+      "loss": 4.7404226660728455,
+      "median_seconds": 0.49031288901460357,
+      "seconds": [
+        0.5068637439981103,
+        0.49031288901460357,
+        0.4875803379982244
+      ],
+      "speed_ratio": 2.445024703336919,
+      "peak_allocated_bytes": {
+        "cuda:0": 5348801536,
+        "cuda:1": 9376291328
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.011419102453705149,
+        "cosine": 0.9999347999391986,
+        "max_absolute": 0.009739458560943604,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0027898541300223514,
+        "cosine": 0.9999961370527234,
+        "max_absolute": 0.114471435546875,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.01540792777519246,
+          "cosine": 0.9998812910786669,
+          "max_absolute": 0.00274658203125,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.007961613577121638,
+          "cosine": 0.9999683490695972,
+          "max_absolute": 0.009739458560943604,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.02542295253278381,
+          "cosine": 0.9996866002878164,
+          "max_absolute": 0.0012537187431007624,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": 69,
+      "prompt_tokens": 69,
+      "example_id": "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": false
+      },
+      "loss": 4.699682831764221,
+      "median_seconds": 1.2543580119963735,
+      "seconds": [
+        1.2434963790001348,
+        1.3136753079888877,
+        1.2543580119963735
+      ],
+      "speed_ratio": 1.0,
+      "peak_allocated_bytes": {
+        "cuda:0": 5312101888,
+        "cuda:1": 9334327296
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": 69,
+      "prompt_tokens": 69,
+      "example_id": "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": true
+      },
+      "loss": 4.697776794433594,
+      "median_seconds": 0.5048797400086187,
+      "seconds": [
+        0.5038105990097392,
+        0.5048797400086187,
+        0.5176668200001586
+      ],
+      "speed_ratio": 2.4844688994154542,
+      "peak_allocated_bytes": {
+        "cuda:0": 5353542656,
+        "cuda:1": 9381376512
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.013676668012995342,
+        "cosine": 0.9999065042320919,
+        "max_absolute": 0.011857151985168457,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0030518264253633046,
+        "cosine": 0.9999953700579807,
+        "max_absolute": 0.11509990692138672,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0182752946376596,
+          "cosine": 0.9998336256625625,
+          "max_absolute": 0.00341796875,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.00884386044631611,
+          "cosine": 0.9999609014068473,
+          "max_absolute": 0.011857151985168457,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.043540957643803876,
+          "cosine": 0.9990568315109574,
+          "max_absolute": 0.001071600941941142,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": 512,
+      "prompt_tokens": 512,
+      "example_id": "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-14",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": false
+      },
+      "loss": 5.275212407112122,
+      "median_seconds": 2.8554701560060494,
+      "seconds": [
+        2.853353899990907,
+        2.8599607939831913,
+        2.8554701560060494
+      ],
+      "speed_ratio": 1.0,
+      "peak_allocated_bytes": {
+        "cuda:0": 5494774784,
+        "cuda:1": 9548416512
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": 512,
+      "prompt_tokens": 512,
+      "example_id": "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-14",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": true
+      },
+      "loss": 5.275379180908203,
+      "median_seconds": 0.976014955987921,
+      "seconds": [
+        0.976014955987921,
+        0.9763319329940714,
+        0.9735185930039734
+      ],
+      "speed_ratio": 2.925641803424771,
+      "peak_allocated_bytes": {
+        "cuda:0": 5533022208,
+        "cuda:1": 9590789632
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.012098192581285564,
+        "cosine": 0.9999268265182266,
+        "max_absolute": 0.006302833557128906,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.002785692904581698,
+        "cosine": 0.9999961580430993,
+        "max_absolute": 0.08567428588867188,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.01410155023773416,
+          "cosine": 0.9999006227856034,
+          "max_absolute": 0.001708984375,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.007200103111706451,
+          "cosine": 0.9999740869611573,
+          "max_absolute": 0.006302833557128906,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.036059764506835144,
+          "cosine": 0.9993560078202994,
+          "max_absolute": 0.0018540313467383385,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": 2048,
+      "prompt_tokens": 2048,
+      "example_id": "1a1d3079d6299728296f3ee019ee3e7af2f04a0412354b4d397728f41e710dc1:1:byte-61",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": false
+      },
+      "loss": 5.5210888385772705,
+      "median_seconds": 11.613560325000435,
+      "seconds": [
+        11.617446794989519,
+        11.613560325000435,
+        11.602760384994326
+      ],
+      "speed_ratio": 1.0,
+      "peak_allocated_bytes": {
+        "cuda:0": 6140349440,
+        "cuda:1": 10315101696
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": 2048,
+      "prompt_tokens": 2048,
+      "example_id": "1a1d3079d6299728296f3ee019ee3e7af2f04a0412354b4d397728f41e710dc1:1:byte-61",
+      "runtime": {
+        "keep_per_device": 0,
+        "retained_layers": [],
+        "convolution": "reference",
+        "prompt_gradients": "retained",
+        "shared_prefix_training": true
+      },
+      "loss": 5.520769715309143,
+      "median_seconds": 3.237616736005293,
+      "seconds": [
+        3.236740977008594,
+        3.237616736005293,
+        3.2419232949905563
+      ],
+      "speed_ratio": 3.5870707597495715,
+      "peak_allocated_bytes": {
+        "cuda:0": 6170732544,
+        "cuda:1": 10332308992
+      },
+      "gradient_comparison": {
+        "relative_l2": 0.012272616743163411,
+        "cosine": 0.9999247367645525,
+        "max_absolute": 0.007483482360839844,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.003444034341772144,
+        "cosine": 0.9999940692980454,
+        "max_absolute": 0.13216876983642578,
+        "finite": true,
+        "parameters_compared": 4
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.015992807928866704,
+          "cosine": 0.9998739966071063,
+          "max_absolute": 0.004150390625,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.008044153248236315,
+          "cosine": 0.9999676452761546,
+          "max_absolute": 0.007483482360839844,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.02191295649309983,
+          "cosine": 0.9997666736377363,
+          "max_absolute": 0.00142563134431839,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "quality_ready": false,
+  "scope": "four-level forward/backward at fixed weights; no optimizer step or quality claim",
+  "optimizer_state_in_memory": false,
+  "thresholds": {
+    "logit_relative_l2": 0.02,
+    "gradient_relative_l2": 0.05,
+    "gradient_cosine_minimum": 0.99
+  }
+}
