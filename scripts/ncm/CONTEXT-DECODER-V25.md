@@ -106,6 +106,27 @@ checkpoint stores optimizer state, CPU/CUDA random state and shuffled-epoch
 position. Resume rejects a changed model, data or implementation identity.
 An immutable weights snapshot is published for each validation checkpoint.
 
+Feature extraction completed with 4,094 training rows and all 64 validation
+rows. Two training rows failed exact non-padding codec reconstruction and were
+recorded as rejections. The two feature directories occupy approximately
+11.1 GiB. The previous generator remains preserved at update 550 with SHA256
+`68e618e87131963963a7d4dc6517306564b2f962933dd72cb4c94c248b96fd2d`.
+
+An independent update-100 snapshot passed a 16-conversation cached-versus-fresh
+conditioning audit. Every prompt state was bitwise equal after fresh source
+encoding, and all predicted concept IDs, reconstructed bytes and stop
+probabilities matched exactly. This includes features originally produced on
+either GPU and prompts up to 1,851 tokens in that sample. The checkpoint SHA256
+was `e18a1d11b3e0ff2326161d9c50681ec89c091ed43189b3e505489335ca3f18a8`.
+The report is `results/ncm-context-runtime-audit-v25/report.json` and the command
+is `python -m scripts.ncm.audit_context_runtime`. This verifies the feature
+cache/inference boundary, not whether the generated answers are useful.
+
+`probe_context_checkpoint.py` selects 16 fixed training conversations, balanced
+across source names, and evaluates their conditional chunks without updating
+weights. Its purpose is to distinguish underfitting from train/validation
+divergence. Its scores cannot satisfy the twelve-task gate.
+
 A full-shape synthetic CUDA audit compared microbatches 2, 4 and 8 on the same
 eight examples at 2,048 prompt tokens. Median forward/backward times were
 0.3002, 0.2081 and 0.1802 seconds respectively. The microbatch-8 gradient's
