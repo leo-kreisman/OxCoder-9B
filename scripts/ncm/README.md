@@ -1,5 +1,10 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [adaptive residual training experiment](ADAPTIVE-RESIDUAL-V26.md) tests
+self-conditioned correction labels against the native decoder baseline. Oracle
+reconstruction, training loss and complete executable answers are measured
+separately; acceptance still requires 12/12 and a fresh-process replay.
+
 The [frozen-encoder/native-decoder experiment](CONTEXT-DECODER-V25.md) caches
 prompt-only states from all original OxCoder layers and trains a separate
 bidirectional multiscale decoder with larger batches. This is distinct from
