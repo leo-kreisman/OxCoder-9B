@@ -1,0 +1,711 @@
+{
+  "source_checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+  "prepared_sha256": "3457a3581493a0b56bb2f937fc477f26972597c28a9e85e02c1e1a5d1105ebb4",
+  "records": [
+    {
+      "loss": 4.236608505249023,
+      "seconds": [
+        0.47831906701321714,
+        0.4914273629838135,
+        0.4794668440008536
+      ],
+      "median_seconds": 0.4794668440008536,
+      "peak_allocated_bytes": {
+        "cuda:0": 5348801536,
+        "cuda:1": 9376399360
+      },
+      "compact_weights": false,
+      "devices": [
+        "cuda:0",
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 38080286720,
+        "devices": [
+          {
+            "device": "cuda:0",
+            "free": 11300438016,
+            "allocator_cap": 7005470720
+          },
+          {
+            "device": "cuda:1",
+            "free": 16301424640,
+            "allocator_cap": 12006457344
+          }
+        ]
+      },
+      "example": "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+      "requested_prompt_tokens": 64,
+      "prompt_tokens": 64,
+      "speed_ratio": 1.0,
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": true,
+      "passed": true
+    },
+    {
+      "loss": 4.238855361938477,
+      "seconds": [
+        0.501996467995923,
+        0.4999554230016656,
+        0.5018236009927932
+      ],
+      "median_seconds": 0.5018236009927932,
+      "peak_allocated_bytes": {
+        "cuda:0": 5353542656,
+        "cuda:1": 9381484544
+      },
+      "compact_weights": false,
+      "devices": [
+        "cuda:0",
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 38080286720,
+        "devices": [
+          {
+            "device": "cuda:0",
+            "free": 11300438016,
+            "allocator_cap": 7005470720
+          },
+          {
+            "device": "cuda:1",
+            "free": 16301424640,
+            "allocator_cap": 12006457344
+          }
+        ]
+      },
+      "example": "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0",
+      "requested_prompt_tokens": 69,
+      "prompt_tokens": 69,
+      "speed_ratio": 1.0,
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": true,
+      "passed": true
+    },
+    {
+      "loss": 4.374381065368652,
+      "seconds": [
+        0.9686172880174126,
+        0.968767515005311,
+        0.9702947280020453
+      ],
+      "median_seconds": 0.968767515005311,
+      "peak_allocated_bytes": {
+        "cuda:0": 5533022208,
+        "cuda:1": 9590897664
+      },
+      "compact_weights": false,
+      "devices": [
+        "cuda:0",
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 38080286720,
+        "devices": [
+          {
+            "device": "cuda:0",
+            "free": 11300438016,
+            "allocator_cap": 7005470720
+          },
+          {
+            "device": "cuda:1",
+            "free": 16301424640,
+            "allocator_cap": 12006457344
+          }
+        ]
+      },
+      "example": "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-14",
+      "requested_prompt_tokens": 512,
+      "prompt_tokens": 512,
+      "speed_ratio": 1.0,
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": true,
+      "passed": true
+    },
+    {
+      "loss": 4.843235492706299,
+      "seconds": [
+        3.232805648003705,
+        3.231182903982699,
+        3.2344420430017635
+      ],
+      "median_seconds": 3.232805648003705,
+      "peak_allocated_bytes": {
+        "cuda:0": 6170732544,
+        "cuda:1": 10332417024
+      },
+      "compact_weights": false,
+      "devices": [
+        "cuda:0",
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 38080286720,
+        "devices": [
+          {
+            "device": "cuda:0",
+            "free": 11300438016,
+            "allocator_cap": 7005470720
+          },
+          {
+            "device": "cuda:1",
+            "free": 16301424640,
+            "allocator_cap": 12006457344
+          }
+        ]
+      },
+      "example": "1a1d3079d6299728296f3ee019ee3e7af2f04a0412354b4d397728f41e710dc1:1:byte-61",
+      "requested_prompt_tokens": 2048,
+      "prompt_tokens": 2048,
+      "speed_ratio": 1.0,
+      "gradient_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": true,
+      "passed": true
+    },
+    {
+      "loss": 4.236608505249023,
+      "seconds": [
+        0.6354006729961839,
+        0.6347936340025626,
+        0.6384607089858036
+      ],
+      "median_seconds": 0.6354006729961839,
+      "peak_allocated_bytes": {
+        "cuda:1": 5408136704
+      },
+      "compact_weights": true,
+      "devices": [
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 35816521728,
+        "devices": [
+          {
+            "device": "cuda:1",
+            "free": 16190275584,
+            "allocator_cap": 11895308288
+          }
+        ]
+      },
+      "example": "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+      "requested_prompt_tokens": 64,
+      "prompt_tokens": 64,
+      "speed_ratio": 0.7545897641876329,
+      "gradient_comparison": {
+        "relative_l2": 0.006319505639189724,
+        "cosine": 0.9999811638717917,
+        "max_absolute": 0.001301489770412445,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0035950668950430515,
+          "cosine": 0.9999935378456304,
+          "max_absolute": 0.0009765625,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.01666926043087644,
+          "cosine": 0.9999335587625692,
+          "max_absolute": 0.001301489770412445,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    },
+    {
+      "loss": 4.238855361938477,
+      "seconds": [
+        0.6551561859960202,
+        0.6550690449948888,
+        0.6584639030043036
+      ],
+      "median_seconds": 0.6551561859960202,
+      "peak_allocated_bytes": {
+        "cuda:1": 5413615104
+      },
+      "compact_weights": true,
+      "devices": [
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 35816521728,
+        "devices": [
+          {
+            "device": "cuda:1",
+            "free": 16190275584,
+            "allocator_cap": 11895308288
+          }
+        ]
+      },
+      "example": "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0",
+      "requested_prompt_tokens": 69,
+      "prompt_tokens": 69,
+      "speed_ratio": 0.765960257598547,
+      "gradient_comparison": {
+        "relative_l2": 0.003589491339735806,
+        "cosine": 0.9999935650810277,
+        "max_absolute": 0.0012054443359375,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0040647774850012175,
+          "cosine": 0.9999917754255577,
+          "max_absolute": 0.0012054443359375,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.009332749535300746,
+          "cosine": 0.9999601642567049,
+          "max_absolute": 0.0004283338785171509,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    },
+    {
+      "loss": 4.374381065368652,
+      "seconds": [
+        1.1258078629907686,
+        1.1291121739777736,
+        1.1294714079995174
+      ],
+      "median_seconds": 1.1291121739777736,
+      "peak_allocated_bytes": {
+        "cuda:1": 5657041408
+      },
+      "compact_weights": true,
+      "devices": [
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 35816521728,
+        "devices": [
+          {
+            "device": "cuda:1",
+            "free": 16190275584,
+            "allocator_cap": 11895308288
+          }
+        ]
+      },
+      "example": "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-14",
+      "requested_prompt_tokens": 512,
+      "prompt_tokens": 512,
+      "speed_ratio": 0.8579904967213479,
+      "gradient_comparison": {
+        "relative_l2": 0.005763283513096284,
+        "cosine": 0.9999836269091593,
+        "max_absolute": 0.001220703125,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.004633533933307002,
+          "cosine": 0.9999892691380583,
+          "max_absolute": 0.001220703125,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.015492360495243615,
+          "cosine": 0.9999030058785107,
+          "max_absolute": 0.0007281284779310226,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    },
+    {
+      "loss": 4.843235492706299,
+      "seconds": [
+        3.3630356149806175,
+        3.3640587010013405,
+        3.3687422790098935
+      ],
+      "median_seconds": 3.3640587010013405,
+      "peak_allocated_bytes": {
+        "cuda:1": 6516525568
+      },
+      "compact_weights": true,
+      "devices": [
+        "cuda:1"
+      ],
+      "admission": {
+        "host_available": 35816521728,
+        "devices": [
+          {
+            "device": "cuda:1",
+            "free": 16190275584,
+            "allocator_cap": 11895308288
+          }
+        ]
+      },
+      "example": "1a1d3079d6299728296f3ee019ee3e7af2f04a0412354b4d397728f41e710dc1:1:byte-61",
+      "requested_prompt_tokens": 2048,
+      "prompt_tokens": 2048,
+      "speed_ratio": 0.9609837209563058,
+      "gradient_comparison": {
+        "relative_l2": 0.004004854831536744,
+        "cosine": 0.9999920273212165,
+        "max_absolute": 0.00146484375,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.004602937211894569,
+          "cosine": 0.9999894064362512,
+          "max_absolute": 0.00146484375,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.011168301329708835,
+          "cosine": 0.9999592964804526,
+          "max_absolute": 0.0005270615220069885,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "quality_ready": false,
+  "scope": "Same frozen weights; physical storage and device-placement audit only",
+  "implementation_sha256": {
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "gguf_training_backbone.py": "484472bb51d4a3164e6f3eec123e3ed2aa266b524b90872956860a98db81ca02",
+    "audit_gguf_training_runtime.py": "9c8127efeb0b7c3afa2151f1573c95fe1c37598bae9ffaac0542c14abb90606b",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+    "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+    "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+    "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f"
+  },
+  "model_identity": {
+    "stage": "generator",
+    "format": 1,
+    "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+    "codec_step": 6000,
+    "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+    "rank": 32,
+    "lr": 0.0001,
+    "seed": 17001,
+    "prompt_tokens": 2048,
+    "smoke": true,
+    "architecture": "hybrid-causal-mixer-next-concept-v1",
+    "optimizer": {
+      "name": "Muon hidden matrices + AdamW classifiers/interfaces",
+      "head_lr": 0.0003,
+      "body_lr": 3e-05
+    },
+    "conditioning": "full chat template, full previous chunks, explicit response termination",
+    "full_attention": "causal prefix; bidirectional target level; recurrent layers remain causal",
+    "layer_split": [
+      12,
+      20
+    ],
+    "admission": "exactly reconstructed train chunks only; all selected validation errors retained; broad codec gate failed",
+    "concept_input_norm": 0.8,
+    "kernel_backend": {
+      "name": "fla",
+      "version": "0.6.0",
+      "torch": "2.11.0+cu128"
+    },
+    "kernel_audit_sha256": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+    "head_kind": "untied",
+    "cached_prefix": false,
+    "head_input_norm": true,
+    "calibrated_head": false,
+    "initialization": {
+      "checkpoint_sha256": "b861238a6377b975a60430d6368183ab7531d96710b7e6d9b2361ddabfb92990",
+      "scope": "retain body/adapters and independent classifiers; reset optimizer"
+    },
+    "prefix_audit_sha256": "ef7e47f2b7be0df15dd2eb4abd1870b70e23d1d5a52b6778402dc048cd574c67",
+    "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+    "training_recipe": "independent-classifiers-v16",
+    "prefix_gradients": "full-context backward; prefix cache disabled",
+    "full_precision_reductions": true,
+    "head_warmup": 0,
+    "head_lr": 0.0003,
+    "body_lr": 3e-05,
+    "sampling": "80% coding; sqrt response-count source/teacher buckets; uniform response then chunk",
+    "loss": "mean level code CE + 0.1 end BCE; no continuous residual loss",
+    "quality_ready": false,
+    "prefix_audit_outcome": "failed; cache disabled, no tolerance relaxation",
+    "nearest_code": false,
+    "implementation_sha256": {
+      "train_independent.py": "7f985e7b3ada4806cad79eb126dfebada39cff424dbae516f62404dfee99d4c3",
+      "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+      "geometry.py": "29d45354b4f8966e9ce0920db046ad8623e2bbab561eb56f5f87ff610b8358e6",
+      "train.py": "deda2d93dcdfb3c6cdb9a93f5ec3f773e148adbf2fa1c0d5c9bf242f2af3101f",
+      "train_geometry.py": "c49128d90457268900754537feb0991c0a480bdf2cdf5b43740e35dc30d2d053",
+      "generate_candidate.py": "73f7cedc2018215ced6fa42f84fda5ff8d87fd0b3dbe99c1072caacb5eaab32d",
+      "codec.py": "612564248d6b1018aa417ba1c00a72c7ebb2ea4726319fed3b37268e054a5008",
+      "prepare_creator_expansion.py": "e00294abb67f5feebb49f99dccc4c3473b4730fa44b24371db9d061b38ba53b6",
+      "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+      "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+      "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f"
+    },
+    "planned_steps": 2000,
+    "conditioning_corruption": {
+      "maximum": 0.5,
+      "schedule": "linear from maximum at first level to zero at last; clean warmup; clean labels"
+    },
+    "trainable_parameters": 76587009,
+    "allocator_cap_gib": 11.25,
+    "execution_policy": {
+      "keep_per_device": 0,
+      "convolution": "reference",
+      "shared_prefix_training": true,
+      "audit_sha256": "5a157621214a8f16a58d0dd792d0e423f3f94c28ac0fd7a235bd6a4a0c27dd10",
+      "audited_checkpoint_sha256": "65fad6588112487f4201e79fa1c93c4385b0e945c6b55d4a5dad846bb91a70c3",
+      "prompt_gradients": "retained",
+      "minimum_shared_prefix": 64
+    },
+    "dataset_expansion": {
+      "base_prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+      "addition_manifest_sha256": "90320b8a463abcf2a8667a924de69b9e2cb1209948d42abf49702e7b567d80e6",
+      "frozen_evaluation_sha256": "cd6ce9b9a86447ab4250a2ffb405eebe99334729a370d537e68fcab9d2f4611d",
+      "counts": {
+        "responses_considered": 4228,
+        "total_chunks": 171445,
+        "over_context": 27551,
+        "selected_chunks": 31050,
+        "responses_selected": 4123,
+        "source:TeichAI/Ox-Alpha-10k": 27765,
+        "source:TeichAI/DeepSeek-v4-Pro-Agent": 3285
+      }
+    },
+    "data_sha256_scope": "inherited base examples; full expanded inventory identified by prepared_sha256 and dataset_expansion",
+    "continuation": {
+      "checkpoint_sha256": "65fad6588112487f4201e79fa1c93c4385b0e945c6b55d4a5dad846bb91a70c3",
+      "source_step": 260,
+      "scope": "model, optimizer and RNG retained; separately recorded resource/implementation continuation"
+    }
+  },
+  "compact_weight_bytes": 4210067456,
+  "passed": true
+}

@@ -33,9 +33,12 @@ def compare_groups(actual, expected):
 
 def run(a):
     torch.set_num_threads(2)
-    devices = ['cuda:0', 'cuda:1']
+    devices = a.devices.split(',')
     limits = admission(devices, a.allocator_cap_gib)
-    model, codec, identity, sha = load_candidate(a.source, a.codec, a.checkpoint, devices)
+    loader = load_candidate
+    if a.compact_weights:
+        from .gguf_training_backbone import load_candidate as loader
+    model, codec, identity, sha = loader(a.source, a.codec, a.checkpoint, devices)
     model.train()
     path = Path(a.data) / 'prepared.pt'
     rows = torch.load(path, weights_only=True, map_location='cpu')['prepared']
@@ -44,11 +47,15 @@ def run(a):
               'implementation_sha256': {name: digest(Path(__file__).parent / name) for name in
                   ('audit_packed_training.py', 'packed_training.py', 'shared_training.py',
                    'training_runtime.py', 'backbone.py', 'vendor/veomni_shared_prefix.py')},
-              'admission': limits, 'records': [], 'complete': False, 'quality_ready': False,
+              'admission': limits, 'devices': devices, 'compact_weights': a.compact_weights,
+              'records': [], 'complete': False, 'quality_ready': False,
               'optimizer_state_in_memory': False,
               'scope': 'Equal-example four-level forward/backward; no parameter updates',
               'thresholds': {'logit_relative_l2': .02, 'gradient_relative_l2': .05,
                              'gradient_cosine_minimum': .99}}
+    if a.compact_weights:
+        for name in ('gguf_training_weights.py', 'gguf_training_backbone.py'):
+            report['implementation_sha256'][name] = digest(Path(__file__).parent / name)
     for requested in ([64, 69], [64, 69, 128, 256], [512, 1024]):
         selected = []
         used = set()
@@ -149,6 +156,8 @@ if __name__ == '__main__':
     for name in ('source', 'codec', 'checkpoint', 'data', 'output'):
         parser.add_argument('--' + name, required=True)
     parser.add_argument('--allocator-cap-gib', type=float, default=11.25)
+    parser.add_argument('--devices', default='cuda:0,cuda:1')
+    parser.add_argument('--compact-weights', action='store_true')
     parser.add_argument('--repeats', type=int, default=3)
     args = parser.parse_args()
     if args.repeats < 1:

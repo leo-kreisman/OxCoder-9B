@@ -36,6 +36,7 @@ class DistillationAdmissionTests(unittest.TestCase):
         for choice, expected in [
             ({'finish_reason': 'length', 'message': {'content': 'def f():'}}, 'incomplete_length'),
             ({'finish_reason': 'stop', 'message': {'content': ' ', 'tool_calls': []}}, 'empty_response'),
+            ({'finish_reason': 'stop', 'message': {'content': '<tool_call>bash {}</tool_call>'}}, 'unexecuted_text_tool_call'),
             ({'finish_reason': 'stop', 'message': {'content': 'x', 'tool_calls': [{}]}}, 'unexecuted_tool_calls')]:
             self.assertEqual(complete_response({'choices': [choice]}), (None, expected))
         self.assertEqual(complete_response({'choices': [{'finish_reason': 'stop',

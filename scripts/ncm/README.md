@@ -1,5 +1,9 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [compact frozen-weight training experiment](COMPACT-TRAINING-V20.md) records
+exact GGUF matrix checks, complete-model numerical controls, independent-example
+packing, and the optimizer/reload gates for the expanded corpus.
+
 The [instruction and distillation expansion](TRAINING-EXPANSION-V19.md) adds a
 pinned Python instruction supplement, checksum-bound offline teacher collection,
 and an accumulated-gradient training entry point. It preserves both creator

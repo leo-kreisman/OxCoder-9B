@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import random
+import re
 import time
 import urllib.error
 import urllib.request
@@ -80,6 +81,8 @@ def complete_response(response):
     text = message.get('content')
     if not isinstance(text, str) or not text.strip():
         return None, 'empty_response'
+    if re.search(r'<(?:tool_call(?:\s|>)|function=)', text):
+        return None, 'unexecuted_text_tool_call'
     return text, None
 
 
@@ -105,9 +108,16 @@ def run(a):
     rows = list(read_rows(archive))
     if any(r['split'] != 'train' for r in rows):
         raise ValueError('Admitted source contains nontraining rows')
+    exclusion_sha = None
+    eligible_rows = rows
+    if getattr(a, 'exclude_selection', None):
+        previous = json.loads(Path(a.exclude_selection).read_text())
+        excluded = {row['group'] for row in previous['examples']}
+        eligible_rows = [row for row in rows if row['group'] not in excluded]
+        exclusion_sha = file_sha(a.exclude_selection)
     tokenizer = AutoTokenizer.from_pretrained(a.tokenizer, local_files_only=True,
                                               trust_remote_code=False)
-    selected, counts = select(rows, tokenizer, a.per_source, a.prompt_limit, a.seed)
+    selected, counts = select(eligible_rows, tokenizer, a.per_source, a.prompt_limit, a.seed)
     identity = {'source_manifest_sha256': file_sha(admitted / 'manifest.json'),
         'frozen_manifest_sha256': file_sha(frozen / 'manifest.json'),
         'teacher_sha256': source_sha, 'server_binary_sha256': file_sha(a.server_binary),
@@ -118,6 +128,8 @@ def run(a):
         'source_revisions': am['source_revisions'],
         'implementation_sha256': file_sha(__file__),
         'teacher_role': 'offline response distillation only; no student inference fallback'}
+    if exclusion_sha is not None:
+        identity['excluded_selection_sha256'] = exclusion_sha
     ip = out / 'identity.json'
     if ip.exists() and json.loads(ip.read_text()) != identity:
         raise ValueError('Existing distillation identity differs')
@@ -192,6 +204,7 @@ if __name__ == '__main__':
     for name in ('admitted', 'frozen', 'output', 'teacher-file', 'expected-teacher-sha256', 'server-binary'):
         parser.add_argument('--' + name, required=True)
     parser.add_argument('--tokenizer', default='results/tokenizer')
+    parser.add_argument('--exclude-selection', help='Exclude all conversation groups from an earlier selection.json')
     parser.add_argument('--url', default='http://127.0.0.1:18119')
     parser.add_argument('--model', default='oxcoder-offline-teacher')
     parser.add_argument('--per-source', type=int, default=64)

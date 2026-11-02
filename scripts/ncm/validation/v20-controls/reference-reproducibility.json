@@ -1,0 +1,314 @@
+{
+  "source_checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+  "prepared_sha256": "3457a3581493a0b56bb2f937fc477f26972597c28a9e85e02c1e1a5d1105ebb4",
+  "model_identity": {
+    "stage": "generator",
+    "format": 1,
+    "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+    "codec_step": 6000,
+    "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+    "rank": 32,
+    "lr": 0.0001,
+    "seed": 17001,
+    "prompt_tokens": 2048,
+    "smoke": true,
+    "architecture": "hybrid-causal-mixer-next-concept-v1",
+    "optimizer": {
+      "name": "Muon hidden matrices + AdamW classifiers/interfaces",
+      "head_lr": 0.0003,
+      "body_lr": 3e-05
+    },
+    "conditioning": "full chat template, full previous chunks, explicit response termination",
+    "full_attention": "causal prefix; bidirectional target level; recurrent layers remain causal",
+    "layer_split": [
+      12,
+      20
+    ],
+    "admission": "exactly reconstructed train chunks only; all selected validation errors retained; broad codec gate failed",
+    "concept_input_norm": 0.8,
+    "kernel_backend": {
+      "name": "fla",
+      "version": "0.6.0",
+      "torch": "2.11.0+cu128"
+    },
+    "kernel_audit_sha256": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+    "head_kind": "untied",
+    "cached_prefix": false,
+    "head_input_norm": true,
+    "calibrated_head": false,
+    "initialization": {
+      "checkpoint_sha256": "b861238a6377b975a60430d6368183ab7531d96710b7e6d9b2361ddabfb92990",
+      "scope": "retain body/adapters and independent classifiers; reset optimizer"
+    },
+    "prefix_audit_sha256": "ef7e47f2b7be0df15dd2eb4abd1870b70e23d1d5a52b6778402dc048cd574c67",
+    "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+    "training_recipe": "independent-classifiers-v16",
+    "prefix_gradients": "full-context backward; prefix cache disabled",
+    "full_precision_reductions": true,
+    "head_warmup": 0,
+    "head_lr": 0.0003,
+    "body_lr": 3e-05,
+    "sampling": "80% coding; sqrt response-count source/teacher buckets; uniform response then chunk",
+    "loss": "mean level code CE + 0.1 end BCE; no continuous residual loss",
+    "quality_ready": false,
+    "prefix_audit_outcome": "failed; cache disabled, no tolerance relaxation",
+    "nearest_code": false,
+    "implementation_sha256": {
+      "train_independent.py": "7f985e7b3ada4806cad79eb126dfebada39cff424dbae516f62404dfee99d4c3",
+      "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+      "geometry.py": "29d45354b4f8966e9ce0920db046ad8623e2bbab561eb56f5f87ff610b8358e6",
+      "train.py": "deda2d93dcdfb3c6cdb9a93f5ec3f773e148adbf2fa1c0d5c9bf242f2af3101f",
+      "train_geometry.py": "c49128d90457268900754537feb0991c0a480bdf2cdf5b43740e35dc30d2d053",
+      "generate_candidate.py": "73f7cedc2018215ced6fa42f84fda5ff8d87fd0b3dbe99c1072caacb5eaab32d",
+      "codec.py": "612564248d6b1018aa417ba1c00a72c7ebb2ea4726319fed3b37268e054a5008",
+      "prepare_creator_expansion.py": "e00294abb67f5feebb49f99dccc4c3473b4730fa44b24371db9d061b38ba53b6",
+      "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+      "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+      "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f"
+    },
+    "planned_steps": 2000,
+    "conditioning_corruption": {
+      "maximum": 0.5,
+      "schedule": "linear from maximum at first level to zero at last; clean warmup; clean labels"
+    },
+    "trainable_parameters": 76587009,
+    "allocator_cap_gib": 11.25,
+    "execution_policy": {
+      "keep_per_device": 0,
+      "convolution": "reference",
+      "shared_prefix_training": true,
+      "audit_sha256": "5a157621214a8f16a58d0dd792d0e423f3f94c28ac0fd7a235bd6a4a0c27dd10",
+      "audited_checkpoint_sha256": "65fad6588112487f4201e79fa1c93c4385b0e945c6b55d4a5dad846bb91a70c3",
+      "prompt_gradients": "retained",
+      "minimum_shared_prefix": 64
+    },
+    "dataset_expansion": {
+      "base_prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+      "addition_manifest_sha256": "90320b8a463abcf2a8667a924de69b9e2cb1209948d42abf49702e7b567d80e6",
+      "frozen_evaluation_sha256": "cd6ce9b9a86447ab4250a2ffb405eebe99334729a370d537e68fcab9d2f4611d",
+      "counts": {
+        "responses_considered": 4228,
+        "total_chunks": 171445,
+        "over_context": 27551,
+        "selected_chunks": 31050,
+        "responses_selected": 4123,
+        "source:TeichAI/Ox-Alpha-10k": 27765,
+        "source:TeichAI/DeepSeek-v4-Pro-Agent": 3285
+      }
+    },
+    "data_sha256_scope": "inherited base examples; full expanded inventory identified by prepared_sha256 and dataset_expansion",
+    "continuation": {
+      "checkpoint_sha256": "65fad6588112487f4201e79fa1c93c4385b0e945c6b55d4a5dad846bb91a70c3",
+      "source_step": 260,
+      "scope": "model, optimizer and RNG retained; separately recorded resource/implementation continuation"
+    }
+  },
+  "complete": true,
+  "quality_ready": false,
+  "records": [
+    {
+      "prompt_tokens": 64,
+      "file_sha256": [
+        "250851a1562aa9cbcba94e2e9bbd7dfd4fc3ec12379e3cfb6a90a1905b64073b",
+        "646c20942f191e4d6922ceb6db2dff77615531b84c4ccbbfd7fdedddf4df2d7a"
+      ],
+      "gradient_comparison": {
+        "relative_l2": 0.003070724684513622,
+        "cosine": 0.9999952961595899,
+        "max_absolute": 0.00146484375,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.003598113118381194,
+          "cosine": 0.9999935268784099,
+          "max_absolute": 0.00146484375,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.006091848305005587,
+          "cosine": 0.9999820698227648,
+          "max_absolute": 0.0004309359937906265,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 69,
+      "file_sha256": [
+        "b89ea860cceb14809644648d0a3b99a81521454a1e6eb86bd1d60c5e1ba474fc",
+        "ce02070083611767df96f58466eefcdcc1f9347a01f97ee8dbf814ee0ff7f849"
+      ],
+      "gradient_comparison": {
+        "relative_l2": 0.0027712743382087134,
+        "cosine": 0.9999961839905847,
+        "max_absolute": 0.0018310546875,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0040150967960482795,
+          "cosine": 0.9999919622592667,
+          "max_absolute": 0.0018310546875,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.004900708324994684,
+          "cosine": 0.9999895816948986,
+          "max_absolute": 0.00023154821246862411,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 512,
+      "file_sha256": [
+        "7b593e60a2d67e154f7a9f76d85aa3b9339ff3d6074eca4a2e13fd67443602af",
+        "8a2bfd8c313ba07c7221b7edc00d556c1b95de9b79052889382045db5ca6b7ab"
+      ],
+      "gradient_comparison": {
+        "relative_l2": 0.0039034430813303708,
+        "cosine": 0.9999923854590115,
+        "max_absolute": 0.00146484375,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.004698994745823146,
+          "cosine": 0.9999889626445253,
+          "max_absolute": 0.00146484375,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.00831045845690438,
+          "cosine": 0.999966065339627,
+          "max_absolute": 0.0005742236971855164,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 2048,
+      "file_sha256": [
+        "785ccb5d2d45317d2bd6ebdb0a71bcdab12b00931343c3b15eab0b1222748862",
+        "7407390b7fbf92a5acfc40acde5002e5903e1f6f5f9cfef71c584b74b206dd13"
+      ],
+      "gradient_comparison": {
+        "relative_l2": 0.004213829718445721,
+        "cosine": 0.9999911702405411,
+        "max_absolute": 0.001953125,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.004584091457988693,
+          "cosine": 0.9999894930513855,
+          "max_absolute": 0.001953125,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.012727101718577018,
+          "cosine": 0.9999424582259233,
+          "max_absolute": 0.0007262830622494221,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "bit_exact_outputs": true,
+      "bit_exact_gradients": false,
+      "passed": true
+    }
+  ],
+  "scope": "Unchanged resident BF16 backend; two independent loads; no compact weights in compared tensors",
+  "implementation_sha256": {
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "gguf_training_backbone.py": "484472bb51d4a3164e6f3eec123e3ed2aa266b524b90872956860a98db81ca02",
+    "audit_gguf_training_runtime.py": "9c8127efeb0b7c3afa2151f1573c95fe1c37598bae9ffaac0542c14abb90606b",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+    "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+    "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+    "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f"
+  },
+  "input_report_sha256": [
+    "7c62dfa43bf0bcfa84673ce195e5cdfb7e11a9b7dc5b9402445b0d46caa96b2c",
+    "5bf9089b4c41d7b46905757d8d92e6470cd7cad38d5efab10c32df072cec40d7"
+  ],
+  "passed": true
+}

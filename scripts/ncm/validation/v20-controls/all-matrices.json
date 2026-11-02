@@ -1,0 +1,4228 @@
+{
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "records": [
+    {
+      "name": "blk.0.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 1.0135185029939748,
+      "passed": true
+    },
+    {
+      "name": "blk.0.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.009139178990153596,
+      "passed": true
+    },
+    {
+      "name": "blk.0.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.005523038009414449,
+      "passed": true
+    },
+    {
+      "name": "blk.0.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.01435019398923032,
+      "passed": true
+    },
+    {
+      "name": "blk.0.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0015847339818719774,
+      "passed": true
+    },
+    {
+      "name": "blk.0.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.012421989027643576,
+      "passed": true
+    },
+    {
+      "name": "blk.0.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010995985998306423,
+      "passed": true
+    },
+    {
+      "name": "blk.0.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.035103218018775806,
+      "passed": true
+    },
+    {
+      "name": "blk.1.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004220736009301618,
+      "passed": true
+    },
+    {
+      "name": "blk.1.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007700554997427389,
+      "passed": true
+    },
+    {
+      "name": "blk.1.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004238367982907221,
+      "passed": true
+    },
+    {
+      "name": "blk.1.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013832880067639053,
+      "passed": true
+    },
+    {
+      "name": "blk.1.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001382590999128297,
+      "passed": true
+    },
+    {
+      "name": "blk.1.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011023129016393796,
+      "passed": true
+    },
+    {
+      "name": "blk.1.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011013459006790072,
+      "passed": true
+    },
+    {
+      "name": "blk.1.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01171345601323992,
+      "passed": true
+    },
+    {
+      "name": "blk.2.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004276965977624059,
+      "passed": true
+    },
+    {
+      "name": "blk.2.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007673073996556923,
+      "passed": true
+    },
+    {
+      "name": "blk.2.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004277108993846923,
+      "passed": true
+    },
+    {
+      "name": "blk.2.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014073810016270727,
+      "passed": true
+    },
+    {
+      "name": "blk.2.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0016702119901310652,
+      "passed": true
+    },
+    {
+      "name": "blk.2.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011050272005377337,
+      "passed": true
+    },
+    {
+      "name": "blk.2.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011052254994865507,
+      "passed": true
+    },
+    {
+      "name": "blk.2.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011276375997113064,
+      "passed": true
+    },
+    {
+      "name": "blk.3.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.008605710987467319,
+      "passed": true
+    },
+    {
+      "name": "blk.3.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0039529899950139225,
+      "passed": true
+    },
+    {
+      "name": "blk.3.attn_v.weight",
+      "type": 14,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 3440640,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0030295140168163925,
+      "passed": true
+    },
+    {
+      "name": "blk.3.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.005315627990057692,
+      "passed": true
+    },
+    {
+      "name": "blk.3.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011006279004504904,
+      "passed": true
+    },
+    {
+      "name": "blk.3.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011165634990902618,
+      "passed": true
+    },
+    {
+      "name": "blk.3.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011457045999122784,
+      "passed": true
+    },
+    {
+      "name": "blk.4.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004250218975357711,
+      "passed": true
+    },
+    {
+      "name": "blk.4.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.008667430025525391,
+      "passed": true
+    },
+    {
+      "name": "blk.4.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004199788992991671,
+      "passed": true
+    },
+    {
+      "name": "blk.4.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013527270057238638,
+      "passed": true
+    },
+    {
+      "name": "blk.4.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014421950036194175,
+      "passed": true
+    },
+    {
+      "name": "blk.4.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01106395898386836,
+      "passed": true
+    },
+    {
+      "name": "blk.4.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011286261986242607,
+      "passed": true
+    },
+    {
+      "name": "blk.4.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.012197947013191879,
+      "passed": true
+    },
+    {
+      "name": "blk.5.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004221343988319859,
+      "passed": true
+    },
+    {
+      "name": "blk.5.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.0075857619813177735,
+      "passed": true
+    },
+    {
+      "name": "blk.5.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004369326023152098,
+      "passed": true
+    },
+    {
+      "name": "blk.5.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013883500068914145,
+      "passed": true
+    },
+    {
+      "name": "blk.5.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0015309170121327043,
+      "passed": true
+    },
+    {
+      "name": "blk.5.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011010596004780382,
+      "passed": true
+    },
+    {
+      "name": "blk.5.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011031631991500035,
+      "passed": true
+    },
+    {
+      "name": "blk.5.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011071657994762063,
+      "passed": true
+    },
+    {
+      "name": "blk.6.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004728265019366518,
+      "passed": true
+    },
+    {
+      "name": "blk.6.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007717271975707263,
+      "passed": true
+    },
+    {
+      "name": "blk.6.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004200355993816629,
+      "passed": true
+    },
+    {
+      "name": "blk.6.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014509769971482456,
+      "passed": true
+    },
+    {
+      "name": "blk.6.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014557809918187559,
+      "passed": true
+    },
+    {
+      "name": "blk.6.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.0111189590243157,
+      "passed": true
+    },
+    {
+      "name": "blk.6.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011040940007660538,
+      "passed": true
+    },
+    {
+      "name": "blk.6.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011329443019349128,
+      "passed": true
+    },
+    {
+      "name": "blk.7.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007909767999080941,
+      "passed": true
+    },
+    {
+      "name": "blk.7.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0020259569864720106,
+      "passed": true
+    },
+    {
+      "name": "blk.7.attn_v.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.001791034999769181,
+      "passed": true
+    },
+    {
+      "name": "blk.7.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0041757639846764505,
+      "passed": true
+    },
+    {
+      "name": "blk.7.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.0113260569924023,
+      "passed": true
+    },
+    {
+      "name": "blk.7.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010998909012414515,
+      "passed": true
+    },
+    {
+      "name": "blk.7.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01106628798879683,
+      "passed": true
+    },
+    {
+      "name": "blk.8.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004186775011476129,
+      "passed": true
+    },
+    {
+      "name": "blk.8.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007739908003713936,
+      "passed": true
+    },
+    {
+      "name": "blk.8.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0042834549967665225,
+      "passed": true
+    },
+    {
+      "name": "blk.8.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013732990191783756,
+      "passed": true
+    },
+    {
+      "name": "blk.8.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014083839778322726,
+      "passed": true
+    },
+    {
+      "name": "blk.8.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011090786021668464,
+      "passed": true
+    },
+    {
+      "name": "blk.8.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011031077010557055,
+      "passed": true
+    },
+    {
+      "name": "blk.8.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011093667999375612,
+      "passed": true
+    },
+    {
+      "name": "blk.9.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004189288010820746,
+      "passed": true
+    },
+    {
+      "name": "blk.9.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007680937007535249,
+      "passed": true
+    },
+    {
+      "name": "blk.9.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004156857990892604,
+      "passed": true
+    },
+    {
+      "name": "blk.9.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013390880194492638,
+      "passed": true
+    },
+    {
+      "name": "blk.9.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0015648379921913147,
+      "passed": true
+    },
+    {
+      "name": "blk.9.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011044293001759797,
+      "passed": true
+    },
+    {
+      "name": "blk.9.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010977001016726717,
+      "passed": true
+    },
+    {
+      "name": "blk.9.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011294185009319335,
+      "passed": true
+    },
+    {
+      "name": "blk.10.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0042614480189513415,
+      "passed": true
+    },
+    {
+      "name": "blk.10.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007812879979610443,
+      "passed": true
+    },
+    {
+      "name": "blk.10.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004122005018871278,
+      "passed": true
+    },
+    {
+      "name": "blk.10.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013586169807240367,
+      "passed": true
+    },
+    {
+      "name": "blk.10.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0035227990010753274,
+      "passed": true
+    },
+    {
+      "name": "blk.10.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011111553991213441,
+      "passed": true
+    },
+    {
+      "name": "blk.10.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011024723993614316,
+      "passed": true
+    },
+    {
+      "name": "blk.10.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011031078989617527,
+      "passed": true
+    },
+    {
+      "name": "blk.11.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007591767993289977,
+      "passed": true
+    },
+    {
+      "name": "blk.11.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0019126829865854234,
+      "passed": true
+    },
+    {
+      "name": "blk.11.attn_v.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0019466389785520732,
+      "passed": true
+    },
+    {
+      "name": "blk.11.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.00418897598865442,
+      "passed": true
+    },
+    {
+      "name": "blk.11.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010982793988659978,
+      "passed": true
+    },
+    {
+      "name": "blk.11.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010994904994731769,
+      "passed": true
+    },
+    {
+      "name": "blk.11.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01103621901711449,
+      "passed": true
+    },
+    {
+      "name": "blk.12.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004255061998264864,
+      "passed": true
+    },
+    {
+      "name": "blk.12.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007672570995055139,
+      "passed": true
+    },
+    {
+      "name": "blk.12.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004251042002579197,
+      "passed": true
+    },
+    {
+      "name": "blk.12.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013163539988454431,
+      "passed": true
+    },
+    {
+      "name": "blk.12.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0029452200105879456,
+      "passed": true
+    },
+    {
+      "name": "blk.12.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011069218016928062,
+      "passed": true
+    },
+    {
+      "name": "blk.12.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011039461998734623,
+      "passed": true
+    },
+    {
+      "name": "blk.12.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011268289003055543,
+      "passed": true
+    },
+    {
+      "name": "blk.13.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.00429625398828648,
+      "passed": true
+    },
+    {
+      "name": "blk.13.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007534375006798655,
+      "passed": true
+    },
+    {
+      "name": "blk.13.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004171589011093602,
+      "passed": true
+    },
+    {
+      "name": "blk.13.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013660179974976927,
+      "passed": true
+    },
+    {
+      "name": "blk.13.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001367688993923366,
+      "passed": true
+    },
+    {
+      "name": "blk.13.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011141666007461026,
+      "passed": true
+    },
+    {
+      "name": "blk.13.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010998113983077928,
+      "passed": true
+    },
+    {
+      "name": "blk.13.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011029285000404343,
+      "passed": true
+    },
+    {
+      "name": "blk.14.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004248205979820341,
+      "passed": true
+    },
+    {
+      "name": "blk.14.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007534336997196078,
+      "passed": true
+    },
+    {
+      "name": "blk.14.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004238753987010568,
+      "passed": true
+    },
+    {
+      "name": "blk.14.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001304247009102255,
+      "passed": true
+    },
+    {
+      "name": "blk.14.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014877179928589612,
+      "passed": true
+    },
+    {
+      "name": "blk.14.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011054058006266132,
+      "passed": true
+    },
+    {
+      "name": "blk.14.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011146892997203395,
+      "passed": true
+    },
+    {
+      "name": "blk.14.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01106353200157173,
+      "passed": true
+    },
+    {
+      "name": "blk.15.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007509534014388919,
+      "passed": true
+    },
+    {
+      "name": "blk.15.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0017561799904797226,
+      "passed": true
+    },
+    {
+      "name": "blk.15.attn_v.weight",
+      "type": 14,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 3440640,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018550069944467396,
+      "passed": true
+    },
+    {
+      "name": "blk.15.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004124241997487843,
+      "passed": true
+    },
+    {
+      "name": "blk.15.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011140584014356136,
+      "passed": true
+    },
+    {
+      "name": "blk.15.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011047850974136963,
+      "passed": true
+    },
+    {
+      "name": "blk.15.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011249183997279033,
+      "passed": true
+    },
+    {
+      "name": "blk.16.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004424190003192052,
+      "passed": true
+    },
+    {
+      "name": "blk.16.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007612621004227549,
+      "passed": true
+    },
+    {
+      "name": "blk.16.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004175741982180625,
+      "passed": true
+    },
+    {
+      "name": "blk.16.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001380986999720335,
+      "passed": true
+    },
+    {
+      "name": "blk.16.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0015546409995295107,
+      "passed": true
+    },
+    {
+      "name": "blk.16.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011034498980734497,
+      "passed": true
+    },
+    {
+      "name": "blk.16.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010981349012581632,
+      "passed": true
+    },
+    {
+      "name": "blk.16.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011123171978397295,
+      "passed": true
+    },
+    {
+      "name": "blk.17.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004219250986352563,
+      "passed": true
+    },
+    {
+      "name": "blk.17.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.0075372249993961304,
+      "passed": true
+    },
+    {
+      "name": "blk.17.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004240176000166684,
+      "passed": true
+    },
+    {
+      "name": "blk.17.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014114659861661494,
+      "passed": true
+    },
+    {
+      "name": "blk.17.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014956319937482476,
+      "passed": true
+    },
+    {
+      "name": "blk.17.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010995407006703317,
+      "passed": true
+    },
+    {
+      "name": "blk.17.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010999716992955655,
+      "passed": true
+    },
+    {
+      "name": "blk.17.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011076930008130148,
+      "passed": true
+    },
+    {
+      "name": "blk.18.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004233229003148153,
+      "passed": true
+    },
+    {
+      "name": "blk.18.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007783164008287713,
+      "passed": true
+    },
+    {
+      "name": "blk.18.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004076040000654757,
+      "passed": true
+    },
+    {
+      "name": "blk.18.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0012606210075318813,
+      "passed": true
+    },
+    {
+      "name": "blk.18.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014259979943744838,
+      "passed": true
+    },
+    {
+      "name": "blk.18.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011000126018188894,
+      "passed": true
+    },
+    {
+      "name": "blk.18.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011038719007046893,
+      "passed": true
+    },
+    {
+      "name": "blk.18.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011276420002104715,
+      "passed": true
+    },
+    {
+      "name": "blk.19.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007610286993440241,
+      "passed": true
+    },
+    {
+      "name": "blk.19.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018514819967094809,
+      "passed": true
+    },
+    {
+      "name": "blk.19.attn_v.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0017988699837587774,
+      "passed": true
+    },
+    {
+      "name": "blk.19.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0041735999984666705,
+      "passed": true
+    },
+    {
+      "name": "blk.19.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010979319020407274,
+      "passed": true
+    },
+    {
+      "name": "blk.19.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011047223000787199,
+      "passed": true
+    },
+    {
+      "name": "blk.19.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011204976995941252,
+      "passed": true
+    },
+    {
+      "name": "blk.20.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004819983005290851,
+      "passed": true
+    },
+    {
+      "name": "blk.20.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007571090012788773,
+      "passed": true
+    },
+    {
+      "name": "blk.20.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0041633680230006576,
+      "passed": true
+    },
+    {
+      "name": "blk.20.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014800270146224648,
+      "passed": true
+    },
+    {
+      "name": "blk.20.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013574089971370995,
+      "passed": true
+    },
+    {
+      "name": "blk.20.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011070470995036885,
+      "passed": true
+    },
+    {
+      "name": "blk.20.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011037643998861313,
+      "passed": true
+    },
+    {
+      "name": "blk.20.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011143961979541928,
+      "passed": true
+    },
+    {
+      "name": "blk.21.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0042612230172380805,
+      "passed": true
+    },
+    {
+      "name": "blk.21.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007730250974418595,
+      "passed": true
+    },
+    {
+      "name": "blk.21.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004182154021691531,
+      "passed": true
+    },
+    {
+      "name": "blk.21.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014410309959203005,
+      "passed": true
+    },
+    {
+      "name": "blk.21.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013140529918018728,
+      "passed": true
+    },
+    {
+      "name": "blk.21.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011046714993426576,
+      "passed": true
+    },
+    {
+      "name": "blk.21.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01103343500290066,
+      "passed": true
+    },
+    {
+      "name": "blk.21.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011301877995720133,
+      "passed": true
+    },
+    {
+      "name": "blk.22.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004227052995702252,
+      "passed": true
+    },
+    {
+      "name": "blk.22.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007533486001193523,
+      "passed": true
+    },
+    {
+      "name": "blk.22.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004188241000520065,
+      "passed": true
+    },
+    {
+      "name": "blk.22.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013936759787611663,
+      "passed": true
+    },
+    {
+      "name": "blk.22.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013378500007092953,
+      "passed": true
+    },
+    {
+      "name": "blk.22.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011023364000720903,
+      "passed": true
+    },
+    {
+      "name": "blk.22.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011103274999186397,
+      "passed": true
+    },
+    {
+      "name": "blk.22.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01107548997970298,
+      "passed": true
+    },
+    {
+      "name": "blk.23.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007507744012400508,
+      "passed": true
+    },
+    {
+      "name": "blk.23.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018622219795361161,
+      "passed": true
+    },
+    {
+      "name": "blk.23.attn_v.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018433619989082217,
+      "passed": true
+    },
+    {
+      "name": "blk.23.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004358435980975628,
+      "passed": true
+    },
+    {
+      "name": "blk.23.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011025815008906648,
+      "passed": true
+    },
+    {
+      "name": "blk.23.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011081139993621036,
+      "passed": true
+    },
+    {
+      "name": "blk.23.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011140610004076734,
+      "passed": true
+    },
+    {
+      "name": "blk.24.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004273313010344282,
+      "passed": true
+    },
+    {
+      "name": "blk.24.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007909543986897916,
+      "passed": true
+    },
+    {
+      "name": "blk.24.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004178425995633006,
+      "passed": true
+    },
+    {
+      "name": "blk.24.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001312948006670922,
+      "passed": true
+    },
+    {
+      "name": "blk.24.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001302221993682906,
+      "passed": true
+    },
+    {
+      "name": "blk.24.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011024150007870048,
+      "passed": true
+    },
+    {
+      "name": "blk.24.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01102366199484095,
+      "passed": true
+    },
+    {
+      "name": "blk.24.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011275190016021952,
+      "passed": true
+    },
+    {
+      "name": "blk.25.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.00421036800253205,
+      "passed": true
+    },
+    {
+      "name": "blk.25.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007747003983240575,
+      "passed": true
+    },
+    {
+      "name": "blk.25.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004316280013881624,
+      "passed": true
+    },
+    {
+      "name": "blk.25.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014631829981226474,
+      "passed": true
+    },
+    {
+      "name": "blk.25.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001573371991980821,
+      "passed": true
+    },
+    {
+      "name": "blk.25.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011002807994373143,
+      "passed": true
+    },
+    {
+      "name": "blk.25.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011016103002475575,
+      "passed": true
+    },
+    {
+      "name": "blk.25.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01107875700108707,
+      "passed": true
+    },
+    {
+      "name": "blk.26.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004230777994962409,
+      "passed": true
+    },
+    {
+      "name": "blk.26.attn_qkv.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.00754635501652956,
+      "passed": true
+    },
+    {
+      "name": "blk.26.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004187337006442249,
+      "passed": true
+    },
+    {
+      "name": "blk.26.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.003444589994614944,
+      "passed": true
+    },
+    {
+      "name": "blk.26.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0022919659968465567,
+      "passed": true
+    },
+    {
+      "name": "blk.26.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01096629397943616,
+      "passed": true
+    },
+    {
+      "name": "blk.26.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011082303011789918,
+      "passed": true
+    },
+    {
+      "name": "blk.26.ffn_down.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011020177014870569,
+      "passed": true
+    },
+    {
+      "name": "blk.27.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007543446990894154,
+      "passed": true
+    },
+    {
+      "name": "blk.27.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018593489949125797,
+      "passed": true
+    },
+    {
+      "name": "blk.27.attn_v.weight",
+      "type": 14,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 3440640,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018609050021041185,
+      "passed": true
+    },
+    {
+      "name": "blk.27.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004186209989711642,
+      "passed": true
+    },
+    {
+      "name": "blk.27.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011035308009013534,
+      "passed": true
+    },
+    {
+      "name": "blk.27.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011027263011783361,
+      "passed": true
+    },
+    {
+      "name": "blk.27.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011248633993091062,
+      "passed": true
+    },
+    {
+      "name": "blk.28.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0042877869855146855,
+      "passed": true
+    },
+    {
+      "name": "blk.28.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007790747011313215,
+      "passed": true
+    },
+    {
+      "name": "blk.28.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.00410743200336583,
+      "passed": true
+    },
+    {
+      "name": "blk.28.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0014305629883892834,
+      "passed": true
+    },
+    {
+      "name": "blk.28.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013030219997745007,
+      "passed": true
+    },
+    {
+      "name": "blk.28.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011075129004893824,
+      "passed": true
+    },
+    {
+      "name": "blk.28.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010982589010382071,
+      "passed": true
+    },
+    {
+      "name": "blk.28.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011245239991694689,
+      "passed": true
+    },
+    {
+      "name": "blk.29.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.0042245239892508835,
+      "passed": true
+    },
+    {
+      "name": "blk.29.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007676007982809097,
+      "passed": true
+    },
+    {
+      "name": "blk.29.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004473114007851109,
+      "passed": true
+    },
+    {
+      "name": "blk.29.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001358641020487994,
+      "passed": true
+    },
+    {
+      "name": "blk.29.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013466410164255649,
+      "passed": true
+    },
+    {
+      "name": "blk.29.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011187951022293419,
+      "passed": true
+    },
+    {
+      "name": "blk.29.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011024417995940894,
+      "passed": true
+    },
+    {
+      "name": "blk.29.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011304300976917148,
+      "passed": true
+    },
+    {
+      "name": "blk.30.ssm_out.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004272286023478955,
+      "passed": true
+    },
+    {
+      "name": "blk.30.attn_qkv.weight",
+      "type": 14,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 27525120,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007695462991250679,
+      "passed": true
+    },
+    {
+      "name": "blk.30.attn_gate.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004148130014073104,
+      "passed": true
+    },
+    {
+      "name": "blk.30.ssm_beta.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.001411844976246357,
+      "passed": true
+    },
+    {
+      "name": "blk.30.ssm_alpha.weight",
+      "type": 12,
+      "shape": [
+        32,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 73728,
+      "resident_bf16_bytes": 262144,
+      "seconds_including_first_compilation": 0.0013685539888683707,
+      "passed": true
+    },
+    {
+      "name": "blk.30.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.010983707994455472,
+      "passed": true
+    },
+    {
+      "name": "blk.30.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011006346991052851,
+      "passed": true
+    },
+    {
+      "name": "blk.30.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01136139698792249,
+      "passed": true
+    },
+    {
+      "name": "blk.31.attn_q.weight",
+      "type": 12,
+      "shape": [
+        8192,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 18874368,
+      "resident_bf16_bytes": 67108864,
+      "seconds_including_first_compilation": 0.007548681984189898,
+      "passed": true
+    },
+    {
+      "name": "blk.31.attn_k.weight",
+      "type": 12,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 2359296,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018784879939630628,
+      "passed": true
+    },
+    {
+      "name": "blk.31.attn_v.weight",
+      "type": 14,
+      "shape": [
+        1024,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 3440640,
+      "resident_bf16_bytes": 8388608,
+      "seconds_including_first_compilation": 0.0018456669931765646,
+      "passed": true
+    },
+    {
+      "name": "blk.31.attn_output.weight",
+      "type": 12,
+      "shape": [
+        4096,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 9437184,
+      "resident_bf16_bytes": 33554432,
+      "seconds_including_first_compilation": 0.004077243997016922,
+      "passed": true
+    },
+    {
+      "name": "blk.31.ffn_gate.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011096414003986865,
+      "passed": true
+    },
+    {
+      "name": "blk.31.ffn_up.weight",
+      "type": 12,
+      "shape": [
+        12288,
+        4096
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 28311552,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.011011010996298864,
+      "passed": true
+    },
+    {
+      "name": "blk.31.ffn_down.weight",
+      "type": 14,
+      "shape": [
+        4096,
+        12288
+      ],
+      "unpacked_weight_bit_exact": true,
+      "weight_max_absolute": 0.0,
+      "weight_mismatches": 0,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "packed_bytes": 41287680,
+      "resident_bf16_bytes": 100663296,
+      "seconds_including_first_compilation": 0.01125802198657766,
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "implementation_sha256": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+  "scope": "Frozen matrix unpacking and input gradients only; not full model or coding acceptance",
+  "quality_ready": false,
+  "all_linear_layers": true,
+  "expected_matrices": 248,
+  "passed": true
+}
