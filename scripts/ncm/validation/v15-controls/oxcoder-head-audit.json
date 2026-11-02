@@ -1,0 +1,642 @@
+{
+  "checkpoint_sha256": "a4ccfd9a812e6d129c59e79ae39c5bcb6495a6cc6ff3c5b89b72e7283dc15f08",
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "implementation_sha256": {
+    "audit_oxcoder_heads.py": "6d207cee490f13383c73a03f4ccefe3e6a0c06482262462d1ec274bd6fbe4a12",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+    "geometry.py": "29d45354b4f8966e9ce0920db046ad8623e2bbab561eb56f5f87ff610b8358e6",
+    "generate_candidate.py": "73f7cedc2018215ced6fa42f84fda5ff8d87fd0b3dbe99c1072caacb5eaab32d"
+  },
+  "seed": 8229,
+  "steps": 500,
+  "admission": {
+    "host_available": 32835354624,
+    "devices": [
+      {
+        "device": "cuda:0",
+        "free": 11134500864,
+        "allocator_cap": 6839533568
+      },
+      {
+        "device": "cuda:1",
+        "free": 16301424640,
+        "allocator_cap": 10737418240
+      }
+    ]
+  },
+  "selection": [
+    {
+      "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:4:byte-2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "split": "train",
+      "prompt_tokens": 1231
+    },
+    {
+      "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:2:teacher:byte-2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": true,
+      "split": "train",
+      "prompt_tokens": 720
+    },
+    {
+      "id": "815c2be10b7f1425794c679660f9fb34d001af965e68c0e11d031dbc09b26cbf:1:byte-39",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": false,
+      "split": "train",
+      "prompt_tokens": 1444
+    },
+    {
+      "id": "d4486d60e166480e78a26664836e3858c4aa37e14c3aa796959bb5b1b136f436:1:teacher:byte-18",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": true,
+      "split": "train",
+      "prompt_tokens": 761
+    },
+    {
+      "id": "6e67c64834778d89bfd2ae5194b9fe78ef36490e8fe65a49d9fa623a825438ec:2:byte-5",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "split": "train",
+      "prompt_tokens": 1511
+    },
+    {
+      "id": "791cdba8bdb06ae32ab7cadd15258751a0ee79451fa4eb5a20e76903dfc580f5:2:teacher:byte-5",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": true,
+      "split": "train",
+      "prompt_tokens": 715
+    },
+    {
+      "id": "83c63ffd2df0fe83e09d28638ffa7443794f91c268a25958eb68b03308b8cebc:1:byte-19",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": false,
+      "split": "train",
+      "prompt_tokens": 971
+    },
+    {
+      "id": "b8ed6ff6f5d82042406f597e99497fc0d8ce321d91d9220d6c85af1316899b92:1:teacher:byte-7",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": true,
+      "split": "train",
+      "prompt_tokens": 224
+    }
+  ],
+  "oracle_nonpad_accuracy": 1.0,
+  "feature_collection_seconds": 15.389344159979373,
+  "head_initialization": "geometry retains trained weights; independent classifiers start random",
+  "training": "full fixed feature batch, mean level CE, AdamW 0.001, weight decay 0.01",
+  "scope": "training-set head memorization; backbone and adapters fixed; no held-out quality claim",
+  "complete": true,
+  "quality_ready": false,
+  "arms": {
+    "geometry": {
+      "trainable_head_parameters": 2097668,
+      "history": [
+        {
+          "step": 50,
+          "loss": 5.000892609357834,
+          "teacher_forced_code_accuracy": [
+            0.96875,
+            0.2890625,
+            0.076171875,
+            0.0078125
+          ],
+          "seconds": 0.7217264979844913
+        },
+        {
+          "step": 100,
+          "loss": 4.169434122741222,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.6015625,
+            0.109375,
+            0.0146484375
+          ],
+          "seconds": 1.2226722789928317
+        },
+        {
+          "step": 150,
+          "loss": 3.645324398763478,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.7578125,
+            0.14453125,
+            0.0185546875
+          ],
+          "seconds": 1.6486303609854076
+        },
+        {
+          "step": 200,
+          "loss": 3.2432888448238373,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.859375,
+            0.23046875,
+            0.0224609375
+          ],
+          "seconds": 2.1109543849888723
+        },
+        {
+          "step": 250,
+          "loss": 2.8988545942120254,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.90625,
+            0.328125,
+            0.0283203125
+          ],
+          "seconds": 2.5434386809938587
+        },
+        {
+          "step": 300,
+          "loss": 2.599037659820169,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.9453125,
+            0.42578125,
+            0.0380859375
+          ],
+          "seconds": 2.9867206389899366
+        },
+        {
+          "step": 350,
+          "loss": 2.3401102498173714,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.96875,
+            0.5078125,
+            0.052734375
+          ],
+          "seconds": 3.427351533988258
+        },
+        {
+          "step": 400,
+          "loss": 2.119891832349822,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.984375,
+            0.611328125,
+            0.060546875
+          ],
+          "seconds": 3.8889078029897064
+        },
+        {
+          "step": 450,
+          "loss": 1.9313865876756608,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.984375,
+            0.693359375,
+            0.0830078125
+          ],
+          "seconds": 4.273240330978297
+        },
+        {
+          "step": 500,
+          "loss": 1.7663700173143297,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            0.9921875,
+            0.744140625,
+            0.0986328125
+          ],
+          "seconds": 4.718670804984868
+        }
+      ],
+      "free_generation": {
+        "windows": 8,
+        "exact_concept_windows": 0,
+        "exact_nonpad_windows": 0,
+        "mean_nonpad_accuracy": 0.498046875,
+        "records": [
+          {
+            "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:4:byte-2",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.796875,
+              0.0703125
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.5859375
+          },
+          {
+            "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:2:teacher:byte-2",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.921875,
+              0.1875
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.59375
+          },
+          {
+            "id": "815c2be10b7f1425794c679660f9fb34d001af965e68c0e11d031dbc09b26cbf:1:byte-39",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.65625,
+              0.0234375
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.34375
+          },
+          {
+            "id": "d4486d60e166480e78a26664836e3858c4aa37e14c3aa796959bb5b1b136f436:1:teacher:byte-18",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.75,
+              0.0625
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.5234375
+          },
+          {
+            "id": "6e67c64834778d89bfd2ae5194b9fe78ef36490e8fe65a49d9fa623a825438ec:2:byte-5",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.890625,
+              0.0546875
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.6328125
+          },
+          {
+            "id": "791cdba8bdb06ae32ab7cadd15258751a0ee79451fa4eb5a20e76903dfc580f5:2:teacher:byte-5",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.9375,
+              0.1015625
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.6328125
+          },
+          {
+            "id": "83c63ffd2df0fe83e09d28638ffa7443794f91c268a25958eb68b03308b8cebc:1:byte-19",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.453125,
+              0.015625
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.296875
+          },
+          {
+            "id": "b8ed6ff6f5d82042406f597e99497fc0d8ce321d91d9220d6c85af1316899b92:1:teacher:byte-7",
+            "exact_concepts": false,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              0.5625,
+              0.0546875
+            ],
+            "exact_nonpad_reconstruction": false,
+            "nonpad_accuracy": 0.375
+          }
+        ]
+      }
+    },
+    "untied": {
+      "trainable_head_parameters": 67125248,
+      "history": [
+        {
+          "step": 50,
+          "loss": 0.09702703217044473,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            0.9921875,
+            0.9990234375
+          ],
+          "seconds": 1.394790666992776
+        },
+        {
+          "step": 100,
+          "loss": 0.033917329157702625,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 2.81184957298683
+        },
+        {
+          "step": 150,
+          "loss": 0.019667849337565713,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 4.220323060988449
+        },
+        {
+          "step": 200,
+          "loss": 0.013207554758992046,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 5.626789319998352
+        },
+        {
+          "step": 250,
+          "loss": 0.009627452673157677,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 7.042234294989612
+        },
+        {
+          "step": 300,
+          "loss": 0.007403580108075403,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 8.449414878006792
+        },
+        {
+          "step": 350,
+          "loss": 0.005912351814913563,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 9.840003196004545
+        },
+        {
+          "step": 400,
+          "loss": 0.0048557749250903726,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 11.23479355199379
+        },
+        {
+          "step": 450,
+          "loss": 0.00407531581731746,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 12.644682916987222
+        },
+        {
+          "step": 500,
+          "loss": 0.003479694096313324,
+          "teacher_forced_code_accuracy": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "seconds": 14.085097659990424
+        }
+      ],
+      "free_generation": {
+        "windows": 8,
+        "exact_concept_windows": 8,
+        "exact_nonpad_windows": 8,
+        "mean_nonpad_accuracy": 1.0,
+        "records": [
+          {
+            "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:4:byte-2",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          },
+          {
+            "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:2:teacher:byte-2",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          },
+          {
+            "id": "815c2be10b7f1425794c679660f9fb34d001af965e68c0e11d031dbc09b26cbf:1:byte-39",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          },
+          {
+            "id": "d4486d60e166480e78a26664836e3858c4aa37e14c3aa796959bb5b1b136f436:1:teacher:byte-18",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          },
+          {
+            "id": "6e67c64834778d89bfd2ae5194b9fe78ef36490e8fe65a49d9fa623a825438ec:2:byte-5",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          },
+          {
+            "id": "791cdba8bdb06ae32ab7cadd15258751a0ee79451fa4eb5a20e76903dfc580f5:2:teacher:byte-5",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          },
+          {
+            "id": "83c63ffd2df0fe83e09d28638ffa7443794f91c268a25958eb68b03308b8cebc:1:byte-19",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          },
+          {
+            "id": "b8ed6ff6f5d82042406f597e99497fc0d8ce321d91d9220d6c85af1316899b92:1:teacher:byte-7",
+            "exact_concepts": true,
+            "code_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "exact_nonpad_reconstruction": true,
+            "nonpad_accuracy": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "before": {
+    "windows": 8,
+    "exact_concept_windows": 0,
+    "exact_nonpad_windows": 0,
+    "mean_nonpad_accuracy": 0.0869140625,
+    "records": [
+      {
+        "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:4:byte-2",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.125
+      },
+      {
+        "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:2:teacher:byte-2",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.25,
+          0.0625,
+          0.03125,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.109375
+      },
+      {
+        "id": "815c2be10b7f1425794c679660f9fb34d001af965e68c0e11d031dbc09b26cbf:1:byte-39",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.0,
+          0.0,
+          0.015625,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.0859375
+      },
+      {
+        "id": "d4486d60e166480e78a26664836e3858c4aa37e14c3aa796959bb5b1b136f436:1:teacher:byte-18",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.0390625
+      },
+      {
+        "id": "6e67c64834778d89bfd2ae5194b9fe78ef36490e8fe65a49d9fa623a825438ec:2:byte-5",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.1171875
+      },
+      {
+        "id": "791cdba8bdb06ae32ab7cadd15258751a0ee79451fa4eb5a20e76903dfc580f5:2:teacher:byte-5",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.5,
+          0.0,
+          0.015625,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.078125
+      },
+      {
+        "id": "83c63ffd2df0fe83e09d28638ffa7443794f91c268a25958eb68b03308b8cebc:1:byte-19",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.046875
+      },
+      {
+        "id": "b8ed6ff6f5d82042406f597e99497fc0d8ce321d91d9220d6c85af1316899b92:1:teacher:byte-7",
+        "exact_concepts": false,
+        "code_accuracy": [
+          0.25,
+          0.0,
+          0.015625,
+          0.0
+        ],
+        "exact_nonpad_reconstruction": false,
+        "nonpad_accuracy": 0.09375
+      }
+    ]
+  },
+  "peak_allocated_bytes": {
+    "cuda:0": 5488094208,
+    "cuda:1": 9951706624
+  }
+}

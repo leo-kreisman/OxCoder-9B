@@ -1,0 +1,50 @@
+{
+  "prepared_sha256": "e7e07f537150b9251dca2ca0ee2e0d95ceb55461e030e6f04d0a2a90931b8254",
+  "source_dataset_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+  "selection": {
+    "counts": {
+      "test|TeichAI/Ox-Alpha-10k": {
+        "kept": 6531,
+        "over_limit": 140
+      },
+      "test|TeichAI/DeepSeek-v4-Pro-Agent": {
+        "kept": 451,
+        "over_limit": 1516
+      },
+      "validation|TeichAI/Ox-Alpha-10k": {
+        "kept": 6345,
+        "over_limit": 198
+      },
+      "validation|TeichAI/DeepSeek-v4-Pro-Agent": {
+        "kept": 92,
+        "over_limit": 483
+      },
+      "train|TeichAI/Ox-Alpha-10k": {
+        "kept": 12033,
+        "over_limit": 164
+      },
+      "train|TeichAI/DeepSeek-v4-Pro-Agent": {
+        "kept": 340,
+        "over_limit": 1851
+      }
+    },
+    "token_limit": 4096,
+    "truncation": false,
+    "format": "source chat template plus complete previous assistant chunks"
+  },
+  "classification_counts": {
+    "test|TeichAI/Ox-Alpha-10k|code=True": 2176,
+    "test|TeichAI/Ox-Alpha-10k|code=False": 4355,
+    "test|TeichAI/DeepSeek-v4-Pro-Agent|code=True": 451,
+    "validation|TeichAI/Ox-Alpha-10k|code=False": 4479,
+    "validation|TeichAI/Ox-Alpha-10k|code=True": 1866,
+    "validation|TeichAI/DeepSeek-v4-Pro-Agent|code=False": 23,
+    "validation|TeichAI/DeepSeek-v4-Pro-Agent|code=True": 69,
+    "train|TeichAI/Ox-Alpha-10k|code=False": 8800,
+    "train|TeichAI/Ox-Alpha-10k|code=True": 3233,
+    "train|TeichAI/DeepSeek-v4-Pro-Agent|code=True": 310,
+    "train|TeichAI/DeepSeek-v4-Pro-Agent|code=False": 30
+  },
+  "quality_ready": false,
+  "scope": "response-level code/tool syntax tag, not a correctness verifier; no prompt truncation"
+}

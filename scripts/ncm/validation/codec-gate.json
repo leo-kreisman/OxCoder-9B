@@ -1,0 +1,23 @@
+{
+  "examples": 147,
+  "nonpad_symbol_accuracy": 0.9969497511639107,
+  "exact_chunk_rate": 0.7142857142857143,
+  "eos_accuracy": 1.0,
+  "used_codes_per_level": [
+    5,
+    79,
+    167,
+    375,
+    356
+  ],
+  "passed": false,
+  "thresholds": {
+    "nonpad_symbol_accuracy": 0.999,
+    "exact_chunk_rate": 0.95,
+    "eos_accuracy": 0.99
+  },
+  "scope": "codec reconstruction only; not generated-code correctness",
+  "checkpoint_sha256": "0d1f9b6c5b47ad2d8504b5510d2a2bec8542354b3c94f63889b29436bee948f8",
+  "data_sha256": "b8bf585fb05481ed0ef432f94420ce7c285a1b72af3d20644637af11e8a81e0b",
+  "status": "codec-only"
+}

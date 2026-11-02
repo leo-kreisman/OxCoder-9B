@@ -1,0 +1,25 @@
+{
+  "documents_sha256": "5b6e0e57e15cb6437a7396415e9702e7d83ad02c3da22c0361255c402c118cc8",
+  "stats": {
+    "test_documents": 2131,
+    "assistant_tokens": 1617968,
+    "assistant_documents": 1001,
+    "train_documents": 36649,
+    "validation_documents": 2145,
+    "duplicate_rejected": 73076,
+    "benchmark_rejected": 40,
+    "code_tokens": 50000625,
+    "code_documents": 39924
+  },
+  "sources": {
+    "TeichAI/Ox-Alpha-10k": 818,
+    "TeichAI/DeepSeek-v4-Pro-Agent": 183,
+    "HuggingFaceCode/stack-v3-train": 192,
+    "codeparrot/codeparrot-clean": 39732
+  },
+  "distilled_documents_by_split": {
+    "train": 30
+  },
+  "token_budget_reached": true,
+  "quality_ready": false
+}

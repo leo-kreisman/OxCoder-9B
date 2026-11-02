@@ -1,0 +1,28 @@
+{
+  "complete": false,
+  "stopped_reason": "head-scale instability; superseded by explicitly normalized stage",
+  "last_record": {
+    "step": 62,
+    "loss": 721.3386504650116,
+    "code_accuracy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "head_warmup": true,
+    "training_example": "9632f6d33c5d16a1e6404d2aa239a8d3f7ec345231b9453f11f1726a60d72e64:1:teacher:byte-7",
+    "coding_response": true,
+    "distilled": true,
+    "prompt_tokens": 256,
+    "seconds": 0.5058923509932356,
+    "adapter_gradient_norms": [],
+    "peak_allocated_bytes": {
+      "cuda:0": 5421379072,
+      "cuda:1": 9029608960
+    }
+  },
+  "loss_first": 240.59271574020386,
+  "quality_ready": false
+}

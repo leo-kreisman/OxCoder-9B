@@ -1,0 +1,18 @@
+{
+  "checkpoint_step": 100,
+  "trainable_parameters": 26247169,
+  "all_parameters_finite": true,
+  "source_updates": {
+    "TeichAI/Ox-Alpha-10k": 46,
+    "TeichAI/DeepSeek-v4-Pro-Agent": 54
+  },
+  "distilled_updates": 50,
+  "concept_input_norm": 0.8,
+  "kernel_backend": {
+    "name": "fla",
+    "version": "0.6.0",
+    "torch": "2.11.0+cu128"
+  },
+  "quality_ready": false,
+  "scope": "checkpoint integrity and training provenance; not generation quality"
+}

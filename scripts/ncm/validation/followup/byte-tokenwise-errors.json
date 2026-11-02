@@ -1,0 +1,189 @@
+{
+  "checkpoint_sha256": "33d77465ba96611eb178a8a41b87aec9eac1d96ea6a6053685c4ce689989bbca",
+  "checkpoint_step": 26000,
+  "data_sha256": "fe3c499cf37c2d35013f28fdd7060cb9d6dfa198de0a365956ae4777098e78a5",
+  "errors": 1214,
+  "symbols": 903198,
+  "top_confusions": [
+    {
+      "expected": 32,
+      "got": 101,
+      "errors": 22,
+      "expected_occurrences": 139251
+    },
+    {
+      "expected": 149,
+      "got": 145,
+      "errors": 19,
+      "expected_occurrences": 41
+    },
+    {
+      "expected": 101,
+      "got": 32,
+      "errors": 17,
+      "expected_occurrences": 78418
+    },
+    {
+      "expected": 105,
+      "got": 32,
+      "errors": 16,
+      "expected_occurrences": 46482
+    },
+    {
+      "expected": 116,
+      "got": 32,
+      "errors": 16,
+      "expected_occurrences": 54917
+    },
+    {
+      "expected": 162,
+      "got": 154,
+      "errors": 16,
+      "expected_occurrences": 75
+    },
+    {
+      "expected": 229,
+      "got": 170,
+      "errors": 12,
+      "expected_occurrences": 44
+    },
+    {
+      "expected": 232,
+      "got": 135,
+      "errors": 12,
+      "expected_occurrences": 17
+    },
+    {
+      "expected": 149,
+      "got": 226,
+      "errors": 12,
+      "expected_occurrences": 41
+    },
+    {
+      "expected": 163,
+      "got": 152,
+      "errors": 11,
+      "expected_occurrences": 60
+    },
+    {
+      "expected": 108,
+      "got": 114,
+      "errors": 10,
+      "expected_occurrences": 27330
+    },
+    {
+      "expected": 32,
+      "got": 105,
+      "errors": 9,
+      "expected_occurrences": 139251
+    },
+    {
+      "expected": 101,
+      "got": 105,
+      "errors": 9,
+      "expected_occurrences": 78418
+    },
+    {
+      "expected": 231,
+      "got": 191,
+      "errors": 9,
+      "expected_occurrences": 16
+    },
+    {
+      "expected": 153,
+      "got": 180,
+      "errors": 9,
+      "expected_occurrences": 24
+    },
+    {
+      "expected": 97,
+      "got": 101,
+      "errors": 8,
+      "expected_occurrences": 48189
+    },
+    {
+      "expected": 117,
+      "got": 32,
+      "errors": 8,
+      "expected_occurrences": 17221
+    },
+    {
+      "expected": 32,
+      "got": 116,
+      "errors": 8,
+      "expected_occurrences": 139251
+    },
+    {
+      "expected": 179,
+      "got": 187,
+      "errors": 7,
+      "expected_occurrences": 77
+    },
+    {
+      "expected": 97,
+      "got": 32,
+      "errors": 7,
+      "expected_occurrences": 48189
+    },
+    {
+      "expected": 98,
+      "got": 117,
+      "errors": 7,
+      "expected_occurrences": 8571
+    },
+    {
+      "expected": 108,
+      "got": 32,
+      "errors": 7,
+      "expected_occurrences": 27330
+    },
+    {
+      "expected": 101,
+      "got": 97,
+      "errors": 6,
+      "expected_occurrences": 78418
+    },
+    {
+      "expected": 32,
+      "got": 97,
+      "errors": 6,
+      "expected_occurrences": 139251
+    },
+    {
+      "expected": 32,
+      "got": 119,
+      "errors": 6,
+      "expected_occurrences": 139251
+    },
+    {
+      "expected": 161,
+      "got": 168,
+      "errors": 6,
+      "expected_occurrences": 19
+    },
+    {
+      "expected": 117,
+      "got": 105,
+      "errors": 6,
+      "expected_occurrences": 17221
+    },
+    {
+      "expected": 97,
+      "got": 116,
+      "errors": 6,
+      "expected_occurrences": 48189
+    },
+    {
+      "expected": 104,
+      "got": 32,
+      "errors": 6,
+      "expected_occurrences": 19156
+    },
+    {
+      "expected": 202,
+      "got": 112,
+      "errors": 6,
+      "expected_occurrences": 21
+    }
+  ]
+}

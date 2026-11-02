@@ -1,0 +1,33 @@
+{
+  "checkpoint_sha256": "3199967f8bca03508328a5ba594894f2116b565fb7e63f9c3f26e80e7ea9c81f",
+  "checkpoint_step": 6000,
+  "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+  "errors": 6,
+  "symbols": 903198,
+  "top_confusions": [
+    {
+      "expected": 256,
+      "got": 32,
+      "errors": 3,
+      "expected_occurrences": 7118
+    },
+    {
+      "expected": 106,
+      "got": 98,
+      "errors": 1,
+      "expected_occurrences": 834
+    },
+    {
+      "expected": 139,
+      "got": 226,
+      "errors": 1,
+      "expected_occurrences": 23
+    },
+    {
+      "expected": 151,
+      "got": 56,
+      "errors": 1,
+      "expected_occurrences": 77
+    }
+  ]
+}

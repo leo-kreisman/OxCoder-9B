@@ -1,0 +1,20 @@
+{
+  "prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+  "parent_prepared_sha256": "e7e07f537150b9251dca2ca0ee2e0d95ceb55461e030e6f04d0a2a90931b8254",
+  "source_dataset_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+  "selection": {
+    "prompt_tokens": 2048,
+    "truncation": false,
+    "counts": {
+      "test": 5439,
+      "validation": 5221,
+      "train": 10873
+    },
+    "source_training_counts": {
+      "TeichAI/Ox-Alpha-10k": 10734,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 139
+    }
+  },
+  "quality_ready": false,
+  "scope": "complete prompts selected by length; no token or target truncation"
+}

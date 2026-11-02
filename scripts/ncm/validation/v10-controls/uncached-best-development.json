@@ -1,0 +1,9 @@
+{
+  "checkpoint": "development-step-250.pt",
+  "checkpoint_sha256": "43fdfc35b9282b494dd851f9789c523f0b5b0fc3698d9ba27a44f396c451e95e",
+  "step": 250,
+  "passed_tasks": 0,
+  "evaluated_tasks": 12,
+  "quality_ready": false,
+  "scope": "selection on reused development tasks, not qualification"
+}

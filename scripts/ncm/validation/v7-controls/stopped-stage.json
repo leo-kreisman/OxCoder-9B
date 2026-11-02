@@ -1,0 +1,13 @@
+{
+  "last_checkpoint_step": 875,
+  "last_recorded_step": 876,
+  "complete": false,
+  "quality_ready": false,
+  "reason": "Stopped after failed coding evaluations and oracle residual classification control",
+  "evaluated_steps": [
+    250,
+    500,
+    750
+  ],
+  "passes_each": 0
+}

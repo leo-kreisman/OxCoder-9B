@@ -1,0 +1,22 @@
+{
+  "revision": "f70d90468f21b3dcfe30aa79c4ec70d379d9f3c0",
+  "scope": "read-only comparison; no upstream code executed or installed",
+  "files": {
+    "src/mcl4_coe/ncm.py": {
+      "bytes": 118594,
+      "sha256": "a637ab9e53aeaf86c8e0405f905980b6ab15788209d076357a157199936e9746"
+    },
+    "docs/10_NCM_MCL4_COE_ARCHITECTURE_MAPPING.md": {
+      "bytes": 37245,
+      "sha256": "386cde919dce7ac068b25c4e8789abed81ba79b148c2ec65162946e4c6a8e9f4"
+    },
+    "README.md": {
+      "bytes": 21553,
+      "sha256": "01c5f8e588298e81e4c12978f6f8fbe0f9f4a7e407110239f8c84b386bd79e5d"
+    },
+    "pyproject.toml": {
+      "bytes": 550,
+      "sha256": "21dd46c5d3980e4ba6fb481790df429a802df082a76a9b991aff6a89b62248ad"
+    }
+  }
+}

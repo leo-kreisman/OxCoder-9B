@@ -1,0 +1,10 @@
+{
+  "max_absolute_difference": 0.0,
+  "tensor_count": 106,
+  "steps": [
+    3,
+    3
+  ],
+  "data_rng_identical": true,
+  "scope": "3-update synthetic infrastructure control, not training quality"
+}

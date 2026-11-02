@@ -1,0 +1,102 @@
+{
+  "examples": [
+    {
+      "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-0",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "teacher_forced_code_loss": 8.309404253959656,
+      "teacher_forced_code_accuracy_by_level": [
+        0.0,
+        0.0,
+        0.015625,
+        0.0
+      ],
+      "generated_text": null,
+      "valid_utf8_and_eos": false,
+      "exact_generated_chunk": false,
+      "stop_probability": 0.0009695473127067089,
+      "expected_final_chunk": false
+    },
+    {
+      "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-1",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "teacher_forced_code_loss": 8.525450706481934,
+      "teacher_forced_code_accuracy_by_level": [
+        0.0,
+        0.0,
+        0.015625,
+        0.0
+      ],
+      "generated_text": null,
+      "valid_utf8_and_eos": false,
+      "exact_generated_chunk": false,
+      "stop_probability": 2.4126640710164793e-05,
+      "expected_final_chunk": false
+    },
+    {
+      "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-3",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "teacher_forced_code_loss": 8.702723264694214,
+      "teacher_forced_code_accuracy_by_level": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "generated_text": " aaaat                                                ?  aalalalalalaleaeaeaeaeaeaeeeerrrrrrrrrrrrrrrrreeeeeeeeeerrrrrrrrrrrrrr",
+      "valid_utf8_and_eos": true,
+      "exact_generated_chunk": false,
+      "stop_probability": 8.654940029373392e-05,
+      "expected_final_chunk": true
+    },
+    {
+      "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "teacher_forced_code_loss": 8.078012943267822,
+      "teacher_forced_code_accuracy_by_level": [
+        0.25,
+        0.0,
+        0.03125,
+        0.0
+      ],
+      "generated_text": null,
+      "valid_utf8_and_eos": false,
+      "exact_generated_chunk": false,
+      "stop_probability": 7.615985850861762e-06,
+      "expected_final_chunk": false
+    },
+    {
+      "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "teacher_forced_code_loss": 8.29906678199768,
+      "teacher_forced_code_accuracy_by_level": [
+        0.0,
+        0.0,
+        0.0625,
+        0.0
+      ],
+      "generated_text": null,
+      "valid_utf8_and_eos": false,
+      "exact_generated_chunk": false,
+      "stop_probability": 5.1540819185902365e-06,
+      "expected_final_chunk": false
+    },
+    {
+      "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-74",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "teacher_forced_code_loss": 8.943706512451172,
+      "teacher_forced_code_accuracy_by_level": [
+        0.0,
+        0.0,
+        0.03125,
+        0.0
+      ],
+      "generated_text": null,
+      "valid_utf8_and_eos": false,
+      "exact_generated_chunk": false,
+      "stop_probability": 0.00047229003394022584,
+      "expected_final_chunk": true
+    }
+  ],
+  "quality_ready": false,
+  "scope": "up to three development chunks per source, including an ending; real free-running predictions, not a coding benchmark"
+}

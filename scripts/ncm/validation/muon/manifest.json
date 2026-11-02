@@ -1,0 +1,25 @@
+{
+  "torch": "2.11.0+cu128",
+  "implementation": "torch.optim.Muon",
+  "tests_passed": 19,
+  "cuda_training_steps": 1000,
+  "training_work_seconds": 14.781662737193983,
+  "adamw_training_work_seconds": 14.07351399824256,
+  "time_ratio_to_adamw": 1.050317833843051,
+  "complete_response_token_accuracy": 0.9015020773410035,
+  "quality_ready": false,
+  "experiment_scope": "optimizer operability and controlled decoder comparison; no usable generator claim",
+  "implementation_sha256": {
+    "scripts/ncm/anvil.py": "c99d40df6ff70436666f42c196b94c0cec6f694b28646d7120ee8225c1597424",
+    "scripts/ncm/train.py": "7da8c9ea4a8b5cb9935cc8cba85689256195ee7752ec79b51db26661f2acf892",
+    "scripts/ncm/adapt_codec.py": "736922ddc176f481654c2ca6bb54ae8722dc76954313801ae6945df9beb4c65d",
+    "tests/ncm/test_followup.py": "f307855231b89da8de4d2de4e763014ae5940700530b71ce355036c859dfb18d"
+  },
+  "evidence_sha256": {
+    "history.json": "5f6f43da5ba07a6ccbb69fcae1eb15b1c92bc9f543a77d5f7872cc9669637d88",
+    "unit-tests.txt": "a95921bdc1d3195049b16c57dd195a3be8c8d5ff43315c4fd0bde1b2806e23ac",
+    "screen.json": "ea5686230ba707274260fbc601222529e95224c18d78067e3830cfdaa6981369",
+    "identity.json": "29c8a24271b31229af884d9fdc38ff0a12178b66261b2aab735c42276e42fb6b",
+    "admission.json": "5644c0332e6f6f5be85ed5e1028cb55257ec5a64e6aa8042c9b259434641540e"
+  }
+}

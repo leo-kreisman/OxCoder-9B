@@ -1,0 +1,42 @@
+[
+  {
+    "level": 0,
+    "all_code_mean_square_norm": 1.871669054031372,
+    "training_weighted_square_norm": 64.52997589111328,
+    "temperature": 0.029004644602537155,
+    "observed_codes": 125,
+    "nearest_code": true
+  },
+  {
+    "level": 1,
+    "all_code_mean_square_norm": 2.434410333633423,
+    "training_weighted_square_norm": 66.44544982910156,
+    "temperature": 0.03663772717118263,
+    "observed_codes": 162,
+    "nearest_code": true
+  },
+  {
+    "level": 2,
+    "all_code_mean_square_norm": 4.107637405395508,
+    "training_weighted_square_norm": 82.0787353515625,
+    "temperature": 0.050045087933540344,
+    "observed_codes": 322,
+    "nearest_code": true
+  },
+  {
+    "level": 3,
+    "all_code_mean_square_norm": 5.971110820770264,
+    "training_weighted_square_norm": 82.28569030761719,
+    "temperature": 0.07256560772657394,
+    "observed_codes": 506,
+    "nearest_code": true
+  },
+  {
+    "level": 4,
+    "all_code_mean_square_norm": 255.4033660888672,
+    "training_weighted_square_norm": 197.39984130859375,
+    "temperature": 1.2938377857208252,
+    "observed_codes": 3250,
+    "nearest_code": true
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-28",
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "source_unchanged": true,
+  "codec_updates_this_followup": 54000,
+  "teacher_requests": 16,
+  "teacher_complete_responses": 8,
+  "unit_tests_passed": 17,
+  "generator_quality_training_started": false,
+  "generator_gate_enforcement_passed": true,
+  "quality_ready": false,
+  "mac_benchmark": false,
+  "deployment_8gb_demonstrated": false,
+  "artifacts": [
+    {
+      "path": "results/ncm-official/xsum/coding-cache.pt",
+      "bytes": 14674637,
+      "sha256": "1a8d085fe719eb206f18539f64d64dc0575826d57e16b4728f6935fd2590d08d"
+    },
+    {
+      "path": "results/ncm-codec-adamw-v2/best-decoder.pt",
+      "bytes": 84373537,
+      "sha256": "7aa974729e70d666d4771d9db4ccefcd1b5c3e42cb313686655517b00128e36b"
+    },
+    {
+      "path": "results/ncm-codec-anvil-v2/best-decoder.pt",
+      "bytes": 84373537,
+      "sha256": "9668a11ef904e0ad6be923bd5d4c0ed2fa801116225655fd1d3ec89fde89fa7a"
+    },
+    {
+      "path": "results/ncm-codec-joint-v2/best-codec.pt",
+      "bytes": 299624565,
+      "sha256": "d638e6e96c43f3383d13630ddb2c16889eecee845d2a4560299f3d8ab4a03e4c"
+    },
+    {
+      "path": "results/ncm-byte-codec-v3/best.pt",
+      "bytes": 4830255,
+      "sha256": "4af78baadcd150b296bd67f0bcd602715bbb6c2595f5ecc95d67fbbf886463cd"
+    },
+    {
+      "path": "results/ncm-byte-tokenwise-v3/best.pt",
+      "bytes": 1646799,
+      "sha256": "33d77465ba96611eb178a8a41b87aec9eac1d96ea6a6053685c4ce689989bbca"
+    },
+    {
+      "path": "results/ncm-byte-widebook-v3/best.pt",
+      "bytes": 10821839,
+      "sha256": "360160a6850820f3a2ef448fe784a366de752ad4bcb099c823567cf2b480ca10"
+    }
+  ],
+  "evidence": {
+    "corpus-manifest.json": "f6df7f616d57c21754c15b18de07216ed519b9addfc94577560c17f61884bac0",
+    "teacher-manifest.json": "b71e112e06a1a85534ae3a63fb1ac916ffef0ba57185ae3a50df030bfca4c93c",
+    "xsum-screen.json": "cf0551051c5ed694ef42052d22b341b9c4e2772f7be2382c430a3f7ee51e2554",
+    "wmt14-screen.json": "6b09a1896567672dbb02c94110a636168c30530398db359a2cfd9aa7a4f7192e",
+    "official-scheduler-audit.json": "df141c442eebcdfa818a2af8ae9c7795ab40bd84c4811f16d2f8da8b24b8e447",
+    "adamw-screen.json": "9c0d610ddd9635cc6a89d41ade58355e2f34cc64a6b296bb7af81b0457e3763b",
+    "adamw-history.json": "c38e42f66506fcad3f6c35d4d92b04395e8ca4b05d02174ddd80049c012d2d0e",
+    "anvil-screen.json": "c3e74a069b5c0d13572e97b852d0c843bcf824abbdd9c47dd49665e21b3e33d2",
+    "anvil-history.json": "b1ae9e5f071e59d307dec160074630024b94ae03650bccebc35d6f2c78f59dcb",
+    "joint-screen.json": "8b19f9ebc9aa14ac8f53fa13ded1682505ae829a7e124590880d77b62be76255",
+    "joint-history.json": "9e217bcd2786d76a9273f3e22b837c89e018c3635978dc0be68a497702bec7c7",
+    "byte-manifest.json": "94b12db995a273a7d0cf24c5d4b47fdb22a5939051c086c5d9e9c34c745f82fd",
+    "byte-contextual-training.json": "7683ea1c12c5a8c877b1ede380469be20fac68e391a22ecd39ed70da0bc85886",
+    "byte-contextual-documents.json": "f8bb799441ea9fd2ab2d7d57f1eaafe757851a9bcf323a4d9f608deb8a83cc91",
+    "byte-tokenwise-training.json": "15c25efcad08ae58e8d5135d8797d1f3fa4333eb6446f630a246bd42b2c9d839",
+    "byte-tokenwise-documents.json": "b814b60c59a7505b7f1b8dd04a5bec71d845d1a7018430c0ca0625a003f0deb0",
+    "byte-tokenwise-errors.json": "a63dad809cbea410be52451f324c520b7aec070cdf814289e2189a844378602e",
+    "byte-widebook-training.json": "77569b97fad935b3382401fa1c57c3f28b18ce5ae853d06f43ba3b894f2deb89",
+    "byte-widebook-documents.json": "38712927738e971e437dab14517743c88daf247222c9e323d302fee60139fffb",
+    "unit-tests.txt": "4513576e95a8fb6f92da3c34b7e103ad8303a920b4fd041bb4a4fb4b2cf924ff",
+    "generator-gate.txt": "72404112a5e92788bc999dcc84663bdeec244da5664c5fa9b32f1d17931279e2"
+  },
+  "implementation_sha256": {
+    "scripts/ncm/adapt_codec.py": "7544353ac10568d50bb2279521afe476516f9549ebc2bf212d29b63d8f111e23",
+    "scripts/ncm/audit_byte_errors.py": "3369ff58571b5cfd4999a1d1c7a7517ecdd413326db47b9e832c897664cd98d4",
+    "scripts/ncm/codec.py": "fd5e24dd1443fa3c7c7128f7f1811ab305b888a6b6e6c64859c9b3f2ecb90e2d",
+    "scripts/ncm/backbone.py": "d5590103fed16b2f4821f65073ee0f1b5c279e949e15cb2117ff90f320bce38b",
+    "scripts/ncm/audit_source.py": "0d82028989e0de5227a0e3e1397e57dd68127e583ed744516e1ddea090b047d4",
+    "scripts/ncm/audit_official.py": "82bc859c9829091da1741f439e0286c66b302c13aacb7a2ecceea2788826c1ac",
+    "scripts/ncm/fetch_official.py": "23f1b8e6b70730a451a3dad223094097a6da56d87e804ea98297615b0f902a7f",
+    "scripts/ncm/evaluate_documents.py": "a056aca9b84db032ab4045cf62ecd43a8d83f9247032629e94b876995cf1e066",
+    "scripts/ncm/__init__.py": "280d1bbc29761b6617a80d42ddc4636749d03743f67f87484423014ae0c48d20",
+    "scripts/ncm/train.py": "57a564d6f1dd73b2328c00acc43e4603cc9fa7b800e2b0d3ed3ce2dc10a7a0de",
+    "scripts/ncm/data.py": "9a66f62ab2f028dca91657891a922a139fdbf1ef51feae78fd46c092aaf29764",
+    "scripts/ncm/distill.py": "8690f6b0801af0461f39b29623e343d004f1e74db0d2cbdc254f9ba5eba30127",
+    "scripts/ncm/corpus.py": "817c5d1ba89a90b1423e57fce4de81b8e1986c5d3a00e37690d4ca643cf028d0",
+    "scripts/ncm/official_codec.py": "2bcc4ba1ec2d0707610909adf95991e34220936f21be914c77e9ccc77956d2f7",
+    "scripts/ncm/anvil.py": "186f546c1e5e777a5d14bc771a1956a76c15a855fe5332a27a0ab1dd5ffd226c",
+    "scripts/ncm/audit_backbone.py": "e30490594f486cefa19f9675cbd6e345c2c44cb9902e4cec855b520ba5cb2fc9",
+    "scripts/ncm/evaluate_codec.py": "7b86f984326315de638d2f0e002c46a3fb24fc22cddef55a6211bceb02a8bb62",
+    "scripts/ncm/byte_followup.py": "4de0433508f98a75a26782385894eddeea53fdb853e6254a77c0dd81af656ca2",
+    "tests/ncm/test_pipeline.py": "ee2e495eda214495267eda11f7bedfb523f52c2ad7729589b38981359d874cd8",
+    "tests/ncm/test_followup.py": "1e2f5fbda1e07707c60e9cf2809c099ea33a05521261fa868628d8e5f8a54941"
+  },
+  "instructions_sha256": {
+    "scripts/ncm/RESULTS.md": "89d3d961ab901000825a1235b5329dee570a648ba330c90dbf6705909da68db8",
+    "scripts/ncm/FOLLOWUP-RESULTS.md": "7cb30acca23a002c8cfec7ac13485662a5e485f101654dbaa22ecd0d2f2359d9",
+    "scripts/ncm/FOLLOWUP.md": "4c37417261fbe609d526b9dc23c0765f893df92250944af4a9148c50ac7154ab",
+    "scripts/ncm/README.md": "b0a8d48af4ef30311713cf5d4839b4d3c44a30b06b095c5d03bb06729c08084b"
+  }
+}

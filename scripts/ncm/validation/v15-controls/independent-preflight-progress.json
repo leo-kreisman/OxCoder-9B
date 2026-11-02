@@ -1,0 +1,67 @@
+{
+  "step": 27,
+  "training_complete": false,
+  "history": [
+    {
+      "step": 25,
+      "loss": 6.800822019577026,
+      "code_accuracy": [
+        0.0,
+        0.0625,
+        0.046875,
+        0.0078125
+      ],
+      "warmup": true,
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "training_example": "27bee9ef7f760a0d9460ee2003fd253ff43c8fcbb00f5d3ba29f14bd1bb66ba5:2:byte-0",
+      "seconds": 2.1224283819901757,
+      "prompt_tokens": 1171,
+      "peak_allocated_bytes": {
+        "cuda:0": 5574561280,
+        "cuda:1": 9993025536
+      }
+    },
+    {
+      "step": 26,
+      "loss": 6.807430624961853,
+      "code_accuracy": [
+        0.0,
+        0.0625,
+        0.015625,
+        0.0
+      ],
+      "warmup": false,
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": true,
+      "training_example": "b8ed6ff6f5d82042406f597e99497fc0d8ce321d91d9220d6c85af1316899b92:1:teacher:byte-2",
+      "seconds": 1.5044164290011395,
+      "prompt_tokens": 88,
+      "peak_allocated_bytes": {
+        "cuda:0": 5574561280,
+        "cuda:1": 9993025536
+      }
+    },
+    {
+      "step": 27,
+      "loss": 6.941167950630188,
+      "code_accuracy": [
+        0.0,
+        0.0,
+        0.015625,
+        0.0
+      ],
+      "warmup": false,
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "training_example": "b60ebf22b2207d0a7573609d5d0f59d0cfdd505b197494b37bd8051d7d9c17bc:2:byte-5",
+      "seconds": 5.176359620003495,
+      "prompt_tokens": 885,
+      "peak_allocated_bytes": {
+        "cuda:0": 5664455680,
+        "cuda:1": 10283245568
+      }
+    }
+  ],
+  "quality_ready": false
+}

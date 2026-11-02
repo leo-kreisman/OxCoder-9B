@@ -1,0 +1,58 @@
+{
+  "quality_ready": false,
+  "generator_state": "training; no release qualification",
+  "files": {
+    "scripts/ncm/validation/v6/coverage.json": {
+      "source": "results/ncm-coverage-v6/complete-gate.json",
+      "sha256": "29a32a9862a8f8aeb10fbd90fdf470bad08457686f133c2e4baa87e7b93e2cb9"
+    },
+    "scripts/ncm/validation/v6/positionfree.json": {
+      "source": "results/ncm-coverage-positionfree-v6/complete-gate.json",
+      "sha256": "6803e2239bb49a27047342c220c441ec73d784c78194bf7e9e3f2fb505100fcc"
+    },
+    "scripts/ncm/validation/v6/revived.json": {
+      "source": "results/ncm-coverage-revived-v6/complete-gate.json",
+      "sha256": "efa7a8dc4622af4bef104f36d6c9859331f3b2774d66906f7fe67574abcf19fe"
+    },
+    "scripts/ncm/validation/v6/decoder.json": {
+      "source": "results/ncm-coverage-decoder-v6/complete-gate.json",
+      "sha256": "d635d6714356a76775b871b4b1c25f9cf140cd23df56e5c9cbce284ccd1c6e54"
+    },
+    "scripts/ncm/validation/v6/generator-admission.json": {
+      "source": "results/ncm-generator-v6b/curriculum.json",
+      "sha256": "ff4cf30ee834565aaf55c087837be5ba4c757d7d3315fa63821349057646dc5a"
+    },
+    "scripts/ncm/validation/v6/generator-conditioning.json": {
+      "source": "results/ncm-generator-v6b/conditioning.json",
+      "sha256": "1828dc43d0e97c351137b87cade74be5252f73f0909c359abd3462a9933f9f14"
+    },
+    "scripts/ncm/validation/v6/backbone-audit.json": {
+      "source": "results/ncm-generator-v6b/backbone-audit.json",
+      "sha256": "eca4515610acc227648a31def2e2d1abc5febf062dc07e0ef46678301e1b98e8"
+    }
+  },
+  "implementation_sha256": {
+    "scripts/ncm/__init__.py": "280d1bbc29761b6617a80d42ddc4636749d03743f67f87484423014ae0c48d20",
+    "scripts/ncm/adapt_codec.py": "736922ddc176f481654c2ca6bb54ae8722dc76954313801ae6945df9beb4c65d",
+    "scripts/ncm/anvil.py": "c99d40df6ff70436666f42c196b94c0cec6f694b28646d7120ee8225c1597424",
+    "scripts/ncm/audit_backbone.py": "e30490594f486cefa19f9675cbd6e345c2c44cb9902e4cec855b520ba5cb2fc9",
+    "scripts/ncm/audit_byte_errors.py": "3369ff58571b5cfd4999a1d1c7a7517ecdd413326db47b9e832c897664cd98d4",
+    "scripts/ncm/audit_official.py": "82bc859c9829091da1741f439e0286c66b302c13aacb7a2ecceea2788826c1ac",
+    "scripts/ncm/audit_source.py": "0d82028989e0de5227a0e3e1397e57dd68127e583ed744516e1ddea090b047d4",
+    "scripts/ncm/backbone.py": "166c351f432257127abe4a96b93a94ff275cf88819e92b4e267bf7b2ad055aa2",
+    "scripts/ncm/byte_followup.py": "4de0433508f98a75a26782385894eddeea53fdb853e6254a77c0dd81af656ca2",
+    "scripts/ncm/calibrate_codec.py": "068355be16033b5425177ee0d849ec943021ec83d7b61917f3b1f5aa907956d1",
+    "scripts/ncm/codec.py": "fd5e24dd1443fa3c7c7128f7f1811ab305b888a6b6e6c64859c9b3f2ecb90e2d",
+    "scripts/ncm/conditioning.py": "dfc9072e06fccc0715a87f12843530ae5643b4a023e28a991cbf86f8d2f9b926",
+    "scripts/ncm/corpus.py": "817c5d1ba89a90b1423e57fce4de81b8e1986c5d3a00e37690d4ca643cf028d0",
+    "scripts/ncm/data.py": "9a66f62ab2f028dca91657891a922a139fdbf1ef51feae78fd46c092aaf29764",
+    "scripts/ncm/distill.py": "8690f6b0801af0461f39b29623e343d004f1e74db0d2cbdc254f9ba5eba30127",
+    "scripts/ncm/evaluate_codec.py": "7b86f984326315de638d2f0e002c46a3fb24fc22cddef55a6211bceb02a8bb62",
+    "scripts/ncm/evaluate_documents.py": "a056aca9b84db032ab4045cf62ecd43a8d83f9247032629e94b876995cf1e066",
+    "scripts/ncm/fetch_official.py": "23f1b8e6b70730a451a3dad223094097a6da56d87e804ea98297615b0f902a7f",
+    "scripts/ncm/generate_candidate.py": "6e0e7c669b032ba43bb267b7a0b3a30566cb6f79befa06b8acc0f5e95fdc3794",
+    "scripts/ncm/official_codec.py": "2bcc4ba1ec2d0707610909adf95991e34220936f21be914c77e9ccc77956d2f7",
+    "scripts/ncm/start_training.py": "12f68422fcf9c8057f533467bc2c347d7085124ce9ca7d333859b99073a4bf7a",
+    "scripts/ncm/train.py": "3e63b9006bc6438b4e9404ac22b3dd721d3dca34f7c1f8ac1cb0d8f1083885f1"
+  }
+}

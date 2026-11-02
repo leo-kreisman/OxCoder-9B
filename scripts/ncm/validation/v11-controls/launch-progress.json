@@ -1,0 +1,40 @@
+{
+  "step": 300,
+  "training_complete": false,
+  "history": [
+    {
+      "step": 100,
+      "loss": 6.849898934364319,
+      "lr": 0.0002998186681223039,
+      "elapsed_seconds": 19.45622166598332,
+      "nonpad_tokens_this_update": 7893,
+      "cumulative_nonpad_tokens_including_eos": {
+        "code": 783550
+      },
+      "peak_cuda_allocated_bytes": 1235934720
+    },
+    {
+      "step": 200,
+      "loss": 5.310411870479584,
+      "lr": 0.0002992678261519231,
+      "elapsed_seconds": 38.63671015299042,
+      "nonpad_tokens_this_update": 7661,
+      "cumulative_nonpad_tokens_including_eos": {
+        "code": 1565758
+      },
+      "peak_cuda_allocated_bytes": 1235934720
+    },
+    {
+      "step": 300,
+      "loss": 4.65099236369133,
+      "lr": 0.00029834896540290213,
+      "elapsed_seconds": 58.21290743097779,
+      "nonpad_tokens_this_update": 7773,
+      "cumulative_nonpad_tokens_including_eos": {
+        "code": 2353284
+      },
+      "peak_cuda_allocated_bytes": 1235934720
+    }
+  ],
+  "quality_ready": false
+}

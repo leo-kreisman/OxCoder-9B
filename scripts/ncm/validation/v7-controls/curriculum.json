@@ -1,0 +1,26 @@
+{
+  "training_candidates": 12373,
+  "training_kept": 12361,
+  "rejected_ids": [
+    "0af67279ca4a89835b57b021bfffeea2787fe9376df2f5bd619626732b64d514:2:teacher:byte-3",
+    "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-9",
+    "50fbdd76d7dac91a5285a464017bdb500d6b19726e51724ecb42f99502f078fa:1:teacher:byte-4",
+    "b8ed6ff6f5d82042406f597e99497fc0d8ce321d91d9220d6c85af1316899b92:1:teacher:byte-34",
+    "be2acf815e288e1e170a3b4ea51b08a6515c93a8527edc7671525b69c03e5bcc:1:byte-0",
+    "be2acf815e288e1e170a3b4ea51b08a6515c93a8527edc7671525b69c03e5bcc:1:byte-11",
+    "c4214427a90fc3873d842010946ec4a4bb27dc8397b3d1d1a0fa86c1fec63af3:1:byte-33",
+    "c85092f2914ec8eb0765b82ad122319a086726428ed6c8f96f2dca7fec20a9c7:1:byte-14",
+    "ce34509f12aee280adcb54b8aadb374e07205ad1a9dfaa1a960510a7ff27fd53:1:byte-10",
+    "ea4bd07ddd8eb27c204fa66ff9df41b74f370e95902818221376ebd4d4d8e33d:1:teacher:byte-11",
+    "f51150b205e22ebfc89870bf4b3a3969b73e68b959f53584ab784be50472a360:1:byte-1",
+    "fc41edd068ff40a4b1b3672fdfedc8c57ffc258300a43cdddc13ec7c73ff7bb0:1:byte-22"
+  ],
+  "evaluation_filtered": false,
+  "quality_ready": false,
+  "scope": "training curriculum only; broad reconstruction and generated-code quality remain separate",
+  "sources": {
+    "TeichAI/DeepSeek-v4-Pro-Agent": 339,
+    "TeichAI/Ox-Alpha-10k": 12022
+  },
+  "distilled_training_kept": 454
+}

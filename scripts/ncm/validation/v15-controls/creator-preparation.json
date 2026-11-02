@@ -1,0 +1,31 @@
+{
+  "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+  "base_prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+  "addition_manifest_sha256": "90320b8a463abcf2a8667a924de69b9e2cb1209948d42abf49702e7b567d80e6",
+  "base_rows": 21533,
+  "counts": {
+    "responses_considered": 4228,
+    "total_chunks": 171445,
+    "over_context": 27551,
+    "selected_chunks": 31050,
+    "responses_selected": 4123,
+    "source:TeichAI/Ox-Alpha-10k": 27765,
+    "source:TeichAI/DeepSeek-v4-Pro-Agent": 3285
+  },
+  "frozen_evaluation_sha256": "cd6ce9b9a86447ab4250a2ffb405eebe99334729a370d537e68fcab9d2f4611d",
+  "evaluation_changed": false,
+  "context_tokens": 2048,
+  "byte_length": 128,
+  "chunks_per_response": 8,
+  "source_tokenizer_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+  "implementation_sha256": {
+    "prepare_creator_expansion.py": "e00294abb67f5feebb49f99dccc4c3473b4730fa44b24371db9d061b38ba53b6",
+    "conditioning.py": "dfc9072e06fccc0715a87f12843530ae5643b4a023e28a991cbf86f8d2f9b926",
+    "data.py": "9a66f62ab2f028dca91657891a922a139fdbf1ef51feae78fd46c092aaf29764",
+    "distill.py": "8690f6b0801af0461f39b29623e343d004f1e74db0d2cbdc254f9ba5eba30127",
+    "prepare_geometry.py": "b243b36bcc6e3d8e973547ebea869fd489b515862a0d8d0116df3aee6862f2d6"
+  },
+  "training_started": false,
+  "quality_ready": false,
+  "scope": "conditioning-ready addition only; frozen codec reconstruction admission is still required by the trainer"
+}

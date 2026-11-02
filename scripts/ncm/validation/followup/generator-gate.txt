@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/scribe/Projects/OxCoder-9B/scripts/ncm/train.py", line 344, in <module>
+    if __name__=='__main__':main()
+  File "/home/scribe/Projects/OxCoder-9B/scripts/ncm/train.py", line 341, in main
+    (train_codec if a.stage=='codec' else train_generator)(a)
+  File "/home/scribe/Projects/OxCoder-9B/scripts/ncm/train.py", line 207, in train_generator
+    raise RuntimeError('Codec reconstruction gate failed; only --smoke structural checks are allowed')
+RuntimeError: Codec reconstruction gate failed; only --smoke structural checks are allowed

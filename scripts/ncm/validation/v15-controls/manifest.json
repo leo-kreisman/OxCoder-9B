@@ -1,0 +1,22 @@
+{
+  "files": {
+    "ar-baseline.json": "e95810634ee5ad6e5b6cb0569dc2a8e5ec37b4cb94818ed92213c8d74b1a716b",
+    "creator-acquisition.json": "d463ef9b195d70f19f25684e8705c1405dbdc1bedbece7eecce1cbb3b13cd397",
+    "creator-admission.json": "90320b8a463abcf2a8667a924de69b9e2cb1209948d42abf49702e7b567d80e6",
+    "creator-preparation.json": "e88f09c8cc706768c3f7a84da38badf4aa0dde7a22b379a59bbbe45099f6a1f1",
+    "expanded-curriculum.json": "2f4276f1aa392cc33e6d11d6cb956f5dbfeb869978078befb09d1cb80d87f0f1",
+    "expanded-identity.json": "1456af33a87e3d46a25b72999bedf1d1e76ef0c53abe4d510480f58e3876a7df",
+    "expanded-sampling.json": "de61c379d266ef66fdb426b58252b4110b09b29140c736e2f9c46884f922b001",
+    "head-expansion-algebra.json": "c2301a32546f26579202f7dca7fe7ebe85d79071be3f7f1ecf65a9276f23bb32",
+    "independent-coding-100.json": "a7d0323480ad92c0a03d4c7753c69624222fa8e4cbdba8bf4644424ecc477a05",
+    "independent-preflight-identity.json": "047f2970d45a5291c4dc16108dedf756b19ebb02e0b685af30b696df8f09eeb2",
+    "independent-preflight-progress.json": "90678ebe5df3775f8263f17a8e4bd9005258691ab7452002b36ad6ca54268481",
+    "independent-preflight-sampling.json": "d9a3fee68d8b024ff80b734b56402ed2a2381394400d04bec72b73b8e0a7b34e",
+    "oxcoder-head-audit.json": "ebbc1c520243fcacd2345e7cfe3be97435465894cdafaa56835f8eac7b5428a4",
+    "shared-instructions.json": "7098b5a352366123f5aadc8b2a199c129ab220368ddf46160bb94a71fd9bb777",
+    "unit-tests-v17.txt": "78ee14e5fb310414dff67b8dcd66d17ed4ee5db7f3f62b17c13cd192e625ed49"
+  },
+  "scope": "reproducibility evidence; not a usable NCM release",
+  "quality_ready": false,
+  "log_normalization": "Trailing whitespace removed from text test reports; original run logs retained under results"
+}

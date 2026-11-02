@@ -1,0 +1,20 @@
+{
+  "files": {
+    "before.json": "ef6f2bd4c1434a66abc22e84b4a63d72ee7e9c1a070f178971392c7c8bfbceb4",
+    "coverage-identity.json": "3ea12f4f207627ae8e1f1abdf60b203ddb4287a3f4ef379e5d53f0b85f969335",
+    "coverage-selected.json": "248c02bbe553b210bbc0ca296ee23e7be4cd52f0379b2f8917a91bfbf3a99adf",
+    "decoder-identity.json": "7f6a77db7211fd63c90403a067b0ef97acc4863fc78a246c8cf6d3323c74fca3",
+    "decoder-selected.json": "4fc68fdd393a807872d737ee824c7644992dd2f96fe0419814df32eea2062650",
+    "generator-tied-memorization.json": "25ecf5ca140007c5887cec43d1ee7d7698a1e92ea87f4f118c03cfbf1e2bb331",
+    "generator-untied-memorization.json": "fc6aed6d7cfbe73d9d8618b5a18a7639278121f9df0ec9b0f62680d9faf46a0b",
+    "joint-identity.json": "df6a42c0c82990112f1f1a5713fca5afd3cbbbb1e3b6999683e7915eeea5aa3f",
+    "joint-selected.json": "1f717cf139b5921ef84bb1fc3c0d3dca96d090f3c205e8ca58eaf0714dbf4c5e",
+    "unit-tests.txt": "7c687259ce4c5815a38c8d0aa56cabac10980db7b4f02c45c64cc41c815355ae",
+    "untied-generator-coding-development.json": "0c935463ab0076a261556b36acbe2153b3358552651d448c1a4390ea6aa02a7b",
+    "untied-generator-identity.json": "3701a34bf88680efc83b31c6c4b689dda7ad6724336af034aaa8230b58e59314",
+    "untied-generator-selected-evaluation.json": "40418f9b4e6672441184f14ee909afe311a8040a5f399f30849f2a7a08bab177",
+    "v11-comparison.json": "5f2ada04f810c85c757e389e0f93ce464baef545421fd07411094a84af947064"
+  },
+  "quality_ready": false,
+  "log_normalization": "Trailing whitespace removed from text test reports; original run logs retained under results"
+}

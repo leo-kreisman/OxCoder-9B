@@ -1,0 +1,30 @@
+{
+  "checkpoint_sha256": "a4ccfd9a812e6d129c59e79ae39c5bcb6495a6cc6ff3c5b89b72e7283dc15f08",
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "steps": 2075,
+  "records": [
+    {
+      "level": 0,
+      "relative_l2_error": 2.1763955260212242e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "level": 1,
+      "relative_l2_error": 2.241144301251552e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "level": 2,
+      "relative_l2_error": 1.5730785207779263e-07,
+      "argmax_agreement": 1.0
+    },
+    {
+      "level": 3,
+      "relative_l2_error": 1.4284033511557936e-07,
+      "argmax_agreement": 1.0
+    }
+  ],
+  "quality_ready": false,
+  "scope": "actual trained head weights; random hidden-feature algebra check only, not model generation",
+  "implementation_sha256": "5c341ddf4870bf5f80cb73b1ed080a718d9db7ebaa20264e8fa943d2a7691411"
+}

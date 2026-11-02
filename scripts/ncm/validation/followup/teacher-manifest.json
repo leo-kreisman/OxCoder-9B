@@ -1,0 +1,134 @@
+{
+  "identity": {
+    "corpus_sha256": "29ed159db92766913c8de38f141acd633d35189af10ed941be85a1fcb77cabba",
+    "teacher_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "max_tokens": 768,
+    "prompt_limit": 2700,
+    "temperature": 0,
+    "reasoning": false,
+    "normalization": "non-chat roles become user messages prefixed as recorded data",
+    "method": "response distillation; no teacher logits; no tools executed"
+  },
+  "examples_sha256": "c08d34f5a1687a0359646d15955bc9fe9c8a33a57bea6aab91cb4ce195285fd8",
+  "records": [
+    {
+      "id": "791cdba8bdb06ae32ab7cadd15258751a0ee79451fa4eb5a20e76903dfc580f5:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 3.8272858029813506
+    },
+    {
+      "id": "e9693d4b5196c199baea7324dda658645e5653e7b2f633fcd9916490c5abff09:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.479565586021636
+    },
+    {
+      "id": "6b9e7cfb0997c035fc8d542e5e13d9faf923c67abba6d7cd79074039aa86d599:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.613671543018427
+    },
+    {
+      "id": "0af67279ca4a89835b57b021bfffeea2787fe9376df2f5bd619626732b64d514:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 1.8182975250529125
+    },
+    {
+      "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 3.6820452990359627
+    },
+    {
+      "id": "b60ebf22b2207d0a7573609d5d0f59d0cfdd505b197494b37bd8051d7d9c17bc:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.5511800639797
+    },
+    {
+      "id": "27bee9ef7f760a0d9460ee2003fd253ff43c8fcbb00f5d3ba29f14bd1bb66ba5:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.854171067010611
+    },
+    {
+      "id": "6e67c64834778d89bfd2ae5194b9fe78ef36490e8fe65a49d9fa623a825438ec:2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.954651926003862
+    },
+    {
+      "id": "30b3504eb79b93587b246afa41ddbf1e169b3c0923a24444a3a0f687e6799784:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.605124228983186
+    },
+    {
+      "id": "eecfe95fbfe4fe074716c8079d134a59070661059bbc1e4f1fba43ab8368ec0c:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 6.167762033990584
+    },
+    {
+      "id": "46e66dd9e496db8f385f3a2ce59a8b7b8d579a2b504a91d07e7c7bd761d7f248:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.49018723401241
+    },
+    {
+      "id": "f4c01c2d18e67cb9a162cf5845fc759788b285f738139bf72361d0c577edd5cf:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 0.5428801010129973
+    },
+    {
+      "id": "5765c5c5cdf5b5a738b068a5f5a4dd6c2cc3bd3b8b3d6d4f1c0c9b3961983ea3:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": false,
+      "finish_reason": "length",
+      "seconds": 11.484083375020418
+    },
+    {
+      "id": "ea4bd07ddd8eb27c204fa66ff9df41b74f370e95902818221376ebd4d4d8e33d:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 9.346570823981892
+    },
+    {
+      "id": "d4486d60e166480e78a26664836e3858c4aa37e14c3aa796959bb5b1b136f436:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 11.430298555991612
+    },
+    {
+      "id": "7158681137bff3df0d3af3fa13e4fced96b937f7b54bfc0a8f48449b130c1ba8:1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "accepted_complete": true,
+      "finish_reason": "stop",
+      "seconds": 4.226251678017434
+    }
+  ],
+  "counts": {
+    "train": 8,
+    "validation": 0,
+    "test": 0
+  },
+  "targets_are_verified": false,
+  "selection": "shortest eligible complete training prompts, distinct conversations, per-source quota"
+}

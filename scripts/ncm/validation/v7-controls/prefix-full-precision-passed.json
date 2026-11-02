@@ -1,0 +1,88 @@
+{
+  "checkpoint_sha256": "a777a39857032dd33f6e321f87df56a1d389a857ab4765e51527ada99f3d36ce",
+  "records": [
+    {
+      "prompt_tokens": 64,
+      "relative_logit_errors": [
+        0.0028427219949662685,
+        0.0077142189256846905,
+        0.0053915344178676605,
+        0.0,
+        0.005801655352115631
+      ],
+      "code_argmax_agreement": [
+        1.0,
+        1.0,
+        0.9375,
+        1.0,
+        0.9921875
+      ],
+      "full_seconds": 1.5850050170120085,
+      "cached_seconds_including_prefill": 0.5185128729935968,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 512,
+      "relative_logit_errors": [
+        0.002346812980249524,
+        0.00885704718530178,
+        0.0059919035993516445,
+        0.010331697762012482,
+        0.0062385741621255875
+      ],
+      "code_argmax_agreement": [
+        1.0,
+        1.0,
+        0.9375,
+        1.0,
+        0.9921875
+      ],
+      "full_seconds": 1.0769570330012357,
+      "cached_seconds_including_prefill": 0.5806005530030234,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 2048,
+      "relative_logit_errors": [
+        0.0018780286191031337,
+        0.00975019671022892,
+        0.006883381865918636,
+        0.010660741478204727,
+        0.00586981326341629
+      ],
+      "code_argmax_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        0.984375,
+        1.0
+      ],
+      "full_seconds": 4.3946484309999505,
+      "cached_seconds_including_prefill": 1.0128867799940053,
+      "passed": true
+    }
+  ],
+  "target_gradients": [
+    {
+      "level": 0,
+      "relative_error": 0.02056722901761532,
+      "cosine": 0.9999407529830933,
+      "max_absolute_error": 0.07117772102355957,
+      "finite": true,
+      "passed": true
+    },
+    {
+      "level": 4,
+      "relative_error": 0.03285558149218559,
+      "cosine": 0.9994853734970093,
+      "max_absolute_error": 0.031005412340164185,
+      "finite": true,
+      "passed": true
+    }
+  ],
+  "full_precision_reductions": true,
+  "passed": true,
+  "complete": true,
+  "quality_ready": false,
+  "scope": "synthetic token-ID prompts; numerical/cache check, not coding quality or deployment throughput"
+}

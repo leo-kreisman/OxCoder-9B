@@ -1,0 +1,13 @@
+{
+  "hashes": {
+    "3b025718f23ef2147b02e134b2d995a0d2dbcb2a3cb597e9f18d6084f3b0288a": {
+      "train": 333,
+      "heldout": 87
+    },
+    "e1be34db3f1861c718d922045cb60d86ab1294e472e37e3c2aa1d2d08a278ceb": {
+      "train": 2874,
+      "heldout": 694
+    }
+  },
+  "scope": "identical system/developer messages in >=20 training and >=5 held-out groups; excluded only from held-out prompt comparison, never benchmark or target comparison"
+}

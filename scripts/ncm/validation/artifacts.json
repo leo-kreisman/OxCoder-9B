@@ -1,0 +1,18 @@
+{
+  "status": "not-quality-ready",
+  "hardware": "Linux, two NVIDIA RTX 5060 Ti 16GB, 64GB system RAM",
+  "generator_trainable_parameters": 5267968,
+  "artifacts": [
+    {
+      "path": "results/ncm-codec-pilot/selected-step5500.pt",
+      "bytes": 4830191,
+      "sha256": "0d1f9b6c5b47ad2d8504b5510d2a2bec8542354b3c94f63889b29436bee948f8"
+    },
+    {
+      "path": "results/ncm-generator-verified/latest.pt",
+      "bytes": 50717672,
+      "sha256": "bafd0fe6ee3577ceeb887f0831334db4c2e3578a4a40e0c323b61454333696b0"
+    }
+  ],
+  "note": "Checkpoints are local ignored research artifacts, not release assets. Source GGUF and codec are required."
+}

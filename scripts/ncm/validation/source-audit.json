@@ -1,0 +1,56 @@
+{
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "original_revision": "07ba04e2149bace1b43c66448471a70378a7a708",
+  "checks": [
+    {
+      "tensor": "model.language_model.layers.0.input_layernorm.weight",
+      "relative_l2_error": 1.8826799674798167e-08,
+      "max_abs_error": 5.960464477539063e-08,
+      "relative_l2_limit": 0.015,
+      "passed": true,
+      "bytes_downloaded": 8192
+    },
+    {
+      "tensor": "model.language_model.layers.0.linear_attn.A_log",
+      "relative_l2_error": 0.0,
+      "max_abs_error": 0.0,
+      "relative_l2_limit": 0.015,
+      "passed": true,
+      "bytes_downloaded": 64
+    },
+    {
+      "tensor": "model.language_model.layers.0.linear_attn.dt_bias",
+      "relative_l2_error": 0.0,
+      "max_abs_error": 0.0,
+      "relative_l2_limit": 0.015,
+      "passed": true,
+      "bytes_downloaded": 64
+    },
+    {
+      "tensor": "model.language_model.layers.3.self_attn.q_norm.weight",
+      "relative_l2_error": 0.0,
+      "max_abs_error": 0.0,
+      "relative_l2_limit": 0.015,
+      "passed": true,
+      "bytes_downloaded": 512
+    },
+    {
+      "tensor": "model.language_model.layers.3.post_attention_layernorm.weight",
+      "relative_l2_error": 0.0,
+      "max_abs_error": 0.0,
+      "relative_l2_limit": 0.015,
+      "passed": true,
+      "bytes_downloaded": 8192
+    },
+    {
+      "tensor": "model.language_model.layers.0.linear_attn.in_proj_a.weight",
+      "relative_l2_error": 0.07219675183296204,
+      "max_abs_error": 0.007770538330078125,
+      "relative_l2_limit": 0.15,
+      "passed": true,
+      "bytes_downloaded": 262144
+    }
+  ],
+  "passed": true,
+  "scope": "selected inverse transforms, not full-forward parity"
+}

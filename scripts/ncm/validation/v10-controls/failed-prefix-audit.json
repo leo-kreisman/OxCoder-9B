@@ -1,0 +1,82 @@
+{
+  "checkpoint_sha256": "847d8030177c08b4faa1044394d9ad8d6492bcac5f87444c700fca94701e019a",
+  "records": [
+    {
+      "prompt_tokens": 64,
+      "relative_logit_errors": [
+        0.025598464533686638,
+        0.016352899372577667,
+        0.0,
+        0.08852215111255646
+      ],
+      "code_argmax_agreement": [
+        0.75,
+        1.0,
+        1.0,
+        0.9765625
+      ],
+      "full_seconds": 1.4596188209980028,
+      "cached_seconds_including_prefill": 0.44864249500096776,
+      "passed": false
+    },
+    {
+      "prompt_tokens": 512,
+      "relative_logit_errors": [
+        0.014964070171117783,
+        0.014585773460566998,
+        0.10190980136394501,
+        0.01987692154943943
+      ],
+      "code_argmax_agreement": [
+        1.0,
+        1.0,
+        0.78125,
+        0.984375
+      ],
+      "full_seconds": 0.8880853790033143,
+      "cached_seconds_including_prefill": 0.5036418149975361,
+      "passed": false
+    },
+    {
+      "prompt_tokens": 2048,
+      "relative_logit_errors": [
+        0.02845684252679348,
+        0.018332231789827347,
+        0.11014345288276672,
+        0.023408079519867897
+      ],
+      "code_argmax_agreement": [
+        0.75,
+        0.875,
+        0.828125,
+        0.9453125
+      ],
+      "full_seconds": 3.5634390320046805,
+      "cached_seconds_including_prefill": 0.9402753640024457,
+      "passed": false
+    }
+  ],
+  "target_gradients": [
+    {
+      "level": 0,
+      "relative_error": 0.10870835930109024,
+      "cosine": 0.9960634112358093,
+      "max_absolute_error": 0.0012321597896516323,
+      "finite": true,
+      "passed": false
+    },
+    {
+      "level": 3,
+      "relative_error": 0.8014906048774719,
+      "cosine": 0.7245070338249207,
+      "max_absolute_error": 0.008377994410693645,
+      "finite": true,
+      "passed": false
+    }
+  ],
+  "full_precision_reductions": true,
+  "passed": false,
+  "complete": true,
+  "quality_ready": false,
+  "scope": "synthetic token-ID prompts; numerical/cache check, not coding quality or deployment throughput"
+}

@@ -1,0 +1,13 @@
+{
+  "step": 501,
+  "exact_by_field": {
+    "loss": true,
+    "code_accuracy": true,
+    "loss_components": true,
+    "training_example": true,
+    "adapter_gradient_norms": false
+  },
+  "maximum_relative_adapter_norm_difference": 0.005917159763313609,
+  "quality_ready": false,
+  "scope": "same first resumed example/loss/code accuracy; CUDA backward not bitwise deterministic"
+}

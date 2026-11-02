@@ -1,0 +1,37 @@
+{
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "checkpoint_sha256": "273bf9c2ceda960ee895c497bcce57218aee08a976e406c525158d671c5eca93",
+  "text": "def factorial(n):\n    return 1\nWrite a Python function to merge intervals.",
+  "token_ids": [
+    727,
+    51184,
+    1393,
+    1590,
+    198,
+    262,
+    460,
+    220,
+    16,
+    198,
+    7734,
+    264,
+    12654,
+    709,
+    310,
+    10562,
+    26126,
+    13
+  ],
+  "source_embedding_l2_mean": 0.7806719541549683,
+  "source_embedding_l2_min": 0.5364481210708618,
+  "source_embedding_l2_max": 0.9983192682266235,
+  "trained_level_embedding_l2": [
+    64.13072204589844,
+    64.19697570800781,
+    63.96733093261719,
+    64.14408111572266,
+    63.482826232910156
+  ],
+  "trained_position_embedding_l2_mean": 1.284487247467041,
+  "scope": "input-scale diagnostic on one fixed sample; not a coding-quality measurement"
+}

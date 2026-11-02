@@ -1,0 +1,30 @@
+{
+  "stage": "codec",
+  "recipe": "byte-coverage-v1",
+  "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+  "config": {
+    "length": 128,
+    "width": 128,
+    "heads": 4,
+    "layers": 2,
+    "codes": 4096,
+    "levels": [
+      4,
+      16,
+      64,
+      128
+    ],
+    "downsample": "area",
+    "coarse_loss_weight": 0.05
+  },
+  "initialization_sha256": "ab4fa6b9e48b39a124f2c7e233b3394f2e440eadd127b25fa15fd92bede9938a",
+  "optimizer": "AdamW",
+  "lr": 0.0001,
+  "batch": 32,
+  "seed": 391,
+  "synthetic_fraction": 0.5,
+  "synthetic_seed": 291,
+  "quality_ready": false,
+  "revive_every": 1000,
+  "selection": "complete-development-documents-and-probes-before-symbols-v1"
+}

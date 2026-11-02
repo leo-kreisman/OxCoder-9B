@@ -1,0 +1,6 @@
+{
+  "phase": "failed",
+  "time_unix": 1793547404.6466084,
+  "quality_ready": false,
+  "error": "RuntimeError: prefix_audit failed with exit 1; inspect its log"
+}

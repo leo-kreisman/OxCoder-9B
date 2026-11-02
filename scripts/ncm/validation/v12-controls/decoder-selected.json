@@ -1,0 +1,44 @@
+{
+  "documents": 1100,
+  "exact_documents": 3,
+  "token_accuracy": 0.9634715489803433,
+  "unique_codes_per_level": [
+    542,
+    1711,
+    2429,
+    2746,
+    3222,
+    3236,
+    3453,
+    3881,
+    3713,
+    3809,
+    3836,
+    4093
+  ],
+  "by_length": {
+    "1-128": {
+      "documents": 2,
+      "exact_documents": 0
+    },
+    "129-512": {
+      "documents": 281,
+      "exact_documents": 3
+    },
+    "513-2048": {
+      "documents": 571,
+      "exact_documents": 0
+    },
+    "2049-1000000000": {
+      "documents": 246,
+      "exact_documents": 0
+    }
+  },
+  "syntax_valid_documents": 93,
+  "passed": false,
+  "scope": "development reconstruction; not generated-code correctness",
+  "checkpoint_sha256": "5a96381687901549199647243925758936e4fe453f380caeac2935a2170d6f0a",
+  "selected_step": 4000,
+  "quality_ready": false,
+  "representation_unchanged": true
+}

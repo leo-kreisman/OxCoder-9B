@@ -1,0 +1,53 @@
+{
+  "strata": [
+    {
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": false,
+      "final_chunk": false,
+      "examples": 6905
+    },
+    {
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": false,
+      "final_chunk": true,
+      "examples": 198
+    },
+    {
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": true,
+      "final_chunk": false,
+      "examples": 336
+    },
+    {
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "final_chunk": false,
+      "examples": 56
+    },
+    {
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": true,
+      "final_chunk": false,
+      "examples": 24
+    },
+    {
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": true,
+      "final_chunk": true,
+      "examples": 2
+    },
+    {
+      "source": "TeichAI/Ox-Alpha-10k",
+      "distilled": true,
+      "final_chunk": true,
+      "examples": 18
+    },
+    {
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "final_chunk": true,
+      "examples": 2
+    }
+  ],
+  "quality_ready": false
+}

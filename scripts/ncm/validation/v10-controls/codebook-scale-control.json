@@ -1,0 +1,38 @@
+{
+  "levels": [
+    {
+      "level": 0,
+      "mean_square_norm": 3.587630033493042,
+      "centered_mean_square_norm": 3.580853223800659,
+      "mean_vector_square_norm": 0.0067768394947052,
+      "oracle_mean_correct_probability_at_temperature_one": 0.01844003051519394,
+      "oracle_argmax_accuracy": 1.0
+    },
+    {
+      "level": 1,
+      "mean_square_norm": 7.776895999908447,
+      "centered_mean_square_norm": 7.775200843811035,
+      "mean_vector_square_norm": 0.0016952694859355688,
+      "oracle_mean_correct_probability_at_temperature_one": 0.019947540014982224,
+      "oracle_argmax_accuracy": 1.0
+    },
+    {
+      "level": 2,
+      "mean_square_norm": 27.758085250854492,
+      "centered_mean_square_norm": 27.749446868896484,
+      "mean_vector_square_norm": 0.008642027154564857,
+      "oracle_mean_correct_probability_at_temperature_one": 0.07833142578601837,
+      "oracle_argmax_accuracy": 1.0
+    },
+    {
+      "level": 3,
+      "mean_square_norm": 1421.5504150390625,
+      "centered_mean_square_norm": 1420.490234375,
+      "mean_vector_square_norm": 1.0601757764816284,
+      "oracle_mean_correct_probability_at_temperature_one": 0.0017053928459063172,
+      "oracle_argmax_accuracy": 1.0
+    }
+  ],
+  "scope": "uniform codebook-row sample; not training-weighted or generated quality",
+  "quality_ready": false
+}

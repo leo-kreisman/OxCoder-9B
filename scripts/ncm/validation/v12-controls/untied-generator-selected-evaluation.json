@@ -1,0 +1,589 @@
+{
+  "windows": 64,
+  "exact_windows": 0,
+  "mean_teacher_forced_concept_accuracy": 0.36154446424916387,
+  "mean_free_concept_accuracy": 0.03831903211175813,
+  "mean_free_nonpad_token_accuracy": 0.02241085743298754,
+  "rows": [
+    {
+      "index": 0,
+      "teacher_forced_concept_accuracy": 0.41809672117233276,
+      "free_concept_accuracy": 0.004680187441408634,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "_VALUE\n        self self.multip.....\n        self..scenario = = self.getgetgetgetgetgetget))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": " process.get_memory_info()\n        cpu_percent = process.get_cpu_percent()\n        memory_percent = process.get_memory_percent()\n\n        proc = mock.Mock()\n        proc.get_memory_info.return_value = (vsize, rss)\n        proc.get_cpu_percent.return_value = cpu_percent\n        proc.get_memory_percent.return_value = memory_percent\n        proc.get_num_threads = None\n        result = ProcessReport(process=proc).get_memory_and_cpu()\n        self.assertEqual("
+    },
+    {
+      "index": 1,
+      "teacher_forced_concept_accuracy": 0.37285491824150085,
+      "free_concept_accuracy": 0.020280811935663223,
+      "free_nonpad_token_accuracy": 0.015625,
+      "exact_window": false,
+      "prediction": "___________typetypetypetypetype else else else: else else::\n        return return return))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": " float)):\n            member_type = idl_type.numeric_member_type\n        elif isinstance(default_value.value, bool):\n            member_type = idl_type.boolean_member_type\n        else:\n            member_type = None\n        if member_type is None:\n            raise Exception('invalid default value for union type: %r for %s'\n                            % (default_value.value, idl_type.name))\n        member_type_name = (member_type.inner_type.name\n                            if member_type.is_nullable else\n                            member_type"
+    },
+    {
+      "index": 2,
+      "teacher_forced_concept_accuracy": 0.28393134474754333,
+      "free_concept_accuracy": 0.014040561392903328,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "sssss centsssssss houringingingingingingingingingingingingingingingingingingssssstensionssapsssss houringingingingingingingingingingDoingingingings equingingingingingingingingingingingingingingingingingingingingingingingingingDoingingsssingingDoinginginginginginginginginginginginginginginginginginginginginginginginginginginginginginging",
+      "reference": " wave patterns around points of zero tidal range (e.g., in the North Sea) rather than simple standing bulges.\n- **Shallow-water dynamics:** Tidal waves behave as shallow-water waves (speed \u221a(gh)); continental shelves slow and amplify them, and funnel-shaped estuaries concentrate energy (Bristol Channel, Hangzhou Bay).\n- **Friction and dissipation:** Bottom drag dis"
+    },
+    {
+      "index": 3,
+      "teacher_forced_concept_accuracy": 0.2886115312576294,
+      "free_concept_accuracy": 0.014040561392903328,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "mag-- Multi or or or or or or or or is is is is is deprecated..\n\n## sm######stance.. re reSERVER re re re re re re re re readers and and,, andcodes.....---\n\n##############################..\n\nengine--- re re re:', re re re reynamic and and,, and and and,, and and, loaded and and and and and and and,, and something re re re re re re re re re re re re re and and,,",
+      "reference": "al window**: Labile for ~1\u20136 hours post-reactivation\n- **Molecular requirements**: NMDA receptor activation, ERK/MAPK signaling, new protein synthesis, epigenetic modifications\n- **Boundary conditions**: Older memories are more resistant; stronger training requires stronger reactivation to destabilize\n\nReconsolidation serves adaptive functions:\n\n- **Updating**: New information can be integrated into the existing trace\n- **Strength"
+    },
+    {
+      "index": 4,
+      "teacher_forced_concept_accuracy": 0.5179407000541687,
+      "free_concept_accuracy": 0.26053041219711304,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "___withwith_withwith__(rating_______backends______(ballhosts)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "\"]\n    source_url = payload[\"url\"]\n    description = payload[\"description\"]\n    # construct the body of the message\n    body = '**[%s](%s)**:\\n%s' % (title, source_url, description)\n\n    # send the message\n    check_send_stream_message(user_profile, request.client, stream, topic, body)\n\n    return json_success()\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>"
+    },
+    {
+      "index": 5,
+      "teacher_forced_concept_accuracy": 0.3666146695613861,
+      "free_concept_accuracy": 0.0015600624028593302,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "fromfrom typing import import import\n\nfromfrom rand\nfromfrom oslo\nfromfromfromvisor rand\nfromfrom\nfromfromfrom################################################################ import to to to to to to to to to to to to to to to to the the to to to the\n \n  theanization\n \n \n \n \n \n \n \n  the the contact the to overwrite Server to to the to to the the the the overwrite append to to to to to to to to\n \n \n \n \n iler\n \n \n iler\n \n \n  MIT\n \n \n \n \n , the the the the the\n \n \n \n \n  '',\n \n \n  '',, the the",
+      "reference": "SLIDERS = 6                   # How many draggable points there are.\nNUM_SECTION_STEPS = 20                  # How many curve subdivisions between points.\nSLIDER_RADIUS = 4                       # How big each draggable point is.\n\nNORMAL_COLOUR = (1.0, 1.0, 1.0, 1.0)\nBORDER_COLOUR = (0.7, 0.7, 0.7, 1.0)\n\nNORMAL_DRA"
+    },
+    {
+      "index": 6,
+      "teacher_forced_concept_accuracy": 0.3182527422904968,
+      "free_concept_accuracy": 0.059282369911670685,
+      "free_nonpad_token_accuracy": 0.0859375,
+      "exact_window": false,
+      "prediction": "i}}}iiii}}}}}i}}}iiiiiiiiiiiiiii b b b b,,,,,,,,, b b}}}}}}}}}}}}}}}}}iiiiiiiiii, b b, b b b biiiiiiiiiiiiii b b b b,,,, 3 3, b, b b}}}}}}}}iiiii}}}\n",
+      "reference": " a}^{(\\mathrm{nghbr})}\n               \\sum_{\\{i, j\\}}\n                     n_{i, a} n_{j, a}\n             + \\sum_{a < b} U_{a, b}^{(\\mathrm{nghbr})}\n               \\sum_{(i, j)}\n                     n_{i, a} n_{j, b}\n            \\\\\n            &- \\sum_{a} \\mu_a\n               \\sum_i n_{i, a}\n        \\end{align}\n    \"\"\"\n\n\n    def __init__(self, lattice,\n                 t"
+    },
+    {
+      "index": 7,
+      "teacher_forced_concept_accuracy": 0.3213728666305542,
+      "free_concept_accuracy": 0.009360374882817268,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "\n\n... ctypes.```listen`` itertools something`.`wrapper``dat``.\n\n\n``protocolmul````````````````````````````````````````````````````````````````````````````````````````````````",
+      "reference": " to `index.html`.\n\n3. **Fingerprint mismatch due to Play App Signing.** Your JSON contains only the SHA-256 of the **upload keystore**, but since you enrolled in Play App Signing, the APK/AAB users install is signed by Google's **app signing key**. The verifier compares against the signature of the *installed* app, so the app-signing key fingerprint must be present. Get it from **Play Console \u2192 Release \u2192 Setup \u2192 App"
+    },
+    {
+      "index": 8,
+      "teacher_forced_concept_accuracy": 0.30421218276023865,
+      "free_concept_accuracy": 0.004680187441408634,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": ":::: else else::\n           : else else:\n           \n           ::\n            else else else::\n            return return\n            return return\n\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "shoyer): consider adjusting this logic. Are we really\n                # OK throwing away variable without an index in favor of\n                # indexed variables, without even checking if values match?\n                variable, index = indexed_elements[0]\n                for _, other_index in indexed_elements[1:]:\n                    if not index.equals(other_index):\n                        raise MergeError(\n                            \"conflicting values for index %r on objects to be \"\n                            \"combined:\\nfirst value: %r\\nsecond value: %r\"\n                           "
+    },
+    {
+      "index": 9,
+      "teacher_forced_concept_accuracy": 0.35257411003112793,
+      "free_concept_accuracy": 0.012480499222874641,
+      "free_nonpad_token_accuracy": 0.015625,
+      "exact_window": false,
+      "prediction": "____with_with_with_with______with_____with____\")\")\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "c5-4816-4171-aa43-56ffe80dbda1\")\n        eq_(account_event_1.issued_at, \"1565720808\")\n        eq_(account_event_2.issued_at, \"1565720808\")\n        eq_(account_event_1.profile, profile)\n        eq_(account_event_2.profile, profile)\n\n    @mock.patch(\"kitsune.users.views.process_event_delete_user\")\n    @setup_key\n    def test_handles_unknown_events("
+    },
+    {
+      "index": 10,
+      "teacher_forced_concept_accuracy": 0.28081122040748596,
+      "free_concept_accuracy": 0.006240249611437321,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "##\n############################################################################################################################################################################################################################################################",
+      "reference": ". new learning\n\nAfter retrieval + anisomycin, the animal shows reduced freezing. Is this because:\n(a) The original trace was erased?\n(b) A new inhibitory memory was learned?\n\nDiscriminating experiment: Test in a novel context. If the original trace was erased, no context produces freezing. If extinction occurred, the original context still elicits some freezing (extinction is context-gated). Nader's results support genu"
+    },
+    {
+      "index": 11,
+      "teacher_forced_concept_accuracy": 0.2964118421077728,
+      "free_concept_accuracy": 0.006240249611437321,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": ")\n        self..getget__getget_AUTH)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": ".9170018886, 0, 0],\n                                     [1.958500946136, 3.32571019, 0],\n                                     [0, -2.21713849, 3.13550906]])\n        self.assertArrayAlmostEqual(strained_ind.lattice.matrix,\n                                    [[3.84019793, 0.07680396, 0],\n                                     [1.92009897, 3.36411217, 0],\n                                     [0, -2.21713849, 3.135509"
+    },
+    {
+      "index": 12,
+      "teacher_forced_concept_accuracy": 0.37129485607147217,
+      "free_concept_accuracy": 0.006240249611437321,
+      "free_nonpad_token_accuracy": 0.0234375,
+      "exact_window": false,
+      "prediction": "______with__iterator(((selfself,,)\n        self........))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": ".hass,\n            self._available_signal,\n            self.async_initialize\n        )\n        from zigpy.quirks import CustomDevice\n        self.quirk_applied = isinstance(self._zigpy_device, CustomDevice)\n        self.quirk_class = \"{}.{}\".format(\n            self._zigpy_device.__class__.__module__,\n            self._zigpy_device.__class__.__name__\n        )\n        self._power_source = None\n        self.status = DeviceStatus.CREATED\n\n    @property\n    def name(self):\n        \"\"\"Return device name"
+    },
+    {
+      "index": 13,
+      "teacher_forced_concept_accuracy": 0.3198128044605255,
+      "free_concept_accuracy": 0.015600623562932014,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "************************\n************** pys************************************************************\n********************************************************************************************************************************************************",
+      "reference": " {(P_k, x\u2081,k, y\u2081,k)}, two strategies exist:\n\n**(a) Indirect (\u03b3-extraction) method.** Compute experimental activity coefficients assuming ideal vapor:\n\n$$\\gamma_{1,k}^{exp} = \\frac{y_{1,k} P_k}{x_{1,k} P_1^{sat}}, \\qquad \\gamma_{2,k}^{exp} = \\frac{(1-y_{1,k}) P"
+    },
+    {
+      "index": 14,
+      "teacher_forced_concept_accuracy": 0.3650546073913574,
+      "free_concept_accuracy": 0.0031201248057186604,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n  \"\"\" \"\"\"\n  \"\"\" \"\"\" \"\"\" \"\"\"\n \n  \"\"\" \"\"\" \"\"\"\n        \"\"\" \"\"\" \"\"\" \"\"\"\n  \"\"\" \"\"\" \"\"\"\n \n  \"\"\" \"\"\"\n \"\"\",))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": " Text\n  on_current_value: bool\n\n  def __str__(self):\n    return \"{}[{}]\".format(\"Current\" if self.on_current_value else \"Previous\",\n                           self.variable_name)\n\n\n@dataclasses.dataclass(frozen=True)\nclass ValueDef:\n  \"\"\"Defines a `Value` in terms of other `Value`s.\n\n  See `value` for more information.\n  \"\"\"\n  fn: Callable[Ellipsis, Value]\n  dependencies: Sequence[Dependency] = dataclasses.field(default_factory=tuple"
+    },
+    {
+      "index": 15,
+      "teacher_forced_concept_accuracy": 0.2901715934276581,
+      "free_concept_accuracy": 0.004680187441408634,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "with____data(_(data))))))\n \n _____suffix(______))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": " 0 if buffer_i_data is None else buffer_i_data.size\n\n    # Raw data buffers are of type ubyte (or uint8) whose values lie in the\n    # range [0, 255]. Those ubytes (or unint8s) are the underlying\n    # representation of each datatype. For example, a bias tensor of type\n    # int32 appears as a buffer 4 times it's length of type ubyte (or uint8).\n    # TODO(b/152324470): This does not work for float as randomized weights"
+    },
+    {
+      "index": 16,
+      "teacher_forced_concept_accuracy": 0.3900156021118164,
+      "free_concept_accuracy": 0.004680187441408634,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "':\n   \n   \n   \n    '', '',\n   \n    '', '',\n    '',\n   \n    '', '',':': '', '',':':': ' '',',))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "\n    \"\"\"\n    try:\n        message_id = ord(message[0])\n        return RECEIVED_MESSAGE_IDS[message_id]\n    except KeyError:\n        log.err(\"Message ID not recognized (%d)\" % message_id)\n        return None\n\ndef decode_layout(message):\n    \"\"\"\n    Loop through each note (i.e. blob) of each instrument in layout,\n    producing a dict in the format sequencer expects.\n    \"\"\"\n    \n    instrument_index = 1\n    instruments = []\n    \n    # For each instrument...\n   "
+    },
+    {
+      "index": 17,
+      "teacher_forced_concept_accuracy": 0.3790951669216156,
+      "free_concept_accuracy": 0.0031201248057186604,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "________with_with___with____data_datadatadatadataChanneldatadatadata)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": ".0\n\t\t\n\t\t# if Mute is true, return an array of zeros instead.  We don't want to not keep the loops playing though.\n        if ( self.mute == True):\n            ret_data = np.zeros([num_samples,2])\n\t\t\n        return ret_data\n\n    def audio_callback(self, in_data, frame_count, time_info, status):\n        # do a dummy assign to return silence if we hit an exception below\n        # if(frame_count < 0)\n        data = np.zeros([frame_count,"
+    },
+    {
+      "index": 18,
+      "teacher_forced_concept_accuracy": 0.31357255578041077,
+      "free_concept_accuracy": 0.006240249611437321,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "wwwww_____with______with____((RIGHT__ball))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "_height = size_h\n    \n    gl.glViewport(0, 0, window_width, window_height) #Reset The Current Viewport And Perspective Transformation\n\n    gl.glMatrixMode(gl.GL_PROJECTION) #Select The Projection Matrix\n    gl.glLoadIdentity() #Reset The Projection Matrix\n\n    glu.gluPerspective(45.0,window_width/window_height,0.1,100.0) #Calculate The Aspect Ratio Of The Window\n    gl.glMatrixMode"
+    },
+    {
+      "index": 19,
+      "teacher_forced_concept_accuracy": 0.36349454522132874,
+      "free_concept_accuracy": 0.015600623562932014,
+      "free_nonpad_token_accuracy": 0.0390625,
+      "exact_window": false,
+      "prediction": " specific specific for for for the specific the for for language specific for for the specific specific specific specific specific governing governing governing permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions governing permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions permissions import import\nfromfromfromfrom\n\n\nfrom\nfromfrom\n rand\n\nfrom\nfromfrom\n\nfrom 2011\nfrom\n\n\n\nfrom\nfromfrom\n\nfrom\n\n\nfromfrom\nfrom\n\n\nfrom Sets\nfromfrom\nfromfrom 2011\n\nfrom\n\nfrom\n oslofrom\n\nfromfromternet rand\nfromfrom",
+      "reference": " ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n# ==============================================================================\nr\"\"\"Removes parts of a graph that are only needed for training.\n\nThere are several common transformations that can be applied to GraphDefs\ncreated to train a model, that help reduce the amount of computation needed when\nthe network is used only for inference. These include:\n\n - Removing training-only operations like checkpoint saving.\n\n - Stripping out parts of the graph that are never reached."
+    },
+    {
+      "index": 20,
+      "teacher_forced_concept_accuracy": 0.43213728070259094,
+      "free_concept_accuracy": 0.007800311781466007,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "<|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "ED_BODY_KEY]\n\n    def _get_body(self):\n        raise NotImplementedError\n\n    @property\n    def content(self):\n        if CACHED_CONTENT_KEY not in self._cache:\n            self._cache[CACHED_CONTENT_KEY] = self._get_content()\n        return self._cache[CACHED_CONTENT_KEY]\n\n    def _get_content(self):\n        raise NotImplementedError\n\n    def is_ajax(self):\n        header = self.headers.get(\"X-Requested-With\")\n        if hasattr(header,"
+    },
+    {
+      "index": 21,
+      "teacher_forced_concept_accuracy": 0.33697348833084106,
+      "free_concept_accuracy": 0.012480499222874641,
+      "free_nonpad_token_accuracy": 0.0625,
+      "exact_window": false,
+      "prediction": "from\n import import\n\nfrom\n\nfrom\n\nfrom\n\nfromfromfrom\nfrom\n\n\n\n\n\nfrom\n\n\nfromfrom airflow\n\n\n\n\n\n\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n\n\nfrom\n\nfrom\n\n\n\n\nfromfrom\n rand\nfrom au\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n 2011\nfrom\n\nfrom\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfrom\n\n\nfrom\n\n\n\n\nfromfrom\n\nfrom\n\n\n\nfrom",
+      "reference": "import sys\nimport os\nimport csv\nfrom operator import itemgetter\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nsys.path.append(\"../build\")\nimport pyrfr.regression\n\nprint(pyrfr.regression.__file__)\nhere = os.path.dirname(os.path.realpath(__file__))\ndata_set_folder = '%(here)s/../test_data_sets/' % {\"here\":here}\n\n\nwith open(os.path.join(data_set_folder, 'sat_saps"
+    },
+    {
+      "index": 22,
+      "teacher_forced_concept_accuracy": 0.32761311531066895,
+      "free_concept_accuracy": 0.03588143363595009,
+      "free_nonpad_token_accuracy": 0.0390625,
+      "exact_window": false,
+      "prediction": "\", \" \" \" \" \" \"\",\",\",\",\", \"\",\", \"\", \"constraint\", \" \" \" \"\", \"\", \"\",\", \" \"\", \" \" \" \"experiment\",\", \"\",\",\",\",\",\",\",\", \"\", \" \"\", \" \" \"\", \" \" \" \" \" \" \"\", \" \" \" \" \"\", \" \"\", \" \" \"\", \"\", \"\", \" \" \" \"\", \"\",\", \"\",\", \"\", \" \"\", \" \"experiment\", \"\", \" \" \" \"\", \"\",\", \"\", \" \" \" \" \"fffffff\",",
+      "reference": "\n      (\"L\", \"f_flags\"),\n      (\"L\", \"f_fssubtype\"),\n      (\"16s\", \"f_fstypename\"),\n      (\"1024s\", \"f_mntonname\"),\n      (\"1024s\", \"f_mntfromname\"),\n      (\"32s\", \"f_reserved\")\n  ]\n\n\ndef GetFileSystems():\n  \"\"\"Make syscalls to get the mounted filesystems.\n\n  Returns:\n    A list of Struct objects.\n\n  Based on the information for getfsstat\n    http://developer.apple."
+    },
+    {
+      "index": 23,
+      "teacher_forced_concept_accuracy": 0.36349454522132874,
+      "free_concept_accuracy": 0.004680187441408634,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "_rel)\n        self.....\n           \n           ....:\n           \n           \n            else else:\n           \n           :RIGHTOne))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": ".recent_phrases) >\n                min(self.max_recent_phrases, len(self.templates.get(\n                    template_name)) - self.loop_prevention_offset)):\n            self.recent_phrases.pop(0)\n        return line\n\n\ndef load_dialogs(dialog_dir, renderer=None):\n    \"\"\"Load all dialog files within the specified directory.\n\n    Args:\n        dialog_dir (str): directory that contains dialog files\n\n    Returns:\n        a loaded instance of a dialog renderer\n    \"\"\""
+    },
+    {
+      "index": 24,
+      "teacher_forced_concept_accuracy": 0.3104524314403534,
+      "free_concept_accuracy": 0.014040561392903328,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": ", and and and and,, and and and and and, and, determine,, and and, sublicense,, sublicense sublicense, and,, and and and and and Network,,, and and and and and, and, determine, sublicense, and and a a a a a a and, and and and and and and and and, and and and and,, and and,, determine and and and, sublicense, and and and and and,, and, and and and and and, sublicense sublicense, and sublicense sublicense and and, determine,, and and, sublicense, and and Also and and and,, sublicense",
+      "reference": " \"fighting\" can achieve.\n\n## The Descriptiveness/Genericness Defense\n\nTwo distinct claims, with very different prospects:\n\n- **Genericness:** \"Lumen\" is a generic *scientific term*, but that is not the same as being generic *as a designation for lamps*. Genericness as a ground for cancelling a registration requires that the term be understood primarily as the class of goods itself (\"lamp,\" \"light"
+    },
+    {
+      "index": 25,
+      "teacher_forced_concept_accuracy": 0.38533541560173035,
+      "free_concept_accuracy": 0.0015600624028593302,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n    assert assert\n    assert assert uid\n    assert assert\n    assert assert\n    assert assert assert\n        assert assert assert\n    assert assert\n    assert assert assert)\n\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": " = [0.98, 0.0068]\n    ydata = xdata * v[0] * np.exp(v[1] * beta)\n    res = dpc.dpc_fit(rss, xdata, ydata, start_point, solver)\n    assert_array_almost_equal(res, v)\n\n    # Test 4\n    v = [0.95, 0.0032]\n    ydata = xdata * v[0] * np.exp(v[1] * beta)\n    res = dpc.dpc_fit(rss, x"
+    },
+    {
+      "index": 26,
+      "teacher_forced_concept_accuracy": 0.34789392352104187,
+      "free_concept_accuracy": 0.006240249611437321,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "_______with_withwith_________________))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "importances_` attribute. Either pass a fitted estimator\"\n            \" to SelectFromModel or call fit before calling transform.\"\n            % estimator.__class__.__name__)\n\n    return importances\n\n\ndef _calculate_threshold(estimator, importances, threshold):\n    \"\"\"Interpret the threshold value\"\"\"\n\n    if threshold is None:\n        # determine default from estimator\n        est_name = estimator.__class__.__name__\n        if ((hasattr(estimator, \"penalty\") and estimator.penalty == \"l1\") or\n                \"Lasso"
+    },
+    {
+      "index": 27,
+      "teacher_forced_concept_accuracy": 0.382215291261673,
+      "free_concept_accuracy": 0.0015600624028593302,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "<|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": ".loop = loop\n        self.port = None\n        self.history = []\n\n        self.app = web.Application(loop=loop)\n        for name in dir(self.__class__):\n            func = getattr(self.__class__, name)\n            if hasattr(func, '__method__'):\n                logger.debug('listen {} {}'.format(func.__method__, func.__path__))\n                self.app.router.add_route(func.__method__,\n                                          func.__path__,\n                                          getattr(self, name))\n\n        self.app.middlewares.append(self.middleware_factory)\n        self.handler"
+    },
+    {
+      "index": 28,
+      "teacher_forced_concept_accuracy": 0.3213728666305542,
+      "free_concept_accuracy": 0.009360374882817268,
+      "free_nonpad_token_accuracy": 0.015625,
+      "exact_window": false,
+      "prediction": "with__with_________________file_file_nestedfilefilefile)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "json_dump = mocker.patch('json.dump', side_effect=json.dump)\n\n    replay.dump(replay_test_dir, template_name, context)\n\n    assert not mock_user_config.called\n    mock_ensure_success.assert_called_once_with(replay_test_dir)\n    spy_get_replay_file.assert_called_once_with(replay_test_dir, template_name)\n\n    assert mock_json_dump.call_count == 1\n    (dumped_context, outfile_handler), kwargs"
+    },
+    {
+      "index": 29,
+      "teacher_forced_concept_accuracy": 0.3088923692703247,
+      "free_concept_accuracy": 0.007800311781466007,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "[00]00[[[000[[[0]]\n\nkeyword slice(pf()coordinates_))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "\", index=False)\r\n\r\n\r\nirr = pd.read_csv(\"D:\\\\Manuscript 6 for e-commerce workshop\\\\2 data\\\\our\\\\irr_distribution.csv\")\r\nweights_95 = np.load(\"D:\\\\Manuscript 6 for e-commerce workshop\\\\2 data\\\\our\\\\weights_0.95alpha.npy\")\r\nES_weights_95 = np.load(\"D:\\\\Manuscript 6 for e-commerce workshop\\\\2 data\\\\our\\\\ES_weights_0.95"
+    },
+    {
+      "index": 30,
+      "teacher_forced_concept_accuracy": 0.3432137370109558,
+      "free_concept_accuracy": 0.02184087410569191,
+      "free_nonpad_token_accuracy": 0.015625,
+      "exact_window": false,
+      "prediction": "------ pad-SHA------------ Form---specific slot is is is the thespecificspecific---levant--specific---57--- and, and and, sublicense, and and---divid sell--, and and,, and and and sublicense sublicense,, and the the thehour, and and and and and,---- Form---, and,, and and, and and, sublicense sublicense, and and and and and and and, aut, and and and and and, computed,,",
+      "reference": "ed by anyone.\n\n**2. Supply is elastic over relevant horizons.** Even if the standing stock is fixed this month, supply responds through maintenance, conversions to condos/co-ops, owner occupation, exits from the rental market, and forgone new construction. With an elasticity of roughly 0.3\u20131.0 over 5\u201310 years, standard analysis predicts fewer and lower-quality units over time \u2014 the classic long-run"
+    },
+    {
+      "index": 31,
+      "teacher_forced_concept_accuracy": 0.35257411003112793,
+      "free_concept_accuracy": 0.006240249611437321,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n        assert assert assert assert assert assert assert assert assert\n    assert assert assert\n    assert assert assert assert assert\n    assert assert assert\n    assert assert repo)\n\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": ", 0),\n            Point(8, 0),\n            Point(-4*cos(19*pi/90)/sin(2*pi/45),\n            4*sqrt(3)*cos(19*pi/90)/sin(2*pi/45)))\n    assert Line((0, 0), (1, 1)).intersection(Ray((1, 0), (1, 2))) == \\\n        [Point(1, 1)]\n    assert Line((0, 0), (1, 1)).intersection(Segment((1, 0), (1, 2))) == \\\n        [Point("
+    },
+    {
+      "index": 32,
+      "teacher_forced_concept_accuracy": 0.411856472492218,
+      "free_concept_accuracy": 0.02184087410569191,
+      "free_nonpad_token_accuracy": 0.0234375,
+      "exact_window": false,
+      "prediction": "... self..POINT\n            self. updates\n                   \n                   \n                   \n                    self..\n                self.. self self....))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": " self.frame_ext.get_frames_with_interval_x(curr_batch, x= self.interval, randomize=False)\n            if is_done:\n                break\n\n    def val_next_batch(self,):\n        val_iter = iter(self.data['validation'])\n        return self.fixed_next_batch(val_iter)\n\n    def test_next_batch(self,):\n        val_iter = iter(self.data['test'])\n        return self.fixed_next_batch(val_iter)\n\n    def get_custom_test_data(self):\n       "
+    },
+    {
+      "index": 33,
+      "teacher_forced_concept_accuracy": 0.38689547777175903,
+      "free_concept_accuracy": 0.0015600624028593302,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n        self._._._._._ self self._._._scenarioRemove._ self self self._._._ self._._._Tab._._modules)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "hass.config_entries.async_entries(DOMAIN):\n            if entry.data[CONF_USERNAME] == username:\n                return True\n        return False\n\n    @callback\n    def _show_setup_form(self, user_input=None, errors=None):\n        \"\"\"Show the setup form to the user.\"\"\"\n\n        if user_input is None:\n            user_input = {}\n\n        return self.async_show_form(\n            step_id=\"user\",\n            data_schema=vol.Schema(\n                {\n                    vol.Required(\n                        CONF_USERNAME, default=user_input.get("
+    },
+    {
+      "index": 34,
+      "teacher_forced_concept_accuracy": 0.5803431868553162,
+      "free_concept_accuracy": 0.0,
+      "free_nonpad_token_accuracy": 0.0546875,
+      "exact_window": false,
+      "prediction": "from\n import import\n\nfrom\n\nfrom\n\nfrom\n\nfromfromfrom\nfrom\n\n\n\n\n\nfrom\n\n\nfromfrom airflow\n\n\n\n\n\n\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n\n\nfrom\n\nfrom\n\n\n\n\nfromfrom\n rand\nfrom au\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n 2011\nfrom\n\nfrom\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfrom\n\n\nfrom\n\n\n\n\nfromfrom\n\nfrom\n\n\n\nfrom",
+      "reference": "# Copyright 2015 Cisco Systems, Inc.\n# All rights reserved.\n#\n#    Licensed under the Apache License, Version 2.0 (the \"License\"); you may\n#    not use this file except in compliance with the License. You may obtain\n#    a copy of the License at\n#\n#         http://www.apache.org/licenses/LICENSE-2.0\n#\n#    Unless required by applicable law or agreed to in writing, software\n#    distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\n#    WARRANTIES OR CONDITIONS OF ANY KIND"
+    },
+    {
+      "index": 35,
+      "teacher_forced_concept_accuracy": 0.3229329288005829,
+      "free_concept_accuracy": 0.012480499222874641,
+      "free_nonpad_token_accuracy": 0.0234375,
+      "exact_window": false,
+      "prediction": "..\n\n\n\n\nvertbobcondition..docker@@peated@@lsodle..\n\n..scenconditionlso scalar@@lso@@xtures\n\n\n Query@@..dockerdocker Query por..\n\n\n\nPasskidocker.dockerlso callingoreign.\n\n\nPermission@@dle@@ porkilso activity..lsoreviewason\n\nExample@@ tempfile callingranch@@pendent porlsoPermission scalarilityscen.\n\n cancel Defaults meshdle lay gate layasonlso..reviewlsodlesheet.sheetlso layconditionlsoreviewsheet Query.sheet..\n\n\n\nPermission@@lsoreview",
+      "reference": "g.\nfor manipulation of the pathname component of URLs.\n\"\"\"\n\nimport os\nimport sys\nimport stat\nimport genericpath\nfrom genericpath import *\n\n__all__ = [\"normcase\",\"isabs\",\"join\",\"splitdrive\",\"split\",\"splitext\",\n           \"basename\",\"dirname\",\"commonprefix\",\"getsize\",\"getmtime\",\n           \"getatime\",\"getctime\",\"islink\",\"exists\",\"lexists\",\"isdir\",\"isfile\",\n           \"ismount\", \"expanduser\",\"expandvars\",\"normpath\",\"abspath\",\n           \"samefile\",\"sameopenfile\",\"same"
+    },
+    {
+      "index": 36,
+      "teacher_forced_concept_accuracy": 0.3088923692703247,
+      "free_concept_accuracy": 0.0171606857329607,
+      "free_nonpad_token_accuracy": 0.0390625,
+      "exact_window": false,
+      "prediction": "```\n```\n\n\n\n```\n\n```\n\n``````\n```\n``````\n\n```\n```\n```\n```\n```\n```\n\n\n``````\n``````\n```\n\n\n\n``````\n```\n```\n``````\n```\n\n\n``````\n``````\n```\n```\n\n```\n\n```\n\n```\n```\n``````\n```\n``````\n\n```\n``````\n```\n```\n\n```\n```\n```\n``````\n```\n`````````\n\n\n```\n```\n``````\n\n``````",
+      "reference": "l> backendImpl, int id)\n    : m_backendImpl(backendImpl), m_id(id), m_alreadySent(false) {}\n\nInspectorBackendDispatcher::CallbackBase::~CallbackBase() {}\n\nvoid InspectorBackendDispatcher::CallbackBase::trace(Visitor* visitor)\n{\n    visitor->trace(m_backendImpl);\n}\n\nvoid InspectorBackendDispatcher::CallbackBase::sendFailure(const ErrorString& error)\n{\n    ASSERT(error.length"
+    },
+    {
+      "index": 37,
+      "teacher_forced_concept_accuracy": 0.357254296541214,
+      "free_concept_accuracy": 0.06396255642175674,
+      "free_nonpad_token_accuracy": 0.0546875,
+      "exact_window": false,
+      "prediction": "\tULL\n\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+      "reference": " if file exists on target\n\t\t# shutit.user_exists(user)           - Returns True if the user exists on the target\n\t\t# shutit.package_installed(package)  - Returns True if the package exists on the target\n\t\t# shutit.set_password(password, user='')\n\t\t#                                    - Set password for a given user on target\n\t\t#\n\t\t# USER INTERACTION\n\t\t# shutit.get_input(msg,default,valid[],boolean?,ispass?)\n\t\t#                                    - Get input from"
+    },
+    {
+      "index": 38,
+      "teacher_forced_concept_accuracy": 0.3120124936103821,
+      "free_concept_accuracy": 0.0343213714659214,
+      "free_nonpad_token_accuracy": 0.046875,
+      "exact_window": false,
+      "prediction": "istedscen..emonkaopenstack.bg.bg.kaaw.awcipycipycipy.bgcipy..scenopenstackcipyscen.bgcipyemonemoncipycipycipycipyopenstackcipyopenstack..leepopenstackcipycipycipypipcipycipycipy.canvascipycipycipycipycipycipycipycipybg.disabledisableemonulip.bgpipemon.openstack.kacipycipycipycipybgcipycipyopenstack..openstack\n\n  cipybgpipcipycipycipy..awemonAgent..scenopenstackcipycipypipcipypipcipycipycipycipycipy flaskcipycipycipycipybg.pipcipyemoncipycipypipcipyemonobs",
+      "reference": "();\n    this.renderer.setRenderTarget(this.renderTarget);\n    this.renderer.clear(true, true, false);              // stencil disabled on RT\n    this.renderer.render(this.scene, this.camera);\n    this.renderer.setRenderTarget(prevTarget);           // back to canvas (null)\n\n    this.monitor.visible = true;\n    // renderTarget.texture now holds the fresh feed; the next canvas pass\n    // picks it up automatically \u2014 no re-upload flag needed.\n  }\n\n "
+    },
+    {
+      "index": 39,
+      "teacher_forced_concept_accuracy": 0.307332307100296,
+      "free_concept_accuracy": 0.0015600624028593302,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n\n..... installed views ` ` `.`Option.. itertools`` ` `...`\n\n.\n`mul````````````````````````````````````````````````````````````````````````````````````````````````",
+      "reference": "istake can't hand the RT thread a dead Objective-C object:\n\n```swift\nimport Atomics   // swift-atomics\n\n/// Plain-data box. Contains NO Objective-C references.\nfinal class RenderContext {\n    let stopped = ManagedAtomic(false)\n    // channel counts, format scratch space, ring buffer pointers, etc.\n}\n\nfinal class AudioEngine {\n    private let engine = AVAudioEngine()\n    private var ctxRef"
+    },
+    {
+      "index": 40,
+      "teacher_forced_concept_accuracy": 0.3104524314403534,
+      "free_concept_accuracy": 0.02652106061577797,
+      "free_nonpad_token_accuracy": 0.03125,
+      "exact_window": false,
+      "prediction": " % %s\" % %ss\"\"\"s.% % % %ss %\"\"\" % % % % % % % % % % % % % % % % % %\"\"\" % % % % % % %\"\"\" % % % % %\"\" %\"/\", %\" % %\"\"\"\"\" % % % % % %\"\"\"\" % % % % % % %\"\"\" % %\"\" %\"\" % % %\"\" % % % %\" % %\"\"\"\"\" % % % % %\"\"\"\"sss",
+      "reference": "le.channels.overrides) \n\nprint(\"Clear Ch5, Ch6 override and set channel 3 to 500 (dictionary syntax)\")\nvehicle.channels.overrides = {'5':None, '6':None,'3':500}\nprint(\" Channel overrides: %s\" % vehicle.channels.overrides) \n\nprint(\"Clear all overrides\")\nvehicle.channels.overrides = {}\nprint(\" Channel overrides: %s\" % vehicle.channels.overrides)"
+    },
+    {
+      "index": 41,
+      "teacher_forced_concept_accuracy": 0.29329171776771545,
+      "free_concept_accuracy": 0.007800311781466007,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n\nlso..Bytes.\n\n\n..conditionmullsodlelsogon gatelso.dlelsopeatedki..dlereview scalar@@kireviewkipendentgon.\n\n\n..kititionsho layason gatedlegonkidle. gate por callingreview..dleshogon gatedisablelso por gateason por..shoreviewasonlso. porkigon callingranchdleki por. porgon====ki..reviewason scalarreviewdle lay gate laygonreview..reviewkidle por gategon gate laygonreviewgon gatelso\n\nlso gate pordle porlsosheet laylsocondition",
+      "reference": "(void);\nconst SSL_METHOD *TLSv1_1_server_method(void);\nconst SSL_METHOD *TLSv1_1_client_method(void);\n\nconst SSL_METHOD *TLSv1_2_method(void);\nconst SSL_METHOD *TLSv1_2_server_method(void);\nconst SSL_METHOD *TLSv1_2_client_method(void);\n\nconst SSL_METHOD *SSLv3_method(void);\nconst SSL_"
+    },
+    {
+      "index": 42,
+      "teacher_forced_concept_accuracy": 0.32761311531066895,
+      "free_concept_accuracy": 0.010920437052845955,
+      "free_nonpad_token_accuracy": 0.0390625,
+      "exact_window": false,
+      "prediction": "from\n import import\n\nfrom\n\nfrom\n\nfrom\n\nfromfromfrom\nfrom\n\n\n\n\n\nfrom\n\n\nfromfrom airflow\n\n\n\n\n\n\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n\n\nfrom\n\nfrom\n\n\n\n\nfromfrom\n rand\nfrom au\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n 2011\nfrom\n\nfrom\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfrom\n\n\nfrom\n\n\n\n\nfromfrom\n\nfrom\n\n\n\nfrom",
+      "reference": "# encoding: utf-8\n\n\"\"\"\nCustom element classes that correspond to the document part, e.g.\n<w:document>.\n\"\"\"\n\nfrom .xmlchemy import BaseOxmlElement, ZeroOrOne, ZeroOrMore\n\n\nclass CT_Document(BaseOxmlElement):\n    \"\"\"\n    ``<w:document>`` element, the root element of a document.xml file.\n    \"\"\"\n    body = ZeroOrOne('w:body')\n\n    @property\n    def sectPr_lst(self):\n        \"\"\"\n        Return a list containing a reference to"
+    },
+    {
+      "index": 43,
+      "teacher_forced_concept_accuracy": 0.3104524314403534,
+      "free_concept_accuracy": 0.0,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "##\n##############################################################################################################################################################################################################################################...**\n\n---",
+      "reference": "payments/sa/invoicer`), issued per-workload by the local node agent, rotated automatically (typically hourly), and never stored in application config or a secrets store. A stolen key material file is scoped to that one workload's identity, expires within the rotation window, and cannot be replayed from another host once the node agent revokes it. Compromise of the mesh CA is the high-value target, but that is a single hardened component (or an upstream root offline) rather than"
+    },
+    {
+      "index": 44,
+      "teacher_forced_concept_accuracy": 0.5413416624069214,
+      "free_concept_accuracy": 0.0,
+      "free_nonpad_token_accuracy": 0.046875,
+      "exact_window": false,
+      "prediction": "from\n import import\n\nfrom\n\nfrom\n\nfrom\n\nfromfromfrom\nfrom\n\n\n\n\n\nfrom\n\n\nfromfrom airflow\n\n\n\n\n\n\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n\n\nfrom\n\nfrom\n\n\n\n\nfromfrom\n rand\nfrom au\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n 2011\nfrom\n\nfrom\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfrom\n\n\nfrom\n\n\n\n\nfromfrom\n\nfrom\n\n\n\nfrom",
+      "reference": "# coding=utf-8\n# Copyright 2021 The RecSim Authors.\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#     http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied"
+    },
+    {
+      "index": 45,
+      "teacher_forced_concept_accuracy": 0.382215291261673,
+      "free_concept_accuracy": 0.012480499222874641,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t:\n\t\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\t::\n\t\t\n\t\t)\n\t\t))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "for i in range(0,self.dim_db-1):\n\t\t\t\t\tprojection += np.dot(snapshot*self.weights, loo_basis[:,i])*loo_basis[:,i]\n\n\t\t\t\terror = (snapshot - projection) * self.weights\n\t\t\t\tl2_error[j] = np.sqrt(np.sum(np.power(error,2)))/self.rel_error\n\t\t\telse:\n\t\t\t\tremaining_mu = np.delete(self.mu_values, j, 1)\n\t\t\t\tremaining_tria"
+    },
+    {
+      "index": 46,
+      "teacher_forced_concept_accuracy": 0.31357255578041077,
+      "free_concept_accuracy": 0.004680187441408634,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n           \n            self._._ self self self self self self self self._ self self self self._._ self\n            self self._._._Argument))\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "\n\n        except StopIteration:\n            pass\n        \n\n    def decodepages(self, bytesource):\n        \"\"\"\n        Takes an iterator of bytes, returns an iterator of iterators\n        of uncompressed data. Expects input to conform to the output\n        conventions of PagingEncoder(), in particular that \"pages\" are\n        separated with an END_OF_INFO_CODE and padding up to the next\n        byte boundary.\n\n        BUG: Dangling trailing page on decompression.\n\n        >>> import lzw\n        >>> pgdec = lzw.PagingDecoder(initial"
+    },
+    {
+      "index": 47,
+      "teacher_forced_concept_accuracy": 0.4804992079734802,
+      "free_concept_accuracy": 0.03588143363595009,
+      "free_nonpad_token_accuracy": 0.03846153989434242,
+      "exact_window": false,
+      "prediction": ".0..0...0, 9 9,0..0,0.,0.0,,,,,,0..0,,0...0,..,0,..000.0 9 9,0.00,00 9 9 9 9 9 9 9 9.0, 9,,0..00..0,,,0.0.0,,..0,0..,,,0.000..000.,,,,...0,00",
+      "reference": ")\n    magenta = (1.0, 0.0, 1.0, 1.0)\n    rose =    (1.0, 0.0, 0.5, 1.0)\n\n\ndef get_random_color_buffer(dim):\n    data = []\n    for i in range(dim ** 2):\n        data += (random.random(), random.random(), random.random(), 1.0)\n    return array.array('f', data)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>"
+    },
+    {
+      "index": 48,
+      "teacher_forced_concept_accuracy": 0.35101404786109924,
+      "free_concept_accuracy": 0.05304212123155594,
+      "free_nonpad_token_accuracy": 0.09375,
+      "exact_window": false,
+      "prediction": "\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\n\t\t\t\t\t\t\t\n\t\n\t\t\t\t\n\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t\t\t\t\t\t\t\t\t\n\t\treturnreturnreturn\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t",
+      "reference": " session:\n\t\tif request.method == \"GET\":\n\t\t\terror = False\n\t\t\ttry:\n\t\t\t\trequest.args[\"password\"]\n\t\t\t\terror = True\n\t\t\texcept:\n\t\t\t\tpass\n\t\t\treturn render_template(\"admin_pages/login.html\", page=\"login\", error=error)\n\t\tif request.method == \"POST\":\n\t\t\t\tif hashlib.md5(request.form[\"password\"]).hexdigest() == getPassword():\n\t\t\t\t\tlogin()\n\t\t\t\t\treturn redirect(\"/admin\")\n\t\t\t\telse:\n\t\t\t\t\treturn redirect(\"/admin/login?password=false\")\n\telse"
+    },
+    {
+      "index": 49,
+      "teacher_forced_concept_accuracy": 0.2870514690876007,
+      "free_concept_accuracy": 0.04212168604135513,
+      "free_nonpad_token_accuracy": 0.03125,
+      "exact_window": false,
+      "prediction": ":: chainer\n ::\n  '',:::\n :::\n \n ::\n \n \n ::::::\n  '', Meta Meta Input Meta:\n : MIT\n \n :: '',\n \n  '',: persons persons: ])\n \n  '',:::\n  '',::::\n     lationship__coords: Meta limits: chainer: Metalevant: persons persons:------------rift chainer:: Meta persons limits:: persons Ge stage:::_ Ge------------:::ook persons Meta: personsNet persons persons------------: credentials personsility: indices persons:stamp persons Meta Meta:fit: Meta MIT",
+      "reference": " Status type, should be:\n              - QEI_INTFLAG_INX_Int: index pulse was detected interrupt\n              - QEI_INTFLAG_TIM_Int: Velocity timer over flow interrupt\n              - QEI_INTFLAG_VELC_Int: Capture velocity is less than compare\n                interrupt\n              - QEI_INTFLAG_DIR_Int: Change of direction interrupt\n              - QEI_INTFLAG_ERR_Int: An encoder phase error interrupt\n              - QEI_INTFLAG"
+    },
+    {
+      "index": 50,
+      "teacher_forced_concept_accuracy": 0.2870514690876007,
+      "free_concept_accuracy": 0.09984399378299713,
+      "free_nonpad_token_accuracy": 0.0859375,
+      "exact_window": false,
+      "prediction": "aaaaaacrementaaaacrementaaaaaaacrementaaaaa\ufffdlsoaaa============crementaaaaa Api creaaa============ ComputeaaynamCopyrightaaacrementaaaaacrementaaInterface\ufffda creExampleaaaa Api creaaaaacrementaa ApilsoaaCopyrightlsoaa\ufffda ApilsoaaalsoaaCopyrightaaa\ufffdlsoa ApiCopyrightaacrementaacrementaaa Api creaacrementa\ufffdlsoaaa\nbove",
+      "reference": "Tanja\nTanka\nTanna\nTannia\nTannis\nTanniya\nTannya\nTanya\nTasenka\nTasha\nTashana\nTashia\nTashiana\nTashianna\nTashina\nTashira\nTashiya\nTassa\nTasya\nTata\nTatiana\nTatianka\nTatianna\nTatiiana\nTatjana\nTatsa\nTatyana\nTaunia"
+    },
+    {
+      "index": 51,
+      "teacher_forced_concept_accuracy": 0.3088923692703247,
+      "free_concept_accuracy": 0.015600623562932014,
+      "free_nonpad_token_accuracy": 0.015625,
+      "exact_window": false,
+      "prediction": "----specific-- and and and and,, and,,,, and and,signed,, sublicense,, and, and and, and delayinginginging pickinginginging and,,, and and,, and, sublicense, and,, and and, and and,, and and, and, and and and and and, and and and and and distributeinginginginginginginginginging, and,signed, and,, and, sublicense sublicense, and sublicense, and and andingingingingingingingingingPN, and,, and,,",
+      "reference": "\n\n- **Arrive 10 min early:** collect magnifier lanyards, sticky notes, tablets/talking buttons, specimen trays, and the answer-key envelope.\n- **Room setup:** check two cases have clear floor space (no bags/stools); place word-wall cards and prompt cards at every case; put the sloped-mirror cases on the accessible route.\n- **Greet the group at the door:** hand each child a picture schedule card; point to to"
+    },
+    {
+      "index": 52,
+      "teacher_forced_concept_accuracy": 0.32605305314064026,
+      "free_concept_accuracy": 0.009360374882817268,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "\t\n\t\t\n\t\t\t\n\t\t:::\n\t\t::::\n\t\t\n\t\treturn:\n\t\treturnreturn:\n\t\t:return\n\t\t::\n\t\t\n\t\treturnreturnreturn\n\t\t\t\t\n\t\t\n\t\t\t\n\t\t:\n\t\t\t\n\t\t:returnreturnreturnreturn\n\t\t\n\t\treturnreturn\n\t\t\t\n\t\t:\n\t\t\t\n\t\t\n\t\t::::\n\t\t:::::\n\t\t\t\n\t\t:::\n\t\t\t\n\t\t\n\t\t:::\n\t\t::::::::\n\t\treturnreturnreturn\n\t\t:\n\t\t\t\n\t\t\n\t\t\t\n\t\t:\n\t\t\t:return\n\t\t:::\n\t\treturnreturnreturn\t\t\t\n\t\n\t\t\t\t\t\t\t",
+      "reference": "self.context.addGlobal ('test', 'testing')\n\t\tself.context.addGlobal ('link', 'www.owlfish.com')\n\t\tself.context.addGlobal ('needsQuoting', \"\"\"Does \"this\" work?\"\"\")\n\t\tself.context.addGlobal ('number', 5)\n\t\tself.context.addGlobal ('uniQuote', 'Does \"this\" work?')\n\t\tself.context.addGlobal ('anotherdefault', {'inhere': simpleTALES.DEFAULTVALUE})\n\t\t\n\tdef _runTest"
+    },
+    {
+      "index": 53,
+      "teacher_forced_concept_accuracy": 0.3775351047515869,
+      "free_concept_accuracy": 0.014040561392903328,
+      "free_nonpad_token_accuracy": 0.0390625,
+      "exact_window": false,
+      "prediction": "\":\": \" \"\":\": \" \"\",\",\", \" \" \" \" \" \" \" \" \"\",\", \" \" \" \"pip_\n       \n        \" \"\n       \n        self....vlan = = self...dirs..obs.percent self self.icon.responses. self.iconstandard....standard. self. self.Rule..operationspercent...standard.standard self.branch.......({\"\": \"\": \".\",\",\", \" \" \" \"fft \" \"\",\", \" \" \" \" \" \" \"\":flavor \" \" \" \" \" \" \"",
+      "reference": ".assertEqual(dict, a1.to_dict().__class__)\n        self.assertEqual(dict, b2.to_dict()[\"blah\"].__class__)\n        self.assertEqual(dict, c3.to_dict()[\"blah\"][0].__class__)\n        self.assertEqual(dict, d4.to_dict()[\"blah\"][\"foo\"].__class__)\n\n        # Original data unaffected.\n        self.assertEqual(SON, d4['blah']['foo'].__class__)\n\n    def test_pickle(self):\n\n        simple_son = SON([])"
+    },
+    {
+      "index": 54,
+      "teacher_forced_concept_accuracy": 0.30421218276023865,
+      "free_concept_accuracy": 0.015600623562932014,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "\n\n..eryeryhould>,eryery...eryeryery.##\n############################\n## porasureeryeryeryeryeryeryery################################################################################\ufffd\ufffdery layeryery por\ufffdached##\n\n########Impery>,eryeryery..##\n#### activity porery por..eryeryeryery porlso>,erylso>,",
+      "reference": " visual, driven by the snapshot \u2014 fades must not affect retirement logic.\n\n## Debugging hooks\n\n- Overlay showing both slots, pending queue sorted as the scheduler sees it, each line's remaining time, and last drop reason.\n- A `subtitle.timeline` console command dumping the last N seconds of admit/preempt/drop decisions with sim timestamps \u2014 this is the fastest way to diagnose \"my line got eaten\" reports.\n- Scripted integration tests"
+    },
+    {
+      "index": 55,
+      "teacher_forced_concept_accuracy": 0.3244929909706116,
+      "free_concept_accuracy": 0.0031201248057186604,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "____RIGHT((_inline))\n\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "lowpass.set_parameter_float(DSP_MULTIBAND_EQ.A_FREQUENCY, 1000)\ndsplowpass.set_parameter_float(DSP_MULTIBAND_EQ.A_Q, 4)\n\ndsphighpass = system.create_dsp_by_type(DSP_TYPE.MULTIBAND_EQ)\ndsphighpass.set_parameter_int(\n    DSP_MULTIBAND_EQ.A_FILTER, DSP_MULTIBAND_E"
+    },
+    {
+      "index": 56,
+      "teacher_forced_concept_accuracy": 0.5179407000541687,
+      "free_concept_accuracy": 0.0,
+      "free_nonpad_token_accuracy": 0.046875,
+      "exact_window": false,
+      "prediction": "from\n import import\n\nfrom\n\nfrom\n\nfrom\n\nfromfromfrom\nfrom\n\n\n\n\n\nfrom\n\n\nfromfrom airflow\n\n\n\n\n\n\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n\n\nfrom\n\nfrom\n\n\n\n\nfromfrom\n rand\nfrom au\nfrom\n\n\nfrom\n\nfromfrom\n\nfrom\n 2011\nfrom\n\nfrom\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfrom\n\n\nfrom\n\n\n\n\nfromfrom\n\nfrom\n\n\n\nfrom",
+      "reference": "# Copyright (c) 2014 Rackspace Hosting.\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#    http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n# implied.\n"
+    },
+    {
+      "index": 57,
+      "teacher_forced_concept_accuracy": 0.8517940640449524,
+      "free_concept_accuracy": 0.7628704905509949,
+      "free_nonpad_token_accuracy": 0.0833333358168602,
+      "exact_window": false,
+      "prediction": "____________data)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "get('input_message_content'), bot)\n\n        return InlineQueryResultVenue(**data)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>"
+    },
+    {
+      "index": 58,
+      "teacher_forced_concept_accuracy": 0.28237128257751465,
+      "free_concept_accuracy": 0.0,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "  sell lsolso sentencedivid is   the the a a is channels a a is is ismem   is sentencelsodividlsoquestclude  202dividdividlsolsolsolso Onelsodivid One Onelso  sell    #: is porlecule is is a a a a a a is is is is aput a is is is is is ispenden is is a a a is is is a is is is is is is a aput is is is is a a a a wa is is is is a is is a a is is Document a is is   islso selllsodivid clude ",
+      "reference": "(e3) == ascii_str\n    assert upretty(e3) == ucode_str\n    assert latex(e3) == \\\n        r'\\left(\\begin{array}{ccc} 1 & 3 & 5 \\\\ 2 & 4 & 6 \\end{array}\\right) {\\left[B^{\\dag} + A,C + D\\right]}\\otimes \\left({- J^2 + J_z}\\right) {\\left|1,0\\right\\rangle }{\\left\\langle 1,1\\right|} \\left({{\\left"
+    },
+    {
+      "index": 59,
+      "teacher_forced_concept_accuracy": 0.32605305314064026,
+      "free_concept_accuracy": 0.11076442897319794,
+      "free_nonpad_token_accuracy": 0.15625,
+      "exact_window": false,
+      "prediction": "````````````srcsrcsrc//src/bob//////////////////////////////////////////////////bob/////////////////////////////////////////////////////////",
+      "reference": "mybinder.org/v2/gh/pydata/xarray/doc/examples/master?urlpath=lab/tree/doc/{{ docname }}>`_ |Binder| or view it `on Github <https://github.com/pydata/xarray/blob/master/doc/{{ docname }}>`_.\n\n.. |Binder| image:: https://mybinder.org/badge.svg\n   :target: https://mybinder.org/v2/gh/pydata/xarray/master?urlpath=lab/tree/"
+    },
+    {
+      "index": 60,
+      "teacher_forced_concept_accuracy": 0.5897035598754883,
+      "free_concept_accuracy": 0.39781591296195984,
+      "free_nonpad_token_accuracy": 0.0,
+      "exact_window": false,
+      "prediction": "\n\n    def def test test__ogram((self):\n        \"\"\" \"\"\"\n        = = self.\n       ()\n       \n       \n        timedeltaclose()()\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": " directlyProvides(boom, IStreamAttacher)\n\n        a.add_attacher(boom)\n        a.attach_stream(Mock(), [])\n\n    def test_attach_stream_nothing(self):\n        a = PriorityAttacher()\n        a.attach_stream(Mock(), [])\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>"
+    },
+    {
+      "index": 61,
+      "teacher_forced_concept_accuracy": 0.30577224493026733,
+      "free_concept_accuracy": 0.045241810381412506,
+      "free_nonpad_token_accuracy": 0.046875,
+      "exact_window": false,
+      "prediction": "\nistory | |\n||| | |\nistory | ||| | |\n||| | |istory\n ||ncy\n | |||\n################ | |\n|||||| | |\n||\n | | Out| | | | | | |\n||\n\n|||\n|\n | ||istory | |||||\n |\n| | |\n| | |||| ||\n\n|\n | | | |\n|\n | |\n||Copyright | ||| | | | |\n|||||",
+      "reference": " 80 MB peak inside checkout) | 40\u2013120 ms (route navigation only) |\n| Lazy pre-warm after home screen settles (~2 s post-first-frame) | Same total, but zero cost during cold-start window; freed if user never checks out | 60\u2013180 ms |\n| Create on checkout entry | ~0 until needed | 400\u2013900 ms cold (AOT snapshot load, shader/skia init, first route build); worse on low-end devices |\n\nChoose **lazy"
+    },
+    {
+      "index": 62,
+      "teacher_forced_concept_accuracy": 0.29329171776771545,
+      "free_concept_accuracy": 0.014040561392903328,
+      "free_nonpad_token_accuracy": 0.0078125,
+      "exact_window": false,
+      "prediction": "inginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginginging deriinginginginginginginginging equinginginginginginginginginginginginginginginginginginginginginginginginginginginginginginging equinginginginginginginginginginginginginging equingingingingingingDoinginginginginginginginginginginginginginginginging",
+      "reference": "oderation as circulation control\n\nModeration determines what may circulate at all, through rules, automated classifiers, human review, downranking (\"reducing distribution\" short of removal), demonetization, and account-level enforcement. It is exercised unevenly: enforcement depends on language coverage, political sensitivity of markets, celebrity status, and the ratio of moderators to content volume. Moderation decisions are contested and context-dependent\u2014the same post"
+    },
+    {
+      "index": 63,
+      "teacher_forced_concept_accuracy": 0.332293301820755,
+      "free_concept_accuracy": 0.015600623562932014,
+      "free_nonpad_token_accuracy": 0.015625,
+      "exact_window": false,
+      "prediction": "______EMAIL________url\"\"\"\"\"\"\"\"\n        = \" \"modules)\n<|ncm_eos|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|><|ncm_pad|>",
+      "reference": "_name\"].encode('utf-8')\n        text = status[\"text\"].encode('utf-8')\n        print(user, \":\", text)\n        print()\n\nfrom twython import TwythonStreamer\n\n# appending data to a global variable is pretty poor form\n# but it makes the example much simpler\ntweets = []\n\nclass MyStreamer(TwythonStreamer):\n    \"\"\"our own subclass of TwythonStreamer that specifies\n    how to interact with the stream\"\"\"\n\n    def"
+    }
+  ],
+  "quality_ready": false,
+  "scope": "held-out code continuation diagnostic; exact matching is not a functional coding benchmark",
+  "checkpoint_sha256": "b7e79aecc8a3454944acd54824f3339f70e794cb0579c6edd2bab82fe6923f0c",
+  "selected_step": 2000
+}

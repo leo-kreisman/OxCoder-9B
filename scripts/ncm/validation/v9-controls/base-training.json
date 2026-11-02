@@ -1,0 +1,528 @@
+{
+  "stage": "codec",
+  "complete": true,
+  "history": [
+    {
+      "step": 1000,
+      "loss": 0.5833152532577515,
+      "gradient_norm": 0.16417953372001648,
+      "elapsed_seconds": 24.399237662000814,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9989858259207837,
+        "exact_chunk_rate": 0.96234897443102,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9697948862039899,
+        "used_codes_per_level": [
+          196,
+          372,
+          198,
+          147
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 2000,
+      "loss": 0.8505958318710327,
+      "gradient_norm": 0.12157673388719559,
+      "elapsed_seconds": 48.74321060300281,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9991530096390825,
+        "exact_chunk_rate": 0.9620679966282664,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.975835908963192,
+        "used_codes_per_level": [
+          126,
+          281,
+          213,
+          186
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 3000,
+      "loss": 1.090346336364746,
+      "gradient_norm": 0.1835441142320633,
+      "elapsed_seconds": 73.12656411599892,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9992880852260523,
+        "exact_chunk_rate": 0.9711997752177578,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9827198651306547,
+        "used_codes_per_level": [
+          120,
+          258,
+          216,
+          196
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 4000,
+      "loss": 1.256398320198059,
+      "gradient_norm": 0.08984597027301788,
+      "elapsed_seconds": 97.30872834200272,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9993390153654016,
+        "exact_chunk_rate": 0.9693734194998596,
+        "eos_accuracy": 0.9998595110986233,
+        "valid_utf8_with_eos_rate": 0.9817364428210171,
+        "used_codes_per_level": [
+          118,
+          257,
+          215,
+          193
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 5000,
+      "loss": 1.5832854509353638,
+      "gradient_norm": 0.09119144827127457,
+      "elapsed_seconds": 121.62007299400284,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9993334794806897,
+        "exact_chunk_rate": 0.9721831975273953,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9815959539196404,
+        "used_codes_per_level": [
+          121,
+          251,
+          221,
+          199
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 6000,
+      "loss": 1.844677448272705,
+      "gradient_norm": 0.08642002195119858,
+      "elapsed_seconds": 145.89444229799847,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9992615129794353,
+        "exact_chunk_rate": 0.9738690643439168,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9842652430457994,
+        "used_codes_per_level": [
+          120,
+          250,
+          226,
+          210
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 7000,
+      "loss": 2.121365785598755,
+      "gradient_norm": 0.0932076945900917,
+      "elapsed_seconds": 169.94122726100613,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.999340122542344,
+        "exact_chunk_rate": 0.9731666198370329,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9846867097499298,
+        "used_codes_per_level": [
+          114,
+          253,
+          236,
+          230
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 8000,
+      "loss": 2.227245330810547,
+      "gradient_norm": 0.14142701029777527,
+      "elapsed_seconds": 194.34686872799648,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9993932670355781,
+        "exact_chunk_rate": 0.976397864568699,
+        "eos_accuracy": 0.9997190221972464,
+        "valid_utf8_with_eos_rate": 0.9849676875526834,
+        "used_codes_per_level": [
+          115,
+          254,
+          238,
+          238
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 9000,
+      "loss": 2.435567617416382,
+      "gradient_norm": 0.14153985679149628,
+      "elapsed_seconds": 219.04373213699728,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.999322407711266,
+        "exact_chunk_rate": 0.971059286316381,
+        "eos_accuracy": 0.9988760887889857,
+        "valid_utf8_with_eos_rate": 0.9807530205113796,
+        "used_codes_per_level": [
+          114,
+          251,
+          258,
+          252
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 10000,
+      "loss": 2.5215566158294678,
+      "gradient_norm": 0.19550400972366333,
+      "elapsed_seconds": 243.29106836799474,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9994353397593883,
+        "exact_chunk_rate": 0.9783647091879741,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9842652430457994,
+        "used_codes_per_level": [
+          113,
+          252,
+          265,
+          267
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 11000,
+      "loss": 2.6678617000579834,
+      "gradient_norm": 0.20520347356796265,
+      "elapsed_seconds": 267.4436324900016,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9993035857032456,
+        "exact_chunk_rate": 0.9768193312728295,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9822983984265243,
+        "used_codes_per_level": [
+          112,
+          255,
+          275,
+          285
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 12000,
+      "loss": 2.6035149097442627,
+      "gradient_norm": 0.29535818099975586,
+      "elapsed_seconds": 291.82987409000634,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9994563761212935,
+        "exact_chunk_rate": 0.976397864568699,
+        "eos_accuracy": 0.9997190221972464,
+        "valid_utf8_with_eos_rate": 0.9839842652430458,
+        "used_codes_per_level": [
+          109,
+          257,
+          278,
+          310
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 13000,
+      "loss": 2.4843287467956543,
+      "gradient_norm": 0.2831878662109375,
+      "elapsed_seconds": 316.1699824099924,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9994408756441002,
+        "exact_chunk_rate": 0.9748524866535544,
+        "eos_accuracy": 0.9997190221972464,
+        "valid_utf8_with_eos_rate": 0.9822983984265243,
+        "used_codes_per_level": [
+          107,
+          261,
+          290,
+          306
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 14000,
+      "loss": 2.668384552001953,
+      "gradient_norm": 0.30402886867523193,
+      "elapsed_seconds": 340.58840696999687,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9993777665583847,
+        "exact_chunk_rate": 0.9704973307108739,
+        "eos_accuracy": 0.9998595110986233,
+        "valid_utf8_with_eos_rate": 0.9837032874402922,
+        "used_codes_per_level": [
+          106,
+          260,
+          295,
+          321
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 15000,
+      "loss": 2.780125141143799,
+      "gradient_norm": 0.2687980532646179,
+      "elapsed_seconds": 365.04108528699726,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.999419839282195,
+        "exact_chunk_rate": 0.9749929755549311,
+        "eos_accuracy": 0.9976116886765946,
+        "valid_utf8_with_eos_rate": 0.9842652430457994,
+        "used_codes_per_level": [
+          108,
+          263,
+          310,
+          350
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 16000,
+      "loss": 2.977633237838745,
+      "gradient_norm": 0.3061063289642334,
+      "elapsed_seconds": 389.31499371099926,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9994065531588865,
+        "exact_chunk_rate": 0.9675470637819612,
+        "eos_accuracy": 1.0,
+        "valid_utf8_with_eos_rate": 0.9848271986513065,
+        "used_codes_per_level": [
+          110,
+          262,
+          309,
+          361
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 17000,
+      "loss": 2.7804830074310303,
+      "gradient_norm": 0.4586174786090851,
+      "elapsed_seconds": 413.05199022599845,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9994397684671578,
+        "exact_chunk_rate": 0.9720427086260185,
+        "eos_accuracy": 0.9955043551559427,
+        "valid_utf8_with_eos_rate": 0.9827198651306547,
+        "used_codes_per_level": [
+          110,
+          265,
+          355,
+          373
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 18000,
+      "loss": 3.0130972862243652,
+      "gradient_norm": 0.3532581329345703,
+      "elapsed_seconds": 437.16682431400113,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9993534086656525,
+        "exact_chunk_rate": 0.965018263557179,
+        "eos_accuracy": 0.9994380443944928,
+        "valid_utf8_with_eos_rate": 0.9801910649058725,
+        "used_codes_per_level": [
+          112,
+          268,
+          347,
+          389
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 19000,
+      "loss": 3.0454070568084717,
+      "gradient_norm": 0.3250747323036194,
+      "elapsed_seconds": 461.33911775999877,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9994552689443511,
+        "exact_chunk_rate": 0.9741500421466704,
+        "eos_accuracy": 0.9962067996628267,
+        "valid_utf8_with_eos_rate": 0.9827198651306547,
+        "used_codes_per_level": [
+          110,
+          269,
+          360,
+          428
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 20000,
+      "loss": 3.0731141567230225,
+      "gradient_norm": 0.4929123520851135,
+      "elapsed_seconds": 485.5285551749985,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9994619120060053,
+        "exact_chunk_rate": 0.9761168867659454,
+        "eos_accuracy": 0.9991570665917393,
+        "valid_utf8_with_eos_rate": 0.9856701320595673,
+        "used_codes_per_level": [
+          105,
+          274,
+          396,
+          446
+        ],
+        "passed": true,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    }
+  ],
+  "quality_ready": false,
+  "meaning": "finite codec run; generator not trained by this command"
+}

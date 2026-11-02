@@ -1,0 +1,12 @@
+{
+  "quality_ready": false,
+  "complete": false,
+  "last_recorded_step": 521,
+  "last_checkpoint_step": 500,
+  "evaluated_steps": [
+    250,
+    500
+  ],
+  "passes_each": 0,
+  "reason": "Revised head still failed coding; dependency audit confirmed noncontextual coarse representation only reads two middle bytes. New contextual codec stage has separate initialization and output path."
+}

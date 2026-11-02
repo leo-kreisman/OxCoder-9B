@@ -1,0 +1,78 @@
+{
+  "initial-structural-validation.json": {
+    "bytes": 1350,
+    "sha256": "29bf139a0a18c746998b04edbf6f97b0ffacfb292d42ddaa3a78b4404698b91a"
+  },
+  "initial-backbone-audit.json": {
+    "bytes": 1831,
+    "sha256": "eca4515610acc227648a31def2e2d1abc5febf062dc07e0ef46678301e1b98e8"
+  },
+  "uncached-progress.json": {
+    "bytes": 684,
+    "sha256": "1391882ea637e984781ee77a2e64ce45dc7309ec47a8f3b42af19a19728d298a"
+  },
+  "uncached-coding-250.json": {
+    "bytes": 37695,
+    "sha256": "86f3ed8ba2ecff3de0fbfca1db4ebee7a6a3c32ed721822d0747b755a9e890a4"
+  },
+  "unit-tests.txt": {
+    "bytes": 5710,
+    "sha256": "33eeb801f4f85150577ef75c78716aa9a6480bdc861ab5bf74e315e4cbd58e42"
+  },
+  "uncached-best-development.json": {
+    "bytes": 295,
+    "sha256": "23530335b59a55aec04bb40e1314d1e9a51f0caf124dd2551faa29c67e60f2b0"
+  },
+  "uncached-chunks-250.json": {
+    "bytes": 3307,
+    "sha256": "98305137737b4e389dfc58463e52d6ffe56a84cb63e55b70ababfb9690b43a69"
+  },
+  "failed-prefix-audit.json": {
+    "bytes": 2036,
+    "sha256": "ef7e47f2b7be0df15dd2eb4abd1870b70e23d1d5a52b6778402dc048cd574c67"
+  },
+  "uncached-checkpoint-audit.json": {
+    "bytes": 374,
+    "sha256": "46da32a636f851c6b67e0baff5c3d3e68e06619c1175e81df30102457839ee91"
+  },
+  "failed-cached-continuation.json": {
+    "bytes": 162,
+    "sha256": "ba1dde5dea03b6d478a6bdc83fbca4fe8bce35c98a9f31eddc177c7d1a760c2d"
+  },
+  "initial-training.json": {
+    "bytes": 5260,
+    "sha256": "1bcd7b42b728ce8efa6bbbb818d99ae1a1d108c51303934d7d942f0c88a8052c"
+  },
+  "codebook-scale-control.json": {
+    "bytes": 1341,
+    "sha256": "e8e6cc974deae156458b44265b239a78500fd9c19b5952d7b4a04da92609f02e"
+  },
+  "uncached-sampling.json": {
+    "bytes": 1073,
+    "sha256": "d9a3fee68d8b024ff80b734b56402ed2a2381394400d04bec72b73b8e0a7b34e"
+  },
+  "uncached-identity.json": {
+    "bytes": 2222,
+    "sha256": "98b2b631bdbe0b4d217537043e5bb0b8ee1bebf879f3437b07996da65c2b0234"
+  },
+  "external-comparison-manifest.json": {
+    "bytes": 726,
+    "sha256": "7f66b7cb18d88ac937d5fba412bea3a41cdbb015736a4f32b12f44f8ab832f57"
+  },
+  "uncached-admission.json": {
+    "bytes": 256,
+    "sha256": "9030dcbc9bd933363ec33069c64d2d58f69f0ce3a1a3e292e10ecc0a46bb715f"
+  },
+  "initial-curriculum.json": {
+    "bytes": 455,
+    "sha256": "5c337edfd892966f752a80514acc0b3abd6c7e68904bb8c226041e453d17dbff"
+  },
+  "uncached-data-manifest.json": {
+    "bytes": 672,
+    "sha256": "98c9e10346cb87a4ccf3f3b62f837aa62bb7c594dcc2e418c3867a6ab6a8e4c5"
+  },
+  "uncached-curriculum.json": {
+    "bytes": 459,
+    "sha256": "ecec1d2d5b68461ef5c3eb3569312bd26c6afc74b13f43fed9e24806c4a32aac"
+  }
+}

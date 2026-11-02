@@ -1,0 +1,278 @@
+{
+  "stage": "codec",
+  "complete": true,
+  "history": [
+    {
+      "step": 1000,
+      "loss": 0.6780605912208557,
+      "gradient_norm": 0.37830090522766113,
+      "elapsed_seconds": 15.231561437947676,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9903343452930586,
+        "exact_chunk_rate": 0.5200899128968811,
+        "eos_accuracy": 0.9991570665917393,
+        "valid_utf8_with_eos_rate": 0.8710311885361056,
+        "used_codes_per_level": [
+          71,
+          85,
+          81,
+          103,
+          82
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 2000,
+      "loss": 0.522886335849762,
+      "gradient_norm": 0.4729733169078827,
+      "elapsed_seconds": 30.471314029942732,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9938894904550276,
+        "exact_chunk_rate": 0.6515875245855577,
+        "eos_accuracy": 0.9998595110986233,
+        "valid_utf8_with_eos_rate": 0.8919640348412475,
+        "used_codes_per_level": [
+          51,
+          69,
+          84,
+          196,
+          196
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 3000,
+      "loss": 0.2860875427722931,
+      "gradient_norm": 0.19710908830165863,
+      "elapsed_seconds": 45.6909156399779,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9942814310926287,
+        "exact_chunk_rate": 0.6576285473447597,
+        "eos_accuracy": 0.9995785332958697,
+        "valid_utf8_with_eos_rate": 0.9162686147794324,
+        "used_codes_per_level": [
+          32,
+          59,
+          121,
+          273,
+          234
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 4000,
+      "loss": 0.2528162896633148,
+      "gradient_norm": 0.2545064687728882,
+      "elapsed_seconds": 60.736242744955234,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9953531783728484,
+        "exact_chunk_rate": 0.714667041303737,
+        "eos_accuracy": 0.9991570665917393,
+        "valid_utf8_with_eos_rate": 0.9176735037932003,
+        "used_codes_per_level": [
+          28,
+          64,
+          147,
+          249,
+          244
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 5000,
+      "loss": 0.19523590803146362,
+      "gradient_norm": 0.09450767934322357,
+      "elapsed_seconds": 75.82656036794651,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9957473333643343,
+        "exact_chunk_rate": 0.7195841528519247,
+        "eos_accuracy": 0.9997190221972464,
+        "valid_utf8_with_eos_rate": 0.9248384377634167,
+        "used_codes_per_level": [
+          22,
+          69,
+          148,
+          276,
+          258
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 6000,
+      "loss": 0.18344058096408844,
+      "gradient_norm": 0.14373290538787842,
+      "elapsed_seconds": 90.91281827597413,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9959953409994264,
+        "exact_chunk_rate": 0.7412194436639505,
+        "eos_accuracy": 0.9998595110986233,
+        "valid_utf8_with_eos_rate": 0.9254003933689239,
+        "used_codes_per_level": [
+          25,
+          70,
+          150,
+          280,
+          262
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 7000,
+      "loss": 0.1941479742527008,
+      "gradient_norm": 0.16066770255565643,
+      "elapsed_seconds": 105.9246736279456,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.995911195551806,
+        "exact_chunk_rate": 0.709328463051419,
+        "eos_accuracy": 0.9994380443944928,
+        "valid_utf8_with_eos_rate": 0.9339702163529081,
+        "used_codes_per_level": [
+          22,
+          68,
+          157,
+          297,
+          283
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 8000,
+      "loss": 0.1911001205444336,
+      "gradient_norm": 0.118265300989151,
+      "elapsed_seconds": 121.20148251997307,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9961259878786268,
+        "exact_chunk_rate": 0.7325091317785895,
+        "eos_accuracy": 0.9991570665917393,
+        "valid_utf8_with_eos_rate": 0.9246979488620399,
+        "used_codes_per_level": [
+          21,
+          67,
+          157,
+          319,
+          288
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 9000,
+      "loss": 0.2155841886997223,
+      "gradient_norm": 0.21805885434150696,
+      "elapsed_seconds": 136.32042364694644,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9964991065082075,
+        "exact_chunk_rate": 0.7488058443382972,
+        "eos_accuracy": 0.9988760887889857,
+        "valid_utf8_with_eos_rate": 0.9341107052542849,
+        "used_codes_per_level": [
+          22,
+          67,
+          154,
+          323,
+          302
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 10000,
+      "loss": 0.16396811604499817,
+      "gradient_norm": 0.12502489984035492,
+      "elapsed_seconds": 151.3834206929896,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9962156692109593,
+        "exact_chunk_rate": 0.714667041303737,
+        "eos_accuracy": 0.9988760887889857,
+        "valid_utf8_with_eos_rate": 0.9409946614217477,
+        "used_codes_per_level": [
+          18,
+          68,
+          158,
+          329,
+          312
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    }
+  ],
+  "quality_ready": false,
+  "meaning": "finite codec run; generator not trained by this command"
+}

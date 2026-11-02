@@ -1,0 +1,24 @@
+{
+  "observed_unix": 1793549044.8241196,
+  "unit": "ncm-generator-v10-uncached",
+  "updates_observed": 267,
+  "scheduled_updates": 3000,
+  "runtime_limit_hours": 12,
+  "teacher_chunks_admitted": 430,
+  "datasets": [
+    "TeichAI/Ox-Alpha-10k",
+    "TeichAI/DeepSeek-v4-Pro-Agent"
+  ],
+  "latest_completed_code_evaluation": {
+    "step": 250,
+    "passed": 0,
+    "evaluated": 12
+  },
+  "peak_allocated_bytes": {
+    "cuda:0": 6151387648,
+    "cuda:1": 9831412224
+  },
+  "quality_ready": false,
+  "status": "training continued after failed first development evaluation; not a usable model",
+  "scope": "Snapshot; consult the systemd service and live run directory for later results"
+}

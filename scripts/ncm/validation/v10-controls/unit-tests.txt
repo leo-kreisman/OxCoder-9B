@@ -1,0 +1,63 @@
+test_area_configuration_targets_and_inference_inputs_agree (test_codec_context.ContextProbeTests) ... ok
+test_coarse_auxiliary_loss_has_encoder_gradient_and_preserves_eval (test_codec_context.ContextProbeTests) ... ok
+test_complete_selection_prioritizes_intact_documents (test_codec_context.ContextProbeTests) ... ok
+test_contextual_encoder_reaches_entire_window (test_codec_context.ContextProbeTests) ... ok
+test_frozen_representation_digest_ignores_decoder_but_detects_encoder_changes (test_codec_context.ContextProbeTests) ... ok
+test_old_codec_defaults_are_preserved_and_pooling_change_rejected (test_codec_context.ContextProbeTests) ... ok
+test_tokenwise_linear_pooling_observes_only_middle_positions (test_codec_context.ContextProbeTests) ... ok
+test_correct_and_incorrect_are_graded_outside_worker (test_coding_eval.ExecutionTests) ... ok
+test_early_exit_cannot_report_a_pass (test_coding_eval.ExecutionTests) ... ok
+test_mutation_and_filesystem_isolation (test_coding_eval.ExecutionTests) ... ok
+test_requires_completed_audited_initialization_and_matching_codec (test_continuation.ContinuationTests) ... ok
+test_codec_weights_only_initialization (test_followup.FollowupTests) ... ok
+test_complete_conditioning_never_truncates_or_leaks_target (test_followup.FollowupTests) ... ok
+test_complete_gate_cannot_be_bypassed_by_chunk_score (test_followup.FollowupTests) ... ok
+test_coverage_batch_has_one_end_then_padding (test_followup.FollowupTests) ... ok
+test_exact_curriculum_keeps_evaluation_failures (test_followup.FollowupTests) ... ok
+test_full_response_and_split_provenance (test_followup.FollowupTests) ... ok
+test_head_uses_adamw_in_both_arms (test_followup.FollowupTests) ... ok
+test_muon_partition_and_resume (test_followup.FollowupTests) ... ok
+test_muon_rejects_embedding_only_model (test_followup.FollowupTests) ... ok
+test_nonfinite_rejected (test_followup.FollowupTests) ... ok
+test_revival_only_changes_unused_fine_codes (test_followup.FollowupTests) ... ok
+test_spectral_transpose_and_reference (test_followup.FollowupTests) ... ok
+test_tokenwise_codec_has_real_quantization_gradients (test_followup.FollowupTests) ... ok
+test_zero_gradient_and_checkpoint_resume (test_followup.FollowupTests) ... ok
+test_calibration_starts_at_training_priors_despite_norm_imbalance (test_geometry.GeometryTests) ... ok
+test_distance_head_and_gradient (test_geometry.GeometryTests) ... ok
+test_nearest_head_preserves_exact_residual_identity_despite_unequal_frequencies (test_geometry.GeometryTests) ... ok
+test_normalized_head_resists_feature_scale_and_zero (test_geometry.GeometryTests) ... ok
+test_sampler_excludes_validation_and_retains_sources (test_geometry.GeometryTests) ... ok
+test_byte_loss_updates_generator_without_updating_codec (test_pipeline.PipelineTests) ... ok
+test_checkpoint_roundtrip (test_pipeline.PipelineTests) ... ok
+test_chunk_termination_has_gradient_and_inference_output (test_pipeline.PipelineTests) ... ok
+test_codec_gradient_and_code_decode (test_pipeline.PipelineTests) ... ok
+test_concept_normalization_preserves_prompt_and_gradient (test_pipeline.PipelineTests) ... ok
+test_curriculum_separates_source_teacher_and_end_cases (test_pipeline.PipelineTests) ... ok
+test_data_checksum_and_group_leak_rejected (test_pipeline.PipelineTests) ... ok
+test_failed_codec_blocks_quality_training_before_loading_backbone (test_pipeline.PipelineTests) ... ok
+test_generator_train_and_generate_all_levels (test_pipeline.PipelineTests) ... ok
+test_geometry_generator_checkpoint_roundtrip_and_gradients (test_pipeline.PipelineTests) ... ok
+test_inverse_head_permutation (test_pipeline.PipelineTests) ... ok
+test_nearest_geometry_restores_frozen_bias_and_residual_byte_gradient (test_pipeline.PipelineTests) ... ok
+test_no_target_level_leakage (test_pipeline.PipelineTests) ... ok
+test_norm_and_decay_inversion (test_pipeline.PipelineTests) ... ok
+test_oracle_zero_does_not_use_target_codes (test_pipeline.PipelineTests) ... ok
+test_parallel_level_mask_preserves_prefix (test_pipeline.PipelineTests) ... ok
+test_split_and_agent_roles (test_pipeline.PipelineTests) ... ok
+test_uncached_warmup_detaches_backbone_but_trains_head (test_pipeline.PipelineTests) ... ok
+test_utf8_and_whitespace_roundtrip (test_pipeline.PipelineTests) ... ok
+test_batched_levels_match_outputs_gradients_and_isolate_padding (test_prefix.PrefixTests) ... [transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+ok
+test_generator_batched_heads_match_and_warmup_detaches_backbone (test_prefix.PrefixTests) ... ok
+test_prefill_chunking_and_forks_match_full_forward (test_prefix.PrefixTests) ... ok
+test_reject_stale_state_after_adapter_update (test_prefix.PrefixTests) ... ok
+test_target_gradients_and_checkpoint_recompute (test_prefix.PrefixTests) ... ok
+
+----------------------------------------------------------------------
+Ran 54 tests in 0.703s
+
+OK

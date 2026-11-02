@@ -1,0 +1,12 @@
+{
+  "training_candidates": 41923,
+  "training_kept": 41899,
+  "evaluation_filtered": false,
+  "quality_ready": false,
+  "scope": "training curriculum only; broad reconstruction and generated-code quality remain separate",
+  "sources": {
+    "TeichAI/DeepSeek-v4-Pro-Agent": 3421,
+    "TeichAI/Ox-Alpha-10k": 38478
+  },
+  "distilled_training_kept": 430
+}

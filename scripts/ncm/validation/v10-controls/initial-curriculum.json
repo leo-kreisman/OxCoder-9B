@@ -1,0 +1,15 @@
+{
+  "training_candidates": 7551,
+  "training_kept": 7550,
+  "rejected_ids": [
+    "7d111257e05db7e74ea4cc91af2ddc44681f1d68455a43bdd23b0f2ca181f3d5:1:byte-20"
+  ],
+  "evaluation_filtered": false,
+  "quality_ready": false,
+  "scope": "training curriculum only; broad reconstruction and generated-code quality remain separate",
+  "sources": {
+    "TeichAI/DeepSeek-v4-Pro-Agent": 85,
+    "TeichAI/Ox-Alpha-10k": 7465
+  },
+  "distilled_training_kept": 383
+}

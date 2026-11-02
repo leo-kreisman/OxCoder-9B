@@ -1,0 +1,183 @@
+{
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "server_binary_sha256": "3e4a917fa95deccc0ac85aca0d8ad5e924204c3daf68d11a3c0aa87d92590f2d",
+  "temperature": 0,
+  "max_tokens": 512,
+  "reasoning": false,
+  "tasks": [
+    {
+      "task": "factorial",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 126,
+        "prompt_tokens": 48,
+        "total_tokens": 174,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "seconds": 2.1741091889853124
+    },
+    {
+      "task": "unique",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 52,
+        "prompt_tokens": 42,
+        "total_tokens": 94,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 1.0517031160125043
+    },
+    {
+      "task": "chunks",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 163,
+        "prompt_tokens": 54,
+        "total_tokens": 217,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 2.698192042997107
+    },
+    {
+      "task": "balanced",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 104,
+        "prompt_tokens": 46,
+        "total_tokens": 150,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 1.8504472660133615
+    },
+    {
+      "task": "gcd",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 85,
+        "prompt_tokens": 52,
+        "total_tokens": 137,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 1.5687856360164005
+    },
+    {
+      "task": "merge_intervals",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 151,
+        "prompt_tokens": 51,
+        "total_tokens": 202,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 2.5128246330132242
+    },
+    {
+      "task": "flatten",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 117,
+        "prompt_tokens": 44,
+        "total_tokens": 161,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 2.0155760449997615
+    },
+    {
+      "task": "rotate",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 84,
+        "prompt_tokens": 50,
+        "total_tokens": 134,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 1.5506478819879703
+    },
+    {
+      "task": "word_counts",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 110,
+        "prompt_tokens": 44,
+        "total_tokens": 154,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 1.9794101559964474
+    },
+    {
+      "task": "transpose",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 102,
+        "prompt_tokens": 49,
+        "total_tokens": 151,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 1.7885907879972365
+    },
+    {
+      "task": "binary_search",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 125,
+        "prompt_tokens": 49,
+        "total_tokens": 174,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 2.2317277810070664
+    },
+    {
+      "task": "is_prime",
+      "passed": true,
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 129,
+        "prompt_tokens": 38,
+        "total_tokens": 167,
+        "prompt_tokens_details": {
+          "cached_tokens": 14
+        }
+      },
+      "seconds": 2.2611652500054333
+    }
+  ],
+  "scope": "original AR source on the reused coding development diagnostic; never admitted to student training",
+  "used_in_training": false,
+  "quality_ready": false,
+  "complete": true,
+  "passed": 12,
+  "evaluated": 12
+}

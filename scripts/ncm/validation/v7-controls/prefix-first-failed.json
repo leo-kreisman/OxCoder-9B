@@ -1,0 +1,83 @@
+{
+  "checkpoint_sha256": "a777a39857032dd33f6e321f87df56a1d389a857ab4765e51527ada99f3d36ce",
+  "records": [
+    {
+      "prompt_tokens": 64,
+      "relative_logit_errors": [
+        0.0027938976418226957,
+        0.006552916020154953,
+        0.0063328612595796585,
+        0.0,
+        0.006596400402486324
+      ],
+      "code_argmax_agreement": [
+        1.0,
+        1.0,
+        0.9375,
+        1.0,
+        0.984375
+      ],
+      "full_seconds": 1.5444592970015947,
+      "cached_seconds_including_prefill": 7.882895485003246,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 512,
+      "relative_logit_errors": [
+        0.003345254808664322,
+        0.007871368899941444,
+        0.006707839202135801,
+        0.01112082414329052,
+        0.007102086208760738
+      ],
+      "code_argmax_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.984375
+      ],
+      "full_seconds": 1.0813694009993924,
+      "cached_seconds_including_prefill": 0.5816388759994879,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 2048,
+      "relative_logit_errors": [
+        0.0029789218679070473,
+        0.0132656404748559,
+        0.006902990862727165,
+        0.010882490314543247,
+        0.007187251467257738
+      ],
+      "code_argmax_agreement": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9921875
+      ],
+      "full_seconds": 11.529749362001894,
+      "cached_seconds_including_prefill": 1.011897955002496,
+      "passed": true
+    }
+  ],
+  "target_gradients": [
+    {
+      "level": 0,
+      "relative_error": 0.07200126349925995,
+      "finite": true,
+      "passed": false
+    },
+    {
+      "level": 4,
+      "relative_error": 0.049835074692964554,
+      "finite": true,
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "complete": true,
+  "quality_ready": false,
+  "scope": "synthetic token-ID prompts; numerical/cache check, not coding quality or deployment throughput"
+}

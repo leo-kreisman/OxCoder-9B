@@ -1,0 +1,128 @@
+{
+  "sources": [
+    {
+      "dataset": "TeichAI/Ox-Alpha-10k",
+      "revision": "ae678ee78880e14251a553a0d0dc8ec6bd6dad6c",
+      "files": [
+        {
+          "file": "train.jsonl",
+          "rows_read": 128,
+          "bytes_read": 1608319,
+          "read_prefix_sha256": "f8c63c016f84773b2866f2056d2c4021e64654cf223cda2ee811c7aff74b9f53"
+        }
+      ]
+    },
+    {
+      "dataset": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "revision": "abbf7b71b145633b60beb21ddc0d158582fd80dd",
+      "files": [
+        {
+          "file": "2026-05-07T18-19-29-863Z_019e03aa-8ec4-768e-9833-edc257e9203a.jsonl",
+          "rows_read": 64,
+          "bytes_read": 197369,
+          "read_prefix_sha256": "c0d916af6a4672de1d318d6cfd8a193fc5a8a38ecdbbb901608695253f4a1246"
+        },
+        {
+          "file": "2026-05-07T18-19-29-958Z_019e03aa-8f23-73ca-a75c-4e721ec154dc.jsonl",
+          "rows_read": 18,
+          "bytes_read": 82831,
+          "read_prefix_sha256": "671911eaef804668a5a872c7af42c9003d9c77202bba932748835023ac17cb6f"
+        },
+        {
+          "file": "2026-05-07T18-19-30-128Z_019e03aa-8fcf-73ec-96bc-2429e8ebff07.jsonl",
+          "rows_read": 6,
+          "bytes_read": 6085,
+          "read_prefix_sha256": "5ab93aaca7d1693ac51d85bda1e5f69d540ace7b5a5067612cf49ce2f14c297b"
+        },
+        {
+          "file": "2026-05-07T18-19-30-147Z_019e03aa-8fe1-723e-86ef-7583b4bad69b.jsonl",
+          "rows_read": 14,
+          "bytes_read": 20618,
+          "read_prefix_sha256": "2342b53ae3a594c7c471098e8e1c573ba8d621cae7da75faddc2153e503185c6"
+        },
+        {
+          "file": "2026-05-07T18-19-30-309Z_019e03aa-9081-71e4-ba8d-ebe6a5b2ab3d.jsonl",
+          "rows_read": 6,
+          "bytes_read": 4187,
+          "read_prefix_sha256": "8156ff5e3bd98652d229e477df65fc494d533bb27bc49501bac8da4bc81d0421"
+        },
+        {
+          "file": "2026-05-07T18-19-30-642Z_019e03aa-91d1-766e-9379-c378577f7981.jsonl",
+          "rows_read": 6,
+          "bytes_read": 37608,
+          "read_prefix_sha256": "cff3a49a4b6ced90e62ccd69ef4cf7547adeb1374b25b1ca05456ec7b44631ca"
+        },
+        {
+          "file": "2026-05-07T18-19-31-055Z_019e03aa-936f-758e-99af-3c8ee3b8e106.jsonl",
+          "rows_read": 77,
+          "bytes_read": 193827,
+          "read_prefix_sha256": "6c11d746340ad4882d2d98c09f8ac1599cad5f1f42e0a8b6be5387ce8e735acc"
+        },
+        {
+          "file": "2026-05-07T18-19-31-116Z_019e03aa-93ab-75ab-a3fa-34f027c975ba.jsonl",
+          "rows_read": 26,
+          "bytes_read": 137272,
+          "read_prefix_sha256": "774461a56da51ae6994c7aca1b8beb83777abc207db8f49b19f5109abf0807ec"
+        },
+        {
+          "file": "2026-05-07T18-19-31-321Z_019e03aa-9477-7039-a3c6-ff219ec38f1c.jsonl",
+          "rows_read": 10,
+          "bytes_read": 45610,
+          "read_prefix_sha256": "65a167003073d175fc20d7f948b3c098c6457172ba635a1782b32ed012612875"
+        },
+        {
+          "file": "2026-05-07T18-19-31-333Z_019e03aa-9484-74b9-9bbf-57cb04cc5db0.jsonl",
+          "rows_read": 6,
+          "bytes_read": 6113,
+          "read_prefix_sha256": "650ef692cd16f6f6133e94da965724772f774ca3ecdc8dcbfdb3de78e7a75af7"
+        },
+        {
+          "file": "2026-05-07T18-19-31-491Z_019e03aa-9523-743b-aec6-c8c2b0e3598f.jsonl",
+          "rows_read": 54,
+          "bytes_read": 146836,
+          "read_prefix_sha256": "b48352d0338e4cf089a2f7e46a6ee97c50b4e8fd4d6012120163255b9a030bbb"
+        },
+        {
+          "file": "2026-05-07T18-19-32-893Z_019e03aa-9a9c-7629-82e8-abeba1c01024.jsonl",
+          "rows_read": 8,
+          "bytes_read": 7484,
+          "read_prefix_sha256": "445e76a9143eb8f6a8ead00ae13ecd25deb7bfe4b8d339568d1b5fe4ec6f1b96"
+        },
+        {
+          "file": "2026-05-07T18-19-34-540Z_019e03aa-a10c-70e8-adbc-4f480ba477c0.jsonl",
+          "rows_read": 78,
+          "bytes_read": 291946,
+          "read_prefix_sha256": "d768d66b84b905d64d70a2e7c21432ad901d90ea0939885212f2de8f456c1ced"
+        },
+        {
+          "file": "2026-05-07T18-19-34-756Z_019e03aa-a1e3-76ff-bebd-7e5ad9b13f10.jsonl",
+          "rows_read": 26,
+          "bytes_read": 29420,
+          "read_prefix_sha256": "1a25f23274eda4eaeb2693ad76e78e4f2c48b186682426bb0435f13a9fdc5601"
+        },
+        {
+          "file": "2026-05-07T18-19-39-422Z_019e03aa-b41d-76fd-8dc8-835a4467c4a0.jsonl",
+          "rows_read": 31,
+          "bytes_read": 136961,
+          "read_prefix_sha256": "e99ac1268429e914264e265bc3cad673af002438dd88bed5bbb3b3aa93357d3b"
+        },
+        {
+          "file": "2026-05-07T18-19-39-670Z_019e03aa-b515-70cc-b524-b7c3e28a7e1b.jsonl",
+          "rows_read": 14,
+          "bytes_read": 47360,
+          "read_prefix_sha256": "44fcd5db5dc0b229936a460d5d1d061a862f5f96ccbe182b8ca721a1315218c0"
+        }
+      ]
+    }
+  ],
+  "length": 128,
+  "counts": {
+    "train": 1304,
+    "validation": 147,
+    "test": 230
+  },
+  "examples_sha256": "b8bf585fb05481ed0ef432f94420ce7c285a1b72af3d20644637af11e8a81e0b",
+  "split_policy": "conversation-content hash, 80/10/10; globally deduplicated target chunks",
+  "scope": "bounded pilot subset; chunks are not complete coding tasks",
+  "synthetic_teacher": "these datasets are not OxCoder-generated ground truth"
+}

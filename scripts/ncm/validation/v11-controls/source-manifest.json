@@ -1,0 +1,7 @@
+{
+  "scripts/ncm/open_corpus.py": "c61219ea229d157b51cdf4fded3b10239a59e487d66b3aebcdb32c1fa9e0d022",
+  "scripts/ncm/open_baseline.py": "583d92aaad7893188b27d470d76cd7c789d4da0e705d03fecc9211987e2bcda1",
+  "scripts/ncm/run_open_baseline.py": "ed86231a1aea3093e82f105d94742674c706105ce73a6d6f427ebd5dd96b8be6",
+  "scripts/ncm/OPEN-BASELINE-V11.md": "73f2335c5901c3192734fc98f51b8aae51633041a159d87b021bb3ff52b5bc9b",
+  "tests/ncm/test_open_baseline.py": "2571de86d0e151ba30925dbe1e135f3b1524c09510c799f985c9b99a72da9f43"
+}

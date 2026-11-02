@@ -1,0 +1,16 @@
+{
+  "scope": "running continuation provenance; not a completed or usable coding model",
+  "files": {
+    "tests.log": "81b062be6a51ae3497cb107ba070d03fa92da31ce5aba9708e9e9d6b7847efea",
+    "input-scale.json": "09cfbe1a90f69b99afb2156be99d181a3751f0bb0c31c1cd33959dbd36c602c0",
+    "launch.sh": "e705b8c99500a017fb88b1590fb2e41ef417bd8abced9b276616dea333639bce",
+    "initialization-manifest.json": "302d250c5f3a849600b3b737bdd7e83183e9164a4397571fed6f8aaf5c253029",
+    "backbone-audit.json": "eca4515610acc227648a31def2e2d1abc5febf062dc07e0ef46678301e1b98e8",
+    "sampling.json": "ecc3a21ff770e697106c09454cf80584a054f63226adea265d26794a0aceb4bd",
+    "checkpoint-integrity-100.json": "7b913a2029d060cf3c86c5e666717a77a5d8242b8b602f85a1975284b09a82f6"
+  },
+  "kernel_wheels": {
+    "flash_linear_attention-0.6.0-py3-none-any.whl": "6dec9735f8454523c13553622e98aff30152dde6586b4ac7d88010fbb7a06b5f",
+    "fla_core-0.6.0-py3-none-any.whl": "b0708b70e0b119cd58a0a5146ea56cb175cef6ed969d8ac60267e3e077ce3ebd"
+  }
+}

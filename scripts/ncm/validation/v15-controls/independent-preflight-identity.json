@@ -1,0 +1,69 @@
+{
+  "stage": "generator",
+  "format": 1,
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "codec_step": 6000,
+  "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+  "rank": 32,
+  "lr": 0.0001,
+  "seed": 9161,
+  "prompt_tokens": 2048,
+  "smoke": true,
+  "architecture": "hybrid-causal-mixer-next-concept-v1",
+  "optimizer": {
+    "name": "Muon hidden matrices + AdamW classifiers/interfaces",
+    "head_lr": 0.0003,
+    "body_lr": 3e-05
+  },
+  "conditioning": "full chat template, full previous chunks, explicit response termination",
+  "full_attention": "causal prefix; bidirectional target level; recurrent layers remain causal",
+  "layer_split": [
+    12,
+    20
+  ],
+  "admission": "exactly reconstructed train chunks only; all selected validation errors retained; broad codec gate failed",
+  "concept_input_norm": 0.8,
+  "kernel_backend": {
+    "name": "fla",
+    "version": "0.6.0",
+    "torch": "2.11.0+cu128"
+  },
+  "kernel_audit_sha256": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+  "head_kind": "untied",
+  "cached_prefix": false,
+  "head_input_norm": true,
+  "calibrated_head": false,
+  "initialization": {
+    "checkpoint_sha256": "a4ccfd9a812e6d129c59e79ae39c5bcb6495a6cc6ff3c5b89b72e7283dc15f08",
+    "scope": "retain body/adapters; fresh independent classifiers"
+  },
+  "prefix_audit_sha256": "ef7e47f2b7be0df15dd2eb4abd1870b70e23d1d5a52b6778402dc048cd574c67",
+  "prepared_sha256": "d110694ad0374b0ca30c72bb5e201c2f83d9d9775a55fe5220e797cb3f9996db",
+  "training_recipe": "independent-classifiers-v16",
+  "prefix_gradients": "full-context backward; prefix cache disabled",
+  "full_precision_reductions": true,
+  "head_warmup": 25,
+  "head_lr": 0.0003,
+  "body_lr": 3e-05,
+  "sampling": "80% coding; sqrt response-count source/teacher buckets; uniform response then chunk",
+  "loss": "mean level code CE + 0.1 end BCE; no continuous residual loss",
+  "quality_ready": false,
+  "prefix_audit_outcome": "failed; cache disabled, no tolerance relaxation",
+  "nearest_code": false,
+  "implementation_sha256": {
+    "train_independent.py": "6d417369767177190dd2a6a9ffcf314357c8c5516abd5934b7b4e40e3ee8994e",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+    "geometry.py": "29d45354b4f8966e9ce0920db046ad8623e2bbab561eb56f5f87ff610b8358e6",
+    "train.py": "deda2d93dcdfb3c6cdb9a93f5ec3f773e148adbf2fa1c0d5c9bf242f2af3101f",
+    "train_geometry.py": "c49128d90457268900754537feb0991c0a480bdf2cdf5b43740e35dc30d2d053",
+    "generate_candidate.py": "73f7cedc2018215ced6fa42f84fda5ff8d87fd0b3dbe99c1072caacb5eaab32d",
+    "codec.py": "612564248d6b1018aa417ba1c00a72c7ebb2ea4726319fed3b37268e054a5008"
+  },
+  "planned_steps": 1000,
+  "conditioning_corruption": {
+    "maximum": 0.5,
+    "schedule": "linear from maximum at first level to zero at last; clean warmup; clean labels"
+  },
+  "trainable_parameters": 76587009
+}

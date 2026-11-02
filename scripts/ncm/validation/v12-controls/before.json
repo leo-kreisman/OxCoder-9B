@@ -1,0 +1,45 @@
+{
+  "checkpoint_sha256": "ca43936ecb9842e1cbe7901c5e59bacb8e5fe915ac333d8403838bada29e16f7",
+  "data_sha256": "2b4bae6ae05965b3020601862d2cb658c7cab1a1d69e5c12fb305f3f2d12a466",
+  "diagnostic": {
+    "train": {
+      "windows": 128,
+      "nonpad_tokens": 15886,
+      "code_precision_agreement": 0.9747343018720749,
+      "paths": {
+        "unquantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_windows": 128
+        },
+        "fp32": {
+          "nonpad_accuracy": 0.9558730958076294,
+          "exact_windows": 7
+        },
+        "bf16": {
+          "nonpad_accuracy": 0.9556842502832683,
+          "exact_windows": 6
+        }
+      }
+    },
+    "validation": {
+      "windows": 128,
+      "nonpad_tokens": 15835,
+      "code_precision_agreement": 0.9782688182527302,
+      "paths": {
+        "unquantized": {
+          "nonpad_accuracy": 0.9999368487527629,
+          "exact_windows": 127
+        },
+        "fp32": {
+          "nonpad_accuracy": 0.9530154720555731,
+          "exact_windows": 6
+        },
+        "bf16": {
+          "nonpad_accuracy": 0.9527628670666246,
+          "exact_windows": 5
+        }
+      }
+    }
+  },
+  "quality_ready": false
+}

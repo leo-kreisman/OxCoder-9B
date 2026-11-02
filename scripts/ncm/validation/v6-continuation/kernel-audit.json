@@ -1,0 +1,125 @@
+{
+  "fla": "0.6.0",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "records": [
+    {
+      "length": 64,
+      "output_error": {
+        "relative_l2": 0.004392312839627266,
+        "max_absolute": 0.00048828125,
+        "finite": true
+      },
+      "gradient_errors": [
+        {
+          "relative_l2": 0.004400264471769333,
+          "max_absolute": 1.862645149230957e-09,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.004726792685687542,
+          "max_absolute": 2.7939677238464355e-09,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.004053508397191763,
+          "max_absolute": 9.313225746154785e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.003813935210928321,
+          "max_absolute": 5.702759153791703e-09,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.004067148547619581,
+          "max_absolute": 1.4901161193847656e-08,
+          "finite": true
+        }
+      ],
+      "passed": true,
+      "reference_forward_backward_seconds": 0.003464985330841349,
+      "fla_forward_backward_seconds": 0.005244065665465314
+    },
+    {
+      "length": 128,
+      "output_error": {
+        "relative_l2": 0.004429494496434927,
+        "max_absolute": 0.00048828125,
+        "finite": true
+      },
+      "gradient_errors": [
+        {
+          "relative_l2": 0.0043800221756100655,
+          "max_absolute": 9.313225746154785e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.0046987575478851795,
+          "max_absolute": 9.313225746154785e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.0040673017501831055,
+          "max_absolute": 9.313225746154785e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.003792032366618514,
+          "max_absolute": 3.335202336529619e-09,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.004176980350166559,
+          "max_absolute": 7.450580596923828e-09,
+          "finite": true
+        }
+      ],
+      "passed": true,
+      "reference_forward_backward_seconds": 0.004682470001474333,
+      "fla_forward_backward_seconds": 0.0026829086661261194
+    },
+    {
+      "length": 512,
+      "output_error": {
+        "relative_l2": 0.004403053317219019,
+        "max_absolute": 0.00048828125,
+        "finite": true
+      },
+      "gradient_errors": [
+        {
+          "relative_l2": 0.004431600216776133,
+          "max_absolute": 2.3283064365386963e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.00470587145537138,
+          "max_absolute": 2.3283064365386963e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.004099413752555847,
+          "max_absolute": 2.3283064365386963e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.003798380959779024,
+          "max_absolute": 8.012221996978042e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.004164408426731825,
+          "max_absolute": 1.862645149230957e-09,
+          "finite": true
+        }
+      ],
+      "passed": true,
+      "reference_forward_backward_seconds": 0.014381726999999955,
+      "fla_forward_backward_seconds": 0.0029460410005412996
+    }
+  ],
+  "passed": true,
+  "scope": "isolated BF16 Gated-DeltaNet operator and gradients; not end-to-end speed",
+  "relative_l2_tolerance": 0.02,
+  "quality_ready": false
+}

@@ -1,0 +1,24 @@
+test_complete_gate_cannot_be_bypassed_by_chunk_score (test_followup.FollowupTests) ... ok
+test_full_response_and_split_provenance (test_followup.FollowupTests) ... ok
+test_head_uses_adamw_in_both_arms (test_followup.FollowupTests) ... ok
+test_muon_partition_and_resume (test_followup.FollowupTests) ... ok
+test_muon_rejects_embedding_only_model (test_followup.FollowupTests) ... ok
+test_nonfinite_rejected (test_followup.FollowupTests) ... ok
+test_spectral_transpose_and_reference (test_followup.FollowupTests) ... ok
+test_tokenwise_codec_has_real_quantization_gradients (test_followup.FollowupTests) ... ok
+test_zero_gradient_and_checkpoint_resume (test_followup.FollowupTests) ... ok
+test_checkpoint_roundtrip (test_pipeline.PipelineTests) ... ok
+test_codec_gradient_and_code_decode (test_pipeline.PipelineTests) ... ok
+test_data_checksum_and_group_leak_rejected (test_pipeline.PipelineTests) ... ok
+test_failed_codec_blocks_quality_training_before_loading_backbone (test_pipeline.PipelineTests) ... ok
+test_generator_train_and_generate_all_levels (test_pipeline.PipelineTests) ... ok
+test_inverse_head_permutation (test_pipeline.PipelineTests) ... ok
+test_no_target_level_leakage (test_pipeline.PipelineTests) ... ok
+test_norm_and_decay_inversion (test_pipeline.PipelineTests) ... ok
+test_split_and_agent_roles (test_pipeline.PipelineTests) ... ok
+test_utf8_and_whitespace_roundtrip (test_pipeline.PipelineTests) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.135s
+
+OK

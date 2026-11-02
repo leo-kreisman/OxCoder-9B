@@ -1,0 +1,10 @@
+{
+  "host_available": 32969981952,
+  "devices": [
+    {
+      "device": "cuda:1",
+      "free": 16301490176,
+      "allocator_cap": 8589934592
+    }
+  ]
+}

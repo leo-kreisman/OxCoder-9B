@@ -1,0 +1,54 @@
+[
+  {
+    "step": 500,
+    "training_seconds": 16.104761322319973,
+    "loss": 1.0199732780456543,
+    "documents": 8,
+    "tokens": 19259,
+    "token_accuracy": 0.8858715405784309,
+    "exact_window_rate": 0.017326732673267328,
+    "exact_document_rate": 0.0,
+    "pre_tokenizer_exact_rate": 1.0,
+    "passed": false,
+    "gate": "all screened documents byte-exact and token accuracy >= 99.99%; screening is not a release guarantee"
+  },
+  {
+    "step": 1000,
+    "training_seconds": 31.16227440617513,
+    "loss": 0.9746901392936707,
+    "documents": 8,
+    "tokens": 19259,
+    "token_accuracy": 0.8722155875175243,
+    "exact_window_rate": 0.027227722772277228,
+    "exact_document_rate": 0.0,
+    "pre_tokenizer_exact_rate": 1.0,
+    "passed": false,
+    "gate": "all screened documents byte-exact and token accuracy >= 99.99%; screening is not a release guarantee"
+  },
+  {
+    "step": 1500,
+    "training_seconds": 46.496013595955446,
+    "loss": 0.9748226404190063,
+    "documents": 8,
+    "tokens": 19259,
+    "token_accuracy": 0.8833272755594787,
+    "exact_window_rate": 0.0297029702970297,
+    "exact_document_rate": 0.0,
+    "pre_tokenizer_exact_rate": 1.0,
+    "passed": false,
+    "gate": "all screened documents byte-exact and token accuracy >= 99.99%; screening is not a release guarantee"
+  },
+  {
+    "step": 2000,
+    "training_seconds": 62.16729242121801,
+    "loss": 0.8683735132217407,
+    "documents": 8,
+    "tokens": 19259,
+    "token_accuracy": 0.885248455267667,
+    "exact_window_rate": 0.027227722772277228,
+    "exact_document_rate": 0.0,
+    "pre_tokenizer_exact_rate": 1.0,
+    "passed": false,
+    "gate": "all screened documents byte-exact and token accuracy >= 99.99%; screening is not a release guarantee"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+  "config": {
+    "length": 128,
+    "width": 128,
+    "heads": 4,
+    "layers": 2,
+    "codes": 4096,
+    "levels": [
+      4,
+      16,
+      64,
+      128
+    ],
+    "downsample": "area",
+    "coarse_loss_weight": 0.05
+  },
+  "lr": 0.001,
+  "batch": 16,
+  "seed": 17,
+  "stage": "codec",
+  "format": 1,
+  "optimizer": {
+    "name": "torch-Muon+AdamW",
+    "torch": "2.11.0+cu128",
+    "muon_lr": 0.001,
+    "adjust_lr_fn": "match_rms_adamw",
+    "momentum": 0.95,
+    "ns_steps": 5,
+    "weight_decay": 0.01
+  }
+}

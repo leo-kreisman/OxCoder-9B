@@ -1,0 +1,286 @@
+[
+  {
+    "step": 0,
+    "examples": [
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-0",
+        "teacher_forced_code_loss": 9.252322959899903,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.6868237257003784,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-1",
+        "teacher_forced_code_loss": 8.960081100463867,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.716176450252533,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-0",
+        "teacher_forced_code_loss": 9.312133407592773,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.6931053400039673,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-1",
+        "teacher_forced_code_loss": 8.843414115905762,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.6185317039489746,
+        "expected_final_chunk": false
+      }
+    ],
+    "quality_ready": false,
+    "scope": "four development chunks, real free-running concept predictions; not a coding benchmark"
+  },
+  {
+    "step": 100,
+    "examples": [
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-0",
+        "teacher_forced_code_loss": 4.262061011791229,
+        "teacher_forced_code_accuracy_by_level": [
+          1.0,
+          0.0,
+          0.0,
+          0.015625,
+          0.078125
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.03926147520542145,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-1",
+        "teacher_forced_code_loss": 4.901029205322265,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.25,
+          0.0,
+          0.015625,
+          0.03125
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.0421740747988224,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-0",
+        "teacher_forced_code_loss": 5.086929702758789,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.0625,
+          0.015625
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.019954392686486244,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-1",
+        "teacher_forced_code_loss": 4.943853282928467,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0625,
+          0.046875,
+          0.015625
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.04673204943537712,
+        "expected_final_chunk": false
+      }
+    ],
+    "quality_ready": false,
+    "scope": "four development chunks, real free-running concept predictions; not a coding benchmark"
+  },
+  {
+    "step": 200,
+    "examples": [
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-0",
+        "teacher_forced_code_loss": 4.10796674489975,
+        "teacher_forced_code_accuracy_by_level": [
+          1.0,
+          0.0,
+          0.0,
+          0.03125,
+          0.15625
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.0006138500175438821,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-1",
+        "teacher_forced_code_loss": 4.310964941978455,
+        "teacher_forced_code_accuracy_by_level": [
+          1.0,
+          0.0,
+          0.0,
+          0.078125,
+          0.078125
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.016330834478139877,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-0",
+        "teacher_forced_code_loss": 5.120291137695313,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0625,
+          0.078125,
+          0.0703125
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.001597701688297093,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-1",
+        "teacher_forced_code_loss": 4.434938597679138,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.046875,
+          0.15625
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.0015022376319393516,
+        "expected_final_chunk": false
+      }
+    ],
+    "quality_ready": false,
+    "scope": "four development chunks, real free-running concept predictions; not a coding benchmark"
+  },
+  {
+    "step": 300,
+    "examples": [
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-0",
+        "teacher_forced_code_loss": 3.629736453294754,
+        "teacher_forced_code_accuracy_by_level": [
+          1.0,
+          0.0,
+          0.0,
+          0.03125,
+          0.1875
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.004091686103492975,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-1",
+        "teacher_forced_code_loss": 4.7093912124633786,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.015625,
+          0.15625
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.0012945302296429873,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-0",
+        "teacher_forced_code_loss": 5.239513301849366,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.03125,
+          0.1640625
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.009076575748622417,
+        "expected_final_chunk": false
+      },
+      {
+        "id": "023af36b00a114c7238e01a5551cb5e873e15f657b8f3310ffa10cee9fda15a3:1:byte-1",
+        "teacher_forced_code_loss": 5.040467357635498,
+        "teacher_forced_code_accuracy_by_level": [
+          0.0,
+          0.0,
+          0.0,
+          0.03125,
+          0.1640625
+        ],
+        "generated_text": null,
+        "valid_utf8_and_eos": false,
+        "exact_generated_chunk": false,
+        "stop_probability": 0.00368550606071949,
+        "expected_final_chunk": false
+      }
+    ],
+    "quality_ready": false,
+    "scope": "four development chunks, real free-running concept predictions; not a coding benchmark"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "identity": {
+    "stage": "generator",
+    "format": 1,
+    "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "codec_sha256": "98749537b7f5b77533edeb9b1d1f7769c1c53d0c28693a86d1f63df9871121a9",
+    "codec_step": 6000,
+    "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+    "rank": 32,
+    "lr": 0.0001,
+    "seed": 7301,
+    "prompt_tokens": 4096,
+    "smoke": false,
+    "architecture": "hybrid-causal-mixer-next-concept-v1",
+    "optimizer": {
+      "name": "Muon hidden matrices + AdamW interfaces",
+      "head_lr": 0.001,
+      "body_lr": 0.0001
+    },
+    "conditioning": "full chat template, full previous chunks, explicit response termination",
+    "full_attention": "causal prefix; bidirectional target level; recurrent layers remain causal",
+    "layer_split": [
+      12,
+      20
+    ],
+    "admission": "exactly reconstructed training subset; broader reconstruction remains unqualified",
+    "concept_input_norm": 0.8,
+    "decoded_byte_loss_weight": 0.2,
+    "sampling": "80% coding; sqrt response-count source/teacher buckets; uniform response then chunk",
+    "kernel_backend": {
+      "name": "fla",
+      "version": "0.6.0",
+      "torch": "2.11.0+cu128"
+    },
+    "kernel_audit_sha256": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+    "initialization": {
+      "checkpoint_sha256": "a777a39857032dd33f6e321f87df56a1d389a857ab4765e51527ada99f3d36ce",
+      "scope": "shared trainable weights; new codebook-tied heads"
+    },
+    "head_kind": "geometry",
+    "cached_prefix": true,
+    "head_input_norm": true,
+    "calibrated_head": true,
+    "prefix_audit_sha256": "95cbda524c81124f2c10f7edf5ecd8531d458433e7fe6cb5eeb042efba269219",
+    "prepared_sha256": "e7e07f537150b9251dca2ca0ee2e0d95ceb55461e030e6f04d0a2a90931b8254",
+    "training_recipe": "geometry-v7",
+    "prefix_gradients": "detached; target-side adapters train",
+    "full_precision_reductions": true,
+    "head_warmup": 100,
+    "head_lr": 0.001,
+    "body_lr": 0.0001,
+    "loss": "mean level code CE + 0.2 normalized residual MSE + 0.2 decoded byte CE + 0.1 end BCE",
+    "quality_ready": false
+  },
+  "complete": false,
+  "checkpoint_step": 500,
+  "last_record": {
+    "step": 509,
+    "loss": 6.521498262882233,
+    "code_accuracy": [
+      0.0,
+      0.25,
+      0.125,
+      0.046875,
+      0.0
+    ],
+    "head_warmup": false,
+    "loss_components": [
+      {
+        "code_ce": 8.362449645996094,
+        "normalized_residual_mse": 1.8590797185897827
+      },
+      {
+        "code_ce": 3.529324531555176,
+        "normalized_residual_mse": 1.7904229164123535
+      },
+      {
+        "code_ce": 4.809860706329346,
+        "normalized_residual_mse": 1.3245890140533447
+      },
+      {
+        "code_ce": 5.0169758796691895,
+        "normalized_residual_mse": 1.0753329992294312
+      },
+      {
+        "code_ce": 6.883786201477051,
+        "normalized_residual_mse": 1.2057994604110718,
+        "byte_ce": 2.5507097244262695,
+        "end_bce": 0.006678581237792969
+      }
+    ],
+    "training_example": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:2:teacher:byte-0",
+    "coding_response": true,
+    "distilled": true,
+    "prompt_tokens": 671,
+    "seconds": 1.7885871449980186,
+    "adapter_gradient_norms": [
+      1.65625,
+      1.0859375,
+      1.0625,
+      1.0625,
+      0.87109375,
+      0.9140625,
+      1.65625,
+      1.703125,
+      1.4296875,
+      1.2421875,
+      1.65625,
+      1.9609375,
+      1.09375,
+      0.9921875,
+      0.875,
+      1.2421875,
+      0.97265625,
+      0.51953125,
+      0.890625,
+      1.09375,
+      0.92578125,
+      1.015625,
+      0.80859375,
+      0.64453125,
+      0.73828125,
+      0.7578125,
+      0.8515625,
+      1.1953125,
+      1.359375,
+      1.8125,
+      2.46875,
+      3.65625
+    ],
+    "peak_allocated_bytes": {
+      "cuda:0": 5647935488,
+      "cuda:1": 9428945408
+    }
+  },
+  "note": "stopped temporarily for full-model level-batching audit; unused later updates may not be checkpointed",
+  "quality_ready": false
+}

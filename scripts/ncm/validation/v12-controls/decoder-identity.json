@@ -1,0 +1,86 @@
+{
+  "stage": "frozen-representation-decoder-calibration-v12",
+  "codec_config": {
+    "in_vocab_size": 8192,
+    "context_length": 128,
+    "embed_dim": 256,
+    "vqvae_vocab_size": [
+      4096,
+      4096,
+      4096,
+      4096,
+      4096,
+      4096,
+      4096,
+      4096,
+      4096,
+      4096,
+      4096,
+      4096
+    ],
+    "n_layers": 4,
+    "compression_factor": 1,
+    "dropout": 0.1,
+    "pre_quant_groupnorm": 8,
+    "use_qk_norm": true,
+    "enc_layers": 0,
+    "dec_layers": 1,
+    "vector_quantizer_config": {
+      "clss": "multiscale_residual_vector_quantizer",
+      "decay": 0.95,
+      "epsilon": 1e-05,
+      "commitment_cost": 0.25,
+      "learned_l1_sampling": true,
+      "learned_l1_cascade": true,
+      "learned_l1_cascade_base": 4,
+      "restart_threshold": 0.0,
+      "quant_resi": {
+        "enabled": true,
+        "ratio": 0.5,
+        "share_mode": 0
+      },
+      "aux": {
+        "fine_drop": {
+          "prob": 0.5,
+          "min_keep": 1
+        }
+      },
+      "levels": {
+        "use_manual_levels": true,
+        "manual_levels": [
+          1,
+          8,
+          16,
+          24,
+          32,
+          40,
+          52,
+          64,
+          76,
+          92,
+          108,
+          128
+        ]
+      }
+    }
+  },
+  "data_sha256": "2b4bae6ae05965b3020601862d2cb658c7cab1a1d69e5c12fb305f3f2d12a466",
+  "initial_checkpoint_sha256": "ca43936ecb9842e1cbe7901c5e59bacb8e5fe915ac333d8403838bada29e16f7",
+  "representation_sha256": "99f2f5ebe731b1f749e75776eb533f933717abd0d1ee46c6e7bea715a61f230d",
+  "trainer_sha256": "37dd7cab3dc62e327a8264b36ac76302ecd112c668a109393356a010c6e5f613",
+  "diagnostic_sha256": "3d40b308dd2d973818dce3bf3eed01a468aa7642e2e5d24b962b7fa5c8c11d40",
+  "baseline_sha256": "583d92aaad7893188b27d470d76cd7c789d4da0e705d03fecc9211987e2bcda1",
+  "trainable_parameters": 2887296,
+  "steps": 4000,
+  "batch": 16,
+  "accumulation": 2,
+  "seed": 47,
+  "lr": 0.0001,
+  "assistant_fraction": 0.2,
+  "optimizer": "AdamW",
+  "precision": "FP32",
+  "dropout": false,
+  "ema_updates": false,
+  "fine_dropout": false,
+  "quality_ready": false
+}

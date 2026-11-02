@@ -69,6 +69,56 @@ Use the [run manifest](docs/evaluation/run-manifest.example.json),
 [phase checklist](docs/evaluation/IMPLEMENTATION-CHECKLIST.md) to record evidence.
 The GGUF release and its checksums are unchanged; the release does not bundle MLX weights.
 
+## Next-concept conversion research
+
+The latest [expanded-data training stage](scripts/ncm/EXPANDED-GENERATOR-V17.md)
+adds 31,050 prepared chunks from both creator datasets, preserves existing
+OxCoder distillation and freezes evaluation membership. The original AR source
+passed 12/12 elementary coding checks; the preceding NCM candidate passed 0/12.
+The research pipeline is not a usable NCM model release.
+
+The [OxCoder-initialized NCM experiment](scripts/ncm/README.md) implements a learned
+text codec, coarse-to-fine concept prediction, and trainable adapters through all
+32 pretrained text layers. It includes bounded dataset acquisition, inverse GGUF
+weight transforms, resumable training, reconstruction gates and structural tests.
+This is an architectural research path, separate from the runtime options above.
+It is **not a validated replacement checkpoint**, and does not run in the existing
+GGUF server. See its [recorded results and limitations](scripts/ncm/RESULTS.md)
+before training or making speed/quality comparisons.
+The [combined-data and distillation follow-up](scripts/ncm/FOLLOWUP.md) includes
+official-codec audits and optimizer/representation controls; its
+[measured results](scripts/ncm/FOLLOWUP-RESULTS.md) still fail reconstruction gates.
+The [version 6 experiment](scripts/ncm/GENERATOR-V6.md) improves reconstruction
+to 28/30 exact development responses and advances to real generator training
+with both creator datasets and cached teacher responses. It also adds isolated
+executable-code evaluation. These are development results, not a usable NCM
+release or an 8GB deployment measurement.
+Both version 6 generator runs scored **0/12** on the elementary function
+diagnostic. The [version 7 investigation](scripts/ncm/GENERATOR-V7.md) documents
+the failure analysis; its three executable evaluations also scored **0/12**.
+The [version 8 experiment](scripts/ncm/GENERATOR-V8.md) removes a measured conflict
+between residual supervision and biased code selection; its two coding evaluations
+also failed. The [contextual codec stage](scripts/ncm/CONTEXTUAL-CODEC-V9.md)
+addresses a measured limitation in the coarse representation, using both dataset
+subsets and cached teacher responses. The [version 10 generator workflow](scripts/ncm/GENERATOR-V10.md)
+uses that new representation with fresh initialization and numerical audits.
+Its first executable evaluation also scored **0/12**; training remains experimental.
+No usable NCM checkpoint has been released.
+
+The [open-data baseline](scripts/ncm/OPEN-BASELINE-V11.md) uses the released NCM
+modules to compare code-only and mixed-data codecs, followed by small-generator
+diagnostics. It adds a bounded Python corpus and explicit conditioning corruption.
+This prerequisite experiment is not a converted OxCoder model. The version 10
+adapter job stopped at update 2,077 after its GPU memory reserve check failed.
+Both version 11 arms subsequently completed with 0/12 coding passes. The
+[refinement experiments](scripts/ncm/REFINEMENT-V12-V13.md) document the
+reconstruction diagnosis, output-head control and subsequent training recipes.
+The [actual OxCoder classifier audit and next training stage](scripts/ncm/INDEPENDENT-GENERATOR-V16.md)
+follow an 8/8 training-chunk memorization control with independent heads;
+this is not held-out coding success. The
+[complete creator-corpus expansion](scripts/ncm/CREATOR-EXPANSION-V15.md)
+documents source acquisition, contamination checks and frozen evaluation splits.
+
 ## Native Q4 implementation and recorded validation
 
 The native runtime is in `scripts/kindi_q4/`, with tests in `tests/kindi_q4/`.

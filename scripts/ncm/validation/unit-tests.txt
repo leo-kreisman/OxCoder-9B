@@ -1,0 +1,15 @@
+test_checkpoint_roundtrip (test_pipeline.PipelineTests) ... ok
+test_codec_gradient_and_code_decode (test_pipeline.PipelineTests) ... ok
+test_data_checksum_and_group_leak_rejected (test_pipeline.PipelineTests) ... ok
+test_failed_codec_blocks_quality_training_before_loading_backbone (test_pipeline.PipelineTests) ... ok
+test_generator_train_and_generate_all_levels (test_pipeline.PipelineTests) ... ok
+test_inverse_head_permutation (test_pipeline.PipelineTests) ... ok
+test_no_target_level_leakage (test_pipeline.PipelineTests) ... ok
+test_norm_and_decay_inversion (test_pipeline.PipelineTests) ... ok
+test_split_and_agent_roles (test_pipeline.PipelineTests) ... ok
+test_utf8_and_whitespace_roundtrip (test_pipeline.PipelineTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.072s
+
+OK

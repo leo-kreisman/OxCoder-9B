@@ -1,0 +1,81 @@
+{
+  "checkpoint_sha256": "8d21c824b386dad7594c512dcee519221736b216a47f0b6822b1ad4c0618daef",
+  "records": [
+    {
+      "prompt_tokens": 64,
+      "relative_logit_errors": [
+        0.0,
+        7.581244426546618e-05,
+        7.253894727909938e-05,
+        4.487784462980926e-05,
+        0.0003504615742713213
+      ],
+      "relative_gradient_errors": [
+        0.0,
+        0.035310521721839905,
+        0.03586580976843834,
+        0.03080414980649948,
+        0.04306001961231232,
+        0.03288901969790459,
+        0.005251663736999035,
+        0.0016885744407773018
+      ],
+      "gradient_cosines": [
+        0.9999998807907104,
+        0.9997888803482056,
+        0.9994373917579651,
+        0.9996342062950134,
+        0.9990965723991394,
+        0.9996258020401001,
+        0.9999862313270569,
+        0.9999985694885254
+      ],
+      "sequential_forward_backward_seconds": 1.5314101060066605,
+      "batched_forward_backward_seconds": 2.647861808000016,
+      "passed": true
+    },
+    {
+      "prompt_tokens": 1024,
+      "relative_logit_errors": [
+        0.0,
+        0.00011467061995062977,
+        8.111580973491073e-05,
+        4.2082327126991004e-05,
+        0.00033718609483912587
+      ],
+      "relative_gradient_errors": [
+        0.011536380276083946,
+        0.05576293542981148,
+        0.03464943543076515,
+        0.028677739202976227,
+        0.040085531771183014,
+        0.07400459051132202,
+        0.02465197630226612,
+        0.002959226490929723
+      ],
+      "gradient_cosines": [
+        0.999957799911499,
+        0.9997506141662598,
+        0.9994535446166992,
+        0.9996026754379272,
+        0.9992238283157349,
+        0.9994641542434692,
+        0.9997360110282898,
+        0.9999957084655762
+      ],
+      "sequential_forward_backward_seconds": 1.4154371609911323,
+      "batched_forward_backward_seconds": 0.8200776550074806,
+      "passed": false
+    }
+  ],
+  "complete": true,
+  "passed": false,
+  "torch": "2.11.0+cu128",
+  "quality_ready": false,
+  "full_precision_reductions": true,
+  "peak_allocated_bytes": {
+    "cuda:0": 5935421440,
+    "cuda:1": 9796613120
+  },
+  "scope": "synthetic token-ID prompts, forward and input/project/first-last-adapter gradients; not coding or inference throughput"
+}

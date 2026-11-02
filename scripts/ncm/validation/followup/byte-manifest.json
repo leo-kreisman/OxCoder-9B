@@ -1,0 +1,19 @@
+{
+  "format": "ncm-byte-followup-v3",
+  "length": 128,
+  "sources": {
+    "TeichAI/Ox-Alpha-10k": "ae678ee78880e14251a553a0d0dc8ec6bd6dad6c",
+    "TeichAI/DeepSeek-v4-Pro-Agent": "abbf7b71b145633b60beb21ddc0d158582fd80dd"
+  },
+  "complete_corpus_sha256": "29ed159db92766913c8de38f141acd633d35189af10ed941be85a1fcb77cabba",
+  "teacher_sha256": "c08d34f5a1687a0359646d15955bc9fe9c8a33a57bea6aab91cb4ce195285fd8",
+  "examples_sha256": "fe3c499cf37c2d35013f28fdd7060cb9d6dfa198de0a365956ae4777098e78a5",
+  "counts": {
+    "train": 14002,
+    "validation": 7118,
+    "test": 8638
+  },
+  "teacher_chunks": 72,
+  "scope": "complete validation/test chunk coverage before dedup; spread bounded training chunks; fresh codec initialization",
+  "targets_are_verified": false
+}

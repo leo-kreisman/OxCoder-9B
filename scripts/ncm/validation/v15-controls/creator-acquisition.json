@@ -1,0 +1,27 @@
+{
+  "format": "complete-creator-source-reservoir-v1",
+  "sources": {
+    "TeichAI/Ox-Alpha-10k": "ae678ee78880e14251a553a0d0dc8ec6bd6dad6c",
+    "TeichAI/DeepSeek-v4-Pro-Agent": "abbf7b71b145633b60beb21ddc0d158582fd80dd"
+  },
+  "sources_complete": true,
+  "counts": {
+    "candidate_responses": 24218,
+    "TeichAI/Ox-Alpha-10k": 9935,
+    "test_documents": 2316,
+    "train_documents": 18795,
+    "validation_documents": 2397,
+    "oversize_rejected": 710,
+    "TeichAI/DeepSeek-v4-Pro-Agent": 13573
+  },
+  "examples_uncompressed_sha256": "217a6980c45a3db1cc585d40767c491b15adc50dd038d23b013fe4947323f5fc",
+  "examples_uncompressed_bytes": 1173637698,
+  "examples_archive_sha256": "ddb214fe92f6d4ab590ea3babe12b9ce7d858933a428167a463b0d86a30142a5",
+  "extractor_sha256": "fbd111bc1af1fceee432b579db6709924d8a3b3b5a14a4e554d09ce20a645539",
+  "selection": "complete targets; at most four spread across each conversation; explicit size bounds",
+  "split_policy": "same content-hash conversation splits as earlier creator corpus",
+  "targets_are_verified": false,
+  "benchmark_decontamination_pending": true,
+  "admitted_to_training": false,
+  "quality_ready": false
+}

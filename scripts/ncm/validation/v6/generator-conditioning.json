@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "test|TeichAI/Ox-Alpha-10k": {
+      "kept": 3080,
+      "over_limit": 3591
+    },
+    "test|TeichAI/DeepSeek-v4-Pro-Agent": {
+      "kept": 39,
+      "over_limit": 1928
+    },
+    "validation|TeichAI/Ox-Alpha-10k": {
+      "kept": 3007,
+      "over_limit": 3536
+    },
+    "validation|TeichAI/DeepSeek-v4-Pro-Agent": {
+      "kept": 20,
+      "over_limit": 555
+    },
+    "train|TeichAI/Ox-Alpha-10k": {
+      "kept": 7466,
+      "over_limit": 4731
+    },
+    "train|TeichAI/DeepSeek-v4-Pro-Agent": {
+      "kept": 85,
+      "over_limit": 2106
+    }
+  },
+  "token_limit": 1024,
+  "truncation": false,
+  "format": "source chat template plus complete previous assistant chunks"
+}

@@ -1,0 +1,60 @@
+{
+  "complete": false,
+  "stopped_reason": "feature normalization alone does not correct low-norm unused-code bias; replaced with calibrated-head stage",
+  "last_record": {
+    "step": 101,
+    "loss": 284.7190132141113,
+    "code_accuracy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "head_warmup": false,
+    "training_example": "635d7babf249e3ffac4598a9bddcfc80f76d4609150ee58709ebc79b8a35577d:2:byte-0",
+    "coding_response": true,
+    "distilled": false,
+    "prompt_tokens": 3131,
+    "seconds": 2.562571387999924,
+    "adapter_gradient_norms": [
+      1048.0,
+      872.0,
+      752.0,
+      704.0,
+      656.0,
+      792.0,
+      868.0,
+      832.0,
+      684.0,
+      604.0,
+      748.0,
+      740.0,
+      608.0,
+      580.0,
+      466.0,
+      584.0,
+      440.0,
+      350.0,
+      332.0,
+      478.0,
+      498.0,
+      440.0,
+      350.0,
+      384.0,
+      306.0,
+      312.0,
+      352.0,
+      460.0,
+      404.0,
+      668.0,
+      736.0,
+      696.0
+    ],
+    "peak_allocated_bytes": {
+      "cuda:0": 5545275392,
+      "cuda:1": 9236055552
+    }
+  },
+  "quality_ready": false
+}

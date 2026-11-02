@@ -1,0 +1,31 @@
+{
+  "source_manifest_sha256": "997f01eab986c6fdd6e0677d0780dbd9c5f29cc76e917ff1b33677d9eb427d73",
+  "vocab_size": 8192,
+  "length": 128,
+  "counts": {
+    "test_assistant_tokens": 264448,
+    "train_assistant_tokens": 1642310,
+    "validation_assistant_tokens": 218793,
+    "train_distilled_documents": 30,
+    "train_code_tokens": 51170941,
+    "test_code_tokens": 2895029,
+    "validation_code_tokens": 2882236
+  },
+  "source_documents": {
+    "TeichAI/Ox-Alpha-10k": 818,
+    "TeichAI/DeepSeek-v4-Pro-Agent": 183,
+    "HuggingFaceCode/stack-v3-train": 192,
+    "codeparrot/codeparrot-clean": 39732
+  },
+  "documents": 40925,
+  "roundtrip_exact": true,
+  "files": {
+    "tokenizer.json": "136d2dfe307fb2c5557f2477ae84e73948cd39bbd685abd248c964aa53218317",
+    "documents.jsonl": "73f8320ad5d74887e532ea4861db068f90c56134d2ea2f116aa023ba4776717c",
+    "train.bin": "a075e0a4701214ea99af4420fa50e6b91a7bc01b258667cc9a3e0cc8cd2cd591",
+    "validation.bin": "f64ce074a5905da176a0e89b75c14a9cd0dd9dbe1e1178ac123597a604d816bb",
+    "test.bin": "2be1ab1554821bca6ed4784b8e1b3cb919661ec84c8c1b66eb340e73c6a853f3"
+  },
+  "tokenizer_training_split": "train only",
+  "quality_ready": false
+}

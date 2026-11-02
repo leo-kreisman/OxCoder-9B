@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "kind": "official-ncm-codec",
+    "upstream": "c70274273f489abc73832b2b98584a8483b6b203",
+    "release_revision": "d342ce8aaea58830eef3b8ad473664673e41f692",
+    "weights_sha256": "1f806ddaf8e023d1933e95efeabcaaf99f795576c0a05045f1a0f9389ab34fa7",
+    "config_sha256": "5dee6b7339645a22362f695fbadb27df6e5254db2d3be0bff8516138d95da493",
+    "pre_tokenizer": "gpt2",
+    "levels": [
+      4,
+      6,
+      10,
+      14,
+      20,
+      26,
+      32,
+      40,
+      48
+    ],
+    "window_tokens": 48
+  },
+  "level_input_max_abs_errors": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "teacher_codes_reproduced": true,
+  "current_or_future_codes_do_not_change_earlier_inputs": true,
+  "changed_code_affects_later_input": true,
+  "oracle_output_matches_reconstruction": true,
+  "scope": "scheduler correctness only; oracle supplies known codes, not a trained generator",
+  "passed": true
+}

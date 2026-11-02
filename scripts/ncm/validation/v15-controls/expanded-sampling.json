@@ -1,0 +1,58 @@
+[
+  {
+    "coding": false,
+    "source": "TeichAI/Ox-Alpha-10k",
+    "distilled": false,
+    "responses": 3498,
+    "chunks": 30003
+  },
+  {
+    "coding": true,
+    "source": "TeichAI/Ox-Alpha-10k",
+    "distilled": false,
+    "responses": 906,
+    "chunks": 8087
+  },
+  {
+    "coding": false,
+    "source": "TeichAI/Ox-Alpha-10k",
+    "distilled": true,
+    "responses": 24,
+    "chunks": 340
+  },
+  {
+    "coding": true,
+    "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+    "distilled": false,
+    "responses": 496,
+    "chunks": 3276
+  },
+  {
+    "coding": true,
+    "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+    "distilled": true,
+    "responses": 4,
+    "chunks": 33
+  },
+  {
+    "coding": false,
+    "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+    "distilled": false,
+    "responses": 14,
+    "chunks": 103
+  },
+  {
+    "coding": true,
+    "source": "TeichAI/Ox-Alpha-10k",
+    "distilled": true,
+    "responses": 3,
+    "chunks": 48
+  },
+  {
+    "coding": false,
+    "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+    "distilled": true,
+    "responses": 1,
+    "chunks": 9
+  }
+]

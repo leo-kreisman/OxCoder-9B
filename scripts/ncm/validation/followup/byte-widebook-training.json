@@ -1,0 +1,143 @@
+{
+  "stage": "codec",
+  "complete": true,
+  "history": [
+    {
+      "step": 2000,
+      "loss": 0.6971465945243835,
+      "gradient_norm": 0.024923041462898254,
+      "elapsed_seconds": 15.125252165016718,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.993015927847493,
+        "exact_chunk_rate": 0.6417533014891823,
+        "eos_accuracy": 0.9988760887889857,
+        "valid_utf8_with_eos_rate": 0.9179544815959539,
+        "used_codes_per_level": [
+          120,
+          177,
+          261,
+          362,
+          194
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 4000,
+      "loss": 0.6234369874000549,
+      "gradient_norm": 0.015037070959806442,
+      "elapsed_seconds": 29.863803921965882,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9976295341663732,
+        "exact_chunk_rate": 0.8783366114076988,
+        "eos_accuracy": 0.9997190221972464,
+        "valid_utf8_with_eos_rate": 0.9415566170272548,
+        "used_codes_per_level": [
+          104,
+          153,
+          271,
+          504,
+          386
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 6000,
+      "loss": 0.5253865718841553,
+      "gradient_norm": 0.01063428446650505,
+      "elapsed_seconds": 44.4798593170126,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.998465452757867,
+        "exact_chunk_rate": 0.9135993256532734,
+        "eos_accuracy": 0.9990165776903625,
+        "valid_utf8_with_eos_rate": 0.9598201742062377,
+        "used_codes_per_level": [
+          105,
+          155,
+          282,
+          469,
+          398
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 8000,
+      "loss": 0.44930773973464966,
+      "gradient_norm": 0.01307691540569067,
+      "elapsed_seconds": 59.71505860297475,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9983525207097447,
+        "exact_chunk_rate": 0.876229277887047,
+        "eos_accuracy": 0.9997190221972464,
+        "valid_utf8_with_eos_rate": 0.971059286316381,
+        "used_codes_per_level": [
+          107,
+          158,
+          304,
+          527,
+          498
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    },
+    {
+      "step": 10000,
+      "loss": 0.44921407103538513,
+      "gradient_norm": 0.015556623227894306,
+      "elapsed_seconds": 75.37470693496289,
+      "validation": {
+        "examples": 7118,
+        "nonpad_symbol_accuracy": 0.9984267015648839,
+        "exact_chunk_rate": 0.8663950547906716,
+        "eos_accuracy": 0.9998595110986233,
+        "valid_utf8_with_eos_rate": 0.9806125316100028,
+        "used_codes_per_level": [
+          107,
+          158,
+          309,
+          558,
+          483
+        ],
+        "passed": false,
+        "thresholds": {
+          "nonpad_symbol_accuracy": 0.999,
+          "exact_chunk_rate": 0.95,
+          "eos_accuracy": 0.99
+        },
+        "scope": "codec reconstruction only; not generated-code correctness"
+      }
+    }
+  ],
+  "quality_ready": false,
+  "meaning": "finite codec run; generator not trained by this command"
+}

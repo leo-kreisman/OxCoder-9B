@@ -1,0 +1,44 @@
+{
+  "checkpoint_sha256": "071f8cf76f17f74c82e91121f6d899deab6c4efc8d1adba481a81e0362550ffc",
+  "counts_sha256": "1e1e55fb7c04c0c01ec06f4f56b38abefb5e70800ba10fc8b1d184d3b81fc1a6",
+  "checkpoint_step": 875,
+  "records": [
+    {
+      "level": 0,
+      "observed_codes": 125,
+      "oracle_code_identity_accuracy": 0.048,
+      "oracle_vector_accuracy": 0.048,
+      "count_weighted_identity_accuracy": 0.5193754550602702
+    },
+    {
+      "level": 1,
+      "observed_codes": 162,
+      "oracle_code_identity_accuracy": 0.07407407407407407,
+      "oracle_vector_accuracy": 0.07407407407407407,
+      "count_weighted_identity_accuracy": 0.4951257988835855
+    },
+    {
+      "level": 2,
+      "observed_codes": 322,
+      "oracle_code_identity_accuracy": 0.10869565217391304,
+      "oracle_vector_accuracy": 0.10869565217391304,
+      "count_weighted_identity_accuracy": 0.4688334277162042
+    },
+    {
+      "level": 3,
+      "observed_codes": 506,
+      "oracle_code_identity_accuracy": 0.1007905138339921,
+      "oracle_vector_accuracy": 0.1007905138339921,
+      "count_weighted_identity_accuracy": 0.45622699417522855
+    },
+    {
+      "level": 4,
+      "observed_codes": 3250,
+      "oracle_code_identity_accuracy": 0.012615384615384615,
+      "oracle_vector_accuracy": 0.012615384615384615,
+      "count_weighted_identity_accuracy": 0.2051569705120945
+    }
+  ],
+  "quality_ready": false,
+  "scope": "exact code vectors supplied to classifier; no generator reasoning, coding quality or inference-speed claim"
+}

@@ -1,0 +1,11 @@
+{
+  "checkpoint_sha256": "8a16bcc5546739fd109a63fa7b857112baac65f6aa3279997c48900999d4b086",
+  "step": 175,
+  "trainable_tensors": 79,
+  "trainable_parameters": 11559429,
+  "weights_finite": true,
+  "optimizer_and_rng_present": true,
+  "cached_prefix": false,
+  "quality_ready": false,
+  "scope": "CPU serialization/inventory check; no new forward-parity or coding claim"
+}

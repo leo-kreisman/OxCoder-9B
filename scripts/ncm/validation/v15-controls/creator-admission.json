@@ -1,0 +1,75 @@
+{
+  "format": "creator-training-expansion-v15",
+  "counts": {
+    "frozen_test": 2131,
+    "frozen_train": 36649,
+    "frozen_validation": 2145,
+    "rejected_reserved_nontraining": 4713,
+    "rejected_existing_exact_target": 751,
+    "rejected_near_duplicate": 3538,
+    "rejected_benchmark_or_holdout_shingle": 10278,
+    "admitted": 4228,
+    "source:TeichAI/Ox-Alpha-10k": 3626,
+    "target_utf8_bytes": 21504913,
+    "source:TeichAI/DeepSeek-v4-Pro-Agent": 602
+  },
+  "reservoir_manifest_sha256": "a926dd3188737ad817be1a9b6a9cce1f8cb65f9fcb1a6a07e0b5469b113e9897",
+  "frozen_manifest_sha256": "997f01eab986c6fdd6e0677d0780dbd9c5f29cc76e917ff1b33677d9eb427d73",
+  "examples_archive_sha256": "fdfdc4d48faa7624abed0c36fc6b18cc336cc240ed0da9366663ba649a3c60a7",
+  "examples_uncompressed_sha256": "086f5a83912391c9242181447ce440bb0fae26730949363ef8bb8c98134aa0b1",
+  "examples_uncompressed_bytes": 35158776,
+  "source_revisions": {
+    "TeichAI/Ox-Alpha-10k": "ae678ee78880e14251a553a0d0dc8ec6bd6dad6c",
+    "TeichAI/DeepSeek-v4-Pro-Agent": "abbf7b71b145633b60beb21ddc0d158582fd80dd"
+  },
+  "benchmark_exclusions": [
+    {
+      "dataset": "openai/openai_humaneval",
+      "revision": "7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544",
+      "file": "openai_humaneval/test-00000-of-00001.parquet",
+      "sha256": "2f2871a15fbc95b6c683043359f4ed8e144c5a1c4f24f25f66bc51f598dfcfb6",
+      "bytes": 83920
+    },
+    {
+      "dataset": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "file": "full/prompt-00000-of-00001.parquet",
+      "sha256": "a053e4bb85ceb77430ae80592addb4ca4dc6ba087592f9e04537800ee88b7431",
+      "bytes": 7878
+    },
+    {
+      "dataset": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "file": "full/test-00000-of-00001.parquet",
+      "sha256": "566fd53060ffba5766dace1d1e2f4c38906781526de222b0dfbdbc325b696c77",
+      "bytes": 115824
+    },
+    {
+      "dataset": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "file": "full/train-00000-of-00001.parquet",
+      "sha256": "09d125ca31edacb7800be8c67c45abff618faf0214ff551291817d06bdb914ae",
+      "bytes": 87223
+    },
+    {
+      "dataset": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "file": "full/validation-00000-of-00001.parquet",
+      "sha256": "3f0ec060987432d99fe8fb409d31e6c67445b208a01741c5583517c80a10fe80",
+      "bytes": 25144
+    }
+  ],
+  "implementation_sha256": {
+    "admit_creator_corpora.py": "94a088d120ecdbacbc24e808aa9e2dbb916777d58da804c69c50884ac82163d2",
+    "open_corpus.py": "c61219ea229d157b51cdf4fded3b10239a59e487d66b3aebcdb32c1fa9e0d022",
+    "coding_eval.py": "ff5c35999e2f940a15713ff18db9d3ac3579d0bee4867285359e2d265f160f1e"
+  },
+  "filter": "frozen groups, exact targets, SimHash distance <=3, 32-token benchmark/holdout overlap in target and prompt; shared instruction wrappers excluded only from holdout prompt comparison",
+  "shared_instructions_sha256": "7098b5a352366123f5aadc8b2a199c129ab220368ddf46160bb94a71fd9bb777",
+  "split": "train only; original and newly reserved evaluation groups remain excluded",
+  "limitations": "Conservative lexical filters can reject unrelated examples and cannot prove semantic decontamination.",
+  "admission_complete": true,
+  "used_in_training": false,
+  "targets_are_verified": false,
+  "quality_ready": false
+}

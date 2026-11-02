@@ -1,0 +1,133 @@
+{
+  "arms": {
+    "code": {
+      "codec": {
+        "documents": 1100,
+        "exact_documents": 0,
+        "token_accuracy": 0.9468980292858116,
+        "unique_codes_per_level": [
+          600,
+          1844,
+          2561,
+          2861,
+          3232,
+          3298,
+          3512,
+          3866,
+          3742,
+          3860,
+          3872,
+          4092
+        ],
+        "by_length": {
+          "1-128": {
+            "documents": 2,
+            "exact_documents": 0
+          },
+          "129-512": {
+            "documents": 281,
+            "exact_documents": 0
+          },
+          "513-2048": {
+            "documents": 571,
+            "exact_documents": 0
+          },
+          "2049-1000000000": {
+            "documents": 246,
+            "exact_documents": 0
+          }
+        },
+        "syntax_valid_documents": 58,
+        "passed": false,
+        "scope": "development reconstruction; not generated-code correctness",
+        "checkpoint_sha256": "caba159803f5e468108148a3bd5babdce6caa77bcf7905c4d39bb9760b0dcbc3",
+        "selected_step": 6000,
+        "quality_ready": false
+      },
+      "generator": {
+        "windows": 64,
+        "exact_windows": 0,
+        "mean_teacher_forced_concept_accuracy": 0.23415561055298895,
+        "mean_free_concept_accuracy": 0.015234984351991443,
+        "mean_free_nonpad_token_accuracy": 0.01902660122141242,
+        "quality_ready": false,
+        "scope": "held-out code continuation diagnostic; exact matching is not a functional coding benchmark",
+        "checkpoint_sha256": "cdcc9283942e82bcd218eadfb4c1a6c6d3d524d9b8ad3f577af678ff1cbf99a4",
+        "selected_step": 1000
+      },
+      "coding": {
+        "passed": 0,
+        "evaluated": 12,
+        "scope": "reused 12-task development diagnostic; 128-token rolling context; not OxCoder or professional qualification",
+        "quality_ready": false
+      }
+    },
+    "mixed": {
+      "codec": {
+        "documents": 1100,
+        "exact_documents": 0,
+        "token_accuracy": 0.9529010910301483,
+        "unique_codes_per_level": [
+          542,
+          1711,
+          2429,
+          2746,
+          3222,
+          3236,
+          3453,
+          3881,
+          3713,
+          3809,
+          3836,
+          4093
+        ],
+        "by_length": {
+          "1-128": {
+            "documents": 2,
+            "exact_documents": 0
+          },
+          "129-512": {
+            "documents": 281,
+            "exact_documents": 0
+          },
+          "513-2048": {
+            "documents": 571,
+            "exact_documents": 0
+          },
+          "2049-1000000000": {
+            "documents": 246,
+            "exact_documents": 0
+          }
+        },
+        "syntax_valid_documents": 41,
+        "passed": false,
+        "scope": "development reconstruction; not generated-code correctness",
+        "checkpoint_sha256": "ca43936ecb9842e1cbe7901c5e59bacb8e5fe915ac333d8403838bada29e16f7",
+        "selected_step": 6000,
+        "quality_ready": false
+      },
+      "generator": {
+        "windows": 64,
+        "exact_windows": 0,
+        "mean_teacher_forced_concept_accuracy": 0.24809866736177355,
+        "mean_free_concept_accuracy": 0.012212363559228834,
+        "mean_free_nonpad_token_accuracy": 0.01725573421572335,
+        "quality_ready": false,
+        "scope": "held-out code continuation diagnostic; exact matching is not a functional coding benchmark",
+        "checkpoint_sha256": "6e0654fe09e1df4f34e5f0555b93ff42cbec7d2b4f0831a872a8e04fccbb923e",
+        "selected_step": 1000
+      },
+      "coding": {
+        "passed": 0,
+        "evaluated": 12,
+        "scope": "reused 12-task development diagnostic; 128-token rolling context; not OxCoder or professional qualification",
+        "quality_ready": false
+      }
+    }
+  },
+  "development_winner": "code",
+  "winner_is_qualified_model": false,
+  "quality_ready": false,
+  "corpus_manifest_sha256": "997f01eab986c6fdd6e0677d0780dbd9c5f29cc76e917ff1b33677d9eb427d73",
+  "decision": "Compare output fidelity and executable development tests before planning donor transfer; no automatic 9B training or release."
+}

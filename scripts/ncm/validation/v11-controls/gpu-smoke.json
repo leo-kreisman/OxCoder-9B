@@ -1,0 +1,59 @@
+{
+  "infrastructure_only": true,
+  "quality_ready": false,
+  "generator_training": {
+    "step": 3,
+    "training_complete": true,
+    "history": [
+      {
+        "step": 1,
+        "loss": 8.400110244750977,
+        "lr": 2.9999999999999997e-06,
+        "elapsed_seconds": 0.8436129000037909,
+        "nonpad_tokens_this_update": 46,
+        "cumulative_nonpad_tokens_including_eos": {
+          "code": 46
+        },
+        "peak_cuda_allocated_bytes": 590127104
+      },
+      {
+        "step": 2,
+        "loss": 8.39768123626709,
+        "lr": 4.6499999999999995e-06,
+        "elapsed_seconds": 1.1250177729816642,
+        "nonpad_tokens_this_update": 46,
+        "cumulative_nonpad_tokens_including_eos": {
+          "code": 92
+        },
+        "peak_cuda_allocated_bytes": 707802624
+      },
+      {
+        "step": 3,
+        "loss": 8.39450740814209,
+        "lr": 2.925000000000001e-06,
+        "elapsed_seconds": 1.4251503569830675,
+        "nonpad_tokens_this_update": 46,
+        "cumulative_nonpad_tokens_including_eos": {
+          "code": 138
+        },
+        "peak_cuda_allocated_bytes": 707802624,
+        "evaluation": {
+          "windows": 64,
+          "exact_windows": 0,
+          "mean_teacher_forced_concept_accuracy": 0.004875194994383492,
+          "mean_free_concept_accuracy": 0.0035588924220064655,
+          "mean_free_nonpad_token_accuracy": 0.0,
+          "quality_ready": false,
+          "scope": "held-out code continuation diagnostic; exact matching is not a functional coding benchmark"
+        }
+      }
+    ],
+    "quality_ready": false
+  },
+  "coding": {
+    "passed": 0,
+    "evaluated": 12,
+    "scope": "reused 12-task development diagnostic; 128-token rolling context; not OxCoder or professional qualification",
+    "quality_ready": false
+  }
+}

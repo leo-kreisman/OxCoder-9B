@@ -1,0 +1,8 @@
+{
+  "scope": "continuation preparation; no generated-code quality claim",
+  "files": {
+    "tests.log": "e13d1397892b8f6c6dcfe4ee87391deb822f424fc353127d0da3a5cc6d7a580a",
+    "kernel-audit.json": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+    "launch.sh": "d259d8beae4af4a1e3f7e967420a7b9d6a9974e0837be7b954d6e912a79d65b6"
+  }
+}
