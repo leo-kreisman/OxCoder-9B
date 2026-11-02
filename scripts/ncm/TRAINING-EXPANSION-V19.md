@@ -299,3 +299,64 @@ Run CPU tests without the optional GPU-kernel import directory:
 PYTHONPATH=results/ncm-deps:results/ncm-data-deps \
   python -m unittest discover -s tests/ncm
 ```
+
+## Sequential stage coordinator
+
+`run_expanded_stage.py` coordinates the prepared v19 experiment on a Linux
+workstation with a user systemd manager and two CUDA devices. It is deliberately
+specific to the recorded v18/v19 artifact paths and unit names. It is not a
+general installer, a Mac runtime, or an unbounded claim that any training run
+will converge. Supply absolute paths for the repository, training interpreter,
+llama.cpp server, and source GGUF:
+
+```bash
+python3 -S -m scripts.ncm.run_expanded_stage \
+  --root /absolute/path/to/OxCoder-9B \
+  --python /absolute/path/to/training-environment/bin/python \
+  --server /absolute/path/to/llama-server \
+  --source /absolute/path/to/OxCoder-9B.Q4_K_M.gguf
+```
+
+The standard-library coordinator uses `-S` to avoid unrelated site-package
+modules named `scripts`. Child training jobs use the explicitly supplied
+training interpreter and the repository's pinned dependency directories.
+Run the coordinator in a durable session or a separate user service. Do not
+start two copies against the same output directory or experiment unit names.
+
+Its sequence is:
+
+1. Wait for the existing `ncm-independent-v18.service` to finish. Require its
+   complete 2,000-update report and preserve an initialization checkpoint whose
+   hash matches the final coding evaluation.
+2. Stop only the two named v19 CPU distillation services. Require at least
+   9 GiB of free GPU-1 memory, then start the same offline teacher checkpoint
+   on GPU 1. Resume the collector from its immutable request cache. Record the
+   new server command; CPU/GPU arithmetic need not be bit-identical, and the
+   source checkpoint identity does not imply identical backend execution.
+3. Finish all selected teacher requests and require a completed admission
+   manifest. Stop the GPU teacher before loading the student.
+4. Combine the pinned OpenCodeInstruct admission and teacher-response admission
+   with the existing prepared corpus. Retain the frozen evaluation inventory.
+5. Audit the four-level forward/backward implementation at 64, 69, 512, and
+   2,048 prompt tokens. Prefer shared-prefix execution only when all four
+   measurements pass. Otherwise require all four reference measurements to
+   pass. The trainer independently rechecks source hashes and the numerical
+   thresholds; the coordinator cannot override that gate.
+6. Run a two-update smoke test with four accumulated examples per update. Then
+   launch the separately initialized 5,000-update learning stage with the same
+   accumulation. The smoke test's optimizer updates are not silently carried
+   into the full stage.
+7. Preserve evaluated student checkpoints by checksum. If a complete 12/12
+   development result appears, stop the owned training service, reload that
+   immutable checkpoint in a new process, and rerun the unchanged evaluator.
+   Record acceptance only if the replay is also 12/12 for the same checksum.
+
+`results/ncm-pipeline-v19/progress.json` records the current phase; launch
+manifests record every command and resource limit. Student and teacher jobs
+have distinct units and logs. The coordinator never stops unrelated services,
+uses a teacher response during student evaluation, or changes evaluation
+answers. A finite stage ending without acceptance is explicitly marked
+`stage_complete_requires_next_experiment`; it is not a release. A failed
+reload likewise does not become acceptance. The orchestrator's five unit tests
+exercise incomplete audits, reference fallback, immutable snapshots, partial
+evaluations, and changed checkpoints.
