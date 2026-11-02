@@ -10,11 +10,33 @@ import torch
 
 from scripts.ncm.prepare_curated_expansion import combined_archives
 from scripts.ncm.open_corpus import file_sha
-from scripts.ncm.train_parallel import qualify, state_hash
+from scripts.ncm.train_parallel import qualify, state_hash, qualify_cpu_optimizer
 from scripts.ncm.run_parallel_stage import ParallelPipeline
 
 
 class ParallelPolicyTests(unittest.TestCase):
+    def test_cpu_optimizer_requires_matching_precision_control(self):
+        identity = {key: 'fixture' for key in ['source_sha256', 'codec_sha256', 'head_kind', 'head_input_norm', 'head_lr']}
+        row = {'passed': True, 'relative_update_l2': 1e-6, 'relative_parameter_l2': 1e-9}
+        report = {'complete': True, 'passed': True, 'records': [dict(row) for _ in range(8)],
+                  'model_identity': identity, 'checkpoint_sha256': 'checkpoint',
+                  'implementation_sha256': {'cpu_adamw.py': 'code', 'audit_cpu_adamw.py': 'code'},
+                  'offloaded_optimizer_gpu_bytes': 0, 'resident_optimizer_gpu_bytes': 100}
+        with TemporaryDirectory() as directory, patch('scripts.ncm.train_parallel.digest', return_value='code'):
+            path = Path(directory, 'report.json')
+            path.write_text(json.dumps(report))
+            self.assertEqual(qualify_cpu_optimizer(path, identity)['audited_checkpoint_sha256'], 'checkpoint')
+            for field in ['incomplete', 'large_error', 'nonfinite', 'head_lr', 'implementation', 'residency']:
+                changed = copy.deepcopy(report)
+                if field == 'incomplete': changed['records'].pop()
+                elif field == 'large_error': changed['records'][0]['relative_update_l2'] = .1
+                elif field == 'nonfinite': changed['records'][0]['relative_update_l2'] = float('nan')
+                elif field == 'head_lr': changed['model_identity']['head_lr'] = 'changed'
+                elif field == 'implementation': changed['implementation_sha256']['cpu_adamw.py'] = 'changed'
+                else: changed['offloaded_optimizer_gpu_bytes'] = 100
+                path.write_text(json.dumps(changed))
+                with self.assertRaises(ValueError): qualify_cpu_optimizer(path, identity)
+
     def test_resumed_monitor_does_not_relaunch_or_reprepare(self):
         with TemporaryDirectory() as directory:
             args = SimpleNamespace(root=directory, output='pipeline')

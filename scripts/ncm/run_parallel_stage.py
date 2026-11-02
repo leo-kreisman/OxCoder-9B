@@ -7,6 +7,7 @@ student training. This coordinator owns only the named experiment services.
 import argparse
 from datetime import datetime, timezone
 import json
+import re
 from pathlib import Path
 import subprocess
 import time
@@ -19,7 +20,9 @@ from .run_expanded_stage import Pipeline, active, read, stop
 
 class ParallelPipeline(Pipeline):
     def monitor_existing(self):
-        unit = 'ncm-parallel-v23'
+        unit = getattr(self.a, 'training_unit', 'ncm-parallel-v23')
+        if re.fullmatch(r'ncm-[a-z0-9-]+', unit) is None:
+            raise ValueError('Expected an owned NCM training unit name without .service')
         self.status('monitoring_two_replica_student', unit=unit + '.service')
         candidate = self.wait(unit + '.service', 'results/' + unit, stop_on_acceptance=True)
         if candidate is not None:
@@ -139,6 +142,8 @@ if __name__ == '__main__':
     parser.add_argument('--steps', type=int, default=5000)
     parser.add_argument('--monitor-only', action='store_true',
                         help='Resume the existing trainer monitor without restarting training or data preparation')
+    parser.add_argument('--training-unit', default='ncm-parallel-v23',
+                        help='Existing owned NCM unit observed in monitor-only mode')
     args = parser.parse_args()
     pipeline = ParallelPipeline(args, resume=args.monitor_only)
     try:

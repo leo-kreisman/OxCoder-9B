@@ -12,7 +12,9 @@ import os
 from pathlib import Path
 import random
 import shutil
+import sys
 import time
+import traceback
 
 import torch
 import torch.distributed as dist
@@ -24,6 +26,7 @@ from .compact_training_policy import logical_gradient_groups, prefix_policy
 from .distillation_curriculum import filter_teacher_actions
 from .gguf_training_backbone import load_candidate
 from .master_muon import FP32MasterMuon
+from .cpu_adamw import CPUAdamW, migrate_bundle as migrate_cpu_optimizer
 from .parallel_training import assignments, backward_example, check_inventory, example_seed, sum_gradients
 from .train import admission, cpu_tree, evaluate_candidate, exact_training_curriculum, headroom, save, write_json
 from .train_geometry import ResponseSampler
@@ -73,6 +76,26 @@ def state_hash(state):
     return h.hexdigest()
 
 
+def qualify_cpu_optimizer(path, parent):
+    report = json.loads(Path(path).read_text())
+    if not report.get('complete') or not report.get('passed') or len(report.get('records', [])) != 8:
+        raise ValueError('CPU optimizer audit is incomplete or failed')
+    for name, value in report['model_identity'].items():
+        if parent.get(name) != value:
+            raise ValueError('CPU optimizer audit model or head learning rate differs')
+    if set(report['model_identity']) != {'source_sha256', 'codec_sha256', 'head_kind', 'head_input_norm', 'head_lr'}:
+        raise ValueError('CPU optimizer audit identity is incomplete')
+    for name in ['cpu_adamw.py', 'audit_cpu_adamw.py']:
+        if report['implementation_sha256'].get(name) != digest(Path(__file__).parent / name):
+            raise ValueError('CPU optimizer audit implementation changed')
+    if (report['offloaded_optimizer_gpu_bytes'] != 0 or report['resident_optimizer_gpu_bytes'] <= 0
+            or any(not row['passed'] or not 0 <= row['relative_update_l2'] < .001
+                   or not 0 <= row['relative_parameter_l2'] < .000002 for row in report['records'])):
+        raise ValueError('CPU optimizer numerical or residency gate failed')
+    return {'audit_sha256': digest(path), 'audited_checkpoint_sha256': report['checkpoint_sha256'],
+            'scope': 'Same FP32 AdamW rule on CPU; bounded numerical difference, not bit-exact CUDA updates'}
+
+
 def run(a):
     rank = int(os.environ['LOCAL_RANK'])
     if int(os.environ['WORLD_SIZE']) != 2:
@@ -104,7 +127,10 @@ def run(a):
         policy = qualify(a.parallel_audit, parent, parent['prepared_sha256'])
         prefix = prefix_policy(a.runtime_audit, parent, parent['prepared_sha256'])
         checkpoint = torch.load(a.init, map_location='cpu', weights_only=True)
-        if digest(a.init) != parent_sha or checkpoint['optimizer']['classes'] != ['AdamW', 'AdamW', 'FP32MasterMuon']:
+        allowed = [['AdamW', 'AdamW', 'FP32MasterMuon']]
+        if a.cpu_head_optimizer:
+            allowed.append(['CPUAdamW', 'AdamW', 'FP32MasterMuon'])
+        if digest(a.init) != parent_sha or checkpoint['optimizer']['classes'] not in allowed:
             raise ValueError('Initialization changed or does not contain FP32-master optimizer state')
         filtered, teacher_filter = filter_teacher_actions(data['prepared'], manifest)
         prepared, curriculum = exact_training_curriculum(codec, filtered, device)
@@ -119,7 +145,7 @@ def run(a):
         used = {id(p) for p in heads + matrices}
         other = [p for _, p in named if id(p) not in used]
         optimizer = OptimizerBundle([
-            torch.optim.AdamW(heads, lr=parent['head_lr'], weight_decay=.01, foreach=False),
+            (CPUAdamW if a.cpu_head_optimizer else torch.optim.AdamW)(heads, lr=parent['head_lr'], weight_decay=.01, foreach=False),
             torch.optim.AdamW(other, lr=parent['body_lr'], weight_decay=.01, foreach=False),
             FP32MasterMuon(matrices, lr=parent['body_lr'], weight_decay=.01, adjust_lr_fn='match_rms_adamw')])
         if parent['effective_batch_examples'] != 4:
@@ -129,8 +155,10 @@ def run(a):
              'gguf_training_backbone.py', 'gguf_training_weights.py', 'shared_training.py', 'train.py',
              'train_accumulated.py', 'train_geometry.py', 'distillation_curriculum.py', 'coding_eval.py',
              'generate_candidate.py', 'geometry.py', 'training_runtime.py', 'vendor/veomni_shared_prefix.py',
-             'compact_training_policy.py', 'train_independent.py', 'audit_parallel_training.py')}
-        identity = {**parent, 'training_recipe': 'compact-two-replica-fp32-master-v23',
+             'compact_training_policy.py', 'train_independent.py', 'audit_parallel_training.py',
+             'cpu_adamw.py', 'audit_cpu_adamw.py')}
+        identity = {**parent, 'training_recipe': ('compact-two-replica-cpu-head-optimizer-v24'
+                                                if a.cpu_head_optimizer else 'compact-two-replica-fp32-master-v23'),
             'initialization': {'checkpoint_sha256': parent_sha,
                 'scope': 'Retain weights, optimizer/master states, Python sampler RNG and update count; record new corruption RNG'},
             'parallel_execution': policy, 'execution_policy': prefix,
@@ -143,6 +171,10 @@ def run(a):
             'implementation_sha256': implementation, 'planned_steps': a.steps,
             'prepared_sha256': manifest['prepared_sha256'],
             'teacher_curriculum': teacher_filter, 'quality_ready': False}
+        if a.cpu_head_optimizer:
+            if not a.cpu_optimizer_audit:
+                raise ValueError('CPU optimizer offloading requires a passing audit')
+            identity['cpu_head_optimizer'] = qualify_cpu_optimizer(a.cpu_optimizer_audit, parent)
         if a.data_expansion:
             identity['dataset_expansion'] = {key: manifest[key] for key in
                 ('base_prepared_sha256', 'addition_manifest_sha256', 'frozen_evaluation_sha256', 'counts')}
@@ -154,7 +186,10 @@ def run(a):
             with torch.no_grad():
                 for name, parameter in named:
                     parameter.copy_(checkpoint['model'][name].to(parameter))
-        optimizer.load_state_dict(checkpoint['optimizer'])
+        if a.cpu_head_optimizer and checkpoint['optimizer']['classes'][0] == 'AdamW':
+            migrate_cpu_optimizer(optimizer, checkpoint['optimizer'])
+        else:
+            optimizer.load_state_dict(checkpoint['optimizer'])
         random.setstate(checkpoint['rng']['python'])
         torch.set_rng_state(checkpoint['rng']['torch'])
         # Do not initialize the other worker's GPU context through set_rng_state_all.
@@ -205,6 +240,11 @@ def run(a):
                 'seconds': float(seconds), 'allocation': allocation,
                 'examples': [{'id': r['id'], 'source': r['source'], 'prompt_tokens': len(c['ids']),
                               'distilled': bool(r.get('distilled'))} for r, c in batch]}
+            write_json(out / f'memory-rank{rank}.json', {
+                'step': step + 1, 'device': device, 'allocated_bytes': torch.cuda.memory_allocated(),
+                'reserved_bytes': torch.cuda.memory_reserved(), 'peak_allocated_bytes': torch.cuda.max_memory_allocated(),
+                'scope': 'This worker PyTorch allocator; excludes driver and other processes',
+                'cpu_head_optimizer': a.cpu_head_optimizer})
             history.append(record)
             if rank == 0:
                 print(json.dumps(record), flush=True)
@@ -230,7 +270,14 @@ def run(a):
                     evaluate_model(model, codec, tokenizer, identity['prompt_tokens'], digest(out / 'latest.pt'),
                                    out / f'coding-{step+1}.json')
             dist.barrier()
-    finally:
+    except BaseException:
+        # A peer may be blocked inside a collective. Waiting for NCCL shutdown
+        # here can hide the original error for the entire group timeout. Let
+        # torchrun observe this worker's failure and terminate its peers.
+        traceback.print_exc()
+        sys.stderr.flush()
+        os._exit(1)
+    else:
         dist.destroy_process_group()
 
 
@@ -244,6 +291,8 @@ if __name__ == '__main__':
     parser.add_argument('--allocator-cap-gib', type=float, default=11.25)
     parser.add_argument('--resume', action='store_true')
     parser.add_argument('--data-expansion', action='store_true')
+    parser.add_argument('--cpu-head-optimizer', action='store_true')
+    parser.add_argument('--cpu-optimizer-audit')
     args = parser.parse_args()
     if min(args.steps, args.save_every, args.eval_every) < 1:
         parser.error('Positive schedule bounds are required')

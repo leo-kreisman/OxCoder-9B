@@ -1,0 +1,11 @@
+{
+  "failed_update": 354,
+  "last_completed_update": 353,
+  "device": "cuda:0",
+  "reason": "CUDA allocation exceeded the per-process allocator cap during packed-weight materialization",
+  "requested_bytes": 100663296,
+  "observed_error_excerpt": "torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 15.47 GiB of which 3.90 GiB is free. Process 13570 has 4.21 GiB memory in use. Including non-PyTorch memory, this process has 6.78 GiB memory in use. 6.52 GiB allowed; Of the allocated memory 6.35 GiB is allocated by PyTorch, and 91.58 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+  "log_sha256": "4550077f61520bff300d45bae81ec7eb5227bb2682d1719f4808671cc12a47f8",
+  "response": "Preserve the GPU reserve; move the FP32 head AdamW state and arithmetic to CPU",
+  "quality_ready": false
+}

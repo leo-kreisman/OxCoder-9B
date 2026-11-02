@@ -1,5 +1,10 @@
 # Two-replica NCM training
 
+The resident-optimizer long run subsequently exceeded GPU0's allocator budget
+at update 354. The [host optimizer stage](OPTIMIZER-OFFLOAD-V24.md) records the
+failure, its numerical control, and the memory adjustment. The three-update
+smoke below qualified those three batches, not every later context length.
+
 The two-GPU compact training path computes disjoint portions of the same
 four-example batch concurrently. It retains the frozen OxCoder GGUF weights,
 the learned concept codec, independent concept heads, full prompt gradients,

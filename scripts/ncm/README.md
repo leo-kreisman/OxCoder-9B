@@ -1,5 +1,11 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [host optimizer stage](OPTIMIZER-OFFLOAD-V24.md) addresses the GPU0 memory
+failure encountered beyond the initial parallel smoke. Its CPU AdamW path
+retains learned moments and removes about 512 MiB of GPU optimizer state per
+replica. This is a training-memory adjustment, with separately measured
+numerical error and update cost; it does not establish NCM coding quality.
+
 The [two-replica training path](PARALLEL-TRAINING-V23.md) passed numerical controls
 and measured 1.40–1.64× faster four-example backwards, including gradient
 communication. Its optimizer continuation and model-quality gates remain separate.

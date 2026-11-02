@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "execution_smoke_passed": true,
+  "checkpoint_sha256": "02b7ec81cb7f06b5a93a55bf58b70c96bf6e30ae58b21ccb04b0eb8ccc1dd3a5",
+  "identity_sha256": "a22aae5e4bcf12f76df2345c29753308206f8976fcfa1ba1e7c20633fe8105af",
+  "initialization_sha256": "3e7cc9e9e32c5a4d188469da4d7e1471ddbc34664bc957b3bcdab2e1aaeef0bd",
+  "updates": 10,
+  "first_update": 351,
+  "last_update": 360,
+  "maximum_prompt_tokens": 2032,
+  "median_update_seconds": 9.257001876831055,
+  "update_seconds": [
+    8.797273635864258,
+    5.046627044677734,
+    9.038000106811523,
+    11.450666427612305,
+    9.610086441040039,
+    8.29979133605957,
+    10.961562156677246,
+    9.476003646850586,
+    5.5573201179504395,
+    15.5678129196167
+  ],
+  "memory": [
+    {
+      "step": 360,
+      "device": "cuda:0",
+      "allocated_bytes": 4930549760,
+      "reserved_bytes": 6742343680,
+      "peak_allocated_bytes": 6596718592,
+      "scope": "This worker PyTorch allocator; excludes driver and other processes",
+      "cpu_head_optimizer": true
+    },
+    {
+      "step": 360,
+      "device": "cuda:1",
+      "allocated_bytes": 4930549760,
+      "reserved_bytes": 6446645248,
+      "peak_allocated_bytes": 6328131584,
+      "scope": "This worker PyTorch allocator; excludes driver and other processes",
+      "cpu_head_optimizer": true
+    }
+  ],
+  "development_passed": 0,
+  "development_evaluated": 12,
+  "coding_report_sha256": "518d115eab7ed6f6b7c9055e7521298e05e76d342b523e631e192784bf400446",
+  "quality_ready": false,
+  "scope": "Execution qualification through the failing batch; no NCM coding qualification"
+}
