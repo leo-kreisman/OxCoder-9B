@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "teacher_failed_publisher_checks": 39,
+    "passed_publisher_checks": 107,
+    "unsupported_or_invalid_code_or_tests": 97,
+    "original_answer_does_not_pass_local_publisher_checks": 6
+  },
+  "total_snapshot": 249,
+  "report_sha256": "05187b6cc2cc389bfc3241628efd3e15196e8ffaafb249be74a0ee9326a73329",
+  "identity_sha256": "e8d880fdf3f0af879cb8cd252deb14112efb122f241a374e9a4211f2a3ef707b",
+  "source_admission_manifest_sha256": "9d01e304baf9508bc2e5c1fb3d0e39010cc622276bbd2ea39a7409788848e2b1",
+  "teacher_identity_sha256": "8af3703a7f3453dae7e9bbc16e74bc4c315c770d395d15d251baf9657665390f",
+  "verifier_implementation_sha256": "ee448ab919799e33b2ca5b5a1e72915628fdf1793d676df4af018da837ea22ed",
+  "scope": "Training-only snapshot; no NCM model score",
+  "quality_ready": false,
+  "complete": true
+}
