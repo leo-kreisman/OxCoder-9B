@@ -7,6 +7,12 @@ from .preserve_evaluations import digest
 
 class MasterPipeline(Pipeline):
     def run(self):
+        if self.a.monitor_only:
+            if not active('ncm-master-v22.service'):
+                raise RuntimeError('Cannot resume monitoring without the existing trainer')
+            self.status('resumed_existing_training_monitor')
+            self.monitor(['--source', self.a.source, '--codec', self.root / 'results/ncm-contextual-decoder-v9/best.pt'])
+            return
         if any(active(name) for name in ('ncm-compact-v20.service', 'ncm-compact-pipeline-v20.service')):
             raise RuntimeError('Stop the previous trainer/coordinator before optimizer migration')
         base = self.root / 'results'
@@ -39,6 +45,10 @@ class MasterPipeline(Pipeline):
         self.launch(unit, self.module('train_compact', *training, '--output', base / unit,
                                      '--steps', self.a.steps, '--eval-every', '250', '--save-every', '50'),
                     seconds=86400)
+        self.monitor(common)
+
+    def monitor(self, common):
+        unit = 'ncm-master-v22'
         candidate = self.wait(unit + '.service', 'results/' + unit, stop_on_acceptance=True)
         if candidate is None:
             self.status('stage_complete_requires_next_experiment', acceptance_passed=False)
@@ -65,8 +75,9 @@ if __name__ == '__main__':
         parser.add_argument('--' + name, required=True)
     parser.add_argument('--output', default='results/ncm-master-pipeline-v22')
     parser.add_argument('--steps', type=int, default=5000)
+    parser.add_argument('--monitor-only', action='store_true', help='Resume observation of an already running trainer; do not launch training')
     args = parser.parse_args()
-    pipeline = MasterPipeline(args)
+    pipeline = MasterPipeline(args, resume=args.monitor_only)
     try:
         pipeline.run()
     except BaseException as error:

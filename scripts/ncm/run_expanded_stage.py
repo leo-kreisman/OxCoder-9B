@@ -51,11 +51,13 @@ def qualified_policy(report):
 
 
 class Pipeline:
-    def __init__(self, args):
+    def __init__(self, args, resume=False):
         self.a = args
         self.root = Path(args.root).resolve()
         self.out = self.root / args.output
-        self.out.mkdir(parents=True, exist_ok=False)
+        if resume and not (self.out / 'progress.json').is_file():
+            raise ValueError('Monitor resumption requires an existing pipeline state')
+        self.out.mkdir(parents=True, exist_ok=resume)
         self.units = []
 
     def status(self, phase, **values):

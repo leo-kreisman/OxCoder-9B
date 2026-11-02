@@ -5,6 +5,7 @@ SHA256 matches the completed evaluation, preventing a later model from being
 mislabelled with an earlier score. Only development evidence is selected here.
 """
 import argparse
+import fcntl
 import hashlib
 import json
 import os
@@ -40,6 +41,17 @@ def verified_copy(source, destination, expected):
 
 def process(directory):
     directory = Path(directory)
+    # Multiple monitoring tools can observe the same completed evaluation.
+    # Only one may create its immutable copy; another observer can retry later.
+    with (directory / '.evaluation-preservation.lock').open('a') as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            return []
+        return _process(directory)
+
+
+def _process(directory):
     captured = []
     for report_path in sorted(directory.glob('coding-*.json')):
         report = json.loads(report_path.read_text())
