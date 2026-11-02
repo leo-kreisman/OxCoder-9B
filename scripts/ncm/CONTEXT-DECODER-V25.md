@@ -87,12 +87,13 @@ can read another level's query features. Each level input contains only the
 reconstructed previous levels. Tests compare this combined execution with four
 independent level passes and check gradients with activation checkpointing.
 
-The initial recipe uses:
+The native decoder contains 129,306,113 trainable parameters in addition to
+the frozen source encoder. The initial recipe uses:
 
 - FP32 trainable parameters and optimizer state, BF16 autocast for matrix work.
 - Muon for hidden matrices; AdamW for heads, embeddings, positions and norms.
 - Learning rate 0.0003, 100-update warmup, cosine decay to 10% of the peak.
-- Batch 32, microbatch 2, 5,000 planned updates, gradient norm clipping at 1.
+- Batch 32, audited microbatch 8, 5,000 planned updates, gradient norm clipping at 1.
 - Mean cross entropy across four levels plus 0.1 times response-stop loss.
 - Previous-code corruption rising from zero after warmup to 0.15 over 200 updates.
 - Activation checkpointing in decoder blocks; prompt-length sorting inside an
@@ -104,6 +105,25 @@ The source encoder and codec are frozen throughout. A trainable decoder
 checkpoint stores optimizer state, CPU/CUDA random state and shuffled-epoch
 position. Resume rejects a changed model, data or implementation identity.
 An immutable weights snapshot is published for each validation checkpoint.
+
+A full-shape synthetic CUDA audit compared microbatches 2, 4 and 8 on the same
+eight examples at 2,048 prompt tokens. Median forward/backward times were
+0.3002, 0.2081 and 0.1802 seconds respectively. The microbatch-8 gradient's
+relative L2 difference from microbatch 2 was 0.003085, below the predetermined
+0.02 bound; relative loss difference was 1.39e-7, below 0.01. Its peak PyTorch
+allocation was 1,960,276,992 bytes and the first optimizer step took 0.1206 s.
+These figures exclude source encoding, feature loading, checkpointing and
+evaluation. They are **not** end-to-end training or generation speed. The audit
+temporarily suspended only the GPU1 feature worker and resumed it in `finally`.
+The other GPU continued extraction. Evidence is stored locally under
+`results/ncm-context-batch-audit-v25b/report.json`.
+
+The orchestrator checks the numerical report and decoder/trainer source hashes
+before choosing microbatch 8. The standalone trainer's conservative default
+remains 2; specify `--microbatch 8` to reproduce the audited run. A CPU synthetic
+integration test also verifies that interrupting at a saved checkpoint and
+resuming yields bitwise-identical model, optimizer, sampler and random states
+to uninterrupted training. Neither synthetic test measures coding quality.
 
 ## Execution
 
@@ -143,7 +163,7 @@ python -m scripts.ncm.context_cache \
 python -m scripts.ncm.train_context_decoder \
   --cache results/ncm-context-pipeline-v25/features.json \
   --codec results/ncm-contextual-decoder-v9/best.pt \
-  --output results/ncm-context-training-v25 --device cuda:1
+  --output results/ncm-context-training-v25 --device cuda:1 --microbatch 8
 ```
 
 The feature cache can require tens of gigabytes of disk. Its reader maintains a

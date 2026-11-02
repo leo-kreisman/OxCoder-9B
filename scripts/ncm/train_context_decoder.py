@@ -141,6 +141,7 @@ def run(a):
         'lr': a.lr, 'batch': a.batch, 'microbatch': a.microbatch, 'seed': a.seed,
         'planned_steps': a.steps, 'warmup': a.warmup, 'max_corruption': a.corruption,
         'precision': 'FP32 parameters/optimizer, BF16 autocast, full precision reductions',
+        'torch_version': str(torch.__version__), 'device_type': torch.device(a.device).type,
         'implementation_sha256': {n: digest(Path(__file__).parent / n) for n in code_names}}
     # Tuples become arrays in JSON; checkpoint identity comparison stays native.
     sampler = random.Random(a.seed)
@@ -152,7 +153,8 @@ def run(a):
         model.load_state_dict(state['model']); optimizer.load_state_dict(state['optimizer'])
         order, position, epoch = state['sampler']['order'], state['sampler']['position'], state['sampler']['epoch']
         sampler.setstate(state['sampler']['random'])
-        torch.set_rng_state(state['torch_rng']); torch.cuda.set_rng_state(state['cuda_rng'], a.device)
+        torch.set_rng_state(state['torch_rng'])
+        if a.device.startswith('cuda'): torch.cuda.set_rng_state(state['cuda_rng'], a.device)
         start, best = state['step'], state['best_validation_ce']
     else:
         save(out / 'initial.pt', {'identity': identity, 'model': cpu_tree(model.state_dict()), 'step': 0})
@@ -194,11 +196,11 @@ def run(a):
             del loss, logits, ending, inputs, b
         gradient = float(torch.nn.utils.clip_grad_norm_(model.parameters(), 1., error_if_nonfinite=True))
         optimizer.step()
-        torch.cuda.synchronize(a.device)
+        if a.device.startswith('cuda'): torch.cuda.synchronize(a.device)
         record = {'step': step, 'loss': loss_total, 'code_accuracy': acc,
                   'seconds': time.monotonic() - begin, 'examples': a.batch,
                   'epoch': epoch, 'lr': learning_rate, 'corruption': corruption, 'gradient_norm': gradient,
-                  'cuda_peak_bytes': torch.cuda.max_memory_allocated(a.device),
+                  'cuda_peak_bytes': torch.cuda.max_memory_allocated(a.device) if a.device.startswith('cuda') else None,
                   'sequence_since_resume_sha256': sequence.hexdigest(), 'quality_ready': False}
         with (out / 'training.jsonl').open('a') as f: f.write(json.dumps(record) + '\n')
         print(json.dumps(record), flush=True)
@@ -214,7 +216,8 @@ def run(a):
             state = {'identity': identity, 'model': cpu_tree(model.state_dict()),
                 'optimizer': cpu_tree(optimizer.state_dict()), 'step': step, 'best_validation_ce': best,
                 'sampler': {'order': order, 'position': position, 'epoch': epoch, 'random': sampler.getstate()},
-                'torch_rng': torch.get_rng_state(), 'cuda_rng': torch.cuda.get_rng_state(a.device)}
+                'torch_rng': torch.get_rng_state(),
+                'cuda_rng': torch.cuda.get_rng_state(a.device) if a.device.startswith('cuda') else None}
             save(out / 'latest.pt', state)
             if do_eval:
                 save(out / f'evaluated-{step}.pt', {'identity': identity, 'model': state['model'], 'step': step})
