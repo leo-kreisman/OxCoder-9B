@@ -11,6 +11,14 @@ from scripts.ncm.run_expanded_stage import Pipeline
 
 
 class EvaluationMonitorTests(unittest.TestCase):
+    def test_observer_can_start_before_trainer_directory_without_creating_it(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory) / 'not-created-by-trainer-yet'
+            self.assertEqual(preservation.process(root), [])
+            self.assertFalse(root.exists())
+            root.mkdir(exist_ok=False)
+            self.assertEqual(preservation.process(root), [])
+
     def test_concurrent_observers_preserve_once_without_stopping_monitor(self):
         with TemporaryDirectory() as directory:
             root = Path(directory)

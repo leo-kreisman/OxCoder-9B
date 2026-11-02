@@ -28,8 +28,14 @@ gradient relative L2 errors are 0.339% and 0.535%; the largest parameter-group
 error is 1.931%, for interfaces in the mixed-length batch. Every group passes
 the existing relative-L2 limit of 5% and cosine threshold of 0.99. This is a
 finite BF16 numerical comparison, not bit-exact training equivalence or a
-model-quality result. The complete optimizer continuation still requires its
-separate smoke run with resident optimizer states.
+model-quality result. The separate [optimizer smoke](validation/v23-controls/optimizer-smoke.json)
+completed three updates from saved update 350, including resident optimizer
+states, finite gradients, agreement between replica weights, checkpoint
+serialization, and development evaluation. The three differently sized batches
+took 8.633, 4.580, and 8.619 seconds including optimizer updates. Those timings
+are not an additional controlled speed comparison. Development generation
+remained 0/12, so the smoke qualified execution only. The main continuation
+starts from the same immutable update-350 parent, retaining the optimizer state.
 
 ## Why the synchronization is explicit
 
@@ -143,3 +149,11 @@ Checkpoint preservation now uses a nonblocking filesystem lock so concurrent
 observers cannot race to create the same snapshot. The original master-stage
 monitor supports `--monitor-only` to observe an existing trainer without
 restarting its optimization.
+
+The parallel coordinator also supports `--monitor-only`. If its observer exits
+while the trainer continues, repeat the original coordinator arguments with
+that flag. It reattaches to `ncm-parallel-v23.service`, preserves completed
+evaluations, and performs the same acceptance replay; it never launches another
+trainer or repeats data preparation. Observers may start before the trainer has
+created its output directory. In that case preservation returns no snapshots
+and retries later, leaving directory creation exclusively to the trainer.

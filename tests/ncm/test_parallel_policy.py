@@ -4,15 +4,31 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import patch
+from types import SimpleNamespace
 
 import torch
 
 from scripts.ncm.prepare_curated_expansion import combined_archives
 from scripts.ncm.open_corpus import file_sha
 from scripts.ncm.train_parallel import qualify, state_hash
+from scripts.ncm.run_parallel_stage import ParallelPipeline
 
 
 class ParallelPolicyTests(unittest.TestCase):
+    def test_resumed_monitor_does_not_relaunch_or_reprepare(self):
+        with TemporaryDirectory() as directory:
+            args = SimpleNamespace(root=directory, output='pipeline')
+            original = ParallelPipeline(args)
+            original.status('stage_error')
+            resumed = ParallelPipeline(args, resume=True)
+            with patch.object(resumed, 'launch') as launch, \
+                    patch.object(resumed, 'wait', return_value=Path('candidate.pt')) as wait, \
+                    patch.object(resumed, 'replay') as replay:
+                resumed.monitor_existing()
+            launch.assert_not_called()
+            wait.assert_called_once_with('ncm-parallel-v23.service', 'results/ncm-parallel-v23', stop_on_acceptance=True)
+            replay.assert_called_once_with(Path('candidate.pt'))
+
     def test_policy_requires_both_numerical_and_speed_controls(self):
         gradient = {'finite': True, 'relative_l2': .01, 'cosine': .9999}
         record = {'passed': True, 'speed_ratio': 1.4, 'logit_comparison': {'finite': True, 'relative_l2': 0},

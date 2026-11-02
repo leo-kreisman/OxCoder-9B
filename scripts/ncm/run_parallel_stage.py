@@ -18,6 +18,15 @@ from .run_expanded_stage import Pipeline, active, read, stop
 
 
 class ParallelPipeline(Pipeline):
+    def monitor_existing(self):
+        unit = 'ncm-parallel-v23'
+        self.status('monitoring_two_replica_student', unit=unit + '.service')
+        candidate = self.wait(unit + '.service', 'results/' + unit, stop_on_acceptance=True)
+        if candidate is not None:
+            self.replay(candidate)
+        else:
+            self.status('stage_complete_requires_next_experiment', acceptance_passed=False)
+
     def distributed(self, name, *arguments):
         return [self.a.python, '-m', 'torch.distributed.run', '--standalone', '--nproc_per_node=2',
                 '-m', 'scripts.ncm.' + name, *map(str, arguments)]
@@ -119,11 +128,7 @@ class ParallelPipeline(Pipeline):
         self.launch(unit, self.distributed('train_parallel', *common, '--output', self.root / 'results' / unit,
             '--steps', self.a.steps, '--eval-every', '250', '--save-every', '50'),
             memory='28G', seconds=86400, cpu=600)
-        candidate = self.wait(unit + '.service', 'results/' + unit, stop_on_acceptance=True)
-        if candidate is not None:
-            self.replay(candidate)
-        else:
-            self.status('stage_complete_requires_next_experiment', acceptance_passed=False)
+        self.monitor_existing()
 
 
 if __name__ == '__main__':
@@ -132,10 +137,15 @@ if __name__ == '__main__':
         parser.add_argument('--' + name, required=True)
     parser.add_argument('--output', default='results/ncm-parallel-pipeline-v23')
     parser.add_argument('--steps', type=int, default=5000)
+    parser.add_argument('--monitor-only', action='store_true',
+                        help='Resume the existing trainer monitor without restarting training or data preparation')
     args = parser.parse_args()
-    pipeline = ParallelPipeline(args)
+    pipeline = ParallelPipeline(args, resume=args.monitor_only)
     try:
-        pipeline.run()
+        if args.monitor_only:
+            pipeline.monitor_existing()
+        else:
+            pipeline.run()
     except BaseException as error:
         pipeline.status('stage_error', error=repr(error), acceptance_passed=False)
         raise

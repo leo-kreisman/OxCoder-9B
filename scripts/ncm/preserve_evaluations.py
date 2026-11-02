@@ -41,6 +41,10 @@ def verified_copy(source, destination, expected):
 
 def process(directory):
     directory = Path(directory)
+    # A service becomes active before its Python trainer creates the output
+    # directory. Do not create it here: the trainer owns exclusive creation.
+    if not directory.exists():
+        return []
     # Multiple monitoring tools can observe the same completed evaluation.
     # Only one may create its immutable copy; another observer can retry later.
     with (directory / '.evaluation-preservation.lock').open('a') as lock:
