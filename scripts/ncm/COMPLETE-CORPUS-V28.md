@@ -104,6 +104,17 @@ matched eager features bit for bit. Replay medians were only approximately
 This did not justify replacing the running extraction path. Graph replay is not
 enabled in the corpus extractor.
 
+`audit_context_execution.py` checks the trained decoder separately from source
+extraction. On sixteen fixed validation windows, batch-eight and single-example
+combined forwards agreed on every concept argmax. Combined versus separate
+per-level BF16 forwards agreed on 98.44%, 100%, 99.61% and 99.90% of positions
+at the four levels; maximum relative logit L2 difference was 0.00311. Stop
+logits matched exactly. These are canonical, target-conditioned earlier levels,
+not complete free generations. The small numerical differences should not be
+described as bit-exact execution, but this audit did not identify a widespread
+batching mismatch that explains the coding failure. No precision setting was
+changed on the basis of this diagnostic.
+
 ## Matched training arms
 
 Both arms initialize **model weights only** from the immutable version 25
