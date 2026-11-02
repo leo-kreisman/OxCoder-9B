@@ -1,5 +1,13 @@
 # Prompt-conditioning control
 
+Both update-500 arms completed the 16-conversation control. Replacing the
+correct prompt increased per-level cross entropy by approximately
+`[0.833, 0.370, 0.153, 0.052]` for the baseline and
+`[0.729, 0.342, 0.122, 0.040]` for the higher-rate arm. The prompt therefore
+affected predictions and the correct prompt helped this conditional diagnostic.
+Fine-level accuracy remained low and neither checkpoint passed any of the
+twelve coding tasks. Different replacement lengths remain a confound.
+
 `audit_prompt_conditioning.py` checks whether a frozen NCM checkpoint predicts
 concepts better with the correct request than with an unrelated request.
 Low training loss alone cannot establish that the model uses its conditioning.

@@ -100,3 +100,18 @@ preserve evaluations and requires a separate cold replay of any 12/12 candidate.
 services. Its `progress.json`, per-arm probe reports, `comparison.json`, and
 launch records remain in `results/ncm-lr-comparison-v24`. A running service or
 a selected learning rate is not a completed training result.
+# Completed comparison
+
+The two 350-to-500 arms consumed the same 600 examples across 150 updates;
+logged example and device-allocation sequences matched. Both scored 0/12 on
+the unchanged executable coding tasks. On the frozen 64-conversation probe,
+mean concept cross entropy was 3.96511 for the baseline and 3.97517 for the
+higher-rate arm. The paired delta was +0.01006, with an approximate 95% normal
+interval of [-0.00653, +0.02664]. Free valid UTF-8/EOS chunks decreased from
+42 to 32; exact chunks remained zero. Non-padding free byte accuracy decreased
+from 0.08228 to 0.07263. Valid UTF-8 is not evidence of useful code.
+
+The selection rule retained the original learning rate. The original run
+resumed at update 500 with its optimizer and random state. Local detailed
+evidence is in `results/ncm-lr-comparison-v24/comparison.json`; no model was
+qualified by this comparison.

@@ -1,5 +1,11 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [frozen-encoder/native-decoder experiment](CONTEXT-DECODER-V25.md) caches
+prompt-only states from all original OxCoder layers and trains a separate
+bidirectional multiscale decoder with larger batches. This is distinct from
+converting the original layers into a concept generator. Its data, inference
+boundary and unchanged twelve-task acceptance test are documented explicitly.
+
 The [paired learning-rate continuation](LEARNING-RATE-COMPARISON-V24.md) compares
 two rates using identical training examples and a frozen 64-conversation
 validation selection. The [prompt-conditioning control](PROMPT-CONDITIONING-CONTROL.md)

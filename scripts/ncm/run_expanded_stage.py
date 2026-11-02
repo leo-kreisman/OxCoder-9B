@@ -71,6 +71,13 @@ class Pipeline:
     def launch(self, unit, command, memory='28G', seconds=1800, gpu='0,1', kernels=True, cpu=400):
         if active(unit):
             raise RuntimeError('Refusing to replace active unit: ' + unit)
+        # Stopping torchrun at a preserved checkpoint can leave a failed
+        # transient unit loaded. Release that inactive unit before reusing its
+        # name for an optimizer-preserving resume. The model files are untouched.
+        # A never-created unit has nothing to reset; systemd-run remains the
+        # authoritative check that creation succeeded.
+        subprocess.run(['systemctl', '--user', 'reset-failed', unit], check=False,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         log = self.root / 'results' / (unit + '.log')
         pythonpath = 'results/ncm-deps:results/ncm-data-deps'
         if kernels:
