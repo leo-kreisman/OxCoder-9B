@@ -20,6 +20,8 @@ test_prompt_containing_heldout_target_is_excluded (test_creator_admission.Admiss
 test_shared_instruction_wrapper_is_not_treated_as_a_heldout_answer (test_creator_admission.AdmissionTests) ... ok
 test_evaluation_hash_ignores_train_append_but_detects_holdout_mutation (test_creator_preparation.PreparationTests) ... ok
 test_expansion_preserves_complete_prefix_and_utf8_chunks (test_creator_preparation.PreparationTests) ... ok
+test_matching_bytes_are_preserved (test_evaluation_snapshot.SnapshotTests) ... ok
+test_mismatched_checkpoint_cannot_receive_evaluation_label (test_evaluation_snapshot.SnapshotTests) ... ok
 test_codec_weights_only_initialization (test_followup.FollowupTests) ... ok
 test_complete_conditioning_never_truncates_or_leaks_target (test_followup.FollowupTests) ... ok
 test_complete_gate_cannot_be_bypassed_by_chunk_score (test_followup.FollowupTests) ... ok
@@ -48,7 +50,7 @@ test_zero_corruption_preserves_inputs_and_nonzero_preserves_labels (test_indepen
 test_corruption_never_mutates_targets (test_open_baseline.CorpusTests) ... ok
 test_dedup_and_benchmark_normalization (test_open_baseline.CorpusTests) ... ok
 test_filter_requires_license_and_parseable_python (test_open_baseline.CorpusTests) ... ok
-test_pipeline_rejects_second_writer_before_state_changes (test_open_baseline.CorpusTests) ... /usr/lib/python3.10/traceback.py:236: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmp_0glukfw/.pipeline.lock' mode='a' encoding='UTF-8'>
+test_pipeline_rejects_second_writer_before_state_changes (test_open_baseline.CorpusTests) ... /usr/lib/python3.10/traceback.py:236: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpxkq59xei/.pipeline.lock' mode='a' encoding='UTF-8'>
   tb.tb_frame.clear()
 ResourceWarning: Enable tracemalloc to get the object allocation traceback
 ok
@@ -100,7 +102,7 @@ test_reject_stale_state_after_adapter_update (test_prefix.PrefixTests) ... ok
 test_target_gradients_and_checkpoint_recompute (test_prefix.PrefixTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 83 tests in 2.008s
+Ran 85 tests in 2.329s
 
 OK
 VQVAE, Total parameter count: 0.11M

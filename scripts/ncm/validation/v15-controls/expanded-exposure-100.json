@@ -1,0 +1,11 @@
+{
+  "through_update": 100,
+  "expanded": 88,
+  "distilled": 4,
+  "sources": {
+    "TeichAI/DeepSeek-v4-Pro-Agent": 37,
+    "TeichAI/Ox-Alpha-10k": 63
+  },
+  "mean_update_seconds": 4.501814707521117,
+  "quality_ready": false
+}

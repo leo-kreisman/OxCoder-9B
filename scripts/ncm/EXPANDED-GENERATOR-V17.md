@@ -2,6 +2,20 @@
 
 ## Objective and current evidence
 
+The first version 17 evaluation, at update 100, passed **0/12** coding tasks.
+One of six development chunks had valid UTF-8/EOS structure; none matched its
+target exactly. Training continued after this check. The evaluated checkpoint
+was preserved with SHA256
+`83a29ad651b8e70514ad374e830c48817ccac4bd4824ed984472557483d545e6`.
+See [coding evidence](validation/v15-controls/expanded-coding-100.json) and
+[chunk evidence](validation/v15-controls/expanded-chunks-100.json).
+
+Across those 100 updates, 88 sampled the new expansion and four sampled cached
+OxCoder teacher responses; 63 were Alpha-origin and 37 Agent-origin. Mean
+update duration was 4.50 seconds on this workstation, excluding startup,
+checkpoint writes and evaluations. This is training timing, not inference
+tokens per second or an estimate for a Mac.
+
 The objective is a useful OxCoder-derived next-concept coding generator. There
 is no qualified NCM coding checkpoint yet. This stage reuses the actual OxCoder
 text backbone, its trained adapters and independent concept classifiers, and
@@ -144,6 +158,29 @@ Inspect these artifacts in the output directory:
 6. `chunks-N.json`: teacher-forced code prediction and free-running decoded
    development chunks at each 100-update boundary.
 7. `coding-N.json`: actual generated answers and sandboxed executable checks.
+
+To retain each evaluated checkpoint while training continues, run this separate
+stdlib-only observer from the repository root:
+
+```bash
+python3 -S -m scripts.ncm.preserve_evaluations \
+  --directory results/ncm-independent-v17 \
+  --unit ncm-independent-v17.service --seconds 14400
+```
+
+`-S` avoids unrelated site packages shadowing the repository's `scripts`
+namespace. The observer reads the service status, never starts or restarts it,
+and stops when the service exits or its duration expires. It copies a checkpoint
+only after all 12 development tasks finish, verifies the copied bytes against
+the evaluation's SHA256, and records `snapshot_preserved=false` if the latest
+checkpoint advanced before copying. It never assigns an older score to newer
+weights. `evaluated-N.pt` and `evaluated-N.json` are research artifacts; they do
+not authorize deployment. Keep model binaries out of source control.
+
+The version 17 recovery check replayed update 41 from saved update 40 with
+identical example selection, loss and code accuracies. Timing and allocator
+peaks are excluded from that comparison. This tests one recovery boundary,
+not general cross-device reproducibility.
 
 Training loss alone cannot authorize a release. If teacher-forced prediction
 improves while free generation remains invalid, investigate accumulated

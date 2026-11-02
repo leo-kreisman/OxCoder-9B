@@ -1,0 +1,70 @@
+{
+  "checkpoint_sha256": "83a29ad651b8e70514ad374e830c48817ccac4bd4824ed984472557483d545e6",
+  "tasks": [
+    {
+      "task": "factorial",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "unique",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "chunks",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "balanced",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "gcd",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "merge_intervals",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "flatten",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "rotate",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "word_counts",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "transpose",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "binary_search",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    },
+    {
+      "task": "is_prime",
+      "passed": false,
+      "stop_reason": "invalid_codec_output"
+    }
+  ],
+  "passed": 0,
+  "evaluated": 12,
+  "seconds": 4.654049739008769,
+  "quality_ready": false,
+  "scope": "12 elementary Python function tasks; not professional qualification or an 8GB measurement"
+}

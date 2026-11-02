@@ -1,0 +1,49 @@
+{
+  "checkpoint_update": 40,
+  "replayed_update": 41,
+  "copies": 2,
+  "fields_compared": [
+    "step",
+    "loss",
+    "code_accuracy",
+    "source",
+    "distilled",
+    "training_example",
+    "expansion",
+    "prompt_tokens"
+  ],
+  "equal": true,
+  "scope": "one resumed update with same saved RNG/model/optimizer; timings and allocator peaks excluded",
+  "records": [
+    {
+      "step": 41,
+      "loss": 6.185986638069153,
+      "code_accuracy": [
+        0.25,
+        0.0625,
+        0.015625,
+        0.109375
+      ],
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "training_example": "9bbde15b9534f66fd7d6a862837fe0dc866793f52980eedea98a8cd9680fa46e:2:byte-1",
+      "expansion": "creator-v15b",
+      "prompt_tokens": 613
+    },
+    {
+      "step": 41,
+      "loss": 6.185986638069153,
+      "code_accuracy": [
+        0.25,
+        0.0625,
+        0.015625,
+        0.109375
+      ],
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "distilled": false,
+      "training_example": "9bbde15b9534f66fd7d6a862837fe0dc866793f52980eedea98a8cd9680fa46e:2:byte-1",
+      "expansion": "creator-v15b",
+      "prompt_tokens": 613
+    }
+  ]
+}
