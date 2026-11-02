@@ -19,7 +19,9 @@ mismatch. Changing the optimizer can therefore help, do little, or hurt dependin
 on the training stage. The retained AdamW baseline is necessary.
 
 The installed, pinned PyTorch `2.11.0+cu128` already includes
-`torch.optim.Muon`; no new optimizer package or custom implementation was added.
+`torch.optim.Muon`; the algorithm comes from that implementation. The later
+[FP32-master continuation](MASTER-OPTIMIZER-V22.md) adds a precision and
+checkpoint wrapper around it for BF16 adapters, without replacing its algorithm.
 Use the [PyTorch API documentation](https://docs.pytorch.org/docs/stable/generated/torch.optim.Muon.html)
 and [author's repository](https://github.com/KellerJordan/Muon) for the algorithm.
 The local code uses five Newton–Schulz steps, momentum 0.95, Nesterov momentum,

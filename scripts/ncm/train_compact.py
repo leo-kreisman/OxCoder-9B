@@ -29,6 +29,7 @@ from .train_accumulated import example_loss
 from .train_geometry import ResponseSampler
 from .train_independent import corrupted_inputs, validate_expansion
 from .training_runtime import execution
+from .master_muon import FP32MasterMuon, migrate_bundle
 
 
 def run(a, out):
@@ -72,23 +73,26 @@ def run(a, out):
     matrices = [p for n, p in trainable if (n.startswith('backbone.adapters.') and p.ndim == 2) or n == 'project.weight']
     used = {id(p) for p in heads + matrices}
     other = [p for _, p in trainable if id(p) not in used]
+    matrix_optimizer = FP32MasterMuon if a.fp32_master_muon else torch.optim.Muon
     optimizer = OptimizerBundle([
         torch.optim.AdamW(heads, lr=a.head_lr, weight_decay=.01, foreach=False),
         torch.optim.AdamW(other, lr=a.body_lr, weight_decay=.01, foreach=False),
-        torch.optim.Muon(matrices, lr=a.body_lr, weight_decay=.01, adjust_lr_fn='match_rms_adamw')])
+        matrix_optimizer(matrices, lr=a.body_lr, weight_decay=.01, adjust_lr_fn='match_rms_adamw')])
     names = ('train_compact.py', 'compact_training_policy.py', 'distillation_curriculum.py', 'gguf_training_weights.py',
              'gguf_training_backbone.py', 'packed_training.py', 'train_accumulated.py', 'train_independent.py',
              'train.py', 'train_geometry.py', 'backbone.py', 'geometry.py', 'codec.py',
              'generate_candidate.py', 'coding_eval.py', 'training_runtime.py',
-             'shared_training.py', 'vendor/veomni_shared_prefix.py')
+             'shared_training.py', 'vendor/veomni_shared_prefix.py', 'master_muon.py')
     implementation = {name: digest(Path(__file__).parent / name) for name in names}
-    identity = {**parent, 'training_recipe': 'independent-classifiers-compact-v20',
+    identity = {**parent, 'training_recipe': ('independent-classifiers-compact-master-v22' if a.fp32_master_muon
+                                           else 'independent-classifiers-compact-v20'),
         'initialization': {'checkpoint_sha256': parent_sha, 'scope': 'Retain learned weights; fresh optimizer unless explicitly continued'},
         'prepared_sha256': manifest['prepared_sha256'], 'seed': a.seed, 'planned_steps': a.steps,
         'effective_batch_examples': a.accumulation, 'head_lr': a.head_lr, 'body_lr': a.body_lr, 'head_warmup': 0,
         'conditioning_corruption': {'maximum': a.corruption, 'schedule': 'linear from maximum at first level to zero at last; clean labels'},
         'loss': 'example mean of (level-mean code CE + 0.1 final-level end BCE)',
-        'optimizer': {'name': 'Muon hidden matrices + AdamW classifiers/interfaces', 'head_lr': a.head_lr, 'body_lr': a.body_lr},
+        'optimizer': {'name': 'Muon hidden matrices + AdamW classifiers/interfaces', 'head_lr': a.head_lr, 'body_lr': a.body_lr,
+                      'fp32_master_muon': a.fp32_master_muon, 'explicit_legacy_migration': a.migrate_muon},
         'execution_policy': policy, 'compact_execution': {'weight_policy': weight_policy,
             'placement_policy': placement,
             'packing_policy': packing_policy, 'pack_tokens': a.pack_tokens, 'physical_devices': devices,
@@ -112,7 +116,13 @@ def run(a, out):
         checkpoint = torch.load(a.init, weights_only=True, map_location='cpu')
         if digest(a.init) != parent_sha:
             raise ValueError('Continuation checkpoint changed')
-        optimizer.load_state_dict(checkpoint['optimizer'])
+        if a.migrate_muon:
+            migrate_bundle(optimizer, checkpoint['optimizer'])
+            identity['initialization']['optimizer_migration'] = (
+                'Retain AdamW states and Muon momentum; initialize FP32 masters from current rounded model; '
+                'old discarded update bits are unrecoverable')
+        else:
+            optimizer.load_state_dict(checkpoint['optimizer'])
         set_rng(checkpoint['rng'])
         start, history = checkpoint['step'], checkpoint['history']
         identity['initialization']['scope'] = 'Retain learned weights, optimizer, RNG and completed update count'
@@ -224,6 +234,8 @@ if __name__ == '__main__':
         parser.add_argument('--' + name, required=True)
     parser.add_argument('--packed-audit')
     parser.add_argument('--placement-audit')
+    parser.add_argument('--fp32-master-muon', action='store_true')
+    parser.add_argument('--migrate-muon', action='store_true', help='Explicit legacy BF16-Muon state migration')
     parser.add_argument('--device', default='cuda:1')
     parser.add_argument('--steps', type=int, default=5000)
     parser.add_argument('--accumulation', type=int, default=4)
@@ -241,6 +253,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if min(args.steps, args.accumulation, args.eval_every, args.save_every, args.pack_tokens) < 1:
         parser.error('Positive schedule bounds required')
+    if args.migrate_muon and not (args.fp32_master_muon and args.continue_optimizer):
+        parser.error('Muon migration requires FP32 masters and optimizer continuation')
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=args.resume)
     with (output / '.training.lock').open('a') as lock:
