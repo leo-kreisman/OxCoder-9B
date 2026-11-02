@@ -134,6 +134,22 @@ not authorize changing a running training environment. The operator audit in
 BF16; a passing operator audit still requires a whole-backbone comparison and
 an explicitly identified new training stage before adoption.
 
+The optional extension subsequently built successfully after limiting the build
+to this workstation's `sm_120` architecture and one NVCC thread. The CUDA kernel
+sources were unchanged. The resulting local wheel SHA256 is
+`49e54fb555182ba75f7747ce5b020dd9776656c06975e7bf6cc36f7908630df6`.
+It is not a Mac artifact or a portable wheel for older CUDA architectures.
+
+The isolated operator audit passed at sequence lengths 64, 512 and 2,048 in
+FP32 and BF16, checking outputs and both input/weight gradients against the
+unwrapped Transformers fallback. BF16 relative L2 differences remained below
+0.0029. BF16 forward/backward speed ratios were approximately 1.04, 1.20 and
+1.63 respectively, while the training job was also using the GPU. These are
+contended operator timings, not end-to-end training or inference speedups.
+The extension remains excluded from version 17's training environment.
+See [operator evidence](validation/v15-controls/causal-convolution-audit.json)
+and [build identity](validation/v15-controls/causal-convolution-build.json).
+
 This is resident BF16 research training across two 16 GiB CUDA devices, with
 12 backbone layers on the first and 20 on the second. The allocator cap is per
 device, constrained further by free-memory admission and runtime reserves.

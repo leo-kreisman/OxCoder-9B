@@ -1,0 +1,168 @@
+{
+  "torch": "2.11.0+cu128",
+  "causal_conv1d": "1.7.0",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "records": [
+    {
+      "dtype": "torch.float32",
+      "length": 64,
+      "output_and_gradient_errors": [
+        {
+          "relative_l2": 5.3846815006863835e-08,
+          "max_absolute": 1.1920928955078125e-07,
+          "finite": true
+        },
+        {
+          "relative_l2": 8.691265662719161e-08,
+          "max_absolute": 3.410605131648481e-13,
+          "finite": true
+        },
+        {
+          "relative_l2": 1.2473282140490483e-07,
+          "max_absolute": 5.4569682106375694e-12,
+          "finite": true
+        }
+      ],
+      "relative_l2_tolerance": 1e-05,
+      "passed": true,
+      "reference_forward_backward_seconds": 0.0023891699966043234,
+      "extension_forward_backward_seconds": 0.0022824740153737366,
+      "operator_speed_ratio": 1.0467457594311829
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 512,
+      "output_and_gradient_errors": [
+        {
+          "relative_l2": 5.38531885752036e-08,
+          "max_absolute": 1.1920928955078125e-07,
+          "finite": true
+        },
+        {
+          "relative_l2": 8.732589407145497e-08,
+          "max_absolute": 4.263256414560601e-14,
+          "finite": true
+        },
+        {
+          "relative_l2": 1.6236094779742416e-07,
+          "max_absolute": 1.8189894035458565e-12,
+          "finite": true
+        }
+      ],
+      "relative_l2_tolerance": 1e-05,
+      "passed": true,
+      "reference_forward_backward_seconds": 0.0034745479933917522,
+      "extension_forward_backward_seconds": 0.0028051550034433603,
+      "operator_speed_ratio": 1.2386295905669042
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2048,
+      "output_and_gradient_errors": [
+        {
+          "relative_l2": 5.38889182166713e-08,
+          "max_absolute": 2.384185791015625e-07,
+          "finite": true
+        },
+        {
+          "relative_l2": 8.723745281713491e-08,
+          "max_absolute": 1.4210854715202004e-14,
+          "finite": true
+        },
+        {
+          "relative_l2": 2.1289321239237324e-07,
+          "max_absolute": 1.3642420526593924e-12,
+          "finite": true
+        }
+      ],
+      "relative_l2_tolerance": 1e-05,
+      "passed": true,
+      "reference_forward_backward_seconds": 0.012886651005828753,
+      "extension_forward_backward_seconds": 0.00763770000776276,
+      "operator_speed_ratio": 1.6872423625870479
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 64,
+      "output_and_gradient_errors": [
+        {
+          "relative_l2": 0.002853709040209651,
+          "max_absolute": 0.0078125,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.002719481475651264,
+          "max_absolute": 7.450580596923828e-09,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.0026342065539211035,
+          "max_absolute": 1.1920928955078125e-07,
+          "finite": true
+        }
+      ],
+      "relative_l2_tolerance": 0.02,
+      "passed": true,
+      "reference_forward_backward_seconds": 0.002398088021436706,
+      "extension_forward_backward_seconds": 0.0022976880136411637,
+      "operator_speed_ratio": 1.0436961011240329
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 512,
+      "output_and_gradient_errors": [
+        {
+          "relative_l2": 0.002872319659218192,
+          "max_absolute": 0.0078125,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.0027310096193104982,
+          "max_absolute": 1.862645149230957e-09,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.0025961841456592083,
+          "max_absolute": 5.960464477539063e-08,
+          "finite": true
+        }
+      ],
+      "relative_l2_tolerance": 0.02,
+      "passed": true,
+      "reference_forward_backward_seconds": 0.003373335988726467,
+      "extension_forward_backward_seconds": 0.002807344979373738,
+      "operator_speed_ratio": 1.201610779405882
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2048,
+      "output_and_gradient_errors": [
+        {
+          "relative_l2": 0.0028731070924550295,
+          "max_absolute": 0.0078125,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.0027272410225123167,
+          "max_absolute": 4.656612873077393e-10,
+          "finite": true
+        },
+        {
+          "relative_l2": 0.0025794075336307287,
+          "max_absolute": 2.9802322387695312e-08,
+          "finite": true
+        }
+      ],
+      "relative_l2_tolerance": 0.02,
+      "passed": true,
+      "reference_forward_backward_seconds": 0.012439717975212261,
+      "extension_forward_backward_seconds": 0.007636053021997213,
+      "operator_speed_ratio": 1.6290769510605947
+    }
+  ],
+  "passed": true,
+  "quality_ready": false,
+  "adopted_in_training": false,
+  "scope": "isolated convolution outputs and gradients; whole-backbone audit still required",
+  "timing_scope": "operator only; other GPU activity may affect timings"
+}

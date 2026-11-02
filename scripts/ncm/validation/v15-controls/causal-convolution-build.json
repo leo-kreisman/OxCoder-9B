@@ -1,0 +1,16 @@
+{
+  "upstream_sdist_sha256": "3202758494eaa7b597ce1c282dfa188889506bfcb92cad3c407d26736bfcd32b",
+  "setup_before_sha256": "0447ac5c9769f8ef8e94a6d57d8c65d81c2786a3ef72f2c107d07814d62328b3",
+  "setup_after_sha256": "7f20c2557150bb70f8d946819d0e09d7eade8a97375cd46aff1ec918966e3391",
+  "changes": [
+    "Compile only sm_120 for this workstation",
+    "One NVCC compilation thread"
+  ],
+  "cuda_kernel_sources_modified": false,
+  "adopted_in_training": false,
+  "wheel_sha256": "49e54fb555182ba75f7747ce5b020dd9776656c06975e7bf6cc36f7908630df6",
+  "source": "https://github.com/Dao-AILab/causal-conv1d",
+  "version": "1.7.0",
+  "compiler": "CUDA 12.8",
+  "compiled_for": "sm_120"
+}
