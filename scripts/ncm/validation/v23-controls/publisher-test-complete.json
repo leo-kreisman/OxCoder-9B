@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "unsupported_or_invalid_code_or_tests": 169,
+    "passed_publisher_checks": 188,
+    "teacher_failed_publisher_checks": 73,
+    "original_answer_does_not_pass_local_publisher_checks": 12
+  },
+  "total_snapshot": 442,
+  "report_sha256": "fccc7aa01e50fe814dcaf89d72df5b7dca3e704f8ee660e16e8a6f330c4d12af",
+  "identity_sha256": "748d997892feb64ca1aa78a11a21e69fcac0fa1b9d10a76468b9bd1c13d801a3",
+  "source_admission_manifest_sha256": "9d01e304baf9508bc2e5c1fb3d0e39010cc622276bbd2ea39a7409788848e2b1",
+  "teacher_identity_sha256": "8af3703a7f3453dae7e9bbc16e74bc4c315c770d395d15d251baf9657665390f",
+  "verifier_implementation_sha256": "ee448ab919799e33b2ca5b5a1e72915628fdf1793d676df4af018da837ea22ed",
+  "curated_manifest_sha256": "ba39fbeb2868d26ec6cb1dcee0f1dc8c48890ef13e1288ae02fdba510f1b60f2",
+  "curated_archive_sha256": "58284d689a6e58f23c673df22632394c480c19b4161fa12b2635c51a76e2a19a",
+  "scope": "Completed training-only teacher collection; no NCM model score",
+  "quality_ready": false,
+  "complete": true
+}

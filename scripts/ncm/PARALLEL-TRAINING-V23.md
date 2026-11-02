@@ -74,6 +74,16 @@ as new additions. This keeps the teacher filter's previous exclusions active
 after a second expansion. Source archives and manifests are checksum-checked.
 Both creator datasets and their existing teacher responses remain in the base.
 
+The completed additional NVIDIA collection attempted 512 prompts and admitted
+442 complete teacher responses. Executing the publisher checks against both
+the published solution and the teacher response selected 188 responses.
+Another 73 failed the teacher checks, 169 had unsupported or invalid code/test
+representations, and 12 failed the published-answer control. Unsupported cases
+are excluded rather than counted as demonstrated incorrect answers. The
+[completed verification record](validation/v23-controls/publisher-test-complete.json)
+pins the report, source identity, curated manifest, and archive hashes. These
+are training-data checks, not student evaluation scores.
+
 ## Reproduction
 
 Use the established CUDA/FLA/Triton environment. Stop only owned training jobs
