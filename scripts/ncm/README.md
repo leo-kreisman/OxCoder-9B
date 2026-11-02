@@ -1,5 +1,10 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [complete-response corpus comparison](COMPLETE-CORPUS-V28.md) expands
+training to complete responses and tests a decoded-text auxiliary objective.
+Both arms use the same data and initialization. Numerical extraction controls,
+resume behavior and unchanged executable acceptance are documented separately.
+
 The [adaptive residual training experiment](ADAPTIVE-RESIDUAL-V26.md) tests
 self-conditioned correction labels against the native decoder baseline. Oracle
 reconstruction, training loss and complete executable answers are measured
