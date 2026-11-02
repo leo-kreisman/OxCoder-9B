@@ -1,0 +1,11 @@
+{
+  "files": {
+    "acquisition.json": "9d01e304baf9508bc2e5c1fb3d0e39010cc622276bbd2ea39a7409788848e2b1",
+    "prepared-instruction-control.json": "34aa26517b0b45251e9c2274d43e27aff4597516f79c4ee824ad33939cb77be1",
+    "residual-repair.json": "87e0b326ab0430ff209d9f5ebc32f4f046254a8624c762c0ed89cecd930d7dad",
+    "latent-predictability.json": "4a2a399b6b5761015e32518cabfdd7c951ff178789eccb31cc167659a24349f3",
+    "cpu-tests.txt": "eb29b143806e92cefabcd3917c601d57a8903d934bba209d204b491925b8eec7"
+  },
+  "quality_ready": false,
+  "scope": "Data preparation, CPU tests and codec/interface diagnostics; no coding acceptance claim"
+}

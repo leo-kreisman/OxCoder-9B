@@ -1,0 +1,36 @@
+{
+  "prepared_sha256": "7b19067ef8debf225c3356616e56d652a979e29cee86e1bc6cebf51916361130",
+  "base_prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+  "base_rows": 52583,
+  "addition_manifest_sha256": "719adb92875b0c5696b09bac079a403e4538c659ca20c806ec9132fe91859775",
+  "additions": [
+    {
+      "directory": "results/ncm-opencode-v19",
+      "manifest_sha256": "9d01e304baf9508bc2e5c1fb3d0e39010cc622276bbd2ea39a7409788848e2b1",
+      "archive_sha256": "e8e0b7e8626d920c3b52f7cff4c2a53dc6eeee0a21fab54615c0078e51aabad6"
+    }
+  ],
+  "counts": {
+    "responses_considered": 10000,
+    "responses_selected": 10000,
+    "total_chunks": 70355,
+    "over_context": 0,
+    "selected_chunks": 59896,
+    "source:nvidia/OpenCodeInstruct": 59896,
+    "distilled_chunks": 0
+  },
+  "frozen_evaluation_sha256": "cd6ce9b9a86447ab4250a2ffb405eebe99334729a370d537e68fcab9d2f4611d",
+  "evaluation_changed": false,
+  "context_tokens": 2048,
+  "byte_length": 128,
+  "chunks_per_response": 8,
+  "source_tokenizer_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+  "implementation_sha256": {
+    "prepare_training_expansion.py": "278833c7fc75a08f150db68bf6ea974accedd50d7d3fc2b682abac30c5200207",
+    "prepare_creator_expansion.py": "e00294abb67f5feebb49f99dccc4c3473b4730fa44b24371db9d061b38ba53b6",
+    "conditioning.py": "dfc9072e06fccc0715a87f12843530ae5643b4a023e28a991cbf86f8d2f9b926"
+  },
+  "scope": "Training-only addition; teacher provenance retained; codec reconstruction admission still required",
+  "training_started": false,
+  "quality_ready": false
+}

@@ -1,0 +1,35 @@
+{
+  "dataset": "nvidia/OpenCodeInstruct",
+  "revision": "8f3ba5bafe4d6e8db46082cf7ae6741bc370604d",
+  "license": "CC-BY-4.0",
+  "attribution": "NVIDIA Corporation, OpenCodeInstruct (Ahmad et al., 2025)",
+  "source": {
+    "file": "data/train-00000-of-00050.parquet",
+    "sha256": "342757e0c6b706c8f68cf0a867ead5c417d0273726453dbcfc934f5c3c6ca891",
+    "bytes": 133476478
+  },
+  "source_card_sha256": "2449b70191f455f0e904ff78fabfd7185f20dbe89165ce70ca39a8193241ebd4",
+  "source_url": "https://huggingface.co/datasets/nvidia/OpenCodeInstruct/tree/8f3ba5bafe4d6e8db46082cf7ae6741bc370604d",
+  "frozen_manifest_sha256": "997f01eab986c6fdd6e0677d0780dbd9c5f29cc76e917ff1b33677d9eb427d73",
+  "creator_manifest_sha256": "90320b8a463abcf2a8667a924de69b9e2cb1209948d42abf49702e7b567d80e6",
+  "examples_archive_sha256": "e8e0b7e8626d920c3b52f7cff4c2a53dc6eeee0a21fab54615c0078e51aabad6",
+  "examples_uncompressed_sha256": "51b71914563b5ab2dd4b0f5725dcea1808da3a7aa3378fe4d25cefffaf8713bf",
+  "examples_uncompressed_bytes": 30754899,
+  "counts": {
+    "source_rows": 36773,
+    "rejected:publisher_test_failures": 21697,
+    "admitted": 10000,
+    "rejected:near_duplicate": 4739,
+    "rejected:benchmark_or_holdout_shingle": 287,
+    "rejected:existing_exact_target": 50
+  },
+  "maximum": 10000,
+  "max_target_bytes": 8192,
+  "implementation_sha256": "0de724cbf121d2892b1d8e4449194bc6f9159486dd2010736f21c7dbd463b4b8",
+  "admission_complete": true,
+  "targets_are_verified": false,
+  "quality_ready": false,
+  "used_in_training": false,
+  "selection": "first pinned shard; publisher all-tests-pass; parseable Python; bounded length; lexical and conversation holdout exclusion",
+  "limitations": "No independent execution verification. Conservative lexical filtering cannot prove semantic decontamination."
+}

@@ -1,0 +1,2461 @@
+{
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+  "implementation_sha256": "0f7f9533393dbe5f1b44c8466a3b1a270260122215e2d94509ef3e1045989195",
+  "seed": 19002,
+  "corruption": 0.5,
+  "scope": "oracle codec recovery on training targets; not generation and not coding evaluation",
+  "quality_ready": false,
+  "records": [
+    {
+      "id": "2c7548ed7a724a470486bbf8bb8cf4b2d328def968e619831c3eb481bb1370c3:1:byte-3",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "b6519d159f415cad2d4ae07926fdc648fe097c49f60a7d1e7de75a7570d63065:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "675e47a613cddee277cf7a3a7329247328155ff954c29d99513e563beda45ca6:1:byte-5",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "2d411765d459e76821b62c4d130649d10b9579af10f492a0dfcb562f05ee7f4c:1:byte-43",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "08e35aa095e1c2c12305b929424c203c221e46fca4a980490d05ab0988cf1365:1:byte-11",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "25025ef8d4c7b268ccd532c24cca75e5d057b333911fcccdcd5a3e48d5571dfc:1:byte-12",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "22502fc92e503b74dfb24e45378357afb26adb48f7f1adda3f09a0e8e3b4a433:1:byte-29",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 0.953125,
+          "exact_nonpad": false
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "6f240dba08952e58fba15ad9c07e53d1a3a6f45af57090419ee60edc7baefee2:1:byte-14",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "6b71df4353ceaafac15fc6613aa053e645daea130ee3bd5850628ebb7859713f:1:byte-56",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "4666b0581d3fb965d3b66549a363cb94254cba20d462287cc9c2d3a18079e242:1:byte-31",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "0ab69aba7721d0776e6292e61eaf1577244220cf495e6777d4810cda5ddc8155:2:byte-2",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "304708a5719f95f32eb404aa6e1cca65d741aea2d3c2a3db4e5c7e165d316325:1:byte-22",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "cde09707677a432055a01a0383d6fa6e401fe3af42c20eb99ed929c95c9e03df:1:byte-6",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 0.9921875,
+          "exact_nonpad": false
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "24c6cf100032594fd9aa985822550e75bad66462c43c328e68cdead780ef9428:1:byte-3",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "7db78426fefa766dd4b55d171d6d4c00f778dea69b06c1a9704b6443c757034b:1:byte-42",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "ac553d89f7a88f75e5bfee2e7aca1bbb0d338a3b4fbbda670dae1f662361e87d:1:byte-5",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "5488d4b867b05e4c803bbcc81eccdf9d5c81920251d2e65e5fc9f86f831cb3e6:1:byte-57",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "ea3e0e2c994649e122b9d43d06b7c3d68d6e45a89f4e8c194d4054508236f645:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "8c0db539f989b8effc7be8d4cef063e2b2e5299d35768dda138c1c747f28b5d3:1:byte-20",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "8fa757d8cea7dd6d9f8e6d8bb717df4a2d532fc5d80a0d594ac0a79283844b57:1:byte-10",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "526ebed4490d81e91465bc194660404af419db1b2fc4cda3a87b6f594de86bcb:1:byte-8",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "11e69a562129b2d3aeb5f128db42138a27f64154578c7554ef2301cab70687b3:1:byte-17",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 0.9921875,
+          "exact_nonpad": false
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "6a5584a803e982a9fbc4283acaaf41791a6261aca51ae19d2308701566aa7870:2:byte-1",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "cf1dc3723c269f59baa84a6d4f4d8b51a499e631d3553f2c1a54cc61d92a3997:1:byte-29",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "e69f9f12c24a26bbadb8bd192c8a5ba3292f0c9ad158ba5e3b84f8f4c86c8eff:1:byte-61",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "b4fa433c00eb748c22a697d7eb758720ec36ff589ccc59731fe3d24ceecc26bc:1:byte-34",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "21eaf66ea8437c5455806f850c4152078cb0fdb9ae361911e65cbe31a9536317:1:byte-3",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "42f2a654dd99a1947146bf51d3b4087ca3481c316ed6c39adedb7495d0cc6aed:1:byte-27",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "475ad1f3d5ae30a13d1c6051c71ef81330eb3a2d1386903ef0190f8f0479ee03:1:byte-34",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "abc704b03613447fc7b6f1ad14196ae5d5678ef4a74888cc2ca8fb69e5caf6d9:1:byte-8",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "7cd4c29e4f85dda2ad36d0b12e39b8643640baf9b422ae1b2fcbc219058809b5:1:byte-24",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "b5707b93ecea939fa633f36db3c0c247c853167f2163cd7c9ed0905caf285a66:1:byte-24",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "e065e8721b304d6d5c6b5d40847f5094d639ffccd92449cf114c48bd82756644:1:byte-3",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "032d71ed8eeb80a95e1ff5386041ff74c9f8aa92236b1a7e3d898ae86f4e2abf:1:byte-3",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f32a49f596dc635c7dbde4fe24eb364bf5f283ecfe7f93a52e175152896e62c6:1:byte-11",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "52751fb7cd52b38df60a062892b05054dd87765f204c2f6394b750f22170e020:1:byte-7",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "dbe7a6e8d15a6d4041f9a318efaab3e2ab4c1a71d95c93f7bdff10dd34171819:1:byte-1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "ed78ae87fb1322671469daa1b494342157cbf107aa686768ab4b77c958e5fca1:1:byte-18",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "62f866ad448aa0af7c3e1951b2fc6b920b9e3f9e4e3e88cae0cac83fa3b3f633:1:byte-23",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "a2ed430eb14c33172bd2470fbefda58fb18995a04f8d077aa00538de79c141d8:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "ff774aec1249116857e2a3042b77d4540d9e9beca2ff791ee2f2aec889a0036e:1:byte-2",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "02e3d4ea2c037ad9f1c658b6902df1c40123a82b0090001fea33627628bfc2e2:2:byte-1",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "2f21e4b6f19fe2cb93b131aab312e510d7a6e31217b2abdca86d9fe5911ec18c:2:byte-0",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "72f6bee1989f0d458462dfd4363497a52702c9791a70aa143530596392e551f3:1:byte-8",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 0.9765625,
+          "exact_nonpad": false
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "cafc04fd0de3d71708787a4de162861bd51d584caf946209e0753f0232517507:1:byte-9",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "c8ea90bfe68b1719f56e05f0488d2df1c0588a27480ae5d42563fc98de963ff2:1:byte-63",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "7a4771136d118606af755445390045d960547be3e487e886532519bf3fdeede5:1:byte-57",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 0.9921875,
+          "exact_nonpad": false
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "6c3d413b5ecf886656c3cd5d072f3a3c4b2ed42dd2c1ba769016918272eb5fdb:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "783c2638a3c425e89ac333d34122d928b1b7462ecfcf40b95d129ad73cf8b8cf:2:byte-18",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "d7ecad5e30190057dbf277bf78c4a8ddce57442a613235604c4775d658ca36c2:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "4c2f9a7e9d08dcdff4d900efd1d99b7a7f69c42a7717b6a818c61f662a5ae528:1:byte-2",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "9dbbe7d57c1b1c65bb93332061885cd71f7d8b3167838a4e323324da4d279fde:2:byte-4",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "bba45c226c539f2005fbec9d65201afe4bd016ece365ea23d1d0cc5191300b5b:1:byte-38",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f313e4b1c9d215b8e8d1c2eec8c39ad5d4f864bc586c0602338f7a81b1fd5ae9:1:byte-5",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "61daf70f0950f0ed8b58321aeecc43422a5a0466d3d1509419208e1a950d5a53:2:byte-10",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "c3bab94f2669525e702076dc23f21532855b0ed225b8dd31eadf31286effcdd1:1:byte-51",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "37d384f37ffcca3ea180468941bd347374fd3bf22caee2fbb50dd1fecaab54c5:1:byte-38",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "ed9e2bf48528ca7baf6f7247951133d0273e4f8f253b5434c372365e5e08e19a:1:byte-20",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "31853b27f5fba6972044e9378c981bb537acd1385f36f84f0f55c0c71e13a6c2:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "84caec61c8c97c0e1a1e42b801b809323ee5edd6bce07be30104132af43e1f55:1:byte-5",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "85f0ec8fd4a6678f2ddb0b5f564853181eb80ac56f4e45d7a2eddc3def2ce3a2:1:byte-46",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "1f0125f155c1d9dd3fe9832455dee31462d13d0b1c6ee2c0905b7e00b9296abf:1:byte-8",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "67e220e5080f80d8d30103a69dffbd3eaa8addf582b614f44f77d1946e576ccd:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "df6b6e4b8b0a28405d730a05b4437f4b148618e12d491c589c34162e073c0b71:2:byte-4",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "77190997fd1637ec61db7be2be9414c4e07c8a3a5c41a1022e24fc41bbfebcf4:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "25a257b897e798545e085ecd6aff9eafbf8cf54fc80153aa89d0e541704aa211:1:byte-1",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "ab63eef863e3f663a7cce2521dda62d65771ec9d0846c4adc206005023201101:1:byte-18",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "60983d01ba9b3d7c230c9d24e12f4fc687905ac9e7de2ad10ff23572fdb86ba6:1:byte-21",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "bf411ad82e5707e25c98b3cd21387d7e891b1ea322b1ab9d0fbbfccbeb64fe6b:1:byte-13",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "e4572e17f58e2f94224b5c894e7b4b96d7ce6e6ce65e9e9bc237c0e64b9a7cb1:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "91d8ba0cc23d8f6665cb5b458e047bab54a9a42a65427a207c96198f8b90ef6a:1:byte-43",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "1203bd0efe892ace0893217eaf3c0b88c1bc1014d601fd2d5ea4db990593d4a6:2:byte-1",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "19fc283263f5a8a3b77b06f046de72f4c631a596ca79d7f2b3fb52a3bd8fd374:1:byte-39",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "9632f6d33c5d16a1e6404d2aa239a8d3f7ec345231b9453f11f1726a60d72e64:1:teacher:byte-21",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "45555894028e72887b835302d521d54cb4aba066c57b372be3cfe09f9a847b61:1:byte-31",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "2890aefb2d4ae2049db42f24f708ab5e8f174b10a77c18dd2b8adb17adea6bb8:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "749e6ad36048589fecf2995a3f76369670db254d510f4c93b21a125df482fb64:1:byte-7",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "d4c462e7393ff1c6cb8d090ef9a116a6075140443aacf889bbdcde3bd05158c1:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f6bc213c13631018eb2ac5fab7181ee0cdc17f792f10240188dc0a9db64f244e:1:byte-42",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "dd47824e78e80335fb8edda0e9c36738d86bed3118b08253908d95a927d0d6a1:1:byte-21",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "01f710c25d54a68de1ba96ac3c7814b8f2f1d597ef5d8aad54ff3a33800925d3:1:byte-5",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "a9f2244b5f4786bc1d7a5acf813346bdb13a3fc469fdb93e9ce6c811af5d8929:1:byte-9",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "e223d3583f2dadbb469cf75dfbb7dbd18deaa652c172e50916df683010bda805:1:byte-57",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "d5084b43da1cdc910b74530efacea49d4c6e1db7b2ea272355fb6a4443f194df:1:byte-15",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "153e84d267eb1eea92a142c63e680d436ebe7187af1781b6878c57ed01600e67:1:byte-8",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "cba42a837ea4b6198a1e230ba2f3ba4ed33e894720616046f733c3ada957deb2:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "7425058392fd5f4d92374ba4405cfc32ec1352196a0777610ae61f6ca70505a3:1:byte-14",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "e59f806c3dacfd2da545513b677fe5c2dd5a48c7cc03491bf15f8cf65128815a:1:byte-9",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "144f409ac2a2a490ffd812b0eff7cfc601cf317985882a14d5ab2b6c16c83beb:1:byte-18",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "0e42bedb7b32c8554f187c96fda15ad4662b1f44d835ff69643358b8c08ae8d7:2:teacher:byte-4",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "59938f08d16862f5635deec54136707ddc83a8aad2c9aee37f193e676a15ae2a:1:byte-56",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f10ac027ae48a220bc3e8e19f6bf7ec829b5f0b45390f2506df788928f64c567:2:byte-0",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f97bceaf49a36643e8fb8f0f94e3f72c6a41d99a4798211f00bdbcde7ee2d419:1:byte-17",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "9255ea1b9b4e4fb433b51c916e6d110e9b08c9bc48f7fbd45f101097ae5ae57a:1:byte-11",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "05f1cc6028d2f497007f638172294d87bebbe7baae98d645aaabb9eea52024af:1:byte-38",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 0.9609375,
+          "exact_nonpad": false
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "fe16d691f33086bf6023e7adda8fbd7124210edbd2639c16cbd372c2ace7a7f6:1:byte-59",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "fce8aed2f4163e74f4cfcc6824bf91c68a0416f2d85e8cecfca0928247f553df:1:byte-6",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f6406c5072527b5a77d330007cc4cb9f978b9a769c82a48e7ae3a9a4381b4c76:1:byte-10",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "da2edcd6aa93185bcc4c9010862739dc238c8a6abb0292f0fe09dc6e913a2331:1:byte-7",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "3be38ff1404441200fa2d53f6f6031040f7e06b7319188ebf5bfcdf2f3290338:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "26db181d250142951881c76530aedf0520dbe6d2de45a2dc2a3c077300b43473:1:byte-17",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "79ad5656de4b9b92b9d63c5f125d0a024c3cfa6a942cc7208116e1314f7a3af5:1:byte-21",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "60d63076be89be7bb8d86bdf2fdea2369b10a0710b6897666c1f78acb6933269:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "2ca2f2d80572c535ac79cf5fc4af3d46522bdb5a7d558d948d516c03b1b3fff0:1:byte-7",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "e5bdf947b15633bdd7318e189781f97946e1febcef0d461f3821ff2b6fedfc67:1:byte-17",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "5ea9666bcd40632e72d67747f8557858acfcec9209015f575aa44d1f8e581554:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "fce8aed2f4163e74f4cfcc6824bf91c68a0416f2d85e8cecfca0928247f553df:1:byte-29",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "24eede9c44f3fbc0203d577e927322e1f5a8d71b0ef6a9a2d92199ed8bab1f64:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "61cb7b2f05f09eac23fb9364d6406e7e5a1eaeb6e9e37c426eeb851caf80effd:1:byte-9",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "12ed5add9317833d5363623f702e5c8c4991e684ac0319b01c21a519e66d90af:1:byte-17",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "d2a9281c14def1b8fa96c9a017b84843328952cd8ff65d3f85e6443151def277:1:byte-9",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "d9b450b128a36b2b1e5592015d367a2b894fdb19666538aad6d82628456e08c4:1:byte-26",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "32eb1e5dffbcc9f97eb844ffc5e6f0338396c8f1e3de385eb84ec2154f0f621a:1:byte-10",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "e798edf435a482b3076ff733a4f67f5e1fa780022fc6dba12b7dae54227f6af4:1:byte-2",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "9c7e273f184f77195b58381c3ec4f6ae50d04b7f27c87fb1f618bee9cb46d780:1:byte-7",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "da10227dc6768d701b5f63f61352045d08d35d108a445be028fc153a6c1d846c:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "6cca38a0b3fc0139467de81124a88c4c552e224a24d3489c290d60ef4b0cf342:1:byte-9",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "94d22789938f16aec88ffb7a6614838ac4cab0ffc0bca8022f5f35e330392e6d:1:byte-3",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f846bfe9de354f412ef054568f57d54b267f12ad5f60ed0363756ebcd59a8834:1:byte-0",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "c11fbeb14cf659eb94980df1d4416dd8b9e8b2ee5740a50838fb451b6613e8fa:1:byte-2",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "b5c80bab4a112c8be21f372c2536b2f88eab027a83077a59e8563ad631a6258d:1:byte-11",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "f259ac36e743affead9cd9f7cea6cac802a54dc98a924e0239e51dac806bcbe5:1:byte-3",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "d033589335a72a12b33dfac984d057850457c83c7111b232786b672b4f086c0a:1:byte-36",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "62f7926dccdc119385ff9428028ddd8d122953b93534b1fa480bbbde7f42c5f8:1:byte-63",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "7ec15462c5868810c04a9d0a361eb89dab4c429aaa6d9e78f441a3842dc3510a:1:byte-4",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "a951dc31536d24b4605d006bc659f3863abf8f3d1254595486402522c93fbb29:1:byte-25",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "b60ebf22b2207d0a7573609d5d0f59d0cfdd505b197494b37bd8051d7d9c17bc:2:byte-5",
+      "source": "TeichAI/DeepSeek-v4-Pro-Agent",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    },
+    {
+      "id": "9c80dea5b60c4765bd26f6fcab73578ef7882c26171de1b722ffc861976555ef:1:byte-65",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "split": "train",
+      "scores": {
+        "gold": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "corrupted_with_clean_labels": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        },
+        "oracle_requantized": {
+          "nonpad_accuracy": 1.0,
+          "exact_nonpad": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "gold": {
+      "windows": 128,
+      "exact_nonpad_windows": 128,
+      "mean_nonpad_accuracy": 1.0
+    },
+    "corrupted_with_clean_labels": {
+      "windows": 128,
+      "exact_nonpad_windows": 122,
+      "mean_nonpad_accuracy": 0.99896240234375
+    },
+    "oracle_requantized": {
+      "windows": 128,
+      "exact_nonpad_windows": 128,
+      "mean_nonpad_accuracy": 1.0
+    }
+  },
+  "complete": true
+}

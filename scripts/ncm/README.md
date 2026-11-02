@@ -1,5 +1,11 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [instruction and distillation expansion](TRAINING-EXPANSION-V19.md) adds a
+pinned Python instruction supplement, checksum-bound offline teacher collection,
+and an accumulated-gradient training entry point. It preserves both creator
+datasets and the frozen evaluation inventory. Preparation and diagnostic results
+are recorded separately from the unqualified student model.
+
 The [training-acceleration implementation](TRAINING-ACCELERATION-V18.md) adapts
 VeOmni's differentiable shared-prefix layout to the four NCM concept levels.
 It includes full-model numerical/performance gates and optimizer-preserving
