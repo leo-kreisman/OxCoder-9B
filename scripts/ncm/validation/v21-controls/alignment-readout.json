@@ -1,0 +1,972 @@
+{
+  "features_manifest_sha256": "d6deaa236582f094856f7383ab0dbdb82bd16d27bca4c9f980f0c9ab03a9ccbf",
+  "feature_identity": {
+    "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+    "prepared_sha256": "3457a3581493a0b56bb2f937fc477f26972597c28a9e85e02c1e1a5d1105ebb4",
+    "reference_sha256": "0b0e8d39a76714d5e9804af05c99df53a7e3f51c5749b8d5e79249afbbc07b2c",
+    "tokenizer_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+    "levels": [
+      4,
+      16,
+      64,
+      128
+    ],
+    "seed": 21004,
+    "maximum_prompt_tokens": 512,
+    "teacher": "original frozen causal body; zero residual adapters; no vocabulary head in feature extraction",
+    "mapping": "byte-overlap weighted causal predictor states; per-scale mean; EOS included; PAD excluded",
+    "scope": "experimental final-layer representation targets, not a published NCM conversion recipe",
+    "implementation_sha256": {
+      "collect_alignment_features.py": "b40da893e8548d3d8807bace4be924364773acbea2e217da4c6f747947a4fa04",
+      "representation_alignment.py": "105409d356a6c07361dc2fe389cf0835c14c7265f6c151caf243b46afcee08d7",
+      "gguf_training_backbone.py": "484472bb51d4a3164e6f3eec123e3ed2aa266b524b90872956860a98db81ca02",
+      "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+      "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+      "codec.py": "612564248d6b1018aa417ba1c00a72c7ebb2ea4726319fed3b37268e054a5008"
+    },
+    "quality_ready": false,
+    "student_checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+    "student_features": "gold earlier levels; same frozen body, restored learned adapters; reference forward"
+  },
+  "train_rows": 512,
+  "validation_rows": 64,
+  "validation_filtered": false,
+  "steps": 2000,
+  "batch_size": 8,
+  "seed": 21005,
+  "objective": "mean level nonpadding code CE; original codec targets",
+  "initialization": "identically seeded random linear classifiers in both arms",
+  "optimizer": "AdamW lr=0.001 weight_decay=0.01, norm clipping=1",
+  "scope": "fixed features with gold earlier concepts/target tokens; not free generation",
+  "implementation_sha256": "c5588a455419fb9f8a169870b5999046629cb092bc5c08fc6c02337c9883f5e0",
+  "arms": {
+    "student": {
+      "before": [
+        {
+          "level": 0,
+          "valid_codes": 256,
+          "accuracy": 0.0,
+          "cross_entropy": 8.379467010498047,
+          "exact_code_windows": 0,
+          "windows": 64
+        },
+        {
+          "level": 1,
+          "valid_codes": 1024,
+          "accuracy": 0.0,
+          "cross_entropy": 8.577260136604309,
+          "exact_code_windows": 0,
+          "windows": 64
+        },
+        {
+          "level": 2,
+          "valid_codes": 4096,
+          "accuracy": 0.0,
+          "cross_entropy": 8.466679453849792,
+          "exact_code_windows": 0,
+          "windows": 64
+        },
+        {
+          "level": 3,
+          "valid_codes": 8192,
+          "accuracy": 0.0,
+          "cross_entropy": 8.502147793769836,
+          "exact_code_windows": 0,
+          "windows": 64
+        }
+      ],
+      "history": [
+        {
+          "step": 200,
+          "training_loss": 2.204090267419815,
+          "seconds": 6.781179263984086,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.0859375,
+              "cross_entropy": 3.974571794271469,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0224609375,
+              "cross_entropy": 5.5462124943733215,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.06494140625,
+              "cross_entropy": 4.591026067733765,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3292236328125,
+              "cross_entropy": 3.287703037261963,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 400,
+          "training_loss": 1.1165335066616535,
+          "seconds": 13.593729505984811,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.06640625,
+              "cross_entropy": 4.297293424606323,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0205078125,
+              "cross_entropy": 5.774566292762756,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.0625,
+              "cross_entropy": 4.742799699306488,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.34130859375,
+              "cross_entropy": 3.3355790078639984,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 600,
+          "training_loss": 1.0883699208498,
+          "seconds": 20.3275076749851,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.08984375,
+              "cross_entropy": 4.5635866522789,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.025390625,
+              "cross_entropy": 6.104323089122772,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.060302734375,
+              "cross_entropy": 4.915154933929443,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3492431640625,
+              "cross_entropy": 3.449828267097473,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 800,
+          "training_loss": 0.8531390801072121,
+          "seconds": 27.03454998700181,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.06640625,
+              "cross_entropy": 4.900253534317017,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0146484375,
+              "cross_entropy": 6.365954160690308,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.057373046875,
+              "cross_entropy": 5.0783034563064575,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.35302734375,
+              "cross_entropy": 3.550584554672241,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1000,
+          "training_loss": 0.6042790142819285,
+          "seconds": 33.7860831579892,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.07421875,
+              "cross_entropy": 4.877374768257141,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0234375,
+              "cross_entropy": 6.566536784172058,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.054443359375,
+              "cross_entropy": 5.235384166240692,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3590087890625,
+              "cross_entropy": 3.5980691015720367,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1200,
+          "training_loss": 0.52917261980474,
+          "seconds": 40.53265467699384,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.0859375,
+              "cross_entropy": 5.151291251182556,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0205078125,
+              "cross_entropy": 6.818981885910034,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.0537109375,
+              "cross_entropy": 5.375895261764526,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3568115234375,
+              "cross_entropy": 3.6786387264728546,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1400,
+          "training_loss": 0.5322899334132671,
+          "seconds": 47.242054290982196,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.07421875,
+              "cross_entropy": 5.19871711730957,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.021484375,
+              "cross_entropy": 6.923753976821899,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.050537109375,
+              "cross_entropy": 5.541180849075317,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3592529296875,
+              "cross_entropy": 3.7352249324321747,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1600,
+          "training_loss": 0.35861445497721434,
+          "seconds": 53.97218375999364,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.078125,
+              "cross_entropy": 5.247808933258057,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.021484375,
+              "cross_entropy": 7.123086094856262,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.0546875,
+              "cross_entropy": 5.680151104927063,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3604736328125,
+              "cross_entropy": 3.798909544944763,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1800,
+          "training_loss": 0.3287284169346094,
+          "seconds": 60.70584673099802,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.0703125,
+              "cross_entropy": 5.3170729875564575,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0205078125,
+              "cross_entropy": 7.226850807666779,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.0546875,
+              "cross_entropy": 5.81895899772644,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3560791015625,
+              "cross_entropy": 3.907405972480774,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 2000,
+          "training_loss": 0.3246030090376735,
+          "seconds": 67.4736374859931,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.07421875,
+              "cross_entropy": 5.455392956733704,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.01953125,
+              "cross_entropy": 7.370996594429016,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.052734375,
+              "cross_entropy": 5.932420551776886,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.3553466796875,
+              "cross_entropy": 3.9476590156555176,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        }
+      ],
+      "training": [
+        {
+          "level": 0,
+          "valid_codes": 1982,
+          "accuracy": 0.9989909182643795,
+          "cross_entropy": 0.0369378194197877,
+          "exact_code_windows": 510,
+          "windows": 512
+        },
+        {
+          "level": 1,
+          "valid_codes": 7859,
+          "accuracy": 0.9239088942613564,
+          "cross_entropy": 0.3892940147973636,
+          "exact_code_windows": 286,
+          "windows": 512
+        },
+        {
+          "level": 2,
+          "valid_codes": 31348,
+          "accuracy": 0.7644825826209009,
+          "cross_entropy": 1.0795159105654044,
+          "exact_code_windows": 13,
+          "windows": 512
+        },
+        {
+          "level": 3,
+          "valid_codes": 62673,
+          "accuracy": 0.9830868156941586,
+          "cross_entropy": 0.062126409936529084,
+          "exact_code_windows": 300,
+          "windows": 512
+        }
+      ]
+    },
+    "teacher": {
+      "before": [
+        {
+          "level": 0,
+          "valid_codes": 256,
+          "accuracy": 0.00390625,
+          "cross_entropy": 8.430822730064392,
+          "exact_code_windows": 0,
+          "windows": 64
+        },
+        {
+          "level": 1,
+          "valid_codes": 1024,
+          "accuracy": 0.0,
+          "cross_entropy": 8.503658413887024,
+          "exact_code_windows": 0,
+          "windows": 64
+        },
+        {
+          "level": 2,
+          "valid_codes": 4096,
+          "accuracy": 0.0,
+          "cross_entropy": 8.469806432723999,
+          "exact_code_windows": 0,
+          "windows": 64
+        },
+        {
+          "level": 3,
+          "valid_codes": 8192,
+          "accuracy": 0.0003662109375,
+          "cross_entropy": 8.48845112323761,
+          "exact_code_windows": 0,
+          "windows": 64
+        }
+      ],
+      "history": [
+        {
+          "step": 200,
+          "training_loss": 2.191312223672867,
+          "seconds": 6.587641847989289,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.140625,
+              "cross_entropy": 4.335137099027634,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0673828125,
+              "cross_entropy": 5.821089744567871,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.10791015625,
+              "cross_entropy": 4.4856807589530945,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.038330078125,
+              "cross_entropy": 8.220376551151276,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 400,
+          "training_loss": 1.6972851110622287,
+          "seconds": 13.270948079996742,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.1484375,
+              "cross_entropy": 4.850677251815796,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0615234375,
+              "cross_entropy": 6.429564535617828,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.111328125,
+              "cross_entropy": 4.88773638010025,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.0364990234375,
+              "cross_entropy": 8.985476613044739,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 600,
+          "training_loss": 2.0109619363211095,
+          "seconds": 19.96748885998386,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.140625,
+              "cross_entropy": 4.937987148761749,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0712890625,
+              "cross_entropy": 6.86168771982193,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.114013671875,
+              "cross_entropy": 5.171890437602997,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.0374755859375,
+              "cross_entropy": 9.424622416496277,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 800,
+          "training_loss": 1.5653336131945252,
+          "seconds": 26.685540384001797,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.15234375,
+              "cross_entropy": 5.039751768112183,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.068359375,
+              "cross_entropy": 7.130393981933594,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.109375,
+              "cross_entropy": 5.516574680805206,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.042724609375,
+              "cross_entropy": 9.589936256408691,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1000,
+          "training_loss": 1.583268899936229,
+          "seconds": 33.38823323100223,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.15625,
+              "cross_entropy": 5.298840880393982,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0634765625,
+              "cross_entropy": 7.455800235271454,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.107421875,
+              "cross_entropy": 5.706141829490662,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.0399169921875,
+              "cross_entropy": 9.62249767780304,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1200,
+          "training_loss": 1.4379841144254897,
+          "seconds": 40.127480191004,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.13671875,
+              "cross_entropy": 5.185150980949402,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0693359375,
+              "cross_entropy": 7.545551836490631,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.108154296875,
+              "cross_entropy": 5.8605130314826965,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.0401611328125,
+              "cross_entropy": 9.62057363986969,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1400,
+          "training_loss": 1.5462050307542086,
+          "seconds": 46.85295391298132,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.140625,
+              "cross_entropy": 5.152324974536896,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.05859375,
+              "cross_entropy": 7.885521590709686,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.105224609375,
+              "cross_entropy": 6.017840027809143,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.04150390625,
+              "cross_entropy": 9.59224021434784,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1600,
+          "training_loss": 1.5149755502934568,
+          "seconds": 53.61348913097754,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.14453125,
+              "cross_entropy": 5.159752666950226,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.0673828125,
+              "cross_entropy": 8.081814050674438,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.10693359375,
+              "cross_entropy": 6.171159863471985,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.041259765625,
+              "cross_entropy": 9.562916159629822,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 1800,
+          "training_loss": 1.4233408740838058,
+          "seconds": 60.30925226700492,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.15234375,
+              "cross_entropy": 5.160984516143799,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.060546875,
+              "cross_entropy": 8.171899676322937,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.108642578125,
+              "cross_entropy": 6.2867050766944885,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.041259765625,
+              "cross_entropy": 9.59543228149414,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        },
+        {
+          "step": 2000,
+          "training_loss": 1.4139144926448353,
+          "seconds": 67.00036737197661,
+          "validation": [
+            {
+              "level": 0,
+              "valid_codes": 256,
+              "accuracy": 0.15234375,
+              "cross_entropy": 5.1977397203445435,
+              "exact_code_windows": 1,
+              "windows": 64
+            },
+            {
+              "level": 1,
+              "valid_codes": 1024,
+              "accuracy": 0.064453125,
+              "cross_entropy": 8.57438600063324,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 2,
+              "valid_codes": 4096,
+              "accuracy": 0.110107421875,
+              "cross_entropy": 6.372702181339264,
+              "exact_code_windows": 0,
+              "windows": 64
+            },
+            {
+              "level": 3,
+              "valid_codes": 8192,
+              "accuracy": 0.0426025390625,
+              "cross_entropy": 9.633981108665466,
+              "exact_code_windows": 0,
+              "windows": 64
+            }
+          ]
+        }
+      ],
+      "training": [
+        {
+          "level": 0,
+          "valid_codes": 1982,
+          "accuracy": 1.0,
+          "cross_entropy": 0.0014154015420950144,
+          "exact_code_windows": 512,
+          "windows": 512
+        },
+        {
+          "level": 1,
+          "valid_codes": 7859,
+          "accuracy": 0.9826949993637868,
+          "cross_entropy": 0.12132090660038909,
+          "exact_code_windows": 421,
+          "windows": 512
+        },
+        {
+          "level": 2,
+          "valid_codes": 31348,
+          "accuracy": 0.6154140615031262,
+          "cross_entropy": 1.1678369348566644,
+          "exact_code_windows": 2,
+          "windows": 512
+        },
+        {
+          "level": 3,
+          "valid_codes": 62673,
+          "accuracy": 0.2898855966684218,
+          "cross_entropy": 4.564386158020849,
+          "exact_code_windows": 1,
+          "windows": 512
+        }
+      ]
+    }
+  },
+  "complete": true,
+  "quality_ready": false,
+  "peak_allocated_bytes": 1243112960
+}

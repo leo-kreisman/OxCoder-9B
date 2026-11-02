@@ -85,3 +85,33 @@ its own available GPU allocation; it must not compete with a full model teacher
 on the same device. A completed control is not an accepted checkpoint. Actual
 student generation and cold checkpoint replay must still pass the unchanged
 12 executable tasks without teacher fallback.
+
+## Completed readout control and decision
+
+Feature collection completed for 512 training and 64 validation conversations,
+with no offset-mapping exclusions. The original teacher passed its token
+fixtures. The 512 selected training chunks reconstructed exactly through the
+codec. Under the 512-token prompt bound, the eligible selection contained
+Ox-Alpha and NVIDIA examples; it did not cover the longer Agent-source prompts.
+The main training corpus continues to include both creator datasets.
+
+After 2,000 updates of each identically initialized readout:
+
+| Concept level | Student-feature accuracy | Teacher-feature accuracy | Student CE | Teacher CE |
+|---|---:|---:|---:|---:|
+| 4 positions | 7.42% | 15.23% | 5.455 | 5.198 |
+| 16 positions | 1.95% | 6.45% | 7.371 | 8.574 |
+| 64 positions | 5.27% | 11.04% | 5.932 | 6.373 |
+| 128 positions | 35.53% | 4.26% | 3.948 | 9.634 |
+
+These are validation concept predictions with gold conditioning, not generated
+functions. Neither arm produced an exact full code-level window in this
+validation control. Teacher features improve coarse top-1 accuracy but worsen
+cross entropy at two intermediate levels and substantially impair the finest
+residual readout. Consequently, full-level representation alignment is **not
+enabled** in the active trainer. Coarsest-level-only alignment remains a
+separate hypothesis requiring a controlled generation experiment.
+
+The complete results and original-teacher parity report are preserved in
+[validation/v21-controls](validation/v21-controls). Offline response collection
+resumed after the bounded feature/readout experiment.
