@@ -1,0 +1,361 @@
+{
+  "checkpoint_sha256": "3c30033627362846b1ee1bed36987e42bb92424e5d99472223c694a94e4119f3",
+  "prepared_sha256": "3457a3581493a0b56bb2f937fc477f26972597c28a9e85e02c1e1a5d1105ebb4",
+  "model_identity": {
+    "stage": "generator",
+    "format": 1,
+    "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+    "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+    "codec_step": 6000,
+    "data_sha256": "a19385fcfcead26286d7c179b6d685e03199438755a3595971af2a7d03d5a544",
+    "rank": 32,
+    "lr": 0.0001,
+    "seed": 19001,
+    "prompt_tokens": 2048,
+    "smoke": true,
+    "architecture": "hybrid-causal-mixer-next-concept-v1",
+    "optimizer": {
+      "name": "Muon hidden matrices + AdamW classifiers/interfaces",
+      "head_lr": 0.0003,
+      "body_lr": 3e-05,
+      "fp32_master_muon": true,
+      "explicit_legacy_migration": true
+    },
+    "conditioning": "full chat template, full previous chunks, explicit response termination",
+    "full_attention": "causal prefix; bidirectional target level; recurrent layers remain causal",
+    "layer_split": [
+      12,
+      20
+    ],
+    "admission": "exactly reconstructed train chunks only; all selected validation errors retained; broad codec gate failed",
+    "concept_input_norm": 0.8,
+    "kernel_backend": {
+      "name": "fla",
+      "version": "0.6.0",
+      "torch": "2.11.0+cu128"
+    },
+    "kernel_audit_sha256": "81321395e31d736665f3ddecce629f90f1d5d95f0111c734bc250bbd1c7787f5",
+    "head_kind": "untied",
+    "cached_prefix": false,
+    "head_input_norm": true,
+    "calibrated_head": false,
+    "initialization": {
+      "checkpoint_sha256": "f1f909b904c756288e000e47a4ddfb83f880b9e0a962723187240cc56c39968b",
+      "scope": "Retain learned weights, optimizer, RNG and completed update count",
+      "optimizer_migration": "Retain AdamW states and Muon momentum; initialize FP32 masters from current rounded model; old discarded update bits are unrecoverable"
+    },
+    "prefix_audit_sha256": "ef7e47f2b7be0df15dd2eb4abd1870b70e23d1d5a52b6778402dc048cd574c67",
+    "prepared_sha256": "3457a3581493a0b56bb2f937fc477f26972597c28a9e85e02c1e1a5d1105ebb4",
+    "training_recipe": "independent-classifiers-compact-master-v22",
+    "prefix_gradients": "full-context backward; prefix cache disabled",
+    "full_precision_reductions": true,
+    "head_warmup": 0,
+    "head_lr": 0.0003,
+    "body_lr": 3e-05,
+    "sampling": "80% coding; sqrt response-count source/teacher buckets; uniform response then chunk",
+    "loss": "example mean of (level-mean code CE + 0.1 final-level end BCE)",
+    "quality_ready": false,
+    "prefix_audit_outcome": "failed; cache disabled, no tolerance relaxation",
+    "nearest_code": false,
+    "implementation_sha256": {
+      "train_compact.py": "2528ce6d28c72e8583e2195fa981bd40a2b9dfb1e5f98703e51c5c802c635449",
+      "compact_training_policy.py": "10890e5bcb3ce034ab38679aee1ee9a1094bb42728432af4ae6cc46d9ede60d2",
+      "distillation_curriculum.py": "c978c23210a0a79cbf1b437bc2f1355877d4b97bf58f52b260464efd2f3658e6",
+      "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+      "gguf_training_backbone.py": "484472bb51d4a3164e6f3eec123e3ed2aa266b524b90872956860a98db81ca02",
+      "packed_training.py": "cb34fdfe5e61c2fdac7eb2cead130fc6bf1d9710e35b451e16ea34d2ff6f62a1",
+      "train_accumulated.py": "febf04e5f42360d937265b6615037d2ae1271627a0b477cea5a92b2cddd4dae7",
+      "train_independent.py": "7f985e7b3ada4806cad79eb126dfebada39cff424dbae516f62404dfee99d4c3",
+      "train.py": "deda2d93dcdfb3c6cdb9a93f5ec3f773e148adbf2fa1c0d5c9bf242f2af3101f",
+      "train_geometry.py": "c49128d90457268900754537feb0991c0a480bdf2cdf5b43740e35dc30d2d053",
+      "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+      "geometry.py": "29d45354b4f8966e9ce0920db046ad8623e2bbab561eb56f5f87ff610b8358e6",
+      "codec.py": "612564248d6b1018aa417ba1c00a72c7ebb2ea4726319fed3b37268e054a5008",
+      "generate_candidate.py": "73f7cedc2018215ced6fa42f84fda5ff8d87fd0b3dbe99c1072caacb5eaab32d",
+      "coding_eval.py": "ff5c35999e2f940a15713ff18db9d3ac3579d0bee4867285359e2d265f160f1e",
+      "training_runtime.py": "aeecabc8f97d63fe6feaa5cc99d6d6f1e2f34adaa8b18b55f316c59d26233bed",
+      "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+      "vendor/veomni_shared_prefix.py": "160a8acd9ec99ba7398d9292098a7e92cbdc3e67231816fa092e83e57e09836f",
+      "master_muon.py": "60710ac28d7d6f546fcb0355e5d160928ca1ca21790bf41804a8ab98f38b95bf"
+    },
+    "planned_steps": 5000,
+    "conditioning_corruption": {
+      "maximum": 0.5,
+      "schedule": "linear from maximum at first level to zero at last; clean labels"
+    },
+    "trainable_parameters": 76587009,
+    "allocator_cap_gib": 11.25,
+    "execution_policy": {
+      "keep_per_device": 0,
+      "convolution": "reference",
+      "shared_prefix_training": true,
+      "audit_sha256": "c62d0bd7d8db34166f1c7c6f8b3581a1133dbcd9eb448c32d45ebb524b718edb",
+      "audited_checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+      "prompt_gradients": "retained",
+      "minimum_shared_prefix": 64,
+      "maximum_shared_prefix": 512,
+      "outside_range": "independent reference levels"
+    },
+    "dataset_expansion": {
+      "base_prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+      "addition_manifest_sha256": "94a06eaa4a68f4d2c8a1a08071b0bb7fa43208cfed3b37dccab6983926f0fcb1",
+      "frozen_evaluation_sha256": "cd6ce9b9a86447ab4250a2ffb405eebe99334729a370d537e68fcab9d2f4611d",
+      "counts": {
+        "responses_considered": 10054,
+        "responses_selected": 10054,
+        "total_chunks": 70683,
+        "over_context": 0,
+        "selected_chunks": 60124,
+        "source:nvidia/OpenCodeInstruct": 59896,
+        "distilled_chunks": 228,
+        "source:TeichAI/DeepSeek-v4-Pro-Agent": 119,
+        "source:TeichAI/Ox-Alpha-10k": 109
+      }
+    },
+    "data_sha256_scope": "inherited base examples; full expanded inventory identified by prepared_sha256 and dataset_expansion",
+    "effective_batch_examples": 4,
+    "compact_execution": {
+      "weight_policy": {
+        "audit_sha256": "5bf9089b4c41d7b46905757d8d92e6470cd7cad38d5efab10c32df072cec40d7",
+        "audited_checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+        "packing": false,
+        "physical_devices": [
+          "cuda:0",
+          "cuda:1"
+        ],
+        "matrix_audit_sha256": "f15ff2a3d428cbdbb4a898d51ad68b69b893f7acc562607c6f07253a43cf9eb1",
+        "reference_reproducibility_sha256": "63cf72104cb8174234481fc25d6dc8ba5c10206125ec2b832c7905b6f8e83aa8",
+        "scope": "Every frozen linear matrix exact; full outputs exact; backward uses unchanged numerical gates"
+      },
+      "placement_policy": {
+        "storage": {
+          "audit_sha256": "5bf9089b4c41d7b46905757d8d92e6470cd7cad38d5efab10c32df072cec40d7",
+          "audited_checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+          "packing": false,
+          "physical_devices": [
+            "cuda:0",
+            "cuda:1"
+          ],
+          "matrix_audit_sha256": "f15ff2a3d428cbdbb4a898d51ad68b69b893f7acc562607c6f07253a43cf9eb1",
+          "reference_reproducibility_sha256": "63cf72104cb8174234481fc25d6dc8ba5c10206125ec2b832c7905b6f8e83aa8",
+          "scope": "Every frozen linear matrix exact; full outputs exact; backward uses unchanged numerical gates"
+        },
+        "relocation": {
+          "audit_sha256": "7c62dfa43bf0bcfa84673ce195e5cdfb7e11a9b7dc5b9402445b0d46caa96b2c",
+          "audited_checkpoint_sha256": "7d9a85a308b43b0662c99b8adb03432b6423acc6ec8e397d758472fdf6f6e056",
+          "packing": false,
+          "physical_devices": [
+            "cuda:1"
+          ]
+        },
+        "scope": "Exact frozen weights/outputs; relocation gradients use unchanged .05 relative-L2/.99 cosine gates"
+      },
+      "packing_policy": null,
+      "pack_tokens": 1900,
+      "physical_devices": [
+        "cuda:1"
+      ],
+      "clipping": "Canonical reference layer_split groups, independent of physical placement",
+      "resident_frozen_weight_bytes": 4210067456
+    },
+    "teacher_curriculum": {
+      "rejected_responses": [
+        "6568198bd0b76f55ac0f20020a2b2c7f50fe6c02924531e61a905a8e3637abec:2:teacher-v19",
+        "b7417a3eab73795c648dc0a9e526369241b1348f67eb1512e7903b7a9f6ff15a:2:teacher-v19"
+      ],
+      "rejected_chunks": [
+        "6568198bd0b76f55ac0f20020a2b2c7f50fe6c02924531e61a905a8e3637abec:2:teacher-v19:byte-0",
+        "6568198bd0b76f55ac0f20020a2b2c7f50fe6c02924531e61a905a8e3637abec:2:teacher-v19:byte-1",
+        "b7417a3eab73795c648dc0a9e526369241b1348f67eb1512e7903b7a9f6ff15a:2:teacher-v19:byte-0",
+        "b7417a3eab73795c648dc0a9e526369241b1348f67eb1512e7903b7a9f6ff15a:2:teacher-v19:byte-1",
+        "b7417a3eab73795c648dc0a9e526369241b1348f67eb1512e7903b7a9f6ff15a:2:teacher-v19:byte-2"
+      ],
+      "evaluation_filtered": false,
+      "reason": "offline teacher emitted an unexecuted textual tool call"
+    },
+    "evaluation": "Unchanged development evaluator; no teacher fallback"
+  },
+  "devices": [
+    "cuda:0",
+    "cuda:1"
+  ],
+  "implementation_sha256": {
+    "audit_parallel_training.py": "57464e5234acf57482739dc58b8266e5ed586d9655f6b9fb114edf97d65e8f46",
+    "parallel_training.py": "143cd68524538c7877cb23611ce28e1ce6a3ad005f19e80ff55cd4d34a76962a",
+    "gguf_training_backbone.py": "484472bb51d4a3164e6f3eec123e3ed2aa266b524b90872956860a98db81ca02",
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "shared_training.py": "e90e54785e0c4013db00630dbd2ef3163854ca6893b2ba1b58d21d82c8e7526a",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+    "train_accumulated.py": "febf04e5f42360d937265b6615037d2ae1271627a0b477cea5a92b2cddd4dae7"
+  },
+  "records": [
+    {
+      "requested_prompt_tokens": [
+        64,
+        69,
+        128,
+        256
+      ],
+      "prompt_tokens": [
+        64,
+        69,
+        128,
+        256
+      ],
+      "example_ids": [
+        "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+        "1c8ff69b5797c459a893b237d63bbfeaa7fd3bf25bed3e168836fb6483eed520:1:byte-0",
+        "2a5558072bcc709f0c2dabf7527d739f4055deb37cd6fb55ba71888df1729846:1:byte-0",
+        "8b3415fa802567d87a77e0a6ae50c106367d5d47900fbd02f3b4078e4353861d:1:byte-7"
+      ],
+      "allocation": [
+        [
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "gradient_comparison": {
+        "relative_l2": 0.003385524628082792,
+        "cosine": 0.9999942693314678,
+        "max_absolute": 0.0009765625,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0038720167763316876,
+          "cosine": 0.9999925041877719,
+          "max_absolute": 0.0009765625,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.006534932701551435,
+          "cosine": 0.9999786496859943,
+          "max_absolute": 0.00025067292153835297,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 32
+      },
+      "parallel_seconds": [
+        2.043928623199463,
+        2.0443992614746094,
+        2.056572437286377
+      ],
+      "reference_seconds": [
+        2.8631820029986557,
+        2.84860616500373,
+        2.8693680750147905
+      ],
+      "speed_ratio": 1.4005004095596594,
+      "passed": true
+    },
+    {
+      "requested_prompt_tokens": [
+        64,
+        512,
+        1024,
+        2048
+      ],
+      "prompt_tokens": [
+        64,
+        512,
+        1024,
+        2048
+      ],
+      "example_ids": [
+        "159449c205091477938af3deb92cd9a6eb18862795084226599588184361e145:1:byte-0",
+        "0c80254b675c4042317a3fbaa997ddbfeb8bdd95c42a69c07f9e8309e9d443ac:1:byte-14",
+        "49d45d2d4bad2ecebc905dd4472de13b759bf57f3abe21c684d665e7ac40dca3:1:byte-44",
+        "1a1d3079d6299728296f3ee019ee3e7af2f04a0412354b4d397728f41e710dc1:1:byte-61"
+      ],
+      "allocation": [
+        [
+          3
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "gradient_comparison": {
+        "relative_l2": 0.005349944824184875,
+        "cosine": 0.9999856892347392,
+        "max_absolute": 0.0009765625,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.006264573733722999,
+          "cosine": 0.9999803907692854,
+          "max_absolute": 0.0009765625,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0,
+          "cosine": 1.0,
+          "max_absolute": 0.0,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.019311162958684337,
+          "cosine": 0.9998146330994471,
+          "max_absolute": 0.0005178104620426893,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0,
+        "cosine": 1.0,
+        "max_absolute": 0.0,
+        "finite": true,
+        "parameters_compared": 32
+      },
+      "parallel_seconds": [
+        13.092782974243164,
+        13.146381378173828,
+        13.106287002563477
+      ],
+      "reference_seconds": [
+        21.497200047015212,
+        21.496526035974966,
+        21.48827569698915
+      ],
+      "speed_ratio": 1.640169029700817,
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "scope": "Same global examples, fixed weights and corruption; no optimizer update or quality score",
+  "thresholds": {
+    "gradient_relative_l2": 0.05,
+    "gradient_cosine_minimum": 0.99,
+    "logit_relative_l2": 0.02
+  },
+  "speed_qualified": true
+}

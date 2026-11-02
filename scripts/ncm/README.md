@@ -1,5 +1,13 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The [two-replica training path](PARALLEL-TRAINING-V23.md) passed numerical controls
+and measured 1.40–1.64× faster four-example backwards, including gradient
+communication. Its optimizer continuation and model-quality gates remain separate.
+The [publisher-test filter](DISTILLATION-VERIFICATION-V22.md) independently checks
+offline teacher answers before a new training-data expansion. The
+[FP32-master Muon stage](MASTER-OPTIMIZER-V22.md) preserves small adapter updates
+that previously rounded away in BF16.
+
 The [compact frozen-weight training experiment](COMPACT-TRAINING-V20.md) records
 exact GGUF matrix checks, complete-model numerical controls, independent-example
 packing, and the optimizer/reload gates for the expanded corpus.
