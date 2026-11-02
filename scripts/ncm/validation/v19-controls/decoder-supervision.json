@@ -1,0 +1,57 @@
+{
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "prepared_sha256": "c9ef1955cc786bbf467d6fb028615e5d3a97bb02a304dbbf55b0285b642ae761",
+  "implementation_sha256": "afc06c3b5873f828277a0203e0560596ec196f4a090b053def151c1aea234305",
+  "steps_per_variant": 2000,
+  "seed": 19004,
+  "byte_loss_weight": 0.2,
+  "complete": true,
+  "quality_ready": false,
+  "scope": "Conditional training probe with gold earlier concepts; not student generation",
+  "report_sha256": "0804a7a794e66fe37521d8b969d2c7806f675ebcd27ee04166e06293ed89f4d5",
+  "variants": {
+    "ce": {
+      "step": 2000,
+      "loss": 1.372424840927124,
+      "code_ce": 1.372424840927124,
+      "seconds": 18.909230890974868,
+      "validation": {
+        "windows": 256,
+        "code_loss": 1.7726759053766727,
+        "code_accuracy": 0.506195068359375,
+        "nonpad_accuracy": 0.6635534317984362,
+        "exact_nonpad_windows": 0,
+        "scope": "gold earlier concepts; no prompt; not free generation"
+      }
+    },
+    "soft_decoder": {
+      "step": 2000,
+      "loss": 1.8472691774368286,
+      "code_ce": 1.5263888835906982,
+      "seconds": 27.833880667982157,
+      "validation": {
+        "windows": 256,
+        "code_loss": 1.9140371792018414,
+        "code_accuracy": 0.474517822265625,
+        "nonpad_accuracy": 0.6275909147325307,
+        "exact_nonpad_windows": 0,
+        "scope": "gold earlier concepts; no prompt; not free generation"
+      }
+    },
+    "straight_through_decoder": {
+      "step": 2000,
+      "loss": 3.6162824630737305,
+      "code_ce": 1.71989107131958,
+      "seconds": 22.54717826799606,
+      "validation": {
+        "windows": 256,
+        "code_loss": 2.0736935772001743,
+        "code_accuracy": 0.470001220703125,
+        "nonpad_accuracy": 0.6287389847337719,
+        "exact_nonpad_windows": 0,
+        "scope": "gold earlier concepts; no prompt; not free generation"
+      }
+    }
+  },
+  "decision": "Do not enable auxiliary decoder losses: both reduced validation accuracy in this controlled probe."
+}

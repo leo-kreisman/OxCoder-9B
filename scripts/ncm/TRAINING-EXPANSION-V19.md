@@ -271,6 +271,33 @@ earlier-level latents, without the prompt or OxCoder backbone. Training uses
 interface diagnostic, not a replacement model. Its outputs must never be
 counted as free generation or coding-task passes.
 
+`audit_decoder_supervision.py` compares three final-level probe objectives from
+the same initialization, training rows, and sample order. Each variant trains
+for 2,000 updates; the 256 validation windows are never optimizer inputs.
+
+| Objective | Validation concept accuracy | Validation non-PAD byte accuracy |
+|---|---:|---:|
+| Concept cross-entropy | 50.62% | 66.36% |
+| CE + 0.2 soft expected-code decoder CE | 47.45% | 62.76% |
+| CE + 0.2 discrete-forward, straight-through decoder CE | 47.00% | 62.87% |
+
+All three produced zero exact validation windows. Both auxiliary objectives
+were worse in this diagnostic, so neither was added to the accumulated student
+trainer. This comparison receives gold earlier concepts and cannot establish
+free-generation quality. Its recorded summary is
+[`validation/v19-controls/decoder-supervision.json`](validation/v19-controls/decoder-supervision.json).
+
+`packed_training.py` is a separate, experimental extension of shared-prefix
+execution that places multiple independent examples in one compact sequence.
+It resets rotary positions, recurrent state, and convolution history at every
+example boundary and blocks all attention between examples. It is not enabled
+in `train_accumulated.py`. `audit_packed_training.py` compares complete-model
+outputs and accumulated gradients against sequential shared-prefix execution
+at two short examples, four mixed-length examples, and two longer examples.
+Require numerical qualification and an optimizer-memory smoke test before
+adding packing to a training recipe. Passing small CPU layout tests alone is
+insufficient. No packing speedup is claimed before this full-model measurement.
+
 ## Resource isolation
 
 The local preparation/teacher jobs run in separate bounded user services, with
