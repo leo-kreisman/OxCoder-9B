@@ -1,0 +1,58 @@
+{
+  "step": 3500,
+  "quality_ready": false,
+  "scope": "Matched-update comparison after 250 auxiliary-supervision updates; not a deployment qualification",
+  "arms": {
+    "reference": {
+      "run": "ncm-deterministic-student-v38",
+      "checkpoint_sha256": "a8c5f4cb8800df14b93d2926fb8746e6c6eccf37307919dbd25289ce1c824d15",
+      "coding_passed": 0,
+      "coding_evaluated": 12,
+      "validation_exact": 0,
+      "validation_windows": 64,
+      "validation_mean_byte_accuracy": 0.11407877609599382,
+      "validation_valid_text_windows": 55,
+      "coding_stop_reasons": {
+        "invalid_codec_output": 8,
+        "chunk_limit": 4
+      },
+      "reports_sha256": {
+        "validation-3500.json": "18d46534df64880c170965c5d11f6d6607bc52ad8951e2c262474b8abe34cb47",
+        "coding-3500.json": "522f0381d7c73827d456f72fe9c5ed5bf2db5174c19bf6d8cf1e27e9b9bcb489"
+      }
+    },
+    "byte_supervised": {
+      "run": "ncm-decoded-hierarchy-v40",
+      "checkpoint_sha256": "3c968673f1624329dd367380bd7665b915e373e157e5bec3a1464bf1a07743a9",
+      "coding_passed": 0,
+      "coding_evaluated": 12,
+      "validation_exact": 0,
+      "validation_windows": 64,
+      "validation_mean_byte_accuracy": 0.05414225265849382,
+      "validation_valid_text_windows": 1,
+      "coding_stop_reasons": {
+        "invalid_codec_output": 12
+      },
+      "reports_sha256": {
+        "validation-3500.json": "07bfd4d7564ddea9d642ff4df46b2a08935e280c5f97d9067859bf0d03f02a1d",
+        "coding-3500.json": "fa17c3aab3181e5c36ff0b8de276f6b506abd88661dadd39ac7b90abc3ae6c50"
+      }
+    }
+  },
+  "exposure": {
+    "matched_updates": 250,
+    "matched_examples": 1000,
+    "example_ids_sources_and_distilled_flags_identical": true,
+    "student_conditioned_counts_identical": true,
+    "per_row_student_flags_not_recorded": true,
+    "source_exposure": {
+      "nvidia/OpenCodeInstruct|original": 555,
+      "TeichAI/Ox-Alpha-10k|teacher": 37,
+      "TeichAI/Ox-Alpha-10k|original": 167,
+      "nvidia/OpenCodeInstruct|teacher": 74,
+      "TeichAI/DeepSeek-v4-Pro-Agent|original": 127,
+      "TeichAI/DeepSeek-v4-Pro-Agent|teacher": 40
+    }
+  },
+  "interpretation": "The auxiliary arm has lower validation byte accuracy at this checkpoint and neither arm passes the coding gate. The auxiliary objective is not established as an improvement. Both remain experimental; continue the registered comparison without changing the evaluator."
+}

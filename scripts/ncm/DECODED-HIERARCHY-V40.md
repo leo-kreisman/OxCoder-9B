@@ -170,5 +170,28 @@ new branch starts from the separate version 38 update-3250 parent, whose
 [baseline report](validation/v40-controls/parent-quality.json) is preserved.
 Numerical qualification does not establish a coding-quality improvement.
 
+## First matched quality checkpoint
+
+At global update 3500, the auxiliary branch has received 250 updates from its
+shared parent. The [paired report](validation/v40-controls/matched-3500.json)
+checks all 1,000 sampled records: example IDs, sources and distillation flags
+match the reference continuation. Counts of student-conditioned examples also
+match at every update; individual row flags were not recorded.
+
+| Measurement at update 3500 | Reference v38 | Byte-supervised v40 |
+| --- | ---: | ---: |
+| Executable tasks passed | 0 / 12 | 0 / 12 |
+| Exact validation windows | 0 / 64 | 0 / 64 |
+| Mean nonpadding byte accuracy | 0.114079 | 0.054142 |
+| Validation windows yielding valid decoded text | 55 / 64 | 1 / 64 |
+
+Valid text means only that the codec accepted its byte sequence and termination;
+it does not establish syntactic or semantic correctness. The auxiliary arm is
+worse on these validation diagnostics at this early checkpoint. Its numerical
+audit therefore must not be presented as evidence of improved generation. The
+registered continuation remains an experiment; the acceptance test and source
+mixture are unchanged. Report hashes and checkpoint hashes are in the paired
+record. Neither checkpoint qualifies as a usable NCM coding model.
+
 Even a twelve-task acceptance requires separate broader coding evaluation and
 Mac memory/latency measurements before a professional or deployment claim.
