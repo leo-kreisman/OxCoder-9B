@@ -117,3 +117,20 @@ answers, autoregressive answer fallback or changed checker is admitted.
 Even twelve elementary passes are not evidence of broad professional coding
 quality. A separate untouched coding benchmark and deployment measurements
 remain necessary for such a claim.
+
+## Public training evidence checked on 2026-11-03
+
+The [official training-code issue](https://github.com/HazyResearch/ncm/issues/10)
+still records an intended release, without an attached training recipe. The
+[coding-agent discussion](https://github.com/HazyResearch/ncm/issues/17) contains
+community loss logs but does not establish a checkpoint passing executable
+coding tests. Neither is evidence of a ready-made OxCoder conversion.
+
+A [public XSum-derived dialogue experiment](https://huggingface.co/danielharkin21/ncm-chat-experimental-generator)
+reports lower held-out concept loss after 4,000 updates, while its author
+explicitly describes repetitive or incorrect replies. Its training script is
+useful implementation evidence; its model is not a coding replacement.
+[Independent NCM controls](https://github.com/Quantix-eng/ncm-experiment-notes)
+likewise explicitly avoid claiming a model-performance breakthrough. These
+sources reinforce keeping reconstruction, conditional loss and autonomous
+executable quality as separate measurements.

@@ -155,3 +155,5 @@ Full numerical and memory qualification is required before adoption. Its
 fixed tolerance as v35, on the next immutable v34 checkpoint. CPU tests verify
 all/no/partial checkpoint patterns and exception cleanup. Passing these tests
 alone does not enable the experiment in a training worker.
+
+After adding selective-recomputation controls, the complete NCM unit suite passed 291 tests in 15.732 seconds. Full GPU qualification remains separate.
