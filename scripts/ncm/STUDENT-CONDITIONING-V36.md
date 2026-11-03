@@ -86,6 +86,13 @@ its status must be inspected before describing the branch as qualified.
 
 ## Execution and artifacts
 
+The saved update-3000 parent completed its unchanged evaluation before
+handover: 0/12 executable tasks and 0/64 exact validation windows. Its mean
+nonpadding byte accuracy was 0.097282. The
+[parent evaluation summary](validation/v36-controls/parent-quality.json)
+records the checkpoint and full-report hashes. These values define the
+pre-intervention boundary; they are not student-conditioned results.
+
 The coordinator runs `scripts.ncm.train_canonical_onpolicy` on CUDA device 0.
 It uses the existing checkpointed gradient engine and host-resident AdamW head
 moments, avoiding an unqualified runtime change on the memory-shared GPU.

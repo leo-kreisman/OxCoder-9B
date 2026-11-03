@@ -1,0 +1,80 @@
+{
+  "checkpoint_sha256": "8ce962c7f7de72a1bd37bbd1b13a5aabae3cc5150f0aae14044b69f513999ca2",
+  "update": 3000,
+  "training_run": "ncm-frozen-clean-training-v32",
+  "coding": {
+    "evaluated": 12,
+    "passed": 0,
+    "report_sha256": "54b60f60cf4db1df6cd7ca01886abcbe3ae0ea8a33a6e1107ffd878a42a64225",
+    "tasks": [
+      {
+        "task": "factorial",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "unique",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "chunks",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      },
+      {
+        "task": "balanced",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "gcd",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      },
+      {
+        "task": "merge_intervals",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "flatten",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      },
+      {
+        "task": "rotate",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      },
+      {
+        "task": "word_counts",
+        "passed": false,
+        "stop_reason": "chunk_limit"
+      },
+      {
+        "task": "transpose",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      },
+      {
+        "task": "binary_search",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      },
+      {
+        "task": "is_prime",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      }
+    ]
+  },
+  "validation": {
+    "windows": 64,
+    "free_exact_windows": 0,
+    "mean_byte_accuracy": 0.09728190116584301
+  },
+  "scope": "Saved parent boundary, prior to independent objective/runtime audits. This is not an accepted candidate.",
+  "quality_ready": false,
+  "autoregressive_answer_fallback": false
+}

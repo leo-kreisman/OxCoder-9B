@@ -1,0 +1,80 @@
+{
+  "checkpoint_sha256": "36436867493fc09c286f3e68197fdb8d1d4474d754ab56aff871ae8581433ab1",
+  "update": 3000,
+  "training_run": "ncm-resident-tower-v34",
+  "coding": {
+    "evaluated": 12,
+    "passed": 0,
+    "report_sha256": "ef5e45e379d1f966e2e63052f89542683f281a041571a7a1c1dec076080869db",
+    "tasks": [
+      {
+        "task": "factorial",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "unique",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "chunks",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "balanced",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "gcd",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "merge_intervals",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "flatten",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "rotate",
+        "passed": false,
+        "stop_reason": "invalid_codec_output"
+      },
+      {
+        "task": "word_counts",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "transpose",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "binary_search",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      },
+      {
+        "task": "is_prime",
+        "passed": false,
+        "stop_reason": "predicted_end"
+      }
+    ]
+  },
+  "validation": {
+    "windows": 64,
+    "free_exact_windows": 0,
+    "mean_byte_accuracy": 0.10286458337213844
+  },
+  "scope": "Saved parent boundary, prior to independent objective/runtime audits. This is not an accepted candidate.",
+  "quality_ready": false,
+  "autoregressive_answer_fallback": false
+}

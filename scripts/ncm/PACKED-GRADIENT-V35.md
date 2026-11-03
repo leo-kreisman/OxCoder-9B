@@ -188,3 +188,42 @@ under `results/`; logs and `progress.json` distinguish waiting, auditing and
 actual training. The complete unit suite passed 294 tests before conditional
 continuation was launched. The full CUDA audit remains authoritative for
 adoption; there is no speed or memory claim until it completes.
+
+The v37 parent is the fully evaluated v34 update-3000 checkpoint. Its
+[recorded quality boundary](validation/v37-controls/parent-quality.json)
+contains 0/12 executable passes and 0/64 exact validation windows, with mean
+nonpadding byte accuracy 0.102865. These measurements precede the execution
+change. Runtime qualification must not be interpreted as repairing that result.
+
+For the measured comparison, both training workers finish their saved
+update-3000 boundaries before the runtime audit proceeds. The separate v36
+qualification supervisor is temporarily paused while the v37 benchmark runs,
+then resumed automatically. This avoids overlapping qualification jobs or a
+changing competing training load between the reference and candidate timings.
+Only experiment-owned supervisors are paused; unrelated applications remain
+running. Both benchmark arms use the same resulting resource allocation.
+
+### Selective-runtime result: not adopted
+
+The [completed full-model audit](validation/v37-controls/full-runtime.json)
+passed its numerical checks. Final parameter relative L2 was 2.481e-5 and
+maximum absolute difference was 0.00015472. All source tensors remained
+unchanged and the codec received no gradients. The measured warm medians were:
+
+| Runtime | Seconds per training update | Peak allocated bytes |
+| --- | ---: | ---: |
+| Existing resident checkpointed path | 2.66256 | 6,974,623,744 |
+| Packed gradients, alternate-layer recomputation | 2.53751 | 10,325,545,984 |
+
+The throughput ratio was 1.04928, below the **predeclared greater-than-1.05**
+adoption threshold. The threshold was retained. The v37 trainer was not
+started; the coordinator restored the v34 supervisor from its saved
+update-3000 checkpoint. The modest measured change also required substantially
+more activation memory. It is not evidence for a large training acceleration
+or for eight-GiB inference.
+
+The optional profiler produced CPU events but zero recorded device-event time
+on this installation. Its CPU `copy_` time includes synchronization effects
+and cannot establish GPU operator costs. No GPU bottleneck attribution is made
+from that profile. Timing comparisons above use synchronized wall time and
+exclude the profiled update.
