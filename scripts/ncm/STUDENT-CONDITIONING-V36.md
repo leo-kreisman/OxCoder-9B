@@ -4,6 +4,11 @@ This is an experimental training branch. Passing numerical qualification does
 not establish coding quality. Acceptance still requires all twelve executable
 coding tasks and identical outputs after a fresh-process checkpoint reload.
 
+The initial v36 GPU audit failed exact-gradient parity; no v36 trainer was
+started. The cause was investigated with repeated reference passes and a
+deterministic control. The separate [v38 continuation](DETERMINISTIC-STUDENT-V38.md)
+preserves this objective while explicitly qualifying deterministic execution.
+
 ## Evidence motivating the experiment
 
 The update-2500 v32 checkpoint was restored exactly after selecting FP16
