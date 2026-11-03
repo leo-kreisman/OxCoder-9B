@@ -41,23 +41,28 @@ class FrozenPrefix:
     tokens: torch.Tensor
     owner: int
     versions: tuple
+    cached_tokens: int
 
 
 @torch.no_grad()
-def prepare(backbone, tokens):
+def prepare(backbone, tokens, alignment=64):
     if tokens.ndim != 2 or tokens.shape[0] != 1 or tokens.shape[1] < 1:
         raise ValueError('Expected one nonempty prompt')
     source_versions(backbone)
+    if alignment not in (1, 64):
+        raise ValueError('Supported prefix alignment is one or 64 tokens')
+    count = tokens.shape[1] // alignment * alignment
     cache = DynamicCache(config=backbone.config)
-    x = backbone.embed_prompt(tokens)
-    for i, layer in enumerate(backbone.layers):
-        di = backbone.layer_device_indices[i]
-        x = x.to(backbone.devices[di], dtype=layer_dtype(layer))
-        rope = rotary(backbone, x, di, 0)
-        mask = (mask_for(x.shape[1], 0, x.device, x.dtype)
-                if layer.block_type == 'full_attention' else None)
-        x = layer(x, position_embeddings=rope, attention_mask=mask, past_key_values=cache)
-    return FrozenPrefix(cache, tokens.detach().cpu().clone(), id(backbone), source_versions(backbone))
+    if count:
+        x = backbone.embed_prompt(tokens[:, :count])
+        for i, layer in enumerate(backbone.layers):
+            di = backbone.layer_device_indices[i]
+            x = x.to(backbone.devices[di], dtype=layer_dtype(layer))
+            rope = rotary(backbone, x, di, 0)
+            mask = (mask_for(x.shape[1], 0, x.device, x.dtype)
+                    if layer.block_type == 'full_attention' else None)
+            x = layer(x, position_embeddings=rope, attention_mask=mask, past_key_values=cache)
+    return FrozenPrefix(cache, tokens.detach().cpu().clone(), id(backbone), source_versions(backbone), count)
 
 
 def validate(backbone, state):
@@ -69,8 +74,11 @@ def cached(backbone, x, state):
     validate(backbone, state)
     if x.ndim != 3 or x.shape[0] != 1 or x.shape[1] < 1:
         raise ValueError('Expected one nonempty concept level')
-    size, past = x.shape[1], state.tokens.shape[1]
-    if size == 1:
+    size, past = x.shape[1], state.cached_tokens
+    tail = state.tokens.shape[1] - past
+    if tail:
+        x = torch.cat((backbone.embed_prompt(state.tokens[:, past:]).to(x), x), 1)
+    if x.shape[1] == 1:
         # The fused one-token recurrent path is inference-only. The dummy key
         # is masked, and causal recurrence cannot affect earlier real positions.
         x = torch.cat((x, torch.zeros_like(x)), 1)
@@ -78,16 +86,21 @@ def cached(backbone, x, state):
         di = backbone.layer_device_indices[i]
         x = x.to(backbone.devices[di], dtype=layer_dtype(layer))
         rope = rotary(backbone, x, di, past)
-        mask = (mask_for(x.shape[1], past, x.device, x.dtype, parallel=True, valid=size)
+        mask = (mask_for(x.shape[1], past, x.device, x.dtype, parallel=True, valid=tail + size)
                 if layer.block_type == 'full_attention' else None)
+        if mask is not None and tail:
+            keys = torch.arange(past + x.shape[1], device=x.device)
+            queries = torch.arange(past, past + tail, device=x.device)
+            mask[:, :, :tail] = mask[:, :, :tail].masked_fill(keys[None, :] > queries[:, None], float('-inf'))
 
         def step(h, layer=layer, adapter=adapter, rope=rope, mask=mask, index=i):
             cache = fork_layer(state.cache, index)
-            return adapter(layer(h, position_embeddings=rope, attention_mask=mask, past_key_values=cache))
+            y = layer(h, position_embeddings=rope, attention_mask=mask, past_key_values=cache)
+            return torch.cat((y[:, :tail], adapter(y[:, tail:])), 1)
 
         x = (checkpoint(step, x, use_reentrant=False)
              if backbone.training and torch.is_grad_enabled() else step(x))
-    return backbone.norm(x[:, :size])
+    return backbone.norm(x[:, tail:tail + size])
 
 
 def reference(backbone, x, tokens):

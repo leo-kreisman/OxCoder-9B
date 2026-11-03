@@ -23,7 +23,7 @@ class FrozenTowerTests(unittest.TestCase):
         self.model.train()
         for size in (1, 4):
             x = torch.randn(1, size, 16, requires_grad=True)
-            state = tower.prepare(self.model, self.prompt)
+            state = tower.prepare(self.model, self.prompt, alignment=1)
             before = copy.deepcopy(state.cache.layers[0].recurrent_states[0])
             parameters = [x, *self.model.adapters.parameters()]
             expected = tower.reference(self.model, x, self.prompt)
@@ -36,6 +36,22 @@ class FrozenTowerTests(unittest.TestCase):
                 torch.testing.assert_close(a, b, rtol=.02, atol=2e-5)
             torch.testing.assert_close(state.cache.layers[0].recurrent_states[0], before, rtol=0, atol=0)
             torch.testing.assert_close(tower.cached(self.model, x, state), actual, rtol=0, atol=0)
+
+    def test_aligned_prefix_replays_tail_without_adapting_it(self):
+        self.model.train()
+        for length in (5, 64, 69):
+            prompt = (self.prompt.repeat(1, 14))[:, :length]
+            x = torch.randn(1, 4, 16, requires_grad=True)
+            state = tower.prepare(self.model, prompt)
+            self.assertEqual(state.cached_tokens, length // 64 * 64)
+            a = tower.reference(self.model, x, prompt)
+            b = tower.cached(self.model, x, state)
+            torch.testing.assert_close(a, b, rtol=1e-4, atol=1e-5)
+            params = [x, *self.model.adapters.parameters()]
+            ga = torch.autograd.grad(a.square().mean(), params)
+            gb = torch.autograd.grad(b.square().mean(), params)
+            for u, v in zip(ga, gb):
+                torch.testing.assert_close(u, v, rtol=.02, atol=2e-5)
 
     def test_cache_survives_adapter_update_but_not_source_update(self):
         state = tower.prepare(self.model, self.prompt)
@@ -55,7 +71,7 @@ class FrozenTowerTests(unittest.TestCase):
         calls = []
         handles = [a.register_forward_hook(lambda *args: calls.append(True)) for a in self.model.adapters]
         try:
-            tower.prepare(self.model, self.prompt)
+            tower.prepare(self.model, self.prompt, alignment=1)
             self.assertEqual(calls, [])
         finally:
             for handle in handles:

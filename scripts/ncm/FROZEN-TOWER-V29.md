@@ -70,3 +70,25 @@ The complete original report, including implementation hashes and gradient
 subgroups, is preserved in
 [frozen-tower-initial.json](validation/v29-controls/frozen-tower-initial.json).
 No coding acceptance result follows from these execution measurements.
+
+## Aligned recurrent-state fork
+
+The next control caches only a multiple of 64 prompt tokens, then replays the
+remaining prompt tail with every concept level. Tail positions stay causal and
+bypass adapters; concept positions use adapters and within-level attention.
+This preserves the fused recurrent kernel's chunk boundaries. Prompts shorter
+than 64 tokens replay in full. Cache ownership and frozen-source checks remain
+unchanged.
+
+The 69-token interface-gradient error fell from 0.1211 to 0.00795. However,
+the 512-token case measured 0.05195, just outside the same 0.05 limit. No
+threshold was relaxed and the aligned BF16 path remains unqualified. A real
+2,048-token numerical case was also tested by extending the selected
+1,976-token training prompt with repeated training-prompt tokens; it is marked
+synthetic in the report, rather than presented as a natural quality example.
+That case passed, at 4.96× the uncached control's training-pass speed.
+
+See [frozen-tower-aligned.json](validation/v29-controls/frozen-tower-aligned.json).
+The optional `frozen_tower_batch.py` additionally batches independent concept
+levels. Its CPU tests check gradient agreement and padding isolation. It has
+not yet been admitted by a full-model GPU audit.

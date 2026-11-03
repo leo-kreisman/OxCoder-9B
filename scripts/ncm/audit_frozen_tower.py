@@ -23,14 +23,14 @@ from .gguf_training_backbone import load_candidate
 from .train import admission, write_json
 
 
-def run_pass(model, codec, inputs, codes, prompt, final, device, cached, repeats):
+def run_pass(model, codec, inputs, codes, prompt, final, device, cached, repeats, alignment):
     times, outputs = [], {}
     for repeat in range(repeats + 1):
         model.zero_grad(set_to_none=True)
         torch.cuda.synchronize(device)
         torch.cuda.reset_peak_memory_stats(device)
         start = time.monotonic()
-        state = tower.prepare(model.backbone, prompt) if cached else None
+        state = tower.prepare(model.backbone, prompt, alignment=alignment) if cached else None
         loss_total = 0.
         for level, inp in enumerate(inputs):
             logits, ending, latent = tower.level_output(model, inp, prompt, level, cached, state)
@@ -71,6 +71,7 @@ def run(a):
                   ('frozen_tower.py', 'audit_frozen_tower.py', 'prefix.py', 'backbone.py',
                    'gguf_training_weights.py', 'gguf_training_backbone.py')},
               'pause_units': a.pause_unit, 'autoregressive_answer_fallback': False}
+    report['prefix_alignment'] = a.alignment
     write_json(out / 'report.json', report)
     try:
         # The caller must pause the evaluation coordinator before launching,
@@ -94,9 +95,15 @@ def run(a):
             target = torch.tensor([encode(row['target'], codec.config.length)], device=a.device)
             with torch.no_grad():
                 codes, inputs = codec.targets(target)
-            prompt = torch.tensor([condition['ids']])
-            ref = run_pass(model, codec, inputs, codes, prompt, condition['is_final_chunk'], a.device, False, a.repeats)
-            actual = run_pass(model, codec, inputs, codes, prompt, condition['is_final_chunk'], a.device, True, a.repeats)
+            ids = condition['ids']
+            extended = requested == 2048 and len(ids) < requested
+            if extended:
+                # Exact maximum-shape numerical control; repeated training
+                # prompt tokens are not a natural generation-quality example.
+                ids = (ids * ((requested + len(ids) - 1) // len(ids)))[:requested]
+            prompt = torch.tensor([ids])
+            ref = run_pass(model, codec, inputs, codes, prompt, condition['is_final_chunk'], a.device, False, a.repeats, a.alignment)
+            actual = run_pass(model, codec, inputs, codes, prompt, condition['is_final_chunk'], a.device, True, a.repeats, a.alignment)
             ge, le = compare(actual['gradients'], ref['gradients']), compare(actual['outputs'], ref['outputs'])
             groups = compare_groups(actual['gradients'], ref['gradients'])
             record = {'example_id': row['id'], 'requested_prompt_tokens': requested, 'prompt_tokens': prompt.shape[1],
@@ -104,6 +111,7 @@ def run(a):
                       'reference': {k: v for k, v in ref.items() if k not in ('outputs', 'gradients')},
                       'cached': {k: v for k, v in actual.items() if k not in ('outputs', 'gradients')},
                       'speed_ratio': ref['median_seconds'] / actual['median_seconds']}
+            record.update(synthetic_prompt_extension=extended, original_prompt_tokens=len(condition['ids']))
             record['passed'] = (ge['finite'] and le['finite'] and ge['relative_l2'] < .05 and ge['cosine'] > .99
                                 and le['relative_l2'] < .02
                                 and all(g['finite'] and g['relative_l2'] < .05 and g['cosine'] > .99 for g in groups.values()))
@@ -130,6 +138,7 @@ if __name__ == '__main__':
     p.add_argument('--device', default='cuda:1')
     p.add_argument('--repeats', type=int, default=2)
     p.add_argument('--pause-unit', action='append', default=[])
+    p.add_argument('--alignment', type=int, choices=(1, 64), default=64)
     a = p.parse_args()
     if a.repeats < 1:
         p.error('Positive repeats required')
