@@ -151,5 +151,24 @@ quality. Checkpoint implementation hashes reject silent objective edits.
 Resumption preserves model, optimizer and random state. Inference contains no
 byte-loss calculation and imports the unchanged validation and coding routines.
 
+## Completed numerical qualification
+
+The unit suite passed **307 tests**. The full-model
+[optimizer audit](validation/v40-controls/optimizer.json) also passed: disabling
+the auxiliary preserved every reference gradient exactly; two enabled updates
+changed adapters, interfaces and classifiers finitely, without changing source
+weights or giving the codec gradients. Peak CUDA allocations were 6,487,922,176
+and 6,488,186,368 bytes. Audit updates took 5.42 and 5.23 seconds, including
+parameter-difference bookkeeping while the separate comparison trained on the
+other GPU. These are qualification timings, not inference or controlled training
+throughput results.
+
+Version 34 was preserved at its fully evaluated update-4000 boundary before
+handover. Its [recorded result](validation/v40-controls/retired-compact-run.json)
+was zero of twelve coding tasks and zero of 64 exact validation windows. The
+new branch starts from the separate version 38 update-3250 parent, whose
+[baseline report](validation/v40-controls/parent-quality.json) is preserved.
+Numerical qualification does not establish a coding-quality improvement.
+
 Even a twelve-task acceptance requires separate broader coding evaluation and
 Mac memory/latency measurements before a professional or deployment claim.

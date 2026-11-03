@@ -1,0 +1,119 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "scope": "Numerical and resource qualification only; all updates discarded",
+  "records": [
+    {
+      "flags": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "byte_ce": [
+        29.19808006286621,
+        0.0,
+        23.672178268432617,
+        0.0
+      ],
+      "loss": 4.7739864736795425,
+      "gradient_norm": 17.389362335205078,
+      "seconds": 5.423456454009283,
+      "peak_allocated_bytes": 6487922176,
+      "finite_parameters": true,
+      "parameter_delta_square_sum": {
+        "interfaces": 0.0001738289783190794,
+        "adapters": 0.0018506568576412974,
+        "classifiers": 0.2612163348207925
+      },
+      "source_unchanged": true,
+      "codec_has_gradient": false,
+      "passed": true
+    },
+    {
+      "flags": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "byte_ce": [
+        26.558229446411133,
+        1.5497166714339983e-06,
+        25.291471481323242,
+        28.866943359375
+      ],
+      "loss": 6.5759773179888725,
+      "gradient_norm": 17.8386173248291,
+      "seconds": 5.228455442993436,
+      "peak_allocated_bytes": 6488186368,
+      "finite_parameters": true,
+      "parameter_delta_square_sum": {
+        "interfaces": 0.00018636010759109922,
+        "adapters": 0.0018419795924273785,
+        "classifiers": 0.2698730785616896
+      },
+      "source_unchanged": true,
+      "codec_has_gradient": false,
+      "passed": true
+    }
+  ],
+  "deterministic_execution": {
+    "torch_deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false
+  },
+  "admission": {
+    "host_available": 30643793920,
+    "devices": [
+      {
+        "device": "cuda:1",
+        "free": 16301424640,
+        "allocator_cap": 9663676416
+      }
+    ]
+  },
+  "checkpoint_sha256": "8548c54f432897999731a4eeaedce0add083eed7b90317377be7e5dfb3500007",
+  "execution": {
+    "audit_sha256": "583c08210b7cbf63b9c9ab434481ea4dd661f8d8afc3d977e0f22b06ee54f7f0",
+    "batch_levels": true,
+    "batch_prompts": true,
+    "unpadded_levels": true,
+    "prefix_alignment": 1,
+    "compute_dtype": "float16",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124"
+  },
+  "corpus": {
+    "admission_sha256": "87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124",
+    "training_chunks": 45157,
+    "validation_chunks": 64,
+    "complete_training_responses": 8408,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 42051,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 903
+  },
+  "batch_examples": 4,
+  "loss_scale": 64.0,
+  "byte_weight": 0.1,
+  "implementation_sha256": {
+    "audit_decoded_hierarchy.py": "3c7fa3d256dac5d71c1d06a969caf1ee873446bff0207dccf71d1c5f908e5028",
+    "decoded_hierarchy.py": "b393a4e4e1295023684296b3a9b5135c5b37769f584278519cc940a64375b486",
+    "decoded_hierarchy_policy.py": "dc1a1f99748fa972285d8e2b94351c9b18492b97f37b13c8030f0af78da32ada",
+    "canonical_onpolicy.py": "7966035b3908907897233ea6057f54b5a3938cdd2e66cddb8f9c5b029fada7e4",
+    "deterministic_student_policy.py": "268a7cfa701528379aaa82456d9a2d8d8a081222434310bdb0d9c176957915e9",
+    "exact_checkpoint.py": "954096dc5291ca9daad68dca02a226ffe3719504dca976e3de1876be2c4fc4f0",
+    "frozen_clean_objective.py": "ce98b8090fdb4766f94f2147a9dbff3f6fd22edd4e2568003a8b8448cd5926d3",
+    "frozen_multi_objective.py": "a95a4054d47efe21927514a9c48fd837999dfc13c8fc785336d6fc5c915d26f0",
+    "frozen_tower_ragged.py": "3ed13875c5bea601a1ceeadef6013a475912a6106859d252f88bc21005c153e7",
+    "frozen_tower_optimizer.py": "b1a055919aada75cbe83f8109e7efbc09245fe7b76b3f1f8a514fcb5b98e3086",
+    "cpu_adamw.py": "4e53052fe1ead682d6ee5707bbb4a4d8f7d2d123c1b2404af92fd127ad5cb6b7",
+    "master_muon.py": "60710ac28d7d6f546fcb0355e5d160928ca1ca21790bf41804a8ab98f38b95bf"
+  },
+  "disabled_byte_exact": true
+}

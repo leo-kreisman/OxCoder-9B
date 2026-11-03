@@ -1,0 +1,17 @@
+{
+  "step": 4000,
+  "checkpoint_sha256": "c182daf7d24c24bc0f57f44caa441afcb0b9694ddcf0f041480cecab0b086bcb",
+  "quality_ready": false,
+  "scope": "Retired compact-corpus run, not a matched objective control",
+  "validation": {
+    "windows": 64,
+    "free_exact_windows": 0,
+    "mean_byte_accuracy": 0.09137369797099382
+  },
+  "coding": {
+    "passed": 0,
+    "evaluated": 12
+  },
+  "validation_sha256": "7b82b9990612f351652af84dcde87db501f060afc0f77c82f9b3a7d680223b1a",
+  "coding_sha256": "bd73ab50f33918ea72c68d2d68905ae190abb5add7dc763eeaf9ca4b813f7205"
+}
