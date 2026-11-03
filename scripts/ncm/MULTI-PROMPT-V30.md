@@ -158,3 +158,18 @@ The [independent XSum-to-chat demonstration](https://huggingface.co/danielharkin
 reports 4,000 fine-tuning steps on 21,600 examples, but explicitly describes
 its short replies as often repetitive or wrong. Its reduced code loss is not
 evidence that an OxCoder architectural conversion will pass executable coding.
+
+## Frozen-source transfer control
+
+`audit_frozen_source.py` runs the FP16 frozen prompt path against the existing
+llama.cpp fixtures. It bypasses adapters even if their weights are nonzero and
+temporarily computes vocabulary logits using bounded output-head chunks. This
+head is used only in the isolated audit; it is absent from NCM answer generation
+and training objectives. A CPU regression verifies adapter bypass, failed-token
+reporting, source-checksum rejection and hook cleanup.
+
+The full-model control matched 33/33 teacher-forced token positions across the
+two original fixtures. This checks the transferred source's short-prompt
+behavior; it does not qualify NCM coding or imply broad bitwise parity.
+The [report](validation/v30-controls/frozen-source-parity.json) pins the source,
+reference, checkpoint and implementation checksums.
