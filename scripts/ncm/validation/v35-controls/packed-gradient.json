@@ -1,0 +1,699 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "records": [
+    {
+      "layer": 0,
+      "name": "mlp.gate_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          28311552
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "mlp.gate_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          28311552
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "mlp.gate_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          28311552
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "mlp.gate_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          28311552
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "mlp.down_proj.weight",
+      "type": 14,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          41287680
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "mlp.down_proj.weight",
+      "type": 14,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          41287680
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "mlp.down_proj.weight",
+      "type": 14,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          41287680
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "mlp.down_proj.weight",
+      "type": 14,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          41287680
+        ]
+      ],
+      "dense_weight_bytes_avoided": 100663296,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_qkv.weight",
+      "type": 14,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          27525120
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_qkv.weight",
+      "type": 14,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          27525120
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_qkv.weight",
+      "type": 14,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          27525120
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_qkv.weight",
+      "type": 14,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          27525120
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_z.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_z.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_z.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_z.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_a.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_a.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_a.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_a.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_b.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_b.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_b.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.in_proj_b.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          73728
+        ]
+      ],
+      "dense_weight_bytes_avoided": 262144,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.out_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.out_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.out_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 0,
+      "name": "linear_attn.out_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.q_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          18874368
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.q_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          18874368
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.q_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          18874368
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.q_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          18874368
+        ]
+      ],
+      "dense_weight_bytes_avoided": 67108864,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.o_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.o_proj.weight",
+      "type": 12,
+      "dtype": "torch.float16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.o_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 4,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    },
+    {
+      "layer": 3,
+      "name": "self_attn.o_proj.weight",
+      "type": 12,
+      "dtype": "torch.bfloat16",
+      "positions": 212,
+      "forward_bit_exact": true,
+      "input_gradient_bit_exact": true,
+      "finite": true,
+      "packed_unchanged": true,
+      "saved_tensors": [
+        [
+          "torch.uint8",
+          9437184
+        ]
+      ],
+      "dense_weight_bytes_avoided": 33554432,
+      "passed": true
+    }
+  ],
+  "scope": "Representative real packed matrices; input gradients only; no training update",
+  "implementation_sha256": {
+    "packed_gradient.py": "54ea917f8fff89e0ba2b1e01b5fb852f56ca5b33777d37a40ba01e2892d4cb41",
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "audit_packed_gradient.py": "091c085e576096dc6b748c90302cac4a6204fbb23263109450416fa755fb6de5"
+  },
+  "peak_allocated_bytes": 180289536
+}
