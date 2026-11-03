@@ -1,0 +1,1124 @@
+{
+  "checkpoint_sha256": "9fae0249242f3c85196456fd108e9fd26a584667c275faba7366ce5daead2f96",
+  "tasks": [
+    {
+      "task": "factorial",
+      "generation": {
+        "text": "```pyynnnnnnllll(cnnnc:\n\n\n\n   \"\"\"\"\"\"\"\"  \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"                                --``\n``",
+        "stop_reason": "predicted_end",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 3.9613791049923748,
+            "bytes": 95,
+            "stop_probability": 0.9999933242797852,
+            "parallel_levels": 4
+          }
+        ],
+        "seconds": 3.961922902992228,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "task": "unique",
+      "generation": {
+        "text": "``nn(clunccd___clcuub___________________\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"            \"\"\"\"\"\"\"\"                               ",
+        "stop_reason": "predicted_end",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.3910963880189229,
+            "bytes": 127,
+            "stop_probability": 0.8406978845596313,
+            "parallel_levels": 4
+          }
+        ],
+        "seconds": 1.3914803520019632,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "task": "chunks",
+      "generation": {
+        "text": "```pyynnccc_ponc____________iiiiiiiiii:\n    \"\"\"\"\"\"\"\"\"\"\"\"\"\"                                                                     ",
+        "stop_reason": "invalid_codec_output",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.2210146819998045,
+            "bytes": 127,
+            "stop_probability": 0.17219017446041107,
+            "parallel_levels": 4
+          },
+          {
+            "chunk": 1,
+            "seconds": 1.5328357699909247,
+            "invalid_byte_ids": [
+              10,
+              10,
+              32,
+              32,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              32,
+              32,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            "decode_error": "Missing EOS",
+            "stop_probability": 0.0026408378034830093
+          }
+        ],
+        "seconds": 2.7548740780039225,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [],
+      "passed": false
+    },
+    {
+      "task": "balanced",
+      "generation": {
+        "text": "```pyynnccppoo________t:\n\n   \"\"\"      \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"                                                               ",
+        "stop_reason": "invalid_codec_output",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.4267899110272992,
+            "bytes": 127,
+            "stop_probability": 0.2532713711261749,
+            "parallel_levels": 4
+          },
+          {
+            "chunk": 1,
+            "seconds": 1.497614722000435,
+            "invalid_byte_ids": [
+              32,
+              32,
+              32,
+              32,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            "decode_error": "Missing EOS",
+            "stop_probability": 0.0028658516239374876
+          }
+        ],
+        "seconds": 2.9253913309948985,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [],
+      "passed": false
+    },
+    {
+      "task": "gcd",
+      "generation": {
+        "text": "```pnnnnnnnss\n_____i::::\n\n  \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"      \"\"\"`````",
+        "stop_reason": "predicted_end",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.381139846984297,
+            "bytes": 62,
+            "stop_probability": 1.0,
+            "parallel_levels": 4
+          }
+        ],
+        "seconds": 1.381518150010379,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "task": "merge_intervals",
+      "generation": {
+        "text": "```pyynnc_________________iiiiiiiiiiii:\n    \"\"\"\"\"\"\"\"\"\"\"\"\"\"                                                                     ",
+        "stop_reason": "invalid_codec_output",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.4064971990010235,
+            "bytes": 127,
+            "stop_probability": 0.06703948229551315,
+            "parallel_levels": 4
+          },
+          {
+            "chunk": 1,
+            "seconds": 1.4992395259905607,
+            "invalid_byte_ids": [
+              32,
+              10,
+              32,
+              32,
+              34,
+              34,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              34,
+              34,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            "decode_error": "Missing EOS",
+            "stop_probability": 0.0022880733013153076
+          }
+        ],
+        "seconds": 2.907041663012933,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [],
+      "passed": false
+    },
+    {
+      "task": "flatten",
+      "generation": {
+        "text": "```pytoon\nnncc______________________ii:\n      \"\"\"\"\"\"\"\"\"\"                                                                       ",
+        "stop_reason": "invalid_codec_output",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.3901332629902754,
+            "bytes": 127,
+            "stop_probability": 0.03899313881993294,
+            "parallel_levels": 4
+          },
+          {
+            "chunk": 1,
+            "seconds": 1.1911137150018476,
+            "invalid_byte_ids": [
+              32,
+              10,
+              32,
+              32,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            "decode_error": "Missing EOS",
+            "stop_probability": 0.011016770265996456
+          }
+        ],
+        "seconds": 2.582201186014572,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [],
+      "passed": false
+    },
+    {
+      "task": "rotate",
+      "generation": {
+        "text": "```python\nnncc________________________ll\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"                                                                     _\n  \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"            \"\"              \"\"              \"\"\"\"\"\"\"\"\"\"\"\"                 ",
+        "stop_reason": "invalid_codec_output",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.3855188640009146,
+            "bytes": 127,
+            "stop_probability": 0.34859955310821533,
+            "parallel_levels": 4
+          },
+          {
+            "chunk": 1,
+            "seconds": 1.5072902899992187,
+            "bytes": 127,
+            "stop_probability": 0.3142979145050049,
+            "parallel_levels": 4
+          },
+          {
+            "chunk": 2,
+            "seconds": 0.6992650590254925,
+            "invalid_byte_ids": [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              34,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              34,
+              34,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ],
+            "decode_error": "Missing EOS",
+            "stop_probability": 0.008251839317381382
+          }
+        ],
+        "seconds": 3.5935235709766857,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [],
+      "passed": false
+    },
+    {
+      "task": "word_counts",
+      "generation": {
+        "text": "```python\nrry_____________ee__tttttttttttttttttttt     t                                         ttt ttttt ttt ttt t t t t t   ",
+        "stop_reason": "predicted_end",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 0.5708771230129059,
+            "bytes": 127,
+            "stop_probability": 0.9488523602485657,
+            "parallel_levels": 4
+          }
+        ],
+        "seconds": 0.5712641119898763,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "task": "transpose",
+      "generation": {
+        "text": "```pyynnccpooo________________:\n      \"\"\"\"      \"\"\"\"\"\"\"\"                                 sss``````",
+        "stop_reason": "predicted_end",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.4175770280126017,
+            "bytes": 98,
+            "stop_probability": 0.9999386072158813,
+            "parallel_levels": 4
+          }
+        ],
+        "seconds": 1.418050904001575,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "task": "binary_search",
+      "generation": {
+        "text": "```python\nnn(c__________________  \"\"\"\"\"\"\"\"\"\"\"\"\"\"                                         -````````",
+        "stop_reason": "predicted_end",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 0.5854955390095711,
+            "bytes": 98,
+            "stop_probability": 0.9999643564224243,
+            "parallel_levels": 4
+          }
+        ],
+        "seconds": 0.5859402969945222,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "task": "is_prime",
+      "generation": {
+        "text": "```pyynnnnnnnc__________\n     \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"                                                                       ",
+        "stop_reason": "predicted_end",
+        "chunks": [
+          {
+            "chunk": 0,
+            "seconds": 1.1738622899865732,
+            "bytes": 127,
+            "stop_probability": 0.6728870272636414,
+            "parallel_levels": 4
+          }
+        ],
+        "seconds": 1.1742087440215982,
+        "quality_ready": false,
+        "autoregressive_fallback": false,
+        "runtime": "Frozen-context original OxCoder backbone; packed weights, FP16 CUDA; native NCM"
+      },
+      "checks": [
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        },
+        {
+          "passed": false,
+          "observed": {
+            "exception": "SyntaxError"
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": 0,
+  "evaluated": 12,
+  "quality_ready": false,
+  "autoregressive_answer_fallback": false,
+  "scope": "Unchanged 12 elementary coding tasks; fresh-process replay required before acceptance"
+}
