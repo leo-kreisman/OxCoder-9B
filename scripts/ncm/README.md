@@ -402,3 +402,5 @@ work remains necessary before treating the candidate as a replacement:
 Training-speed optimizations such as fused loss kernels or alternative optimizers
 can be benchmarked after correctness. Their published speedups cannot be
 multiplied or assigned to this new architecture without measurement.
+
+Experimental canonical student-conditioned continuation and its qualification: [v36](STUDENT-CONDITIONING-V36.md).

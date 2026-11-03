@@ -1,0 +1,119 @@
+{
+  "complete": true,
+  "quality_ready": false,
+  "scope": "No updates; autonomous versus privileged gold-concept-prefix diagnostics",
+  "phase": "diagnosing",
+  "admission": {
+    "host_available": 29276430336,
+    "devices": [
+      {
+        "device": "cuda:0",
+        "free": 11136925696,
+        "allocator_cap": 6841958400
+      }
+    ]
+  },
+  "checkpoint_sha256": "f81f51dd45b66fa99c3607f8ef483b7073ba88e6848003a2163b34acab370a98",
+  "corpus": {
+    "admission_sha256": "87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124",
+    "training_chunks": 45157,
+    "validation_chunks": 64,
+    "complete_training_responses": 8408,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 42051,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 903
+  },
+  "implementation_sha256": "d0b8de0f078b217f8c411aa9e3d53b10a2124200e08420be7dae33fd9f19526e",
+  "exact_restore_sha256": "954096dc5291ca9daad68dca02a226ffe3719504dca976e3de1876be2c4fc4f0",
+  "trainable_checkpoint_values_restored_exactly": true,
+  "summary": [
+    {
+      "split": "train",
+      "examples": 16,
+      "teacher_conditioned_code_accuracy": [
+        0.359375,
+        0.296875,
+        0.333984375,
+        0.71044921875
+      ],
+      "by_gold_prefix": [
+        {
+          "gold_prefix_levels": 0,
+          "mean_byte_accuracy": 0.2373046875,
+          "valid_sequences": 16,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 1,
+          "mean_byte_accuracy": 0.2509765625,
+          "valid_sequences": 15,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 2,
+          "mean_byte_accuracy": 0.3564453125,
+          "valid_sequences": 16,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 3,
+          "mean_byte_accuracy": 0.93115234375,
+          "valid_sequences": 16,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 4,
+          "mean_byte_accuracy": 1.0,
+          "valid_sequences": 16,
+          "exact_windows": 16
+        }
+      ]
+    },
+    {
+      "split": "validation",
+      "examples": 16,
+      "teacher_conditioned_code_accuracy": [
+        0.09375,
+        0.05078125,
+        0.1240234375,
+        0.509765625
+      ],
+      "by_gold_prefix": [
+        {
+          "gold_prefix_levels": 0,
+          "mean_byte_accuracy": 0.08515625027939677,
+          "valid_sequences": 14,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 1,
+          "mean_byte_accuracy": 0.09847005223855376,
+          "valid_sequences": 13,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 2,
+          "mean_byte_accuracy": 0.17099609412252903,
+          "valid_sequences": 13,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 3,
+          "mean_byte_accuracy": 0.7174153663218021,
+          "valid_sequences": 14,
+          "exact_windows": 0
+        },
+        {
+          "gold_prefix_levels": 4,
+          "mean_byte_accuracy": 1.0,
+          "valid_sequences": 16,
+          "exact_windows": 16
+        }
+      ]
+    }
+  ]
+}
