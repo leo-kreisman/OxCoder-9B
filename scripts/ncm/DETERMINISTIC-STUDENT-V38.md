@@ -71,6 +71,16 @@ The full CPU suite passed 297 tests before launch, including rejection of
 changed reference gradients, supervision fingerprints, execution policy and
 parent identity. Actual full-shape GPU qualification remains separate.
 
+The [full GPU optimizer audit](validation/v38-controls/optimizer.json) subsequently
+passed. Disabled-mode losses and all gradients matched exactly. Both discarded
+student-conditioned updates changed adapters, interfaces and classifiers
+finitely, with unchanged source tensors and no codec gradients. Peak allocated
+GPU memory was 6,487,657,472 bytes. The mixed and all-student control updates
+took 6.36 and 5.44 seconds respectively; these include audit bookkeeping and
+are not inference speeds or a representative training throughput benchmark.
+The coordinator admitted actual v38 training from the untouched parent only
+after this report completed.
+
 ## Operation, recovery and acceptance
 
 - Supervisor: `ncm-deterministic-student-pipeline-v38.service`.

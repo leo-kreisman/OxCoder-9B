@@ -1,0 +1,365 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "scope": "Numerical and resource qualification only; all updates discarded",
+  "records": [
+    {
+      "flags": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "loss": 4.7634954508394,
+      "gradient_norm": 23.637922286987305,
+      "seconds": 6.3553445099969395,
+      "peak_allocated_bytes": 6487657472,
+      "finite_parameters": true,
+      "parameter_delta_square_sum": {
+        "interfaces": 0.0004620631350462645,
+        "adapters": 0.0019753793512791162,
+        "classifiers": 0.2822968466415432
+      },
+      "source_unchanged": true,
+      "codec_has_gradient": false,
+      "passed": true
+    },
+    {
+      "flags": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "loss": 5.996882010251284,
+      "gradient_norm": 23.26908302307129,
+      "seconds": 5.444228294014465,
+      "peak_allocated_bytes": 6487657472,
+      "finite_parameters": true,
+      "parameter_delta_square_sum": {
+        "interfaces": 0.00045393296704787645,
+        "adapters": 0.001984169488423504,
+        "classifiers": 0.31049128874636267
+      },
+      "source_unchanged": true,
+      "codec_has_gradient": false,
+      "passed": true
+    }
+  ],
+  "admission": {
+    "host_available": 33907339264,
+    "devices": [
+      {
+        "device": "cuda:0",
+        "free": 11305091072,
+        "allocator_cap": 7010123776
+      }
+    ]
+  },
+  "checkpoint_sha256": "8ce962c7f7de72a1bd37bbd1b13a5aabae3cc5150f0aae14044b69f513999ca2",
+  "execution": {
+    "audit_sha256": "583c08210b7cbf63b9c9ab434481ea4dd661f8d8afc3d977e0f22b06ee54f7f0",
+    "batch_levels": true,
+    "batch_prompts": true,
+    "unpadded_levels": true,
+    "prefix_alignment": 1,
+    "compute_dtype": "float16",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124"
+  },
+  "corpus": {
+    "admission_sha256": "87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124",
+    "training_chunks": 45157,
+    "validation_chunks": 64,
+    "complete_training_responses": 8408,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 42051,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 903
+  },
+  "batch_examples": 4,
+  "loss_scale": 64.0,
+  "implementation_sha256": {
+    "audit_canonical_onpolicy.py": "5775f1bc50d49ca1d0ecef4461a38b4c1aab76c79c249e9e40395081be0d3dc8",
+    "canonical_onpolicy.py": "7966035b3908907897233ea6057f54b5a3938cdd2e66cddb8f9c5b029fada7e4",
+    "exact_checkpoint.py": "954096dc5291ca9daad68dca02a226ffe3719504dca976e3de1876be2c4fc4f0",
+    "frozen_clean_objective.py": "ce98b8090fdb4766f94f2147a9dbff3f6fd22edd4e2568003a8b8448cd5926d3",
+    "frozen_multi_objective.py": "a95a4054d47efe21927514a9c48fd837999dfc13c8fc785336d6fc5c915d26f0",
+    "frozen_tower_ragged.py": "3ed13875c5bea601a1ceeadef6013a475912a6106859d252f88bc21005c153e7",
+    "frozen_tower_optimizer.py": "b1a055919aada75cbe83f8109e7efbc09245fe7b76b3f1f8a514fcb5b98e3086",
+    "cpu_adamw.py": "4e53052fe1ead682d6ee5707bbb4a4d8f7d2d123c1b2404af92fd127ad5cb6b7",
+    "master_muon.py": "60710ac28d7d6f546fcb0355e5d160928ca1ca21790bf41804a8ab98f38b95bf",
+    "audit_deterministic_student.py": "2429d8019493521f5c9b769769ed43ee859081bb65dcfc1116279d781cb2957b",
+    "deterministic_student_policy.py": "268a7cfa701528379aaa82456d9a2d8d8a081222434310bdb0d9c176957915e9",
+    "canonical_onpolicy_policy.py": "626ad74f4f82acf5e03d1f0bcf576cbc97938f64ed7f56f57e43b0fa5f3685b4"
+  },
+  "disabled_student_exact": true,
+  "deterministic_execution": {
+    "torch_deterministic_algorithms": true,
+    "cublas_workspace_config": ":4096:8",
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false
+  },
+  "repeatability_control": {
+    "complete": true,
+    "records": [
+      {
+        "arm": "reference_1",
+        "losses": [
+          0.8803512454032898,
+          0.02184765413403511,
+          0.7989755868911743,
+          0.6074352264404297
+        ],
+        "events": [
+          {
+            "operation": "supervision",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            },
+            "labels": [
+              "1430e906ef2692309987d1d4497aa2827055ee57dad5388f3fb20857b1459775",
+              "f9bcb060e0af8d3cb1a427bf156ea9188269d7d7fc826f64ce45ae44a9e94ead",
+              "b6ae283ea49935ee23dde934d9a77da0c2781202eb4ac5ea587429e6bf05ed4b",
+              "28ccb6601f120636dfe35a450edcf902e7a6cfa87a94c04680a9fb5fb67599b1"
+            ],
+            "inputs": [
+              "0cb9640726c671eafc91d1eca2106678f4de00adac673f13b933b84e6a20bfed",
+              "0096f173b20d1d1e521479edb5c51d4db0832cf360c5650a69f3ceea495d9aa9",
+              "a40da5a63351fd0219c89f6f65929ca30609373ee1cd9ca7296791535e8650ff",
+              "44b3cb67b06b11fa9bcd43b04fb4935ad321ce0fd789fba26a42c5db1cbe1210"
+            ]
+          },
+          {
+            "operation": "prepare",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            }
+          }
+        ],
+        "gradient_comparison_to_first": {
+          "exact": true,
+          "relative_l2": 0.0,
+          "maximum_absolute": 0.0,
+          "unequal_tensors": 0,
+          "first_unequal_names": []
+        },
+        "source_unchanged": true,
+        "codec_has_gradient": false
+      },
+      {
+        "arm": "reference_2",
+        "losses": [
+          0.8803512454032898,
+          0.02184765413403511,
+          0.7989755868911743,
+          0.6074352264404297
+        ],
+        "events": [
+          {
+            "operation": "supervision",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            },
+            "labels": [
+              "1430e906ef2692309987d1d4497aa2827055ee57dad5388f3fb20857b1459775",
+              "f9bcb060e0af8d3cb1a427bf156ea9188269d7d7fc826f64ce45ae44a9e94ead",
+              "b6ae283ea49935ee23dde934d9a77da0c2781202eb4ac5ea587429e6bf05ed4b",
+              "28ccb6601f120636dfe35a450edcf902e7a6cfa87a94c04680a9fb5fb67599b1"
+            ],
+            "inputs": [
+              "0cb9640726c671eafc91d1eca2106678f4de00adac673f13b933b84e6a20bfed",
+              "0096f173b20d1d1e521479edb5c51d4db0832cf360c5650a69f3ceea495d9aa9",
+              "a40da5a63351fd0219c89f6f65929ca30609373ee1cd9ca7296791535e8650ff",
+              "44b3cb67b06b11fa9bcd43b04fb4935ad321ce0fd789fba26a42c5db1cbe1210"
+            ]
+          },
+          {
+            "operation": "prepare",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            }
+          }
+        ],
+        "gradient_comparison_to_first": {
+          "exact": true,
+          "relative_l2": 0.0,
+          "maximum_absolute": 0.0,
+          "unequal_tensors": 0,
+          "first_unequal_names": []
+        },
+        "source_unchanged": true,
+        "codec_has_gradient": false
+      },
+      {
+        "arm": "disabled_1",
+        "losses": [
+          0.8803512454032898,
+          0.02184765413403511,
+          0.7989755868911743,
+          0.6074352264404297
+        ],
+        "events": [
+          {
+            "operation": "prepare",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            }
+          },
+          {
+            "operation": "supervision",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            },
+            "labels": [
+              "1430e906ef2692309987d1d4497aa2827055ee57dad5388f3fb20857b1459775",
+              "f9bcb060e0af8d3cb1a427bf156ea9188269d7d7fc826f64ce45ae44a9e94ead",
+              "b6ae283ea49935ee23dde934d9a77da0c2781202eb4ac5ea587429e6bf05ed4b",
+              "28ccb6601f120636dfe35a450edcf902e7a6cfa87a94c04680a9fb5fb67599b1"
+            ],
+            "inputs": [
+              "0cb9640726c671eafc91d1eca2106678f4de00adac673f13b933b84e6a20bfed",
+              "0096f173b20d1d1e521479edb5c51d4db0832cf360c5650a69f3ceea495d9aa9",
+              "a40da5a63351fd0219c89f6f65929ca30609373ee1cd9ca7296791535e8650ff",
+              "44b3cb67b06b11fa9bcd43b04fb4935ad321ce0fd789fba26a42c5db1cbe1210"
+            ]
+          }
+        ],
+        "gradient_comparison_to_first": {
+          "exact": true,
+          "relative_l2": 0.0,
+          "maximum_absolute": 0.0,
+          "unequal_tensors": 0,
+          "first_unequal_names": []
+        },
+        "source_unchanged": true,
+        "codec_has_gradient": false
+      },
+      {
+        "arm": "disabled_2",
+        "losses": [
+          0.8803512454032898,
+          0.02184765413403511,
+          0.7989755868911743,
+          0.6074352264404297
+        ],
+        "events": [
+          {
+            "operation": "prepare",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            }
+          },
+          {
+            "operation": "supervision",
+            "rng_before": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "6ce6e0301fe6a6bcdab5a163c011aeaf42a077524ff418ae75765771a37a4ef7"
+            },
+            "rng_after": {
+              "cpu": "444ba18a11073f07c17efd1940e3eac8078025a92e578f5388e9e4a5ee9f2215",
+              "cuda": "21bfde739d7b054ba91c51626d3e15308fc7645adf2376ba836adec182484fce"
+            },
+            "labels": [
+              "1430e906ef2692309987d1d4497aa2827055ee57dad5388f3fb20857b1459775",
+              "f9bcb060e0af8d3cb1a427bf156ea9188269d7d7fc826f64ce45ae44a9e94ead",
+              "b6ae283ea49935ee23dde934d9a77da0c2781202eb4ac5ea587429e6bf05ed4b",
+              "28ccb6601f120636dfe35a450edcf902e7a6cfa87a94c04680a9fb5fb67599b1"
+            ],
+            "inputs": [
+              "0cb9640726c671eafc91d1eca2106678f4de00adac673f13b933b84e6a20bfed",
+              "0096f173b20d1d1e521479edb5c51d4db0832cf360c5650a69f3ceea495d9aa9",
+              "a40da5a63351fd0219c89f6f65929ca30609373ee1cd9ca7296791535e8650ff",
+              "44b3cb67b06b11fa9bcd43b04fb4935ad321ce0fd789fba26a42c5db1cbe1210"
+            ]
+          }
+        ],
+        "gradient_comparison_to_first": {
+          "exact": true,
+          "relative_l2": 0.0,
+          "maximum_absolute": 0.0,
+          "unequal_tensors": 0,
+          "first_unequal_names": []
+        },
+        "source_unchanged": true,
+        "codec_has_gradient": false
+      }
+    ],
+    "training_admitted": false,
+    "scope": "Read-only numerical diagnosis; no optimizer, evaluation tasks, or model updates",
+    "admission": {
+      "host_available": 34651402240,
+      "devices": [
+        {
+          "device": "cuda:0",
+          "free": 11296702464,
+          "allocator_cap": 7001735168
+        }
+      ]
+    },
+    "checkpoint_sha256": "8ce962c7f7de72a1bd37bbd1b13a5aabae3cc5150f0aae14044b69f513999ca2",
+    "corpus": {
+      "admission_sha256": "87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3",
+      "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124",
+      "training_chunks": 45157,
+      "validation_chunks": 64,
+      "complete_training_responses": 8408,
+      "sources": {
+        "nvidia/OpenCodeInstruct": 42051,
+        "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+        "TeichAI/Ox-Alpha-10k": 1541
+      },
+      "distilled_chunks": 903
+    },
+    "implementation_sha256": {
+      "audit_canonical_repeatability.py": "868a546e5548ece209c8d595fa34c42400c89d575674577cea9c970bb2d0f4b1",
+      "canonical_onpolicy.py": "7966035b3908907897233ea6057f54b5a3938cdd2e66cddb8f9c5b029fada7e4",
+      "frozen_clean_objective.py": "ce98b8090fdb4766f94f2147a9dbff3f6fd22edd4e2568003a8b8448cd5926d3"
+    },
+    "deterministic_control": {
+      "torch_deterministic_algorithms": true,
+      "cublas_workspace_config": ":4096:8",
+      "cudnn_deterministic": true,
+      "implementation_sha256": "c3cb4e285aec700f09a48bdf30f1d5028be7b4a5f0652b78369268eb517e478d"
+    }
+  },
+  "repeatability_report_sha256": "c063e5b166b0e78d1fdafb34e4fe4e4ddcc5b12a47fcd566fc8a9d7dc1730733"
+}
