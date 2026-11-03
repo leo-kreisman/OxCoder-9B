@@ -189,3 +189,28 @@ code and admitted corpus. The Linux helper `run_compact_screen_stage.py` waits
 for the source-check service to finish and 16 GiB available host RAM before
 running the small-codec screening step. It does not launch training or imply
 that the supplement passed.
+
+## Experiment coordinator
+
+`run_compact_curriculum_stage.py` is the Linux experiment coordinator. It waits
+for complete codec admission and the canonical arm's immutable update-1000
+checkpoint with its finished twelve-task report. A canonical candidate takes
+priority over this branch. Until those prerequisites exist it does not pause,
+stop or launch a training worker.
+
+It pauses only the old v31 supervisor's main process, lets the independently
+managed v31 worker finish its saved/evaluated session, verifies that boundary,
+and then retires that supervisor. The checkpoint and its report remain on disk;
+`retired-control.json` records the exact boundary. GPU0's canonical control and
+the smaller native-decoder training are left running. GPU1's existing native
+evaluator must finish before a new full-model worker starts. Each child exit
+resumes the native-evaluation coordinator, including on errors.
+
+The expanded-corpus optimizer smoke runs first and discards its updates. Only
+a complete passing report permits training. Subsequent sessions use the same
+immutable parent and `--resume`, preserving full v33 state. Saves occur every
+100 updates, validation/executable checks every 250, and worker sessions span
+500 updates. Resource limits remain 18 GiB host memory, no host swap, and the
+existing GPU/host reserve checks. A complete 12/12 result triggers a separate
+process reload and identical-answer check. Exhausting the schedule without
+acceptance is recorded explicitly and does not create a usable-model marker.
