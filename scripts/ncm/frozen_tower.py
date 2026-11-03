@@ -15,7 +15,8 @@ from torch.utils.checkpoint import checkpoint
 from transformers.cache_utils import DynamicCache
 
 from .backbone import concept_attention_mask
-from .prefix import fork_layer, mask_for, rotary
+from .prefix import mask_for, rotary
+from .frozen_tower_cache import fork_layer
 
 
 def source_versions(backbone):

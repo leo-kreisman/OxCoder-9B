@@ -15,6 +15,7 @@ import torch
 from torch.nn import functional as F
 
 from . import frozen_tower as tower
+from . import frozen_tower_batch as batch_tower
 from .audit_training_runtime import compare
 from .audit_packed_training import compare_groups
 from .backbone import digest
@@ -23,7 +24,7 @@ from .gguf_training_backbone import load_candidate
 from .train import admission, write_json
 
 
-def run_pass(model, codec, inputs, codes, prompt, final, device, cached, repeats, alignment):
+def run_pass(model, codec, inputs, codes, prompt, final, device, cached, repeats, alignment, batch_levels=False):
     times, outputs = [], {}
     for repeat in range(repeats + 1):
         model.zero_grad(set_to_none=True)
@@ -32,16 +33,24 @@ def run_pass(model, codec, inputs, codes, prompt, final, device, cached, repeats
         start = time.monotonic()
         state = tower.prepare(model.backbone, prompt, alignment=alignment) if cached else None
         loss_total = 0.
+        values = batch_tower.forward_levels(model, inputs, prompt, state) if cached and batch_levels else None
+        joint = 0
         for level, inp in enumerate(inputs):
-            logits, ending, latent = tower.level_output(model, inp, prompt, level, cached, state)
+            logits, ending, latent = values[level] if values is not None else tower.level_output(model, inp, prompt, level, cached, state)
             loss = F.cross_entropy(logits.flatten(0, 1), codes[level].flatten()) / len(inputs)
             if level == len(inputs) - 1:
                 loss = loss + .1 * F.binary_cross_entropy_with_logits(ending, torch.full_like(ending, float(final)))
-            loss.backward()
+            if values is None:
+                loss.backward()
+            else:
+                joint = joint + loss
             loss_total += float(loss.detach())
             outputs[f'{level}:codes'] = logits.detach().cpu()
             outputs[f'{level}:stop'] = ending.detach().cpu()
             del logits, ending, latent, loss
+        if values is not None:
+            joint.backward()
+        del values, joint
         torch.cuda.synchronize(device)
         elapsed = time.monotonic() - start
         if repeat:
@@ -69,10 +78,12 @@ def run(a):
               'codec_sha256': digest(a.codec), 'selection_sha256': digest(Path(a.selection) / 'selection.pt'),
               'implementation_sha256': {n: digest(Path(__file__).parent / n) for n in
                   ('frozen_tower.py', 'audit_frozen_tower.py', 'prefix.py', 'backbone.py',
-                   'gguf_training_weights.py', 'gguf_training_backbone.py')},
+                   'gguf_training_weights.py', 'gguf_training_backbone.py',
+                   'frozen_tower_batch.py', 'frozen_tower_cache.py')},
               'pause_units': a.pause_unit, 'autoregressive_answer_fallback': False}
     report['prefix_alignment'] = a.alignment
     report['compute_dtype'] = a.compute_dtype
+    report['batch_levels'] = a.batch_levels
     report['tf32'] = False
     write_json(out / 'report.json', report)
     try:
@@ -109,7 +120,7 @@ def run(a):
                 ids = (ids * ((requested + len(ids) - 1) // len(ids)))[:requested]
             prompt = torch.tensor([ids])
             ref = run_pass(model, codec, inputs, codes, prompt, condition['is_final_chunk'], a.device, False, a.repeats, a.alignment)
-            actual = run_pass(model, codec, inputs, codes, prompt, condition['is_final_chunk'], a.device, True, a.repeats, a.alignment)
+            actual = run_pass(model, codec, inputs, codes, prompt, condition['is_final_chunk'], a.device, True, a.repeats, a.alignment, a.batch_levels)
             ge, le = compare(actual['gradients'], ref['gradients']), compare(actual['outputs'], ref['outputs'])
             groups = compare_groups(actual['gradients'], ref['gradients'])
             record = {'example_id': row['id'], 'requested_prompt_tokens': requested, 'prompt_tokens': prompt.shape[1],
@@ -146,6 +157,7 @@ if __name__ == '__main__':
     p.add_argument('--pause-unit', action='append', default=[])
     p.add_argument('--alignment', type=int, choices=(1, 64), default=64)
     p.add_argument('--compute-dtype', choices=('bfloat16', 'float16', 'float32'), default='bfloat16')
+    p.add_argument('--batch-levels', action='store_true')
     a = p.parse_args()
     if a.repeats < 1:
         p.error('Positive repeats required')

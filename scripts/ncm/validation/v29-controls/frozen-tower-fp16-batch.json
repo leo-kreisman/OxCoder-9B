@@ -1,0 +1,302 @@
+{
+  "complete": true,
+  "quality_ready": false,
+  "records": [
+    {
+      "example_id": "6894582a925c9a34b2f0949a9813d2c799ed522bb49cbdcdb906b21ccf16cdb3:1:byte-0",
+      "requested_prompt_tokens": 64,
+      "prompt_tokens": 64,
+      "gradient_comparison": {
+        "relative_l2": 0.0026607118749616076,
+        "cosine": 0.9999965975037903,
+        "max_absolute": 0.0020537376403808594,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.00040898583873900127,
+        "cosine": 0.9999999163936626,
+        "max_absolute": 0.026366233825683594,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.002965322224340862,
+          "cosine": 0.9999956138637356,
+          "max_absolute": 0.0013427734375,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0011548552785983215,
+          "cosine": 0.9999993343363948,
+          "max_absolute": 0.0020537376403808594,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.003126181871034938,
+          "cosine": 0.9999964619650741,
+          "max_absolute": 0.0004048570990562439,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "reference": {
+        "seconds": [
+          1.4661606150039006,
+          1.9339396850264166
+        ],
+        "median_seconds": 1.7000501500151586,
+        "peak_bytes": 5365009408,
+        "loss": 4.304370820522308
+      },
+      "cached": {
+        "seconds": [
+          0.8869142309995368,
+          0.889344016002724
+        ],
+        "median_seconds": 0.8881291235011304,
+        "peak_bytes": 5594330624,
+        "loss": 4.304473280906677
+      },
+      "speed_ratio": 1.9141925481661055,
+      "synthetic_prompt_extension": false,
+      "original_prompt_tokens": 64,
+      "passed": true
+    },
+    {
+      "example_id": "f4c01c2d18e67cb9a162cf5845fc759788b285f738139bf72361d0c577edd5cf:1:teacher:byte-1",
+      "requested_prompt_tokens": 69,
+      "prompt_tokens": 69,
+      "gradient_comparison": {
+        "relative_l2": 0.002053114648679072,
+        "cosine": 0.9999980194406713,
+        "max_absolute": 0.0036737918853759766,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0003257677103953979,
+        "cosine": 0.9999999487944042,
+        "max_absolute": 0.023476123809814453,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.003882131384769069,
+          "cosine": 0.9999925418033822,
+          "max_absolute": 0.00054931640625,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0013668362809626904,
+          "cosine": 0.9999993147064415,
+          "max_absolute": 0.0036737918853759766,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.0015933773907660616,
+          "cosine": 0.9999988589305138,
+          "max_absolute": 0.0002303868532180786,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "reference": {
+        "seconds": [
+          1.5933532990165986,
+          1.5922761739930138
+        ],
+        "median_seconds": 1.5928147365048062,
+        "peak_bytes": 5367790080,
+        "loss": 0.8368260115385056
+      },
+      "cached": {
+        "seconds": [
+          0.9491365329886321,
+          0.9501365270116366
+        ],
+        "median_seconds": 0.9496365300001344,
+        "peak_bytes": 5609523712,
+        "loss": 0.8370970040559769
+      },
+      "speed_ratio": 1.6772888217606592,
+      "synthetic_prompt_extension": false,
+      "original_prompt_tokens": 69,
+      "passed": true
+    },
+    {
+      "example_id": "1d45e0363fb88442bc222b5846df2644508976911e041d2e5357f4f5d8fc7afd:answer:teacher-v19:byte-5",
+      "requested_prompt_tokens": 512,
+      "prompt_tokens": 512,
+      "gradient_comparison": {
+        "relative_l2": 0.003513842364986206,
+        "cosine": 0.9999938618744231,
+        "max_absolute": 0.003128528594970703,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0003860286881105046,
+        "cosine": 0.9999999261705705,
+        "max_absolute": 0.024384140968322754,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.002934491149873706,
+          "cosine": 0.9999957791950267,
+          "max_absolute": 0.001251220703125,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.001052026287145777,
+          "cosine": 0.999999457492146,
+          "max_absolute": 0.003128528594970703,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.011898356506483998,
+          "cosine": 0.9999292910034338,
+          "max_absolute": 0.0006791884079575539,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "reference": {
+        "seconds": [
+          3.37776297898381,
+          3.3823798039811663
+        ],
+        "median_seconds": 3.3800713914824883,
+        "peak_bytes": 5614487552,
+        "loss": 4.384119153022766
+      },
+      "cached": {
+        "seconds": [
+          1.0548149459937122,
+          1.0540525509859435
+        ],
+        "median_seconds": 1.0544337484898278,
+        "peak_bytes": 5612221952,
+        "loss": 4.384454965591431
+      },
+      "speed_ratio": 3.2055796737570903,
+      "synthetic_prompt_extension": false,
+      "original_prompt_tokens": 512,
+      "passed": true
+    },
+    {
+      "example_id": "62a721b46b8ad6dd424d9f90dffc9e20acc4b6b3eb4ad1ea0489ec7918d768af:2:byte-4",
+      "requested_prompt_tokens": 2048,
+      "prompt_tokens": 2048,
+      "gradient_comparison": {
+        "relative_l2": 0.003597594678414436,
+        "cosine": 0.9999935558797179,
+        "max_absolute": 0.010910272598266602,
+        "finite": true,
+        "parameters_compared": 78
+      },
+      "logit_comparison": {
+        "relative_l2": 0.0003688949409428403,
+        "cosine": 0.9999999353912431,
+        "max_absolute": 0.0263214111328125,
+        "finite": true,
+        "parameters_compared": 8
+      },
+      "gradient_groups": {
+        "adapters": {
+          "relative_l2": 0.0030253076084460592,
+          "cosine": 0.9999955320200216,
+          "max_absolute": 0.001220703125,
+          "finite": true,
+          "parameters_compared": 64
+        },
+        "classifiers": {
+          "relative_l2": 0.0019283039515696463,
+          "cosine": 0.9999981427758831,
+          "max_absolute": 0.010910272598266602,
+          "finite": true,
+          "parameters_compared": 10
+        },
+        "interfaces": {
+          "relative_l2": 0.012875715139851302,
+          "cosine": 0.9999191995292028,
+          "max_absolute": 0.000687476247549057,
+          "finite": true,
+          "parameters_compared": 4
+        }
+      },
+      "reference": {
+        "seconds": [
+          11.745005884993589,
+          11.764510154986056
+        ],
+        "median_seconds": 11.754758019989822,
+        "peak_bytes": 6512506880,
+        "loss": 1.7949029207229614
+      },
+      "cached": {
+        "seconds": [
+          1.750046344997827,
+          1.7465443820110522
+        ],
+        "median_seconds": 1.7482953635044396,
+        "peak_bytes": 5784755200,
+        "loss": 1.7955489754676819
+      },
+      "speed_ratio": 6.723553848720123,
+      "synthetic_prompt_extension": true,
+      "original_prompt_tokens": 1976,
+      "passed": true
+    }
+  ],
+  "scope": "Frozen original-source context and original-source concept generator; numerical audit only",
+  "thresholds": {
+    "logit_relative_l2": 0.02,
+    "gradient_relative_l2": 0.05,
+    "gradient_cosine_minimum": 0.99
+  },
+  "checkpoint_sha256": "68e618e87131963963a7d4dc6517306564b2f962933dd72cb4c94c248b96fd2d",
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124",
+  "implementation_sha256": {
+    "frozen_tower.py": "ef2f9af56847ee03fc7ff42763aba2fbec02f1b202b1d8eb207f83ff880314dc",
+    "audit_frozen_tower.py": "0e29c15a16e819c4f8233dd42e9edbff3e20521a6ef31003b61ad0e344746340",
+    "prefix.py": "9cfa9a6186a05037bae56dce7ff8e2c65ea54de77136f5fc765c54077171d0d2",
+    "backbone.py": "f5dab5295d0fb39007c26eec606344f46e7034cf68572921c9807df2cfd152f0",
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "gguf_training_backbone.py": "484472bb51d4a3164e6f3eec123e3ed2aa266b524b90872956860a98db81ca02",
+    "frozen_tower_batch.py": "3df1477770ed7eddfa5ef1aa470b1226234acd4d1c104bbd6910181ba21a9e19",
+    "frozen_tower_cache.py": "3c1cbb5482137ba7d4554b03a9efb54a95780fe52dd56938d22ee106d16f0af1"
+  },
+  "pause_units": [
+    "ncm-complete-pipeline-v28.service",
+    "ncm-context-decoded-v28.service"
+  ],
+  "autoregressive_answer_fallback": false,
+  "prefix_alignment": 64,
+  "compute_dtype": "float16",
+  "batch_levels": true,
+  "tf32": false,
+  "admission": {
+    "host_available": 35076268032,
+    "devices": [
+      {
+        "device": "cuda:1",
+        "free": 13137739776,
+        "allocator_cap": 8842772480
+      }
+    ]
+  },
+  "passed": true
+}

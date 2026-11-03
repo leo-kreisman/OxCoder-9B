@@ -119,3 +119,36 @@ short-prompt cases show cache overhead rather than acceleration. Full results:
 [frozen-tower-fp16.json](validation/v29-controls/frozen-tower-fp16.json).
 This qualifies only the hashed execution implementation. Optimizer memory and
 actual generation remain separate gates; it is not a usable-model claim.
+
+## Cache lifetime and independent level batching
+
+The original cache fork stores a bound replacement method on its own cache
+layer. That forms a reference cycle. Transient recurrent and convolution
+states can retain training graphs until cyclic garbage collection runs.
+`frozen_tower_cache.py` replaces that receiver with a weak reference. A CPU
+regression disables cyclic GC, demonstrates the old retained layer, checks
+that the new layer is released immediately, and checks independent state.
+The shared historical cache implementation is preserved for earlier runs.
+
+The new full-model control combines that lifetime fix with four independent
+concept levels in one batch. It compares against uncached sequential levels,
+including every trainable gradient and each parameter subgroup. All four
+shapes pass the same numerical thresholds. Maximum interface relative L2 is
+0.01288. Measured training-pass times are 0.888, 0.950, 1.054 and 1.748 seconds
+at 64, 69, 512 and 2,048 prompt tokens, respectively. The last is 6.72× the
+uncached control. Peak cached allocation is 5.78 GB. These changes were tested
+together, so the timing difference does not isolate either change's effect.
+The report is [frozen-tower-fp16-batch.json](validation/v29-controls/frozen-tower-fp16-batch.json).
+
+The training objective in `frozen_tower_objective.py` alternates clean
+teacher-forced trajectories and student-generated earlier levels. Target
+bytes define residual labels only; tests verify that changing target bytes
+cannot change an on-policy trajectory's inputs or decisions. Inference
+accepts no target bytes and uses no original token-vocabulary answer head.
+
+FP16 training uses a fixed loss scale with FP32 Muon masters. Unscaling and
+clipping happen in FP32 before updating those masters. Head AdamW state stays
+in host RAM. `frozen_tower_optimizer.py` has exact CPU resume and nonfinite
+gradient rejection controls. The full-model optimizer smoke must also pass
+before the trainer starts. Optimizer offloading here is unrelated to SSD
+inference offloading.

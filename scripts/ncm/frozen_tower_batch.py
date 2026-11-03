@@ -7,7 +7,8 @@ import torch
 from torch.utils.checkpoint import checkpoint
 
 from .frozen_tower import validate, layer_dtype, prepare
-from .prefix import fork_layer, mask_for, rotary
+from .prefix import mask_for, rotary
+from .frozen_tower_cache import fork_layer
 
 
 def cached_many(backbone, x, state, lengths):
