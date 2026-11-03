@@ -20,6 +20,14 @@ def signal_running(unit, sig):
 
 
 def run(a):
+    pipeline = Path(a.root).resolve() / 'results/ncm-compact-curriculum-pipeline-v33'
+    pipeline.mkdir(exist_ok=True)
+    with (pipeline / 'owner.lock').open('w') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        return run_locked(a)
+
+
+def run_locked(a):
     root = Path(a.root).resolve()
     pipeline = root / 'results/ncm-compact-curriculum-pipeline-v33'
     folder = root / 'results/ncm-compact-tower-v33'
@@ -28,8 +36,6 @@ def run(a):
     manifest = root / 'results/ncm-compact-training-v33/admission.json'
     smoke = root / 'results/ncm-compact-optimizer-v33/report.json'
     pipeline.mkdir(exist_ok=True)
-    lock = (pipeline / 'owner.lock').open('w')
-    fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     child = 'ncm-compact-tower-worker-v33.service'
     previous_parent = 'ncm-frozen-ragged-pipeline-v31.service'
     previous_child = 'ncm-frozen-ragged-training-v31.service'
