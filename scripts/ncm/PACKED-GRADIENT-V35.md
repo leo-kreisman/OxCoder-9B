@@ -157,3 +157,34 @@ all/no/partial checkpoint patterns and exception cleanup. Passing these tests
 alone does not enable the experiment in a training worker.
 
 After adding selective-recomputation controls, the complete NCM unit suite passed 291 tests in 15.732 seconds. Full GPU qualification remains separate.
+
+### Conditional selective-runtime continuation
+
+`run_selective_training_stage.py` waits for the immutable v34 update-3000
+checkpoint and completed evaluation while `audit_selective_packed_runtime.py`
+owns the device. It requires four reference and four candidate updates, relative
+parameter L2 below 1e-4, maximum absolute difference below 2e-4, unchanged source,
+no codec gradients and a warm median speed ratio above 1.05. Only that complete
+report and the previously qualified exact JSON corpus reader admit
+`train_selective_tower.py` (v37).
+
+The continuation preserves model weights, all optimizer moments, random streams,
+batch four, the compact mixture and the global 10000-update schedule. It changes
+execution only: alternating source layers are recomputed; the other layers
+retain their activation graphs with packed-only weight saves. The actual
+no-recompute v35 trainer remains unqualified and is not used. Sessions yield
+every 1000 updates, save every 100, and evaluate every 250. Failed admission
+restarts the original v34 supervisor at its saved state.
+
+The separate v36 student-conditioning experiment changes the objective on the
+original corpus. Its numerical audit and quality results cannot qualify v37,
+and v37's runtime audit cannot establish v36's learning benefit. Both preserve
+the same twelve-task executable evaluator and require fresh-process replay.
+
+Services are `ncm-selective-runtime-audit-v37.service`,
+`ncm-selective-pipeline-v37.service`, and
+`ncm-selective-tower-worker-v37.service`. Results use corresponding directories
+under `results/`; logs and `progress.json` distinguish waiting, auditing and
+actual training. The complete unit suite passed 294 tests before conditional
+continuation was launched. The full CUDA audit remains authoritative for
+adoption; there is no speed or memory claim until it completes.
