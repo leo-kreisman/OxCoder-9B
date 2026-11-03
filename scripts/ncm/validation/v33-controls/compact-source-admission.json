@@ -1,0 +1,26 @@
+{
+  "admission_complete": true,
+  "targets_are_verified": false,
+  "training_started": false,
+  "quality_ready": false,
+  "examples_archive_sha256": "17717bcbc3dc58e02b17b8ab7c5380da53861c0d9c549750f14cdfb4e4bbb774",
+  "examples_uncompressed_sha256": "8b66bcd252d93819eb0239a0164c4e67c657f3959cb0c208ef38a78d84500bfd",
+  "examples_uncompressed_bytes": 7530718,
+  "identity_sha256": "e8fbd7484cf6a85a82231b5e8f7eeea75821b6d1e53cae579ae6e839df952081",
+  "checks_sha256": "4d77073791e1978dc90dcecf0d7fcd68dfab81fb37a697716ab7140b7f5d1600",
+  "counts": {
+    "considered": 10188,
+    "rejected:length": 6563,
+    "rejected:presentation_requested": 120,
+    "rejected:near_duplicate": 668,
+    "rejected:existing_exact_target": 218,
+    "admitted": 2601,
+    "distilled_admitted": 41,
+    "one_window_admitted": 669,
+    "rejected:publisher_control": 18
+  },
+  "license": "CC-BY-4.0",
+  "attribution": "NVIDIA Corporation, OpenCodeInstruct (Ahmad et al., 2025)",
+  "scope": "Short-program training supplement; both creator sources remain in the base corpus",
+  "limitations": "Assertions are incomplete. Formatting and __doc__ change. No codec admission or training yet."
+}

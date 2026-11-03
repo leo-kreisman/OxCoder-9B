@@ -1,0 +1,25 @@
+{
+  "admission_sha256": "5922aaa247dc98af99b58ed6ed4186a621eb6e81603c0b3d8c660f583826d0b3",
+  "selection_sha256": "6de660293baf2aaf893ed558222ad91405beb678bd48de52af159840a571ce5a",
+  "training_chunks": 49648,
+  "validation_chunks": 64,
+  "complete_training_responses": 10984,
+  "sources": {
+    "nvidia/OpenCodeInstruct": 46542,
+    "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+    "TeichAI/Ox-Alpha-10k": 1541
+  },
+  "distilled_chunks": 979,
+  "counts": {
+    "considered": 2601,
+    "teacher_preference_excluded": 24,
+    "admitted_responses": 2576,
+    "admitted_chunks": 4491,
+    "distilled_responses": 41,
+    "one_window_responses": 661,
+    "rejected:codec_reconstruction": 1
+  },
+  "frozen_evaluation_sha256": "802b4adda85cd0c00c67119f0a1bf37177632ca72f9dc43b58e17c209c919c42",
+  "validation_unchanged": true,
+  "training_started": false
+}

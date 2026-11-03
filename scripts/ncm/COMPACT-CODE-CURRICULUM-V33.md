@@ -183,7 +183,7 @@ PARENT=results/ncm-frozen-clean-training-v32/evaluated-1000.pt
 ```
 
 Run this only after the previous full-model worker on the selected device has
-finished a complete session. The commands do not allocate a new GPU or stop an
+released it at a saved and evaluated checkpoint boundary. The commands do not allocate a new GPU or stop an
 existing process. `--resume` applies only to an unchanged v33 output, parent,
 code and admitted corpus. The Linux helper `run_compact_screen_stage.py` waits
 for the source-check service to finish and 16 GiB available host RAM before
@@ -234,3 +234,34 @@ Its independent evaluation remained 0/12. The
 [handover record](validation/v33-controls/adaptive-retirement.json), and
 [coding report](validation/v33-controls/adaptive-retired-1100-coding.json)
 are preserved. The canonical control continues independently on GPU0.
+
+## Completed admission and actual training start
+
+The [source-check stage](validation/v33-controls/compact-source-admission.json)
+admitted 2,601 compact responses. Eighteen candidates failed the publisher's
+original-code control. Teacher preference then removed 24 redundant original
+versions. The codec rejected one complete response, leaving 2,576 responses
+(4,491 chunks), including 41 distilled responses and 661 single-window answers.
+No partial response was retained.
+
+The [expanded corpus](validation/v33-controls/compact-training-admission.json)
+contains 49,648 training chunks across 10,984 complete responses, with 979
+verified-distillation chunks. All original training examples and the same 64
+validation windows remain. The selection SHA256 is
+`6de660293baf2aaf893ed558222ad91405beb678bd48de52af159840a571ce5a`;
+the full admission-report SHA256 is
+`5922aaa247dc98af99b58ed6ed4186a621eb6e81603c0b3d8c660f583826d0b3`.
+
+The [two-update optimizer qualification](validation/v33-controls/compact-optimizer.json)
+passed on the expanded corpus. Peak allocated GPU memory was 6,437,587,968
+bytes. Those updates were discarded. The actual run then imported the complete
+canonical update-1000 checkpoint, SHA256
+`fd6dadc5c392569d9c37f5f485712535f1f814e997f6b351c74b52f7ea523f67`.
+
+[Updates 1001–1020](validation/v33-controls/compact-first-20-updates.json) consumed
+80 examples: 37 compact and 43 original, with 14 distilled examples in total.
+Both creator sources appear in that actual exposure. Median update time was
+4.972 seconds and peak allocated GPU memory was 6,163,652,608 bytes during those
+first twenty updates. GPU1 also ran the older small native-decoder trainer, so
+this is not an isolated speed comparison. These are training/resource checks;
+no executable coding result is implied by admission or optimizer success.
