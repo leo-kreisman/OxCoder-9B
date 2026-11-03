@@ -1,5 +1,9 @@
 # Variable-prompt batching for original-backbone NCM training
 
+The [unpadded continuation](UNPADDED-TRAINING-V31.md) preserves this stage's
+update-400 training state and removes concept-level padding during backward.
+Its execution and optimizer controls pass; coding acceptance remains separate.
+
 This experiment preserves the frozen OxCoder source, trained adapters,
 residual-VQ concept vocabulary and native generation objective of v29. It
 batches independent prompts and concept levels to reduce repeated layer
