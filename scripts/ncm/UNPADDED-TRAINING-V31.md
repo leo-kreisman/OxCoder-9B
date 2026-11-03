@@ -150,3 +150,12 @@ with no original-language-model answer fallback. A passing checkpoint is only
 a candidate until another process reloads the exact bytes and reproduces all
 answers and checks. Deployment export and memory/latency measurements follow
 that gate rather than substituting for it.
+
+## Update-750 checkpoint
+
+The [unchanged executable gate](validation/v31-controls/coding-750.json)
+remained 0/12. The [frozen validation windows](validation/v31-controls/validation-750.json)
+had zero exact matches out of 64 and mean non-padding byte accuracy
+0.1044270834. This checkpoint is not a usable coding model. Its numerical
+execution speedup does not establish output quality; training and the
+independent canonical-label control continue.

@@ -1,0 +1,91 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "records": [
+    {
+      "update": 1,
+      "loss": 2.9501927345991135,
+      "gradient_norm": 10.751108169555664,
+      "seconds": 11.245013492007274,
+      "peak_allocated_bytes": 6397578240,
+      "conditioning_corruption": 0.0,
+      "parameter_delta_square_sum": {
+        "interfaces": 0.005398495624831412,
+        "adapters": 0.0026952021835313644,
+        "classifiers": 10.518239478263808
+      },
+      "finite_parameters": true,
+      "source_unchanged": true,
+      "codec_has_gradient": false,
+      "passed": true
+    },
+    {
+      "update": 2,
+      "loss": 2.2878310307860374,
+      "gradient_norm": 9.037134170532227,
+      "seconds": 4.300558232003823,
+      "peak_allocated_bytes": 6437587968,
+      "conditioning_corruption": 0.15,
+      "parameter_delta_square_sum": {
+        "interfaces": 0.0037412969140859786,
+        "adapters": 0.002729198282395373,
+        "classifiers": 8.762542373371332
+      },
+      "finite_parameters": true,
+      "source_unchanged": true,
+      "codec_has_gradient": false,
+      "passed": true
+    }
+  ],
+  "scope": "Two full-shape training updates only; weights discarded; no generated-code qualification",
+  "admission": {
+    "host_available": 25565786112,
+    "devices": [
+      {
+        "device": "cuda:0",
+        "free": 11112742912,
+        "allocator_cap": 6817775616
+      }
+    ]
+  },
+  "checkpoint_sha256": "553bf5f813f44db47afb1c4780a3c74a83d6a5adbee825f71ee56dc0c1870155",
+  "execution": {
+    "audit_sha256": "583c08210b7cbf63b9c9ab434481ea4dd661f8d8afc3d977e0f22b06ee54f7f0",
+    "batch_levels": true,
+    "batch_prompts": true,
+    "unpadded_levels": true,
+    "prefix_alignment": 1,
+    "compute_dtype": "float16",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124"
+  },
+  "corpus": {
+    "admission_sha256": "87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124",
+    "training_chunks": 45157,
+    "validation_chunks": 64,
+    "complete_training_responses": 8408,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 42051,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 903
+  },
+  "body_lr": 0.0001,
+  "head_lr": 0.001,
+  "loss_scale": 64.0,
+  "batch_examples": 4,
+  "implementation_sha256": {
+    "audit_frozen_clean_optimizer.py": "dfdb7528b3f940032c0ad07f9454cb183dca894afb852392a06d6e82011730cc",
+    "frozen_clean_objective.py": "ce98b8090fdb4766f94f2147a9dbff3f6fd22edd4e2568003a8b8448cd5926d3",
+    "train_independent.py": "7f985e7b3ada4806cad79eb126dfebada39cff424dbae516f62404dfee99d4c3",
+    "frozen_ragged_qualification.py": "60d2b03e286658f10fd29189c59c7c5ce130a0af5d4f62c5d4ee24bfdea1aee2",
+    "frozen_multi_objective.py": "a95a4054d47efe21927514a9c48fd837999dfc13c8fc785336d6fc5c915d26f0",
+    "frozen_tower_training.py": "b508bdb6a330da3e3f6ad3a8610c69cb08667326c8d820e820d816636a6ccab1",
+    "frozen_tower_objective.py": "53e644361937279440b53f7822d7fa748217ddd40bcd3d6991af62c910ebb8a2",
+    "frozen_tower_optimizer.py": "b1a055919aada75cbe83f8109e7efbc09245fe7b76b3f1f8a514fcb5b98e3086",
+    "cpu_adamw.py": "4e53052fe1ead682d6ee5707bbb4a4d8f7d2d123c1b2404af92fd127ad5cb6b7",
+    "master_muon.py": "60710ac28d7d6f546fcb0355e5d160928ca1ca21790bf41804a8ab98f38b95bf"
+  }
+}

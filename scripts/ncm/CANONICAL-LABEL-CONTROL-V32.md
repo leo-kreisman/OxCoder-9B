@@ -58,7 +58,7 @@ can be checked rather than inferred from the seed alone.
 CPU tests verify zero-corruption loss and every trainable gradient against the
 existing teacher-forced path, unchanged clean labels under corruption, RNG
 replay, frozen parameters and rejection of validation rows. The NCM suite passed
-235 tests before the queued GPU qualification. The GPU optimizer smoke is a
+235 tests before GPU qualification (245 after the compact-curriculum additions). The GPU optimizer smoke is a
 separate mandatory gate; CPU tests alone do not admit the branch to training.
 
 ## Execution
@@ -128,3 +128,14 @@ still contains a promise to release training code; the
 contains community training logs, rather than a published coding checkpoint
 with executable results. Repository execution audits and loss improvements
 must therefore remain distinct from claims of a demonstrated coding model.
+
+## Measured optimizer qualification
+
+The [preserved GPU report](validation/v32-controls/canonical-optimizer.json)
+contains both completed updates. Zero corruption took 11.245 seconds and
+0.15 maximum corruption took 4.301 seconds; peak allocated GPU memory was
+6,437,587,968 bytes. All three trainable groups changed finitely, the source
+weights remained unchanged, and the codec received no gradient. These two
+updates were discarded. The coordinator subsequently started the actual
+continuation from update 500. Neither qualification timing is an inference
+throughput measurement or a generated-code result.

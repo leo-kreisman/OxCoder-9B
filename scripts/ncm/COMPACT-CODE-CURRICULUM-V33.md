@@ -131,3 +131,61 @@ eligibility only; a new optimizer qualification and explicitly identified
 training continuation are still required. Three additional tests cover
 complete-response boundaries, teacher preference and rejection of a purported
 passing proof with zero executed assertions.
+
+## Explicit continuation after admission
+
+`train_compact_tower.py` is a new data-expansion stage, not a resume with silently
+replaced training files. It requires an immutable v32 canonical-label parent,
+the original admitted base, the fully screened supplement, and a passing
+full-shape optimizer qualification for that exact parent and expanded corpus.
+The original 45,157 training chunks and all 64 validation chunks must survive
+unchanged. Admission cannot add a validation example or remove a source.
+
+The new sampler chooses the compact partition with probability 0.5 and the
+original partition with probability 0.5. Inside each partition it retains the
+response-balanced source/teacher sampler. This makes short complete responses
+frequent without discarding the creator corpora or verified teacher data.
+The selection distribution deliberately changes; sample IDs are recorded and
+this stage is not described as matched exposure to v31 or v32.
+
+Full optimizer masters and moments, global update number, RNG, warmup and the
+10,000-update cosine schedule survive the import. There is no learning-rate
+restart. Canonical labels, 0.15 conditioning corruption, loss weights, frozen
+codec, original 32-layer source tower and autonomous inference are unchanged.
+The executable and validation functions are checked for identical syntax trees
+to the v32 evaluators. A checkpoint still needs 12/12 autonomous executable
+results and an independent identical replay. Curriculum admission is not model
+acceptance.
+
+Example commands, after the compact admission and chosen parent exist:
+
+```bash
+PARENT=results/ncm-frozen-clean-training-v32/evaluated-1000.pt
+
+"$PYTHON" -m scripts.ncm.audit_frozen_clean_optimizer \
+  --source "$SOURCE_GGUF" --codec "$CODEC_CHECKPOINT" \
+  --checkpoint "$PARENT" \
+  --selection results/ncm-compact-training-v33 \
+  --manifest results/ncm-compact-training-v33/admission.json \
+  --execution-audit results/ncm-frozen-ragged-audit-v31/report.json \
+  --output results/ncm-compact-optimizer-v33 --device cuda:0
+
+"$PYTHON" -m scripts.ncm.train_compact_tower \
+  --source "$SOURCE_GGUF" --codec "$CODEC_CHECKPOINT" --init "$PARENT" \
+  --selection results/ncm-compact-training-v33 \
+  --manifest results/ncm-compact-training-v33/admission.json \
+  --base-selection results/ncm-complete-selection-v27 \
+  --base-manifest results/ncm-complete-pipeline-v28/features.json \
+  --execution-audit results/ncm-frozen-ragged-audit-v31/report.json \
+  --optimizer-audit results/ncm-compact-optimizer-v33/report.json \
+  --output results/ncm-compact-tower-v33 --device cuda:0 \
+  --session-steps 500 --eval-every 250
+```
+
+Run this only after the previous full-model worker on the selected device has
+finished a complete session. The commands do not allocate a new GPU or stop an
+existing process. `--resume` applies only to an unchanged v33 output, parent,
+code and admitted corpus. The Linux helper `run_compact_screen_stage.py` waits
+for the source-check service to finish and 16 GiB available host RAM before
+running the small-codec screening step. It does not launch training or imply
+that the supplement passed.
