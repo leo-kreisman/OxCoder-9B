@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "source_selection_sha256": "6de660293baf2aaf893ed558222ad91405beb678bd48de52af159840a571ce5a",
+  "admission_sha256": "5922aaa247dc98af99b58ed6ed4186a621eb6e81603c0b3d8c660f583826d0b3",
+  "cache_manifest_sha256": "34e2c55a24ccf05f6518070c4a97a49425edaf3aaf5f51d0c5767125dff90e08",
+  "reference_seconds": 38.26040693401592,
+  "warm_cached_seconds": [
+    3.0024032880028244,
+    2.649259597004857,
+    2.8044267810182646
+  ],
+  "median_cached_seconds": 2.8044267810182646,
+  "all_types_values_ordering_identical": true,
+  "identical_sampler_draws": 1000,
+  "corpus": {
+    "admission_sha256": "5922aaa247dc98af99b58ed6ed4186a621eb6e81603c0b3d8c660f583826d0b3",
+    "selection_sha256": "6de660293baf2aaf893ed558222ad91405beb678bd48de52af159840a571ce5a",
+    "training_chunks": 49648,
+    "validation_chunks": 64,
+    "complete_training_responses": 10984,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 46542,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 979
+  },
+  "scope": "Serialization/startup only; no training or quality claim",
+  "implementation_sha256": {
+    "selection_reader.py": "8d70d64f0355a07e1d140c8efaa2ff60c6d3168f8acf26df8e81109cd8b4e632",
+    "cached_tower_corpus.py": "229e5d3cbec474f498398f9aa299ad32e8d29d4cb6bf667e471a8a8e78a724a0",
+    "frozen_tower_training.py": "b508bdb6a330da3e3f6ad3a8610c69cb08667326c8d820e820d816636a6ccab1",
+    "prepared_reader.py": "441fcbdc9d079f4d7100823d3ef96554513c46cd96e2f633f2ee0ac7bd809ce1",
+    "compact_curriculum_policy.py": "e3ec70f78b518a8d17de99f5158460e62567d7cab61c6e1cc612b2f0e76d1105",
+    "audit_selection_reader.py": "df7f3d05d932557088c9eb151c1a9338b5f1049676d1277657a4ec1986a8833c"
+  }
+}

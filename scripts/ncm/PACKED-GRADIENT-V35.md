@@ -62,3 +62,70 @@ restore individual forwards while constructing prefix states.
 
 No quality claim follows from these checks. The twelve autonomous executable
 tasks and identical fresh-process replay remain required for acceptance.
+
+## Qualified selection serialization
+
+`selection_reader.py` adapts the existing prepared-data JSON-cache strategy to
+the narrower `selection.pt` envelope. One-time conversion checks source hashes
+before and after `torch.load(weights_only=True)`, then verifies all types,
+values and ordering after JSON round-trip. It does not deserialize model or
+optimizer state. The cached corpus loader repeats the original admission
+checks, including complete responses, unchanged validation, both creator data
+sources and distillation. A whole-corpus comparison must pass before adoption.
+
+For the 49,648 training chunks and 64 held-out chunks in the compact corpus,
+the original admitted read took 38.26 seconds. Three warm checksummed cached
+reads took 3.00, 2.65 and 2.80 seconds. All returned types, values and ordering
+were identical, as were 1,000 seeded sampler draws. The median is 2.80 seconds,
+approximately 13.6x faster startup deserialization. This is not a training-step
+or inference speed measurement. The [complete reader report](validation/v35-controls/selection-reader.json)
+records the data and implementation hashes.
+
+## Conditional training adoption
+
+`run_packed_training_stage.py` waits for the completed v34 update-2500 session,
+then retires its paused supervisor while the whole-model audit owns GPU1.
+It requires both the full-update runtime audit and the complete serialization
+audit. If either fails, it restarts the original v34 supervisor from saved
+state. No failed optimization is allowed to strand the parent training run.
+
+`train_packed_tower.py` restores the entire v34 optimizer and RNG state. It keeps
+the same batch size, sampled corpus, loss, corruption, learning-rate schedule,
+frozen source and codec, and unchanged evaluation functions. The runtime uses
+packed-only autograd, interleaved prefix construction and resident FP32 head
+moments. Data loading uses the separately qualified exact JSON serialization.
+One thousand updates per session reduce repeated startup work; checkpoints
+still save every 100 updates and quality evaluations still run every 250.
+The final partial session also records its saved boundary.
+
+Adoption is conditional. A completed matrix or serialization audit does not
+by itself prove that whole-model training fits or runs faster. No generated
+checkpoint is accepted until the existing twelve-task gate and fresh-process
+replay pass.
+
+## Exact precision on cold reload
+
+The historical backbone constructor creates BF16 adapters. Loading FP16 saved
+adapters into that constructor and only then switching execution to FP16 loses
+low bits. Training's full optimizer-state restoration already recopies the
+saved model tensors into the final execution dtype, so its in-process coding
+reports are unaffected. A cold evaluation that omitted that restoration could
+evaluate rounded adapter weights instead of the exact saved checkpoint.
+
+`exact_checkpoint.restore_trainable` fixes the cold path after execution dtype
+selection. It validates the complete trainable inventory, shapes, dtypes and
+finiteness before copying anything, restores the original saved values, checks
+bit-exact equality, and verifies the checkpoint hash before and after loading.
+It uses read-only memory-mapped, weights-only checkpoint loading. Optimizer
+state is not modified by this helper. A regression test deliberately creates
+FP16 values that change through BF16 and verifies their exact restoration.
+
+The v35 trainer applies this restoration before either training or evaluation.
+`evaluate_exact_tower.py` provides the same corrected fresh-process gate for
+v32–v35 checkpoints. It refuses to replace an existing report. This fixes
+checkpoint fidelity; it does not turn a failed in-process quality gate into a
+passing result. The concept-error diagnostic also uses exact restoration.
+
+After the runtime policy, data-cache and reload fixes, the complete NCM unit
+suite passed 284 tests. The whole-model CUDA audit remains a separate admission
+requirement.

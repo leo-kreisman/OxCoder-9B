@@ -21,6 +21,7 @@ from . import frozen_tower_ragged as ragged
 from .frozen_multi_objective import level_output
 from .frozen_tower_training import load_corpus
 from .train import admission, write_json
+from .exact_checkpoint import restore_trainable
 
 
 def selected_rows(rows, count):
@@ -115,12 +116,15 @@ def run(a):
             if digest(Path(__file__).with_name(name)) != sha:
                 raise ValueError('Parent implementation changed: ' + name)
         tower.set_compute_dtype(model.backbone, torch.float16)
+        restore_trainable(model, a.checkpoint, parent, checksum)
         model.eval()
         training, heldout, corpus = load_corpus(a.selection, a.manifest, parent['source_sha256'], parent['codec_sha256'])
         if corpus != parent['corpus']:
             raise ValueError('Corpus differs')
         report.update(phase='diagnosing', checkpoint_sha256=checksum, corpus=corpus,
-                      implementation_sha256=digest(__file__))
+                      implementation_sha256=digest(__file__),
+                      exact_restore_sha256=digest(Path(__file__).with_name('exact_checkpoint.py')),
+                      trainable_checkpoint_values_restored_exactly=True)
         for items in (training, heldout):
             for row, condition in selected_rows(items, a.examples):
                 result = diagnostic(model, codec, row, condition)
