@@ -1,0 +1,72 @@
+# Frozen source context with the original concept-generation backbone
+
+This experiment retains all 32 original OxCoder layers in **both** prompt
+processing and concept generation. The immutable source weights are shared;
+prompt processing bypasses trainable adapters. Each concept level reads a
+separate copy of that frozen hybrid prefix state, then uses the source layers
+and trainable adapters to predict its codebook labels. The existing frozen
+residual-VQ codec produces answer bytes. No autoregressive answer head or
+verification fallback is added.
+
+The new execution path is `frozen_tower.py`. It differs from the earlier v24
+generator, which applies adapters to prompt positions too. It also differs
+from v25/v28, whose small concept decoder starts independently of the source's
+decoder layers. Reusing a v24 parameter checkpoint is initialization of a new
+architecture, not a numerically equivalent training resume.
+
+## Motivation and limits of the supporting research
+
+The [context-tower conversion study](https://arxiv.org/html/2610.02657v1)
+uses a second copy of the parent as its denoiser, attached to layer-aligned
+frozen context. Its smaller-donor experiments retain substantially less coding
+performance. That result motivates testing reuse of the source layers instead
+of assuming a small new decoder inherits the source's knowledge. The published
+method concerns token diffusion and softmax-attention models. Applying frozen
+context to OxCoder's hybrid recurrence and a learned concept vocabulary is a
+separate experiment; the paper does not establish that this implementation will
+work or that it needs the same training budget.
+
+## Cache semantics
+
+`prepare` computes source states without invoking adapters or accepting target
+bytes. Cached states record the owning backbone, prompt IDs, and source tensor
+versions. Adapter updates leave the frozen context valid; source changes or use
+with another backbone invalidate it. Each level and checkpoint recomputation
+forks its own layer state. Full-attention queries can see other inputs within
+their own level, while GatedDeltaNet retains its causal within-pass recurrence.
+Current-level target labels never enter either path.
+
+The uncached control recomputes the whole prompt for every level and applies
+adapters only to concept positions. Comparing with the old adapted-prompt
+reference would compare different architectures, not establish cache fidelity.
+
+## Initial numerical audit: not admitted
+
+Four CPU tests cover nonzero adapters, target and adapter gradients, checkpoint
+replay, immutable cache forks, updates to adapters versus source weights, and
+foreign-cache rejection. The complete suite passed 208 tests. These tests do
+not establish full-model numerical fidelity or generated-code quality.
+
+The first full OxCoder audit used the preserved v24 checkpoint, original
+Q4_K_M source, and four training-only prompts. Timings include one frozen
+prefill and four forward/backward concept levels; they exclude optimizer work.
+
+| Actual prompt tokens | Uncached seconds | Cached seconds | Ratio | Numerical gate |
+|---|---:|---:|---:|---|
+| 64 | 1.944 | 1.629 | 1.19× | Passed |
+| 69 | 1.805 | 1.637 | 1.10× | Failed |
+| 512 | 3.545 | 1.755 | 2.02× | Passed |
+| 1,976 | 11.880 | 2.476 | 4.80× | Passed |
+
+At 69 tokens, interface-gradient relative L2 error was 0.1211 against the
+unchanged maximum of 0.05. Overall gradient error was 0.1088. The cached path
+is therefore **not admitted for training** by this audit. Its largest tested
+prompt was 1,976, despite requesting the nearest example to 2,048; it does not
+qualify the 2,048-token limit. Cached PyTorch allocation peaked at about 7.40 GB,
+without optimizer state. These are local CUDA training measurements, not Mac
+inference speeds or an 8 GB whole-process deployment result.
+
+The complete original report, including implementation hashes and gradient
+subgroups, is preserved in
+[frozen-tower-initial.json](validation/v29-controls/frozen-tower-initial.json).
+No coding acceptance result follows from these execution measurements.
