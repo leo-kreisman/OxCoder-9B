@@ -1,0 +1,366 @@
+{
+  "records": [
+    {
+      "id": "202c3dda7f56568b715a79996115e2184f21e29ff6797f2dd700d3f27d0fd09e:2:byte-1",
+      "teacher_forced_ce": [
+        0.25648894906044006,
+        3.725389003753662,
+        3.4241554737091064,
+        0.8487238883972168
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.0625,
+        0.125,
+        0.703125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.171875,
+      "generated_text": "L     eesiseeee e e eaeeeo         e  s e e     e e e e e     aae  aS     aSiiiiiiSSS          ee e e eee e              ea    ",
+      "stop_probability": 0.0026671383529901505,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "f259ac36e743affead9cd9f7cea6cac802a54dc98a924e0239e51dac806bcbe5:1:byte-3",
+      "teacher_forced_ce": [
+        0.42357075214385986,
+        2.8833096027374268,
+        2.8738842010498047,
+        1.1837810277938843
+      ],
+      "teacher_forced_accuracy": [
+        0.75,
+        0.375,
+        0.359375,
+        0.6328125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": false,
+      "free_byte_accuracy_nonpad": 0.06930693238973618,
+      "generated_text": null,
+      "stop_probability": 0.965906023979187,
+      "expected_final_chunk": true,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "7c02d06df007a3e057ebd5e636c36829323582ccc8022b3312827df0fc27eea4:answer:byte-2",
+      "teacher_forced_ce": [
+        0.011825964786112309,
+        0.9668357968330383,
+        1.4484812021255493,
+        0.3349243700504303
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.6875,
+        0.578125,
+        0.8828125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.4296875,
+      "generated_text": "tted isst f ttto  ee  ed     d teds        sce dndg order.\n    \"\"\"\n    r turn or rrrrrrrrr((t  key=la lms(poddoddrrod o st   : ",
+      "stop_probability": 0.0026431118603795767,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "1aa3f75fbf75628da8ae8c8ccbc44bf5198cbffbb6614d3f33a0cf9a3ef3965b:4:byte-1",
+      "teacher_forced_ce": [
+        0.06936578452587128,
+        3.5842459201812744,
+        3.5309736728668213,
+        0.7871148586273193
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.4375,
+        0.140625,
+        0.75
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.109375,
+      "generated_text": "d    ll wa        aS S S S S S S S S S   e e l ee e e  t       t     ta a r r  e     trtrtrtre   e eee ed t h ts e        s s  ",
+      "stop_probability": 0.00303055252879858,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "db926503ae34f03322e4cc28cd27725a0d08be5890d59efd08497a549d967ecb:1:byte-3",
+      "teacher_forced_ce": [
+        0.14190134406089783,
+        4.266435623168945,
+        3.4453892707824707,
+        0.8639712333679199
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.0625,
+        0.1875,
+        0.7421875
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": false,
+      "free_byte_accuracy_nonpad": 0.1171875,
+      "generated_text": null,
+      "stop_probability": 0.0012205835664644837,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "e8617796164167b3f3c52fb794045a3bfa9ae9327a54fbd5b0a78c79336ab7fe:answer:byte-2",
+      "teacher_forced_ce": [
+        0.025224676355719566,
+        1.2928202152252197,
+        2.0349068641662598,
+        0.5021331906318665
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.6875,
+        0.515625,
+        0.8203125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.2890625,
+      "generated_text": "  ub   si   tatniotttttn    llllll . \n    \"\"\"      tuuu[ srulu  s u ro oo          in    neeiu         _       llilis iililisst",
+      "stop_probability": 0.010614746250212193,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "33ce2b56f280dc0614490a256a68a25b576814faf5d1b32ec1ca8c50d2861d87:2:byte-2",
+      "teacher_forced_ce": [
+        0.13479144871234894,
+        3.661113977432251,
+        3.3675734996795654,
+        0.7765404582023621
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.25,
+        0.21875,
+        0.75
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.078125,
+      "generated_text": "ireteec   d   e eeee e e eiei s llllll oeo o o oollll  leltl dlddl ltl  e e dddii dddddddddddeeeeaIlrlrrIataaas aaaaa    eat t ",
+      "stop_probability": 0.00226150662638247,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "be0ae73b2188e9a20027af7e3e193f942a4b92f098b93c6c8f7601a362162297:1:byte-1",
+      "teacher_forced_ce": [
+        0.09306807070970535,
+        3.055180549621582,
+        3.8885388374328613,
+        1.4071717262268066
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.25,
+        0.15625,
+        0.640625
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.125,
+      "generated_text": " Teeeee               s ci  ee   ne              o o i  n.    \n\n ..    i i i i i i i e    ee e ss c           e e e e e e e    ",
+      "stop_probability": 0.004036369267851114,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "f5a5c9f87a5178a5e4427fc408b52651cc2815e5e3e69d1028786453d0fc5a34:answer:byte-0",
+      "teacher_forced_ce": [
+        0.006126845721155405,
+        0.9673205018043518,
+        0.9207099676132202,
+        0.42985519766807556
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.8125,
+        0.765625,
+        0.8203125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.625,
+      "generated_text": "```python\ndef sort_and_fiite(datt,, t thesesol:\n    \"\"\"\n    Reuurns a nnlisstt  cotaining oyl t ee  lement nt t hhhatata a tt e",
+      "stop_probability": 0.0004775976703967899,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "fd5cee6651bacb6be7570e1a189b8232ea1a9b9f12c22829499bf356ad050fe1:2:byte-1",
+      "teacher_forced_ce": [
+        0.1754959523677826,
+        2.964019775390625,
+        3.1010477542877197,
+        0.8652517795562744
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.25,
+        0.234375,
+        0.7578125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.078125,
+      "generated_text": "ene ass edaaaaa e    th eeoioo on tos  or o ogoioio oooooio oiooooo oooiooo tiooooooooooooooooooooooooooooooooooooooooooont  o.",
+      "stop_probability": 0.00019121130753774196,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "83228ad5bf0e1366e737dba0dbadea66d4f53ca013c5db77b957bc0df16f8503:1:byte-1",
+      "teacher_forced_ce": [
+        0.08738303184509277,
+        2.4680068492889404,
+        3.3362631797790527,
+        0.9879680871963501
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.4375,
+        0.109375,
+        0.6484375
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.203125,
+      "generated_text": "eeeememe   es  leel ss  e 1                5 5 5  ,   ,              e1e         e t t  tt t t tts\n\n\n\n\n\n\n\n\n\ne   e eeeeeeas\n\n*  ",
+      "stop_probability": 0.011526552028954029,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "7d2daf4e1f92d34a8186c960f8ff40aa90cc7a4f2480face8143a6750705d0a1:answer:byte-0",
+      "teacher_forced_ce": [
+        0.004810821730643511,
+        1.1584336757659912,
+        1.0068410634994507,
+        0.3816538155078888
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.75,
+        0.671875,
+        0.84375
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.6015625,
+      "generated_text": "```python\ndef find_longest_palindrome(text):\n    \"\"\"\n    Returnss hehseoeo ngge r  ooii bbtt  n  nin h ttgie e  e x.\n          ",
+      "stop_probability": 9.543220949126408e-05,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "48fdfc070d3075cdd1a8ec7f1fb5669d51571bdcf6c4116335b88fa2b6a02844:2:byte-1",
+      "teacher_forced_ce": [
+        0.0803171694278717,
+        4.440597057342529,
+        2.911982774734497,
+        0.6064834594726562
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.125,
+        0.21875,
+        0.84375
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.109375,
+      "generated_text": "Le    rr n ntss e   eesee t t e lleeiei i i iea  aaaaaaaaaaaaain o  t t t t t i t t t t t t t t t es s s en  eie     s      ee ",
+      "stop_probability": 0.0010074491146951914,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "05d935d1f789c08d3bdb60a0767dfdcc4550c715f2c7f179b3407695be400047:1:byte-0",
+      "teacher_forced_ce": [
+        0.010954458266496658,
+        2.809253692626953,
+        3.5095112323760986,
+        0.8310781121253967
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.25,
+        0.171875,
+        0.7578125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.171875,
+      "generated_text": "Thssss e oe reeerore ffffefi  a    rerrrrrrrrrrrr er r  r r   e e e e e e er rees e e e e e   e e eeeee e  reee   rre errr eerr",
+      "stop_probability": 0.00323116360232234,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "630ac81535dd9a4c911eb844a27f2833a48df64d7b6833217d25312e0657e39f:answer:byte-2",
+      "teacher_forced_ce": [
+        0.002596477745100856,
+        1.958728551864624,
+        1.4665738344192505,
+        0.4862551987171173
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.375,
+        0.40625,
+        0.84375
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.2265625,
+      "generated_text": "ge srtrnr d enee cending rrreeeds\n\n\n \n \n\"           n  on n______=llnn_n_= iilnns li i i i i ii ii   o\n   i      i  i i        ",
+      "stop_probability": 0.0009814079385250807,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    },
+    {
+      "id": "0796157915573c3cbe386b1086b5598ca9559db6ecb71879200660634ab8fff5:2:byte-3",
+      "teacher_forced_ce": [
+        0.6794874668121338,
+        4.110354423522949,
+        3.533449411392212,
+        1.0499812364578247
+      ],
+      "teacher_forced_accuracy": [
+        1.0,
+        0.125,
+        0.1875,
+        0.6953125
+      ],
+      "free_exact_chunk": false,
+      "free_valid_chunk": true,
+      "free_byte_accuracy_nonpad": 0.109375,
+      "generated_text": "   eet  t e t  e ooroa a     aeee e   e e      n,' '     l la      a  lS S e i s ss\n \n s    a           e k a                e ",
+      "stop_probability": 0.0007691705250181258,
+      "expected_final_chunk": false,
+      "codec_exact_nonpad": true
+    }
+  ],
+  "windows": 16,
+  "mean_level_ce": 1.6040410048553895,
+  "free_exact_windows": 0,
+  "free_valid_windows": 14,
+  "mean_free_nonpad_byte_accuracy": 0.2196637145243585,
+  "quality_ready": false,
+  "scope": "Training-only conditional chunk probe; never executable coding acceptance",
+  "checkpoint_sha256": "5bf36279c509893ea24540275576b707e3d74e22dda9896c538dc004bdce546e",
+  "feature_manifest_sha256": "87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3",
+  "step": 9000
+}

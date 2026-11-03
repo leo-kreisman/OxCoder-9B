@@ -272,3 +272,24 @@ identical generated answers are required before `acceptance.json` is written.
 No training loss, oracle reconstruction, speed audit, or service-completion
 status substitutes for that result. Even a successful gate covers twelve
 elementary functions, not general professional coding competence.
+## Update-9000 training-window diagnostic
+
+A separate CPU FP32 process loaded the immutable control checkpoint at update
+9000 and evaluated the existing source-balanced, deterministic 16-training-window
+probe. It created no optimizer and changed no parameters. This uses cached
+prompt features; some windows include gold earlier response chunks. It is not
+an autonomous whole-answer or GPU throughput measurement.
+
+Teacher-conditioned accuracies across the four concept levels were 98.44%,
+37.11%, 31.54% and 75.83%. Autonomous chunk decoding reproduced 0/16 targets;
+14/16 outputs were byte-protocol valid, with 21.97% mean nonpadding-byte
+accuracy. Thus high coarsest-level training accuracy does not establish a
+working hierarchy. Errors remain in intermediate predictions even with clean
+earlier concepts; this diagnostic does not isolate their cause.
+
+The checkpoint, feature-manifest and selected-ID provenance are preserved with
+[the complete report](validation/v32-controls/context-control-9000-training-probe.json)
+and [selection](validation/v32-controls/context-control-9000-selection.json).
+The original 9B generator and canonical-label control continue independently;
+none of these training-window measurements qualifies the twelve-task gate.
+
