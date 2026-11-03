@@ -246,7 +246,9 @@ No partial response was retained.
 
 The [expanded corpus](validation/v33-controls/compact-training-admission.json)
 contains 49,648 training chunks across 10,984 complete responses, with 979
-verified-distillation chunks. All original training examples and the same 64
+distillation chunks. Of these, 841 are from publisher-checked NVIDIA responses;
+the other 138 are previously admitted creator-corpus teacher chunks and are not
+covered by those NVIDIA publisher checks. All original training examples and the same 64
 validation windows remain. The selection SHA256 is
 `6de660293baf2aaf893ed558222ad91405beb678bd48de52af159840a571ce5a`;
 the full admission-report SHA256 is
