@@ -72,6 +72,8 @@ def run(a):
                    'gguf_training_weights.py', 'gguf_training_backbone.py')},
               'pause_units': a.pause_unit, 'autoregressive_answer_fallback': False}
     report['prefix_alignment'] = a.alignment
+    report['compute_dtype'] = a.compute_dtype
+    report['tf32'] = False
     write_json(out / 'report.json', report)
     try:
         # The caller must pause the evaluation coordinator before launching,
@@ -83,10 +85,14 @@ def run(a):
                 paused.append(unit)
         torch.set_num_threads(2)
         torch.manual_seed(29001)
+        torch.backends.cuda.matmul.allow_tf32 = False
+        torch.backends.cudnn.allow_tf32 = False
         torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = False
         torch.backends.cuda.matmul.allow_fp16_reduced_precision_reduction = False
         report['admission'] = admission([a.device], 9)
         model, codec, identity, sha = load_candidate(a.source, a.codec, a.checkpoint, [a.device])
+        if a.compute_dtype != 'bfloat16':
+            tower.set_compute_dtype(model.backbone, getattr(torch, a.compute_dtype))
         model.train()
         data = torch.load(Path(a.selection) / 'selection.pt', weights_only=True, map_location='cpu')['prepared']
         training = [(r, c) for r, c in data if r['split'] == 'train']
@@ -139,6 +145,7 @@ if __name__ == '__main__':
     p.add_argument('--repeats', type=int, default=2)
     p.add_argument('--pause-unit', action='append', default=[])
     p.add_argument('--alignment', type=int, choices=(1, 64), default=64)
+    p.add_argument('--compute-dtype', choices=('bfloat16', 'float16', 'float32'), default='bfloat16')
     a = p.parse_args()
     if a.repeats < 1:
         p.error('Positive repeats required')

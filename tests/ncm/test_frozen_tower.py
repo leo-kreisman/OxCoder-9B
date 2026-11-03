@@ -77,6 +77,15 @@ class FrozenTowerTests(unittest.TestCase):
             for handle in handles:
                 handle.remove()
 
+    def test_precision_change_invalidates_prefix(self):
+        state = tower.prepare(self.model, self.prompt)
+        tower.set_compute_dtype(self.model, torch.bfloat16)
+        with self.assertRaises(ValueError):
+            tower.validate(self.model, state)
+        self.assertEqual(tower.layer_dtype(self.model.layers[0]), torch.bfloat16)
+        with self.assertRaises(ValueError):
+            tower.set_compute_dtype(self.model, torch.int8)
+
     def test_refuses_trainable_source_or_foreign_cache(self):
         state = tower.prepare(self.model, self.prompt)
         other = copy.deepcopy(self.model)

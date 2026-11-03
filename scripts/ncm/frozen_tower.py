@@ -26,13 +26,34 @@ def source_versions(backbone):
                for t in list(module.parameters()) + list(module.buffers())]
     if any(t.requires_grad for t in tensors):
         raise ValueError('Frozen context requires frozen source parameters')
-    return tuple((id(t), t._version) for t in tensors)
+    return (tuple((id(t), t._version, str(t.dtype), str(t.device)) for t in tensors),
+            tuple(str(layer_dtype(layer)) for layer in backbone.layers))
 
 
 def layer_dtype(layer):
     # Packed GGUF linears intentionally expose bytes, not a fake .weight.
+    override = getattr(layer, '_ncm_frozen_tower_dtype', None)
+    if override is not None:
+        return override
     weight = getattr(layer.mlp.gate_proj, 'weight', None)
     return weight.dtype if weight is not None else torch.bfloat16
+
+
+def set_compute_dtype(backbone, dtype):
+    """Select an explicit execution precision before constructing any prefix.
+
+    Packed uint8 weights stay packed and immutable; their temporary unpacked
+    matrices follow the input dtype. Small source parameters and adapters are
+    cast consistently. This is a different numerical policy, not a claim of
+    bit-exact BF16 parity. Call before creating an optimizer.
+    """
+    if dtype not in (torch.bfloat16, torch.float16, torch.float32):
+        raise ValueError('Only BF16, FP16 and FP32 execution are supported')
+    for layer, adapter in zip(backbone.layers, backbone.adapters):
+        layer.to(dtype=dtype)
+        adapter.to(dtype=dtype)
+        layer._ncm_frozen_tower_dtype = dtype
+    backbone.norm.to(dtype=dtype)
 
 
 @dataclass

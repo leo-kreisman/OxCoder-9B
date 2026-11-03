@@ -92,3 +92,30 @@ See [frozen-tower-aligned.json](validation/v29-controls/frozen-tower-aligned.jso
 The optional `frozen_tower_batch.py` additionally batches independent concept
 levels. Its CPU tests check gradient agreement and padding isolation. It has
 not yet been admitted by a full-model GPU audit.
+
+## Explicit precision controls
+
+The first FP32 execution control exhausted its allocator allowance during a
+cached backward pass. It produced no completed numerical records and is not
+admitted. The original failure is retained in
+[frozen-tower-fp32-memory.json](validation/v29-controls/frozen-tower-fp32-memory.json).
+
+FP16 is a separate execution policy with more mantissa precision and a smaller
+exponent range than BF16. With reduced-precision reductions and TF32 disabled,
+it passed all four unchanged logit and gradient gates, including the exact
+2,048-token synthetic shape. Worst interface-gradient relative L2 was 0.01738,
+below 0.05; worst logit relative L2 was 0.000412, below 0.02. This comparison is
+FP16 cached versus FP16 uncached, not a claim of identical BF16 predictions.
+
+| Prompt tokens | Uncached seconds | Cached seconds | Ratio |
+|---|---:|---:|---:|
+| 64 | 1.499 | 1.619 | 0.93× |
+| 69 | 1.651 | 1.694 | 0.97× |
+| 512 | 3.398 | 1.791 | 1.90× |
+| 2,048 | 12.014 | 2.429 | 4.95× |
+
+Peak cached PyTorch allocation was 7.34 GB, excluding optimizer state. The
+short-prompt cases show cache overhead rather than acceleration. Full results:
+[frozen-tower-fp16.json](validation/v29-controls/frozen-tower-fp16.json).
+This qualifies only the hashed execution implementation. Optimizer memory and
+actual generation remain separate gates; it is not a usable-model claim.
