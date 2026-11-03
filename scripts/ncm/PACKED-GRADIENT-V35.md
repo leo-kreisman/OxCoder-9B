@@ -129,3 +129,29 @@ passing result. The concept-error diagnostic also uses exact restoration.
 After the runtime policy, data-cache and reload fixes, the complete NCM unit
 suite passed 284 tests. The whole-model CUDA audit remains a separate admission
 requirement.
+
+## Full-model memory result and fallback
+
+The full no-recompute audit at the v34 update-2500 checkpoint did not qualify.
+The checkpointed reference completed four updates, with warm median 2.6958 s
+and peak allocation 6,974,623,744 bytes. The no-recompute arm exceeded its
+11.18 GiB allocator admission during its first full update. Approximately
+4.02 GiB remained physically free; this was the deliberate application reserve,
+not permission to expand into other workloads' memory.
+
+The [full report](validation/v35-controls/full-runtime.json) is incomplete and
+failed. No no-recompute timing, numerical comparison, profiling result or coding
+quality gain is claimed. The coordinator did not start the v35 trainer. It
+restarted the qualified v34 supervisor from the saved update-2500 state. The
+representative matrix audit and exact serialization cache remain separately
+valid but cannot override a failed full-model admission.
+
+`selective_packed_gradient.py` is the next **separate runtime experiment**. It
+keeps packed-only input gradients and recomputes alternating layers instead of
+retaining all layer activations. The dispatch checks the original layer index,
+rejects unknown checkpoint call shapes, and restores every override on exit.
+Full numerical and memory qualification is required before adoption. Its
+`audit_selective_packed_runtime.py` uses the same four-update comparison and
+fixed tolerance as v35, on the next immutable v34 checkpoint. CPU tests verify
+all/no/partial checkpoint patterns and exception cleanup. Passing these tests
+alone does not enable the experiment in a training worker.

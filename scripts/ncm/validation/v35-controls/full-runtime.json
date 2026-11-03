@@ -1,0 +1,114 @@
+{
+  "complete": false,
+  "passed": false,
+  "quality_ready": false,
+  "arms": {
+    "resident_checkpointed": {
+      "records": [
+        {
+          "update": 1,
+          "seconds": 8.241623206005897,
+          "loss": 2.6997554004192352,
+          "gradient_norm": 13.469748497009277,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false
+        },
+        {
+          "update": 2,
+          "seconds": 2.695784562994959,
+          "loss": 2.309838932007551,
+          "gradient_norm": 10.95412826538086,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false
+        },
+        {
+          "update": 3,
+          "seconds": 2.695529260003241,
+          "loss": 2.0923856254667044,
+          "gradient_norm": 10.023848533630371,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false
+        },
+        {
+          "update": 4,
+          "seconds": 2.7204041840159334,
+          "loss": 1.779743179678917,
+          "gradient_norm": 9.186288833618164,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false
+        }
+      ],
+      "median_seconds": 2.695784562994959
+    }
+  },
+  "scope": "Four identical real training updates per runtime; all discarded",
+  "phase": "auditing",
+  "admission": {
+    "host_available": 29611241472,
+    "devices": [
+      {
+        "device": "cuda:1",
+        "free": 16301359104,
+        "allocator_cap": 12006391808
+      }
+    ]
+  },
+  "checkpoint_sha256": "dc777800d6e2b3900eeb49de33e2b514214dfc5e8a86af804df829cc954d445c",
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "corpus": {
+    "admission_sha256": "5922aaa247dc98af99b58ed6ed4186a621eb6e81603c0b3d8c660f583826d0b3",
+    "selection_sha256": "6de660293baf2aaf893ed558222ad91405beb678bd48de52af159840a571ce5a",
+    "training_chunks": 49648,
+    "validation_chunks": 64,
+    "complete_training_responses": 10984,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 46542,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 979
+  },
+  "examples": [
+    {
+      "id": "6894582a925c9a34b2f0949a9813d2c799ed522bb49cbdcdb906b21ccf16cdb3:1:byte-0",
+      "original_tokens": 64,
+      "prompt_tokens": 64,
+      "synthetic_extension_or_truncation": false
+    },
+    {
+      "id": "f4c01c2d18e67cb9a162cf5845fc759788b285f738139bf72361d0c577edd5cf:1:teacher:byte-1",
+      "original_tokens": 69,
+      "prompt_tokens": 69,
+      "synthetic_extension_or_truncation": false
+    },
+    {
+      "id": "1d45e0363fb88442bc222b5846df2644508976911e041d2e5357f4f5d8fc7afd:answer:teacher-v19:byte-5",
+      "original_tokens": 512,
+      "prompt_tokens": 512,
+      "synthetic_extension_or_truncation": false
+    },
+    {
+      "id": "62a721b46b8ad6dd424d9f90dffc9e20acc4b6b3eb4ad1ea0489ec7918d768af:2:byte-4",
+      "original_tokens": 1976,
+      "prompt_tokens": 2048,
+      "synthetic_extension_or_truncation": true
+    }
+  ],
+  "matrix_audit_sha256": "2533512a8d862058620251dd3daa0ed7305e40b387daf1a6dea827112b6376c8",
+  "implementation_sha256": {
+    "audit_packed_runtime.py": "f5ca1c2af4f7ac045c0eb77c16c38f19842e20f47ba8ce39b57c9ceb6519d2e0",
+    "packed_gradient.py": "54ea917f8fff89e0ba2b1e01b5fb852f56ca5b33777d37a40ba01e2892d4cb41",
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "resident_tower_optimizer.py": "98219225a1ecd7bffd3eb59987985dfd8e26a7d33589fab9f1ebc207af9e77a3",
+    "frozen_tower_ragged.py": "3ed13875c5bea601a1ceeadef6013a475912a6106859d252f88bc21005c153e7",
+    "interleaved_context.py": "bf563f6a3cad533ecb4f630aaaa514c11a5a62de83bd458e658065d04a680bfe",
+    "interleaved_prefix.py": "64bf26639478517594330e09241da958a93d5de9b33e59d2348aea09ef4f43a0",
+    "frozen_clean_objective.py": "ce98b8090fdb4766f94f2147a9dbff3f6fd22edd4e2568003a8b8448cd5926d3"
+  },
+  "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 96.00 MiB. GPU 1 has a total capacity of 15.48 GiB of which 4.02 GiB is free. Process 1777942 has 146.00 MiB memory in use. Including non-PyTorch memory, this process has 11.29 GiB memory in use. 11.18 GiB allowed; Of the allocated memory 10.97 GiB is allocated by PyTorch, and 132.44 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')"
+}
