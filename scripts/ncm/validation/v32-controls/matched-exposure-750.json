@@ -1,0 +1,32 @@
+{
+  "updates": 250,
+  "first": 501,
+  "last": 750,
+  "same_example_ids": true,
+  "medians_seconds": {
+    "adaptive": 5.743773441499798,
+    "canonical": 3.7198009275016375
+  },
+  "quality_ready": false,
+  "scope": "Matched example exposure; different objective and GPU background load, not a controlled hardware speed ratio",
+  "adaptive": {
+    "coding_passed": 0,
+    "coding_evaluated": 12,
+    "validation_exact": 0,
+    "validation_windows": 64,
+    "mean_byte_accuracy": 0.1044270833954215
+  },
+  "canonical": {
+    "coding_passed": 0,
+    "coding_evaluated": 12,
+    "validation_exact": 0,
+    "validation_windows": 64,
+    "mean_byte_accuracy": 0.09866536461049691
+  },
+  "input_sha256": {
+    "results/ncm-frozen-ragged-training-v31/coding-750.json": "a5400a6b8ca4d226ef39e697c3f79e0619a274f73e007963f39c68456b8d2d78",
+    "results/ncm-frozen-ragged-training-v31/validation-750.json": "9e9a482971b8d9b1625d267daac4242b6adeb4e9fa6ed24213d4a80ad63be85b",
+    "results/ncm-frozen-clean-training-v32/coding-750.json": "5aa32b106e81e9659ab78c27f03c3d1fb9fa65c43089d580a0a410d4287d5a94",
+    "results/ncm-frozen-clean-training-v32/validation-750.json": "564796c5626f7cb3879126ba8019aee6b53d7dbc6a5a498a88df4671bf8e7bc3"
+  }
+}

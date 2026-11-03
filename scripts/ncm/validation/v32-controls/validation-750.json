@@ -1,0 +1,457 @@
+{
+  "records": [
+    {
+      "id": "f819c37613d7b7d7656c75354547ecd2c8fb9d2b46e68dd743ea428f8679cdcf:1:byte-56",
+      "free_exact": false,
+      "generated_text": "g ngin aaaaareaatureerrrrrrrrrrrrrrrrrrrrrrrrrww  ww      ww  wr  wr t    ww  ww  ww  wr tttss              tts ttss    tttttt ",
+      "free_nonpad_byte_accuracy": 0.0703125,
+      "stop_probability": 0.006623228080570698
+    },
+    {
+      "id": "78a21526f9cef80e1fc3b0884ee6fdb8483075a4fe6de6c5fd20c1d4d990562d:1:byte-7",
+      "free_exact": false,
+      "generated_text": "gi aaaa aanaaaaa aaaaa aaanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaareerrreeedoonl  a ,,    reeeeeeeeeeeeeeeed, e\",  ",
+      "free_nonpad_byte_accuracy": 0.140625,
+      "stop_probability": 0.0036188920494168997
+    },
+    {
+      "id": "fc80fc57513d57707c0f11d6547c97812e0d34cc94b70b3feb8459025fe64540:1:byte-60",
+      "free_exact": false,
+      "generated_text": "__rrffoooooooref________od__od____sssss(()))                           orrrrrerererere\n\n\n\n\n\n\ndddd)\n                            ",
+      "free_nonpad_byte_accuracy": 0.0703125,
+      "stop_probability": 0.004171088337898254
+    },
+    {
+      "id": "18a6b22c7aa3b1a442a7499cc0826851f701c70ce13ad50d701aefdfaf696372:1:byte-44",
+      "free_exact": false,
+      "generated_text": "iit ss a aaa    aa    lllllllll re a aaaaa  sssssssssssssssss rerrrrrrrrclerrrrrrrrrrrrrllerrrrrooerrd od d d d d d d d d d dd ",
+      "free_nonpad_byte_accuracy": 0.0703125,
+      "stop_probability": 0.006442981772124767
+    },
+    {
+      "id": "30ae3cc09e11dd9505e9450a0b0b04968386cef0d3b27c13f4957131a9ec28b4:1:byte-66",
+      "free_exact": false,
+      "generated_text": "nngg  t obeeuuiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiing yy diallllleeeeereeeengrd addeerrssssssssssserrrrtrtrss    rrrrrrrrrrrrrrs  ",
+      "free_nonpad_byte_accuracy": 0.0625,
+      "stop_probability": 0.006327395793050528
+    },
+    {
+      "id": "57b8ef13786939e1d27c5153e266379a02305f98cde25bc8649f7cfd4f499ca8:1:byte-40",
+      "free_exact": false,
+      "generated_text": "          kk\",,,,,,,          \",,,,,,,,,,,,,,,,]  ,   \"\"    , ,       ,   , ,\",\",,,,,,,,,,,,,,,,,,,,,,,]  , ,,,\",,,,,,,]  ,    ",
+      "free_nonpad_byte_accuracy": 0.1484375,
+      "stop_probability": 0.09491582214832306
+    },
+    {
+      "id": "1c6911f830992869b4121cf2f4bdf0e44cba1d50a5431a90d5fe97f1ec89db95:1:byte-5",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.0234375,
+      "stop_probability": 0.8448553085327148
+    },
+    {
+      "id": "fa70a1c97f59ba0360efbb6268262a7328af27bc9421ed40d14aac50486b8244:1:byte-48",
+      "free_exact": false,
+      "generated_text": " i  ttt   aaaaaaaaaaaa a aaa aaa a a aaaaaa aaaaaaaaaaaaaaaaaaaaaaaa a aaa =            :\n    leeee   et =                     ",
+      "free_nonpad_byte_accuracy": 0.1015625,
+      "stop_probability": 0.0004961515660397708
+    },
+    {
+      "id": "45f89c04f14a69e4cc712e84b2fc480eb0a7454edaa2aee96a004af2802c960e:1:byte-57",
+      "free_exact": false,
+      "generated_text": "ilin t                                                                                                                         ",
+      "free_nonpad_byte_accuracy": 0.375,
+      "stop_probability": 0.0022194625344127417
+    },
+    {
+      "id": "4094cb6538f8d81bfad8586f93b1ac69d2af9a48ee0daf9f3ebddb08a91fc864:1:byte-30",
+      "free_exact": false,
+      "generated_text": "ys   c uuu      uuu uuiiiiiiiiiiiiiiiiiin nnn nnn n iiiin iiiiiiiiiiiiiiiiiiiiiiiin nnn llllll us sssssssmt eeettttttttter..  a",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.0028883323539048433
+    },
+    {
+      "id": "fe0004d6361f07b98c298da4912da9900edea3f91b9856aa3feebe487dcb18e0:1:byte-34",
+      "free_exact": false,
+      "generated_text": "  p reeeeeeeeeerssrre rrerrreeeeeddsoo aaaaaaannaaaaaaaaaaa  nd aad ddd aaanaanaaaaaaaaaaaaanneellll, ellllleeeeerereeeeeeeeee ",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.020294878631830215
+    },
+    {
+      "id": "2e3fc8ae99cac6da2065d7a8d104ae5f05b0b4e81ff1838161d78a4446871bed:1:byte-3",
+      "free_exact": false,
+      "generated_text": "ooeeee  rrrrrrreenneent     aaaa aaaa a a a a a a a       aa     tttheiinn  iin iiiiiiiinnnnnngg t  sssssssss ttsssss t    tr  ",
+      "free_nonpad_byte_accuracy": 0.1171875,
+      "stop_probability": 0.0019230254692956805
+    },
+    {
+      "id": "8933faad9efe99722f620b95ea24cf9fd1045ab08f676a9c6a83124db61b12d9:1:byte-20",
+      "free_exact": false,
+      "generated_text": "/ roooor      aaaaaaa.. ,  S,             ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee, ee,         ee,             a",
+      "free_nonpad_byte_accuracy": 0.125,
+      "stop_probability": 0.013932907022535801
+    },
+    {
+      "id": "c5bb08182769e675f1716e94ab25d80f90ad6896be340a85c59eb3f833c4af94:1:byte-12",
+      "free_exact": false,
+      "generated_text": "srstaaaaataa\n\naaarrraaaaaaaaaaaaaa  aaaaaaaaaaaa  ttttt s aa ssss  t t t the theeeeeeeeecceessss)::\n                           ",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.0005590271321125329
+    },
+    {
+      "id": "d8a460de09a2c526c0b04dc5bddc8e24d304ee2a2b8dd446f7841611dd626763:1:byte-24",
+      "free_exact": false,
+      "generated_text": "    eee pp  pp rpprrrreeeeeeeevee d.... ----- - - - - ee3- e   e e e e  4  e3- e 0    ee3- e 0      rr\n-                       ",
+      "free_nonpad_byte_accuracy": 0.1328125,
+      "stop_probability": 0.012485701590776443
+    },
+    {
+      "id": "89870dfe8c2b6ad660f067d1f1b681f9aef6d171d0ac9e3fab05c15394b6078c:1:byte-0",
+      "free_exact": false,
+      "generated_text": "T`ppyyhooddefonnooiittttttiiinne       s  rrs sseeeeeeeeen s  rrrrrrrren   eerenrrenrrrrrrrrrrrrrrrrrreeddeddeeerrrrrrrrrrrrrr ",
+      "free_nonpad_byte_accuracy": 0.078125,
+      "stop_probability": 0.0043604252859950066
+    },
+    {
+      "id": "d05d923408d18bb32aff555e038ccc04dd9a93dbdbaa0f8b5c8c0302f39d151c:1:byte-6",
+      "free_exact": false,
+      "generated_text": "t dded aaaaaaanaaaaaaaaaaaaaadd  d dddddddddddeed ddddddaadddddd a    daaaaaaaaaaaaaaaaaaa  add ddrerrrrrrserrserrrrssssssssses",
+      "free_nonpad_byte_accuracy": 0.0703125,
+      "stop_probability": 0.004293086938560009
+    },
+    {
+      "id": "f2b580d372f9288f031bbb0f1bbc3c2cfaf7e85b2392b6de09a6b81eaafff4f5:1:byte-22",
+      "free_exact": false,
+      "generated_text": "ha  tt  eeeeeeee aaaaae ffffffffffffffffffooffooffooffooffowwwworddddddd tww twwffwwffwwffwwwwwwwndlerllclceeleleleeeleelle    ",
+      "free_nonpad_byte_accuracy": 0.046875,
+      "stop_probability": 0.000898105266969651
+    },
+    {
+      "id": "6d78c6e73c0be898ea535df3ab7f1276f90d994148207ef1d952cc618f09bca1:1:byte-54",
+      "free_exact": false,
+      "generated_text": "_((((((((((((((((((((( = == =   ((((((((((==,  ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((( ",
+      "free_nonpad_byte_accuracy": 0.0390625,
+      "stop_probability": 0.004402319435030222
+    },
+    {
+      "id": "b838dbdfb74da7c4e1f5943672fcd338e5aef3bde9257ed4bd1ec7d15dbf49e5:1:byte-0",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.1171875,
+      "stop_probability": 0.0004389011883176863
+    },
+    {
+      "id": "530c45dabf94301d4b234e266364e4a57f2fba2d05cf8f2c66fb3180de071946:1:byte-29",
+      "free_exact": false,
+      "generated_text": "ue r  orrrreeeer_coococuoooooooooooutts:\n                                                                                      ",
+      "free_nonpad_byte_accuracy": 0.1796875,
+      "stop_probability": 0.005644206888973713
+    },
+    {
+      "id": "298ffc2881fe638c9383b7d15d75591620a69f3585325a55c7a20981ae43cb1d:1:byte-29",
+      "free_exact": false,
+      "generated_text": "y enng uuue alureeeeoddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "free_nonpad_byte_accuracy": 0.046875,
+      "stop_probability": 0.00848271232098341
+    },
+    {
+      "id": "9b265a40a9b7acd77b4097da9ddda278d19b8785b89cf1437e0d1f2cfeb033ef:2:byte-2",
+      "free_exact": false,
+      "generated_text": "v   user wantttta tta ataattaaaaaaaaaannaaanaaaaaaaaa       a aaaand awnnnnnnnnnnnnwrrerrrrrrr.",
+      "free_nonpad_byte_accuracy": 0.046875,
+      "stop_probability": 0.997007429599762
+    },
+    {
+      "id": "4c8533851d49c6b94ab654d1c8b68d1677cd00e437a47afc56df01c6e61628d3:1:byte-11",
+      "free_exact": false,
+      "generated_text": "pAeskkke  uueealtteccct t       t               t     ",
+      "free_nonpad_byte_accuracy": 0.140625,
+      "stop_probability": 0.013981028459966183
+    },
+    {
+      "id": "688d3d701bdeff8cb1b9271927ad0b3a3a1de0e860b72489734412d99e5322bf:1:byte-32",
+      "free_exact": false,
+      "generated_text": "Hvrrrrrrreeeeeeeed       ir      ts ssssssss  ss   s s  ttttttth       s s s s s s s s s s s s s s s s s s s s s s s   ne  e.  ",
+      "free_nonpad_byte_accuracy": 0.140625,
+      "stop_probability": 0.00542807299643755
+    },
+    {
+      "id": "a0a4a307e0394ae2b62b8a0fb910c92f5a25543331e47bd9f022c2ba94835963:1:byte-12",
+      "free_exact": false,
+      "generated_text": "heeeeraaarbr aaaaaaanndddddd d d  elllllllllllll trreerrrrreet t  ttttttttttttttttttttttttaa a   ttttttttttttttttttttttttttttth",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.003861035220324993
+    },
+    {
+      "id": "10a071a82b0789cd077cf0468bcdbff823b8bfd58d11bfca7073d767e9bfad78:1:byte-55",
+      "free_exact": false,
+      "generated_text": "ijee22 ( aa          .ittt23. ooce ienreeeeeeeeeeeeeeeeerrrrrrrrrrrrraa rrdrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr ",
+      "free_nonpad_byte_accuracy": 0.0703125,
+      "stop_probability": 0.010438361205160618
+    },
+    {
+      "id": "642245fb79afb8fc69bbfe4f8f980e733b4902f45b2d13f12c4e4613d1fa71a3:1:byte-14",
+      "free_exact": false,
+      "generated_text": "cne ddd any tthht ttttt ttttt t s s s s s     aa hh   aaaaaaaall annn nnnnnnn n ngttttttttttt th tt t t t  ssss        sssssssh",
+      "free_nonpad_byte_accuracy": 0.0703125,
+      "stop_probability": 0.0006520989118143916
+    },
+    {
+      "id": "ecda9830872bacf6d7125f9b9e0b92e1371b5bb1f507485fb24e90c391bdec8c:1:byte-0",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.0012429091148078442
+    },
+    {
+      "id": "d24b417338ad615162be645f60b276bd83f2ab3f8bb109bec098ffa536ac6163:1:byte-17",
+      "free_exact": false,
+      "generated_text": "''s,,, ' '''''rrrrrrrrrrrrrreneeeeeeeeeet'''''''''''''''''''''''  'st         ''''''''rreneeeeee      ''''''''''dd  rrrrrrreee ",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.04369404539465904
+    },
+    {
+      "id": "c54dc491152265b13e8f3ecfad58dad807ec66d5903dbe4a48133d256b5e8237:1:byte-48",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.03125,
+      "stop_probability": 0.0044701495207846165
+    },
+    {
+      "id": "be7b2eb5ce8f7d0557c1f2897d3d15b813639cdbab015500d0ace860b531f216:1:byte-56",
+      "free_exact": false,
+      "generated_text": "l  ppph   aaaareerrrrrssrrserrrrrrrrrrrrrrserrserrssrrserrssrrsvrrssrrssrrssuueeuuesss aaaaaaa de ssrr  rr  rrssrrserrrrrr  rr ",
+      "free_nonpad_byte_accuracy": 0.09375,
+      "stop_probability": 0.006902311462908983
+    },
+    {
+      "id": "0ae4ea470d4b832a590b12b639f30656a585c71a2dc936e60de583e61e1a5866:1:byte-13",
+      "free_exact": false,
+      "generated_text": "iiiii    t      s ssss ss   sssss   ss  ss  ss      s           s  ss  sss                     trrray, ttt         -------- >u ",
+      "free_nonpad_byte_accuracy": 0.1328125,
+      "stop_probability": 0.001446623238734901
+    },
+    {
+      "id": "656c64a7e9c47719aadf54443bb957e842889b043962df6b601226793567b5b7:1:byte-68",
+      "free_exact": false,
+      "generated_text": "gpeettee e mssssss,,ss  , a a a aaaaaaaaaaaaaaaaaaandddddddddd     tttreennnddddddddelle trrrrrrennndddddddddddddddddddddddd  e",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.043838102370500565
+    },
+    {
+      "id": "2507243db347212cfd59e153e15d89f836e0d1dd0cb753f4597a6499f3bff0b1:1:byte-57",
+      "free_exact": false,
+      "generated_text": "d hhhhhhhhaaaaaaaaaaa   ooo   o ooo   iiiiiiing   g ing     ing iniiiiiiiiiiiin iiiiiiiiiinnn iiageerrrrrrrrrrrrrrrrrrrrrrrrsse",
+      "free_nonpad_byte_accuracy": 0.03333333507180214,
+      "stop_probability": 0.012527035549283028
+    },
+    {
+      "id": "f9f3182ce10f59e8e1e1d03a15829bc3d13151feb619a657edf49cf027d4f3ec:1:byte-11",
+      "free_exact": false,
+      "generated_text": "\"httvvaaaaaaaaaaaaaaaaaaaaand ddra  raaaaarr are ddddd s d sdd   d   d      dd s d   di  d          s s s s s s s s s sssss s h",
+      "free_nonpad_byte_accuracy": 0.046875,
+      "stop_probability": 0.046127669513225555
+    },
+    {
+      "id": "a46eb9b34ad07adb2ff84045d65cdf534afa5222daabd2edf1722f6735a33370:1:byte-15",
+      "free_exact": false,
+      "generated_text": "aaaadddd ddd  iiiiiiiiiiiiiiiiiiiiiiiiiiit aaaaa  ts aa a a a a a   a a a a a a          tttttheeeeeeeteeeeeeeee theeeee te tth",
+      "free_nonpad_byte_accuracy": 0.0703125,
+      "stop_probability": 0.000517307489644736
+    },
+    {
+      "id": "f85cbb8ddb4c21773df7960df534c937fed870958c6750f4ae9a7727976d2935:1:byte-47",
+      "free_exact": false,
+      "generated_text": "neennnnnt\n ||||||   iittiiiiiiiiiiiiiiiinaaaaaaaaaaalalalalallltaa sssssssssssssssssssssssssssssssssssssssssssssssssssooso.soo ",
+      "free_nonpad_byte_accuracy": 0.09375,
+      "stop_probability": 0.004592740908265114
+    },
+    {
+      "id": "232e17e36b60b0a8861fca3efcfdee91e42a3d1842d56013763e72a48b693e84:1:byte-13",
+      "free_exact": false,
+      "generated_text": "Fsdaaddadddadaaaaaooooooooooooooostttttttttttttttttttttttttttttttttttttttttttt , t  ss  ss       teeeettertttttttttttttttttttt ",
+      "free_nonpad_byte_accuracy": 0.0625,
+      "stop_probability": 0.004977626726031303
+    },
+    {
+      "id": "288edf3f6237c8207a1e2cda21e1395796d1cfc6b44ce83a90cbf6815455ca7c:1:byte-35",
+      "free_exact": false,
+      "generated_text": "iiiiiiin))\n                                                                                                                    ",
+      "free_nonpad_byte_accuracy": 0.1171875,
+      "stop_probability": 0.0015108385123312473
+    },
+    {
+      "id": "7bde7353862b6976e9cfefbd7334b5c10ba5c65cf03b5a149fae27d0664d08a8:1:byte-12",
+      "free_exact": false,
+      "generated_text": "ytye eee e e                                                                                   t       t t                   tt",
+      "free_nonpad_byte_accuracy": 0.1484375,
+      "stop_probability": 0.0030680878553539515
+    },
+    {
+      "id": "342524d2dccbcc788b7afdd149b831f8c0d06c044d2c3d0c40038e410314109d:1:byte-55",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.0390625,
+      "stop_probability": 0.01494572963565588
+    },
+    {
+      "id": "4faf5aa41016f39f8da028129b8fc7106a89f18de75b2eb163975b2934c96f32:1:byte-1",
+      "free_exact": false,
+      "generated_text": "ms,               ee e e e e e e e   e e e   e s, ee, ee, ee e  , e  eeedd  reeedeeeed  re    ee,,reeeeeeeeeeeeeeeeeeeed, reed ",
+      "free_nonpad_byte_accuracy": 0.1015625,
+      "stop_probability": 0.006491430103778839
+    },
+    {
+      "id": "ec0a9d59db509b6a19097c99f130ba68faea5fc8110f8b4f1504e7aba698fd19:1:byte-35",
+      "free_exact": false,
+      "generated_text": "uu    oeeeeeeeeddwww e          dd                             e                                    dd  dd                     ",
+      "free_nonpad_byte_accuracy": 0.1328125,
+      "stop_probability": 0.0029295608401298523
+    },
+    {
+      "id": "9be1ecab402e67c33063c5b80d4593fa622e50702322437b02a2f820a2fba146:2:byte-8",
+      "free_exact": false,
+      "generated_text": "prac prrrrrrreor ssst ttttte rrrrrreee  pprrpprcppout u         turrotgollllll    - annniiiiiiiieerrreeniittndiittttttrryy   a ",
+      "free_nonpad_byte_accuracy": 0.078125,
+      "stop_probability": 0.002076942240819335
+    },
+    {
+      "id": "373a51f8ea1569523579bdc48e783851a6a011846ec71e8e8d19cfe2cc61e36e:1:byte-43",
+      "free_exact": false,
+      "generated_text": "eee  ae  teee pirl teee       stss  ss   n n n n n n n n n n n n n n n n n n n n n n n n n n nee, idiirrrrr\n\nrreeettttttttte   ",
+      "free_nonpad_byte_accuracy": 0.078125,
+      "stop_probability": 0.002434568479657173
+    },
+    {
+      "id": "6b17663980e8c1821b8db2b25e1702be8f9e60e28d896d30943d6d03cd3ddd5c:1:byte-4",
+      "free_exact": false,
+      "generated_text": "\n\n         : \n                                                                                                                 ",
+      "free_nonpad_byte_accuracy": 0.2890625,
+      "stop_probability": 0.0008251313120126724
+    },
+    {
+      "id": "1193e3399057881e0dc50725b8077abb5d7c9847828df187ecc3e66a98c12b4c:1:byte-29",
+      "free_exact": false,
+      "generated_text": "Hereeeee  t  tt  rrrrrrrrrrrrrrerreaaa  t     t t t aaaaaaaaaaaaaaa   iiiiiiiiiiiiiiiiggllllllllrreeeeheeeeee veeetterrrre ttt ",
+      "free_nonpad_byte_accuracy": 0.109375,
+      "stop_probability": 0.004426093306392431
+    },
+    {
+      "id": "a60ddd4825bbde6fecea5fc44442f29d479217bf1b345a61581d4f488de721ea:1:byte-7",
+      "free_exact": false,
+      "generated_text": "r me  rrrrrdggerrrrrrrrrrreeeeeeesaaaaaa  aa  aa  aa  aa  aa   re.e.e.e\n\n                                                      ",
+      "free_nonpad_byte_accuracy": 0.125,
+      "stop_probability": 0.0162719264626503
+    },
+    {
+      "id": "aada07af842f64f7fa500a444f79e443ea3dd80ff21b6a59e70cf4c704b482f8:1:byte-19",
+      "free_exact": false,
+      "generated_text": "iaha  aaaaaaaaaaaaaaaa adaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaooadoooorsooadoorsoorsoorsoorsoooooordooooooooooooo ooo o oaaooordds ",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.0010106498375535011
+    },
+    {
+      "id": "98117cb42cfccb6360deca7e03414edd8b6cba75d592d6936ddbc00c9b1fcdae:1:byte-34",
+      "free_exact": false,
+      "generated_text": "                                                                                                                               ",
+      "free_nonpad_byte_accuracy": 0.21875,
+      "stop_probability": 0.002966208616271615
+    },
+    {
+      "id": "2174e733314e7ada1847a73ee8316c5a5c043a04470f652999f789c1c59805e1:1:byte-27",
+      "free_exact": false,
+      "generated_text": "uillllllllllllllstisssii andaaaaaaaaaaaa a a a a o o o          oorddddddddededededeeedrrrrr  aa    nnnnnnnnn aa  aaaaatsstt ss",
+      "free_nonpad_byte_accuracy": 0.0625,
+      "stop_probability": 0.017961297184228897
+    },
+    {
+      "id": "63889c7a5e4af9b4db4afe2487fd4405fe0c036a1b5cb08f8b7b9e02a864612e:1:byte-1",
+      "free_exact": false,
+      "generated_text": "laatss  s aa  aaaaaaatiiiiiiiiiiiig iiiinnesennniiiiiig iinnnnnnagesssssssssssssssssssenttiiiinggg.\n                           ",
+      "free_nonpad_byte_accuracy": 0.0625,
+      "stop_probability": 0.0009918890427798033
+    },
+    {
+      "id": "a6df1608bbca786a7007f60b6ee2c6f27242d451b4e3166dfb05f8df1184d1de:1:byte-7",
+      "free_exact": false,
+      "generated_text": "trttwwnnwnnn  aaatmannnnaaaa  aaa mmmmmanannnaaaa      .. Baa  B.         ee  e  e e e e e e e   aaaa eeerd red reeeeed,dde od ",
+      "free_nonpad_byte_accuracy": 0.109375,
+      "stop_probability": 0.0009475977858528495
+    },
+    {
+      "id": "60450e0de11c6d352bb983151cfefc3bb46533d6d157911bbb0fae7843eef689:1:byte-22",
+      "free_exact": false,
+      "generated_text": "sdsouuee_aaaaddd and aaaaaaa a   a   a a a a a a     a a a    a aaaaaaa.  e,,  e,  e e e e e e  ,   ,  e e e e e e e e         ",
+      "free_nonpad_byte_accuracy": 0.109375,
+      "stop_probability": 0.0044382126070559025
+    },
+    {
+      "id": "b57faa05405e616c6177235e500c06a3df7eb133a5575068b8703f4c7d1d6715:1:byte-38",
+      "free_exact": false,
+      "generated_text": "ok    a a   a a   cecccellceccccccccccctctctctctttctctctttttctccttttttctctcttttttttttttttttttttttttleeeeeellereeeeeeeeeeeeeeee ",
+      "free_nonpad_byte_accuracy": 0.0546875,
+      "stop_probability": 0.0064248573035001755
+    },
+    {
+      "id": "ac2de11bffe7a31b12935bff1426e25efc2dafc11896de5230e89051ee5ecc8a:1:byte-12",
+      "free_exact": false,
+      "generated_text": "Puene tt n    tte rreeeee heeerreeg.3         aaaaa).           aaaadoaadoo       d d d d d d n       ee. herrreeeeeeeeeeeoodd ",
+      "free_nonpad_byte_accuracy": 0.109375,
+      "stop_probability": 0.002540235873311758
+    },
+    {
+      "id": "76b34c9681b777aa51bfd4564037391391adfd3e9fde35a4481cc5a913758f67:1:byte-3",
+      "free_exact": false,
+      "generated_text": "ediiis    a   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaad  ad  ad  aaaaaaaaaaaaaaaaaaaaad and and le  enenendd s d s      r r r t or ttttt ",
+      "free_nonpad_byte_accuracy": 0.0859375,
+      "stop_probability": 0.003436042694374919
+    },
+    {
+      "id": "a4b9185eb52dfd4a37544083d05b514db1908c954073302d15a0ffa76995fa0c:1:byte-18",
+      "free_exact": false,
+      "generated_text": "L boddddllleelss..\n  \n\n                                                                                                        ",
+      "free_nonpad_byte_accuracy": 0.1484375,
+      "stop_probability": 0.0010765575570985675
+    },
+    {
+      "id": "8790e922c872cbd3039d6e09ecfd03e3a722d97ffaf665a8e5616b8fb6b51672:1:byte-46",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.09375,
+      "stop_probability": 0.005884549114853144
+    },
+    {
+      "id": "e46c87fe687acc89b4c44c783aeb92693beee4557c6dcd4853a891eaf01a009d:1:byte-24",
+      "free_exact": false,
+      "generated_text": "  aaa dedrrrrrrrdrdrrrdrdrdrdrdddrdddrdddddddddddddddddddddddddedddddddddrdrdrdededededededededededededededededededededededeed ",
+      "free_nonpad_byte_accuracy": 0.0546875,
+      "stop_probability": 0.021661557257175446
+    },
+    {
+      "id": "722c220adb59ab65827f00269bdc4a14c9d47bc0b00ff75cffb050a7eb89839e:1:byte-38",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.015625,
+      "stop_probability": 0.007241133134812117
+    },
+    {
+      "id": "c93b194df9ca9b82fbf8506fdf59be106b45daf141d9877c782cb40fd0e768e5:2:byte-0",
+      "free_exact": false,
+      "generated_text": "The user wants me toooe e togg d dddd iiing    gerrrrrse ddd ggg ededededededededededededededededededededededededddddeeet eet  ",
+      "free_nonpad_byte_accuracy": 0.140625,
+      "stop_probability": 0.0016846017679199576
+    },
+    {
+      "id": "48085d7f4a7474d101d1bd0b268ecea54fc5ba7c355df1745b8647469fe2fbc4:1:byte-44",
+      "free_exact": false,
+      "generated_text": null,
+      "free_nonpad_byte_accuracy": 0.09375,
+      "stop_probability": 0.002323226537555456
+    }
+  ],
+  "windows": 64,
+  "free_exact_windows": 0,
+  "mean_byte_accuracy": 0.09866536461049691,
+  "quality_ready": false,
+  "scope": "Frozen validation windows; some contain gold earlier response chunks"
+}

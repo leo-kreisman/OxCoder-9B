@@ -139,3 +139,17 @@ weights remained unchanged, and the codec received no gradient. These two
 updates were discarded. The coordinator subsequently started the actual
 continuation from update 500. Neither qualification timing is an inference
 throughput measurement or a generated-code result.
+
+## Matched exposure through update 750
+
+[All 250 batches from updates 501–750](validation/v32-controls/matched-exposure-750.json)
+contained exactly the same example IDs in the adaptive and canonical runs.
+Median update time was 5.744 seconds for adaptive supervision and 3.720 for
+canonical supervision. Different GPUs and background activity prevent treating
+this as an isolated hardware speedup measurement.
+
+Both arms remained 0/12 on the unchanged executable gate and 0/64 exact frozen
+validation windows. Canonical mean byte accuracy was 0.0986654, versus 0.1044271
+for the adaptive arm. The [canonical coding report](validation/v32-controls/coding-750.json)
+and [validation report](validation/v32-controls/validation-750.json) are retained.
+Faster training at this point did not produce a usable coding checkpoint.
