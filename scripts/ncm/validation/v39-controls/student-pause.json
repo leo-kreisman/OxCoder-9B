@@ -1,0 +1,8 @@
+{
+  "training_run": "ncm-deterministic-student-v38",
+  "affected_update": 3130,
+  "recorded_wall_seconds": 91.36749550601235,
+  "cause": "Experiment-owned worker paused with SIGSTOP for v39 isolated runtime comparison, then resumed with CONT; no state rollback",
+  "timing_policy": "Exclude affected update from ordinary per-update throughput estimates; retain it in elapsed job time.",
+  "runtime_audit_sha256": "7faa83446b016a9d0292e2124cda12ca344597c3f21d6ea20d532d81e95b753e"
+}

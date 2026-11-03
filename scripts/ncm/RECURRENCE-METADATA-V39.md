@@ -73,3 +73,9 @@ this optimization was **not enabled** in training. Both original experiment
 units resumed after the audit. The measurement supports only a modest effect
 on this workload; it does not justify attributing the overall training time
 to repeated boundary uploads.
+
+The paused v38 worker retained its in-flight update 3130. That update's
+wall timer includes the pause and records 91.37 seconds. Its
+[timing annotation](validation/v39-controls/student-pause.json) excludes it
+from ordinary training-step throughput estimates while preserving it in total
+elapsed job time. The original training log is unmodified.
