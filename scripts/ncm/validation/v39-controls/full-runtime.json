@@ -1,0 +1,176 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "arms": {
+    "resident_checkpointed": {
+      "records": [
+        {
+          "update": 1,
+          "seconds": 7.5433174339996185,
+          "loss": 2.7809851691126823,
+          "gradient_norm": 13.856171607971191,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": null,
+          "metadata_misses": null
+        },
+        {
+          "update": 2,
+          "seconds": 2.660403927991865,
+          "loss": 2.358528297394514,
+          "gradient_norm": 10.984177589416504,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": null,
+          "metadata_misses": null
+        },
+        {
+          "update": 3,
+          "seconds": 2.658214353985386,
+          "loss": 2.164216972887516,
+          "gradient_norm": 10.398483276367188,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": null,
+          "metadata_misses": null
+        },
+        {
+          "update": 4,
+          "seconds": 2.668902570003411,
+          "loss": 1.8367922604084015,
+          "gradient_norm": 9.504971504211426,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": null,
+          "metadata_misses": null
+        }
+      ],
+      "median_seconds": 2.660403927991865
+    },
+    "cached_recurrence_boundaries": {
+      "records": [
+        {
+          "update": 1,
+          "seconds": 2.5937696330074687,
+          "loss": 2.7809851691126823,
+          "gradient_norm": 13.856075286865234,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": 47,
+          "metadata_misses": 1
+        },
+        {
+          "update": 2,
+          "seconds": 2.5952494209923316,
+          "loss": 2.3585774786770344,
+          "gradient_norm": 10.984987258911133,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": 95,
+          "metadata_misses": 1
+        },
+        {
+          "update": 3,
+          "seconds": 2.602393770008348,
+          "loss": 2.163978908210993,
+          "gradient_norm": 10.399272918701172,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": 143,
+          "metadata_misses": 1
+        },
+        {
+          "update": 4,
+          "seconds": 2.599907586001791,
+          "loss": 1.8368426524102688,
+          "gradient_norm": 9.505716323852539,
+          "peak_allocated_bytes": 6974623744,
+          "source_unchanged": true,
+          "codec_has_gradient": false,
+          "metadata_hits": 191,
+          "metadata_misses": 1
+        }
+      ],
+      "median_seconds": 2.599907586001791
+    }
+  },
+  "scope": "Four identical real training updates per runtime; recurrence boundaries cached; all updates discarded",
+  "phase": "auditing",
+  "competing_experiment_paused": true,
+  "admission": {
+    "host_available": 32803565568,
+    "devices": [
+      {
+        "device": "cuda:1",
+        "free": 16301424640,
+        "allocator_cap": 12006457344
+      }
+    ]
+  },
+  "checkpoint_sha256": "e1e8c8e12041606331fcddf77a6d453583e327410612c574a12c0313d8675bf9",
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "corpus": {
+    "admission_sha256": "5922aaa247dc98af99b58ed6ed4186a621eb6e81603c0b3d8c660f583826d0b3",
+    "selection_sha256": "6de660293baf2aaf893ed558222ad91405beb678bd48de52af159840a571ce5a",
+    "training_chunks": 49648,
+    "validation_chunks": 64,
+    "complete_training_responses": 10984,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 46542,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 979
+  },
+  "examples": [
+    {
+      "id": "6894582a925c9a34b2f0949a9813d2c799ed522bb49cbdcdb906b21ccf16cdb3:1:byte-0",
+      "original_tokens": 64,
+      "prompt_tokens": 64,
+      "synthetic_extension_or_truncation": false
+    },
+    {
+      "id": "f4c01c2d18e67cb9a162cf5845fc759788b285f738139bf72361d0c577edd5cf:1:teacher:byte-1",
+      "original_tokens": 69,
+      "prompt_tokens": 69,
+      "synthetic_extension_or_truncation": false
+    },
+    {
+      "id": "1d45e0363fb88442bc222b5846df2644508976911e041d2e5357f4f5d8fc7afd:answer:teacher-v19:byte-5",
+      "original_tokens": 512,
+      "prompt_tokens": 512,
+      "synthetic_extension_or_truncation": false
+    },
+    {
+      "id": "62a721b46b8ad6dd424d9f90dffc9e20acc4b6b3eb4ad1ea0489ec7918d768af:2:byte-4",
+      "original_tokens": 1976,
+      "prompt_tokens": 2048,
+      "synthetic_extension_or_truncation": true
+    }
+  ],
+  "implementation_sha256": {
+    "audit_cached_recurrence_runtime.py": "35224b60ea5cd7d87d04f062f1c02d62f9817e2625e4e5e49039eb809bc0a16e",
+    "cached_recurrence_metadata.py": "3541a8c05a628bf119520f37f8f7b32b3cc138d596608bd6430130bdb29413c6",
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3",
+    "resident_tower_optimizer.py": "98219225a1ecd7bffd3eb59987985dfd8e26a7d33589fab9f1ebc207af9e77a3",
+    "frozen_tower_ragged.py": "3ed13875c5bea601a1ceeadef6013a475912a6106859d252f88bc21005c153e7",
+    "interleaved_context.py": "bf563f6a3cad533ecb4f630aaaa514c11a5a62de83bd458e658065d04a680bfe",
+    "interleaved_prefix.py": "64bf26639478517594330e09241da958a93d5de9b33e59d2348aea09ef4f43a0",
+    "frozen_clean_objective.py": "ce98b8090fdb4766f94f2147a9dbff3f6fd22edd4e2568003a8b8448cd5926d3"
+  },
+  "parameter_comparison": {
+    "maximum_absolute": 0.0001220703125,
+    "relative_l2": 2.2957976765615965e-05
+  },
+  "speed_ratio": 1.023268650899668,
+  "speed_qualified": false
+}

@@ -54,3 +54,22 @@ trainer regardless of the optimization result. No training path automatically
 adopts this experiment, and no speed gain is claimed before the full audit
 completes. Any later adoption must record the qualified execution identity and
 preserve the model, corpus, optimizer, random streams and acceptance evaluator.
+
+## Completed result: retain the existing runtime
+
+The [full audit](validation/v39-controls/full-runtime.json) passed numerical
+qualification. Final parameter relative L2 was 2.296e-5 and maximum absolute
+difference was 0.00012207. Frozen source and codec-gradient checks passed.
+
+| Runtime | Warm median update time | Peak allocated bytes |
+| --- | ---: | ---: |
+| Existing resident checkpointed path | 2.66040 s | 6,974,623,744 |
+| Cached recurrence boundaries | 2.59991 s | 6,974,623,744 |
+
+The candidate recorded one metadata miss and 191 hits across four updates,
+confirming that boundary reuse occurred. The measured throughput ratio was
+1.02327, below the predeclared greater-than-1.05 adoption threshold. Therefore
+this optimization was **not enabled** in training. Both original experiment
+units resumed after the audit. The measurement supports only a modest effect
+on this workload; it does not justify attributing the overall training time
+to repeated boundary uploads.
