@@ -58,6 +58,28 @@ codes. Standalone generation supplies its own earlier generated chunks instead.
 This remaining training/inference difference is not eliminated by the
 self-conditioning of concept levels within a chunk.
 
+### Completed extraction and admission
+
+Extraction and payload verification completed on 2026-11-03 UTC. Sixty-two
+training chunks failed exact codec reconstruction. Removing their entire
+responses excluded 355 chunks in total, leaving **45,157 training chunks from
+8,408 complete responses**. All 64 validation windows remain present. The
+retained training sources are:
+
+| Source | Chunks |
+|---|---:|
+| OpenCodeInstruct | 42,051 |
+| DeepSeek-v4-Pro-Agent | 1,565 |
+| Ox-Alpha-10k | 1,541 |
+
+The retained corpus includes 903 distilled chunks. The qualified feature
+manifest has SHA-256
+`87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3`;
+its unfiltered merged parent has SHA-256
+`fd43fce4787bf9db71c508b952b035bb8b9e6a6069925fdf926c749a46b069f7`.
+These checks establish corpus integrity and response completeness, not coding
+accuracy. Both matched training arms started using this qualified manifest.
+
 ## Reusable source features
 
 `extract_context_reuse.py` checks source, codec, selection and implementation
