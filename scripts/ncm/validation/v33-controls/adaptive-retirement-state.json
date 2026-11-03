@@ -1,0 +1,11 @@
+{
+  "step": 1100,
+  "checkpoint": "/home/scribe/Projects/OxCoder-9B/results/ncm-frozen-ragged-training-v31/retired-1100.pt",
+  "checkpoint_sha256": "c59b1355c27ac002a9311b30be244c275560c88a822505c6ad80616830a4879a",
+  "optimizer_state_preserved": true,
+  "rng_state_preserved": true,
+  "model_parameter_tensors": 78,
+  "parent_session_step": 1000,
+  "phase": "saved_checkpoint_pending_independent_evaluation",
+  "quality_ready": false
+}

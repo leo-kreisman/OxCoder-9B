@@ -1,0 +1,16 @@
+{
+  "step": 1100,
+  "checkpoint": "/home/scribe/Projects/OxCoder-9B/results/ncm-frozen-ragged-training-v31/retired-1100.pt",
+  "checkpoint_sha256": "c59b1355c27ac002a9311b30be244c275560c88a822505c6ad80616830a4879a",
+  "optimizer_state_preserved": true,
+  "rng_state_preserved": true,
+  "model_parameter_tensors": 78,
+  "parent_session_step": 1000,
+  "phase": "saved_checkpoint_and_independent_evaluation",
+  "quality_ready": false,
+  "coding_report": "/home/scribe/Projects/OxCoder-9B/results/ncm-adaptive-retirement-evaluation-v33/coding.json",
+  "coding_report_sha256": "4ee570d074558ebd8938b7d4d48dd99a83887f9a5444ae3b46bafa8230091928",
+  "coding_passed": 0,
+  "coding_evaluated": 12,
+  "state_audit_sha256": "420e63dd01b28f396c89cba47eb2dde484d286eefd3a48f1be9220588d6c3f26"
+}

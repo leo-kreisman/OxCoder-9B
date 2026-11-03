@@ -223,3 +223,14 @@ an immutable copy and an explicit `retirement.json` recording the saved step,
 checkpoint/report hashes, and preserved optimizer state. The coordinator does
 not relabel it as a completed 500-update session. A 12/12 retirement evaluation
 takes priority and must undergo fresh replay instead of being retired.
+
+The actual handover saved adaptive update 1100, retaining 78 trainable parameter
+tensors, full optimizer state and Python/CPU/CUDA RNG. The previous completed
+session ended at update 1000; this was an explicit early stop, not a completed
+500-update session. The immutable checkpoint SHA256 is
+`c59b1355c27ac002a9311b30be244c275560c88a822505c6ad80616830a4879a`.
+Its independent evaluation remained 0/12. The
+[state audit](validation/v33-controls/adaptive-retirement-state.json),
+[handover record](validation/v33-controls/adaptive-retirement.json), and
+[coding report](validation/v33-controls/adaptive-retired-1100-coding.json)
+are preserved. The canonical control continues independently on GPU0.
