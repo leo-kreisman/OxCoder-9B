@@ -164,12 +164,18 @@ def run(a):
             for _ in selected:
                 rng.random()
         records = backward_batch(model, codec, selected, optimizer.loss_scale, .15)
+        torch.cuda.synchronize(a.device)
+        backward_finished = time.monotonic()
         norm = optimizer.step()
         if tower.source_versions(model.backbone) != source_state or any(p.grad is not None for p in codec.parameters()):
             raise RuntimeError('Frozen source/codec invariant violated')
         torch.cuda.synchronize(a.device)
         progress = {'step': step, 'loss': sum(r['loss'] for r in records), 'gradient_norm': norm,
             'seconds': time.monotonic() - began, 'conditioning_corruption_maximum': .15, 'label_policy': 'canonical',
+            'code_accuracy': [sum(r['code_accuracy'][level] for r in records) / len(records)
+                              for level in range(len(codec.books))],
+            'objective_and_backward_seconds': backward_finished - began,
+            'optimizer_and_invariant_seconds': time.monotonic() - backward_finished,
             'examples': [{'id': row['id'], 'source': row['source'], 'distilled': bool(row.get('distilled'))} for row, _ in selected],
             'peak_allocated_bytes': torch.cuda.max_memory_allocated(a.device), 'quality_ready': False}
         with (out / 'training.jsonl').open('a') as f:

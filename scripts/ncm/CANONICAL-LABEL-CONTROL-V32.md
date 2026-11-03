@@ -101,3 +101,30 @@ Each 500-update session preserves full state, while fixed validation and the
 twelve executable tasks run every 250 updates. A 12/12 candidate must pass an
 independent reload with identical answers before `acceptance.json` is written.
 No audit, training loss, planned run or queued service qualifies a usable model.
+
+Training records include the four clean-label code accuracies. They are
+teacher-conditioned diagnostics, not decoded-byte accuracy or executable
+success. A CUDA synchronization separates the objective/backward interval from
+the optimizer/invariant interval. The first includes sample selection, target
+encoding and frozen-prefix prefill; the second includes host-resident AdamW,
+Muon, parameter transfers and invariant checks. These measurements identify
+where further training acceleration would actually matter. They do not measure
+inference throughput.
+
+## External conversion evidence checked on 2026-11-03
+
+[PlanSpec v2](https://zenodo.org/records/23607317) reports a shared-weight
+SmolLM2-135M experiment with AR and parallel masked-prediction modes. Its
+parallel mode remained weak, and the author explicitly leaves a pretrained
+model extended with RVQ/NCM level heads as follow-up work. The reported usable
+translation improvement depends on an AR path. This is useful evidence about
+precision and training difficulty, but it is not an available successful
+native OxCoder-to-NCM conversion. It does not replace this experiment's
+autonomous acceptance test.
+
+The [official training-code issue](https://github.com/HazyResearch/ncm/issues/10)
+still contains a promise to release training code; the
+[coding-agent discussion](https://github.com/HazyResearch/ncm/issues/17)
+contains community training logs, rather than a published coding checkpoint
+with executable results. Repository execution audits and loss improvements
+must therefore remain distinct from claims of a demonstrated coding model.
