@@ -71,11 +71,14 @@ The GGUF release and its checksums are unchanged; the release does not bundle ML
 
 ## Next-concept conversion research
 
-The latest [expanded-data training stage](scripts/ncm/EXPANDED-GENERATOR-V17.md)
-adds 31,050 prepared chunks from both creator datasets, preserves existing
-OxCoder distillation and freezes evaluation membership. The original AR source
-passed 12/12 elementary coding checks; the preceding NCM candidate passed 0/12.
-The research pipeline is not a usable NCM model release.
+The [current student-conditioned training](scripts/ncm/DETERMINISTIC-STUDENT-V38.md)
+uses 45,157 admitted chunks from complete responses, both creator datasets and
+checked OxCoder distillation. A separate
+[decoded-hierarchy objective](scripts/ncm/DECODED-HIERARCHY-V40.md) compares
+training directly on decoded byte errors from the same saved parent. Evaluation
+membership remains frozen. The original AR source passed 12/12 elementary
+coding checks; no NCM checkpoint has yet passed this acceptance gate and its
+fresh-process replay. The research pipeline is not a usable NCM model release.
 
 The [OxCoder-initialized NCM experiment](scripts/ncm/README.md) implements a learned
 text codec, coarse-to-fine concept prediction, and trainable adapters through all

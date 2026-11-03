@@ -1,5 +1,18 @@
 # OxCoder-initialized next-concept conversion experiment
 
+The current [deterministic student-conditioned continuation](DETERMINISTIC-STUDENT-V38.md)
+uses the original 32-layer source tower and the complete admitted corpus.
+The [hard-hierarchy byte-loss branch](DECODED-HIERARCHY-V40.md) compares an
+additional training-only decoded-text objective from the same saved parent.
+Both retain both creator datasets, admitted distillation, unchanged executable
+tests and exact fresh-process replay. No NCM checkpoint has passed acceptance.
+
+The [compact-response curriculum](COMPACT-CODE-CURRICULUM-V33.md) and
+[canonical-label control](CANONICAL-LABEL-CONTROL-V32.md) document the preceding
+learning experiments. The [packed-gradient](PACKED-GRADIENT-V35.md) and
+[recurrence-metadata](RECURRENCE-METADATA-V39.md) controls separately record
+runtime optimizations, including candidates that were not adopted.
+
 The [complete-response corpus comparison](COMPLETE-CORPUS-V28.md) expands
 training to complete responses and tests a decoded-text auxiliary objective.
 Both arms use the same data and initialization. Numerical extraction controls,

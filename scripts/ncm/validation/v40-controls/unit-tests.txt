@@ -1,0 +1,39 @@
+....[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+............................{"time": 1793693332.7496672, "quality_ready": false, "phase": "canonical_candidate_takes_priority"}
+..{"time": 1793693332.7518773, "quality_ready": false, "phase": "waiting_for_complete_curriculum_and_parent"}
+..........................................{"phase": "waiting_for_cpu_optimizer_smoke", "time_utc": "2026-11-03T08:08:58.467261+00:00", "quality_ready": false}
+{"phase": "waiting_for_cpu_optimizer_smoke", "time_utc": "2026-11-03T08:08:58.469095+00:00", "quality_ready": false}
+{"phase": "waiting_for_cpu_optimizer_smoke", "time_utc": "2026-11-03T08:08:58.470900+00:00", "quality_ready": false}
+{"phase": "waiting_for_cpu_optimizer_smoke", "time_utc": "2026-11-03T08:08:58.473389+00:00", "quality_ready": false}
+.Source acquisition complete: 2 files {'candidate_responses': 3, 'TeichAI/Ox-Alpha-10k': 1, 'train_documents': 2, 'oversize_rejected': 1, 'TeichAI/DeepSeek-v4-Pro-Agent': 1}
+...........................{"admission_complete": true, "targets_are_verified": false, "quality_ready": false, "used_in_training": false, "examples_archive_sha256": "cf23e685e9f4db0aa5e21acfe918d1bf5ba2cdd50d945dce492876ac444baf46", "examples_uncompressed_sha256": "1ead80123e9659a69762c9e72818735fbffb521b26deb1707252eae62ecaa284", "examples_uncompressed_bytes": 523, "source_manifest_sha256": "0487600fd3b18aabe6174d7e632c25eb1892068f11ac4bdaf10870ec606eea14", "verification_identity_sha256": "9d903e18910af6806fcf0fa2132d40819821ca42748e5ed55cd78e68258e0fe2", "verification_report_sha256": "5200a0d4001a8334947033f20712e6528d759f958b1ccb2c663949aabaae0240", "implementation_sha256": "c6701d073e4b3f816ad5d8b0ec5db3c8e5698ac1f21ae89f929c05056888ca15", "license": "fixture", "attribution": "fixture", "counts": {"source_admitted": 1, "checked_snapshot": 1, "selected": 1}, "verification_counts": {"passed_publisher_checks": 1}, "scope": "Training-only unchanged responses passing local publisher tests and original-answer controls", "limitations": "Tests are incomplete and can be wrong; this is not the separate 12-task model evaluation"}
+...........{"phase": "running", "time_utc": "2026-11-03T08:08:58.966009+00:00", "quality_ready": false}
+....................................................................................../usr/lib/python3.10/traceback.py:236: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmppxw6i93d/.pipeline.lock' mode='a' encoding='UTF-8'>
+  tb.tb_frame.clear()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.
+
+
+..
+
+
+.....
+
+
+.......VQVAE, Total parameter count: 0.11M
+VQVAE, Non embedding parameter count: 0.10M
+NCP Transformer, Total parameter count: 0.03M
+NCP Transformer, Non embedding parameter count: 0.03M
+VQVAE, Total parameter count: 0.11M
+VQVAE, Non embedding parameter count: 0.10M
+{"time": 1793693341.9270017, "quality_ready": false, "phase": "schedule_exhausted_without_acceptance", "step": 10000}
+............{"phase": "stage_error", "time_utc": "2026-11-03T08:09:01.943640+00:00", "quality_ready": false}
+{"phase": "monitoring_two_replica_student", "time_utc": "2026-11-03T08:09:01.944573+00:00", "quality_ready": false, "unit": "ncm-parallel-v23.service"}
+..........................[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+.....................................................
+----------------------------------------------------------------------
+Ran 307 tests in 14.521s
+
+OK

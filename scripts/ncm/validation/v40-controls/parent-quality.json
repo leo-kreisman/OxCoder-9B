@@ -1,0 +1,18 @@
+{
+  "scope": "Pre-intervention parent; not byte-supervised results",
+  "quality_ready": false,
+  "checkpoint_sha256": "8548c54f432897999731a4eeaedce0add083eed7b90317377be7e5dfb3500007",
+  "step": 3250,
+  "validation": {
+    "windows": 64,
+    "free_exact_windows": 0,
+    "mean_byte_accuracy": 0.1144287110073492
+  },
+  "coding": {
+    "passed": 0,
+    "evaluated": 12,
+    "autoregressive_answer_fallback": false
+  },
+  "validation_sha256": "2e52e655c241199d50fcdf8d20b5e0a713d8a36289e27f35ba00dc4ae1dfb0ee",
+  "coding_sha256": "e5677e127a0017abf6f9077ad17556da99e5c0b0c411f45b032837bc358503a8"
+}
