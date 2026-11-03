@@ -159,6 +159,27 @@ reports 4,000 fine-tuning steps on 21,600 examples, but explicitly describes
 its short replies as often repetitive or wrong. Its reduced code loss is not
 evidence that an OxCoder architectural conversion will pass executable coding.
 
+### Measured update-250 checkpoint
+
+The [unchanged executable suite](validation/v30-controls/step-250-coding.json)
+scored **0/12**, and [autonomous validation](validation/v30-controls/step-250-validation.json)
+reconstructed 0/64 windows exactly, with mean nonpadding byte accuracy 0.08788.
+This checkpoint is not usable and is not a release candidate.
+
+The [read-only diagnostic](validation/v30-controls/step-250-diagnostics.json)
+sampled 16 training and 16 validation windows. All 32 reconstructed exactly
+when supplied with oracle codes. Autonomous predictions reconstructed none.
+With the first three levels supplied correctly and only the final level
+predicted, mean byte accuracy was 0.68488 on training and 0.59912 on validation,
+again with zero exact windows. Thus incorrect earlier levels contribute to
+the problem, but final-level prediction is also inadequate even under clean
+conditioning. The codec's exact oracle results do not establish predictive
+quality. Training and validation have different source compositions, so this
+small diagnostic does not isolate overfitting from distribution differences.
+
+Continuation retains the full optimizer and sampling state. Execution audits
+and training speed measurements cannot replace the executable acceptance gate.
+
 ## Frozen-source transfer control
 
 `audit_frozen_source.py` runs the FP16 frozen prompt path against the existing

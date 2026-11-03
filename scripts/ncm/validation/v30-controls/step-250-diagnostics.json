@@ -1,0 +1,1303 @@
+{
+  "complete": true,
+  "quality_ready": false,
+  "checkpoint_sha256": "d854aa0640f15855ba4d798fee08486786787a5be03a8bcb4efd01d4e831006d",
+  "corpus": {
+    "admission_sha256": "87d190d02dac45f51cc6faa12cb5956617d8ce57e967ca976fc8b56477cf4ca3",
+    "selection_sha256": "3e8927cfe7dcbbde0fd13e50be5e95515e55d960e8076f052d5abb0ac839f124",
+    "training_chunks": 45157,
+    "validation_chunks": 64,
+    "complete_training_responses": 8408,
+    "sources": {
+      "nvidia/OpenCodeInstruct": 42051,
+      "TeichAI/DeepSeek-v4-Pro-Agent": 1565,
+      "TeichAI/Ox-Alpha-10k": 1541
+    },
+    "distilled_chunks": 903
+  },
+  "records": [
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.960672378540039,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 3.8466861248016357,
+          "code_accuracy": 0.125
+        },
+        {
+          "ce": 3.8764796257019043,
+          "code_accuracy": 0.046875
+        },
+        {
+          "ce": 3.3790645599365234,
+          "code_accuracy": 0.328125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "(validate_ip(\"192.168.1\"))  # Output: False\nprint(validate_ip(\"192.168.1.1.1\"))  # Output: False\nprint(validate_ip(\"192.168.1.a",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.015625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "__al_daoe_tt\"5..... ...)))  ## ututt:nbalss\nprint(valldate__((la22..  .g.ggg)))    Ottpul: aalsss\nrint(call_ae_e p((^^... ^^...",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5234375
+      },
+      "free_stop_probability": 0.9766835570335388,
+      "id": "8200e1bc6f0ad2934d5547199b7c1b46c3eb1eab318c2373633d1681d196e1ff:answer:byte-6",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.903203010559082,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 4.607150077819824,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 3.8763489723205566,
+          "code_accuracy": 0.140625
+        },
+        {
+          "ce": 3.1264989376068115,
+          "code_accuracy": 0.328125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "vies:\n        genres_dict[movie['genre']].append((movie['title'], movie['rating']))\n    \n    top_movies = []\n    \n    for genre",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "nsse:         ggrreeddcctt_oive(''enee''.Tappend(.ioivx\"''iitt'', oovviic iting)))\n          tpoo_ooses =  [\n         ffr ggnne",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5703125
+      },
+      "free_stop_probability": 0.2328038513660431,
+      "id": "20b7356ad1474dd46576eabceb1487f5b6c88add9e99298f597199061e773cd3:answer:byte-4",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 0.18661092221736908,
+          "code_accuracy": 1.0
+        },
+        {
+          "ce": 1.2276686429977417,
+          "code_accuracy": 0.6875
+        },
+        {
+          "ce": 2.3796186447143555,
+          "code_accuracy": 0.28125
+        },
+        {
+          "ce": 1.5849480628967285,
+          "code_accuracy": 0.7265625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "nana': 6, 'cherry': 6, 'date': 4}\n```",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.10526315867900848
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5
+      },
+      "free_stop_probability": 0.9803244471549988,
+      "id": "b3c45450577754e1311ffd99c04c77e39e45c33de689181fa58ebdb2b49f8a51:answer:byte-4",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": true
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 0.21753022074699402,
+          "code_accuracy": 1.0
+        },
+        {
+          "ce": 4.115385055541992,
+          "code_accuracy": 0.1875
+        },
+        {
+          "ce": 3.584371566772461,
+          "code_accuracy": 0.265625
+        },
+        {
+          "ce": 3.0396649837493896,
+          "code_accuracy": 0.3828125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "  divisor = 2\n    while n >= 2:\n        while n % divisor == 0:\n            factors.append(divisor)\n            n //= divisor\n ",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0546875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "  _divsrr(  \n\n     hile n   2\":\n         hile n   divvoo  == 1:\n            factor..append((viiror\n\n            n //aa_dvvl:\n\n ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.7421875
+      },
+      "free_stop_probability": 0.06429266929626465,
+      "id": "e28612a3d0325d7f55eb66c9ac8251e800129eebf39c69b9020de055d13a69c6:answer:byte-2",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 2.7308731079101562,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 4.6178412437438965,
+          "code_accuracy": 0.125
+        },
+        {
+          "ce": 3.369884490966797,
+          "code_accuracy": 0.21875
+        },
+        {
+          "ce": 1.7178065776824951,
+          "code_accuracy": 0.546875
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "```python\ndef count_vowels(input_string: str) -> int:\n    \"\"\"\n    Counts the number of vowels in the given string.\n\n    Paramet",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "```python\ndef oooooooon s  c\n    a\"\"\"\"\"\"\"a:\n    t t sn:\nt  n  r",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.1875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "```python\nde  coun__honils((-purostring: str) -> int:\n    \"\"\"     oounst  hennumber fr owells in the givnn string)\n\n     Paamet",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.796875
+      },
+      "free_stop_probability": 0.013378089293837547,
+      "id": "d31d543257f70a783d3a541668f6529b7b7af1609be74bcf7b828cfc0660ecdd:answer:byte-0",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 5.120060920715332,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.30817985534668,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 3.8724172115325928,
+          "code_accuracy": 0.078125
+        },
+        {
+          "ce": 2.739929437637329,
+          "code_accuracy": 0.4140625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "elements)\n\n# Example usage:\nexample_list = [1, 2, 2, 3, 4, 4, 5]\nprint(sum_of_unique_elements(example_list))  # Output: 15\n```",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.6299212574958801
+      },
+      "free_stop_probability": 0.9914186000823975,
+      "id": "98b0b3ab71db3bbb21e4f4ef045e8708fe06ae42d6a2527931073b005714b152:answer:byte-2",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": true
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 5.520001411437988,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.068231582641602,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 4.453005790710449,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 2.799433946609497,
+          "code_accuracy": 0.390625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "dct.items(), key=lambda item: (isinstance(item[0], str), item[0])))\n    return sorted_dct\n\n# Example usage:\n# my_dict = {3: 'th",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.015625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "tddtitees'',, ey lbaabdaitee: ((iinst nc((itees00,, '',, iteii00]))     return sortt__d(tt\n\n`Exmmple usage:\n  st.dict ==e:: '' ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.609375
+      },
+      "free_stop_probability": 0.9357894062995911,
+      "id": "db5140058a11a4dc962137e546858315f61e7d97d6a1fd688afb5a8937505968:answer:byte-3",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.6653056144714355,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 4.61696720123291,
+          "code_accuracy": 0.125
+        },
+        {
+          "ce": 4.067625999450684,
+          "code_accuracy": 0.09375
+        },
+        {
+          "ce": 2.32075572013855,
+          "code_accuracy": 0.453125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "  \n    Parameters:\n    x (float): The x-coordinate in Cartesian coordinates.\n    y (float): The y-coordinate in Cartesian coord",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "   iit  f          attaatt         e.\n  it tttttttttttetetetttti ttteeet teteteeeeeeeeeeeteteteteteeeeeeeeeeeeeeeeeeeeeeeeetett",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0859375
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "       Paramtttrs:\n   >>  lllat): The excolrdnnate in nmrteeian ccirdinnte..\n   y  (lloa ): The rtcolrdinate in  orteeain colrd",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.75
+      },
+      "free_stop_probability": 0.05417662486433983,
+      "id": "42908d4961bf9a4e9c0851b723fabef978d05757374ce05d3879f42339a6a67c:answer:byte-1",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.1594104766845703,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 4.122801780700684,
+          "code_accuracy": 0.1875
+        },
+        {
+          "ce": 3.752871513366699,
+          "code_accuracy": 0.109375
+        },
+        {
+          "ce": 1.639237403869629,
+          "code_accuracy": 0.609375
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "uation, and case sensitivity.\n\n    :param s: The string to check.\n    :return: True if the string is a palindrome, False otherw",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.1484375
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.8515625
+      },
+      "free_stop_probability": 0.03284094110131264,
+      "id": "5f126f5f0461d83629f6e2bfd056d08a61fd66e1566351bd77db680541a0ec38:answer:byte-1",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 0.002406693994998932,
+          "code_accuracy": 1.0
+        },
+        {
+          "ce": 0.22581474483013153,
+          "code_accuracy": 0.875
+        },
+        {
+          "ce": 1.4675312042236328,
+          "code_accuracy": 0.453125
+        },
+        {
+          "ce": 0.8799476027488708,
+          "code_accuracy": 0.8203125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "]\n```",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5
+      },
+      "free_stop_probability": 0.9991693496704102,
+      "id": "ab73a45bed650600e17350715a296bc2be0b9c28d4417e5618aea9bb5fdbb9cd:answer:byte-7",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": true
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 2.4617257118225098,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 4.894488334655762,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 3.877739906311035,
+          "code_accuracy": 0.1875
+        },
+        {
+          "ce": 2.068110942840576,
+          "code_accuracy": 0.5390625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "aram make: The make of the car.\n        :param model: The model of the car.\n        :param year: The year the car was manufactu",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "a             e  iiiiiiiiiiiiiietttttttttttttttttttttttttttttttietttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0546875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "ar m   k:: The  bke ff the cac.\n        :param modll: ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.8125
+      },
+      "free_stop_probability": 0.06652195751667023,
+      "id": "3db17b486284a47600aa9473d978dbef456c281ba066289db9409bfb505a48be:answer:byte-1",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 4.067340850830078,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 5.085324287414551,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.12943172454834,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 2.320568561553955,
+          "code_accuracy": 0.40625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "\n    limit (int): The maximum value of the Fibonacci sequence.\n\n    Returns:\n    list: A list of Fibonacci numbers that do not ",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "   i eee eee eeeeee  eeeaattt  e e enen  e e  nenenenenenenenen   n n     n   n   n       n                                  tt",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.1875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "\n   llmmtt((int): The vaxxmmmmaalue sf the Fibinaccc  equencees\n     eturn s\n    lii:: A list ooiiiionacii numbees that  dn to ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.75
+      },
+      "free_stop_probability": 0.023549096658825874,
+      "id": "d9db0b9dd43bfe3efb2a9776d513e34d41c728ec907b6cc95a6630c4c7170ec8:answer:byte-1",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 4.179052352905273,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.702113151550293,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 4.003582954406738,
+          "code_accuracy": 0.140625
+        },
+        {
+          "ce": 2.93367075920105,
+          "code_accuracy": 0.34375
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "visor = gcd(num, denom)\n        simplified.append((num // common_divisor, denom // common_divisor))\n    return simplified\n\n# Ex",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0234375
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "_wls  = aediuut,dnenoi\n         islplifieeamggead((cumm  ccommnn__iiiirr, deonmmoc commo__idmesrr))\n    return simplffied.\n `TE",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.6015625
+      },
+      "free_stop_probability": 0.40428444743156433,
+      "id": "d24628a535ca3c5e61204f5c25eb2309f4034b257edef0c13514984f60205784:answer:byte-3",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 1.1969077587127686,
+          "code_accuracy": 1.0
+        },
+        {
+          "ce": 4.849787712097168,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 3.3830676078796387,
+          "code_accuracy": 0.265625
+        },
+        {
+          "ce": 2.545790433883667,
+          "code_accuracy": 0.390625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "         words = line.split()\n            word_count += len(words)\n            char_count += len(line)\n    \n    print(f\"Total L",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "   i i   eeeeeeeeeeeeeeeeeeeeeeeececeeecececececeeecececccccccc  cccecececececececececcc\n c  ctttccce\n        tttt ttctctctcttt",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.171875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "         orrks== ling>isllt))\n             orieeount:+= llnneordss\n            cha_cccunt ++ leellii))\n         printtolho a   ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.7265625
+      },
+      "free_stop_probability": 0.10950588434934616,
+      "id": "d7b3eb3f529ccfb0e5c15fd74d9cd8ca82f2d79c70ac0a134e1ebefa4db3e258:answer:byte-5",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 0.4038045406341553,
+          "code_accuracy": 1.0
+        },
+        {
+          "ce": 4.844623565673828,
+          "code_accuracy": 0.125
+        },
+        {
+          "ce": 3.549741744995117,
+          "code_accuracy": 0.203125
+        },
+        {
+          "ce": 2.5268101692199707,
+          "code_accuracy": 0.4453125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": ".\n    \"\"\"\n    stack = []\n    for char in s:\n        if char == '(':\n            stack.append(char)\n        elif char == ')':\n  ",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": ".\nsi  \"\"\"      aackk  [\n\n    for charrin ::\n        if char   z))::\n           s tac..applnd((hau\"         elif hhar =  ()::   ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.7734375
+      },
+      "free_stop_probability": 0.0374426394701004,
+      "id": "15abf96803fcb475e88103119ef1a35aaf44f89676f61fe922de769970e78352:answer:byte-2",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.6373870372772217,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 4.396349906921387,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 3.814866542816162,
+          "code_accuracy": 0.125
+        },
+        {
+          "ce": 2.0229291915893555,
+          "code_accuracy": 0.5078125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "   Parameters:\n    n (int): A positive integer representing the number of Fibonacci numbers to generate.\n\n    Returns:\n    list",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "         \nte          \n\nt      e nnnsm mbee    nnnnn e t tttttt  t       t t t t t t t t tttttttettteteteteteteteeetetetetetttt",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.1953125
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "   Paramtttrs:\n   nn (int): AApoitttve integer  eperssnting the number offiiionncei uumberssto genertte.\n      eturr::\n    list",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.8203125
+      },
+      "free_stop_probability": 0.03129161149263382,
+      "id": "4e0f5e55b289c0a42070fc873a15e00dcc138116a9cbe72f255fe46243b829d7:answer:byte-1",
+      "split": "train",
+      "source": "nvidia/OpenCodeInstruct",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 2.868828773498535,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.325778007507324,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.26796293258667,
+          "code_accuracy": 0.109375
+        },
+        {
+          "ce": 2.754798412322998,
+          "code_accuracy": 0.375
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "ric *scientific term*, but that is not the same as being generic *as a designation for lamps*. Genericness as a ground for canc",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0859375
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "il c iccnnttficcteim   but ttat isn to the same as iieggg eneecc  as  a ssgnnntion flr lvals.  Gnneex\nenso as aagauung for ccla",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.578125
+      },
+      "free_stop_probability": 0.006518218666315079,
+      "id": "4094cb6538f8d81bfad8586f93b1ac69d2af9a48ee0daf9f3ebddb08a91fc864:1:byte-30",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.8092219829559326,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.231624126434326,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 4.106657981872559,
+          "code_accuracy": 0.109375
+        },
+        {
+          "ce": 2.8819432258605957,
+          "code_accuracy": 0.3359375
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "gitimacy highest, law rises despite its lag.\n\nThe main honest caveat: this field lacks natural experiments, so most claims here",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "hsshsporrollllllta aaaaaaaaaaaaaaaaaaa          aa      aa                                    tttttheeea a abbbnnnneabbaninindt",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.078125
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "hutamayy  wgvttt,  l wriee seespiieett  aags\n\n he vain  onset caee  ::this fiels  ccl.nn tuulle ppeeomentt, oommco   eaaoe prre",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5390625
+      },
+      "free_stop_probability": 0.06370081007480621,
+      "id": "656c64a7e9c47719aadf54443bb957e842889b043962df6b601226793567b5b7:1:byte-68",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 4.59626579284668,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.229120254516602,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.485691547393799,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 3.0519139766693115,
+          "code_accuracy": 0.3203125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": " industrial safety-code reasoning in *The T.J. Hooper* line of cases: custom does not excuse falling below prudent practice).\n2",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "iie             oeeeeeessszzzz zzznniinnnnnnniiinnnnnininnnnnaaa ouaaa a   iniiiiiiiiiinznnzzzzzzzzzzzzzzzzznzzzzzenzznn zniiii",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.046875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": ", uiusriaal aaeare--ide rraanning in  Th      NNhooercl ine oc casse: custom  he  not exuuee fallingbbleni huuden  prrctic)).\n.",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.6171875
+      },
+      "free_stop_probability": 0.022494662553071976,
+      "id": "232e17e36b60b0a8861fca3efcfdee91e42a3d1842d56013763e72a48b693e84:1:byte-13",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 5.2145538330078125,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.411749839782715,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.368790626525879,
+          "code_accuracy": 0.046875
+        },
+        {
+          "ce": 2.9365954399108887,
+          "code_accuracy": 0.3203125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "sponsor if not fixed by Mar 12.\n3. Legacy SSO certificate expires Apr 2; if go-live slips past that date, cutover must be resch",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": " oeii   iriieeeeeeeeeeeeebiorr   a   a a a a a     a anni nnii a       a a a a a a a a a a a a a a a a a a a aaa      eeaaaaaai",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.1171875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": " Nonnsr ffn tf fxxed by ba,,2 .g33 Pgeac. StOSSctifficat  eetiees  p  ;; i flo- vve sppp  llste hht dated uutther umtt be rrxxa",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5390625
+      },
+      "free_stop_probability": 0.03293989226222038,
+      "id": "ac2de11bffe7a31b12935bff1426e25efc2dafc11896de5230e89051ee5ecc8a:1:byte-12",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.9449398517608643,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.596546649932861,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.325324535369873,
+          "code_accuracy": 0.109375
+        },
+        {
+          "ce": 2.864140510559082,
+          "code_accuracy": 0.3359375
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "the records were doing\n\nEvery number above is already an artifact. Death certificates required a physician's causal attribution",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "eetihhe  nnniiiiiitoooooe toooooooeaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaabaiiiaaaaaaneeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaal",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.1171875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "ehe rrcords whrr  ioggs\n Trr  numbeea oyve is alraadyyanearrfica\n   eeth crriffiaates reuuridd a  eyiiicnn's cusasll   ribduiit",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5625
+      },
+      "free_stop_probability": 0.010426783002912998,
+      "id": "a46eb9b34ad07adb2ff84045d65cdf534afa5222daabd2edf1722f6735a33370:1:byte-15",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 2.8526806831359863,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.234047889709473,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 4.459359169006348,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 2.4296507835388184,
+          "code_accuracy": 0.421875
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "te; what selection criteria are stated or inferable; what OCR engine and version; what metadata schema and who created the reco",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.140625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "tt;;weatsseeeetion criter a  re stttee or iiec  bl)y whht  SSRengineaand vrrsion 'wha h eedaa  slpveaa and woo createe therrec ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.6640625
+      },
+      "free_stop_probability": 0.017683017998933792,
+      "id": "18a6b22c7aa3b1a442a7499cc0826851f701c70ce13ad50d701aefdfaf696372:1:byte-44",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 4.093639850616455,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.445975303649902,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.064146995544434,
+          "code_accuracy": 0.09375
+        },
+        {
+          "ce": 2.389833450317383,
+          "code_accuracy": 0.4453125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": " be done in order without reordering anything mentally.\n- [ ] No step bundles two actions without a connector (\"press and hold ",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "  o eeggnng m                         the  nniiiiiiiiiiiiiiiin e  the  a  niiiin  nn  nn  nn  eeeeeee  a  the aa a    ii  eeeei",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.140625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": " b   oen in orddr withottbriordeiingggygthing mentalyr) - >>Bhho sse  uundee  wt  aation  withott   conneeto  ((arses and llldd",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.6640625
+      },
+      "free_stop_probability": 0.027436481788754463,
+      "id": "d8a460de09a2c526c0b04dc5bddc8e24d304ee2a2b8dd446f7841611dd626763:1:byte-24",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.5806632041931152,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 5.5220947265625,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 4.130769729614258,
+          "code_accuracy": 0.125
+        },
+        {
+          "ce": 2.571763515472412,
+          "code_accuracy": 0.4140625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": " collapse frame only does O(1) graph surgery plus bounded tile invalidation; everything else is deferred through a work queue t",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "bu    hh          aana       dgg      uudiinnnnnnnnnnnnnsseeennii      e  nnnnnni      e    nnna                              j",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.1171875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "bhollosse  rame onry  he  s()) garhh sprgero puu  bsunde  fill incalldationce eeryihing else is sefiiiee tpruugea wwork uuuebnt",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.6484375
+      },
+      "free_stop_probability": 0.01039559580385685,
+      "id": "63889c7a5e4af9b4db4afe2487fd4405fe0c036a1b5cb08f8b7b9e02a864612e:1:byte-1",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.5220978260040283,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.336112976074219,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.26792573928833,
+          "code_accuracy": 0.09375
+        },
+        {
+          "ce": 2.9847733974456787,
+          "code_accuracy": 0.3515625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "ithout locks across petabyte writes.\n\n## 3. Branching\n\nBranches are metadata-only operations\u2014creating a branch costs one poin",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "tttihhine ooet iio aaa  aaaaaaaa    aa  taaaaaaa     a   a   a asaaa aaa a a a  taaaaasa a  d           tt      ta      d ine i",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0703125
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.578125
+      },
+      "free_stop_probability": 0.027301127091050148,
+      "id": "aada07af842f64f7fa500a444f79e443ea3dd80ff21b6a59e70cf4c704b482f8:1:byte-19",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 6.602395057678223,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.466719627380371,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.643702507019043,
+          "code_accuracy": 0.046875
+        },
+        {
+          "ce": 2.9694132804870605,
+          "code_accuracy": 0.3671875
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "t and longer days = summer.\n\n**Dismantling the misconception:** Two facts kill the distance idea:\n\n1. **Opposite hemispheres, o",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "tn s ooo acccsss        hheee  ediiiiiiiiaeiiiiiiiiiiiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.078125
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "t  nd longerd ey    sumbee.\n*\n*Diiaattling the miiccnception::  ew  aatt  k ll thed istancedddea:*1 . *** ooiite heeiimpeese,  ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.671875
+      },
+      "free_stop_probability": 0.028004566207528114,
+      "id": "642245fb79afb8fc69bbfe4f8f980e733b4902f45b2d13f12c4e4613d1fa71a3:1:byte-14",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.003526210784912,
+          "code_accuracy": 0.25
+        },
+        {
+          "ce": 5.528480529785156,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.206460952758789,
+          "code_accuracy": 0.078125
+        },
+        {
+          "ce": 2.6970314979553223,
+          "code_accuracy": 0.3203125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "gh community-nominated slates, with full access to all materials and equal voting rights.\n- A chair elected by members, not app",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.6640625
+      },
+      "free_stop_probability": 0.03891490772366524,
+      "id": "78a21526f9cef80e1fc3b0884ee6fdb8483075a4fe6de6c5fd20c1d4d990562d:1:byte-7",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.8818211555480957,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.636717796325684,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 4.659345626831055,
+          "code_accuracy": 0.046875
+        },
+        {
+          "ce": 3.3855252265930176,
+          "code_accuracy": 0.28125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "ver) HandleReport(w http.ResponseWriter, r *http.Request) {\n    ctx := r.Context() // cancelled by net/http when the client dis",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "ihhoooe)))   ns      t t ttttt    stt   dddududddddddudududldudududududududududududududududldududududududldududldududullludulld",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0546875
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "iemd((andddypprr((  ttpt..ssponstTiite,,r   tttt .Ruuutt))\n      ceet:  ..onteex))    canclle d byn te gthh wwen the clieet did",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.515625
+      },
+      "free_stop_probability": 0.1394481658935547,
+      "id": "530c45dabf94301d4b234e266364e4a57f2fba2d05cf8f2c66fb3180de071946:1:byte-29",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 5.267784118652344,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.904197692871094,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 4.491415977478027,
+          "code_accuracy": 0.109375
+        },
+        {
+          "ce": 3.29145884513855,
+          "code_accuracy": 0.3125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "this.onCancel.bind(this);\n    this.onLostCapture = this.onLostCapture.bind(this);\n\n    // All listeners live on the canvas. Bec",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": " =tctttttttttttttttttttttttctccccccccccccccccccccccccccccctccccctttttttccccccccct  ttttttttttcttttttttttttecccect  tttttttttttt",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0390625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "Euiit.Mnnn\ne..bbndt((iss\n     thiit. jjst puturr ==thit.on ss ahmprre.bbndt(ggss;\n\n   ////A   listenrrs llve on the aannas.    ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.578125
+      },
+      "free_stop_probability": 0.018271612003445625,
+      "id": "a4b9185eb52dfd4a37544083d05b514db1908c954073302d15a0ffa76995fa0c:1:byte-18",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.7358617782592773,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.19555139541626,
+          "code_accuracy": 0.125
+        },
+        {
+          "ce": 4.608072757720947,
+          "code_accuracy": 0.09375
+        },
+        {
+          "ce": 3.4588088989257812,
+          "code_accuracy": 0.234375
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "stable)\n\n```csharp\npublic struct Pose\n{\n    public Vector3 Position;\n    public Quaternion Rotation;\n}\n\npublic static class Rid",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.140625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": null,
+        "exact": false,
+        "nonpad_byte_accuracy": 0.53125
+      },
+      "free_stop_probability": 0.02106313593685627,
+      "id": "c5bb08182769e675f1716e94ab25d80f90ad6896be340a85c59eb3f833c4af94:1:byte-12",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 3.6229934692382812,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.4789018630981445,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.288876533508301,
+          "code_accuracy": 0.0625
+        },
+        {
+          "ce": 2.642977714538574,
+          "code_accuracy": 0.3203125
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "A kinematic capsule controller should be built as a pure mover that queries the physics world read-only and owns its own pose. ",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "```pythonndennnnneenssiinnn    ai             iaii                              iai                                            ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.15625
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "A`ocenamti  acsslle contordeers douu  bebbuitt as a purr movrrtttht urieies the mpt(ccs whle  reaa--ncy and wo n isto wo posrze",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.5625
+      },
+      "free_stop_probability": 0.007299207616597414,
+      "id": "89870dfe8c2b6ad660f067d1f1b681f9aef6d171d0ac9e3fab05c15394b6078c:1:byte-0",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    },
+    {
+      "clean_teacher_forced": [
+        {
+          "ce": 4.626830577850342,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 5.670914649963379,
+          "code_accuracy": 0.0
+        },
+        {
+          "ce": 4.2738823890686035,
+          "code_accuracy": 0.078125
+        },
+        {
+          "ce": 2.721356153488159,
+          "code_accuracy": 0.40625
+        }
+      ],
+      "all_oracle_codec": {
+        "text": "he improvement is statistically distinguishable from zero under IPS/SNIPS with your chosen clipping;\n- the logging-policy sanit",
+        "exact": true,
+        "nonpad_byte_accuracy": 1.0
+      },
+      "free_generation": {
+        "text": "caaeeetodddre theeeaaa bseeenenenennnnonnnt   tihhhhe aaa     the aaaaaaaa                    ttthe aaaaaaaa a a a a a a a a al",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.0703125
+      },
+      "oracle_earlier_levels_student_final": {
+        "text": "h   mlroeement is sta ittically distinuuitghble eromz rr  underPPPPtttPPStwith  our hoosec clpppinggd>tthe lggiingepoo-cy asan ",
+        "exact": false,
+        "nonpad_byte_accuracy": 0.671875
+      },
+      "free_stop_probability": 0.03876269608736038,
+      "id": "8790e922c872cbd3039d6e09ecfd03e3a722d97ffaf665a8e5616b8fb6b51672:1:byte-46",
+      "split": "validation",
+      "source": "TeichAI/Ox-Alpha-10k",
+      "is_final_chunk": false
+    }
+  ],
+  "optimizer_created": false,
+  "scope": "Training/validation diagnostics; oracle results are not autonomous generation",
+  "implementation_sha256": "8c3d3add9c2a656909747050d35fa7bb2771a818822872bbd76a477da92c8dbe"
+}
