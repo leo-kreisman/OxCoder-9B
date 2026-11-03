@@ -122,3 +122,39 @@ with a batch of one. A twelve-task pass is still only a candidate until a
 separate process reloads the exact checkpoint and repeats all checks and text.
 The preserved [v29 step-100 probe](validation/v30-controls/parent-step-100-coding.json)
 scored 0/12; successful execution audits are not coding-quality evidence.
+
+## Diagnostic interpretation
+
+`diagnose_frozen_multi.py` samples fixed training and validation windows,
+without creating an optimizer. It reports teacher-forced code loss/accuracy,
+autonomous reconstruction, reconstruction with correct earlier concepts but
+a student-predicted final level, and reconstruction with every oracle code.
+The oracle branches identify where errors occur; they cannot qualify an
+inference model. The regression test changes diagnostic targets and checks
+that autonomous text and termination predictions stay unchanged.
+
+```bash
+"$PYTHON" -m scripts.ncm.diagnose_frozen_multi \
+  --source "$SOURCE_GGUF" --codec "$CODEC_CHECKPOINT" \
+  --checkpoint results/ncm-frozen-multi-training-v30/evaluated-250.pt \
+  --execution-audit results/ncm-frozen-multi-audit-v30/report.json \
+  --selection results/ncm-complete-selection-v27 \
+  --manifest results/ncm-complete-pipeline-v28/features.json \
+  --output results/ncm-frozen-multi-diagnostics-250.json --device cuda:1
+```
+
+Run this after the checkpoint exists, with full-model GPU work serialized.
+Low teacher-forced accuracy indicates a prediction-learning problem even
+under correct earlier concepts. Good teacher-forced accuracy with poor free
+generation instead identifies sensitivity to the student's earlier errors.
+Oracle reconstruction failures identify a codec limitation. These probes
+do not change the frozen executable test suite or supply its answers.
+
+The [upstream paper's loss-weighting and corruption ablations](https://arxiv.org/html/2610.14162v1#A6.SS2.SSS3)
+use much larger batches and a twelve-level tokenizer. The current four-level
+byte codec and adaptive residual targets are independent experimental choices;
+equal step counts do not imply equal data exposure or expected quality.
+The [independent XSum-to-chat demonstration](https://huggingface.co/danielharkin21/ncm-chat-experimental-generator)
+reports 4,000 fine-tuning steps on 21,600 examples, but explicitly describes
+its short replies as often repetitive or wrong. Its reduced code loss is not
+evidence that an OxCoder architectural conversion will pass executable coding.
