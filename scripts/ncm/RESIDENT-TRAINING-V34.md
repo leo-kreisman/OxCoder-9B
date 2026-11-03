@@ -52,6 +52,19 @@ hash. A different checkpoint or changed implementation requires another audit.
 GPU arithmetic can differ slightly from CPU arithmetic; the training trajectory
 is not claimed to be bit-exact after migration.
 
+The full-step audit completed on the v33 update-2000 checkpoint
+`cee4531b029c247a6e94c85664559d3ca1ee4eb6863de491bec073502746aac3`.
+Reference median update time was **3.5063 s**, versus **2.6986 s** for the
+resident runtime: **1.299x throughput**, or approximately 23% less time per
+update. Peak allocator usage rose from 6,437,587,968 to 6,974,623,744 bytes.
+Final parameter relative L2 difference was 2.5533e-5 and maximum absolute
+difference was 0.00012207, within the declared thresholds. All source and codec
+invariants passed. The [full report](validation/v34-controls/full-runtime.json)
+contains the four updates for each arm and their exact provenance.
+
+The coordinator admitted this runtime and resumed actual training at update
+2001. These timing and numerical results do not establish coding-task success.
+
 ## State-preserving continuation
 
 `ResidentTowerOptimizer` retains the existing FP32 Muon master parameters for
