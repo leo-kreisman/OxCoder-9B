@@ -1,5 +1,8 @@
 # Unpadded concept execution for original-backbone NCM training
 
+The [canonical-label control](CANONICAL-LABEL-CONTROL-V32.md) branches from
+update 500 to compare supervision policies using the same execution engine.
+
 This optimization continues the v30 original-backbone experiment. It preserves
 the source weights, residual-VQ codec, objective, optimizer and sampling state.
 It changes the execution of independent concept levels during the gradient
@@ -69,6 +72,21 @@ teacher/student loss and gradients, level isolation, frozen parameters,
 qualification rejection, and restoration of the next optimizer update and
 random draws from a v30 checkpoint.
 
+The first actual continuation session completed updates 401–500. Its median
+update time excluding the first update was **6.005 seconds**, with peak allocated
+GPU memory **6,381,022,720 bytes**. Loading, checkpoint writes and validation are
+outside that timing. The [timing record](validation/v31-controls/update-timing-401-500.json)
+is a training measurement, not output tokens per second. The preceding v30
+session's median was 8.010 seconds under its recorded workload; different
+examples and concurrent work prevent treating that comparison as a controlled
+hardware benchmark.
+
+At update 500, [executable coding](validation/v31-controls/step-500-coding.json)
+remained **0/12**. [Fixed validation](validation/v31-controls/step-500-validation.json)
+had zero exact windows out of 64 and mean byte accuracy 0.08368. The speedup has
+not established usable generation. Training continues and the separate
+canonical-label control tests a supervision change.
+
 ## Qualification and reproducible continuation
 
 Use the pinned environment, source GGUF, codec and admitted complete-response
@@ -118,6 +136,13 @@ evaluation backlog; it still waits for any active evaluator. Subsequent
 sessions give that backlog time to finish. Independent native-decoder training
 can continue within its separately checked memory allowance. Every child exit
 resumes the older coordinator. No unrelated process is stopped.
+
+After the first 100-update session, the supervisor can use `--session-steps 500`
+to amortize model/data loading. This changes only when the worker yields.
+Checkpoints remain every 100 updates, quality checks every 250, and the
+optimizer's global 10,000-update schedule is unchanged. Change supervisor
+settings at a completed worker boundary, retaining the original parent and
+output paths.
 
 Neither the CPU tests nor the execution/optimizer audits establish coding
 quality. The twelve-task result must be produced by autonomous NCM generation,

@@ -1,0 +1,9 @@
+{
+  "updates": 100,
+  "first_update": 401,
+  "last_update": 500,
+  "median_seconds_excluding_first": 6.00493656899198,
+  "max_allocated_gpu_bytes": 6381022720,
+  "scope": "Actual training updates; excludes loading, checkpoint writing and evaluation; not inference throughput",
+  "quality_ready": false
+}

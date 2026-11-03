@@ -50,6 +50,8 @@ def verify_replay(first, second, checksum):
 
 
 def run(a):
+    if a.session_steps < 1:
+        raise ValueError('Session update count must be positive')
     root = Path(a.root).resolve()
     pipeline = root / 'results/ncm-frozen-ragged-pipeline-v31'
     folder = root / 'results/ncm-frozen-ragged-training-v31'
@@ -143,7 +145,7 @@ def run(a):
         extra = ['--selection', 'results/ncm-complete-selection-v27',
             '--manifest', 'results/ncm-complete-pipeline-v28/features.json',
             '--optimizer-audit', 'results/ncm-frozen-ragged-optimizer-v31/report.json',
-            '--session-steps', '100', '--eval-every', '250']
+            '--session-steps', str(a.session_steps), '--eval-every', '250']
         if (folder / 'latest.pt').exists():
             extra.append('--resume')
         launch(root / 'results/ncm-frozen-multi-training-v30/probe-400.pt', folder, extra)
@@ -157,6 +159,8 @@ def run(a):
 if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--cleanup', action='store_true')
+    p.add_argument('--session-steps', type=int, default=100,
+                   help='Updates before yielding; save/evaluation and learning schedules are unchanged')
     for key in ('root', 'python', 'source'):
         p.add_argument('--' + key)
     a = p.parse_args()
