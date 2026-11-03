@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import tempfile
 from types import SimpleNamespace
 import unittest
@@ -7,6 +8,29 @@ from scripts.ncm import run_compact_curriculum_stage as stage
 
 
 class CompactStageTests(unittest.TestCase):
+    def test_early_retirement_needs_saved_state_and_complete_evaluation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory) / 'results/ncm-frozen-ragged-training-v31'
+            folder.mkdir(parents=True)
+            checkpoint = folder / 'retired-1100.pt'; checkpoint.write_bytes(b'checkpoint fixture')
+            report = folder / 'retired-coding-1100.json'
+            report.write_text(json.dumps({'evaluated': 12, 'checkpoint_sha256': stage.sha(checkpoint)}))
+            (folder / 'progress.json').write_text(json.dumps({'step': 1100}))
+            record = {'step': 1100, 'phase': 'saved_checkpoint_and_independent_evaluation',
+                'optimizer_state_preserved': True, 'checkpoint': str(checkpoint),
+                'checkpoint_sha256': stage.sha(checkpoint), 'coding_report': str(report),
+                'coding_report_sha256': stage.sha(report)}
+            (folder / 'retirement.json').write_text(json.dumps(record))
+            self.assertEqual(stage.retired_boundary(directory), (1100, checkpoint, report))
+            checkpoint.write_bytes(b'changed checkpoint')
+            with self.assertRaises(ValueError):
+                stage.retired_boundary(directory)
+            checkpoint.write_bytes(b'checkpoint fixture')
+            record['optimizer_state_preserved'] = False
+            (folder / 'retirement.json').write_text(json.dumps(record))
+            with self.assertRaises(ValueError):
+                stage.retired_boundary(directory)
+
     def test_signals_target_supervisor_main_only(self):
         with patch.object(stage.subprocess, 'run', return_value=SimpleNamespace(returncode=0)) as command:
             stage.signal_running('experiment.service', 'STOP')

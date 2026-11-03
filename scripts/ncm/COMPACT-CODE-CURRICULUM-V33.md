@@ -214,3 +214,12 @@ immutable parent and `--resume`, preserving full v33 state. Saves occur every
 existing GPU/host reserve checks. A complete 12/12 result triggers a separate
 process reload and identical-answer check. Exhausting the schedule without
 acceptance is recorded explicitly and does not create a usable-model marker.
+
+A deliberately shortened older-control run uses its existing
+`STOP_AFTER_CHECKPOINT` mechanism. This preserves the full checkpoint before
+exiting, but does not finish the requested session or its scheduled evaluation.
+Such a stop is accepted for handover only after an independent evaluation of
+an immutable copy and an explicit `retirement.json` recording the saved step,
+checkpoint/report hashes, and preserved optimizer state. The coordinator does
+not relabel it as a completed 500-update session. A 12/12 retirement evaluation
+takes priority and must undergo fresh replay instead of being retired.

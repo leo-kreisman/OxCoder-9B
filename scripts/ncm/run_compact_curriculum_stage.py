@@ -19,6 +19,32 @@ def signal_running(unit, sig):
         raise RuntimeError('Could not signal running experiment unit: ' + unit)
 
 
+def retired_boundary(root):
+    """Accept either a full evaluated session or an explicitly evaluated early stop."""
+    folder = Path(root) / 'results/ncm-frozen-ragged-training-v31'
+    early = read(folder / 'retirement.json')
+    if early:
+        step = early.get('step', 0)
+        checkpoint = Path(early['checkpoint'])
+        report = Path(early['coding_report'])
+        if (early.get('phase') != 'saved_checkpoint_and_independent_evaluation'
+                or early.get('optimizer_state_preserved') is not True
+                or early['checkpoint_sha256'] != sha(checkpoint)
+                or early['coding_report_sha256'] != sha(report)):
+            raise ValueError('Incomplete early retirement')
+    else:
+        step = read(folder / 'session.json').get('step', 0)
+        checkpoint = folder / f'evaluated-{step}.pt'
+        report = folder / f'coding-{step}.json'
+    result = read(report)
+    if (step < 1000 or step != read(folder / 'progress.json').get('step')
+            or result.get('evaluated') != 12 or result.get('checkpoint_sha256') != sha(checkpoint)):
+        raise ValueError('Old control did not reach a complete evaluated checkpoint')
+    if result.get('passed') == 12:
+        raise ValueError('Old control passed; perform fresh replay before retiring it')
+    return step, checkpoint, report
+
+
 def run(a):
     pipeline = Path(a.root).resolve() / 'results/ncm-compact-curriculum-pipeline-v33'
     pipeline.mkdir(exist_ok=True)
@@ -71,18 +97,17 @@ def run_locked(a):
     while active(previous_child):
         status(phase='waiting_for_old_control_saved_boundary')
         time.sleep(10)
-    old_folder = root / 'results/ncm-frozen-ragged-training-v31'
-    old_step = read(old_folder / 'session.json').get('step', 0)
-    if (old_step < 1000 or old_step != read(old_folder / 'progress.json').get('step')
-            or read(old_folder / f'coding-{old_step}.json').get('evaluated') != 12):
+    try:
+        old_step, old_checkpoint, old_report = retired_boundary(root)
+    except (ValueError, OSError, KeyError):
         signal_running(previous_parent, 'CONT')
-        raise ValueError('Old control did not reach a complete evaluated session')
+        raise
     if active(previous_parent):
         subprocess.run(['systemctl', '--user', 'stop', previous_parent], check=True)
     (pipeline / 'retired-control.json').write_text(json.dumps({
         'unit': previous_parent, 'step': old_step,
-        'checkpoint': str(old_folder / f'evaluated-{old_step}.pt'),
-        'coding_report_sha256': sha(old_folder / f'coding-{old_step}.json'),
+        'checkpoint': str(old_checkpoint),
+        'coding_report_sha256': sha(old_report),
         'reason': 'Allocate GPU1 to independently checked compact-code curriculum; GPU0 control continues',
         'quality_ready': False}, indent=2) + '\n')
 
