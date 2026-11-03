@@ -1,0 +1,119 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "records": [
+    {
+      "step": 1,
+      "zero_gradient": false,
+      "cpu_seconds": 0.666380565991858,
+      "gpu_seconds": 0.0451263609866146,
+      "parameters": {
+        "maximum_absolute": 1.4901161193847656e-08,
+        "relative_l2": 1.9310491349570487e-08
+      },
+      "first_moments": {
+        "maximum_absolute": 0.0,
+        "relative_l2": 0.0
+      },
+      "second_moments": {
+        "maximum_absolute": 3.552713678800501e-15,
+        "relative_l2": 5.38146755870825e-13
+      },
+      "finite": true,
+      "passed": true
+    },
+    {
+      "step": 2,
+      "zero_gradient": false,
+      "cpu_seconds": 0.6807914309902117,
+      "gpu_seconds": 0.013938866002717987,
+      "parameters": {
+        "maximum_absolute": 2.9802322387695312e-08,
+        "relative_l2": 2.641720984555112e-08
+      },
+      "first_moments": {
+        "maximum_absolute": 0.0,
+        "relative_l2": 0.0
+      },
+      "second_moments": {
+        "maximum_absolute": 7.105427357601002e-15,
+        "relative_l2": 8.944593087680213e-13
+      },
+      "finite": true,
+      "passed": true
+    },
+    {
+      "step": 3,
+      "zero_gradient": true,
+      "cpu_seconds": 0.7138910880021285,
+      "gpu_seconds": 0.029722392006078735,
+      "parameters": {
+        "maximum_absolute": 2.9802322387695312e-08,
+        "relative_l2": 3.279197846892902e-08
+      },
+      "first_moments": {
+        "maximum_absolute": 0.0,
+        "relative_l2": 0.0
+      },
+      "second_moments": {
+        "maximum_absolute": 7.105427357601002e-15,
+        "relative_l2": 8.950715992387208e-13
+      },
+      "finite": true,
+      "passed": true
+    },
+    {
+      "step": 4,
+      "zero_gradient": false,
+      "cpu_seconds": 0.8109127600037027,
+      "gpu_seconds": 0.02978073901613243,
+      "parameters": {
+        "maximum_absolute": 2.9802322387695312e-08,
+        "relative_l2": 3.719737370949114e-08
+      },
+      "first_moments": {
+        "maximum_absolute": 0.0,
+        "relative_l2": 0.0
+      },
+      "second_moments": {
+        "maximum_absolute": 7.105427357601002e-15,
+        "relative_l2": 1.1110118095424052e-12
+      },
+      "finite": true,
+      "passed": true
+    }
+  ],
+  "scope": "Real checkpoint head state; synthetic gradients; all updates discarded",
+  "admission": {
+    "host_available": 21870215168,
+    "devices": [
+      {
+        "device": "cuda:1",
+        "free": 9817882624,
+        "allocator_cap": 3221225472
+      }
+    ]
+  },
+  "checkpoint_sha256": "beb32f81ca73a38c586f461c0c3e436b9a19b1b5908920e2c23eb9ae2d6c9dbd",
+  "parameters": 67129345,
+  "parameter_names": [
+    "head.classifiers.0.weight",
+    "head.classifiers.0.bias",
+    "head.classifiers.1.weight",
+    "head.classifiers.1.bias",
+    "head.classifiers.2.weight",
+    "head.classifiers.2.bias",
+    "head.classifiers.3.weight",
+    "head.classifiers.3.bias",
+    "stop_head.weight",
+    "stop_head.bias"
+  ],
+  "implementation_sha256": "ec27c567b85ff0e1a7e1d6328d957e6159a74fe8d62513def79eb04624a3a8a9",
+  "cpu_adamw_sha256": "4e53052fe1ead682d6ee5707bbb4a4d8f7d2d123c1b2404af92fd127ad5cb6b7",
+  "torch_version": "2.11.0+cu128",
+  "device": "cuda:1",
+  "median_cpu_seconds": 0.7138910880021285,
+  "median_gpu_seconds": 0.029722392006078735,
+  "peak_allocated_bytes": 1745341440
+}

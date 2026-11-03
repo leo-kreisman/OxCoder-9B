@@ -1,0 +1,177 @@
+{
+  "complete": true,
+  "passed": true,
+  "quality_ready": false,
+  "records": [
+    {
+      "examples": [
+        {
+          "id": "6894582a925c9a34b2f0949a9813d2c799ed522bb49cbdcdb906b21ccf16cdb3:1:byte-0",
+          "original_tokens": 64,
+          "prompt_tokens": 64,
+          "synthetic_extension_or_truncation": false
+        },
+        {
+          "id": "f4c01c2d18e67cb9a162cf5845fc759788b285f738139bf72361d0c577edd5cf:1:teacher:byte-1",
+          "original_tokens": 69,
+          "prompt_tokens": 69,
+          "synthetic_extension_or_truncation": false
+        },
+        {
+          "id": "c2bf55da87b66e1a5e47f048c3a9ac390c0ad7a053e8cd7931172e1524bb6fad:answer:byte-0",
+          "original_tokens": 128,
+          "prompt_tokens": 128,
+          "synthetic_extension_or_truncation": false
+        },
+        {
+          "id": "96ef241f2c3c6aebdf16bc7710e58bbf4f9dd9355037ab757326e0a3c526aa5a:answer:byte-1",
+          "original_tokens": 256,
+          "prompt_tokens": 256,
+          "synthetic_extension_or_truncation": false
+        }
+      ],
+      "reference": {
+        "seconds": [
+          0.5997684439935256,
+          0.5977554149867501,
+          0.5977651239954866,
+          0.6025788779952563,
+          0.5995616219879594
+        ],
+        "median_seconds": 0.5995616219879594,
+        "peak_allocated_bytes": 4989603840
+      },
+      "interleaved": {
+        "seconds": [
+          0.3640198819921352,
+          0.36640121301752515,
+          0.42314086301485077,
+          0.3917126150045078,
+          0.37190593100967817
+        ],
+        "median_seconds": 0.37190593100967817,
+        "peak_allocated_bytes": 5215707136
+      },
+      "all_prefix_tensors_bit_exact": true,
+      "finite": true,
+      "source_unchanged": true,
+      "speed_ratio": 1.6121324560762567,
+      "passed": true
+    },
+    {
+      "examples": [
+        {
+          "id": "6894582a925c9a34b2f0949a9813d2c799ed522bb49cbdcdb906b21ccf16cdb3:1:byte-0",
+          "original_tokens": 64,
+          "prompt_tokens": 64,
+          "synthetic_extension_or_truncation": false
+        },
+        {
+          "id": "1d45e0363fb88442bc222b5846df2644508976911e041d2e5357f4f5d8fc7afd:answer:teacher-v19:byte-5",
+          "original_tokens": 512,
+          "prompt_tokens": 512,
+          "synthetic_extension_or_truncation": false
+        },
+        {
+          "id": "2ff7951e5d03040f9c9537416c76498044f710d7649112f2b1e30f729cacfa1d:4:byte-2",
+          "original_tokens": 1025,
+          "prompt_tokens": 1024,
+          "synthetic_extension_or_truncation": true
+        },
+        {
+          "id": "62a721b46b8ad6dd424d9f90dffc9e20acc4b6b3eb4ad1ea0489ec7918d768af:2:byte-4",
+          "original_tokens": 1976,
+          "prompt_tokens": 2048,
+          "synthetic_extension_or_truncation": true
+        }
+      ],
+      "reference": {
+        "seconds": [
+          1.7314514240133576,
+          1.7339422270015348,
+          1.7371529370138887,
+          1.738733571022749,
+          1.7346629129897337
+        ],
+        "median_seconds": 1.7346629129897337,
+        "peak_allocated_bytes": 5341761536
+      },
+      "interleaved": {
+        "seconds": [
+          1.5650405090127606,
+          1.5664552070084028,
+          1.563791680993745,
+          1.5628265080158599,
+          1.5733260989945848
+        ],
+        "median_seconds": 1.5650405090127606,
+        "peak_allocated_bytes": 5560389632
+      },
+      "all_prefix_tensors_bit_exact": true,
+      "finite": true,
+      "source_unchanged": true,
+      "speed_ratio": 1.1083821172679884,
+      "passed": true
+    },
+    {
+      "examples": [
+        {
+          "id": "96ef241f2c3c6aebdf16bc7710e58bbf4f9dd9355037ab757326e0a3c526aa5a:answer:byte-1",
+          "original_tokens": 256,
+          "prompt_tokens": 256,
+          "synthetic_extension_or_truncation": false
+        }
+      ],
+      "reference": {
+        "seconds": [
+          0.2276957310095895,
+          0.19236450898461044,
+          0.19062281100195833,
+          0.1908410749747418,
+          0.19503083400195464
+        ],
+        "median_seconds": 0.19236450898461044,
+        "peak_allocated_bytes": 4699574272
+      },
+      "interleaved": {
+        "seconds": [
+          0.19827489700401202,
+          0.19196918801753782,
+          0.191590497008292,
+          0.19143712299410254,
+          0.1921103589993436
+        ],
+        "median_seconds": 0.19196918801753782,
+        "peak_allocated_bytes": 4699574272
+      },
+      "all_prefix_tensors_bit_exact": true,
+      "finite": true,
+      "source_unchanged": true,
+      "speed_ratio": 1.0020592938437418,
+      "passed": true
+    }
+  ],
+  "scope": "Frozen prompt execution only; no training update or model quality claim",
+  "phase": "auditing",
+  "admission": {
+    "host_available": 27905601536,
+    "devices": [
+      {
+        "device": "cuda:1",
+        "free": 16301359104,
+        "allocator_cap": 9663676416
+      }
+    ]
+  },
+  "checkpoint_sha256": "beb32f81ca73a38c586f461c0c3e436b9a19b1b5908920e2c23eb9ae2d6c9dbd",
+  "source_sha256": "a171c091c67c3547c45ec58f1b85a888d73725315fde71bc929ff9f8c255bb6f",
+  "codec_sha256": "47bef510d3e01f8823bb964bb855244c74aae4941d34ddbc8611480cffaef64c",
+  "implementation_sha256": {
+    "audit_interleaved_prefix.py": "4b7808a6f53fdb794224c627bd46081113048fe0e1a86567df971ba6c57c462f",
+    "interleaved_prefix.py": "64bf26639478517594330e09241da958a93d5de9b33e59d2348aea09ef4f43a0",
+    "frozen_tower_multi.py": "73acce8c9633ef87606ca81bccba9115db9382e7ef1aeb974a85583c8214b587",
+    "frozen_tower.py": "ef2f9af56847ee03fc7ff42763aba2fbec02f1b202b1d8eb207f83ff880314dc",
+    "gguf_training_weights.py": "e8d37509af255e6a70ede79eeab981aab7500c469c787b559543a49f551044c3"
+  },
+  "speed_qualified": true
+}
