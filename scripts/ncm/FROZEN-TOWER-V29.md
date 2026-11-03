@@ -152,3 +152,65 @@ in host RAM. `frozen_tower_optimizer.py` has exact CPU resume and nonfinite
 gradient rejection controls. The full-model optimizer smoke must also pass
 before the trainer starts. Optimizer offloading here is unrelated to SSD
 inference offloading.
+
+## Qualified training stage and reproducible invocation
+
+The full optimizer control passed two four-example updates, covering prompt
+lengths 64, 69, 512 and 2,048. The first used clean earlier concepts; the second
+used student-generated earlier concepts. Both updated adapters, classifiers
+and interfaces, left source tensors unchanged, and produced no codec gradient.
+Peak allocation was 5,881,539,584 bytes. Update times were 9.63 and 9.50 seconds,
+including the smoke's parameter comparison work. No weights from that control
+were promoted into training. See
+[frozen-tower-optimizer.json](validation/v29-controls/frozen-tower-optimizer.json).
+
+The corpus admission is shared with v28: 45,157 training chunks forming 8,408
+complete responses, including 1,541 Ox-Alpha chunks, 1,565 Agent chunks, 42,051
+NVIDIA chunks and 903 verified distilled chunks. All 64 held-out windows remain
+unchanged. This trainer reads the selected text and condition IDs; it does not
+use the v28 encoder's cached final hidden states. It recomputes frozen context
+through all source layers and predicts concepts through those source layers.
+
+Use the pinned Python environment and paths in the earlier training guides.
+After both full-model audits pass, the direct command is:
+
+```bash
+export PYTHONPATH=results/ncm-kernels:results/ncm-deps:results/ncm-data-deps
+export OMP_NUM_THREADS=2 TOKENIZERS_PARALLELISM=false HF_HUB_OFFLINE=1
+export PYTORCH_ALLOC_CONF=expandable_segments:True
+"$PYTHON" -m scripts.ncm.train_frozen_tower \
+  --source /absolute/path/to/OxCoder-9B.Q4_K_M.gguf \
+  --codec results/ncm-contextual-decoder-v9/best.pt \
+  --init results/ncm-parallel-v24/latest.pt \
+  --selection results/ncm-complete-selection-v27 \
+  --manifest results/ncm-complete-pipeline-v28/features.json \
+  --execution-audit results/ncm-frozen-tower-fp16-batch-audit-v29/report.json \
+  --optimizer-audit results/ncm-frozen-tower-optimizer-audit-v29/report.json \
+  --output results/ncm-frozen-tower-training-v29 --device cuda:1
+```
+
+The default schedule has 10,000 updates, four examples per update, 100 warmup
+updates, then cosine decay. Body/head peak learning rates are 0.0001/0.001.
+After warmup, half the sampled trajectories use the student's earlier levels
+with adaptive residual targets. Sampling balances coding responses and source
+strata using the recorded response sampler. Parameters initialize from v24;
+optimizer, sampler and schedule start fresh. Resume with the same command and
+`--resume`; identity checks reject changed code, data or numerical policy.
+
+`--session-steps 100` checkpoints and yields after 100 updates without changing
+the global schedule. An evaluation falling on the same update runs before the
+yield. This permits sharing a GPU with another experiment's full-model
+evaluator. `run_frozen_tower_stage.py` implements that coordination for the
+named v28/v29 Linux user services: it lets pending older evaluations finish,
+pauses their coordinator during each training session, and resumes it on child
+exit. Existing native-decoder training continues. The supervisor's `--cleanup`
+stops only its named child and resumes the named older coordinator. The unit
+names are explicit deployment assumptions, not a generic GPU job scheduler.
+
+Every 500 updates, an immutable checkpoint gets the unchanged 64-window probe
+and 12 executable tasks. A 12/12 result is a candidate only. The supervisor
+loads that checkpoint in a fresh process, repeats all tasks, checks identical
+answer text and checkpoint hash, and only then writes `acceptance.json`.
+There is no teacher fallback, retrieved answer table, or test-answer training.
+An exhausted schedule without acceptance is recorded as such; it is not a
+successful conversion or a released inference model.

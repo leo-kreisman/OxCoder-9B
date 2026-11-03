@@ -49,6 +49,26 @@ class FrozenTowerObjectiveTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             trajectory(self.model, self.codec, self.prompt, self_conditioned=False)
 
+    def test_training_updates_all_interfaces_without_touching_source_or_codec(self):
+        from scripts.ncm.frozen_tower_training import backward_example
+        from scripts.ncm.frozen_tower import source_versions
+        item = ({'split': 'train', 'target': 'ab'}, {'ids': self.prompt[0].tolist(), 'is_final_chunk': True})
+        before = source_versions(self.model.backbone)
+        for batched in (False, True):
+            self.model.zero_grad(set_to_none=True)
+            result = backward_example(self.model, self.codec, item, 1, 64., True, batched)
+            self.assertGreater(result['loss'], 0)
+            for n, p in self.model.named_parameters():
+                if p.requires_grad:
+                    self.assertIsNotNone(p.grad, n)
+                    self.assertTrue(torch.isfinite(p.grad).all(), n)
+                else:
+                    self.assertIsNone(p.grad, n)
+            self.assertEqual(before, source_versions(self.model.backbone))
+            self.assertTrue(all(p.grad is None for p in self.codec.parameters()))
+        with self.assertRaises(ValueError):
+            backward_example(self.model, self.codec, ({'split': 'validation'}, {}), 1, 64., True, True)
+
 
 if __name__ == '__main__':
     unittest.main()
