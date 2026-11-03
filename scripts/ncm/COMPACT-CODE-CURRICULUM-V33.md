@@ -267,3 +267,21 @@ Both creator sources appear in that actual exposure. Median update time was
 first twenty updates. GPU1 also ran the older small native-decoder trainer, so
 this is not an isolated speed comparison. These are training/resource checks;
 no executable coding result is implied by admission or optimizer success.
+
+## Retiring the older native-decoder worker
+
+After the compact run began, the older v28 decoded-loss worker was stopped at
+its existing checkpoint boundary, update 9,400. Its latest checkpoint hashes to
+`f315149f6192423d3d5915489149135eea57b415359a73bd7bc572aa3422ebbf`;
+the saved stop marker agrees. It did not complete the planned 10,000 updates.
+The [retirement record](validation/v33-controls/native-decoder-retirement.json)
+preserves this distinction and the observed compact-run timings. The temporary
+resume timer was canceled; the older worker must not automatically reclaim
+GPU1 during the compact run.
+
+With that older worker removed, compact updates 1151–1170 took a median 3.144
+seconds each. The first twenty updates took 4.972 seconds while both workers
+were active. These windows contain different sampled prompts and background
+workloads, so they do not establish an isolated hardware speedup. The compact
+run's batch, optimizer, objective, data, schedule and executable gate did not
+change. Its model acceptance still requires independent 12/12 replay.

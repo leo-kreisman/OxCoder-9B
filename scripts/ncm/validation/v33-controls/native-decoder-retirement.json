@@ -1,0 +1,30 @@
+{
+  "format": "native-branch-retirement-v33",
+  "step": 9400,
+  "checkpoint_sha256": "f315149f6192423d3d5915489149135eea57b415359a73bd7bc572aa3422ebbf",
+  "quality_ready": false,
+  "reason": "Saved older native decoder to dedicate GPU1 to original-source-tower compact curriculum",
+  "compact_timing_windows": [
+    {
+      "first": 1001,
+      "last": 1020,
+      "updates": 20,
+      "median_seconds": 4.972293806509697,
+      "scope": "Different training batches and background workload; not an isolated speed benchmark"
+    },
+    {
+      "first": 1071,
+      "last": 1090,
+      "updates": 20,
+      "median_seconds": 3.233832893994986,
+      "scope": "Different training batches and background workload; not an isolated speed benchmark"
+    },
+    {
+      "first": 1151,
+      "last": 1170,
+      "updates": 20,
+      "median_seconds": 3.1444414485013112,
+      "scope": "Different training batches and background workload; not an isolated speed benchmark"
+    }
+  ]
+}
