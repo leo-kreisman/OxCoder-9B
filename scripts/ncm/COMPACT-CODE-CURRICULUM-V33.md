@@ -285,3 +285,19 @@ were active. These windows contain different sampled prompts and background
 workloads, so they do not establish an isolated hardware speedup. The compact
 run's batch, optimizer, objective, data, schedule and executable gate did not
 change. Its model acceptance still requires independent 12/12 replay.
+
+## First shared evaluation point
+
+At global update 1250, after 250 compact-curriculum updates, the compact arm
+still passed **0/12** executable tasks and reconstructed **0/64** frozen
+validation windows exactly. Mean nonpadding byte accuracy was 0.098869. The
+canonical control at the same global update also passed 0/12 and 0/64, with
+mean byte accuracy 0.095890. This does not establish a useful quality gain.
+Training continues on the existing schedule; neither checkpoint is accepted.
+
+The complete reports are retained:
+
+- [Compact executable gate](validation/v33-controls/compact-coding-1250.json)
+- [Compact frozen validation](validation/v33-controls/compact-validation-1250.json)
+- [Canonical executable gate](validation/v33-controls/canonical-coding-1250.json)
+- [Canonical frozen validation](validation/v33-controls/canonical-validation-1250.json)
