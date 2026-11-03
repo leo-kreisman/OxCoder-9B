@@ -96,3 +96,38 @@ process replay before acceptance.
 The seven preparation tests cover protected splits, immutable source records,
 teacher provenance, prompt/byte limits, retained runtime strings and real
 sandbox rejection of a docstring-sensitive transformation.
+
+## Conditioning and frozen-codec admission
+
+After archive completion, `screen_compact_corpus.py` joins every admitted record
+to its execution proof, checks that all assertions actually ran, and prefers a
+compact teacher response over a compact original within the same conversation.
+It appends candidates to the already admitted base without removing any base
+training row. The exact 64-window validation inventory is hashed before and
+after. New targets overlapping protected validation targets are excluded.
+
+```bash
+"$PYTHON" -m scripts.ncm.screen_compact_corpus \
+  --base-selection results/ncm-complete-selection-v27 \
+  --base-manifest results/ncm-complete-pipeline-v28/features.json \
+  --addition results/ncm-compact-code-v33 \
+  --codec results/ncm-contextual-decoder-v9/best.pt \
+  --output results/ncm-compact-training-v33 --device cuda:1
+```
+
+This step loads the small frozen codec, not the 9B source model. It observes the
+existing host/GPU reserve rules and requests at most 2 GiB of CUDA allocator
+capacity. FP32 codec screening excludes the entire response if any chunk fails
+exact nonpadding reconstruction, including its EOS. Overlong prompts or missing
+chunks also exclude the entire response. The source tokenizer and complete
+previous assistant chunks form conditioning; no prompt truncation occurs.
+
+`selection.pt` holds texts and token IDs. `admission.json` is explicitly a
+text-only admission format for the original-tower trainer, with no cached
+encoder tensors. It must not be supplied to the separate native decoder's
+`FeatureCache`. The common original-tower corpus loader validates the pending
+manifest before it is renamed to the admitted path. This establishes input
+eligibility only; a new optimizer qualification and explicitly identified
+training continuation are still required. Three additional tests cover
+complete-response boundaries, teacher preference and rejection of a purported
+passing proof with zero executed assertions.
