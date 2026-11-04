@@ -1,0 +1,97 @@
+{
+  "configuration": "flash-small",
+  "command": [
+    "/home/scribe/Projects/llama.cpp-fresh/build/bin/llama-server",
+    "-m",
+    "/home/scribe/Projects/JEV_experiment/results/oxcoder-github-mirror/OxCoder-9B.Q4_K_M.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18197",
+    "--load-mode",
+    "none",
+    "--no-host",
+    "-ngl",
+    "99",
+    "--split-mode",
+    "none",
+    "-c",
+    "4096",
+    "-np",
+    "1",
+    "-b",
+    "256",
+    "-ub",
+    "128",
+    "-t",
+    "4",
+    "-fa",
+    "on",
+    "-ub",
+    "64"
+  ],
+  "budget_bytes": 8589934592,
+  "scope": "Linux CUDA; sampled process RSS plus process CUDA allocation; not Mac measurement",
+  "samples": [
+    {
+      "repeat": 0,
+      "wall_seconds": 3.8714161009993404,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 26,
+        "prompt_ms": 119.318,
+        "prompt_per_token_ms": 4.589153846153846,
+        "prompt_per_second": 217.90509395061935,
+        "predicted_n": 256,
+        "predicted_ms": 3749.192,
+        "predicted_per_token_ms": 14.702713725490197,
+        "predicted_per_second": 68.01465489097384
+      },
+      "content": "```python\ndef merge_sort(arr: list[int]) -> list[int]:\n    \"\"\"\n    Sorts a list of integers using the stable merge sort algorithm.\n    \"\"\"\n    if len(arr) <= 1:\n        return arr\n\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n\n    return merge(left, right)\n\ndef merge(left: list[int], right: list[int]) -> list[int]:\n    \"\"\"\n    Merges two sorted lists into a single sorted list.\n    \"\"\"\n    result = []\n    i = j = 0\n\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n\n    result.extend(left[i:])\n    result.extend(right[j:])\n    return result\n```\n\nThe code you provided is already a correct implementation of a stable merge sort. However, to strictly adhere to the \"Return only Python code\" instruction and ensure it is a complete, runnable snippet, I will wrap it in",
+      "tokens_predicted": 256,
+      "first_code_block_syntax_valid": true
+    },
+    {
+      "repeat": 1,
+      "wall_seconds": 3.865957617003005,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 26,
+        "prompt_ms": 63.155,
+        "prompt_per_token_ms": 2.4290384615384615,
+        "prompt_per_second": 411.68553558704775,
+        "predicted_n": 256,
+        "predicted_ms": 3744.801,
+        "predicted_per_token_ms": 14.685494117647059,
+        "predicted_per_second": 68.09440608459568
+      },
+      "content": "```python\ndef merge_sort(arr: list[int]) -> list[int]:\n    \"\"\"\n    Sorts a list of integers using the stable merge sort algorithm.\n    \"\"\"\n    if len(arr) <= 1:\n        return arr\n\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n\n    return merge(left, right)\n\ndef merge(left: list[int], right: list[int]) -> list[int]:\n    \"\"\"\n    Merges two sorted lists into a single sorted list.\n    \"\"\"\n    result = []\n    i = j = 0\n\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n\n    result.extend(left[i:])\n    result.extend(right[j:])\n    return result\n```\n\nThe code you provided is already a correct implementation of a stable merge sort. However, to strictly adhere to the \"Return only Python code\" instruction and ensure it is a complete, runnable snippet, I will wrap it in",
+      "tokens_predicted": 256,
+      "first_code_block_syntax_valid": true
+    },
+    {
+      "repeat": 2,
+      "wall_seconds": 3.813950431009289,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 26,
+        "prompt_ms": 63.861,
+        "prompt_per_token_ms": 2.456192307692308,
+        "prompt_per_second": 407.1342446876811,
+        "predicted_n": 256,
+        "predicted_ms": 3749.046,
+        "predicted_per_token_ms": 14.702141176470587,
+        "predicted_per_second": 68.01730360203636
+      },
+      "content": "```python\ndef merge_sort(arr: list[int]) -> list[int]:\n    \"\"\"\n    Sorts a list of integers using the stable merge sort algorithm.\n    \"\"\"\n    if len(arr) <= 1:\n        return arr\n\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n\n    return merge(left, right)\n\ndef merge(left: list[int], right: list[int]) -> list[int]:\n    \"\"\"\n    Merges two sorted lists into a single sorted list.\n    \"\"\"\n    result = []\n    i = j = 0\n\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n\n    result.extend(left[i:])\n    result.extend(right[j:])\n    return result\n```\n\nThe code you provided is already a correct implementation of a stable merge sort. However, to strictly adhere to the \"Return only Python code\" instruction and ensure it is a complete, runnable snippet, I will wrap it in",
+      "tokens_predicted": 256,
+      "first_code_block_syntax_valid": true
+    }
+  ],
+  "peak_bytes": 6646603776,
+  "budget_exceeded": false,
+  "exit_code": 0,
+  "backend_commit": "002a12ad25503a93501b2e188c360029830a241a",
+  "median_decode_tps": 68.01730360203636,
+  "qualification": "Short raw completion throughput only; output contains extra prose; no functional quality or Mac qualification"
+}
