@@ -1,0 +1,1027 @@
+{
+  "scope": "Extracted first merge_sort code block only; full raw response violates code-only instruction; not broad coding quality",
+  "records": [
+    {
+      "configuration": "flash",
+      "repeat": 0,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "flash",
+      "repeat": 1,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "flash",
+      "repeat": 2,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "flash-small",
+      "repeat": 0,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "flash-small",
+      "repeat": 1,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "flash-small",
+      "repeat": 2,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "baseline",
+      "repeat": 0,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "baseline",
+      "repeat": 1,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "baseline",
+      "repeat": 2,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "lookup",
+      "repeat": 0,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "lookup",
+      "repeat": 1,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "configuration": "lookup",
+      "repeat": 2,
+      "checks": [
+        {
+          "passed": true,
+          "observed": {
+            "value": [],
+            "arguments_after": [
+              []
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1
+            ],
+            "arguments_after": [
+              [
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3
+            ],
+            "arguments_after": [
+              [
+                3,
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              -3,
+              -3,
+              0,
+              2
+            ],
+            "arguments_after": [
+              [
+                -3,
+                2,
+                -3,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "passed": true,
+          "observed": {
+            "value": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "arguments_after": [
+              [
+                5,
+                4,
+                3,
+                2,
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "passed": 12,
+  "evaluated": 12
+}
