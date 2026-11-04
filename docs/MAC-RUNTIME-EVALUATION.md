@@ -2,6 +2,15 @@
 
 Specification date: **2026-10-23**. Status: **implementation plan; target-Mac results pending**.
 
+**2026-11-04 research update:** read
+[M3 acceleration research and implementation procedure](M3-OXCODER-OPTIMIZATION-RESEARCH.md)
+for current benchmark evidence, importer behavior, memory-unit corrections and
+the native Kapitsa path. Kapitsa is now documented upstream as a C++/Metal engine
+independent of MLX and llama.cpp runtimes. References below to an “MLX / Kapitsa”
+profile describe the checkpoint format or an earlier plan, not its runtime
+dependency. A GGUF import requires its own fidelity audit. The cited external
+M3 peak of 8.54 decimal GB exceeds this document's strict 8.00 GB allowance.
+
 For the separately implemented GGUF-to-native Kindi Q4 path, use the
 [native runtime guide](../scripts/kindi_q4/README.md) and
 [Metal implementation handoff](../scripts/kindi_q4/METAL_IMPLEMENTATION.md).

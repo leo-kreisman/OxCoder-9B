@@ -40,6 +40,12 @@ an official release by OrionLLM or prithivMLmods.
 
 ## Runtime options
 
+For the latest M3 research, benchmark evidence, GGUF import considerations and
+phase-by-phase implementation procedure, read
+[M3 OxCoder optimization research](docs/M3-OXCODER-OPTIMIZATION-RESEARCH.md).
+It includes the strict 8,000,000,000-byte acceptance limit and distinguishes
+native Kapitsa Metal execution from MLX runtime execution.
+
 1. **GGUF / llama.cpp with Metal:** the existing deployment and comparison baseline.
    Approximately **17 output tokens/s** has been reported on an M3-family Mac;
    this is an operator observation, not a reproducible benchmark published by this repository.
@@ -51,9 +57,11 @@ an official release by OrionLLM or prithivMLmods.
    it distinguishes the existing experimental bridge from the remaining full-GPU
    implementation and defines correctness, memory and speed acceptance gates.
    Native Metal does not require MLX.
-3. **MLX / Kapitsa:** an experimental second deployment using a separately downloaded
-   native 4-bit OxCoder checkpoint. Validate plain decoding first, then compatible
-   speculation and prefix caching. oMLX is a separate comparison engine.
+3. **Native Kapitsa / Metal or an MLX runtime:** experimental alternative deployments.
+   Kapitsa is a native C++/Metal engine that can import supported GGUF files or read
+   compatible checkpoint folders; it does not use the MLX runtime. Separately,
+   MLX runtimes use an MLX-format OxCoder conversion. Validate plain decoding first,
+   then compatible speculation and prefix caching. oMLX is a separate engine.
 
 The [Mac runtime evaluation and implementation guide](docs/MAC-RUNTIME-EVALUATION.md)
 specifies installation, memory accounting, phase gates, context tests, coding and
